@@ -1,0 +1,62 @@
+--- 
+title: "Claudia's data"
+author: "Philipp C. Muench"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: scrbook
+link-citations: yes
+colorlinks: yes
+graphics: yes
+lot: yes
+lof: yes
+toc-depth: 2
+fontsize: 11pt
+mainfont: Palatino
+monofont: "Source Code Pro"
+monofontoptions: "Scale=0.8"
+outputbo:
+  bookdown::gitbook:
+    config:
+      sharing: null
+      toc:
+        collapse: section
+      fontsettings:
+        theme: white
+        family: Source Code Pro
+        size: 2
+---
+
+```{r setup, include=FALSE}
+set.seed(0728)
+knitr::opts_chunk$set(tidy = TRUE)
+if (knitr::is_html_output()) {
+  # ignore percentage widths for HTML output, unless they are used for mutiple
+  # figures side by side
+  knitr::opts_hooks$set(out.width = function(options) {
+    if (options$fig.show != 'hold' && grepl('%$', options$out.width))
+      options$out.width = NULL
+    options
+  })
+}
+```
+
+# Preface {-}
+
+Processing of NGS data is done using **Snakemake** and not covered by this report yet and will be added at a later stage. In short, preprocessing and analysis (such as `bwa` alignment and variant calling using [Lofreq](https://csb5.github.io/lofreq/commands/) is defined using a `Snakefile` and a set of snakemake *rules* which are run on the HZI server (host) and detailed analysis (such as generation of figures and statistical tests) are done using R markdown on the *client* machine.
+
+## How to generate this report  {-}
+
+In [vscode](https://code.visualstudio.com/) with bookdown addon a server can be started using `serve_book`
+
+```{r, eval=FALSE}
+bookdown::serve_book(getwd())
+```
+This will starts a browser window pointing to [http://127.0.0.1:7853](http://127.0.0.1:7853) presenting the report written in [R Markdown](https://rmarkdown.rstudio.com/)
+
+## Acknowledgements {-}
+
+Thanks goes to 
+
+* Baerbel Stecher
+* Curtis Huttenhower
+* Eric 
