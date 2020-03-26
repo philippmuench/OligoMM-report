@@ -1,0 +1,25 @@
+id	day	generation	ecoli	desc
+1607	20	1	FALSE	40 OMM mix
+1612	20	1	TRUE	40 OMM mix
+1877	20	1	TRUE	40 OMM mix
+1660	40	1	FALSE	40 OMM mix
+1750	40	1	FALSE	40 OMM mix
+1664	40	1	TRUE	40 OMM mix
+1753	40	1	TRUE	40 OMM mix
+1779	80	1	FALSE	80 OMM mix
+1783	80	1	TRUE	80 OMM mix
+1789	80	2	FALSE	2nd generation
+1801	80	2	TRUE	2nd generation
+1423	1	1	FALSE	stably colonized
+1425	1	1	TRUE	stably colonized
+1885	20	2	FALSE	20 cecal content
+1880	20	2	TRUE	20 cecal content
+1881	20	2	TRUE	20 cecal content
+1882	20	2	TRUE	20 cecal content
+1883	20	2	TRUE	20 cecal content
+1884	20	2	TRUE	20 cecal content
+1807	40	2	FALSE	40 cecal content
+1814	40	2	TRUE	40 cecal content
+1815	40	2	TRUE	240 cecal content
+I_mi	0	2	FALSE	Tag 0, vor 20 tage
+I_cc	0	2	FALSE	Tag 0, von cecal content

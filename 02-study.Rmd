@@ -1,0 +1,6 @@
+# Study design
+
+```{r}
+design <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
+DT::datatable(design)
+```

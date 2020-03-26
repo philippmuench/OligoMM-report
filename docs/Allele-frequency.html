@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Section 3 Allele frequency | Claudia’s data</title>
-  <meta name="description" content="Section 3 Allele frequency | Claudia’s data" />
+  <title>Section 4 Allele frequency | Claudia’s data</title>
+  <meta name="description" content="Section 4 Allele frequency | Claudia’s data" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Section 3 Allele frequency | Claudia’s data" />
+  <meta property="og:title" content="Section 4 Allele frequency | Claudia’s data" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 3 Allele frequency | Claudia’s data" />
+  <meta name="twitter:title" content="Section 4 Allele frequency | Claudia’s data" />
   
   
   
@@ -155,14 +155,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2" data-path="Setup.html"><a href="Setup.html#Workspace_setup"><i class="fa fa-check"></i><b>1.2</b> Workspace setup</a></li>
 <li class="chapter" data-level="1.3" data-path="Setup.html"><a href="Setup.html#Data_structures"><i class="fa fa-check"></i><b>1.3</b> Data structure</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>2</b> Variant statistics</a>
+<li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a></li>
+<li class="chapter" data-level="3" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>3</b> Variant statistics</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#process-of-raw-data"><i class="fa fa-check"></i><b>2.1</b> Process of <em>raw</em> data</a></li>
-<li class="chapter" data-level="2.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#number-of-variants"><i class="fa fa-check"></i><b>2.2</b> Number of variants</a></li>
+<li class="chapter" data-level="3.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#process-of-raw-data"><i class="fa fa-check"></i><b>3.1</b> Process of <em>raw</em> data</a></li>
+<li class="chapter" data-level="3.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#number-of-variants"><i class="fa fa-check"></i><b>3.2</b> Number of variants</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="Allele-frequency.html"><a href="Allele-frequency.html"><i class="fa fa-check"></i><b>3</b> Allele frequency</a>
+<li class="chapter" data-level="4" data-path="Allele-frequency.html"><a href="Allele-frequency.html"><i class="fa fa-check"></i><b>4</b> Allele frequency</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#major-allele-frequency"><i class="fa fa-check"></i><b>3.1</b> major allele frequency</a></li>
+<li class="chapter" data-level="4.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#major-allele-frequency"><i class="fa fa-check"></i><b>4.1</b> major allele frequency</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://pmuench.com" target="blank">Philipp C. Muench</a></li>
@@ -184,21 +185,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Allele_frequency" class="section level1" number="3">
-<h1><span class="header-section-number">Section 3</span> Allele frequency</h1>
-<div id="major-allele-frequency" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> major allele frequency</h2>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="Allele-frequency.html#cb11-1"></a>p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(dat, <span class="kw">aes</span>(<span class="dt">x =</span> majorAF, <span class="dt">y =</span> mouse.id))</span>
-<span id="cb11-2"><a href="Allele-frequency.html#cb11-2"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span>ggridges<span class="op">::</span><span class="kw">geom_density_ridges</span>(<span class="dt">jittered_points =</span> <span class="ot">TRUE</span>,</span>
-<span id="cb11-3"><a href="Allele-frequency.html#cb11-3"></a>  <span class="dt">position =</span> ggridges<span class="op">::</span><span class="kw">position_points_jitter</span>(<span class="dt">width =</span> <span class="fl">0.01</span>, <span class="dt">height =</span> <span class="dv">0</span>),</span>
-<span id="cb11-4"><a href="Allele-frequency.html#cb11-4"></a>  <span class="dt">point_shape =</span> <span class="st">&#39;|&#39;</span>, <span class="dt">point_size =</span> <span class="dv">1</span>, <span class="dt">point_alpha =</span> <span class="fl">0.5</span>, <span class="dt">alpha =</span> <span class="fl">0.1</span>)</span>
-<span id="cb11-5"><a href="Allele-frequency.html#cb11-5"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>() </span>
-<span id="cb11-6"><a href="Allele-frequency.html#cb11-6"></a> <span class="co">#p &lt;- p + facet_grid(phase ~., space =  &quot;free&quot;, scales= &quot;free&quot;)</span></span>
-<span id="cb11-7"><a href="Allele-frequency.html#cb11-7"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">strip.background =</span> <span class="kw">element_blank</span>()) </span>
-<span id="cb11-8"><a href="Allele-frequency.html#cb11-8"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Major allele frequency&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Count&quot;</span>) </span>
-<span id="cb11-9"><a href="Allele-frequency.html#cb11-9"></a>p</span></code></pre></div>
+<div id="Allele_frequency" class="section level1" number="4">
+<h1><span class="header-section-number">Section 4</span> Allele frequency</h1>
+<div id="major-allele-frequency" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> major allele frequency</h2>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="Allele-frequency.html#cb12-1"></a>p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(dat, <span class="kw">aes</span>(<span class="dt">x =</span> majorAF, <span class="dt">y =</span> mouse.id))</span>
+<span id="cb12-2"><a href="Allele-frequency.html#cb12-2"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span>ggridges<span class="op">::</span><span class="kw">geom_density_ridges</span>(<span class="dt">jittered_points =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb12-3"><a href="Allele-frequency.html#cb12-3"></a>  <span class="dt">position =</span> ggridges<span class="op">::</span><span class="kw">position_points_jitter</span>(<span class="dt">width =</span> <span class="fl">0.01</span>, <span class="dt">height =</span> <span class="dv">0</span>),</span>
+<span id="cb12-4"><a href="Allele-frequency.html#cb12-4"></a>  <span class="dt">point_shape =</span> <span class="st">&#39;|&#39;</span>, <span class="dt">point_size =</span> <span class="dv">1</span>, <span class="dt">point_alpha =</span> <span class="fl">0.5</span>, <span class="dt">alpha =</span> <span class="fl">0.1</span>)</span>
+<span id="cb12-5"><a href="Allele-frequency.html#cb12-5"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>() </span>
+<span id="cb12-6"><a href="Allele-frequency.html#cb12-6"></a> <span class="co">#p &lt;- p + facet_grid(phase ~., space =  &quot;free&quot;, scales= &quot;free&quot;)</span></span>
+<span id="cb12-7"><a href="Allele-frequency.html#cb12-7"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">strip.background =</span> <span class="kw">element_blank</span>()) </span>
+<span id="cb12-8"><a href="Allele-frequency.html#cb12-8"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Major allele frequency&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Count&quot;</span>) </span>
+<span id="cb12-9"><a href="Allele-frequency.html#cb12-9"></a>p</span></code></pre></div>
 <pre><code>## Picking joint bandwidth of 0.0646</code></pre>
-<p><img src="oligomm-claudia_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p><img src="oligomm-claudia_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 
 </div>
 </div>
