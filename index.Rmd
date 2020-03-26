@@ -55,8 +55,3 @@ This will starts a browser window pointing to [http://127.0.0.1:7853](http://127
 
 ## Acknowledgements {-}
 
-Thanks goes to 
-
-* Baerbel Stecher
-* Curtis Huttenhower
-* Eric 
