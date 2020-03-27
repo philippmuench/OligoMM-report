@@ -102,9 +102,16 @@ only non-ecoli samples
 
 ```{r}
 dat$dummy <- 1
-dat.by.sample.genome2 <- aggregate(dummy ~ mouse.id + genome + generation + ecoli + desc + day, dat, sum)
-colnames(dat.by.sample.genome2) <- c("sample", "genome", "generation", "ecoli", "desc","day", "number_variants")
+dat.by.sample.genome2 <- aggregate(dummy ~ mouse.id + genome + generation + ecoli + desc + day + DP, dat, sum)
+colnames(dat.by.sample.genome2) <- c("sample", "genome", "generation", "ecoli", "desc","day","DP", "number_variants")
+summary(dat$DP)
+```
+DP is the filtered depth, at the sample level. This gives you the number of filtered reads that support each of the reported alleles. You can check the variant caller’s documentation to see which filters are applied by default. Only reads that passed the variant caller’s filters are included in this number. However, unlike the AD calculation, uninformative reads are included in DP.
+
+
+```{r}
 DT::datatable(dat.by.sample.genome2)
+dat$DP <- NULL
 ```
 
 ```{r, fig.cap="Number of variants by genome (color) found in samples"}
@@ -117,8 +124,4 @@ print(p)
 #plotly::ggplotly(p)
 ```
 
-```{r, fig.height=10, eval=F, fig.cap="Heatmap"}
-require(ComplexHeatmap)
-# convert long to wide format
-data_wide <- spread(olddata_long, condition, measurement)
-```
+
