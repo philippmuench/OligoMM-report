@@ -11,9 +11,9 @@ We define a function that iterates over a set of `vcf` files (`vcf.files`)
 #' 
 #' @param vcf.files a list of file path of files in vcf format
 #' @param contig_mapping mapping file of vcf CHR to OMM reference genomes
+#' @param gff.dff merged gff data from reference genomes
 #' @return a dataframe holding the merged annotated variant information
-
-vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_genome_mapping.csv", sep =";", header=T, stringsAsFactors = F) ) {
+vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_genome_mapping.csv"), gff.df = gff.df) {
 	require(vcfR)
 	res <- list()
 	for (file in vcf.files) {
@@ -28,6 +28,9 @@ vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_ge
 			dat$genome_hr <- translateGenomeIdToFullName(dat$genome)
 			dat$mouse.id <- substr(basename(file), 1, 4) # get mouse ID from file name, e.g. "1681"
 			dat$dp <- as.numeric(as.matrix(vcf.info$DP))
+
+			# annotate overlay of gene
+			dat$genome_desc <- apply(dat, 1, getGeneByPosition, gff = gff, pos.column = 2, chr.column = 1)
 			res[[basename(file)]] <- dat # add vcf df to list
 		}
 	}
@@ -39,16 +42,28 @@ vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_ge
 We apply this function on all  `r length(Sys.glob("data/raw/lofreq/*.vcf"))` files that live in `data/raw/lofreq/*.vcf`
 
 ```{r, results="hide", message=FALSE}
+# merge gff annotaions
+gff.files <- Sys.glob("data/annotation/gff/*.gff")
+gff.df <- NULL
+for (gff.file in gff.files){
+	message(gff.file)
+	gff <- rtracklayer::readGFF(gff.file)
+	# subset since different columns are present on gff files
+	relevant <- data.frame(start = gff$start, end = gff$end, type = as.character(as.matrix(gff$type)), gene = as.character(as.matrix(gff$gene)), product = as.character(as.matrix(gff$product)), chr = as.character(as.matrix(gff$seqid)))
+	relevant$genome <-  substr(basename(gff.file), 1, nchar(basename(gff.file))-4)
+	gff.df <- rbind(gff.df, relevant)
+}
+
 contig_mapping <- read.csv2("data/contig_genome_mapping.csv", sep =";", header=T, stringsAsFactors = F) # this file contains contig names of the 12 OligoMM genomes
 vcf.files <- Sys.glob("data/raw/lofreq/*.vcf")
-dat <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping))
+dat <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.df))
 # annotate study metadata
-dat <- merge(dat, design, by = "mouse.id")
+dat <- merge(dat, design.df, by = "mouse.id")
 dat$mouse.id <- as.character(as.matrix(dat$mouse.id))
-saveRDS(dat, file = "data/rds/variants_unannotated.rds")
+saveRDS(dat, file = "data/rds/variants.rds")
 ```
 
-The dataset is written to `data/rds/variants_unannotated.rds`) and will be used in later sections. 
+The dataset is written to `data/rds/variants.rds`).
 
 ## Number of variants 
 
@@ -57,7 +72,7 @@ The dataset is written to `data/rds/variants_unannotated.rds`) and will be used 
 only non-ecoli samples
 
 ```{r load-vcf}
-dat <- readRDS("data/rds/variants_unannotated.rds")
+dat <- readRDS("data/rds/variants.rds")
 dat <- dat[which(dat$ecoli== FALSE),]
 ```
 
@@ -102,8 +117,8 @@ only non-ecoli samples
 
 ```{r}
 dat$dummy <- 1
-dat.by.sample.genome2 <- aggregate(dummy ~ mouse.id + genome + generation + ecoli + desc + day + DP, dat, sum)
-colnames(dat.by.sample.genome2) <- c("sample", "genome", "generation", "ecoli", "desc","day","DP", "number_variants")
+dat.by.sample.genome2 <- aggregate(dummy ~ mouse.id + genome + generation + ecoli + desc + day, dat, sum)
+colnames(dat.by.sample.genome2) <- c("sample", "genome", "generation", "ecoli", "desc","day","number_variants")
 summary(dat$DP)
 ```
 DP is the filtered depth, at the sample level. This gives you the number of filtered reads that support each of the reported alleles. You can check the variant caller’s documentation to see which filters are applied by default. Only reads that passed the variant caller’s filters are included in this number. However, unlike the AD calculation, uninformative reads are included in DP.
