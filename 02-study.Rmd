@@ -1,6 +1,26 @@
 # Study design
 
+## OligoMM
+
+|  ID | phylum | species | 
+|------|-------| -------|
+| YL44 | _Verrucomicrobia_ | _A. muciniphila_ |
+| I48 |  _Bacteroidetes_ | _B. caecimuris_ |
+| YL27 | _Bacteroidetes_ | _M. intestinale_ |
+| YL45 | _Proteobacteria_ | _T. muris_ |
+| YL2 | _Actinobacteria_ | _B. longum_ |
+| KB1 | _Firmicutes_ | _E. faecalis_  |
+| KB18 | _Firmicutes_ | _A. muris_ |
+| YL32 | _Firmicutes_ | _C. clostridioforme_ |
+| YL31 | _Firmicutes_ | _F. plautii_ |
+| YL58 | _Firmicutes_ | _B. coccoides_ |
+| I49 | _Firmicutes_ | _L. reuteri_ |
+| I46 | _Firmicutes_ | _C. innocuum_ |
+
+
+## Metadata
+
 ```{r}
-design <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
-DT::datatable(design)
+design.df <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
+DT::datatable(design.df)
 ```
