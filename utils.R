@@ -111,8 +111,10 @@ getGene <- function(x){
 	y
 }
 
-getGeneByPosition <- function(x, gff,  pos.column = 1){
+getGeneByPosition <- function(x, gff.df,  pos.column = 2, chr.column = 1){
 	pos  <- as.numeric(as.matrix(x[pos.column]))
+	chr  <- as.character(as.matrix(x[chr.column]))
+	gff.chr <- gff.df[which(gff.df$chr == chr),]
 	gene <- gff[which(with(gff, start <=  pos & end >= pos)),]$product
 	return(gene)
 }
