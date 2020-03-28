@@ -8,11 +8,20 @@ knitr::write_bib(c(
 ), 'packages.bib')
 ```
 
+## Workspace setup {#Workspace_setup}
+
+We specify the folder where the analysis is located. 
+
+```{r}
+setwd("~/projects/oligomm-claudia/")
+```
+
 ## Dependencies
 
 Functions that are used frequent are defined in `utils.R` and are mostly helper functions for data manipulation (e.g. translation of sample ids to groups). Other packages can be load via cran using the `install.packages()` function.
 
 ```{r, results="hide"}
+rm(list = ls())
 source("utils.R")
 library("vcfR")
 library("rmdformats")
@@ -23,14 +32,12 @@ library("knitr")
 library("kableExtra")
 library("plotly")
 library("DT")
+library("rtracklayer")
 ```
 
-## Workspace setup {#Workspace_setup}
-
-We specify the folder where the analysis is located. 
-
-```{r}
-setwd("~/projects/oligomm-claudia/")
+ for `rtracklayer` you might need curl
+```{bash, eval = F}
+sudo apt-get install libcurl4-openssl-dev
 ```
 
 ## Data structure {#Data_structures}
