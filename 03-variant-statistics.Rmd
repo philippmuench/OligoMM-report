@@ -214,6 +214,7 @@ pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
 	require(reshape2) 
 	require(ggplot2)
 	dat.pair <- dat[which(dat$mouse.id == case | dat$mouse.id == control),]
+	dat.pair <- dat.pair[which(!is.na(dat.pair$orf_desc)),]
 	data.wide <- dcast(dat.pair, genome + POS + REF + ALT + orf_desc ~ mouse.id, value.var = "AF")
 	colnames(data.wide)[6] <- "sample_1"
 	colnames(data.wide)[7] <- "sample_2"
@@ -223,7 +224,7 @@ pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
 	p <- p + geom_point(fill = NA) + theme_classic() + scale_color_manual(values = omm_colors)
 	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")
 	p <- p + geom_vline(xintercept = .5, linetype = 2, color = "grey50")
-	p <- p + theme(legend.position = "none")
+	p <- p + theme(aspect.ratio = 1) 
 	p <- p + theme(strip.background = element_blank())
 	p <- p + geom_abline(intercept = 0, slope = 1)
 	p <- p + xlab(paste0("sample ", case)) + ylab(paste0("sample ", control))
@@ -232,20 +233,155 @@ pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
 }
 ```
 
-#### comparison of t=20 of first/second generation
+#### between generation comparison
 
-```{r, fig.align="center", fig.width=10, fig.cap="Scatter plot of AF of two samples"}
-ggplotly(pairedAFplot(dat, case = "1607", control = "1885"))
+##### comparison of t=20 of first/second generation
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1607", control = "1885")))
 ```
 
-#### comparison of t=40 of first/second generation
+##### comparison of t=40 of first/second generation (sample 1660)
 
-```{r, fig.align="center", fig.width=10, fig.cap="Scatter plot of AF of two samples"}
-ggplotly(pairedAFplot(dat, case = "1660", control = "1807"))
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1660", control = "1807")))
 ```
 
-#### comparison of t=80 of first/second generation
+##### comparison of t=40 of first/second generation (sample 1750)
 
-```{r, fig.align="center", fig.width=10, fig.cap="Scatter plot of AF of two samples"}
-ggplotly(pairedAFplot(dat, case = "1779", control = "1789"))
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1750", control = "1807")))
+```
+
+##### comparison of t=80 of first/second generation
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1779", control = "1789")))
+```
+
+##### comparison of t=80 of first/second generation
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1779", control = "1789")))
+```
+
+#### within generation comparison of gen=1
+
+##### t=20 vs t=40
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1607", control = "1660")))
+```
+##### t=40 vs t=80
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1660", control = "1779")))
+```
+
+#### within generation comparison of gen=2
+
+##### t=20 vs t=40
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1885", control = "1807")))
+```
+##### t=40 vs t=80
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1807", control = "1789")))
+```
+
+### Gene-centric analysis
+
+#### function
+
+```{r}
+geneCentricPlot <- function(dat = dat, genome = "yl44"){
+	require(reshape2) 
+	require(ggplot2)
+	dat.subset <- dat[which(dat$genome == genome & !is.na(dat$orf_desc)),]
+	
+	p <- ggplot(dat.subset, aes(x = orf_desc, y = AF, color = desc))
+  p <- p + geom_point(size = 3, shape = "|", fill = NA)
+	p <- p + coord_flip() + theme_classic()
+	p <- p + ylim(c(0,1))
+	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 180), strip.placement = "outside")
+	 p <- p + xlab("") + ylab("allele frequency") 
+	return(p)
+}
+```
+
+ [1] "yl44" "yl27" "yl58" "i48"  "yl32" "i46"  "yl45" "yl31" "yl2"  "i49" 
+[11] "kb18" "kb1" 
+
+##### yl44
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl44")))
+```
+
+##### yl27
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl27")))
+```
+
+##### yl58
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl58")))
+```
+
+##### i48
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "i48")))
+```
+
+##### yl32
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl32")))
+```
+
+##### i46
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "i46")))
+```
+
+##### yl45
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl45")))
+```
+
+##### yl31
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl31")))
+```
+
+##### yl2
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl2")))
+```
+
+##### i49
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "i49")))
+```
+
+##### kb18
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "kb18")))
+```
+
+##### kb1
+
+```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "kb1")))
 ```
