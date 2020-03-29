@@ -30,7 +30,7 @@ vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_ge
 			dat$dp <- as.numeric(as.matrix(vcf.info$DP))
 
 			# annotate overlay of gene
-			dat$genome_desc <- apply(dat, 1, getGeneByPosition, gff = gff, pos.column = 2, chr.column = 1)
+			dat$orf_desc <- as.character(as.matrix(apply(dat, 1, getGeneByPosition, gff = gff, pos.column = 2, chr.column = 1)))
 			res[[basename(file)]] <- dat # add vcf df to list
 		}
 	}
@@ -60,10 +60,45 @@ dat <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.d
 # annotate study metadata
 dat <- merge(dat, design.df, by = "mouse.id")
 dat$mouse.id <- as.character(as.matrix(dat$mouse.id))
+
+dat[which(dat$orf_desc == "character(0)"),]$orf_desc <- NA
+dat[which(dat$orf_desc == "hypothetical protein"),]$orf_desc <- NA
 saveRDS(dat, file = "data/rds/variants.rds")
 ```
 
 The dataset is written to `data/rds/variants.rds`).
+
+
+## Quality of variants
+
+DP is the filtered depth, at the sample level. This gives you the number of filtered reads that support each of the reported alleles. You can check the variant caller’s documentation to see which filters are applied by default. Only reads that passed the variant caller’s filters are included in this number. However, unlike the AD calculation, uninformative reads are included in DP.
+
+```{r load-vcf-qual}
+dat <- readRDS("data/rds/variants.rds")
+dat <- dat[which(dat$ecoli== FALSE),]
+print(summary(dat$dp))
+```
+
+## all samples
+
+```{r plot-dp-all, fig.cap="filtred depth of varaints (all samples)"}
+p <- ggplot(dat, aes(dp, fill = genome)) + geom_histogram()
+p <- p + theme_classic() + xlab("filtered depth") + ylab("occurence") 
+p <- p + scale_fill_manual(values = omm_colors)
+plotly::ggplotly(p)
+```
+## by mouse
+
+```{r plot-dp-by-mouse, fig.cap="filtred depth of varaints by mouse", fig.height = 20, fig.width = 10}
+p <- ggplot(dat, aes(dp, fill = genome)) + geom_histogram()
+p <- p + theme_classic() + xlab("filtered depth") + ylab("occurence") 
+p <- p + scale_fill_manual(values = omm_colors) + facet_wrap(~ mouse.id + desc, ncol = 2)
+p <- p + theme(panel.border=element_blank(),
+                 strip.text=element_text(size=12, colour="black"),
+                 strip.background=element_rect(colour="white", 
+                                               fill="white"))
+plotly::ggplotly(p)
+```
 
 ## Number of variants 
 
@@ -121,8 +156,6 @@ dat.by.sample.genome2 <- aggregate(dummy ~ mouse.id + genome + generation + ecol
 colnames(dat.by.sample.genome2) <- c("sample", "genome", "generation", "ecoli", "desc","day","number_variants")
 summary(dat$DP)
 ```
-DP is the filtered depth, at the sample level. This gives you the number of filtered reads that support each of the reported alleles. You can check the variant caller’s documentation to see which filters are applied by default. Only reads that passed the variant caller’s filters are included in this number. However, unlike the AD calculation, uninformative reads are included in DP.
-
 
 ```{r}
 DT::datatable(dat.by.sample.genome2)
@@ -135,8 +168,36 @@ p <- ggplot(dat.by.sample.genome2, aes(x = sample, y = number_variants, fill = g
 p <- p + geom_bar(stat="identity") + theme_classic()
 p <- p + facet_grid(.~ generation + day, scales = "free_x")
 p <- p + ylab("number of variants") + xlab("sample") + scale_fill_manual(values = omm_colors)
-print(p)
-#plotly::ggplotly(p)
+print(p) # plotly is not working on this type of plot
 ```
 
+## Vaiant annotation
+
+In this section we visualze the occurence of ORFs and their annotations of overlaying variants. The full table is available in this github repository under `data/tables/table1.tsv`.
+
+### Data
+
+#### Write to table
+
+```{r}
+write.table(dat, file = "data/tables/table1.tsv", sep = "\t", row.names = F, quote = F)
+```
+
+#### Aggregate by mouse
+
+The total number of variant overlapts to ORF per mouse, ordered by their occurence is below and can in  `data/tables/table2.tsv`
+
+```{r}
+dat.all <- aggregate(dummy ~ genome + orf_desc , dat, sum)
+colnames(dat.all) <- c("genome", "orf_annotation", "occurence")
+write.table(dat.all, file = "data/tables/table2.tsv", sep = "\t", row.names = F, quote = F)
+dat.all  <- dat.all[order(dat.all$occurence, decreasing = TRUE),]
+DT::datatable(dat.all)
+```
+
+### Statistics
+
+In total, we identified `r nrow(dat)` variants in all `r length(unique(dat$mouse.id))` samples. Of them, `r sum(dat.all$occurence)` variants map to `r length(unique(dat.all$orf_annotation))` ORFs with an annotated function
+
+### Visualization
 

@@ -1,0 +1,728 @@
+mouse.id	CHROM	POS	REF	ALT	QUAL	AF	majorAF	genome	genome_hr	dp	orf_desc	day	generation	ecoli	desc	dummy
+1423	CP021420.1	2358462	A	G	202	0.77381	0.77381	yl44	A. muciniphila	84	NA	1	1	FALSE	stably colonized	1
+1423	CP021421.1	47859	A	G	93	0.824324	0.824324	yl27	M. intestinale	74	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	1	1	FALSE	stably colonized	1
+1423	CP021421.1	155759	G	T	326	0.972603	0.972603	yl27	M. intestinale	73	UDP-galactopyranose mutase	1	1	FALSE	stably colonized	1
+1423	CP021421.1	788493	G	A	161	0.695122	0.695122	yl27	M. intestinale	82	Alpha-D-kanosaminyltransferase	1	1	FALSE	stably colonized	1
+1423	CP021421.1	1198557	T	A	232	0.833333	0.833333	yl27	M. intestinale	72	NA	1	1	FALSE	stably colonized	1
+1423	CP021421.1	1917169	G	A	259	0.892857	0.892857	yl27	M. intestinale	56	NA	1	1	FALSE	stably colonized	1
+1423	CP021421.1	1967661	C	A	95	0.680851	0.680851	yl27	M. intestinale	47	NA	1	1	FALSE	stably colonized	1
+1423	CP022713.1	3178523	C	T	225	0.802817	0.802817	yl58	B. coccoides	71	NA	1	1	FALSE	stably colonized	1
+1423	CP022713.1	3179041	C	T	398	0.78125	0.78125	yl58	B. coccoides	128	NA	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4254987	C	A	105	0.753623	0.753623	yl58	B. coccoides	69	NA	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4254993	G	A	145	0.791667	0.791667	yl58	B. coccoides	72	NA	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4258830	C	T	397	0.865079	0.865079	yl58	B. coccoides	126	NA	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4259722	G	A	137	0.764706	0.764706	yl58	B. coccoides	102	NA	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4260562	C	T	217	0.831683	0.831683	yl58	B. coccoides	101	NA	1	1	FALSE	stably colonized	1
+1423	NHMU01000001.1	210221	G	A	112	0.45208	0.54792	i48	B. caecimuris	553	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	1	1	FALSE	stably colonized	1
+1423	NHMU01000001.1	765279	A	T	177	0.481108	0.518892	i48	B. caecimuris	397	Chromosome partition protein Smc	1	1	FALSE	stably colonized	1
+1423	NHMU01000001.1	787709	C	T	97	0.446903	0.553097	i48	B. caecimuris	678	Alpha-D-kanosaminyltransferase	1	1	FALSE	stably colonized	1
+1423	NHMU01000001.1	787990	G	C	473	0.606676	0.606676	i48	B. caecimuris	689	Alpha-D-kanosaminyltransferase	1	1	FALSE	stably colonized	1
+1423	NHMU01000002.1	447372	G	A	303	0.585586	0.585586	i48	B. caecimuris	333	Putative xanthine dehydrogenase molybdenum-binding subunit XdhA	1	1	FALSE	stably colonized	1
+1423	NHMU01000003.1	166441	A	G	130	0.457433	0.542567	i48	B. caecimuris	787	Teichoic acids export ATP-binding protein TagH	1	1	FALSE	stably colonized	1
+1423	NHMU01000004.1	122713	A	G	409	0.944444	0.944444	i48	B. caecimuris	108	Elongation factor 4	1	1	FALSE	stably colonized	1
+1423	NHMU01000004.1	431800	G	A	871	0.916667	0.916667	i48	B. caecimuris	204	NA	1	1	FALSE	stably colonized	1
+1423	NHMU01000004.1	468118	G	T	322	0.971154	0.971154	i48	B. caecimuris	104	Stage III sporulation protein AE	1	1	FALSE	stably colonized	1
+1423	NHMU01000004.1	492680	T	C	2058	0.898251	0.898251	i48	B. caecimuris	629	Bacitracin export permease protein BceB	1	1	FALSE	stably colonized	1
+1423	NHMU01000004.1	492688	T	C	2297	0.912577	0.912577	i48	B. caecimuris	652	Bacitracin export permease protein BceB	1	1	FALSE	stably colonized	1
+1423	NHMU01000004.1	492701	G	A	2557	0.940828	0.940828	i48	B. caecimuris	676	Bacitracin export permease protein BceB	1	1	FALSE	stably colonized	1
+1423	NHMU01000005.1	190292	G	T	507	0.640506	0.640506	i48	B. caecimuris	395	Teichoic acid poly(glycerol phosphate) polymerase	1	1	FALSE	stably colonized	1
+1423	NHMU01000008.1	195581	G	A	258	0.52381	0.52381	i48	B. caecimuris	588	NA	1	1	FALSE	stably colonized	1
+1423	NHMU01000009.1	2104	C	T	182	0.453125	0.546875	i48	B. caecimuris	896	NA	1	1	FALSE	stably colonized	1
+1423	NHMU01000009.1	2239	G	A	280	0.509162	0.509162	i48	B. caecimuris	764	NA	1	1	FALSE	stably colonized	1
+1423	NHMU01000009.1	2296	T	A	217	0.482059	0.517941	i48	B. caecimuris	641	NA	1	1	FALSE	stably colonized	1
+1423	NHMU01000009.1	170099	C	A	192	0.480519	0.519481	i48	B. caecimuris	616	Ubiquinone biosynthesis O-methyltransferase	1	1	FALSE	stably colonized	1
+1423	NHMU01000012.1	3700	G	A	1454	0.947853	0.947853	i48	B. caecimuris	326	UDP-2,3-diacylglucosamine pyrophosphatase LpxG	1	1	FALSE	stably colonized	1
+1423	NHMU01000018.1	92	A	G	92	0.50655	0.50655	i48	B. caecimuris	229	NA	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	244733	C	A	135	1	1	yl32	C. clostridioforme	32	Sporulation sigma-E factor-processing peptidase	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	966520	C	T	231	0.504065	0.504065	yl32	C. clostridioforme	492	ATP-dependent DNA helicase RecG	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	966796	G	A	108	0.443182	0.556818	yl32	C. clostridioforme	440	ATP-dependent DNA helicase RecG	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	966802	G	A	129	0.455172	0.544828	yl32	C. clostridioforme	435	ATP-dependent DNA helicase RecG	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	967238	G	A	268	0.552632	0.552632	yl32	C. clostridioforme	380	ATP-dependent DNA helicase RecG	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	967544	G	A	406	0.638554	0.638554	yl32	C. clostridioforme	332	Chromosome partition protein Smc	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	967631	A	G	700	0.790698	0.790698	yl32	C. clostridioforme	258	Chromosome partition protein Smc	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	1265406	A	G	112	0.522807	0.522807	yl32	C. clostridioforme	570	Phosphoglucomutase	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	1265525	C	T	941	0.86351	0.86351	yl32	C. clostridioforme	359	NA	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	546419	A	G	443	0.796364	0.796364	yl32	C. clostridioforme	275	Uracil-DNA glycosylase	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	593116	G	C	257	0.906977	0.906977	yl32	C. clostridioforme	86	Inner membrane ABC transporter permease protein YdcV	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	593136	G	A	186	0.902778	0.902778	yl32	C. clostridioforme	72	Inner membrane ABC transporter permease protein YdcV	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	596611	G	T	242	0.836066	0.836066	yl32	C. clostridioforme	61	NA	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	844485	C	T	1667	0.946588	0.946588	yl32	C. clostridioforme	337	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	1	1	FALSE	stably colonized	1
+1423	NHTR01000003.1	265570	G	A	107	0.556338	0.556338	yl32	C. clostridioforme	142	Glutathione transport system permease protein GsiD	1	1	FALSE	stably colonized	1
+1423	NHTR01000004.1	50632	A	G	210	0.668435	0.668435	yl32	C. clostridioforme	377	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	1	1	FALSE	stably colonized	1
+1423	NHTR01000004.1	50649	G	A	284	0.686869	0.686869	yl32	C. clostridioforme	396	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	1	1	FALSE	stably colonized	1
+1423	NHTR01000004.1	330187	A	C	506	0.96748	0.96748	yl32	C. clostridioforme	123	Pyruvate synthase	1	1	FALSE	stably colonized	1
+1423	NHTR01000004.1	666847	A	G	149	0.438835	0.561165	yl32	C. clostridioforme	515	Multidrug resistance protein NorM	1	1	FALSE	stably colonized	1
+1423	NHTR01000006.1	259179	A	T	405	0.631285	0.631285	yl32	C. clostridioforme	358	Glutamyl aminopeptidase	1	1	FALSE	stably colonized	1
+1423	NHTR01000006.1	259192	A	T	359	0.586777	0.586777	yl32	C. clostridioforme	363	Glutamyl aminopeptidase	1	1	FALSE	stably colonized	1
+1423	NHTR01000006.1	259252	A	G	317	0.589744	0.589744	yl32	C. clostridioforme	390	Glutamyl aminopeptidase	1	1	FALSE	stably colonized	1
+1423	NHTR01000007.1	22900	G	A	129	0.877551	0.877551	yl32	C. clostridioforme	49	NA	1	1	FALSE	stably colonized	1
+1423	NHTR01000008.1	223662	T	C	228	0.609524	0.609524	yl32	C. clostridioforme	210	Ribosome-binding ATPase YchF	1	1	FALSE	stably colonized	1
+1423	NHTR01000008.1	319809	C	T	215	0.718826	0.718826	yl32	C. clostridioforme	409	HTH-type transcriptional regulator MhqR	1	1	FALSE	stably colonized	1
+1423	NHTR01000009.1	107241	T	C	166	0.722628	0.722628	yl32	C. clostridioforme	274	Twitching mobility protein	1	1	FALSE	stably colonized	1
+1423	NHTR01000009.1	140143	A	C	403	0.743902	0.743902	yl32	C. clostridioforme	246	Toxin A	1	1	FALSE	stably colonized	1
+1423	NHTR01000009.1	140144	A	T	360	0.741803	0.741803	yl32	C. clostridioforme	244	Toxin A	1	1	FALSE	stably colonized	1
+1423	NHTR01000009.1	140151	C	A	421	0.789474	0.789474	yl32	C. clostridioforme	247	Toxin A	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	48380	A	G	125	0.957447	0.957447	yl32	C. clostridioforme	47	NA	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	51402	G	A	342	0.762712	0.762712	yl32	C. clostridioforme	295	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	51636	C	T	98	0.666667	0.666667	yl32	C. clostridioforme	276	UDP-2,3-diacetamido-2,3-dideoxy-D-glucuronate 2-epimerase	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	63431	A	G	90	0.648438	0.648438	yl32	C. clostridioforme	256	Sensor histidine kinase BtsS	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	82248	A	T	833	0.925532	0.925532	yl32	C. clostridioforme	188	NA	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	91092	G	C	147	0.703704	0.703704	yl32	C. clostridioforme	243	NA	1	1	FALSE	stably colonized	1
+1607	CP021421.1	47859	A	G	114	0.785714	0.785714	yl27	M. intestinale	98	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	20	1	FALSE	20 OMM mix	1
+1607	CP021421.1	155759	G	T	450	0.947368	0.947368	yl27	M. intestinale	95	UDP-galactopyranose mutase	20	1	FALSE	20 OMM mix	1
+1607	CP021421.1	733247	G	A	301	0.95	0.95	yl27	M. intestinale	60	Molybdenum transport system permease protein ModB	20	1	FALSE	20 OMM mix	1
+1607	CP021421.1	1200101	A	T	179	0.757143	0.757143	yl27	M. intestinale	70	NA	20	1	FALSE	20 OMM mix	1
+1607	CP021421.1	1203596	C	A	220	0.956522	0.956522	yl27	M. intestinale	46	NA	20	1	FALSE	20 OMM mix	1
+1607	CP022713.1	2789404	A	G	262	0.699386	0.699386	yl58	B. coccoides	163	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	20	1	FALSE	20 OMM mix	1
+1607	CP022713.1	4971268	A	G	378	1	1	yl58	B. coccoides	92	16S ribosomal RNA	20	1	FALSE	20 OMM mix	1
+1607	CP022713.1	4972023	G	A	87	0.701835	0.701835	yl58	B. coccoides	218	16S ribosomal RNA	20	1	FALSE	20 OMM mix	1
+1607	CP022722.1	832021	C	A	133	1	1	i46	C. innocuum	26	Nuclease SbcCD subunit C	20	1	FALSE	20 OMM mix	1
+1607	CP022722.1	837562	C	A	106	0.923077	0.923077	i46	C. innocuum	26	Carbon monoxide dehydrogenase 1	20	1	FALSE	20 OMM mix	1
+1607	CP022722.1	1873678	A	G	139	0.944444	0.944444	i46	C. innocuum	36	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMP01000002.1	2345	C	T	149	1	1	yl45	T. muris	27	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMP01000003.1	12207	T	G	107	0.896552	0.896552	yl45	T. muris	29	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000001.1	787709	C	T	247	0.478771	0.521229	i48	B. caecimuris	1107	Alpha-D-kanosaminyltransferase	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000001.1	787990	G	C	702	0.56748	0.56748	i48	B. caecimuris	1230	Alpha-D-kanosaminyltransferase	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000001.1	788497	T	A	164	0.915789	0.915789	i48	B. caecimuris	95	Alpha-D-kanosaminyltransferase	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000003.1	166441	A	G	283	0.477096	0.522904	i48	B. caecimuris	1157	Teichoic acids export ATP-binding protein TagH	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000003.1	254185	G	A	391	0.731156	0.731156	i48	B. caecimuris	398	Threonine--tRNA ligase	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000004.1	122713	A	G	793	0.96	0.96	i48	B. caecimuris	200	Elongation factor 4	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000004.1	431800	G	A	1169	0.901754	0.901754	i48	B. caecimuris	285	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000004.1	468118	G	T	549	0.911917	0.911917	i48	B. caecimuris	193	Stage III sporulation protein AE	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000004.1	492680	T	C	3402	0.910373	0.910373	i48	B. caecimuris	993	Bacitracin export permease protein BceB	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000004.1	492688	T	C	3591	0.910156	0.910156	i48	B. caecimuris	1024	Bacitracin export permease protein BceB	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000004.1	492701	G	A	4255	0.947511	0.947511	i48	B. caecimuris	1105	Bacitracin export permease protein BceB	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000005.1	15927	T	C	219	0.446221	0.553779	i48	B. caecimuris	688	HTH-type transcriptional repressor YvoA	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000008.1	195581	G	A	418	0.512873	0.512873	i48	B. caecimuris	971	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000009.1	2104	C	T	186	0.425154	0.574846	i48	B. caecimuris	1296	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000009.1	2239	G	A	376	0.482441	0.517559	i48	B. caecimuris	1196	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000009.1	2296	T	A	312	0.479798	0.520202	i48	B. caecimuris	990	NA	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000009.1	170099	C	A	272	0.462672	0.537328	i48	B. caecimuris	1018	Ubiquinone biosynthesis O-methyltransferase	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000012.1	3700	G	A	2295	0.954183	0.954183	i48	B. caecimuris	502	UDP-2,3-diacylglucosamine pyrophosphatase LpxG	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	966520	C	T	203	0.494759	0.505241	yl32	C. clostridioforme	477	ATP-dependent DNA helicase RecG	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	966796	G	A	136	0.469048	0.530952	yl32	C. clostridioforme	420	ATP-dependent DNA helicase RecG	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	966802	G	A	157	0.496437	0.503563	yl32	C. clostridioforme	421	ATP-dependent DNA helicase RecG	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	967238	G	A	182	0.508997	0.508997	yl32	C. clostridioforme	389	ATP-dependent DNA helicase RecG	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	967544	G	A	322	0.624595	0.624595	yl32	C. clostridioforme	309	Chromosome partition protein Smc	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	967631	A	G	549	0.775	0.775	yl32	C. clostridioforme	240	Chromosome partition protein Smc	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	1265406	A	G	117	0.559091	0.559091	yl32	C. clostridioforme	440	Phosphoglucomutase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	1265525	C	T	801	0.87013	0.87013	yl32	C. clostridioforme	308	NA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	546419	A	G	431	0.836449	0.836449	yl32	C. clostridioforme	214	Uracil-DNA glycosylase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	593116	G	C	220	0.927536	0.927536	yl32	C. clostridioforme	69	Inner membrane ABC transporter permease protein YdcV	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	593136	G	A	182	0.952381	0.952381	yl32	C. clostridioforme	63	Inner membrane ABC transporter permease protein YdcV	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	596611	G	T	230	0.914894	0.914894	yl32	C. clostridioforme	47	NA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	844485	C	T	1338	0.92	0.92	yl32	C. clostridioforme	275	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000003.1	265570	G	A	286	0.616766	0.616766	yl32	C. clostridioforme	167	Glutathione transport system permease protein GsiD	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000004.1	50632	A	G	255	0.719626	0.719626	yl32	C. clostridioforme	321	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000004.1	50649	G	A	273	0.707602	0.707602	yl32	C. clostridioforme	342	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000004.1	330187	A	C	453	0.96	0.96	yl32	C. clostridioforme	100	Pyruvate synthase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000004.1	666847	A	G	268	0.462595	0.537405	yl32	C. clostridioforme	655	Multidrug resistance protein NorM	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000006.1	259179	A	T	380	0.645963	0.645963	yl32	C. clostridioforme	322	Glutamyl aminopeptidase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000006.1	259192	A	T	377	0.630435	0.630435	yl32	C. clostridioforme	322	Glutamyl aminopeptidase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000006.1	259252	A	G	320	0.611732	0.611732	yl32	C. clostridioforme	358	Glutamyl aminopeptidase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000007.1	22900	G	A	119	0.844444	0.844444	yl32	C. clostridioforme	45	NA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000008.1	319809	C	T	194	0.71656	0.71656	yl32	C. clostridioforme	314	HTH-type transcriptional regulator MhqR	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000009.1	140143	A	C	282	0.713755	0.713755	yl32	C. clostridioforme	269	Toxin A	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000009.1	140144	A	T	293	0.707865	0.707865	yl32	C. clostridioforme	267	Toxin A	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000009.1	140151	C	A	287	0.698529	0.698529	yl32	C. clostridioforme	272	Toxin A	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	48380	A	G	106	0.918367	0.918367	yl32	C. clostridioforme	49	NA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	51402	G	A	260	0.722628	0.722628	yl32	C. clostridioforme	274	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	63431	A	G	97	0.669456	0.669456	yl32	C. clostridioforme	239	Sensor histidine kinase BtsS	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	76724	G	A	93	0.649606	0.649606	yl32	C. clostridioforme	254	Beta-xylosidase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	82248	A	T	773	0.914634	0.914634	yl32	C. clostridioforme	164	NA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	82310	T	G	487	0.962617	0.962617	yl32	C. clostridioforme	107	NA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	91035	G	A	102	0.665272	0.665272	yl32	C. clostridioforme	239	NA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	91092	G	C	180	0.686508	0.686508	yl32	C. clostridioforme	252	NA	20	1	FALSE	20 OMM mix	1
+1660	CP021421.1	47859	A	G	139	0.776	0.776	yl27	M. intestinale	125	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	40	1	FALSE	40 OMM mix	1
+1660	CP021421.1	155759	G	T	646	0.95	0.95	yl27	M. intestinale	140	UDP-galactopyranose mutase	40	1	FALSE	40 OMM mix	1
+1660	CP021421.1	155829	C	A	102	0.958333	0.958333	yl27	M. intestinale	24	UDP-galactopyranose mutase	40	1	FALSE	40 OMM mix	1
+1660	CP021421.1	1967398	G	T	1100	0.936652	0.936652	yl27	M. intestinale	221	NA	40	1	FALSE	40 OMM mix	1
+1660	CP021421.1	2043340	A	G	474	0.913793	0.913793	yl27	M. intestinale	116	NA	40	1	FALSE	40 OMM mix	1
+1660	CP022713.1	2464482	A	T	120	0.666667	0.666667	yl58	B. coccoides	195	Group II intron-encoded protein LtrA	40	1	FALSE	40 OMM mix	1
+1660	CP022713.1	2789404	A	G	877	0.944134	0.944134	yl58	B. coccoides	179	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	40	1	FALSE	40 OMM mix	1
+1660	CP022713.1	4971268	A	G	331	0.962963	0.962963	yl58	B. coccoides	81	16S ribosomal RNA	40	1	FALSE	40 OMM mix	1
+1660	CP022722.1	1873415	T	A	97	0.857143	0.857143	i46	C. innocuum	21	NA	40	1	FALSE	40 OMM mix	1
+1660	CP022722.1	1873678	A	G	122	0.933333	0.933333	i46	C. innocuum	30	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000002.1	2345	C	T	110	0.83871	0.83871	yl45	T. muris	31	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000003.1	12207	T	G	101	0.83871	0.83871	yl45	T. muris	31	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000004.1	260960	T	C	129	0.962963	0.962963	yl45	T. muris	27	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000004.1	261025	A	G	125	0.961538	0.961538	yl45	T. muris	26	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	191448	A	G	107	1	1	yl31	F. plautii	25	Teichoic acid poly(glycerol phosphate) polymerase	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	229401	G	A	131	0.866667	0.866667	yl31	F. plautii	30	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	410313	G	A	147	0.961538	0.961538	yl31	F. plautii	26	Solute-binding protein	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	471181	C	T	130	0.846154	0.846154	yl31	F. plautii	26	Peptide chain release factor 3	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	912632	A	G	93	0.904762	0.904762	yl31	F. plautii	21	putative ATPase YjoB	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	1160549	T	C	102	0.92	0.92	yl31	F. plautii	25	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000002.1	120704	G	A	112	0.8	0.8	yl31	F. plautii	25	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000002.1	135429	T	C	160	0.966667	0.966667	yl31	F. plautii	30	CdaA regulatory protein CdaR	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000002.1	830765	C	T	90	0.793103	0.793103	yl31	F. plautii	29	Nuclease SbcCD subunit D	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000003.1	172560	T	C	118	0.958333	0.958333	yl31	F. plautii	24	GalNAc(5)-diNAcBac-PP-undecaprenol beta-1,3-glucosyltransferase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000001.1	788497	T	A	161	0.910891	0.910891	i48	B. caecimuris	101	Alpha-D-kanosaminyltransferase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000003.1	34364	C	A	2444	0.920956	0.920956	i48	B. caecimuris	544	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000003.1	254185	G	A	474	0.696774	0.696774	i48	B. caecimuris	465	Threonine--tRNA ligase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000003.1	571112	G	A	2419	0.910369	0.910369	i48	B. caecimuris	569	2-iminoacetate synthase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	122713	A	G	682	0.95082	0.95082	i48	B. caecimuris	183	Elongation factor 4	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	427330	C	A	125	0.736842	0.736842	i48	B. caecimuris	38	Biotin carboxylase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	431800	G	A	1211	0.900344	0.900344	i48	B. caecimuris	291	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	468118	G	T	628	0.952153	0.952153	i48	B. caecimuris	209	Stage III sporulation protein AE	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	492680	T	C	3915	0.915366	0.915366	i48	B. caecimuris	1217	Bacitracin export permease protein BceB	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	492688	T	C	4265	0.897233	0.897233	i48	B. caecimuris	1265	Bacitracin export permease protein BceB	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	492701	G	A	5128	0.943704	0.943704	i48	B. caecimuris	1350	Bacitracin export permease protein BceB	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000005.1	15927	T	C	343	0.490074	0.509926	i48	B. caecimuris	806	HTH-type transcriptional repressor YvoA	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000008.1	195581	G	A	453	0.508475	0.508475	i48	B. caecimuris	1121	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000009.1	2104	C	T	234	0.421658	0.578342	i48	B. caecimuris	1653	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000009.1	2239	G	A	327	0.460296	0.539704	i48	B. caecimuris	1486	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000009.1	2296	T	A	327	0.474201	0.525799	i48	B. caecimuris	1221	NA	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000013.1	40836	T	G	127	0.929825	0.929825	i48	B. caecimuris	57	Chloramphenicol acetyltransferase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000018.1	92	A	G	88	0.443914	0.556086	i48	B. caecimuris	419	NA	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000001.1	966520	C	T	169	0.536885	0.536885	yl32	C. clostridioforme	244	ATP-dependent DNA helicase RecG	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000001.1	967238	G	A	112	0.531401	0.531401	yl32	C. clostridioforme	207	ATP-dependent DNA helicase RecG	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000001.1	967544	G	A	210	0.668712	0.668712	yl32	C. clostridioforme	163	Chromosome partition protein Smc	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000001.1	967631	A	G	362	0.813953	0.813953	yl32	C. clostridioforme	129	Chromosome partition protein Smc	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000001.1	1265406	A	G	99	0.56383	0.56383	yl32	C. clostridioforme	282	Phosphoglucomutase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000001.1	1265525	C	T	522	0.844086	0.844086	yl32	C. clostridioforme	186	NA	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000002.1	546419	A	G	160	0.793478	0.793478	yl32	C. clostridioforme	92	Uracil-DNA glycosylase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000002.1	593116	G	C	87	0.916667	0.916667	yl32	C. clostridioforme	36	Inner membrane ABC transporter permease protein YdcV	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000002.1	593136	G	A	87	0.914286	0.914286	yl32	C. clostridioforme	35	Inner membrane ABC transporter permease protein YdcV	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000002.1	844485	C	T	677	0.949275	0.949275	yl32	C. clostridioforme	138	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000003.1	265570	G	A	106	0.5	0.5	yl32	C. clostridioforme	82	Glutathione transport system permease protein GsiD	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000004.1	50632	A	G	162	0.7375	0.7375	yl32	C. clostridioforme	160	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000004.1	50649	G	A	162	0.707602	0.707602	yl32	C. clostridioforme	171	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000004.1	330187	A	C	251	1	1	yl32	C. clostridioforme	53	Pyruvate synthase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000004.1	666847	A	G	107	0.440729	0.559271	yl32	C. clostridioforme	329	Multidrug resistance protein NorM	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000006.1	259179	A	T	174	0.632653	0.632653	yl32	C. clostridioforme	147	Glutamyl aminopeptidase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000006.1	259192	A	T	121	0.570423	0.570423	yl32	C. clostridioforme	142	Glutamyl aminopeptidase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000006.1	259252	A	G	116	0.575581	0.575581	yl32	C. clostridioforme	172	Glutamyl aminopeptidase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000009.1	140143	A	C	210	0.818965	0.818965	yl32	C. clostridioforme	116	Toxin A	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000009.1	140144	A	T	221	0.793103	0.793103	yl32	C. clostridioforme	116	Toxin A	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000009.1	140151	C	A	203	0.793103	0.793103	yl32	C. clostridioforme	116	Toxin A	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000011.1	51402	G	A	104	0.694444	0.694444	yl32	C. clostridioforme	144	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000011.1	82248	A	T	413	0.886598	0.886598	yl32	C. clostridioforme	97	NA	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000011.1	82310	T	G	246	0.982759	0.982759	yl32	C. clostridioforme	58	NA	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000011.1	91092	G	C	175	0.746575	0.746575	yl32	C. clostridioforme	146	NA	40	1	FALSE	40 OMM mix	1
+1750	CP021420.1	1311650	G	A	173	0.498715	0.501285	yl44	A. muciniphila	389	NA	40	1	FALSE	40 OMM mix	1
+1750	CP021421.1	47829	T	G	97	0.807692	0.807692	yl27	M. intestinale	104	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	40	1	FALSE	40 OMM mix	1
+1750	CP021421.1	47859	A	G	285	0.87234	0.87234	yl27	M. intestinale	141	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	40	1	FALSE	40 OMM mix	1
+1750	CP021421.1	155759	G	T	546	0.938596	0.938596	yl27	M. intestinale	114	UDP-galactopyranose mutase	40	1	FALSE	40 OMM mix	1
+1750	CP021421.1	1967661	C	T	105	0.595506	0.595506	yl27	M. intestinale	89	NA	40	1	FALSE	40 OMM mix	1
+1750	CP022713.1	2789404	A	G	378	0.827586	0.827586	yl58	B. coccoides	116	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	40	1	FALSE	40 OMM mix	1
+1750	CP022713.1	4971268	A	G	202	0.980392	0.980392	yl58	B. coccoides	51	16S ribosomal RNA	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000002.1	6098	G	A	118	0.814815	0.814815	yl45	T. muris	27	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000002.1	21544	G	A	131	0.870968	0.870968	yl45	T. muris	31	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000002.1	98612	G	A	94	0.821429	0.821429	yl45	T. muris	28	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000004.1	17498	C	T	101	1	1	yl45	T. muris	22	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000004.1	37370	A	G	193	0.972222	0.972222	yl45	T. muris	36	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	65465	C	T	143	0.935484	0.935484	yl45	T. muris	31	putative response regulatory protein	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	65704	C	T	141	0.931035	0.931035	yl45	T. muris	29	putative response regulatory protein	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	77724	A	G	153	0.962963	0.962963	yl45	T. muris	27	Beta-xylosidase	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	131139	A	T	128	0.9	0.9	yl45	T. muris	30	ATP-dependent RecD-like DNA helicase	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	134382	A	G	149	0.9	0.9	yl45	T. muris	30	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000001.1	210221	G	A	125	0.442563	0.557437	i48	B. caecimuris	827	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000001.1	575210	C	A	579	0.603774	0.603774	i48	B. caecimuris	583	NADP-reducing hydrogenase subunit HndD	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000001.1	787709	C	T	103	0.449688	0.550312	i48	B. caecimuris	1123	Alpha-D-kanosaminyltransferase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000001.1	787990	G	C	857	0.597454	0.597454	i48	B. caecimuris	1257	Alpha-D-kanosaminyltransferase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000001.1	788497	T	A	195	0.90991	0.90991	i48	B. caecimuris	111	Alpha-D-kanosaminyltransferase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000002.1	232775	C	T	599	0.898625	0.898625	i48	B. caecimuris	582	UDP-N-acetylmuramoylalanine--D-glutamate ligase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000002.1	401340	G	T	301	0.545627	0.545627	i48	B. caecimuris	526	Beta-L-arabinobiosidase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000003.1	174484	C	T	620	0.645923	0.645923	i48	B. caecimuris	466	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000003.1	254185	G	A	476	0.728682	0.728682	i48	B. caecimuris	387	Threonine--tRNA ligase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	122713	A	G	667	0.965714	0.965714	i48	B. caecimuris	175	Elongation factor 4	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	431800	G	A	1054	0.939024	0.939024	i48	B. caecimuris	246	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	468118	G	T	554	0.925287	0.925287	i48	B. caecimuris	174	Stage III sporulation protein AE	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	492680	T	C	3288	0.904624	0.904624	i48	B. caecimuris	1038	Bacitracin export permease protein BceB	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	492688	T	C	3364	0.892322	0.892322	i48	B. caecimuris	1068	Bacitracin export permease protein BceB	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	492701	G	A	4013	0.933155	0.933155	i48	B. caecimuris	1122	Bacitracin export permease protein BceB	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	544661	G	A	647	0.903553	0.903553	i48	B. caecimuris	591	Sensor histidine kinase ResE	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000008.1	195581	G	A	384	0.513742	0.513742	i48	B. caecimuris	946	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000009.1	2104	C	T	125	0.404115	0.595885	i48	B. caecimuris	1361	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000009.1	2239	G	A	325	0.481356	0.518644	i48	B. caecimuris	1180	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000009.1	2296	T	A	238	0.459406	0.540594	i48	B. caecimuris	1010	NA	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000018.1	92	A	G	99	0.470948	0.529052	i48	B. caecimuris	327	NA	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	966520	C	T	142	0.471125	0.528875	yl32	C. clostridioforme	329	ATP-dependent DNA helicase RecG	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	966796	G	A	131	0.5	0.5	yl32	C. clostridioforme	282	ATP-dependent DNA helicase RecG	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	966802	G	A	141	0.516364	0.516364	yl32	C. clostridioforme	275	ATP-dependent DNA helicase RecG	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	967544	G	A	323	0.665179	0.665179	yl32	C. clostridioforme	224	Chromosome partition protein Smc	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	967631	A	G	444	0.791907	0.791907	yl32	C. clostridioforme	173	Chromosome partition protein Smc	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	1265406	A	G	93	0.562682	0.562682	yl32	C. clostridioforme	343	Phosphoglucomutase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	1265525	C	T	624	0.861004	0.861004	yl32	C. clostridioforme	259	NA	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000002.1	546419	A	G	201	0.775148	0.775148	yl32	C. clostridioforme	169	Uracil-DNA glycosylase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000002.1	593116	G	C	170	0.957447	0.957447	yl32	C. clostridioforme	47	Inner membrane ABC transporter permease protein YdcV	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000002.1	596611	G	T	149	0.916667	0.916667	yl32	C. clostridioforme	36	NA	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000002.1	844485	C	T	1008	0.979592	0.979592	yl32	C. clostridioforme	196	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000004.1	330187	A	C	282	0.955224	0.955224	yl32	C. clostridioforme	67	Pyruvate synthase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000004.1	666847	A	G	137	0.420323	0.579677	yl32	C. clostridioforme	433	Multidrug resistance protein NorM	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000006.1	259179	A	T	450	0.734127	0.734127	yl32	C. clostridioforme	252	Glutamyl aminopeptidase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000006.1	259192	A	T	406	0.731225	0.731225	yl32	C. clostridioforme	253	Glutamyl aminopeptidase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000006.1	259252	A	G	313	0.689655	0.689655	yl32	C. clostridioforme	261	Glutamyl aminopeptidase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000007.1	22900	G	A	91	0.897436	0.897436	yl32	C. clostridioforme	39	NA	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000008.1	319809	C	T	216	0.77037	0.77037	yl32	C. clostridioforme	270	HTH-type transcriptional regulator MhqR	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000009.1	140151	C	A	91	0.659091	0.659091	yl32	C. clostridioforme	176	Toxin A	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	51402	G	A	249	0.757447	0.757447	yl32	C. clostridioforme	235	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	63431	A	G	104	0.702247	0.702247	yl32	C. clostridioforme	178	Sensor histidine kinase BtsS	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	82248	A	T	537	0.972973	0.972973	yl32	C. clostridioforme	111	NA	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	82310	T	G	259	0.95	0.95	yl32	C. clostridioforme	60	NA	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	91035	G	A	93	0.706215	0.706215	yl32	C. clostridioforme	177	NA	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	91092	G	C	195	0.748634	0.748634	yl32	C. clostridioforme	183	NA	40	1	FALSE	40 OMM mix	1
+1779	CP021420.1	1142942	G	A	288	0.557522	0.557522	yl44	A. muciniphila	452	L-methionine gamma-lyase	80	1	FALSE	80 OMM mix	1
+1779	CP021420.1	2243761	C	A	272	0.542056	0.542056	yl44	A. muciniphila	428	Signal transduction histidine-protein kinase BaeS	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	47859	A	G	210	0.828125	0.828125	yl27	M. intestinale	128	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	155759	G	T	811	0.949438	0.949438	yl27	M. intestinale	178	UDP-galactopyranose mutase	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	812807	T	C	624	0.974359	0.974359	yl27	M. intestinale	117	Glucose-1-phosphate thymidylyltransferase	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	1190269	A	C	569	0.966667	0.966667	yl27	M. intestinale	120	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	1967398	G	T	414	0.888889	0.888889	yl27	M. intestinale	99	NA	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	2043096	C	T	560	0.891304	0.891304	yl27	M. intestinale	138	NA	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	2875077	T	C	100	0.909091	0.909091	yl27	M. intestinale	66	Beta-galactosidase	80	1	FALSE	80 OMM mix	1
+1779	CP022713.1	2789404	A	G	245	0.898305	0.898305	yl58	B. coccoides	59	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	80	1	FALSE	80 OMM mix	1
+1779	CP022713.1	4259722	G	A	1979	0.822397	0.822397	yl58	B. coccoides	1143	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000004.1	37370	A	G	108	0.909091	0.909091	yl45	T. muris	22	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000005.1	77724	A	G	148	0.9375	0.9375	yl45	T. muris	32	Beta-xylosidase	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000005.1	134382	A	G	152	1	1	yl45	T. muris	29	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000007.1	95549	A	T	135	0.852941	0.852941	yl45	T. muris	34	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000007.1	95558	C	A	158	0.967742	0.967742	yl45	T. muris	31	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	191448	A	G	94	0.95	0.95	yl31	F. plautii	20	Teichoic acid poly(glycerol phosphate) polymerase	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	229401	G	A	167	0.941176	0.941176	yl31	F. plautii	34	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	410313	G	A	142	0.828571	0.828571	yl31	F. plautii	35	Solute-binding protein	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	471181	C	T	179	0.939394	0.939394	yl31	F. plautii	33	Peptide chain release factor 3	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	473372	T	C	128	0.964286	0.964286	yl31	F. plautii	28	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	521032	T	C	96	0.954545	0.954545	yl31	F. plautii	22	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	912632	A	G	131	1	1	yl31	F. plautii	25	putative ATPase YjoB	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000002.1	135429	T	C	164	0.967742	0.967742	yl31	F. plautii	31	CdaA regulatory protein CdaR	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000001.1	210221	G	A	145	0.441149	0.558851	i48	B. caecimuris	1079	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000001.1	787990	G	C	292	0.501162	0.501162	i48	B. caecimuris	1291	Alpha-D-kanosaminyltransferase	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000001.1	788497	T	A	183	0.875	0.875	i48	B. caecimuris	120	Alpha-D-kanosaminyltransferase	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000003.1	254185	G	A	501	0.69606	0.69606	i48	B. caecimuris	533	Threonine--tRNA ligase	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000004.1	122713	A	G	931	0.944882	0.944882	i48	B. caecimuris	254	Elongation factor 4	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000004.1	431800	G	A	1321	0.869186	0.869186	i48	B. caecimuris	344	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000004.1	468118	G	T	801	0.92803	0.92803	i48	B. caecimuris	264	Stage III sporulation protein AE	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000004.1	492680	T	C	4410	0.896065	0.896065	i48	B. caecimuris	1347	Bacitracin export permease protein BceB	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000004.1	492688	T	C	4706	0.894321	0.894321	i48	B. caecimuris	1391	Bacitracin export permease protein BceB	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000004.1	492701	G	A	5360	0.934014	0.934014	i48	B. caecimuris	1470	Bacitracin export permease protein BceB	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000005.1	15927	T	C	567	0.534002	0.534002	i48	B. caecimuris	897	HTH-type transcriptional repressor YvoA	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000008.1	195581	G	A	517	0.525984	0.525984	i48	B. caecimuris	1270	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000009.1	2104	C	T	120	0.399755	0.600245	i48	B. caecimuris	1631	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000009.1	2239	G	A	492	0.494565	0.505435	i48	B. caecimuris	1472	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000009.1	2296	T	A	136	0.416667	0.583333	i48	B. caecimuris	1236	NA	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000013.1	40836	T	G	89	0.837209	0.837209	i48	B. caecimuris	43	Chloramphenicol acetyltransferase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000001.1	967631	A	G	159	0.746032	0.746032	yl32	C. clostridioforme	63	Chromosome partition protein Smc	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000001.1	1265406	A	G	113	0.635135	0.635135	yl32	C. clostridioforme	148	Phosphoglucomutase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000001.1	1265525	C	T	350	0.904762	0.904762	yl32	C. clostridioforme	105	NA	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000002.1	593116	G	C	101	0.931035	0.931035	yl32	C. clostridioforme	29	Inner membrane ABC transporter permease protein YdcV	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000002.1	844485	C	T	458	0.9	0.9	yl32	C. clostridioforme	100	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000004.1	330187	A	C	114	1	1	yl32	C. clostridioforme	28	Pyruvate synthase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000006.1	259179	A	T	160	0.660377	0.660377	yl32	C. clostridioforme	106	Glutamyl aminopeptidase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000006.1	259192	A	T	156	0.660194	0.660194	yl32	C. clostridioforme	103	Glutamyl aminopeptidase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000006.1	259252	A	G	105	0.64	0.64	yl32	C. clostridioforme	100	Glutamyl aminopeptidase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000009.1	140143	A	C	130	0.744898	0.744898	yl32	C. clostridioforme	98	Toxin A	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000009.1	140144	A	T	121	0.741935	0.741935	yl32	C. clostridioforme	93	Toxin A	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000009.1	140151	C	A	112	0.75	0.75	yl32	C. clostridioforme	100	Toxin A	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000011.1	51402	G	A	113	0.794521	0.794521	yl32	C. clostridioforme	73	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000011.1	82248	A	T	288	0.95082	0.95082	yl32	C. clostridioforme	61	NA	80	1	FALSE	80 OMM mix	1
+1789	CP021421.1	47829	T	G	132	0.814516	0.814516	yl27	M. intestinale	124	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	80	2	FALSE	2nd generation	1
+1789	CP021421.1	47859	A	G	312	0.841463	0.841463	yl27	M. intestinale	164	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	80	2	FALSE	2nd generation	1
+1789	CP021421.1	155759	G	T	923	0.978947	0.978947	yl27	M. intestinale	190	UDP-galactopyranose mutase	80	2	FALSE	2nd generation	1
+1789	CP021421.1	1967661	C	T	455	0.898148	0.898148	yl27	M. intestinale	108	NA	80	2	FALSE	2nd generation	1
+1789	CP021421.1	2043096	C	T	401	0.783784	0.783784	yl27	M. intestinale	148	NA	80	2	FALSE	2nd generation	1
+1789	CP021421.1	2790187	T	C	117	0.895833	0.895833	yl27	M. intestinale	96	TelA-like protein	80	2	FALSE	2nd generation	1
+1789	CP022713.1	2464482	A	T	112	0.649038	0.649038	yl58	B. coccoides	208	Group II intron-encoded protein LtrA	80	2	FALSE	2nd generation	1
+1789	CP022713.1	2789404	A	G	929	0.964103	0.964103	yl58	B. coccoides	195	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	80	2	FALSE	2nd generation	1
+1789	CP022713.1	4971268	A	G	297	0.951219	0.951219	yl58	B. coccoides	82	16S ribosomal RNA	80	2	FALSE	2nd generation	1
+1789	CP022722.1	1873415	T	A	123	0.884615	0.884615	i46	C. innocuum	26	NA	80	2	FALSE	2nd generation	1
+1789	NHMP01000004.1	37370	A	G	163	0.941176	0.941176	yl45	T. muris	34	NA	80	2	FALSE	2nd generation	1
+1789	NHMP01000005.1	77724	A	G	281	0.94	0.94	yl45	T. muris	50	Beta-xylosidase	80	2	FALSE	2nd generation	1
+1789	NHMP01000005.1	134382	A	G	184	0.941176	0.941176	yl45	T. muris	34	NA	80	2	FALSE	2nd generation	1
+1789	NHMP01000007.1	95549	A	T	95	0.923077	0.923077	yl45	T. muris	26	NA	80	2	FALSE	2nd generation	1
+1789	NHMP01000007.1	95558	C	A	107	0.96	0.96	yl45	T. muris	25	NA	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	191448	A	G	113	1	1	yl31	F. plautii	20	Teichoic acid poly(glycerol phosphate) polymerase	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	216574	T	C	158	0.942857	0.942857	yl31	F. plautii	35	putative dual-specificity RNA methyltransferase RlmN	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	229401	G	A	113	0.913043	0.913043	yl31	F. plautii	23	NA	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	410313	G	A	143	1	1	yl31	F. plautii	26	Solute-binding protein	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	471181	C	T	93	0.888889	0.888889	yl31	F. plautii	18	Peptide chain release factor 3	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	473372	T	C	148	1	1	yl31	F. plautii	29	NA	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	493779	A	G	87	1	1	yl31	F. plautii	16	Bacitracin export permease protein BceB	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	912632	A	G	110	0.954545	0.954545	yl31	F. plautii	22	putative ATPase YjoB	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	120704	G	A	89	0.818182	0.818182	yl31	F. plautii	33	NA	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	135429	T	C	109	1	1	yl31	F. plautii	19	CdaA regulatory protein CdaR	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	670299	C	T	143	0.888889	0.888889	yl31	F. plautii	27	NA	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	700650	T	C	105	0.866667	0.866667	yl31	F. plautii	30	NA	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	845289	A	G	89	0.947368	0.947368	yl31	F. plautii	19	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	80	2	FALSE	2nd generation	1
+1789	NHMQ01000003.1	562986	A	G	123	1	1	yl31	F. plautii	24	Dihydroxy-acid dehydratase	80	2	FALSE	2nd generation	1
+1789	NHMR02000001.1	315647	G	A	119	0.875	0.875	yl2	B. longum	24	Ribonucleoside-diphosphate reductase 1 subunit alpha	80	2	FALSE	2nd generation	1
+1789	NHMR02000001.1	879280	C	A	118	0.814815	0.814815	yl2	B. longum	27	Uroporphyrinogen-III C-methyltransferase	80	2	FALSE	2nd generation	1
+1789	NHMR02000002.1	480137	C	T	203	0.928571	0.928571	yl2	B. longum	42	NAD kinase	80	2	FALSE	2nd generation	1
+1789	NHMT01000001.1	495442	T	C	95	0.862069	0.862069	i49	L. reuteri	29	Protein RecA	80	2	FALSE	2nd generation	1
+1789	NHMU01000001.1	787709	C	T	347	0.483589	0.516411	i48	B. caecimuris	1371	Alpha-D-kanosaminyltransferase	80	2	FALSE	2nd generation	1
+1789	NHMU01000001.1	787990	G	C	1157	0.603206	0.603206	i48	B. caecimuris	1497	Alpha-D-kanosaminyltransferase	80	2	FALSE	2nd generation	1
+1789	NHMU01000001.1	788497	T	A	235	0.901639	0.901639	i48	B. caecimuris	122	Alpha-D-kanosaminyltransferase	80	2	FALSE	2nd generation	1
+1789	NHMU01000003.1	254185	G	A	564	0.710891	0.710891	i48	B. caecimuris	505	Threonine--tRNA ligase	80	2	FALSE	2nd generation	1
+1789	NHMU01000003.1	413689	C	A	481	0.581616	0.581616	i48	B. caecimuris	631	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	122713	A	G	973	0.937255	0.937255	i48	B. caecimuris	255	Elongation factor 4	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	300219	C	A	502	0.542811	0.542811	i48	B. caecimuris	619	NA	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	431800	G	A	1650	0.908602	0.908602	i48	B. caecimuris	372	NA	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	468118	G	T	753	0.956693	0.956693	i48	B. caecimuris	254	Stage III sporulation protein AE	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	492680	T	C	4299	0.921494	0.921494	i48	B. caecimuris	1312	Bacitracin export permease protein BceB	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	492688	T	C	4665	0.899628	0.899628	i48	B. caecimuris	1345	Bacitracin export permease protein BceB	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	492701	G	A	5354	0.93679	0.93679	i48	B. caecimuris	1408	Bacitracin export permease protein BceB	80	2	FALSE	2nd generation	1
+1789	NHMU01000005.1	15927	T	C	103	0.385613	0.614387	i48	B. caecimuris	848	HTH-type transcriptional repressor YvoA	80	2	FALSE	2nd generation	1
+1789	NHMU01000005.1	190292	G	T	376	0.506494	0.506494	i48	B. caecimuris	770	Teichoic acid poly(glycerol phosphate) polymerase	80	2	FALSE	2nd generation	1
+1789	NHMU01000008.1	195581	G	A	432	0.508385	0.508385	i48	B. caecimuris	1133	NA	80	2	FALSE	2nd generation	1
+1789	NHMU01000009.1	2104	C	T	197	0.413325	0.586675	i48	B. caecimuris	1696	NA	80	2	FALSE	2nd generation	1
+1789	NHMU01000009.1	2239	G	A	408	0.477019	0.522981	i48	B. caecimuris	1436	NA	80	2	FALSE	2nd generation	1
+1789	NHMU01000009.1	2296	T	A	443	0.480099	0.519901	i48	B. caecimuris	1206	NA	80	2	FALSE	2nd generation	1
+1789	NHMU01000009.1	170099	C	A	190	0.429399	0.570601	i48	B. caecimuris	1381	Ubiquinone biosynthesis O-methyltransferase	80	2	FALSE	2nd generation	1
+1789	NHMU01000013.1	40836	T	G	114	0.914894	0.914894	i48	B. caecimuris	47	Chloramphenicol acetyltransferase	80	2	FALSE	2nd generation	1
+1789	NHMU01000018.1	92	A	G	183	0.504608	0.504608	i48	B. caecimuris	434	NA	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	966796	G	A	143	0.521127	0.521127	yl32	C. clostridioforme	213	ATP-dependent DNA helicase RecG	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	966802	G	A	127	0.526066	0.526066	yl32	C. clostridioforme	211	ATP-dependent DNA helicase RecG	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	967238	G	A	125	0.551546	0.551546	yl32	C. clostridioforme	194	ATP-dependent DNA helicase RecG	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	967544	G	A	278	0.696203	0.696203	yl32	C. clostridioforme	158	Chromosome partition protein Smc	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	967631	A	G	351	0.818182	0.818182	yl32	C. clostridioforme	121	Chromosome partition protein Smc	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	1265406	A	G	140	0.619835	0.619835	yl32	C. clostridioforme	242	Phosphoglucomutase	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	1265525	C	T	451	0.869318	0.869318	yl32	C. clostridioforme	176	NA	80	2	FALSE	2nd generation	1
+1789	NHTR01000002.1	546419	A	G	237	0.829457	0.829457	yl32	C. clostridioforme	129	Uracil-DNA glycosylase	80	2	FALSE	2nd generation	1
+1789	NHTR01000002.1	596611	G	T	160	0.825	0.825	yl32	C. clostridioforme	40	NA	80	2	FALSE	2nd generation	1
+1789	NHTR01000002.1	844485	C	T	654	0.947761	0.947761	yl32	C. clostridioforme	134	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	80	2	FALSE	2nd generation	1
+1789	NHTR01000004.1	50649	G	A	99	0.694656	0.694656	yl32	C. clostridioforme	131	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	80	2	FALSE	2nd generation	1
+1789	NHTR01000004.1	330187	A	C	277	0.969697	0.969697	yl32	C. clostridioforme	66	Pyruvate synthase	80	2	FALSE	2nd generation	1
+1789	NHTR01000004.1	666847	A	G	151	0.467085	0.532915	yl32	C. clostridioforme	319	Multidrug resistance protein NorM	80	2	FALSE	2nd generation	1
+1789	NHTR01000006.1	259179	A	T	214	0.644172	0.644172	yl32	C. clostridioforme	163	Glutamyl aminopeptidase	80	2	FALSE	2nd generation	1
+1789	NHTR01000006.1	259192	A	T	194	0.623457	0.623457	yl32	C. clostridioforme	162	Glutamyl aminopeptidase	80	2	FALSE	2nd generation	1
+1789	NHTR01000006.1	259252	A	G	134	0.582418	0.582418	yl32	C. clostridioforme	182	Glutamyl aminopeptidase	80	2	FALSE	2nd generation	1
+1789	NHTR01000009.1	140143	A	C	253	0.764706	0.764706	yl32	C. clostridioforme	153	Toxin A	80	2	FALSE	2nd generation	1
+1789	NHTR01000009.1	140144	A	T	225	0.756579	0.756579	yl32	C. clostridioforme	152	Toxin A	80	2	FALSE	2nd generation	1
+1789	NHTR01000009.1	140151	C	A	242	0.75	0.75	yl32	C. clostridioforme	152	Toxin A	80	2	FALSE	2nd generation	1
+1789	NHTR01000011.1	51402	G	A	125	0.719008	0.719008	yl32	C. clostridioforme	121	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	80	2	FALSE	2nd generation	1
+1789	NHTR01000011.1	82248	A	T	382	0.91358	0.91358	yl32	C. clostridioforme	81	NA	80	2	FALSE	2nd generation	1
+1807	CP021421.1	47859	A	G	204	0.823944	0.823944	yl27	M. intestinale	142	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	155759	G	T	681	0.936306	0.936306	yl27	M. intestinale	157	UDP-galactopyranose mutase	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	1190269	A	C	700	0.964789	0.964789	yl27	M. intestinale	142	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	1917169	G	A	103	0.580357	0.580357	yl27	M. intestinale	112	NA	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	3080054	T	C	144	0.623932	0.623932	yl27	M. intestinale	117	Sensor histidine kinase BtsS	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	3284534	A	C	369	0.887755	0.887755	yl27	M. intestinale	98	UDP-N-acetylmuramate--L-alanine ligase	40	2	FALSE	40 cecal content	1
+1807	CP022713.1	2789404	A	G	149	1	1	yl58	B. coccoides	25	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	40	2	FALSE	40 cecal content	1
+1807	NHMP01000004.1	37370	A	G	112	0.954545	0.954545	yl45	T. muris	22	NA	40	2	FALSE	40 cecal content	1
+1807	NHMP01000005.1	77724	A	G	137	0.92	0.92	yl45	T. muris	25	Beta-xylosidase	40	2	FALSE	40 cecal content	1
+1807	NHMP01000005.1	134382	A	G	165	0.903226	0.903226	yl45	T. muris	31	NA	40	2	FALSE	40 cecal content	1
+1807	NHMP01000007.1	95549	A	T	103	0.821429	0.821429	yl45	T. muris	28	NA	40	2	FALSE	40 cecal content	1
+1807	NHMP01000007.1	95558	C	A	103	0.96	0.96	yl45	T. muris	25	NA	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000001.1	229401	G	A	119	0.913043	0.913043	yl31	F. plautii	23	NA	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000001.1	410313	G	A	132	0.96	0.96	yl31	F. plautii	25	Solute-binding protein	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000001.1	473372	T	C	137	1	1	yl31	F. plautii	24	NA	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000001.1	521032	T	C	88	0.944444	0.944444	yl31	F. plautii	18	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000002.1	120704	G	A	143	0.961538	0.961538	yl31	F. plautii	26	NA	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000002.1	372947	C	T	123	0.956522	0.956522	yl31	F. plautii	23	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000001.1	787709	C	T	183	0.449418	0.550582	i48	B. caecimuris	1631	Alpha-D-kanosaminyltransferase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000001.1	787990	G	C	1017	0.567582	0.567582	i48	B. caecimuris	1820	Alpha-D-kanosaminyltransferase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000001.1	788497	T	A	251	0.92053	0.92053	i48	B. caecimuris	151	Alpha-D-kanosaminyltransferase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000003.1	254185	G	A	593	0.724719	0.724719	i48	B. caecimuris	534	Threonine--tRNA ligase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000003.1	413689	C	A	1042	0.690638	0.690638	i48	B. caecimuris	737	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	122713	A	G	1061	0.951389	0.951389	i48	B. caecimuris	288	Elongation factor 4	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	300219	C	A	1004	0.648571	0.648571	i48	B. caecimuris	700	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	431800	G	A	1602	0.902632	0.902632	i48	B. caecimuris	380	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	468118	G	T	836	0.929293	0.929293	i48	B. caecimuris	297	Stage III sporulation protein AE	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	492680	T	C	5338	0.91507	0.91507	i48	B. caecimuris	1566	Bacitracin export permease protein BceB	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	492688	T	C	5535	0.904762	0.904762	i48	B. caecimuris	1617	Bacitracin export permease protein BceB	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	492701	G	A	6436	0.948992	0.948992	i48	B. caecimuris	1686	Bacitracin export permease protein BceB	40	2	FALSE	40 cecal content	1
+1807	NHMU01000005.1	190292	G	T	891	0.629131	0.629131	i48	B. caecimuris	817	Teichoic acid poly(glycerol phosphate) polymerase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000005.1	334549	G	T	88	0.88	0.88	i48	B. caecimuris	25	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000008.1	195581	G	A	585	0.528932	0.528932	i48	B. caecimuris	1348	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000009.1	2104	C	T	353	0.418812	0.581188	i48	B. caecimuris	2020	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000009.1	2239	G	A	294	0.437672	0.562328	i48	B. caecimuris	1821	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000009.1	2296	T	A	571	0.488095	0.511905	i48	B. caecimuris	1512	NA	40	2	FALSE	40 cecal content	1
+1807	NHMU01000013.1	40836	T	G	150	0.819672	0.819672	i48	B. caecimuris	61	Chloramphenicol acetyltransferase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000018.1	92	A	G	124	0.449248	0.550752	i48	B. caecimuris	532	NA	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	966520	C	T	166	0.522293	0.522293	yl32	C. clostridioforme	314	ATP-dependent DNA helicase RecG	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	966796	G	A	121	0.507576	0.507576	yl32	C. clostridioforme	264	ATP-dependent DNA helicase RecG	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	966802	G	A	124	0.494118	0.505882	yl32	C. clostridioforme	255	ATP-dependent DNA helicase RecG	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	967238	G	A	119	0.492366	0.507634	yl32	C. clostridioforme	262	ATP-dependent DNA helicase RecG	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	967544	G	A	288	0.679487	0.679487	yl32	C. clostridioforme	234	Chromosome partition protein Smc	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	967631	A	G	451	0.779006	0.779006	yl32	C. clostridioforme	181	Chromosome partition protein Smc	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	1265406	A	G	192	0.632075	0.632075	yl32	C. clostridioforme	318	Phosphoglucomutase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	1265525	C	T	825	0.918367	0.918367	yl32	C. clostridioforme	245	NA	40	2	FALSE	40 cecal content	1
+1807	NHTR01000002.1	546419	A	G	267	0.797619	0.797619	yl32	C. clostridioforme	168	Uracil-DNA glycosylase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000002.1	593116	G	C	120	0.977778	0.977778	yl32	C. clostridioforme	45	Inner membrane ABC transporter permease protein YdcV	40	2	FALSE	40 cecal content	1
+1807	NHTR01000002.1	596611	G	T	123	0.842105	0.842105	yl32	C. clostridioforme	38	NA	40	2	FALSE	40 cecal content	1
+1807	NHTR01000002.1	844485	C	T	824	0.957576	0.957576	yl32	C. clostridioforme	165	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000004.1	330187	A	C	335	0.963415	0.963415	yl32	C. clostridioforme	82	Pyruvate synthase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000004.1	666847	A	G	168	0.463415	0.536585	yl32	C. clostridioforme	410	Multidrug resistance protein NorM	40	2	FALSE	40 cecal content	1
+1807	NHTR01000006.1	259179	A	T	341	0.681614	0.681614	yl32	C. clostridioforme	223	Glutamyl aminopeptidase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000006.1	259192	A	T	276	0.660634	0.660634	yl32	C. clostridioforme	221	Glutamyl aminopeptidase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000006.1	259252	A	G	235	0.636364	0.636364	yl32	C. clostridioforme	242	Glutamyl aminopeptidase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000008.1	319809	C	T	113	0.706422	0.706422	yl32	C. clostridioforme	218	HTH-type transcriptional regulator MhqR	40	2	FALSE	40 cecal content	1
+1807	NHTR01000009.1	140143	A	C	258	0.775	0.775	yl32	C. clostridioforme	160	Toxin A	40	2	FALSE	40 cecal content	1
+1807	NHTR01000009.1	140144	A	T	258	0.751553	0.751553	yl32	C. clostridioforme	161	Toxin A	40	2	FALSE	40 cecal content	1
+1807	NHTR01000009.1	140151	C	A	233	0.766467	0.766467	yl32	C. clostridioforme	167	Toxin A	40	2	FALSE	40 cecal content	1
+1807	NHTR01000011.1	51402	G	A	192	0.728571	0.728571	yl32	C. clostridioforme	210	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000011.1	82248	A	T	497	0.961538	0.961538	yl32	C. clostridioforme	104	NA	40	2	FALSE	40 cecal content	1
+1807	NHTR01000011.1	91035	G	A	91	0.698324	0.698324	yl32	C. clostridioforme	179	NA	40	2	FALSE	40 cecal content	1
+1807	NHTR01000011.1	91092	G	C	92	0.717514	0.717514	yl32	C. clostridioforme	177	NA	40	2	FALSE	40 cecal content	1
+1885	CP021420.1	1142942	G	A	144	0.455206	0.544794	yl44	A. muciniphila	413	L-methionine gamma-lyase	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585150	C	T	128	0.413374	0.586626	yl44	A. muciniphila	658	NA	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585153	A	G	149	0.420647	0.579353	yl44	A. muciniphila	649	NA	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585192	T	G	157	0.434713	0.565287	yl44	A. muciniphila	628	NA	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585231	T	C	105	0.396411	0.603589	yl44	A. muciniphila	613	NA	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	2243230	C	T	230	0.517615	0.517615	yl44	A. muciniphila	369	NA	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	47859	A	G	206	0.724868	0.724868	yl27	M. intestinale	189	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	155759	G	T	1797	0.977012	0.977012	yl27	M. intestinale	348	UDP-galactopyranose mutase	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	155829	C	A	157	0.969697	0.969697	yl27	M. intestinale	33	UDP-galactopyranose mutase	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	1190269	A	C	864	0.957576	0.957576	yl27	M. intestinale	165	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	1917169	G	A	218	0.639706	0.639706	yl27	M. intestinale	136	NA	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	1967398	G	T	164	0.655462	0.655462	yl27	M. intestinale	119	NA	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	3080054	T	C	122	0.61165	0.61165	yl27	M. intestinale	103	Sensor histidine kinase BtsS	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	3284534	A	C	264	0.761905	0.761905	yl27	M. intestinale	105	UDP-N-acetylmuramate--L-alanine ligase	20	2	FALSE	20 cecal content	1
+1885	CP022713.1	2789404	A	G	131	1	1	yl58	B. coccoides	22	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	20	2	FALSE	20 cecal content	1
+1885	NHMP01000002.1	6098	G	A	204	0.849057	0.849057	yl45	T. muris	53	NA	20	2	FALSE	20 cecal content	1
+1885	NHMP01000002.1	98612	G	A	190	0.902439	0.902439	yl45	T. muris	41	NA	20	2	FALSE	20 cecal content	1
+1885	NHMP01000004.1	17498	C	T	132	0.911765	0.911765	yl45	T. muris	34	NA	20	2	FALSE	20 cecal content	1
+1885	NHMP01000004.1	37370	A	G	226	0.95	0.95	yl45	T. muris	40	NA	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	65465	C	T	173	0.894737	0.894737	yl45	T. muris	38	putative response regulatory protein	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	65704	C	T	107	0.775	0.775	yl45	T. muris	40	putative response regulatory protein	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	77724	A	G	201	1	1	yl45	T. muris	35	Beta-xylosidase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	131139	A	T	165	0.880952	0.880952	yl45	T. muris	42	ATP-dependent RecD-like DNA helicase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	134382	A	G	215	0.97619	0.97619	yl45	T. muris	42	NA	20	2	FALSE	20 cecal content	1
+1885	NHMP01000007.1	95549	A	T	240	0.895833	0.895833	yl45	T. muris	48	NA	20	2	FALSE	20 cecal content	1
+1885	NHMP01000007.1	95558	C	A	245	0.957447	0.957447	yl45	T. muris	47	NA	20	2	FALSE	20 cecal content	1
+1885	NHMP01000012.1	44058	A	G	91	0.685185	0.685185	yl45	T. muris	54	UDP-glucose 6-dehydrogenase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000012.1	44822	T	G	136	0.671053	0.671053	yl45	T. muris	76	UDP-glucose 6-dehydrogenase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000012.1	44833	C	G	114	0.658228	0.658228	yl45	T. muris	79	UDP-glucose 6-dehydrogenase	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	191448	A	G	101	1	1	yl31	F. plautii	18	Teichoic acid poly(glycerol phosphate) polymerase	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	229401	G	A	184	0.970588	0.970588	yl31	F. plautii	34	NA	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	410313	G	A	161	1	1	yl31	F. plautii	28	Solute-binding protein	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	471181	C	T	177	0.882353	0.882353	yl31	F. plautii	34	Peptide chain release factor 3	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	473372	T	C	107	1	1	yl31	F. plautii	19	NA	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	521032	T	C	137	1	1	yl31	F. plautii	23	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	912632	A	G	110	0.875	0.875	yl31	F. plautii	24	putative ATPase YjoB	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000002.1	120704	G	A	185	1	1	yl31	F. plautii	32	NA	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000002.1	372947	C	T	125	0.958333	0.958333	yl31	F. plautii	24	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000001.1	749402	G	A	194	0.399015	0.600985	i48	B. caecimuris	1624	DNA polymerase I	20	2	FALSE	20 cecal content	1
+1885	NHMU01000001.1	787425	G	A	454	0.544198	0.544198	i48	B. caecimuris	2025	Alpha-D-kanosaminyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000001.1	787709	C	T	418	0.470101	0.529899	i48	B. caecimuris	1689	Alpha-D-kanosaminyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000001.1	787990	G	C	2396	0.613211	0.613211	i48	B. caecimuris	2407	Alpha-D-kanosaminyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000001.1	788497	T	A	119	0.893333	0.893333	i48	B. caecimuris	75	Alpha-D-kanosaminyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000003.1	165873	G	A	219	0.463002	0.536998	i48	B. caecimuris	1419	Teichoic acids export ATP-binding protein TagH	20	2	FALSE	20 cecal content	1
+1885	NHMU01000003.1	165881	A	G	119	0.45944	0.54056	i48	B. caecimuris	1356	Teichoic acids export ATP-binding protein TagH	20	2	FALSE	20 cecal content	1
+1885	NHMU01000003.1	413689	C	A	2696	0.856784	0.856784	i48	B. caecimuris	796	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	122713	A	G	359	0.927083	0.927083	i48	B. caecimuris	96	Elongation factor 4	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	300219	C	A	3138	0.852315	0.852315	i48	B. caecimuris	799	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	431800	G	A	779	0.888889	0.888889	i48	B. caecimuris	180	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	468118	G	T	864	0.957854	0.957854	i48	B. caecimuris	261	Stage III sporulation protein AE	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	492680	T	C	7757	0.934451	0.934451	i48	B. caecimuris	1968	Bacitracin export permease protein BceB	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	492688	T	C	7834	0.92266	0.92266	i48	B. caecimuris	2030	Bacitracin export permease protein BceB	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	492701	G	A	9206	0.962759	0.962759	i48	B. caecimuris	2175	Bacitracin export permease protein BceB	20	2	FALSE	20 cecal content	1
+1885	NHMU01000005.1	190292	G	T	958	0.603666	0.603666	i48	B. caecimuris	873	Teichoic acid poly(glycerol phosphate) polymerase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	195142	A	G	480	0.432409	0.567591	i48	B. caecimuris	2345	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	195145	C	G	458	0.427831	0.572169	i48	B. caecimuris	2314	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	195262	T	C	253	0.391744	0.608256	i48	B. caecimuris	2277	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	195581	G	A	375	0.501974	0.501974	i48	B. caecimuris	1520	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	196605	T	C	187	0.397902	0.602098	i48	B. caecimuris	1239	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	527	T	C	124	0.486305	0.513695	i48	B. caecimuris	1789	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1085	C	T	555	0.460486	0.539514	i48	B. caecimuris	1974	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1521	T	C	212	0.416127	0.583873	i48	B. caecimuris	1389	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1525	C	T	248	0.443255	0.556745	i48	B. caecimuris	1401	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1540	C	G	221	0.441328	0.558672	i48	B. caecimuris	1355	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1542	C	T	225	0.442889	0.557111	i48	B. caecimuris	1357	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	2005	A	G	136	0.411177	0.588823	i48	B. caecimuris	2201	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	2038	C	A	259	0.426251	0.573749	i48	B. caecimuris	2278	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	2104	C	T	692	0.45121	0.54879	i48	B. caecimuris	2480	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	2239	G	A	330	0.423354	0.576646	i48	B. caecimuris	2081	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	2296	T	A	572	0.492894	0.507106	i48	B. caecimuris	1548	NA	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	170099	C	A	1574	0.572063	0.572063	i48	B. caecimuris	2026	Ubiquinone biosynthesis O-methyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	170125	A	G	766	0.498567	0.501433	i48	B. caecimuris	1745	Ubiquinone biosynthesis O-methyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	170137	C	G	585	0.470409	0.529591	i48	B. caecimuris	1639	Ubiquinone biosynthesis O-methyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000013.1	40836	T	G	147	0.96	0.96	i48	B. caecimuris	50	Chloramphenicol acetyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000018.1	92	A	G	117	0.417736	0.582264	i48	B. caecimuris	857	NA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	966520	C	T	182	0.537594	0.537594	yl32	C. clostridioforme	266	ATP-dependent DNA helicase RecG	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	966796	G	A	237	0.542587	0.542587	yl32	C. clostridioforme	317	ATP-dependent DNA helicase RecG	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	966802	G	A	222	0.538462	0.538462	yl32	C. clostridioforme	312	ATP-dependent DNA helicase RecG	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	967238	G	A	177	0.501587	0.501587	yl32	C. clostridioforme	315	ATP-dependent DNA helicase RecG	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	967544	G	A	136	0.646409	0.646409	yl32	C. clostridioforme	181	Chromosome partition protein Smc	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	967631	A	G	505	0.845161	0.845161	yl32	C. clostridioforme	155	Chromosome partition protein Smc	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	1265525	C	T	387	0.804979	0.804979	yl32	C. clostridioforme	241	NA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000002.1	546419	A	G	214	0.765101	0.765101	yl32	C. clostridioforme	149	Uracil-DNA glycosylase	20	2	FALSE	20 cecal content	1
+1885	NHTR01000002.1	844485	C	T	1059	0.970588	0.970588	yl32	C. clostridioforme	204	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHTR01000002.1	883630	T	C	224	0.609137	0.609137	yl32	C. clostridioforme	197	DNA mismatch repair protein MutS	20	2	FALSE	20 cecal content	1
+1885	NHTR01000003.1	265570	G	A	199	0.623853	0.623853	yl32	C. clostridioforme	109	Glutathione transport system permease protein GsiD	20	2	FALSE	20 cecal content	1
+1885	NHTR01000004.1	330187	A	C	182	0.956522	0.956522	yl32	C. clostridioforme	46	Pyruvate synthase	20	2	FALSE	20 cecal content	1
+1885	NHTR01000004.1	666847	A	G	293	0.540943	0.540943	yl32	C. clostridioforme	403	Multidrug resistance protein NorM	20	2	FALSE	20 cecal content	1
+1885	NHTR01000006.1	259179	A	T	199	0.666667	0.666667	yl32	C. clostridioforme	222	Glutamyl aminopeptidase	20	2	FALSE	20 cecal content	1
+1885	NHTR01000006.1	259192	A	T	148	0.643519	0.643519	yl32	C. clostridioforme	216	Glutamyl aminopeptidase	20	2	FALSE	20 cecal content	1
+1885	NHTR01000007.1	14276	A	G	125	0.461806	0.538194	yl32	C. clostridioforme	288	Signal transduction histidine-protein kinase BarA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000007.1	14282	T	C	109	0.458333	0.541667	yl32	C. clostridioforme	288	Signal transduction histidine-protein kinase BarA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000008.1	319809	C	T	227	0.725076	0.725076	yl32	C. clostridioforme	331	HTH-type transcriptional regulator MhqR	20	2	FALSE	20 cecal content	1
+1885	NHTR01000009.1	26002	T	C	156	0.456818	0.543182	yl32	C. clostridioforme	440	NA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000009.1	26062	C	T	132	0.454945	0.545055	yl32	C. clostridioforme	455	NA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000011.1	82248	A	T	337	0.945205	0.945205	yl32	C. clostridioforme	73	NA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000011.1	82310	T	G	153	0.916667	0.916667	yl32	C. clostridioforme	36	NA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000011.1	82339	T	G	149	1	1	yl32	C. clostridioforme	31	NA	20	2	FALSE	20 cecal content	1
+I_cc	CP021420.1	2243230	C	T	836	0.846442	0.846442	yl44	A. muciniphila	267	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	47859	A	G	262	0.853846	0.853846	yl27	M. intestinale	130	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	155759	G	T	619	0.968254	0.968254	yl27	M. intestinale	126	UDP-galactopyranose mutase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	1190269	A	C	140	0.645455	0.645455	yl27	M. intestinale	110	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	1967398	G	T	100	0.643678	0.643678	yl27	M. intestinale	87	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	3080054	T	C	90	0.543689	0.543689	yl27	M. intestinale	103	Sensor histidine kinase BtsS	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000005.1	77724	A	G	95	0.944444	0.944444	yl45	T. muris	18	Beta-xylosidase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000005.1	134382	A	G	136	1	1	yl45	T. muris	24	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000007.1	95549	A	T	88	0.863636	0.863636	yl45	T. muris	22	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000007.1	95558	C	A	95	1	1	yl45	T. muris	18	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMQ01000001.1	521032	T	C	103	1	1	yl31	F. plautii	18	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000001.1	210221	G	A	141	0.463576	0.536424	i48	B. caecimuris	604	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000001.1	787709	C	T	99	0.452261	0.547739	i48	B. caecimuris	796	Alpha-D-kanosaminyltransferase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000001.1	787990	G	C	508	0.559242	0.559242	i48	B. caecimuris	1055	Alpha-D-kanosaminyltransferase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000001.1	788497	T	A	200	0.969697	0.969697	i48	B. caecimuris	99	Alpha-D-kanosaminyltransferase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000003.1	254185	G	A	208	0.688525	0.688525	i48	B. caecimuris	305	Threonine--tRNA ligase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000003.1	413689	C	A	350	0.592593	0.592593	i48	B. caecimuris	378	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	122713	A	G	583	0.966667	0.966667	i48	B. caecimuris	150	Elongation factor 4	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	300219	C	A	291	0.525066	0.525066	i48	B. caecimuris	379	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	431800	G	A	831	0.927461	0.927461	i48	B. caecimuris	193	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	468118	G	T	506	0.94702	0.94702	i48	B. caecimuris	151	Stage III sporulation protein AE	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	492680	T	C	3393	0.922992	0.922992	i48	B. caecimuris	909	Bacitracin export permease protein BceB	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	492688	T	C	3593	0.905319	0.905319	i48	B. caecimuris	940	Bacitracin export permease protein BceB	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	492701	G	A	4089	0.94551	0.94551	i48	B. caecimuris	991	Bacitracin export permease protein BceB	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000005.1	190292	G	T	179	0.477024	0.522976	i48	B. caecimuris	457	Teichoic acid poly(glycerol phosphate) polymerase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000008.1	195581	G	A	299	0.502551	0.502551	i48	B. caecimuris	784	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000009.1	2104	C	T	166	0.417195	0.582805	i48	B. caecimuris	1105	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000009.1	2239	G	A	242	0.458	0.542	i48	B. caecimuris	1000	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000009.1	2296	T	A	293	0.492683	0.507317	i48	B. caecimuris	820	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	966520	C	T	282	0.511905	0.511905	yl32	C. clostridioforme	420	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	966796	G	A	155	0.495913	0.504087	yl32	C. clostridioforme	367	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	966802	G	A	156	0.497175	0.502825	yl32	C. clostridioforme	354	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	967238	G	A	236	0.526596	0.526596	yl32	C. clostridioforme	376	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	967544	G	A	389	0.664615	0.664615	yl32	C. clostridioforme	325	Chromosome partition protein Smc	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	967631	A	G	531	0.782805	0.782805	yl32	C. clostridioforme	221	Chromosome partition protein Smc	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	1265406	A	G	102	0.532731	0.532731	yl32	C. clostridioforme	443	Phosphoglucomutase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	1265525	C	T	850	0.878049	0.878049	yl32	C. clostridioforme	287	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	546419	A	G	273	0.78673	0.78673	yl32	C. clostridioforme	211	Uracil-DNA glycosylase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	593116	G	C	174	0.962963	0.962963	yl32	C. clostridioforme	54	Inner membrane ABC transporter permease protein YdcV	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	593136	G	A	109	0.857143	0.857143	yl32	C. clostridioforme	42	Inner membrane ABC transporter permease protein YdcV	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	596611	G	T	179	0.9	0.9	yl32	C. clostridioforme	40	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	844485	C	T	1186	0.936255	0.936255	yl32	C. clostridioforme	251	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000003.1	265570	G	A	103	0.556522	0.556522	yl32	C. clostridioforme	115	Glutathione transport system permease protein GsiD	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000004.1	50632	A	G	97	0.621711	0.621711	yl32	C. clostridioforme	304	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000004.1	50649	G	A	252	0.6875	0.6875	yl32	C. clostridioforme	320	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000004.1	330187	A	C	438	0.970874	0.970874	yl32	C. clostridioforme	103	Pyruvate synthase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000004.1	666847	A	G	205	0.460159	0.539841	yl32	C. clostridioforme	502	Multidrug resistance protein NorM	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000006.1	259179	A	T	337	0.643123	0.643123	yl32	C. clostridioforme	269	Glutamyl aminopeptidase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000006.1	259192	A	T	286	0.616788	0.616788	yl32	C. clostridioforme	274	Glutamyl aminopeptidase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000006.1	259252	A	G	321	0.637874	0.637874	yl32	C. clostridioforme	301	Glutamyl aminopeptidase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000007.1	22900	G	A	113	0.846154	0.846154	yl32	C. clostridioforme	39	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000008.1	319809	C	T	108	0.672414	0.672414	yl32	C. clostridioforme	348	HTH-type transcriptional regulator MhqR	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000009.1	140143	A	C	240	0.733945	0.733945	yl32	C. clostridioforme	218	Toxin A	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000009.1	140144	A	T	236	0.722222	0.722222	yl32	C. clostridioforme	216	Toxin A	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000009.1	140151	C	A	227	0.724444	0.724444	yl32	C. clostridioforme	225	Toxin A	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000010.1	34875	A	T	140	0.740909	0.740909	yl32	C. clostridioforme	220	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	48380	A	G	98	0.931818	0.931818	yl32	C. clostridioforme	44	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	51402	G	A	215	0.712281	0.712281	yl32	C. clostridioforme	285	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	63431	A	G	107	0.682927	0.682927	yl32	C. clostridioforme	246	Sensor histidine kinase BtsS	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	76724	G	A	93	0.652985	0.652985	yl32	C. clostridioforme	268	Beta-xylosidase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	82248	A	T	584	0.936	0.936	yl32	C. clostridioforme	125	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	82310	T	G	418	0.956522	0.956522	yl32	C. clostridioforme	92	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	91092	G	C	165	0.733945	0.733945	yl32	C. clostridioforme	218	NA	0	2	FALSE	Tag 0, von cecal content	1
+I_mi	CP021421.1	47829	T	G	186	0.775956	0.775956	yl27	M. intestinale	183	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP021421.1	47859	A	G	573	0.837838	0.837838	yl27	M. intestinale	259	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP021421.1	155759	G	T	1200	0.971074	0.971074	yl27	M. intestinale	242	UDP-galactopyranose mutase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP021421.1	155829	C	A	105	0.842105	0.842105	yl27	M. intestinale	38	UDP-galactopyranose mutase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP021422.1	3544809	G	A	276	0.651515	0.651515	kb18	A. muris	198	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022712.1	2933486	G	A	1497	0.932976	0.932976	kb1	E. faecalis	373	DNA-directed RNA polymerase subunit alpha	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022712.1	2933508	A	G	1047	0.835476	0.835476	kb1	E. faecalis	389	DNA-directed RNA polymerase subunit alpha	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022712.1	2933534	A	C	890	0.854762	0.854762	kb1	E. faecalis	420	DNA-directed RNA polymerase subunit alpha	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022713.1	2789404	A	G	373	0.948052	0.948052	yl58	B. coccoides	77	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022713.1	4971268	A	G	92	1	1	yl58	B. coccoides	22	16S ribosomal RNA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	832021	C	A	1321	0.95572	0.95572	i46	C. innocuum	271	Nuclease SbcCD subunit C	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	837562	C	A	1422	0.886111	0.886111	i46	C. innocuum	360	Carbon monoxide dehydrogenase 1	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845222	A	G	224	0.484536	0.515464	i46	C. innocuum	582	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845538	C	T	119	0.420965	0.579035	i46	C. innocuum	601	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845539	T	C	111	0.420965	0.579035	i46	C. innocuum	601	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845543	T	A	158	0.443508	0.556492	i46	C. innocuum	593	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845824	T	G	115	0.435897	0.564103	i46	C. innocuum	624	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845960	T	C	100	0.450758	0.549242	i46	C. innocuum	528	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845987	G	A	129	0.442308	0.557692	i46	C. innocuum	572	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	845999	G	A	133	0.441489	0.558511	i46	C. innocuum	564	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	846002	T	C	172	0.447227	0.552773	i46	C. innocuum	559	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	846009	T	C	174	0.460289	0.539711	i46	C. innocuum	554	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	846438	G	A	118	0.435563	0.564437	i46	C. innocuum	613	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	849295	A	G	293	0.488669	0.511331	i46	C. innocuum	706	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	849594	C	T	247	0.475884	0.524116	i46	C. innocuum	622	Bifunctional protein FolD protein	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	858105	A	G	231	0.482549	0.517451	i46	C. innocuum	659	Cobalt-precorrin-5A hydrolase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	1762342	A	C	462	0.908333	0.908333	i46	C. innocuum	120	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	1873415	T	A	1408	0.961415	0.961415	i46	C. innocuum	311	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	1873561	T	C	560	0.771978	0.771978	i46	C. innocuum	364	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	1873610	C	G	784	0.827493	0.827493	i46	C. innocuum	371	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	1873678	A	G	1563	0.892272	0.892272	i46	C. innocuum	427	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	CP022722.1	4100776	T	C	468	0.558779	0.558779	i46	C. innocuum	655	Lactose transport system permease protein LacF	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000009.1	32671	C	T	109	0.480652	0.519348	yl45	T. muris	491	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000009.1	32681	C	T	105	0.455285	0.544715	yl45	T. muris	492	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000009.1	32690	T	C	111	0.465021	0.534979	yl45	T. muris	486	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000009.1	32768	A	G	133	0.470339	0.529661	yl45	T. muris	472	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000009.1	32778	C	T	163	0.476923	0.523077	yl45	T. muris	455	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	43948	C	A	141	0.468085	0.531915	yl45	T. muris	470	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	44058	A	G	235	0.491921	0.508079	yl45	T. muris	557	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	44061	C	T	194	0.483696	0.516304	yl45	T. muris	552	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	44063	T	A	243	0.5	0.5	yl45	T. muris	552	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	44104	G	A	174	0.459732	0.540268	yl45	T. muris	596	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	44646	T	C	107	0.445361	0.554639	yl45	T. muris	485	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	44671	G	T	109	0.466809	0.533191	yl45	T. muris	467	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMP01000012.1	44727	A	G	171	0.498	0.502	yl45	T. muris	500	UDP-glucose 6-dehydrogenase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMQ01000001.1	229401	G	A	230	0.570342	0.570342	yl31	F. plautii	263	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMQ01000001.1	279105	G	A	183	0.562753	0.562753	yl31	F. plautii	247	DNA topoisomerase 3	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMQ01000001.1	410313	G	A	231	0.580508	0.580508	yl31	F. plautii	236	Solute-binding protein	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMQ01000001.1	521032	T	C	207	0.6	0.6	yl31	F. plautii	200	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMQ01000001.1	1094358	C	T	127	0.504249	0.504249	yl31	F. plautii	353	Tyrosine recombinase XerS	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMQ01000002.1	404839	A	G	94	0.477273	0.522727	yl31	F. plautii	220	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMQ01000002.1	855558	G	T	584	0.961832	0.961832	yl31	F. plautii	131	Cobalt-precorrin-5B C(1)-methyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMR02000002.1	180566	A	C	326	0.984733	0.984733	yl2	B. longum	131	Teichoic acid ribitol-phosphate polymerase TarK	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMR02000002.1	193217	A	G	297	0.963504	0.963504	yl2	B. longum	137	Lipoteichoic acid synthase 2	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMR02000002.1	582349	C	T	132	0.519841	0.519841	yl2	B. longum	252	1,4-alpha-glucan branching enzyme GlgB	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	495277	G	A	157	0.789116	0.789116	i49	L. reuteri	147	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	495334	G	A	96	0.736111	0.736111	i49	L. reuteri	144	Protein RecA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	495337	A	G	112	0.76	0.76	i49	L. reuteri	150	Protein RecA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	495382	A	G	122	0.596	0.596	i49	L. reuteri	250	Protein RecA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	495397	T	C	142	0.592308	0.592308	i49	L. reuteri	260	Protein RecA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	495403	A	T	156	0.609489	0.609489	i49	L. reuteri	274	Protein RecA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	495442	T	C	294	0.636042	0.636042	i49	L. reuteri	283	Protein RecA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	851684	T	A	143	0.769231	0.769231	i49	L. reuteri	78	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	851687	T	A	134	0.780822	0.780822	i49	L. reuteri	73	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	851690	G	A	130	0.739726	0.739726	i49	L. reuteri	73	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	851691	G	T	140	0.780822	0.780822	i49	L. reuteri	73	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	851693	T	A	135	0.767123	0.767123	i49	L. reuteri	73	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	851696	A	G	118	0.74359	0.74359	i49	L. reuteri	78	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	851704	T	C	159	0.793478	0.793478	i49	L. reuteri	92	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	1079656	G	A	120	0.768421	0.768421	i49	L. reuteri	95	Putative thiazole biosynthetic enzyme	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	1079677	A	G	362	0.95283	0.95283	i49	L. reuteri	106	Putative thiazole biosynthetic enzyme	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	1097833	A	C	161	0.916667	0.916667	i49	L. reuteri	36	Hca operon transcriptional activator HcaR	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMT01000001.1	2042619	G	T	137	1	1	i49	L. reuteri	31	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000001.1	787709	C	T	117	0.42236	0.57764	i48	B. caecimuris	805	Alpha-D-kanosaminyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000001.1	787990	G	C	302	0.511312	0.511312	i48	B. caecimuris	884	Alpha-D-kanosaminyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000001.1	788497	T	A	154	0.938272	0.938272	i48	B. caecimuris	81	Alpha-D-kanosaminyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000004.1	122713	A	G	681	0.965517	0.965517	i48	B. caecimuris	174	Elongation factor 4	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000004.1	431800	G	A	1198	0.904059	0.904059	i48	B. caecimuris	271	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000004.1	468118	G	T	474	0.933775	0.933775	i48	B. caecimuris	151	Stage III sporulation protein AE	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000004.1	492680	T	C	2780	0.917488	0.917488	i48	B. caecimuris	812	Bacitracin export permease protein BceB	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000004.1	492688	T	C	3059	0.925881	0.925881	i48	B. caecimuris	823	Bacitracin export permease protein BceB	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000004.1	492701	G	A	3518	0.956272	0.956272	i48	B. caecimuris	869	Bacitracin export permease protein BceB	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000008.1	195581	G	A	496	0.549422	0.549422	i48	B. caecimuris	779	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000009.1	2104	C	T	242	0.437554	0.562446	i48	B. caecimuris	1161	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000009.1	2239	G	A	267	0.445361	0.554639	i48	B. caecimuris	970	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000009.1	2296	T	A	356	0.499371	0.500629	i48	B. caecimuris	795	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000009.1	170099	C	A	229	0.495787	0.504213	i48	B. caecimuris	712	Ubiquinone biosynthesis O-methyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000012.1	3700	G	A	302	0.6	0.6	i48	B. caecimuris	400	UDP-2,3-diacylglucosamine pyrophosphatase LpxG	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHMU01000018.1	92	A	G	112	0.514286	0.514286	i48	B. caecimuris	280	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000001.1	966520	C	T	88	0.50641	0.50641	yl32	C. clostridioforme	156	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000001.1	967238	G	A	134	0.562963	0.562963	yl32	C. clostridioforme	135	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000001.1	967544	G	A	167	0.631148	0.631148	yl32	C. clostridioforme	122	Chromosome partition protein Smc	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000001.1	967631	A	G	309	0.842105	0.842105	yl32	C. clostridioforme	95	Chromosome partition protein Smc	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000001.1	1265525	C	T	385	0.884615	0.884615	yl32	C. clostridioforme	130	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000002.1	844485	C	T	541	0.979381	0.979381	yl32	C. clostridioforme	97	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000004.1	50632	A	G	112	0.720721	0.720721	yl32	C. clostridioforme	111	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000004.1	50649	G	A	159	0.733871	0.733871	yl32	C. clostridioforme	124	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000004.1	330187	A	C	153	1	1	yl32	C. clostridioforme	32	Pyruvate synthase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000004.1	666847	A	G	101	0.5	0.5	yl32	C. clostridioforme	186	Multidrug resistance protein NorM	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000006.1	259179	A	T	147	0.669643	0.669643	yl32	C. clostridioforme	112	Glutamyl aminopeptidase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000006.1	259192	A	T	139	0.646552	0.646552	yl32	C. clostridioforme	116	Glutamyl aminopeptidase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000006.1	259252	A	G	152	0.641791	0.641791	yl32	C. clostridioforme	134	Glutamyl aminopeptidase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000008.1	319809	C	T	123	0.77027	0.77027	yl32	C. clostridioforme	148	HTH-type transcriptional regulator MhqR	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000009.1	140143	A	C	119	0.742268	0.742268	yl32	C. clostridioforme	97	Toxin A	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000009.1	140144	A	T	132	0.75	0.75	yl32	C. clostridioforme	96	Toxin A	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000009.1	140151	C	A	130	0.755102	0.755102	yl32	C. clostridioforme	98	Toxin A	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000010.1	34875	A	T	153	0.79661	0.79661	yl32	C. clostridioforme	118	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000011.1	51402	G	A	118	0.75	0.75	yl32	C. clostridioforme	112	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000011.1	82248	A	T	277	0.932203	0.932203	yl32	C. clostridioforme	59	NA	0	2	FALSE	Tag 0, vor 20 tage	1
+I_mi	NHTR01000011.1	91092	G	C	92	0.747748	0.747748	yl32	C. clostridioforme	111	NA	0	2	FALSE	Tag 0, vor 20 tage	1
