@@ -73,7 +73,7 @@ The dataset is written to `data/rds/variants.rds`).
 
 DP is the filtered depth, at the sample level. This gives you the number of filtered reads that support each of the reported alleles. You can check the variant caller’s documentation to see which filters are applied by default. Only reads that passed the variant caller’s filters are included in this number. However, unlike the AD calculation, uninformative reads are included in DP.
 
-```{r load-vcf-qual}
+```{r load-vcf-qual, fig.cap="quality of variants (all samples)", fig.align="center", fig.width=15}
 dat <- readRDS("data/rds/variants.rds")
 dat <- dat[which(dat$ecoli== FALSE),]
 print(summary(dat$dp))
@@ -81,7 +81,7 @@ print(summary(dat$dp))
 
 ## all samples
 
-```{r plot-dp-all, fig.cap="filtred depth of varaints (all samples)"}
+```{r plot-dp-all, fig.cap="filtred depth of varaints (all samples)", fig.align="center", fig.width=10}
 p <- ggplot(dat, aes(dp, fill = genome)) + geom_histogram()
 p <- p + theme_classic() + xlab("filtered depth") + ylab("occurence") 
 p <- p + scale_fill_manual(values = omm_colors)
@@ -139,7 +139,7 @@ colnames(dat.by.sample) <- c("sample", "number_variants")
 DT::datatable(dat.by.sample)
 ```
 
-```{r, fig.align="center", fig.cap="number of variants of all 12 OMM genomes by mouse"}
+```{r, fig.align="center", fig.width=10, fig.cap="number of variants of all 12 OMM genomes by mouse"}
 p <- ggplot(dat.by.sample, aes(x = reorder(sample, number_variants), y = number_variants))
 p <- p + geom_bar(stat="identity") + coord_flip() + theme_classic()
 p <- p + xlab("number of variants") + ylab("sample")
@@ -162,12 +162,16 @@ DT::datatable(dat.by.sample.genome2)
 dat$DP <- NULL
 ```
 
-```{r, fig.cap="Number of variants by genome (color) found in samples"}
+```{r, fig.align="center", fig.width=10, fig.cap="Number of variants by genome (color) found in samples"}
 #dat.by.sample.genome2 <- dat.by.sample.genome2[which(dat.by.sample.genome2$sample != "I_cc" & dat.by.sample.genome2$sample != "I_mi"),]
 p <- ggplot(dat.by.sample.genome2, aes(x = sample, y = number_variants, fill = genome))
 p <- p + geom_bar(stat="identity") + theme_classic()
 p <- p + facet_grid(.~ generation + day, scales = "free_x")
 p <- p + ylab("number of variants") + xlab("sample") + scale_fill_manual(values = omm_colors)
+p <- p + theme(panel.border=element_blank(),
+                 strip.text=element_text(size=12, colour="black"),
+                 strip.background=element_rect(colour="white", 
+                                               fill="white"))
 print(p) # plotly is not working on this type of plot
 ```
 
@@ -199,5 +203,49 @@ DT::datatable(dat.all)
 
 In total, we identified `r nrow(dat)` variants in all `r length(unique(dat$mouse.id))` samples. Of them, `r sum(dat.all$occurence)` variants map to `r length(unique(dat.all$orf_annotation))` ORFs with an annotated function
 
-### Visualization
+### Minor to major transistion
 
+Filter by variants that change in AF from `< 0.5` to `>= 0.5` over time points.
+
+#### Plotting function
+
+```{r}
+pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
+	require(reshape2) 
+	require(ggplot2)
+	dat.pair <- dat[which(dat$mouse.id == case | dat$mouse.id == control),]
+	data.wide <- dcast(dat.pair, genome + POS + REF + ALT + orf_desc ~ mouse.id, value.var = "AF")
+	colnames(data.wide)[6] <- "sample_1"
+	colnames(data.wide)[7] <- "sample_2"
+	data.wide[is.na(data.wide)] <- 0
+
+	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, color = genome, label = orf_desc))
+	p <- p + geom_point(fill = NA) + theme_classic() + scale_color_manual(values = omm_colors)
+	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")
+	p <- p + geom_vline(xintercept = .5, linetype = 2, color = "grey50")
+	p <- p + theme(legend.position = "none")
+	p <- p + theme(strip.background = element_blank())
+	p <- p + geom_abline(intercept = 0, slope = 1)
+	p <- p + xlab(paste0("sample ", case)) + ylab(paste0("sample ", control))
+	p <- p + theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+	return(p)
+}
+```
+
+#### comparison of t=20 of first/second generation
+
+```{r, fig.align="center", fig.width=10, fig.cap="Scatter plot of AF of two samples"}
+ggplotly(pairedAFplot(dat, case = "1607", control = "1885"))
+```
+
+#### comparison of t=40 of first/second generation
+
+```{r, fig.align="center", fig.width=10, fig.cap="Scatter plot of AF of two samples"}
+ggplotly(pairedAFplot(dat, case = "1660", control = "1807"))
+```
+
+#### comparison of t=80 of first/second generation
+
+```{r, fig.align="center", fig.width=10, fig.cap="Scatter plot of AF of two samples"}
+ggplotly(pairedAFplot(dat, case = "1779", control = "1789"))
+```

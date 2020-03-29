@@ -3,7 +3,6 @@ title: "Claudia's data"
 author: "Philipp C. Muench"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-css: styles.css
 documentclass: scrbook
 link-citations: yes
 colorlinks: yes
@@ -15,8 +14,10 @@ fontsize: 11pt
 mainfont: Palatino
 monofont: "Source Code Pro"
 monofontoptions: "Scale=0.8"
+css: style.css
 outputbo:
   bookdown::gitbook:
+    css: style.css
     config:
       sharing: null
       toc:
