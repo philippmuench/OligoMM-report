@@ -3,6 +3,7 @@ title: "Claudia's data"
 author: "Philipp C. Muench"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
+css: styles.css
 documentclass: scrbook
 link-citations: yes
 colorlinks: yes
