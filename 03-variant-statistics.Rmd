@@ -205,7 +205,6 @@ In total, we identified `r nrow(dat)` variants in all `r length(unique(dat$mouse
 
 ### Minor to major transistion
 
-Filter by variants that change in AF from `< 0.5` to `>= 0.5` over time points.
 
 #### Plotting function
 
