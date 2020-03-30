@@ -205,7 +205,6 @@ In total, we identified `r nrow(dat)` variants in all `r length(unique(dat$mouse
 
 ### Minor to major transistion
 
-
 #### Plotting function
 
 ```{r}
@@ -418,6 +417,8 @@ suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "kb1")))
 
 
 #### by variant (static)
+
+similar to the plots above, but now the y axis is not the annotation but the variant ID (e.g. `position|reference->alternative`)
 
 ##### yl44
 
