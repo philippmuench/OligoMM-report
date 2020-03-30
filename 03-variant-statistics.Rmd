@@ -299,13 +299,11 @@ suppressWarnings(ggplotly(pairedAFplot(dat, case = "1807", control = "1789")))
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "I_mi", control = "1885")))
 ```
 
-
 ##### t=40 gen=2
 
  ```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "I_mi", control = "1807")))
 ```
-
 
 ### Gene-centric analysis
 
@@ -322,7 +320,7 @@ geneCentricPlot <- function(dat = dat, genome = "yl44"){
 	p <- p + coord_flip() + theme_classic()
 	p <- p + ylim(c(0,1))
 	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 180), strip.placement = "outside")
-	 p <- p + xlab("") + ylab("allele frequency") 
+	p <- p + xlab("") + ylab("allele frequency")  + scale_color_manual(values = sample_colors)
 	return(p)
 }
 ```

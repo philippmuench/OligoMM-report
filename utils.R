@@ -150,5 +150,8 @@ translateMouseIdToClaudiaGroup <- function(dat) {
 	return(dat)
 }
 
-omm_colors = c("yl2" = "#6a51a3","i48" = "#9e9ac8", yl58 = "#cbc9e2",
-yl44 = "#ce1256", yl27 = "#525252", yl45 = "#969696", kb1 = "#969696", kb18 = "#969696", yl32 = "#74c476", i46 = "#238b45",i49 ="#ffffb2", yl31="#88419d")
+omm_colors = c("yl2" = "#6a51a3","i48" = "#9e9ac8", "yl58" = "#cbc9e2",
+yl44 = "#ce1256", "yl27" = "#525252", "yl45" = "#969696", "kb1" = "#969696", "kb18" = "#969696", "yl32" = "#74c476", "i46" = "#238b45","i49" ="#ffffb2", "yl31"="#88419d")
+
+sample_colors = c("stably colonized" = "#74c476", "20 OMM mix" = "#d7b5d8", "40 OMM mix" = "#df65b0", "80 OMM mix" = "#ce1256", "2nd generation" = "#6a51a3", "40 cecal content" = "#41b6c4",  "20 cecal content" = "#a1dab4", "Tag 0, von cecal content" = "#cccccc", "Tag 0, vor 20 tage"=  "#969696" )
+
