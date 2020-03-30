@@ -314,85 +314,182 @@ geneCentricPlot <- function(dat = dat, genome = "yl44"){
 	require(reshape2) 
 	require(ggplot2)
 	dat.subset <- dat[which(dat$genome == genome & !is.na(dat$orf_desc)),]
-	
+	dat.subset$ID <- paste0(dat.subset$POS, "|", dat.subset$REF ,"->", dat.subset$ALT)
+	p <- ggplot(dat.subset, aes(x = ID, y = AF, color = desc))
+  p <- p + geom_point(size = 4, shape = "|", fill = NA)
+	p <- p + coord_flip() + theme_classic()
+	p <- p + facet_grid(orf_desc ~., scales = "free", space = "free")
+	p <- p + ylim(c(0,1))
+	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
+	p <- p + xlab("") + ylab("allele frequency")  + scale_color_manual(values = sample_colors)
+	return(p)
+}
+
+# no grid version for html
+geneCentricPlot2 <- function(dat = dat, genome = "yl44"){
+	require(reshape2) 
+	require(ggplot2)
+	dat.subset <- dat[which(dat$genome == genome & !is.na(dat$orf_desc)),]
+	dat.subset$ID <- paste0(dat.subset$POS, "|", dat.subset$REF ,"->", dat.subset$ALT)
 	p <- ggplot(dat.subset, aes(x = orf_desc, y = AF, color = desc))
-  p <- p + geom_point(size = 3, shape = "|", fill = NA)
+  p <- p + geom_point(size = 4, shape = "|", fill = NA)
 	p <- p + coord_flip() + theme_classic()
 	p <- p + ylim(c(0,1))
-	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 180), strip.placement = "outside")
+	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
 	p <- p + xlab("") + ylab("allele frequency")  + scale_color_manual(values = sample_colors)
 	return(p)
 }
 ```
 
+#### by ORF annotation (html)
+
 ##### yl44
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl44")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl44")))
 ```
 
 ##### yl27
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl27")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl27")))
 ```
 
 ##### yl58
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl58")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl58")))
 ```
 
 ##### i48s
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "i48")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "i48")))
 ```
 
 ##### yl32
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl32")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl32")))
 ```
 
 ##### i46
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "i46")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "i46")))
 ```
 
 ##### yl45
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl45")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl45")))
 ```
 
 ##### yl31
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl31")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl31")))
 ```
 
 ##### yl2
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl2")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl2")))
 ```
 
 ##### i49
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "i49")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "i49")))
 ```
 
 ##### kb18
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "kb18")))
+no variant
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "kb18"))
 ```
 
 ##### kb1
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
-suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "kb1")))
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "kb1")))
+```
+
+
+#### by variant (static)
+
+##### yl44
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl44"))
+```
+
+##### yl27
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl27"))
+```
+
+##### yl58
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl58"))
+```
+
+##### i48s
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "i48"))
+```
+
+##### yl32
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl32"))
+```
+
+##### i46
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "i46"))
+```
+
+##### yl45
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl45"))
+```
+
+##### yl31
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl31"))
+```
+
+##### yl2
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl2"))
+```
+
+##### i49
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "i49"))
+```
+
+##### kb18
+
+no variant
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "kb18"))
+```
+
+##### kb1
+
+```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "kb1"))
 ```
