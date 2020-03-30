@@ -291,6 +291,22 @@ suppressWarnings(ggplotly(pairedAFplot(dat, case = "1885", control = "1807")))
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1807", control = "1789")))
 ```
 
+#### I_mi comparison
+
+##### t=20 gen=2
+
+ ```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "I_mi", control = "1885")))
+```
+
+
+##### t=40 gen=2
+
+ ```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "I_mi", control = "1807")))
+```
+
+
 ### Gene-centric analysis
 
 #### function
@@ -311,9 +327,6 @@ geneCentricPlot <- function(dat = dat, genome = "yl44"){
 }
 ```
 
- [1] "yl44" "yl27" "yl58" "i48"  "yl32" "i46"  "yl45" "yl31" "yl2"  "i49" 
-[11] "kb18" "kb1" 
-
 ##### yl44
 
 ```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
@@ -332,7 +345,7 @@ suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl27")))
 suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "yl58")))
 ```
 
-##### i48
+##### i48s
 
 ```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "i48")))
