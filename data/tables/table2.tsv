@@ -41,6 +41,15 @@ yl58	Group II intron-encoded protein LtrA	2
 i49	Hca operon transcriptional activator HcaR	1
 yl32	HTH-type transcriptional regulator MhqR	7
 i48	HTH-type transcriptional repressor YvoA	4
+i46	hypothetical proteins	5
+i48	hypothetical proteins	68
+i49	hypothetical proteins	8
+yl27	hypothetical proteins	16
+yl31	hypothetical proteins	6
+yl32	hypothetical proteins	37
+yl44	hypothetical proteins	4
+yl45	hypothetical proteins	15
+yl58	hypothetical proteins	6
 yl32	Inner membrane ABC transporter permease protein YdcV	11
 yl27	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	4
 yl44	L-methionine gamma-lyase	2
@@ -52,6 +61,15 @@ yl2	NAD kinase	1
 i48	NADP-reducing hydrogenase subunit HndD	1
 i46	Nuclease SbcCD subunit C	2
 yl31	Nuclease SbcCD subunit D	1
+i46	outside ORFs	5
+i48	outside ORFs	7
+i49	outside ORFs	1
+kb18	outside ORFs	1
+yl31	outside ORFs	14
+yl32	outside ORFs	14
+yl44	outside ORFs	4
+yl45	outside ORFs	19
+yl58	outside ORFs	2
 yl31	Peptide chain release factor 3	4
 yl32	Phosphoglucomutase	8
 i49	Protein RecA	7
