@@ -32,8 +32,7 @@
   
   
 <link rel="prev" href="Variant-statistics.html"/>
-<link rel="next" href="variant-types.html"/>
-<script src="libs/header-attrs-2.1.1/header-attrs.js"></script>
+<link rel="next" href="variant-effects.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -66,26 +65,25 @@
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -94,9 +92,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -145,50 +143,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Analysis Report</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
-<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-generate-this-report"><i class="fa fa-check"></i>How to generate this report</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="Setup.html"><a href="Setup.html"><i class="fa fa-check"></i><b>1</b> Setup</a>
-<ul>
+<li class="chapter" data-level="1" data-path="Setup.html"><a href="Setup.html"><i class="fa fa-check"></i><b>1</b> Setup</a><ul>
 <li class="chapter" data-level="1.1" data-path="Setup.html"><a href="Setup.html#Workspace_setup"><i class="fa fa-check"></i><b>1.1</b> Workspace setup</a></li>
 <li class="chapter" data-level="1.2" data-path="Setup.html"><a href="Setup.html#dependencies"><i class="fa fa-check"></i><b>1.2</b> Dependencies</a></li>
 <li class="chapter" data-level="1.3" data-path="Setup.html"><a href="Setup.html#Data_structures"><i class="fa fa-check"></i><b>1.3</b> Data structure</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a>
-<ul>
+<li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a><ul>
 <li class="chapter" data-level="2.1" data-path="study-design.html"><a href="study-design.html#oligomm"><i class="fa fa-check"></i><b>2.1</b> OligoMM</a></li>
-<li class="chapter" data-level="2.2" data-path="study-design.html"><a href="study-design.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a>
-<ul>
+<li class="chapter" data-level="2.2" data-path="study-design.html"><a href="study-design.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a><ul>
 <li class="chapter" data-level="2.2.1" data-path="study-design.html"><a href="study-design.html#crispr"><i class="fa fa-check"></i><b>2.2.1</b> CRISPR</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>3</b> Variant statistics</a>
-<ul>
+<li class="chapter" data-level="3" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>3</b> Variant statistics</a><ul>
 <li class="chapter" data-level="3.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#process-of-raw-data"><i class="fa fa-check"></i><b>3.1</b> Process of <em>raw</em> data</a></li>
-<li class="chapter" data-level="3.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#quality-of-variants"><i class="fa fa-check"></i><b>3.2</b> Quality of variants</a></li>
-<li class="chapter" data-level="3.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#all-samples"><i class="fa fa-check"></i><b>3.3</b> all samples</a></li>
-<li class="chapter" data-level="3.4" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-mouse"><i class="fa fa-check"></i><b>3.4</b> by mouse</a></li>
-<li class="chapter" data-level="3.5" data-path="Variant-statistics.html"><a href="Variant-statistics.html#number-of-variants"><i class="fa fa-check"></i><b>3.5</b> Number of variants</a>
-<ul>
-<li class="chapter" data-level="3.5.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-sample"><i class="fa fa-check"></i><b>3.5.1</b> by sample</a></li>
-<li class="chapter" data-level="3.5.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-mouse-and-genome"><i class="fa fa-check"></i><b>3.5.2</b> by mouse and genome</a></li>
-<li class="chapter" data-level="3.5.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-extendet-metadata"><i class="fa fa-check"></i><b>3.5.3</b> by extendet metadata</a></li>
+<li class="chapter" data-level="3.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#quality-of-variants"><i class="fa fa-check"></i><b>3.2</b> Quality of variants</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#all-samples"><i class="fa fa-check"></i><b>3.2.1</b> all samples</a></li>
+<li class="chapter" data-level="3.2.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-mouse"><i class="fa fa-check"></i><b>3.2.2</b> by mouse</a></li>
 </ul></li>
-<li class="chapter" data-level="3.6" data-path="Variant-statistics.html"><a href="Variant-statistics.html#vaiant-annotation"><i class="fa fa-check"></i><b>3.6</b> Vaiant annotation</a>
-<ul>
-<li class="chapter" data-level="3.6.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#data"><i class="fa fa-check"></i><b>3.6.1</b> Data</a></li>
-<li class="chapter" data-level="3.6.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#statistics"><i class="fa fa-check"></i><b>3.6.2</b> Statistics</a></li>
-<li class="chapter" data-level="3.6.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#minor-to-major-transistion"><i class="fa fa-check"></i><b>3.6.3</b> Minor to major transistion</a></li>
-<li class="chapter" data-level="3.6.4" data-path="Variant-statistics.html"><a href="Variant-statistics.html#gene-centric-analysis"><i class="fa fa-check"></i><b>3.6.4</b> Gene-centric analysis</a></li>
+<li class="chapter" data-level="3.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#number-of-variants"><i class="fa fa-check"></i><b>3.3</b> Number of variants</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-sample"><i class="fa fa-check"></i><b>3.3.1</b> by sample</a></li>
+<li class="chapter" data-level="3.3.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-mouse-and-genome"><i class="fa fa-check"></i><b>3.3.2</b> by mouse and genome</a></li>
+<li class="chapter" data-level="3.3.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-extendet-metadata"><i class="fa fa-check"></i><b>3.3.3</b> by extendet metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="Variant-statistics.html"><a href="Variant-statistics.html#orfs-with-variants"><i class="fa fa-check"></i><b>3.4</b> ORFs with variants</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#data"><i class="fa fa-check"></i><b>3.4.1</b> Data</a></li>
+<li class="chapter" data-level="3.4.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#statistics"><i class="fa fa-check"></i><b>3.4.2</b> Statistics</a></li>
+<li class="chapter" data-level="3.4.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#minor-to-major-transistion"><i class="fa fa-check"></i><b>3.4.3</b> Minor to major transistion</a></li>
+<li class="chapter" data-level="3.4.4" data-path="Variant-statistics.html"><a href="Variant-statistics.html#gene-centric-analysis"><i class="fa fa-check"></i><b>3.4.4</b> Gene-centric analysis</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="Allele-frequency.html"><a href="Allele-frequency.html"><i class="fa fa-check"></i><b>4</b> Allele frequency</a>
-<ul>
+<li class="chapter" data-level="4" data-path="Allele-frequency.html"><a href="Allele-frequency.html"><i class="fa fa-check"></i><b>4</b> Allele frequency</a><ul>
 <li class="chapter" data-level="4.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#major-allele-frequency"><i class="fa fa-check"></i><b>4.1</b> major allele frequency</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="variant-types.html"><a href="variant-types.html"><i class="fa fa-check"></i><b>5</b> Variant types</a></li>
+<li class="chapter" data-level="5" data-path="variant-effects.html"><a href="variant-effects.html"><i class="fa fa-check"></i><b>5</b> Variant effects</a><ul>
+<li class="chapter" data-level="5.1" data-path="variant-effects.html"><a href="variant-effects.html#snpeff-run"><i class="fa fa-check"></i><b>5.1</b> snpEff run</a></li>
+<li class="chapter" data-level="5.2" data-path="variant-effects.html"><a href="variant-effects.html#number-of-effects-by-type"><i class="fa fa-check"></i><b>5.2</b> number of effects by type</a></li>
+<li class="chapter" data-level="5.3" data-path="variant-effects.html"><a href="variant-effects.html#number-of-effects-by-type-by-genome"><i class="fa fa-check"></i><b>5.3</b> number of effects by type by genome</a></li>
+<li class="chapter" data-level="5.4" data-path="variant-effects.html"><a href="variant-effects.html#by-genome-and-mouse"><i class="fa fa-check"></i><b>5.4</b> by genome and mouse</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://pmuench.com" target="blank">Philipp C. Muench</a></li>
 
@@ -209,18 +205,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Allele_frequency" class="section level1" number="4">
+<div id="Allele_frequency" class="section level1">
 <h1><span class="header-section-number">Section 4</span> Allele frequency</h1>
-<div id="major-allele-frequency" class="section level2" number="4.1">
+<div id="major-allele-frequency" class="section level2">
 <h2><span class="header-section-number">4.1</span> major allele frequency</h2>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="Allele-frequency.html#cb64-1"></a>p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(dat, <span class="kw">aes</span>(<span class="dt">x =</span> majorAF, <span class="dt">y =</span> mouse.id))</span>
-<span id="cb64-2"><a href="Allele-frequency.html#cb64-2"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span>ggridges<span class="op">::</span><span class="kw">geom_density_ridges</span>(<span class="dt">jittered_points =</span> <span class="ot">TRUE</span>, <span class="dt">position =</span> ggridges<span class="op">::</span><span class="kw">position_points_jitter</span>(<span class="dt">width =</span> <span class="fl">0.01</span>, </span>
-<span id="cb64-3"><a href="Allele-frequency.html#cb64-3"></a>    <span class="dt">height =</span> <span class="dv">0</span>), <span class="dt">point_shape =</span> <span class="st">&quot;|&quot;</span>, <span class="dt">point_size =</span> <span class="dv">1</span>, <span class="dt">point_alpha =</span> <span class="fl">0.5</span>, <span class="dt">alpha =</span> <span class="fl">0.1</span>)</span>
-<span id="cb64-4"><a href="Allele-frequency.html#cb64-4"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>()</span>
-<span id="cb64-5"><a href="Allele-frequency.html#cb64-5"></a><span class="co"># p &lt;- p + facet_grid(phase ~., space = &#39;free&#39;, scales= &#39;free&#39;)</span></span>
-<span id="cb64-6"><a href="Allele-frequency.html#cb64-6"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">strip.background =</span> <span class="kw">element_blank</span>())</span>
-<span id="cb64-7"><a href="Allele-frequency.html#cb64-7"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Major allele frequency&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Count&quot;</span>)</span>
-<span id="cb64-8"><a href="Allele-frequency.html#cb64-8"></a>p</span></code></pre></div>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb64-1" data-line-number="1">p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(dat, <span class="kw">aes</span>(<span class="dt">x =</span> majorAF, <span class="dt">y =</span> mouse.id))</a>
+<a class="sourceLine" id="cb64-2" data-line-number="2">p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span>ggridges<span class="op">::</span><span class="kw">geom_density_ridges</span>(<span class="dt">jittered_points =</span> <span class="ot">TRUE</span>, <span class="dt">position =</span> ggridges<span class="op">::</span><span class="kw">position_points_jitter</span>(<span class="dt">width =</span> <span class="fl">0.01</span>, </a>
+<a class="sourceLine" id="cb64-3" data-line-number="3">    <span class="dt">height =</span> <span class="dv">0</span>), <span class="dt">point_shape =</span> <span class="st">&quot;|&quot;</span>, <span class="dt">point_size =</span> <span class="dv">1</span>, <span class="dt">point_alpha =</span> <span class="fl">0.5</span>, <span class="dt">alpha =</span> <span class="fl">0.1</span>)</a>
+<a class="sourceLine" id="cb64-4" data-line-number="4">p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>()</a>
+<a class="sourceLine" id="cb64-5" data-line-number="5"><span class="co"># p &lt;- p + facet_grid(phase ~., space = &#39;free&#39;, scales= &#39;free&#39;)</span></a>
+<a class="sourceLine" id="cb64-6" data-line-number="6">p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">strip.background =</span> <span class="kw">element_blank</span>())</a>
+<a class="sourceLine" id="cb64-7" data-line-number="7">p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Major allele frequency&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Count&quot;</span>)</a>
+<a class="sourceLine" id="cb64-8" data-line-number="8">p</a></code></pre></div>
 <pre><code>## Picking joint bandwidth of 0.0632</code></pre>
 <p><img src="oligomm-claudia_files/figure-html/unnamed-chunk-54-1.png" width="672" /></p>
 
@@ -232,7 +228,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="Variant-statistics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="variant-types.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="variant-effects.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
