@@ -20,7 +20,7 @@ vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_ge
 		vcf.content <- vcfR::read.vcfR(file, verbose = FALSE )
 		vcf.fix <- as.data.frame(vcf.content@fix) # contains chr, position and substitution informations
 		vcf.info <- vcfR::INFO2df(vcf.content) # get INFO field, contains DP, AF informations
-	#  vcf.ann <- data.frame(do.call('rbind', strsplit(as.character(vcf.info$ANN),'|',fixed = TRUE))) # split ANN field, contains information if files are processed by snpEff
+	  vcf.ann <- data.frame(do.call('rbind', strsplit(as.character(vcf.info$ANN),'|',fixed = TRUE))) # split ANN field, contains information if files are processed by snpEff
 		if(nrow(vcf.fix) > 0) {
 			dat <-  as.data.frame(cbind(vcf.fix[,c(1, 2, 4, 5, 6)], vcf.info[,c(1, 2)]))
 			dat$majorAF <- sapply(dat$AF, minorAfToMajorAf) # transforms e.g. AF of 0.1 to 0.9, 0.9 stays 0.9 and 0.5 stays 0.5
@@ -28,7 +28,9 @@ vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_ge
 			dat$genome_hr <- translateGenomeIdToFullName(dat$genome)
 			dat$mouse.id <- substr(basename(file), 1, 4) # get mouse ID from file name, e.g. "1681"
 			dat$dp <- as.numeric(as.matrix(vcf.info$DP))
-
+			dat$vartype <- as.character(as.matrix(vcf.ann$X2))
+			dat$effect <- as.character(as.matrix(vcf.ann$X3))
+			dat$substitution <- as.character(as.matrix(vcf.ann$X11))
 			# annotate overlay of gene
 			dat$orf_desc <- as.character(as.matrix(apply(dat, 1, getGeneByPosition, gff = gff, pos.column = 2, chr.column = 1)))
 			res[[basename(file)]] <- dat # add vcf df to list
@@ -55,7 +57,7 @@ for (gff.file in gff.files){
 }
 
 contig_mapping <- read.csv2("data/contig_genome_mapping.csv", sep =";", header=T, stringsAsFactors = F) # this file contains contig names of the 12 OligoMM genomes
-vcf.files <- Sys.glob("data/raw/lofreq/*.vcf")
+vcf.files <- Sys.glob("data/raw/lofreq_eff/*.vcf")
 dat <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.df))
 # annotate study metadata
 dat <- merge(dat, design.df, by = "mouse.id")
@@ -212,13 +214,13 @@ pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
 	require(reshape2) 
 	require(ggplot2)
 	dat.pair <- dat[which(dat$mouse.id == case | dat$mouse.id == control),]
-	dat.pair <- dat.pair[which(!is.na(dat.pair$orf_desc)),]
-	data.wide <- dcast(dat.pair, genome + POS + REF + ALT + orf_desc ~ mouse.id, value.var = "AF")
-	colnames(data.wide)[6] <- "sample_1"
-	colnames(data.wide)[7] <- "sample_2"
+	#dat.pair <- dat.pair[which(!is.na(dat.pair$orf_desc)),]
+	data.wide <- dcast(dat.pair, genome + POS + REF + ALT + orf_desc + vartype ~ mouse.id, value.var = "AF")
+	colnames(data.wide)[7] <- "sample_1"
+	colnames(data.wide)[8] <- "sample_2"
 	data.wide[is.na(data.wide)] <- 0
 
-	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, color = genome, label = orf_desc))
+	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, color = genome, label = paste0(orf_desc,"|", vartype), shape = vartype))
 	p <- p + geom_point(fill = NA) + theme_classic() + scale_color_manual(values = omm_colors)
 	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")
 	p <- p + geom_vline(xintercept = .5, linetype = 2, color = "grey50")
@@ -414,7 +416,6 @@ no variant
 ```{r, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "kb1")))
 ```
-
 
 #### by variant (static)
 
