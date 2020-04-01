@@ -51,9 +51,13 @@ Processing of NGS data is done using **Snakemake** and not covered by this repor
 In [vscode](https://code.visualstudio.com/) with bookdown addon a server can be started using `serve_book`
 
 ```{r, eval=FALSE}
+setwd("~/projects/oligomm-claudia/")
 bookdown::serve_book(getwd())
 ```
-This will starts a browser window pointing to [http://127.0.0.1:7853](http://127.0.0.1:7853) presenting the report written in [R Markdown](https://rmarkdown.rstudio.com/)
+
+This will starts a browser window pointing to [http://127.0.0.1:7853](http://127.0.0.1:7853) presenting the report written in [R Markdown](https://rmarkdown.rstudio.com/) and will update as soon as there are changes on `.Rmd` files in the workspace.
+
+To end bookdown server type `servr::daemon_stop(1)` where `1` is the ID of the server running
 
 ## Acknowledgements {-}
 
