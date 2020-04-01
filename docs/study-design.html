@@ -24,7 +24,7 @@
 <meta name="author" content="Philipp C. Muench" />
 
 
-<meta name="date" content="2020-03-30" />
+<meta name="date" content="2020-04-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -159,7 +159,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="study-design.html"><a href="study-design.html#oligomm"><i class="fa fa-check"></i><b>2.1</b> OligoMM</a></li>
-<li class="chapter" data-level="2.2" data-path="study-design.html"><a href="study-design.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a></li>
+<li class="chapter" data-level="2.2" data-path="study-design.html"><a href="study-design.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="study-design.html"><a href="study-design.html#crispr"><i class="fa fa-check"></i><b>2.2.1</b> CRISPR</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>3</b> Variant statistics</a>
 <ul>
@@ -185,7 +188,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#major-allele-frequency"><i class="fa fa-check"></i><b>4.1</b> major allele frequency</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="functin-of-variants.html"><a href="functin-of-variants.html"><i class="fa fa-check"></i><b>5</b> Function of variants</a></li>
+<li class="chapter" data-level="5" data-path="variant-types.html"><a href="variant-types.html"><i class="fa fa-check"></i><b>5</b> Variant types</a></li>
 <li class="divider"></li>
 <li><a href="https://pmuench.com" target="blank">Philipp C. Muench</a></li>
 
@@ -286,9 +289,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.2</span> Metadata</h2>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="study-design.html#cb5-1"></a>design.df &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;data/sample_mapping.tsv&quot;</span>, <span class="dt">header =</span> T, <span class="dt">sep =</span> <span class="st">&quot;</span><span class="ch">\t</span><span class="st">&quot;</span>)</span>
 <span id="cb5-2"><a href="study-design.html#cb5-2"></a>DT<span class="op">::</span><span class="kw">datatable</span>(design.df)</span></code></pre></div>
-<div id="htmlwidget-7c97db48222e705ee169" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7c97db48222e705ee169">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"],["1607","1612","1877","1660","1750","1664","1753","1779","1783","1789","1801","1423","1425","1885","1880","1881","1882","1883","1884","1807","1814","1815","I_mi","I_cc"],[20,20,20,40,40,40,40,80,80,80,80,1,1,20,20,20,20,20,20,40,40,40,0,0],[1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2],[false,true,true,false,false,true,true,false,true,false,true,false,true,false,true,true,true,true,true,false,true,true,false,false],["20 OMM mix","20 OMM mix","20 OMM mix","40 OMM mix","40 OMM mix","40 OMM mix","40 OMM mix","80 OMM mix","80 OMM mix","2nd generation","2nd generation","stably colonized","stably colonized","20 cecal content","20 cecal content","20 cecal content","20 cecal content","20 cecal content","20 cecal content","40 cecal content","40 cecal content","40 cecal content","Tag 0, vor 20 tage","Tag 0, von cecal content"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mouse.id<\/th>\n      <th>day<\/th>\n      <th>generation<\/th>\n      <th>ecoli<\/th>\n      <th>desc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0cf637b0c62a8c3bc49d" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0cf637b0c62a8c3bc49d">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"],["1607","1612","1877","1660","1750","1664","1753","1779","1783","1789","1801","1423","1425","1885","1880","1881","1882","1883","1884","1807","1814","1815","I_mi","I_cc"],[20,20,20,40,40,40,40,80,80,80,80,1,1,20,20,20,20,20,20,40,40,40,0,0],[1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2],[false,true,true,false,false,true,true,false,true,false,true,false,true,false,true,true,true,true,true,false,true,true,false,false],["20 OMM mix","20 OMM mix","20 OMM mix","40 OMM mix","40 OMM mix","40 OMM mix","40 OMM mix","80 OMM mix","80 OMM mix","2nd generation","2nd generation","stably colonized","stably colonized","20 cecal content","20 cecal content","20 cecal content","20 cecal content","20 cecal content","20 cecal content","40 cecal content","40 cecal content","40 cecal content","Tag 0, vor 20 tage","Tag 0, von cecal content"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mouse.id<\/th>\n      <th>day<\/th>\n      <th>generation<\/th>\n      <th>ecoli<\/th>\n      <th>desc<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[2,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="crispr" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> CRISPR</h3>
+<p>based on Prokka</p>
+<pre><code>[17:07:29] Searching for CRISPR repeats
+[17:07:30] CRISPR1 CP022722.1 1722776 with 6 spacers
+[17:07:30] CRISPR2 CP022722.1 3488656 with 4 spacers
+[17:07:30] CRISPR3 NHMT01000001.1 1999785 with 7 spacers
+[17:07:31] CRISPR4 NHMR02000002.1 214427 with 78 spacers
+[17:07:31] CRISPR5 NHMQ01000003.1 694333 with 9 spacers
+[17:07:31] CRISPR6 NHTR01000003.1 394380 with 20 spacers
+[17:07:31] CRISPR7 NHTR01000010.1 319 with 15 spacers
+[17:07:32] CRISPR8 CP021420.1 425056 with 20 spacers
+[17:07:32] CRISPR9 CP021420.1 434834 with 8 spacers
+[17:07:32] CRISPR10 NHMP01000001.1 344218 with 8 spacers
+[17:07:32] CRISPR11 NHMP01000001.1 403754 with 8 spacers
+[17:07:32] CRISPR12 NHMP01000007.1 29696 with 51 spacers
+[17:07:32] CRISPR13 NHMP01000007.1 50690 with 46 spacers
+[17:07:32] CRISPR14 CP022713.1 372223 with 14 spacers
+[17:07:32] CRISPR15 CP022713.1 3331136 with 7 spacers</code></pre>
 
+</div>
 </div>
 </div>
             </section>

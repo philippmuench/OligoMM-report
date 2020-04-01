@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Section 1 Setup | Claudia’s data</title>
-  <meta name="description" content="Section 1 Setup | Claudia’s data" />
+  <title>Section 5 Variant types | Claudia’s data</title>
+  <meta name="description" content="Section 5 Variant types | Claudia’s data" />
   <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Section 1 Setup | Claudia’s data" />
+  <meta property="og:title" content="Section 5 Variant types | Claudia’s data" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Section 1 Setup | Claudia’s data" />
+  <meta name="twitter:title" content="Section 5 Variant types | Claudia’s data" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html"/>
-<link rel="next" href="study-design.html"/>
+<link rel="prev" href="Allele-frequency.html"/>
+
 <script src="libs/header-attrs-2.1.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -209,63 +209,30 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="Setup" class="section level1" number="1">
-<h1><span class="header-section-number">Section 1</span> Setup</h1>
-<div id="Workspace_setup" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Workspace setup</h2>
-<p>We specify the folder where the analysis is located.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="Setup.html#cb2-1"></a><span class="kw">setwd</span>(<span class="st">&quot;~/projects/oligomm-claudia/&quot;</span>)</span></code></pre></div>
-</div>
-<div id="dependencies" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Dependencies</h2>
-<p>Functions that are used frequent are defined in <code>utils.R</code> and are mostly helper functions for data manipulation (e.g. translation of sample ids to groups). Other packages can be load via cran using the <code>install.packages()</code> function.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="Setup.html#cb3-1"></a><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())</span>
-<span id="cb3-2"><a href="Setup.html#cb3-2"></a><span class="kw">source</span>(<span class="st">&quot;utils.R&quot;</span>)</span>
-<span id="cb3-3"><a href="Setup.html#cb3-3"></a><span class="kw">library</span>(<span class="st">&quot;vcfR&quot;</span>)</span>
-<span id="cb3-4"><a href="Setup.html#cb3-4"></a><span class="kw">library</span>(<span class="st">&quot;rmdformats&quot;</span>)</span>
-<span id="cb3-5"><a href="Setup.html#cb3-5"></a><span class="kw">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
-<span id="cb3-6"><a href="Setup.html#cb3-6"></a><span class="kw">library</span>(<span class="st">&quot;reshape2&quot;</span>)</span>
-<span id="cb3-7"><a href="Setup.html#cb3-7"></a><span class="kw">library</span>(<span class="st">&quot;ggridges&quot;</span>)</span>
-<span id="cb3-8"><a href="Setup.html#cb3-8"></a><span class="kw">library</span>(<span class="st">&quot;knitr&quot;</span>)</span>
-<span id="cb3-9"><a href="Setup.html#cb3-9"></a><span class="kw">library</span>(<span class="st">&quot;kableExtra&quot;</span>)</span>
-<span id="cb3-10"><a href="Setup.html#cb3-10"></a><span class="kw">library</span>(<span class="st">&quot;plotly&quot;</span>)</span>
-<span id="cb3-11"><a href="Setup.html#cb3-11"></a><span class="kw">library</span>(<span class="st">&quot;DT&quot;</span>)</span>
-<span id="cb3-12"><a href="Setup.html#cb3-12"></a><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</span></code></pre></div>
-<p>for <code>rtracklayer</code> you might need curl</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="Setup.html#cb4-1"></a><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</span></code></pre></div>
-</div>
-<div id="Data_structures" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Data structure</h2>
-<dl>
-<dt><code>data/raw</code></dt>
-<dd>files from host machine, contains <code>coverage</code> and <code>lofreq</code> data
-</dd>
-<dt><code>data/annotation</code></dt>
-<dd>annotation files for OMM12 genomes e.g. phage location (<em>pro-hunter</em>, <em>fasta</em> files and <em>Prokka</em> annotation)
-</dd>
-<dt><code>data/tables</code></dt>
-<dd>tables in tsv format for e.g. import with Excel
-</dd>
-<dt><code>data/annotation/gff</code></dt>
-<dd><em>Prokka</em> annotation
-</dd>
-<dt><code>data/rda</code></dt>
-<dd>processed raw data in <em>rds</em> format generated by <code>01-load-data.rmd</code>
-</dd>
-<dt><code>docs</code></dt>
-<dd><code>html</code> files generated via <code>bookdown::serve_book(getwd())</code>
-</dd>
-</dl>
+<div id="variant_types" class="section level1" number="5">
+<h1><span class="header-section-number">Section 5</span> Variant types</h1>
+<p>Gff file needs to be converted to TxDb objects with makeTxDbFromGFF() in the GenomicFeatures package.</p>
+<div class="sourceCode" id="cb66"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb66-1"><a href="variant-types.html#cb66-1"></a><span class="co">#build snpEff databse</span></span>
+<span id="cb66-2"><a href="variant-types.html#cb66-2"></a><span class="bu">cd</span> /home/aime/projects/oligomm-claudia/data/tools/snpEff</span>
+<span id="cb66-3"><a href="variant-types.html#cb66-3"></a><span class="ex">java</span> -jar snpEff.jar build -gff3 -v omm <span class="co"># files needed for this step are snpEff.config and data/omm</span></span>
+<span id="cb66-4"><a href="variant-types.html#cb66-4"></a><span class="ex">java</span> -jar /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.jar eff  -no-downstream -no-upstream -no-utr -no-intergenic -o vcf -c /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.config omm -fileList files.txt </span></code></pre></div>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb67-1"><a href="variant-types.html#cb67-1"></a>dat &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="st">&quot;data/rds/variants.rds&quot;</span>)</span>
+<span id="cb67-2"><a href="variant-types.html#cb67-2"></a>dat &lt;-<span class="st"> </span>dat[<span class="kw">which</span>(dat<span class="op">$</span>ecoli <span class="op">==</span><span class="st"> </span><span class="ot">FALSE</span>), ]</span>
+<span id="cb67-3"><a href="variant-types.html#cb67-3"></a><span class="kw">print</span>(<span class="kw">summary</span>(dat<span class="op">$</span>effect))</span></code></pre></div>
+<pre><code>##    Length     Class      Mode 
+##       727 character character</code></pre>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb69-1"><a href="variant-types.html#cb69-1"></a><span class="kw">print</span>(<span class="kw">summary</span>(dat<span class="op">$</span>vartype))</span></code></pre></div>
+<pre><code>##    Length     Class      Mode 
+##       727 character character</code></pre>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="study-design.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="Allele-frequency.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

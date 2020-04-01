@@ -24,7 +24,7 @@
 <meta name="author" content="Philipp C. Muench" />
 
 
-<meta name="date" content="2020-03-30" />
+<meta name="date" content="2020-04-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="Variant-statistics.html"/>
-<link rel="next" href="functin-of-variants.html"/>
+<link rel="next" href="variant-types.html"/>
 <script src="libs/header-attrs-2.1.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -159,7 +159,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a>
 <ul>
 <li class="chapter" data-level="2.1" data-path="study-design.html"><a href="study-design.html#oligomm"><i class="fa fa-check"></i><b>2.1</b> OligoMM</a></li>
-<li class="chapter" data-level="2.2" data-path="study-design.html"><a href="study-design.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a></li>
+<li class="chapter" data-level="2.2" data-path="study-design.html"><a href="study-design.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="study-design.html"><a href="study-design.html#crispr"><i class="fa fa-check"></i><b>2.2.1</b> CRISPR</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>3</b> Variant statistics</a>
 <ul>
@@ -185,7 +188,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#major-allele-frequency"><i class="fa fa-check"></i><b>4.1</b> major allele frequency</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="functin-of-variants.html"><a href="functin-of-variants.html"><i class="fa fa-check"></i><b>5</b> Function of variants</a></li>
+<li class="chapter" data-level="5" data-path="variant-types.html"><a href="variant-types.html"><i class="fa fa-check"></i><b>5</b> Variant types</a></li>
 <li class="divider"></li>
 <li><a href="https://pmuench.com" target="blank">Philipp C. Muench</a></li>
 
@@ -210,16 +213,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">Section 4</span> Allele frequency</h1>
 <div id="major-allele-frequency" class="section level2" number="4.1">
 <h2><span class="header-section-number">4.1</span> major allele frequency</h2>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="Allele-frequency.html#cb51-1"></a>p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(dat, <span class="kw">aes</span>(<span class="dt">x =</span> majorAF, <span class="dt">y =</span> mouse.id))</span>
-<span id="cb51-2"><a href="Allele-frequency.html#cb51-2"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span>ggridges<span class="op">::</span><span class="kw">geom_density_ridges</span>(<span class="dt">jittered_points =</span> <span class="ot">TRUE</span>, <span class="dt">position =</span> ggridges<span class="op">::</span><span class="kw">position_points_jitter</span>(<span class="dt">width =</span> <span class="fl">0.01</span>, </span>
-<span id="cb51-3"><a href="Allele-frequency.html#cb51-3"></a>    <span class="dt">height =</span> <span class="dv">0</span>), <span class="dt">point_shape =</span> <span class="st">&quot;|&quot;</span>, <span class="dt">point_size =</span> <span class="dv">1</span>, <span class="dt">point_alpha =</span> <span class="fl">0.5</span>, <span class="dt">alpha =</span> <span class="fl">0.1</span>)</span>
-<span id="cb51-4"><a href="Allele-frequency.html#cb51-4"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>()</span>
-<span id="cb51-5"><a href="Allele-frequency.html#cb51-5"></a><span class="co"># p &lt;- p + facet_grid(phase ~., space = &#39;free&#39;, scales= &#39;free&#39;)</span></span>
-<span id="cb51-6"><a href="Allele-frequency.html#cb51-6"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">strip.background =</span> <span class="kw">element_blank</span>())</span>
-<span id="cb51-7"><a href="Allele-frequency.html#cb51-7"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Major allele frequency&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Count&quot;</span>)</span>
-<span id="cb51-8"><a href="Allele-frequency.html#cb51-8"></a>p</span></code></pre></div>
+<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="Allele-frequency.html#cb64-1"></a>p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(dat, <span class="kw">aes</span>(<span class="dt">x =</span> majorAF, <span class="dt">y =</span> mouse.id))</span>
+<span id="cb64-2"><a href="Allele-frequency.html#cb64-2"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span>ggridges<span class="op">::</span><span class="kw">geom_density_ridges</span>(<span class="dt">jittered_points =</span> <span class="ot">TRUE</span>, <span class="dt">position =</span> ggridges<span class="op">::</span><span class="kw">position_points_jitter</span>(<span class="dt">width =</span> <span class="fl">0.01</span>, </span>
+<span id="cb64-3"><a href="Allele-frequency.html#cb64-3"></a>    <span class="dt">height =</span> <span class="dv">0</span>), <span class="dt">point_shape =</span> <span class="st">&quot;|&quot;</span>, <span class="dt">point_size =</span> <span class="dv">1</span>, <span class="dt">point_alpha =</span> <span class="fl">0.5</span>, <span class="dt">alpha =</span> <span class="fl">0.1</span>)</span>
+<span id="cb64-4"><a href="Allele-frequency.html#cb64-4"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>()</span>
+<span id="cb64-5"><a href="Allele-frequency.html#cb64-5"></a><span class="co"># p &lt;- p + facet_grid(phase ~., space = &#39;free&#39;, scales= &#39;free&#39;)</span></span>
+<span id="cb64-6"><a href="Allele-frequency.html#cb64-6"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme</span>(<span class="dt">strip.background =</span> <span class="kw">element_blank</span>())</span>
+<span id="cb64-7"><a href="Allele-frequency.html#cb64-7"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;Major allele frequency&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;Count&quot;</span>)</span>
+<span id="cb64-8"><a href="Allele-frequency.html#cb64-8"></a>p</span></code></pre></div>
 <pre><code>## Picking joint bandwidth of 0.0632</code></pre>
-<p><img src="oligomm-claudia_files/figure-html/unnamed-chunk-42-1.png" width="672" /></p>
+<p><img src="oligomm-claudia_files/figure-html/unnamed-chunk-54-1.png" width="672" /></p>
 
 </div>
 </div>
@@ -229,7 +232,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="Variant-statistics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="functin-of-variants.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="variant-types.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
