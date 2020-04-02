@@ -1,5 +1,16 @@
 # Study design
 
+## Experiment
+
+![Experiment setup](experiment.png "Experiment setup")
+
+## Metadata
+
+```{r}
+design.df <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
+DT::datatable(design.df)
+```
+
 ## OligoMM
 
 |  ID | phylum | species | 
@@ -16,14 +27,6 @@
 | YL58 | _Firmicutes_ | _B. coccoides_ |
 | I49 | _Firmicutes_ | _L. reuteri_ |
 | I46 | _Firmicutes_ | _C. innocuum_ |
-
-
-## Metadata
-
-```{r}
-design.df <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
-DT::datatable(design.df)
-```
 
 ### CRISPR
 
