@@ -155,4 +155,4 @@ yl44 = "#ce1256", "yl27" = "#525252", "yl45" = "#969696", "kb1" = "#969696", "kb
 
 sample_colors = c("stably colonized" = "#74c476", "20 OMM mix" = "#d7b5d8", "40 OMM mix" = "#df65b0", "80 OMM mix" = "#ce1256", "2nd generation" = "#6a51a3", "40 cecal content" = "#41b6c4",  "20 cecal content" = "#a1dab4", "Tag 0, von cecal content" = "#cccccc", "Tag 0, vor 20 tage"=  "#969696" )
 
-variant_colors = c("missense_variant" = "#b2e2e2", "synonymous_variant" = "#66c2a4", "intragenic_variant" = "#fdcc8a", "stop_gained" = "#b30000", "stop_lost&splice_region_variant" = "#252525",  "non_coding_transcript_variant" = "#810f7c")
+variant_colors = c("missense_variant" = "#b2e2e2", "synonymous_variant" = "#66c2a4", "intragenic_variant" = "#fdcc8a", "stop_gained" = "#b30000", "stop_lost&splice_region_variant" = "#252525",  "non_coding_transcript_variant" = "#810f7c", "unknown" = "#bdbdbd")

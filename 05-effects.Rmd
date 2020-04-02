@@ -1,0 +1,90 @@
+# Variant effects {#variant_effects}
+
+## snpEff run
+
+```{bash, eval=F}
+#build snpEff databse
+cd /home/aime/projects/oligomm-claudia/data/tools/snpEff
+java -jar snpEff.jar build -gff3 -v omm # files needed for this step are snpEff.config and data/omm
+java -jar /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.jar eff  -no-downstream -no-upstream -no-utr -no-intergenic -o vcf -c /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.config omm -fileList files.txt 
+```
+## number of effects by type
+
+| Name  | name_classic  | Note  | Impact  | 
+|---|---|---|---|
+|synonymous_variant |	SYNONYMOUS_CODING |	Variant causes a codon that produces the same amino acid e.g.: Ttg-Ctg, L-L |	LOW |
+|stop_gained |	STOP_GAINED |	Variant causes a STOP codon e.g.: Cag-Tag, Q-* | HIGH|
+|start_lost |	START_LOST| 	Variant causes start codon to be mutated into a non-start codon. e.g.: aTg-aGg, M-R |	HIGH |
+|transcript_variant |	TRANSCRIPT 	|The variant hits a transcript. |	MODIFIER |
+|missense_variant |	NON_SYNONYMOUS_CODING |	Variant causes a codon that produces a different amino acid e.g.: Tgg-Cgg, W-R | MODERATE|
+| intragenic_variant  | INTRAGENIC  | The variant hits a gene, but no transcripts within the gene  | MODIFIER  |
+
+
+```{r}
+dat <- readRDS("data/rds/variants.rds")
+dat <- dat[which(dat$ecoli== FALSE),]
+DT::datatable(as.data.frame(table(dat$effect)))
+DT::datatable(as.data.frame(table(dat$vartype)))
+```
+
+`r length(which(is.na(dat$vartype)))` variants are with `NA` in their snpEff annotation, not sure why this is the case. `r length(which(!is.na(dat$vartype)))` variants have snpEff annotation. 
+
+
+## number of effects by type by genome (vartype)
+
+list of variants and their impact [SnpEff manual](http://snpeff.sourceforge.net/SnpEff_manual.html)
+
+```{r}
+dat$dummy <- 1
+dat.by.genome <- aggregate(dummy ~ genome + vartype, dat, sum)
+colnames(dat.by.genome) <- c("genome", "vartype", "occurence")
+dat.by.genome  <- dat.by.genome[order(dat.by.genome$occurence, decreasing = TRUE),]
+write.table(dat.by.genome, file = "data/tables/table3.tsv", sep = "\t", row.names = F, quote = F)
+DT::datatable(dat.by.genome)
+```
+
+```{r, fig.cap="Number of variants types by genome"}
+p <- ggplot(dat.by.genome, aes(x = reorder(genome, occurence), y = occurence, fill = vartype))
+p <- p + geom_bar(stat="identity") + theme_classic() + coord_flip()
+p <- p + ylab("number of variants") + xlab("genome") + scale_fill_manual(values = variant_colors)
+plotly::ggplotly(p, width = 1000)
+```
+
+## number of effects by type by genome (effect)
+
+Putative_impact: A simple estimation of putative impact / deleteriousness : {HIGH, MODERATE, LOW, MODIFIER} 
+
+```{r}
+dat$dummy <- 1
+dat.by.genome <- aggregate(dummy ~ genome + effect, dat, sum)
+colnames(dat.by.genome) <- c("genome", "effect", "occurence")
+dat.by.genome  <- dat.by.genome[order(dat.by.genome$occurence, decreasing = TRUE),]
+write.table(dat.by.genome, file = "data/tables/table4.tsv", sep = "\t", row.names = F, quote = F)
+DT::datatable(dat.by.genome)
+```
+
+```{r, fig.cap="Number of variants by variant effect by genome"}
+p <- ggplot(dat.by.genome, aes(x = reorder(genome, occurence), y = occurence, fill = effect))
+p <- p + geom_bar(stat="identity") + theme_classic() + coord_flip()
+p <- p + ylab("number of variants") + xlab("genome")
+plotly::ggplotly(p, width = 1000)
+```
+
+
+## by genome and mouse
+
+```{r}
+dat$dummy <- 1
+dat.by.mouse <- aggregate(dummy ~ genome + mouse.id + desc + vartype, dat, sum)
+colnames(dat.by.mouse) <- c("genome", "mouse.id", "desc", "vartype", "occurence")
+dat.by.mouse <- dat.by.mouse[order(dat.by.mouse$occurence, decreasing = TRUE),]
+write.table(dat.by.mouse, file = "data/tables/table5.tsv", sep = "\t", row.names = F, quote = F)
+DT::datatable(dat.by.mouse)
+```
+
+```{r, fig.cap="Number of variant types by genome and mouse"}
+p <- ggplot(dat.by.mouse, aes(x = reorder(genome, occurence), y = occurence, fill = vartype))
+p <- p + geom_bar(stat="identity") + theme_classic() + coord_flip() + facet_wrap(~desc)
+p <- p + ylab("number of variants") + xlab("genome") + scale_fill_manual(values = variant_colors)
+plotly::ggplotly(p, width = 1000, height = 1200)
+```
