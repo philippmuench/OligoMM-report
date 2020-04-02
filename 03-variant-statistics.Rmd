@@ -6,7 +6,7 @@ Since the raw output of the **Snakemake** pipeline produces one `vcf` file per s
 
 We define a function that iterates over a set of `vcf` files (`vcf.files`)
 
-```{r process-vcf1}
+```{r}
 #' Processes a list of vcf files
 #' 
 #' @param vcf.files a list of file path of files in vcf format
@@ -135,7 +135,6 @@ plotly::ggplotly(p)
 
 only non-ecoli samples
 
-
 ```{r}
 dat$dummy <- 1
 dat.by.sample <- aggregate(dummy ~ mouse.id, dat, sum)
@@ -227,6 +226,7 @@ pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
 	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")
 	p <- p + geom_vline(xintercept = .5, linetype = 2, color = "grey50")
 	p <- p + theme(aspect.ratio = 1) 
+	p <- p + scale_shape_manual(values = variant_shapes)
 	p <- p + theme(strip.background = element_blank())
 	p <- p + geom_abline(intercept = 0, slope = 1)
 	p <- p + xlab(paste0("sample ", case)) + ylab(paste0("sample ", control))
@@ -322,6 +322,7 @@ geneCentricPlot <- function(dat = dat, genome = "yl44"){
 	p <- p + coord_flip() + theme_classic()
 	p <- p + facet_grid(orf_desc ~., scales = "free", space = "free")
 	p <- p + ylim(c(0,1))
+	p <- p + scale_shape_manual(values = variant_shapes)
 	p <- p + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
 	p <- p + xlab("") + ylab("allele frequency")  + scale_color_manual(values = sample_colors)
 	return(p)
@@ -337,6 +338,7 @@ geneCentricPlot2 <- function(dat = dat, genome = "yl44"){
   p <- p + geom_point(size = 4, fill = NA)
 	p <- p + coord_flip() + theme_classic()
 	p <- p + ylim(c(0,1))
+	p <- p + scale_shape_manual(values = variant_shapes)
 	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
 	p <- p + xlab("") + ylab("allele frequency") + scale_color_manual(values = sample_colors)
 	return(p)

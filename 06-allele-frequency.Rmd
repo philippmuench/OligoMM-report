@@ -1,0 +1,42 @@
+# Allele frequency {#Allele_frequency}
+
+## major allele frequency 
+
+### all samples and all genomes
+
+without _E. Coli_
+
+```{r}
+dat <- readRDS("data/rds/variants.rds")
+dat <- dat[which(dat$ecoli== FALSE),]
+```
+
+```{r, fig.height = 10, fig.width= 15}
+p <- ggplot(dat, aes(x = majorAF, y = mouse.id))
+p <- p + ggridges::geom_density_ridges(jittered_points = TRUE,
+  position = ggridges::position_points_jitter(width = 0.01, height = 0),
+  point_shape = '|', point_size = 1, point_alpha = 0.5, alpha = 0.1)
+p <- p + theme_classic() 
+p <- p + theme(strip.background = element_blank()) 
+p <- p + xlab("Major allele frequency") + ylab("Count") 
+p
+```
+
+### by sample and genome
+
+```{r, fig.height = 15, fig.width= 15} 
+plotAFofSample <- function(dat = dat) {
+ 
+  p <- ggplot(dat, aes(x = majorAF, y = genome, color = genome))
+  p <- p + ggridges::geom_density_ridges(jittered_points = TRUE,
+    position = ggridges::position_points_jitter(width = 0.01, height = 0),
+    point_shape = '|', point_size = 2, point_alpha = 1, alpha = 0.1)
+  p <- p + facet_wrap(~desc)
+  p <- p + theme_classic() + scale_color_manual(values = omm_colors)
+  #p <- p + facet_grid(phase ~., space =  "free", scales= "free")
+  p <- p + theme(strip.background = element_blank()) 
+  p <- p + xlab("Major allele frequency") + ylab("Genome") 
+  return(p)
+}
+suppressWarnings(plotAFofSample(dat))
+```
