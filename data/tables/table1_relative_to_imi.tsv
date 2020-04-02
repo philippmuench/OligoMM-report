@@ -1,0 +1,285 @@
+mouse.id	CHROM	POS	REF	ALT	QUAL	AF	majorAF	genome	genome_hr	dp	vartype	effect	substitution	orf_desc	day	generation	ecoli	desc	dummy
+1423	CP021420.1	2358462	A	G	202.0	0.77381	0.77381	yl44	A. muciniphila	84	missense_variant	MODERATE	p.Thr149Ala	outside ORFs	1	1	FALSE	stably colonized	1
+1423	CP021421.1	788493	G	A	161.0	0.695122	0.695122	yl27	M. intestinale	82	missense_variant	MODERATE	p.Arg70Cys	Alpha-D-kanosaminyltransferase	1	1	FALSE	stably colonized	1
+1423	CP021421.1	1198557	T	A	232.0	0.833333	0.833333	yl27	M. intestinale	72	missense_variant	MODERATE	p.Gln59Leu	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	CP021421.1	1917169	G	A	259.0	0.892857	0.892857	yl27	M. intestinale	56	missense_variant	MODERATE	p.Ala39Thr	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	CP021421.1	1967661	C	A	95.0	0.680851	0.680851	yl27	M. intestinale	47	missense_variant	MODERATE	p.Arg133Ser	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	CP022713.1	3178523	C	T	225.0	0.802817	0.802817	yl58	B. coccoides	71	unknown	NA	NA	outside ORFs	1	1	FALSE	stably colonized	1
+1423	CP022713.1	3179041	C	T	398.0	0.78125	0.78125	yl58	B. coccoides	128	unknown	NA	NA	outside ORFs	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4254987	C	A	105.0	0.753623	0.753623	yl58	B. coccoides	69	missense_variant	MODERATE	p.Asp63Tyr	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4254993	G	A	145.0	0.791667	0.791667	yl58	B. coccoides	72	stop_gained	HIGH	p.Gln61*	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4258830	C	T	397.0	0.865079	0.865079	yl58	B. coccoides	126	missense_variant	MODERATE	p.Met232Ile	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4259722	G	A	137.0	0.764706	0.764706	yl58	B. coccoides	102	missense_variant	MODERATE	p.Thr41Ile	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	CP022713.1	4260562	C	T	217.0	0.831683	0.831683	yl58	B. coccoides	101	missense_variant	MODERATE	p.Gly12Asp	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	NHMU01000001.1	210221	G	A	112.0	0.45208	0.54792	i48	B. caecimuris	553	synonymous_variant	LOW	p.Val81Val	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	1	1	FALSE	stably colonized	1
+1423	NHMU01000001.1	765279	A	T	177.0	0.481108	0.518892	i48	B. caecimuris	397	stop_gained	HIGH	p.Lys74*	Chromosome partition protein Smc	1	1	FALSE	stably colonized	1
+1423	NHMU01000002.1	447372	G	A	303.0	0.585586	0.585586	i48	B. caecimuris	333	missense_variant	MODERATE	p.Thr25Met	Putative xanthine dehydrogenase molybdenum-binding subunit XdhA	1	1	FALSE	stably colonized	1
+1423	NHMU01000003.1	166441	A	G	130.0	0.457433	0.542567	i48	B. caecimuris	787	unknown	NA	NA	Teichoic acids export ATP-binding protein TagH	1	1	FALSE	stably colonized	1
+1423	NHMU01000005.1	190292	G	T	507.0	0.640506	0.640506	i48	B. caecimuris	395	missense_variant	MODERATE	p.Gly586Trp	Teichoic acid poly(glycerol phosphate) polymerase	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	244733	C	A	135.0	1	1	yl32	C. clostridioforme	32	missense_variant	MODERATE	p.Leu207Ile	Sporulation sigma-E factor-processing peptidase	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	966796	G	A	108.0	0.443182	0.556818	yl32	C. clostridioforme	440	synonymous_variant	LOW	p.Phe49Phe	ATP-dependent DNA helicase RecG	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	966802	G	A	129.0	0.455172	0.544828	yl32	C. clostridioforme	435	synonymous_variant	LOW	p.Gly47Gly	ATP-dependent DNA helicase RecG	1	1	FALSE	stably colonized	1
+1423	NHTR01000001.1	1265406	A	G	112.0	0.522807	0.522807	yl32	C. clostridioforme	570	unknown	NA	NA	Phosphoglucomutase	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	546419	A	G	443.0	0.796364	0.796364	yl32	C. clostridioforme	275	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	593116	G	C	257.0	0.906977	0.906977	yl32	C. clostridioforme	86	missense_variant	MODERATE	p.Ile312Met	Inner membrane ABC transporter permease protein YdcV	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	593136	G	A	186.0	0.902778	0.902778	yl32	C. clostridioforme	72	missense_variant	MODERATE	p.Arg306Trp	Inner membrane ABC transporter permease protein YdcV	1	1	FALSE	stably colonized	1
+1423	NHTR01000002.1	596611	G	T	242.0	0.836066	0.836066	yl32	C. clostridioforme	61	missense_variant	MODERATE	p.Glu218Asp	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	NHTR01000003.1	265570	G	A	107.0	0.556338	0.556338	yl32	C. clostridioforme	142	missense_variant	MODERATE	p.Gly52Arg	Glutathione transport system permease protein GsiD	1	1	FALSE	stably colonized	1
+1423	NHTR01000007.1	22900	G	A	129.0	0.877551	0.877551	yl32	C. clostridioforme	49	missense_variant	MODERATE	p.Asp351Asn	outside ORFs	1	1	FALSE	stably colonized	1
+1423	NHTR01000008.1	223662	T	C	228.0	0.609524	0.609524	yl32	C. clostridioforme	210	stop_lost&splice_region_variant	HIGH	p.Ter568Glnext*?	Ribosome-binding ATPase YchF	1	1	FALSE	stably colonized	1
+1423	NHTR01000009.1	107241	T	C	166.0	0.722628	0.722628	yl32	C. clostridioforme	274	missense_variant	MODERATE	p.Val183Ala	Twitching mobility protein	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	48380	A	G	125.0	0.957447	0.957447	yl32	C. clostridioforme	47	synonymous_variant	LOW	p.Cys317Cys	hypothetical proteins	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	51636	C	T	98.0	0.666667	0.666667	yl32	C. clostridioforme	276	synonymous_variant	LOW	p.Leu166Leu	UDP-2,3-diacetamido-2,3-dideoxy-D-glucuronate 2-epimerase	1	1	FALSE	stably colonized	1
+1423	NHTR01000011.1	63431	A	G	90.0	0.648438	0.648438	yl32	C. clostridioforme	256	missense_variant	MODERATE	p.Ser68Pro	Sensor histidine kinase BtsS	1	1	FALSE	stably colonized	1
+1607	CP021421.1	733247	G	A	301.0	0.95	0.95	yl27	M. intestinale	60	missense_variant	MODERATE	p.Ser1489Leu	Molybdenum transport system permease protein ModB	20	1	FALSE	20 OMM mix	1
+1607	CP021421.1	1200101	A	T	179.0	0.757143	0.757143	yl27	M. intestinale	70	missense_variant	MODERATE	p.Val45Asp	hypothetical proteins	20	1	FALSE	20 OMM mix	1
+1607	CP021421.1	1203596	C	A	220.0	0.956522	0.956522	yl27	M. intestinale	46	missense_variant	MODERATE	p.Gly539Val	hypothetical proteins	20	1	FALSE	20 OMM mix	1
+1607	CP022713.1	4972023	G	A	87.0	0.701835	0.701835	yl58	B. coccoides	218	unknown	NA	NA	16S ribosomal RNA	20	1	FALSE	20 OMM mix	1
+1607	NHMP01000002.1	2345	C	T	149.0	1	1	yl45	T. muris	27	missense_variant	MODERATE	p.Gly537Asp	hypothetical proteins	20	1	FALSE	20 OMM mix	1
+1607	NHMP01000003.1	12207	T	G	107.0	0.896552	0.896552	yl45	T. muris	29	unknown	NA	NA	outside ORFs	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000003.1	166441	A	G	283.0	0.477096	0.522904	i48	B. caecimuris	1157	unknown	NA	NA	Teichoic acids export ATP-binding protein TagH	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000003.1	254185	G	A	391.0	0.731156	0.731156	i48	B. caecimuris	398	missense_variant	MODERATE	p.Thr151Ile	Threonine--tRNA ligase	20	1	FALSE	20 OMM mix	1
+1607	NHMU01000005.1	15927	T	C	219.0	0.446221	0.553779	i48	B. caecimuris	688	synonymous_variant	LOW	p.Gly21Gly	HTH-type transcriptional repressor YvoA	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	966796	G	A	136.0	0.469048	0.530952	yl32	C. clostridioforme	420	synonymous_variant	LOW	p.Phe49Phe	ATP-dependent DNA helicase RecG	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	966802	G	A	157.0	0.496437	0.503563	yl32	C. clostridioforme	421	synonymous_variant	LOW	p.Gly47Gly	ATP-dependent DNA helicase RecG	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000001.1	1265406	A	G	117.0	0.559091	0.559091	yl32	C. clostridioforme	440	unknown	NA	NA	Phosphoglucomutase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	546419	A	G	431.0	0.836449	0.836449	yl32	C. clostridioforme	214	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	593116	G	C	220.0	0.927536	0.927536	yl32	C. clostridioforme	69	missense_variant	MODERATE	p.Ile312Met	Inner membrane ABC transporter permease protein YdcV	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	593136	G	A	182.0	0.952381	0.952381	yl32	C. clostridioforme	63	missense_variant	MODERATE	p.Arg306Trp	Inner membrane ABC transporter permease protein YdcV	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000002.1	596611	G	T	230.0	0.914894	0.914894	yl32	C. clostridioforme	47	missense_variant	MODERATE	p.Glu218Asp	hypothetical proteins	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000003.1	265570	G	A	286.0	0.616766	0.616766	yl32	C. clostridioforme	167	missense_variant	MODERATE	p.Gly52Arg	Glutathione transport system permease protein GsiD	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000007.1	22900	G	A	119.0	0.844444	0.844444	yl32	C. clostridioforme	45	missense_variant	MODERATE	p.Asp351Asn	outside ORFs	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	48380	A	G	106.0	0.918367	0.918367	yl32	C. clostridioforme	49	synonymous_variant	LOW	p.Cys317Cys	hypothetical proteins	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	63431	A	G	97.0	0.669456	0.669456	yl32	C. clostridioforme	239	missense_variant	MODERATE	p.Ser68Pro	Sensor histidine kinase BtsS	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	76724	G	A	93.0	0.649606	0.649606	yl32	C. clostridioforme	254	synonymous_variant	LOW	p.Ser171Ser	Beta-xylosidase	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	82310	T	G	487.0	0.962617	0.962617	yl32	C. clostridioforme	107	synonymous_variant	LOW	p.Ile641Ile	hypothetical proteins	20	1	FALSE	20 OMM mix	1
+1607	NHTR01000011.1	91035	G	A	102.0	0.665272	0.665272	yl32	C. clostridioforme	239	synonymous_variant	LOW	p.Gly56Gly	outside ORFs	20	1	FALSE	20 OMM mix	1
+1660	CP021421.1	1967398	G	T	1100.0	0.936652	0.936652	yl27	M. intestinale	221	missense_variant	MODERATE	p.Arg45Leu	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1660	CP021421.1	2043340	A	G	474.0	0.913793	0.913793	yl27	M. intestinale	116	missense_variant	MODERATE	p.Asp653Gly	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1660	CP022713.1	2464482	A	T	120.0	0.666667	0.666667	yl58	B. coccoides	195	missense_variant	MODERATE	p.Leu119Met	Group II intron-encoded protein LtrA	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000002.1	2345	C	T	110.0	0.83871	0.83871	yl45	T. muris	31	missense_variant	MODERATE	p.Gly537Asp	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000003.1	12207	T	G	101.0	0.83871	0.83871	yl45	T. muris	31	unknown	NA	NA	outside ORFs	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000004.1	260960	T	C	129.0	0.962963	0.962963	yl45	T. muris	27	synonymous_variant	LOW	p.Asp272Asp	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1660	NHMP01000004.1	261025	A	G	125.0	0.961538	0.961538	yl45	T. muris	26	missense_variant	MODERATE	p.Gln294Arg	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	191448	A	G	107.0	1	1	yl31	F. plautii	25	missense_variant	MODERATE	p.Thr383Ala	Teichoic acid poly(glycerol phosphate) polymerase	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	471181	C	T	130.0	0.846154	0.846154	yl31	F. plautii	26	missense_variant	MODERATE	p.Ala47Thr	Peptide chain release factor 3	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	912632	A	G	93.0	0.904762	0.904762	yl31	F. plautii	21	missense_variant	MODERATE	p.Val77Ala	putative ATPase YjoB	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000001.1	1160549	T	C	102.0	0.92	0.92	yl31	F. plautii	25	unknown	NA	NA	outside ORFs	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000002.1	120704	G	A	112.0	0.8	0.8	yl31	F. plautii	25	missense_variant	MODERATE	p.Arg213His	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000002.1	135429	T	C	160.0	0.966667	0.966667	yl31	F. plautii	30	missense_variant	MODERATE	p.Tyr326Cys	CdaA regulatory protein CdaR	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000002.1	830765	C	T	90.0	0.793103	0.793103	yl31	F. plautii	29	missense_variant	MODERATE	p.Arg469Gln	Nuclease SbcCD subunit D	40	1	FALSE	40 OMM mix	1
+1660	NHMQ01000003.1	172560	T	C	118.0	0.958333	0.958333	yl31	F. plautii	24	missense_variant	MODERATE	p.Thr128Ala	GalNAc(5)-diNAcBac-PP-undecaprenol beta-1,3-glucosyltransferase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000003.1	34364	C	A	2444.0	0.920956	0.920956	i48	B. caecimuris	544	missense_variant	MODERATE	p.Met71Ile	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000003.1	254185	G	A	474.0	0.696774	0.696774	i48	B. caecimuris	465	missense_variant	MODERATE	p.Thr151Ile	Threonine--tRNA ligase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000003.1	571112	G	A	2419.0	0.910369	0.910369	i48	B. caecimuris	569	missense_variant	MODERATE	p.Met192Ile	2-iminoacetate synthase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000004.1	427330	C	A	125.0	0.736842	0.736842	i48	B. caecimuris	38	missense_variant	MODERATE	p.Ser128Ile	Biotin carboxylase	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000005.1	15927	T	C	343.0	0.490074	0.509926	i48	B. caecimuris	806	synonymous_variant	LOW	p.Gly21Gly	HTH-type transcriptional repressor YvoA	40	1	FALSE	40 OMM mix	1
+1660	NHMU01000013.1	40836	T	G	127.0	0.929825	0.929825	i48	B. caecimuris	57	missense_variant	MODERATE	p.Asp192Glu	Chloramphenicol acetyltransferase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000001.1	1265406	A	G	99.0	0.56383	0.56383	yl32	C. clostridioforme	282	unknown	NA	NA	Phosphoglucomutase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000002.1	546419	A	G	160.0	0.793478	0.793478	yl32	C. clostridioforme	92	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000002.1	593116	G	C	87.0	0.916667	0.916667	yl32	C. clostridioforme	36	missense_variant	MODERATE	p.Ile312Met	Inner membrane ABC transporter permease protein YdcV	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000002.1	593136	G	A	87.0	0.914286	0.914286	yl32	C. clostridioforme	35	missense_variant	MODERATE	p.Arg306Trp	Inner membrane ABC transporter permease protein YdcV	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000003.1	265570	G	A	106.0	0.5	0.5	yl32	C. clostridioforme	82	missense_variant	MODERATE	p.Gly52Arg	Glutathione transport system permease protein GsiD	40	1	FALSE	40 OMM mix	1
+1660	NHTR01000011.1	82310	T	G	246.0	0.982759	0.982759	yl32	C. clostridioforme	58	synonymous_variant	LOW	p.Ile641Ile	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1750	CP021420.1	1311650	G	A	173.0	0.498715	0.501285	yl44	A. muciniphila	389	missense_variant	MODERATE	p.Asp180Asn	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1750	CP021421.1	1967661	C	T	105.0	0.595506	0.595506	yl27	M. intestinale	89	missense_variant	MODERATE	p.Arg133Cys	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000002.1	6098	G	A	118.0	0.814815	0.814815	yl45	T. muris	27	missense_variant	MODERATE	p.Arg1133Cys	outside ORFs	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000002.1	21544	G	A	131.0	0.870968	0.870968	yl45	T. muris	31	missense_variant	MODERATE	p.Asp253Asn	outside ORFs	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000002.1	98612	G	A	94.0	0.821429	0.821429	yl45	T. muris	28	missense_variant	MODERATE	p.Glu210Lys	outside ORFs	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000004.1	17498	C	T	101.0	1	1	yl45	T. muris	22	missense_variant	MODERATE	p.Ser30Leu	outside ORFs	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000004.1	37370	A	G	193.0	0.972222	0.972222	yl45	T. muris	36	synonymous_variant	LOW	p.Lys510Lys	outside ORFs	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	65465	C	T	143.0	0.935484	0.935484	yl45	T. muris	31	synonymous_variant	LOW	p.Asn86Asn	putative response regulatory protein	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	65704	C	T	141.0	0.931035	0.931035	yl45	T. muris	29	missense_variant	MODERATE	p.Ala166Val	putative response regulatory protein	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	77724	A	G	153.0	0.962963	0.962963	yl45	T. muris	27	missense_variant	MODERATE	p.Phe428Leu	Beta-xylosidase	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	131139	A	T	128.0	0.9	0.9	yl45	T. muris	30	missense_variant	MODERATE	p.Val388Asp	ATP-dependent RecD-like DNA helicase	40	1	FALSE	40 OMM mix	1
+1750	NHMP01000005.1	134382	A	G	149.0	0.9	0.9	yl45	T. muris	30	missense_variant	MODERATE	p.Leu145Pro	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000001.1	210221	G	A	125.0	0.442563	0.557437	i48	B. caecimuris	827	synonymous_variant	LOW	p.Val81Val	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000001.1	575210	C	A	579.0	0.603774	0.603774	i48	B. caecimuris	583	missense_variant	MODERATE	p.Ala1277Asp	NADP-reducing hydrogenase subunit HndD	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000002.1	232775	C	T	599.0	0.898625	0.898625	i48	B. caecimuris	582	synonymous_variant	LOW	p.Thr349Thr	UDP-N-acetylmuramoylalanine--D-glutamate ligase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000002.1	401340	G	T	301.0	0.545627	0.545627	i48	B. caecimuris	526	missense_variant	MODERATE	p.Met1180Ile	Beta-L-arabinobiosidase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000003.1	174484	C	T	620.0	0.645923	0.645923	i48	B. caecimuris	466	synonymous_variant	LOW	p.Ser147Ser	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000003.1	254185	G	A	476.0	0.728682	0.728682	i48	B. caecimuris	387	missense_variant	MODERATE	p.Thr151Ile	Threonine--tRNA ligase	40	1	FALSE	40 OMM mix	1
+1750	NHMU01000004.1	544661	G	A	647.0	0.903553	0.903553	i48	B. caecimuris	591	synonymous_variant	LOW	p.Thr349Thr	Sensor histidine kinase ResE	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	966796	G	A	131.0	0.5	0.5	yl32	C. clostridioforme	282	synonymous_variant	LOW	p.Phe49Phe	ATP-dependent DNA helicase RecG	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	966802	G	A	141.0	0.516364	0.516364	yl32	C. clostridioforme	275	synonymous_variant	LOW	p.Gly47Gly	ATP-dependent DNA helicase RecG	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000001.1	1265406	A	G	93.0	0.562682	0.562682	yl32	C. clostridioforme	343	unknown	NA	NA	Phosphoglucomutase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000002.1	546419	A	G	201.0	0.775148	0.775148	yl32	C. clostridioforme	169	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000002.1	593116	G	C	170.0	0.957447	0.957447	yl32	C. clostridioforme	47	missense_variant	MODERATE	p.Ile312Met	Inner membrane ABC transporter permease protein YdcV	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000002.1	596611	G	T	149.0	0.916667	0.916667	yl32	C. clostridioforme	36	missense_variant	MODERATE	p.Glu218Asp	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000007.1	22900	G	A	91.0	0.897436	0.897436	yl32	C. clostridioforme	39	missense_variant	MODERATE	p.Asp351Asn	outside ORFs	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	63431	A	G	104.0	0.702247	0.702247	yl32	C. clostridioforme	178	missense_variant	MODERATE	p.Ser68Pro	Sensor histidine kinase BtsS	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	82310	T	G	259.0	0.95	0.95	yl32	C. clostridioforme	60	synonymous_variant	LOW	p.Ile641Ile	hypothetical proteins	40	1	FALSE	40 OMM mix	1
+1750	NHTR01000011.1	91035	G	A	93.0	0.706215	0.706215	yl32	C. clostridioforme	177	synonymous_variant	LOW	p.Gly56Gly	outside ORFs	40	1	FALSE	40 OMM mix	1
+1779	CP021420.1	1142942	G	A	288.0	0.557522	0.557522	yl44	A. muciniphila	452	missense_variant	MODERATE	p.Gly133Asp	L-methionine gamma-lyase	80	1	FALSE	80 OMM mix	1
+1779	CP021420.1	2243761	C	A	272.0	0.542056	0.542056	yl44	A. muciniphila	428	missense_variant	MODERATE	p.Ala715Asp	Signal transduction histidine-protein kinase BaeS	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	812807	T	C	624.0	0.974359	0.974359	yl27	M. intestinale	117	missense_variant	MODERATE	p.Asp544Gly	Glucose-1-phosphate thymidylyltransferase	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	1190269	A	C	569.0	0.966667	0.966667	yl27	M. intestinale	120	missense_variant	MODERATE	p.Val129Gly	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	1967398	G	T	414.0	0.888889	0.888889	yl27	M. intestinale	99	missense_variant	MODERATE	p.Arg45Leu	hypothetical proteins	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	2043096	C	T	560.0	0.891304	0.891304	yl27	M. intestinale	138	stop_gained	HIGH	p.Gln572*	hypothetical proteins	80	1	FALSE	80 OMM mix	1
+1779	CP021421.1	2875077	T	C	100.0	0.909091	0.909091	yl27	M. intestinale	66	missense_variant	MODERATE	p.Ile799Met	Beta-galactosidase	80	1	FALSE	80 OMM mix	1
+1779	CP022713.1	4259722	G	A	1979.0	0.822397	0.822397	yl58	B. coccoides	1143	missense_variant	MODERATE	p.Thr41Ile	hypothetical proteins	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000004.1	37370	A	G	108.0	0.909091	0.909091	yl45	T. muris	22	synonymous_variant	LOW	p.Lys510Lys	outside ORFs	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000005.1	77724	A	G	148.0	0.9375	0.9375	yl45	T. muris	32	missense_variant	MODERATE	p.Phe428Leu	Beta-xylosidase	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000005.1	134382	A	G	152.0	1	1	yl45	T. muris	29	missense_variant	MODERATE	p.Leu145Pro	hypothetical proteins	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000007.1	95549	A	T	135.0	0.852941	0.852941	yl45	T. muris	34	missense_variant	MODERATE	p.Asp110Glu	hypothetical proteins	80	1	FALSE	80 OMM mix	1
+1779	NHMP01000007.1	95558	C	A	158.0	0.967742	0.967742	yl45	T. muris	31	missense_variant	MODERATE	p.Leu107Phe	outside ORFs	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	191448	A	G	94.0	0.95	0.95	yl31	F. plautii	20	missense_variant	MODERATE	p.Thr383Ala	Teichoic acid poly(glycerol phosphate) polymerase	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	471181	C	T	179.0	0.939394	0.939394	yl31	F. plautii	33	missense_variant	MODERATE	p.Ala47Thr	Peptide chain release factor 3	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	473372	T	C	128.0	0.964286	0.964286	yl31	F. plautii	28	missense_variant	MODERATE	p.Met56Thr	outside ORFs	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000001.1	912632	A	G	131.0	1	1	yl31	F. plautii	25	missense_variant	MODERATE	p.Val77Ala	putative ATPase YjoB	80	1	FALSE	80 OMM mix	1
+1779	NHMQ01000002.1	135429	T	C	164.0	0.967742	0.967742	yl31	F. plautii	31	missense_variant	MODERATE	p.Tyr326Cys	CdaA regulatory protein CdaR	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000001.1	210221	G	A	145.0	0.441149	0.558851	i48	B. caecimuris	1079	synonymous_variant	LOW	p.Val81Val	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000003.1	254185	G	A	501.0	0.69606	0.69606	i48	B. caecimuris	533	missense_variant	MODERATE	p.Thr151Ile	Threonine--tRNA ligase	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000005.1	15927	T	C	567.0	0.534002	0.534002	i48	B. caecimuris	897	synonymous_variant	LOW	p.Gly21Gly	HTH-type transcriptional repressor YvoA	80	1	FALSE	80 OMM mix	1
+1779	NHMU01000013.1	40836	T	G	89.0	0.837209	0.837209	i48	B. caecimuris	43	missense_variant	MODERATE	p.Asp192Glu	Chloramphenicol acetyltransferase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000001.1	1265406	A	G	113.0	0.635135	0.635135	yl32	C. clostridioforme	148	unknown	NA	NA	Phosphoglucomutase	80	1	FALSE	80 OMM mix	1
+1779	NHTR01000002.1	593116	G	C	101.0	0.931035	0.931035	yl32	C. clostridioforme	29	missense_variant	MODERATE	p.Ile312Met	Inner membrane ABC transporter permease protein YdcV	80	1	FALSE	80 OMM mix	1
+1789	CP021421.1	1967661	C	T	455.0	0.898148	0.898148	yl27	M. intestinale	108	missense_variant	MODERATE	p.Arg133Cys	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	CP021421.1	2043096	C	T	401.0	0.783784	0.783784	yl27	M. intestinale	148	stop_gained	HIGH	p.Gln572*	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	CP021421.1	2790187	T	C	117.0	0.895833	0.895833	yl27	M. intestinale	96	missense_variant	MODERATE	p.Ile799Met	TelA-like protein	80	2	FALSE	2nd generation	1
+1789	CP022713.1	2464482	A	T	112.0	0.649038	0.649038	yl58	B. coccoides	208	missense_variant	MODERATE	p.Leu119Met	Group II intron-encoded protein LtrA	80	2	FALSE	2nd generation	1
+1789	NHMP01000004.1	37370	A	G	163.0	0.941176	0.941176	yl45	T. muris	34	synonymous_variant	LOW	p.Lys510Lys	outside ORFs	80	2	FALSE	2nd generation	1
+1789	NHMP01000005.1	77724	A	G	281.0	0.94	0.94	yl45	T. muris	50	missense_variant	MODERATE	p.Phe428Leu	Beta-xylosidase	80	2	FALSE	2nd generation	1
+1789	NHMP01000005.1	134382	A	G	184.0	0.941176	0.941176	yl45	T. muris	34	missense_variant	MODERATE	p.Leu145Pro	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	NHMP01000007.1	95549	A	T	95.0	0.923077	0.923077	yl45	T. muris	26	missense_variant	MODERATE	p.Asp110Glu	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	NHMP01000007.1	95558	C	A	107.0	0.96	0.96	yl45	T. muris	25	missense_variant	MODERATE	p.Leu107Phe	outside ORFs	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	191448	A	G	113.0	1	1	yl31	F. plautii	20	missense_variant	MODERATE	p.Thr383Ala	Teichoic acid poly(glycerol phosphate) polymerase	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	216574	T	C	158.0	0.942857	0.942857	yl31	F. plautii	35	missense_variant	MODERATE	p.Val248Ala	putative dual-specificity RNA methyltransferase RlmN	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	471181	C	T	93.0	0.888889	0.888889	yl31	F. plautii	18	missense_variant	MODERATE	p.Ala47Thr	Peptide chain release factor 3	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	473372	T	C	148.0	1	1	yl31	F. plautii	29	missense_variant	MODERATE	p.Met56Thr	outside ORFs	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	493779	A	G	87.0	1	1	yl31	F. plautii	16	missense_variant	MODERATE	p.Leu366Pro	Bacitracin export permease protein BceB	80	2	FALSE	2nd generation	1
+1789	NHMQ01000001.1	912632	A	G	110.0	0.954545	0.954545	yl31	F. plautii	22	missense_variant	MODERATE	p.Val77Ala	putative ATPase YjoB	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	120704	G	A	89.0	0.818182	0.818182	yl31	F. plautii	33	missense_variant	MODERATE	p.Arg213His	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	135429	T	C	109.0	1	1	yl31	F. plautii	19	missense_variant	MODERATE	p.Tyr326Cys	CdaA regulatory protein CdaR	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	670299	C	T	143.0	0.888889	0.888889	yl31	F. plautii	27	missense_variant	MODERATE	p.Arg34Cys	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	700650	T	C	105.0	0.866667	0.866667	yl31	F. plautii	30	missense_variant	MODERATE	p.Val439Ala	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	NHMQ01000002.1	845289	A	G	89.0	0.947368	0.947368	yl31	F. plautii	19	synonymous_variant	LOW	p.Ala415Ala	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	80	2	FALSE	2nd generation	1
+1789	NHMQ01000003.1	562986	A	G	123.0	1	1	yl31	F. plautii	24	missense_variant	MODERATE	p.Arg198Gly	Dihydroxy-acid dehydratase	80	2	FALSE	2nd generation	1
+1789	NHMR02000001.1	315647	G	A	119.0	0.875	0.875	yl2	B. longum	24	missense_variant	MODERATE	p.Cys205Tyr	Ribonucleoside-diphosphate reductase 1 subunit alpha	80	2	FALSE	2nd generation	1
+1789	NHMR02000001.1	879280	C	A	118.0	0.814815	0.814815	yl2	B. longum	27	unknown	NA	NA	Uroporphyrinogen-III C-methyltransferase	80	2	FALSE	2nd generation	1
+1789	NHMR02000002.1	480137	C	T	203.0	0.928571	0.928571	yl2	B. longum	42	unknown	NA	NA	NAD kinase	80	2	FALSE	2nd generation	1
+1789	NHMU01000003.1	254185	G	A	564.0	0.710891	0.710891	i48	B. caecimuris	505	missense_variant	MODERATE	p.Thr151Ile	Threonine--tRNA ligase	80	2	FALSE	2nd generation	1
+1789	NHMU01000003.1	413689	C	A	481.0	0.581616	0.581616	i48	B. caecimuris	631	missense_variant	MODERATE	p.Thr145Lys	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	80	2	FALSE	2nd generation	1
+1789	NHMU01000004.1	300219	C	A	502.0	0.542811	0.542811	i48	B. caecimuris	619	stop_gained	HIGH	p.Glu196*	hypothetical proteins	80	2	FALSE	2nd generation	1
+1789	NHMU01000005.1	15927	T	C	103.0	0.385613	0.614387	i48	B. caecimuris	848	synonymous_variant	LOW	p.Gly21Gly	HTH-type transcriptional repressor YvoA	80	2	FALSE	2nd generation	1
+1789	NHMU01000005.1	190292	G	T	376.0	0.506494	0.506494	i48	B. caecimuris	770	missense_variant	MODERATE	p.Gly586Trp	Teichoic acid poly(glycerol phosphate) polymerase	80	2	FALSE	2nd generation	1
+1789	NHMU01000013.1	40836	T	G	114.0	0.914894	0.914894	i48	B. caecimuris	47	missense_variant	MODERATE	p.Asp192Glu	Chloramphenicol acetyltransferase	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	966796	G	A	143.0	0.521127	0.521127	yl32	C. clostridioforme	213	synonymous_variant	LOW	p.Phe49Phe	ATP-dependent DNA helicase RecG	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	966802	G	A	127.0	0.526066	0.526066	yl32	C. clostridioforme	211	synonymous_variant	LOW	p.Gly47Gly	ATP-dependent DNA helicase RecG	80	2	FALSE	2nd generation	1
+1789	NHTR01000001.1	1265406	A	G	140.0	0.619835	0.619835	yl32	C. clostridioforme	242	unknown	NA	NA	Phosphoglucomutase	80	2	FALSE	2nd generation	1
+1789	NHTR01000002.1	546419	A	G	237.0	0.829457	0.829457	yl32	C. clostridioforme	129	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	80	2	FALSE	2nd generation	1
+1789	NHTR01000002.1	596611	G	T	160.0	0.825	0.825	yl32	C. clostridioforme	40	missense_variant	MODERATE	p.Glu218Asp	hypothetical proteins	80	2	FALSE	2nd generation	1
+1807	CP021421.1	1190269	A	C	700.0	0.964789	0.964789	yl27	M. intestinale	142	missense_variant	MODERATE	p.Val129Gly	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	1917169	G	A	103.0	0.580357	0.580357	yl27	M. intestinale	112	missense_variant	MODERATE	p.Ala39Thr	hypothetical proteins	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	3080054	T	C	144.0	0.623932	0.623932	yl27	M. intestinale	117	missense_variant	MODERATE	p.Arg242Gly	Sensor histidine kinase BtsS	40	2	FALSE	40 cecal content	1
+1807	CP021421.1	3284534	A	C	369.0	0.887755	0.887755	yl27	M. intestinale	98	unknown	NA	NA	UDP-N-acetylmuramate--L-alanine ligase	40	2	FALSE	40 cecal content	1
+1807	NHMP01000004.1	37370	A	G	112.0	0.954545	0.954545	yl45	T. muris	22	synonymous_variant	LOW	p.Lys510Lys	outside ORFs	40	2	FALSE	40 cecal content	1
+1807	NHMP01000005.1	77724	A	G	137.0	0.92	0.92	yl45	T. muris	25	missense_variant	MODERATE	p.Phe428Leu	Beta-xylosidase	40	2	FALSE	40 cecal content	1
+1807	NHMP01000005.1	134382	A	G	165.0	0.903226	0.903226	yl45	T. muris	31	missense_variant	MODERATE	p.Leu145Pro	hypothetical proteins	40	2	FALSE	40 cecal content	1
+1807	NHMP01000007.1	95549	A	T	103.0	0.821429	0.821429	yl45	T. muris	28	missense_variant	MODERATE	p.Asp110Glu	hypothetical proteins	40	2	FALSE	40 cecal content	1
+1807	NHMP01000007.1	95558	C	A	103.0	0.96	0.96	yl45	T. muris	25	missense_variant	MODERATE	p.Leu107Phe	outside ORFs	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000001.1	473372	T	C	137.0	1	1	yl31	F. plautii	24	missense_variant	MODERATE	p.Met56Thr	outside ORFs	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000002.1	120704	G	A	143.0	0.961538	0.961538	yl31	F. plautii	26	missense_variant	MODERATE	p.Arg213His	hypothetical proteins	40	2	FALSE	40 cecal content	1
+1807	NHMQ01000002.1	372947	C	T	123.0	0.956522	0.956522	yl31	F. plautii	23	missense_variant	MODERATE	p.Gly761Asp	outside ORFs	40	2	FALSE	40 cecal content	1
+1807	NHMU01000003.1	254185	G	A	593.0	0.724719	0.724719	i48	B. caecimuris	534	missense_variant	MODERATE	p.Thr151Ile	Threonine--tRNA ligase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000003.1	413689	C	A	1042.0	0.690638	0.690638	i48	B. caecimuris	737	missense_variant	MODERATE	p.Thr145Lys	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000004.1	300219	C	A	1004.0	0.648571	0.648571	i48	B. caecimuris	700	stop_gained	HIGH	p.Glu196*	hypothetical proteins	40	2	FALSE	40 cecal content	1
+1807	NHMU01000005.1	190292	G	T	891.0	0.629131	0.629131	i48	B. caecimuris	817	missense_variant	MODERATE	p.Gly586Trp	Teichoic acid poly(glycerol phosphate) polymerase	40	2	FALSE	40 cecal content	1
+1807	NHMU01000005.1	334549	G	T	88.0	0.88	0.88	i48	B. caecimuris	25	missense_variant	MODERATE	p.Met72Ile	hypothetical proteins	40	2	FALSE	40 cecal content	1
+1807	NHMU01000013.1	40836	T	G	150.0	0.819672	0.819672	i48	B. caecimuris	61	missense_variant	MODERATE	p.Asp192Glu	Chloramphenicol acetyltransferase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	966796	G	A	121.0	0.507576	0.507576	yl32	C. clostridioforme	264	synonymous_variant	LOW	p.Phe49Phe	ATP-dependent DNA helicase RecG	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	966802	G	A	124.0	0.494118	0.505882	yl32	C. clostridioforme	255	synonymous_variant	LOW	p.Gly47Gly	ATP-dependent DNA helicase RecG	40	2	FALSE	40 cecal content	1
+1807	NHTR01000001.1	1265406	A	G	192.0	0.632075	0.632075	yl32	C. clostridioforme	318	unknown	NA	NA	Phosphoglucomutase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000002.1	546419	A	G	267.0	0.797619	0.797619	yl32	C. clostridioforme	168	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	40	2	FALSE	40 cecal content	1
+1807	NHTR01000002.1	593116	G	C	120.0	0.977778	0.977778	yl32	C. clostridioforme	45	missense_variant	MODERATE	p.Ile312Met	Inner membrane ABC transporter permease protein YdcV	40	2	FALSE	40 cecal content	1
+1807	NHTR01000002.1	596611	G	T	123.0	0.842105	0.842105	yl32	C. clostridioforme	38	missense_variant	MODERATE	p.Glu218Asp	hypothetical proteins	40	2	FALSE	40 cecal content	1
+1807	NHTR01000011.1	91035	G	A	91.0	0.698324	0.698324	yl32	C. clostridioforme	179	synonymous_variant	LOW	p.Gly56Gly	outside ORFs	40	2	FALSE	40 cecal content	1
+1885	CP021420.1	1142942	G	A	144.0	0.455206	0.544794	yl44	A. muciniphila	413	missense_variant	MODERATE	p.Gly133Asp	L-methionine gamma-lyase	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585150	C	T	128.0	0.413374	0.586626	yl44	A. muciniphila	658	synonymous_variant	LOW	p.Ala109Ala	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585153	A	G	149.0	0.420647	0.579353	yl44	A. muciniphila	649	synonymous_variant	LOW	p.Ala108Ala	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585192	T	G	157.0	0.434713	0.565287	yl44	A. muciniphila	628	synonymous_variant	LOW	p.Val95Val	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	1585231	T	C	105.0	0.396411	0.603589	yl44	A. muciniphila	613	synonymous_variant	LOW	p.Ser82Ser	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	CP021420.1	2243230	C	T	230.0	0.517615	0.517615	yl44	A. muciniphila	369	missense_variant	MODERATE	p.Ser538Phe	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	1190269	A	C	864.0	0.957576	0.957576	yl27	M. intestinale	165	missense_variant	MODERATE	p.Val129Gly	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	1917169	G	A	218.0	0.639706	0.639706	yl27	M. intestinale	136	missense_variant	MODERATE	p.Ala39Thr	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	1967398	G	T	164.0	0.655462	0.655462	yl27	M. intestinale	119	missense_variant	MODERATE	p.Arg45Leu	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	3080054	T	C	122.0	0.61165	0.61165	yl27	M. intestinale	103	missense_variant	MODERATE	p.Arg242Gly	Sensor histidine kinase BtsS	20	2	FALSE	20 cecal content	1
+1885	CP021421.1	3284534	A	C	264.0	0.761905	0.761905	yl27	M. intestinale	105	unknown	NA	NA	UDP-N-acetylmuramate--L-alanine ligase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000002.1	6098	G	A	204.0	0.849057	0.849057	yl45	T. muris	53	missense_variant	MODERATE	p.Arg1133Cys	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	NHMP01000002.1	98612	G	A	190.0	0.902439	0.902439	yl45	T. muris	41	missense_variant	MODERATE	p.Glu210Lys	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	NHMP01000004.1	17498	C	T	132.0	0.911765	0.911765	yl45	T. muris	34	missense_variant	MODERATE	p.Ser30Leu	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	NHMP01000004.1	37370	A	G	226.0	0.95	0.95	yl45	T. muris	40	synonymous_variant	LOW	p.Lys510Lys	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	65465	C	T	173.0	0.894737	0.894737	yl45	T. muris	38	synonymous_variant	LOW	p.Asn86Asn	putative response regulatory protein	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	65704	C	T	107.0	0.775	0.775	yl45	T. muris	40	missense_variant	MODERATE	p.Ala166Val	putative response regulatory protein	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	77724	A	G	201.0	1	1	yl45	T. muris	35	missense_variant	MODERATE	p.Phe428Leu	Beta-xylosidase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	131139	A	T	165.0	0.880952	0.880952	yl45	T. muris	42	missense_variant	MODERATE	p.Val388Asp	ATP-dependent RecD-like DNA helicase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000005.1	134382	A	G	215.0	0.97619	0.97619	yl45	T. muris	42	missense_variant	MODERATE	p.Leu145Pro	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMP01000007.1	95549	A	T	240.0	0.895833	0.895833	yl45	T. muris	48	missense_variant	MODERATE	p.Asp110Glu	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMP01000007.1	95558	C	A	245.0	0.957447	0.957447	yl45	T. muris	47	missense_variant	MODERATE	p.Leu107Phe	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	NHMP01000012.1	44822	T	G	136.0	0.671053	0.671053	yl45	T. muris	76	unknown	NA	NA	UDP-glucose 6-dehydrogenase	20	2	FALSE	20 cecal content	1
+1885	NHMP01000012.1	44833	C	G	114.0	0.658228	0.658228	yl45	T. muris	79	unknown	NA	NA	UDP-glucose 6-dehydrogenase	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	191448	A	G	101.0	1	1	yl31	F. plautii	18	missense_variant	MODERATE	p.Thr383Ala	Teichoic acid poly(glycerol phosphate) polymerase	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	471181	C	T	177.0	0.882353	0.882353	yl31	F. plautii	34	missense_variant	MODERATE	p.Ala47Thr	Peptide chain release factor 3	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	473372	T	C	107.0	1	1	yl31	F. plautii	19	missense_variant	MODERATE	p.Met56Thr	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000001.1	912632	A	G	110.0	0.875	0.875	yl31	F. plautii	24	missense_variant	MODERATE	p.Val77Ala	putative ATPase YjoB	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000002.1	120704	G	A	185.0	1	1	yl31	F. plautii	32	missense_variant	MODERATE	p.Arg213His	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMQ01000002.1	372947	C	T	125.0	0.958333	0.958333	yl31	F. plautii	24	missense_variant	MODERATE	p.Gly761Asp	outside ORFs	20	2	FALSE	20 cecal content	1
+1885	NHMU01000001.1	749402	G	A	194.0	0.399015	0.600985	i48	B. caecimuris	1624	synonymous_variant	LOW	p.Glu223Glu	DNA polymerase I	20	2	FALSE	20 cecal content	1
+1885	NHMU01000001.1	787425	G	A	454.0	0.544198	0.544198	i48	B. caecimuris	2025	unknown	NA	NA	Alpha-D-kanosaminyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000003.1	165873	G	A	219.0	0.463002	0.536998	i48	B. caecimuris	1419	unknown	NA	NA	Teichoic acids export ATP-binding protein TagH	20	2	FALSE	20 cecal content	1
+1885	NHMU01000003.1	165881	A	G	119.0	0.45944	0.54056	i48	B. caecimuris	1356	unknown	NA	NA	Teichoic acids export ATP-binding protein TagH	20	2	FALSE	20 cecal content	1
+1885	NHMU01000003.1	413689	C	A	2696.0	0.856784	0.856784	i48	B. caecimuris	796	missense_variant	MODERATE	p.Thr145Lys	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000004.1	300219	C	A	3138.0	0.852315	0.852315	i48	B. caecimuris	799	stop_gained	HIGH	p.Glu196*	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000005.1	190292	G	T	958.0	0.603666	0.603666	i48	B. caecimuris	873	missense_variant	MODERATE	p.Gly586Trp	Teichoic acid poly(glycerol phosphate) polymerase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	195142	A	G	480.0	0.432409	0.567591	i48	B. caecimuris	2345	synonymous_variant	LOW	p.Lys64Lys	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	195145	C	G	458.0	0.427831	0.572169	i48	B. caecimuris	2314	synonymous_variant	LOW	p.Val65Val	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	195262	T	C	253.0	0.391744	0.608256	i48	B. caecimuris	2277	synonymous_variant	LOW	p.Phe104Phe	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000008.1	196605	T	C	187.0	0.397902	0.602098	i48	B. caecimuris	1239	synonymous_variant	LOW	p.His285His	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	527	T	C	124.0	0.486305	0.513695	i48	B. caecimuris	1789	synonymous_variant	LOW	p.Gly243Gly	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1085	C	T	555.0	0.460486	0.539514	i48	B. caecimuris	1974	synonymous_variant	LOW	p.Lys57Lys	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1521	T	C	212.0	0.416127	0.583873	i48	B. caecimuris	1389	unknown	NA	NA	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1525	C	T	248.0	0.443255	0.556745	i48	B. caecimuris	1401	synonymous_variant	LOW	p.Leu311Leu	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1540	C	G	221.0	0.441328	0.558672	i48	B. caecimuris	1355	synonymous_variant	LOW	p.Val306Val	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	1542	C	T	225.0	0.442889	0.557111	i48	B. caecimuris	1357	missense_variant	MODERATE	p.Val306Met	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	2005	A	G	136.0	0.411177	0.588823	i48	B. caecimuris	2201	synonymous_variant	LOW	p.His151His	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	2038	C	A	259.0	0.426251	0.573749	i48	B. caecimuris	2278	synonymous_variant	LOW	p.Thr140Thr	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	170125	A	G	766.0	0.498567	0.501433	i48	B. caecimuris	1745	unknown	NA	NA	Ubiquinone biosynthesis O-methyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000009.1	170137	C	G	585.0	0.470409	0.529591	i48	B. caecimuris	1639	unknown	NA	NA	Ubiquinone biosynthesis O-methyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHMU01000013.1	40836	T	G	147.0	0.96	0.96	i48	B. caecimuris	50	missense_variant	MODERATE	p.Asp192Glu	Chloramphenicol acetyltransferase	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	966796	G	A	237.0	0.542587	0.542587	yl32	C. clostridioforme	317	synonymous_variant	LOW	p.Phe49Phe	ATP-dependent DNA helicase RecG	20	2	FALSE	20 cecal content	1
+1885	NHTR01000001.1	966802	G	A	222.0	0.538462	0.538462	yl32	C. clostridioforme	312	synonymous_variant	LOW	p.Gly47Gly	ATP-dependent DNA helicase RecG	20	2	FALSE	20 cecal content	1
+1885	NHTR01000002.1	546419	A	G	214.0	0.765101	0.765101	yl32	C. clostridioforme	149	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	20	2	FALSE	20 cecal content	1
+1885	NHTR01000002.1	883630	T	C	224.0	0.609137	0.609137	yl32	C. clostridioforme	197	missense_variant	MODERATE	p.Asp376Gly	DNA mismatch repair protein MutS	20	2	FALSE	20 cecal content	1
+1885	NHTR01000003.1	265570	G	A	199.0	0.623853	0.623853	yl32	C. clostridioforme	109	missense_variant	MODERATE	p.Gly52Arg	Glutathione transport system permease protein GsiD	20	2	FALSE	20 cecal content	1
+1885	NHTR01000007.1	14276	A	G	125.0	0.461806	0.538194	yl32	C. clostridioforme	288	synonymous_variant	LOW	p.Ala2971Ala	Signal transduction histidine-protein kinase BarA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000007.1	14282	T	C	109.0	0.458333	0.541667	yl32	C. clostridioforme	288	synonymous_variant	LOW	p.Asp2973Asp	Signal transduction histidine-protein kinase BarA	20	2	FALSE	20 cecal content	1
+1885	NHTR01000009.1	26002	T	C	156.0	0.456818	0.543182	yl32	C. clostridioforme	440	unknown	NA	NA	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHTR01000009.1	26062	C	T	132.0	0.454945	0.545055	yl32	C. clostridioforme	455	unknown	NA	NA	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHTR01000011.1	82310	T	G	153.0	0.916667	0.916667	yl32	C. clostridioforme	36	synonymous_variant	LOW	p.Ile641Ile	hypothetical proteins	20	2	FALSE	20 cecal content	1
+1885	NHTR01000011.1	82339	T	G	149.0	1	1	yl32	C. clostridioforme	31	missense_variant	MODERATE	p.Met632Leu	hypothetical proteins	20	2	FALSE	20 cecal content	1
+I_cc	CP021420.1	2243230	C	T	836.0	0.846442	0.846442	yl44	A. muciniphila	267	missense_variant	MODERATE	p.Ser538Phe	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	1190269	A	C	140.0	0.645455	0.645455	yl27	M. intestinale	110	missense_variant	MODERATE	p.Val129Gly	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	1967398	G	T	100.0	0.643678	0.643678	yl27	M. intestinale	87	missense_variant	MODERATE	p.Arg45Leu	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	CP021421.1	3080054	T	C	90.0	0.543689	0.543689	yl27	M. intestinale	103	missense_variant	MODERATE	p.Arg242Gly	Sensor histidine kinase BtsS	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000005.1	77724	A	G	95.0	0.944444	0.944444	yl45	T. muris	18	missense_variant	MODERATE	p.Phe428Leu	Beta-xylosidase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000005.1	134382	A	G	136.0	1	1	yl45	T. muris	24	missense_variant	MODERATE	p.Leu145Pro	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000007.1	95549	A	T	88.0	0.863636	0.863636	yl45	T. muris	22	missense_variant	MODERATE	p.Asp110Glu	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMP01000007.1	95558	C	A	95.0	1	1	yl45	T. muris	18	missense_variant	MODERATE	p.Leu107Phe	outside ORFs	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000001.1	210221	G	A	141.0	0.463576	0.536424	i48	B. caecimuris	604	synonymous_variant	LOW	p.Val81Val	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000003.1	254185	G	A	208.0	0.688525	0.688525	i48	B. caecimuris	305	missense_variant	MODERATE	p.Thr151Ile	Threonine--tRNA ligase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000003.1	413689	C	A	350.0	0.592593	0.592593	i48	B. caecimuris	378	missense_variant	MODERATE	p.Thr145Lys	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000004.1	300219	C	A	291.0	0.525066	0.525066	i48	B. caecimuris	379	stop_gained	HIGH	p.Glu196*	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHMU01000005.1	190292	G	T	179.0	0.477024	0.522976	i48	B. caecimuris	457	missense_variant	MODERATE	p.Gly586Trp	Teichoic acid poly(glycerol phosphate) polymerase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	966796	G	A	155.0	0.495913	0.504087	yl32	C. clostridioforme	367	synonymous_variant	LOW	p.Phe49Phe	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	966802	G	A	156.0	0.497175	0.502825	yl32	C. clostridioforme	354	synonymous_variant	LOW	p.Gly47Gly	ATP-dependent DNA helicase RecG	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000001.1	1265406	A	G	102.0	0.532731	0.532731	yl32	C. clostridioforme	443	unknown	NA	NA	Phosphoglucomutase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	546419	A	G	273.0	0.78673	0.78673	yl32	C. clostridioforme	211	missense_variant	MODERATE	p.Cys1545Arg	Uracil-DNA glycosylase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	593116	G	C	174.0	0.962963	0.962963	yl32	C. clostridioforme	54	missense_variant	MODERATE	p.Ile312Met	Inner membrane ABC transporter permease protein YdcV	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	593136	G	A	109.0	0.857143	0.857143	yl32	C. clostridioforme	42	missense_variant	MODERATE	p.Arg306Trp	Inner membrane ABC transporter permease protein YdcV	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000002.1	596611	G	T	179.0	0.9	0.9	yl32	C. clostridioforme	40	missense_variant	MODERATE	p.Glu218Asp	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000003.1	265570	G	A	103.0	0.556522	0.556522	yl32	C. clostridioforme	115	missense_variant	MODERATE	p.Gly52Arg	Glutathione transport system permease protein GsiD	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000007.1	22900	G	A	113.0	0.846154	0.846154	yl32	C. clostridioforme	39	missense_variant	MODERATE	p.Asp351Asn	outside ORFs	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	48380	A	G	98.0	0.931818	0.931818	yl32	C. clostridioforme	44	synonymous_variant	LOW	p.Cys317Cys	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	63431	A	G	107.0	0.682927	0.682927	yl32	C. clostridioforme	246	missense_variant	MODERATE	p.Ser68Pro	Sensor histidine kinase BtsS	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	76724	G	A	93.0	0.652985	0.652985	yl32	C. clostridioforme	268	synonymous_variant	LOW	p.Ser171Ser	Beta-xylosidase	0	2	FALSE	Tag 0, von cecal content	1
+I_cc	NHTR01000011.1	82310	T	G	418.0	0.956522	0.956522	yl32	C. clostridioforme	92	synonymous_variant	LOW	p.Ile641Ile	hypothetical proteins	0	2	FALSE	Tag 0, von cecal content	1

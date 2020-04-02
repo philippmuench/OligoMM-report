@@ -1,0 +1,176 @@
+genome	mouse.id	desc	vartype	occurence
+yl32	1423	stably colonized	missense_variant	19
+yl32	I_cc	Tag 0, von cecal content	missense_variant	18
+yl32	1607	20 OMM mix	missense_variant	17
+i48	1885	20 cecal content	synonymous_variant	16
+i49	I_mi	Tag 0, vor 20 tage	synonymous_variant	15
+i48	1885	20 cecal content	unknown	15
+yl32	1660	40 OMM mix	missense_variant	14
+yl32	1807	40 cecal content	missense_variant	13
+yl32	1750	40 OMM mix	missense_variant	13
+yl32	1607	20 OMM mix	synonymous_variant	13
+yl31	1789	2nd generation	missense_variant	12
+yl32	1789	2nd generation	missense_variant	12
+yl32	I_cc	Tag 0, von cecal content	synonymous_variant	12
+yl32	I_mi	Tag 0, vor 20 tage	missense_variant	11
+yl32	1423	stably colonized	synonymous_variant	11
+yl32	1885	20 cecal content	missense_variant	10
+yl32	1779	80 OMM mix	missense_variant	10
+yl32	1885	20 cecal content	synonymous_variant	10
+yl32	1807	40 cecal content	synonymous_variant	10
+yl32	1750	40 OMM mix	synonymous_variant	10
+i46	I_mi	Tag 0, vor 20 tage	synonymous_variant	10
+yl45	1885	20 cecal content	missense_variant	9
+i46	I_mi	Tag 0, vor 20 tage	missense_variant	9
+i48	1750	40 OMM mix	synonymous_variant	9
+i48	1607	20 OMM mix	unknown	9
+i48	1789	2nd generation	unknown	9
+i48	1423	stably colonized	unknown	9
+i48	I_mi	Tag 0, vor 20 tage	unknown	9
+yl31	1885	20 cecal content	missense_variant	8
+yl31	1660	40 OMM mix	missense_variant	8
+yl45	1750	40 OMM mix	missense_variant	8
+i48	1807	40 cecal content	unknown	8
+i48	1750	40 OMM mix	unknown	8
+yl31	1779	80 OMM mix	missense_variant	7
+yl45	I_mi	Tag 0, vor 20 tage	missense_variant	7
+i48	1607	20 OMM mix	synonymous_variant	7
+yl32	1660	40 OMM mix	synonymous_variant	7
+i48	1779	80 OMM mix	synonymous_variant	7
+i48	1423	stably colonized	synonymous_variant	7
+yl32	I_mi	Tag 0, vor 20 tage	synonymous_variant	7
+i48	I_cc	Tag 0, von cecal content	unknown	7
+yl27	1885	20 cecal content	missense_variant	6
+i48	1807	40 cecal content	missense_variant	6
+i48	1660	40 OMM mix	missense_variant	6
+i48	1789	2nd generation	synonymous_variant	6
+yl32	1789	2nd generation	synonymous_variant	6
+i48	1660	40 OMM mix	synonymous_variant	6
+i48	I_cc	Tag 0, von cecal content	synonymous_variant	6
+i48	I_mi	Tag 0, vor 20 tage	synonymous_variant	6
+i48	1660	40 OMM mix	unknown	6
+i48	1779	80 OMM mix	unknown	6
+i48	1885	20 cecal content	missense_variant	5
+i48	1789	2nd generation	missense_variant	5
+yl31	1807	40 cecal content	missense_variant	5
+yl27	1779	80 OMM mix	missense_variant	5
+yl27	1423	stably colonized	missense_variant	5
+yl31	I_mi	Tag 0, vor 20 tage	missense_variant	5
+i48	1807	40 cecal content	synonymous_variant	5
+yl27	1607	20 OMM mix	missense_variant	4
+yl45	1789	2nd generation	missense_variant	4
+yl27	1807	40 cecal content	missense_variant	4
+yl45	1807	40 cecal content	missense_variant	4
+yl27	1660	40 OMM mix	missense_variant	4
+i48	1750	40 OMM mix	missense_variant	4
+yl45	1779	80 OMM mix	missense_variant	4
+yl58	1423	stably colonized	missense_variant	4
+i48	I_cc	Tag 0, von cecal content	missense_variant	4
+yl27	I_cc	Tag 0, von cecal content	missense_variant	4
+yl45	I_cc	Tag 0, von cecal content	missense_variant	4
+yl44	1885	20 cecal content	synonymous_variant	4
+yl27	1789	2nd generation	missense_variant	3
+i48	1779	80 OMM mix	missense_variant	3
+i48	1423	stably colonized	missense_variant	3
+yl45	1885	20 cecal content	synonymous_variant	3
+yl45	I_mi	Tag 0, vor 20 tage	synonymous_variant	3
+yl32	1607	20 OMM mix	unknown	3
+yl32	1660	40 OMM mix	unknown	3
+yl32	1423	stably colonized	unknown	3
+yl32	I_cc	Tag 0, von cecal content	unknown	3
+kb1	I_mi	Tag 0, vor 20 tage	unknown	3
+yl45	I_mi	Tag 0, vor 20 tage	unknown	3
+i46	I_mi	Tag 0, vor 20 tage	intragenic_variant	2
+yl44	1885	20 cecal content	missense_variant	2
+i48	1607	20 OMM mix	missense_variant	2
+yl58	1789	2nd generation	missense_variant	2
+yl45	1660	40 OMM mix	missense_variant	2
+yl58	1660	40 OMM mix	missense_variant	2
+yl27	1750	40 OMM mix	missense_variant	2
+yl44	1779	80 OMM mix	missense_variant	2
+yl58	1779	80 OMM mix	missense_variant	2
+i49	I_mi	Tag 0, vor 20 tage	missense_variant	2
+yl2	I_mi	Tag 0, vor 20 tage	missense_variant	2
+yl27	I_mi	Tag 0, vor 20 tage	missense_variant	2
+i46	1607	20 OMM mix	synonymous_variant	2
+yl27	1789	2nd generation	synonymous_variant	2
+yl31	1789	2nd generation	synonymous_variant	2
+yl27	1750	40 OMM mix	synonymous_variant	2
+yl45	1750	40 OMM mix	synonymous_variant	2
+yl32	1779	80 OMM mix	synonymous_variant	2
+yl27	I_mi	Tag 0, vor 20 tage	synonymous_variant	2
+yl31	I_mi	Tag 0, vor 20 tage	synonymous_variant	2
+yl32	1885	20 cecal content	unknown	2
+yl45	1885	20 cecal content	unknown	2
+yl58	1607	20 OMM mix	unknown	2
+yl2	1789	2nd generation	unknown	2
+yl32	1789	2nd generation	unknown	2
+yl58	1423	stably colonized	unknown	2
+yl32	I_mi	Tag 0, vor 20 tage	unknown	2
+yl58	1885	20 cecal content	missense_variant	1
+i46	1607	20 OMM mix	missense_variant	1
+yl45	1607	20 OMM mix	missense_variant	1
+yl58	1607	20 OMM mix	missense_variant	1
+i46	1789	2nd generation	missense_variant	1
+yl2	1789	2nd generation	missense_variant	1
+yl58	1807	40 cecal content	missense_variant	1
+i46	1660	40 OMM mix	missense_variant	1
+yl44	1750	40 OMM mix	missense_variant	1
+yl58	1750	40 OMM mix	missense_variant	1
+yl44	1423	stably colonized	missense_variant	1
+yl31	I_cc	Tag 0, von cecal content	missense_variant	1
+yl44	I_cc	Tag 0, von cecal content	missense_variant	1
+i48	I_mi	Tag 0, vor 20 tage	missense_variant	1
+kb18	I_mi	Tag 0, vor 20 tage	missense_variant	1
+yl58	I_mi	Tag 0, vor 20 tage	missense_variant	1
+i46	I_mi	Tag 0, vor 20 tage	non_coding_transcript_variant	1
+i48	1885	20 cecal content	stop_gained	1
+yl32	1885	20 cecal content	stop_gained	1
+yl32	1607	20 OMM mix	stop_gained	1
+i48	1789	2nd generation	stop_gained	1
+yl27	1789	2nd generation	stop_gained	1
+yl32	1789	2nd generation	stop_gained	1
+i48	1807	40 cecal content	stop_gained	1
+yl32	1807	40 cecal content	stop_gained	1
+yl32	1660	40 OMM mix	stop_gained	1
+yl32	1750	40 OMM mix	stop_gained	1
+yl27	1779	80 OMM mix	stop_gained	1
+yl32	1779	80 OMM mix	stop_gained	1
+i48	1423	stably colonized	stop_gained	1
+yl32	1423	stably colonized	stop_gained	1
+yl58	1423	stably colonized	stop_gained	1
+i48	I_cc	Tag 0, von cecal content	stop_gained	1
+yl32	I_cc	Tag 0, von cecal content	stop_gained	1
+yl32	I_mi	Tag 0, vor 20 tage	stop_gained	1
+yl32	1423	stably colonized	stop_lost&splice_region_variant	1
+yl27	1885	20 cecal content	synonymous_variant	1
+yl31	1885	20 cecal content	synonymous_variant	1
+yl27	1607	20 OMM mix	synonymous_variant	1
+i49	1789	2nd generation	synonymous_variant	1
+yl45	1789	2nd generation	synonymous_variant	1
+yl27	1807	40 cecal content	synonymous_variant	1
+yl31	1807	40 cecal content	synonymous_variant	1
+yl45	1807	40 cecal content	synonymous_variant	1
+i46	1660	40 OMM mix	synonymous_variant	1
+yl27	1660	40 OMM mix	synonymous_variant	1
+yl31	1660	40 OMM mix	synonymous_variant	1
+yl45	1660	40 OMM mix	synonymous_variant	1
+yl27	1779	80 OMM mix	synonymous_variant	1
+yl31	1779	80 OMM mix	synonymous_variant	1
+yl45	1779	80 OMM mix	synonymous_variant	1
+yl27	1423	stably colonized	synonymous_variant	1
+yl27	I_cc	Tag 0, von cecal content	synonymous_variant	1
+yl2	I_mi	Tag 0, vor 20 tage	synonymous_variant	1
+yl27	1885	20 cecal content	unknown	1
+yl45	1607	20 OMM mix	unknown	1
+yl58	1789	2nd generation	unknown	1
+yl27	1807	40 cecal content	unknown	1
+yl32	1807	40 cecal content	unknown	1
+yl31	1660	40 OMM mix	unknown	1
+yl45	1660	40 OMM mix	unknown	1
+yl58	1660	40 OMM mix	unknown	1
+yl32	1750	40 OMM mix	unknown	1
+yl58	1750	40 OMM mix	unknown	1
+yl32	1779	80 OMM mix	unknown	1
+i49	I_mi	Tag 0, vor 20 tage	unknown	1
+yl58	I_mi	Tag 0, vor 20 tage	unknown	1
