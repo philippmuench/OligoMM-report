@@ -1,0 +1,387 @@
+# Variant statistics relative to *I_mi* {#Variant_statistics_filtered}
+
+```{r}
+dat <- readRDS("data/rds/variants.rds")
+dat <- dat[which(dat$ecoli== FALSE),]
+dat$variant.id <- paste0(dat$CHROM, dat$POS, dat$REF, dat$ALT)
+variants.to.remove <- dat[which(dat$mouse.id == "I_mi"),]$variant.id
+dat.relative <- dat[ ! dat$variant.id %in% variants.to.remove, ]
+dat.removed <- dat[dat$variant.id %in% variants.to.remove, ]
+dat.relative$variant.id <- NULL
+saveRDS(dat.relative, file = "data/rds/variants-relative.rds")
+```
+
+From `r length(unique(dat$variant.id ))` total variants in all samples, we removed `r length(variants.to.remove)` variants that are present in *I_mi*, which results to a set of `r length(unique(dat.relative$variant.id))` unique variants.
+
+The excluded variants are:
+
+```{r}
+DT::datatable(dat.removed)
+```
+
+## Number of variants
+
+### by sample
+
+only non-ecoli samples without variants that are present in *I_mi*
+
+```{r}
+dat <- readRDS("data/rds/variants-relative.rds")
+dat <- dat[which(dat$ecoli == FALSE),]
+```
+
+This set contains `r nrow(dat)` variants found in `r length(unique(dat$genome))` genomes. The detailed breakdow of variants per genome is as follows.
+
+```{r}
+dat$dummy <- 1
+dat.by.sample.genome <- aggregate(dummy ~ mouse.id + genome, dat, sum)
+colnames(dat.by.sample.genome) <- c("sample", "genome", "number_variants")
+DT::datatable(dat.by.sample.genome)
+```
+
+```{r, fig.cap="Number of variants by genome (color) found in samples"}
+p <- ggplot(dat.by.sample.genome, aes(x = reorder(sample, number_variants), y = number_variants, fill = genome))
+p <- p + geom_bar(stat="identity") + coord_flip() + theme_classic()
+p <- p + ylab("number of variants") + xlab("sample") + scale_fill_manual(values = omm_colors)
+plotly::ggplotly(p)
+```
+
+### by extendet metadata
+
+only non-ecoli samples without variants that are present in *I_mi*
+
+```{r}
+dat$dummy <- 1
+dat.by.sample.genome2 <- aggregate(dummy ~ mouse.id + genome + generation + ecoli + desc + day, dat, sum)
+colnames(dat.by.sample.genome2) <- c("sample", "genome", "generation", "ecoli", "desc","day","number_variants")
+```
+
+```{r}
+DT::datatable(dat.by.sample.genome2)
+dat$DP <- NULL
+```
+
+```{r, fig.align="center", fig.width=10, fig.cap="Number of variants by genome (color) found in samples"}
+#dat.by.sample.genome2 <- dat.by.sample.genome2[which(dat.by.sample.genome2$sample != "I_cc" & dat.by.sample.genome2$sample != "I_mi"),]
+p <- ggplot(dat.by.sample.genome2, aes(x = sample, y = number_variants, fill = genome))
+p <- p + geom_bar(stat="identity") + theme_classic()
+p <- p + facet_grid(.~ generation + day, scales = "free_x")
+p <- p + ylab("number of variants") + xlab("sample") + scale_fill_manual(values = omm_colors)
+p <- p + theme(panel.border=element_blank(),
+                 strip.text=element_text(size=12, colour="black"),
+                 strip.background=element_rect(colour="white", 
+                                               fill="white"))
+print(p) # plotly is not working on this type of plot
+```
+
+## ORFs with variants
+
+In this section we visualze the occurence of ORFs and their annotations of overlaying variants. The full table is available in this github repository under `data/tables/table1_relative_to_imi.tsv`.
+
+### Data
+
+#### Write to table
+
+```{r}
+write.table(dat, file = "data/tables/table1_relative_to_imi.tsv", sep = "\t", row.names = F, quote = F)
+```
+
+#### Aggregate by mouse
+
+The total number of variant overlapts to ORF per mouse, ordered by their occurence is below and can in  `data/tables/table2.tsv`
+
+```{r}
+dat.all <- aggregate(dummy ~ genome + orf_desc , dat, sum)
+colnames(dat.all) <- c("genome", "orf_annotation", "occurence")
+write.table(dat.all, file = "data/tables/table2.tsv", sep = "\t", row.names = F, quote = F)
+dat.all  <- dat.all[order(dat.all$occurence, decreasing = TRUE),]
+DT::datatable(dat.all)
+```
+
+### Statistics
+
+In total, we identified `r nrow(dat)` variants in all `r length(unique(dat$mouse.id))` samples. Of them, `r sum(dat.all$occurence)` variants map to `r length(unique(dat.all$orf_annotation))` ORFs with an annotated function
+
+### Minor to major transistion
+
+#### Plotting function
+
+```{r}
+pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
+	require(reshape2) 
+	require(ggplot2)
+	dat.pair <- dat[which(dat$mouse.id == case | dat$mouse.id == control),]
+	#dat.pair <- dat.pair[which(!is.na(dat.pair$orf_desc)),]
+	data.wide <- dcast(dat.pair, genome + POS + REF + ALT + orf_desc + vartype ~ mouse.id, value.var = "AF")
+	colnames(data.wide)[7] <- "sample_1"
+	colnames(data.wide)[8] <- "sample_2"
+	data.wide[is.na(data.wide)] <- 0
+
+	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, color = genome, label = orf_desc, shape = vartype))
+	p <- p + geom_point(fill = NA) + theme_classic() + scale_color_manual(values = omm_colors)
+	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")
+	p <- p + geom_vline(xintercept = .5, linetype = 2, color = "grey50")
+	p <- p + theme(aspect.ratio = 1) 
+	p <- p + scale_shape_manual(values = variant_shapes)
+	p <- p + theme(strip.background = element_blank())
+	p <- p + geom_abline(intercept = 0, slope = 1)
+	p <- p + xlab(paste0("sample ", case)) + ylab(paste0("sample ", control))
+	p <- p + theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+	return(p)
+}
+```
+
+#### between generation comparison
+
+##### comparison of t=20 of first/second generation
+
+```{r p1, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1607", control = "1885")))
+```
+
+##### comparison of t=40 of first/second generation (sample 1660)
+
+```{r p2, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1660", control = "1807")))
+```
+
+##### comparison of t=40 of first/second generation (sample 1750)
+
+```{r p3, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1750", control = "1807")))
+```
+
+##### comparison of t=80 of first/second generation
+
+```{r p4, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1779", control = "1789")))
+```
+
+##### comparison of t=80 of first/second generation
+
+```{r p5, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1779", control = "1789")))
+```
+
+#### within generation comparison of gen=1
+
+##### t=20 vs t=40
+
+```{r p6, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1607", control = "1660")))
+```
+##### t=40 vs t=80
+
+```{r p7, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1660", control = "1779")))
+```
+
+#### within generation comparison of gen=2
+
+##### t=20 vs t=40
+
+```{r p8, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1885", control = "1807")))
+```
+##### t=40 vs t=80
+
+```{r p9, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "1807", control = "1789")))
+```
+
+
+### Gene-centric analysis
+
+#### function
+
+```{r p11}
+geneCentricPlot <- function(dat = dat, genome = "yl44"){
+	require(reshape2) 
+	require(ggplot2)
+	dat.subset <- dat[which(dat$genome == genome),]
+	dat.subset$ID <- paste0(dat.subset$POS, "|", dat.subset$REF ,"->", dat.subset$ALT)
+	p <- ggplot(dat.subset, aes(x = ID, y = AF, color = desc, shape = vartype))
+  p <- p + geom_point(size = 4, fill = NA)
+	p <- p + coord_flip() + theme_classic()
+	p <- p + facet_grid(orf_desc ~., scales = "free", space = "free")
+	p <- p + ylim(c(0,1))
+	p <- p + scale_shape_manual(values = variant_shapes)
+	p <- p + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
+	p <- p + xlab("") + ylab("allele frequency")  + scale_color_manual(values = sample_colors)
+	return(p)
+}
+
+# no grid version for html
+geneCentricPlot2 <- function(dat = dat, genome = "yl44"){
+	require(reshape2) 
+	require(ggplot2)
+	dat.subset <- dat[which(dat$genome == genome),]
+	dat.subset$ID <- paste0(dat.subset$POS, "|", dat.subset$REF ,"->", dat.subset$ALT)
+	p <- ggplot(dat.subset, aes(x = orf_desc, y = AF, color = desc, shape = vartype))
+  p <- p + geom_point(size = 4, fill = NA)
+	p <- p + coord_flip() + theme_classic()
+	p <- p + ylim(c(0,1))
+	p <- p + scale_shape_manual(values = variant_shapes)
+	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
+	p <- p + xlab("") + ylab("allele frequency") + scale_color_manual(values = sample_colors)
+	return(p)
+}
+```
+
+#### by ORF annotation (html)
+
+##### yl44
+
+```{r p12, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl44")))
+```
+
+##### yl27
+
+```{r p13, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl27")))
+```
+
+##### yl58
+
+```{r p14, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl58")))
+```
+
+##### i48
+
+```{r p15, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "i48")))
+```
+
+##### yl32
+
+```{r p16, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl32")))
+```
+
+##### i46
+
+```{r p17, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+#suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "i46")))
+```
+
+##### yl45
+
+```{r p18, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl45")))
+```
+
+##### yl31
+
+```{r p19, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl31")))
+```
+
+##### yl2
+
+```{r p20, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "yl2")))
+```
+
+##### i49
+
+no variant?
+
+```{r p21, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#$suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "i49")))
+```
+
+##### kb18
+
+no variant
+
+```{r p22, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "kb18"))
+```
+
+##### kb1
+
+no variant?
+
+```{r p23, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "kb1")))
+```
+
+### by variant (static)
+
+similar to the plots above, but now the y axis is not the annotation but the variant ID (e.g. `position|reference->alternative`)
+
+##### yl44
+
+```{r p24, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl44"))
+```
+
+##### yl27
+
+```{r p25, fig.align="center", fig.width=15, fig.height=8, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl27"))
+```
+
+##### yl58
+
+```{r p26, fig.align="center", fig.width=15, fig.height=18, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl58"))
+```
+
+##### i48
+
+```{r p27, fig.align="center", fig.width=15, fig.height=18, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "i48"))
+```
+
+##### yl32
+
+```{r p28, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl32"))
+```
+
+##### i46
+
+```{r p29, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(geneCentricPlot(dat, genome = "i46"))
+```
+
+##### yl45
+
+```{r p30, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl45"))
+```
+
+##### yl31
+
+```{r p31, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl31"))
+```
+
+##### yl2
+
+```{r p32, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(geneCentricPlot(dat, genome = "yl2"))
+```
+
+##### i49
+
+```{r p34, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(geneCentricPlot(dat, genome = "i49"))
+```
+
+##### kb18
+
+no variant
+
+```{r p35, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(ggplotly(geneCentricPlot(dat, genome = "kb18"))
+```
+
+##### kb1
+
+```{r p36, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+#suppressWarnings(geneCentricPlot(dat, genome = "kb1"))
+```

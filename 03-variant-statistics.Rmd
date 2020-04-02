@@ -157,7 +157,6 @@ only non-ecoli samples
 dat$dummy <- 1
 dat.by.sample.genome2 <- aggregate(dummy ~ mouse.id + genome + generation + ecoli + desc + day, dat, sum)
 colnames(dat.by.sample.genome2) <- c("sample", "genome", "generation", "ecoli", "desc","day","number_variants")
-summary(dat$DP)
 ```
 
 ```{r}
