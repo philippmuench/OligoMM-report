@@ -1,0 +1,145 @@
+50331060 72 11
+0 CP022722.1 [Clostridium] innocuum strain I46 genome
+0 4469084 18
+0 NHMU01000001.1 Bacteroides caecimuris strain I48 NODE_1_length_803037_cov_111.3_ID_7825, whole genome shotgun sequence
+4469084 803037 0
+0 NHMU01000002.1 Bacteroides caecimuris strain I48 NODE_2_length_708662_cov_93.8747_ID_2896, whole genome shotgun sequence
+5272121 708662 1
+0 NHMU01000003.1 Bacteroides caecimuris strain I48 NODE_3_length_603765_cov_109.858_ID_10016, whole genome shotgun sequence
+5980783 603765 0
+0 NHMU01000004.1 Bacteroides caecimuris strain I48 NODE_4_length_566447_cov_113.015_ID_10790, whole genome shotgun sequence
+6584548 566447 0
+0 NHMU01000005.1 Bacteroides caecimuris strain I48 NODE_5_length_424270_cov_102.611_ID_8684, whole genome shotgun sequence
+7150995 424270 0
+0 NHMU01000006.1 Bacteroides caecimuris strain I48 NODE_6_length_351885_cov_110.895_ID_10971, whole genome shotgun sequence
+7575265 351885 0
+0 NHMU01000007.1 Bacteroides caecimuris strain I48 NODE_7_length_289415_cov_104.904_ID_6355, whole genome shotgun sequence
+7927150 289415 0
+0 NHMU01000008.1 Bacteroides caecimuris strain I48 NODE_8_length_265617_cov_108.866_ID_10416, whole genome shotgun sequence
+8216565 265617 0
+0 NHMU01000009.1 Bacteroides caecimuris strain I48 NODE_9_length_222832_cov_113.643_ID_9447, whole genome shotgun sequence
+8482182 222832 0
+0 NHMU01000010.1 Bacteroides caecimuris strain I48 NODE_10_length_203349_cov_96.3367_ID_5558, whole genome shotgun sequence
+8705014 203349 0
+0 NHMU01000011.1 Bacteroides caecimuris strain I48 NODE_11_length_177363_cov_94.4528_ID_4593, whole genome shotgun sequence
+8908363 177363 0
+0 NHMU01000012.1 Bacteroides caecimuris strain I48 NODE_12_length_68353_cov_160.761_ID_9033, whole genome shotgun sequence
+9085726 68353 0
+0 NHMU01000013.1 Bacteroides caecimuris strain I48 NODE_13_length_56336_cov_129.036_ID_9939, whole genome shotgun sequence
+9154079 56336 0
+0 NHMU01000014.1 Bacteroides caecimuris strain I48 NODE_14_length_27271_cov_81.8589_ID_8839, whole genome shotgun sequence
+9210415 27271 0
+0 NHMU01000015.1 Bacteroides caecimuris strain I48 NODE_15_length_16140_cov_94.8809_ID_9859, whole genome shotgun sequence
+9237686 16140 0
+0 NHMU01000016.1 Bacteroides caecimuris strain I48 NODE_16_length_10059_cov_98.9598_ID_7069, whole genome shotgun sequence
+9253826 10059 0
+0 NHMU01000017.1 Bacteroides caecimuris strain I48 NODE_17_length_3783_cov_93.6584_ID_11133, whole genome shotgun sequence
+9263885 3783 0
+0 NHMU01000018.1 Bacteroides caecimuris strain I48 NODE_18_length_1321_cov_245.9_ID_11077, whole genome shotgun sequence
+9267668 1321 0
+0 NHMU01000019.1 Bacteroides caecimuris strain I48 NODE_19_length_511_cov_90.0651_ID_11123, whole genome shotgun sequence
+9268989 511 0
+0 NHMT01000001.1 Lactobacillus reuteri strain I49 NODE_1_length_2045096_cov_277.453_ID_449, whole genome shotgun sequence
+9269500 2045096 0
+0 NHMT01000002.1 Lactobacillus reuteri strain I49 NODE_2_length_14338_cov_1078.46_ID_16581, whole genome shotgun sequence
+11314596 14338 0
+0 NHMT01000003.1 Lactobacillus reuteri strain I49 NODE_3_length_4170_cov_1070.48_ID_16585, whole genome shotgun sequence
+11328934 4170 0
+0 CP021422.1 Acutalibacter muris strain KB18 genome
+11333104 3802913 1
+0 CP022712.1 Enterococcus faecalis strain KB1 genome
+15136017 3025655 1
+0 CP028714.1 Escherichia coli strain Mt1B1 chromosome
+18161672 5115630 1
+0 CP021421.1 Muribaculum intestinale strain YL27 genome
+23277302 3307069 1
+0 NHMR02000001.1 Bifidobacterium animalis subsp. animalis strain YL2 NODE_1_length_1133782_cov_136.589, whole genome shotgun sequence
+26584371 1133782 0
+0 NHMR02000002.1 Bifidobacterium animalis subsp. animalis strain YL2 NODE_2_length_888144_cov_174.928, whole genome shotgun sequence
+27718153 888144 0
+0 NHMQ01000001.1 Flavonifractor plautii strain YL31 NODE_1_length_1676879_cov_87.0558_ID_10121, whole genome shotgun sequence
+28606297 1676879 0
+0 NHMQ01000002.1 Flavonifractor plautii strain YL31 NODE_2_length_1113122_cov_101.401_ID_11003, whole genome shotgun sequence
+30283176 1113122 0
+0 NHMQ01000003.1 Flavonifractor plautii strain YL31 NODE_3_length_901821_cov_74.6813_ID_10281, whole genome shotgun sequence
+31396298 901821 0
+0 NHMQ01000004.1 Flavonifractor plautii strain YL31 NODE_4_length_72701_cov_120.47_ID_10249, whole genome shotgun sequence
+32298119 72701 0
+0 NHMQ01000005.1 Flavonifractor plautii strain YL31 NODE_5_length_49132_cov_82.6679_ID_11005, whole genome shotgun sequence
+32370820 49132 0
+0 NHTR01000001.1 [Clostridium] clostridioforme strain YL32 NODE_1_length_1846036_cov_77.2334_ID_24359, whole genome shotgun sequence
+32419952 1846036 0
+0 NHTR01000002.1 [Clostridium] clostridioforme strain YL32 NODE_2_length_1071486_cov_87.3367_ID_21667, whole genome shotgun sequence
+34265988 1071486 0
+0 NHTR01000003.1 [Clostridium] clostridioforme strain YL32 NODE_3_length_835505_cov_87.5916_ID_23522, whole genome shotgun sequence
+35337474 835505 0
+0 NHTR01000004.1 [Clostridium] clostridioforme strain YL32 NODE_4_length_706697_cov_115.315_ID_20211, whole genome shotgun sequence
+36172979 706697 0
+0 NHTR01000005.1 [Clostridium] clostridioforme strain YL32 NODE_5_length_563091_cov_84.8808_ID_23435, whole genome shotgun sequence
+36879676 563091 0
+0 NHTR01000006.1 [Clostridium] clostridioforme strain YL32 NODE_6_length_375426_cov_83.9845_ID_18766, whole genome shotgun sequence
+37442767 375426 0
+0 NHTR01000007.1 [Clostridium] clostridioforme strain YL32 NODE_7_length_322744_cov_83.2491_ID_23774, whole genome shotgun sequence
+37818193 322744 0
+0 NHTR01000008.1 [Clostridium] clostridioforme strain YL32 NODE_8_length_321604_cov_78.7366_ID_19629, whole genome shotgun sequence
+38140937 321604 0
+0 NHTR01000009.1 [Clostridium] clostridioforme strain YL32 NODE_9_length_293790_cov_93.6508_ID_19394, whole genome shotgun sequence
+38462541 293790 0
+0 NHTR01000010.1 [Clostridium] clostridioforme strain YL32 NODE_10_length_255245_cov_86.4815_ID_9168, whole genome shotgun sequence
+38756331 255245 0
+0 NHTR01000011.1 [Clostridium] clostridioforme strain YL32 NODE_11_length_230387_cov_95.0116_ID_24135, whole genome shotgun sequence
+39011576 230387 0
+0 NHTR01000012.1 [Clostridium] clostridioforme strain YL32 NODE_12_length_227580_cov_65.8193_ID_19888, whole genome shotgun sequence
+39241963 227580 0
+0 NHTR01000013.1 [Clostridium] clostridioforme strain YL32 NODE_13_length_75772_cov_74.7699_ID_22629, whole genome shotgun sequence
+39469543 75772 0
+0 NHTR01000014.1 [Clostridium] clostridioforme strain YL32 NODE_14_length_26695_cov_141.812_ID_24235, whole genome shotgun sequence
+39545315 26695 0
+0 NHTR01000015.1 [Clostridium] clostridioforme strain YL32 NODE_15_length_4896_cov_66.1636_ID_24530, whole genome shotgun sequence
+39572010 4896 0
+0 NHTR01000016.1 [Clostridium] clostridioforme strain YL32 NODE_16_length_506_cov_80.7968_ID_24542, whole genome shotgun sequence
+39576906 506 0
+0 CP021420.1 Akkermansia muciniphila strain YL44 genome
+39577412 2737357 2
+0 NHMP01000001.1 Turicimonas muris strain YL45 NODE_1_length_735968_cov_165.306_ID_2042, whole genome shotgun sequence
+42314769 735968 0
+0 NHMP01000002.1 Turicimonas muris strain YL45 NODE_2_length_445785_cov_182.862_ID_5999, whole genome shotgun sequence
+43050737 445785 0
+0 NHMP01000003.1 Turicimonas muris strain YL45 NODE_3_length_339048_cov_189.134_ID_5525, whole genome shotgun sequence
+43496522 339048 0
+0 NHMP01000004.1 Turicimonas muris strain YL45 NODE_4_length_334904_cov_175.784_ID_5925, whole genome shotgun sequence
+43835570 334904 0
+0 NHMP01000005.1 Turicimonas muris strain YL45 NODE_5_length_184151_cov_161.611_ID_851, whole genome shotgun sequence
+44170474 184151 0
+0 NHMP01000006.1 Turicimonas muris strain YL45 NODE_6_length_148032_cov_191.647_ID_4420, whole genome shotgun sequence
+44354625 148032 0
+0 NHMP01000007.1 Turicimonas muris strain YL45 NODE_7_length_107867_cov_136.54_ID_2421, whole genome shotgun sequence
+44502657 107867 0
+0 NHMP01000008.1 Turicimonas muris strain YL45 NODE_8_length_107171_cov_152.465_ID_941, whole genome shotgun sequence
+44610524 107171 0
+0 NHMP01000009.1 Turicimonas muris strain YL45 NODE_9_length_102763_cov_216.637_ID_3296, whole genome shotgun sequence
+44717695 102763 0
+0 NHMP01000010.1 Turicimonas muris strain YL45 NODE_10_length_86772_cov_154.734_ID_4070, whole genome shotgun sequence
+44820458 86772 0
+0 NHMP01000011.1 Turicimonas muris strain YL45 NODE_11_length_68845_cov_174.404_ID_4963, whole genome shotgun sequence
+44907230 68845 0
+0 NHMP01000012.1 Turicimonas muris strain YL45 NODE_12_length_58879_cov_129.685_ID_3395, whole genome shotgun sequence
+44976075 58879 0
+0 NHMP01000013.1 Turicimonas muris strain YL45 NODE_13_length_35266_cov_126.371_ID_4468, whole genome shotgun sequence
+45034954 35266 0
+0 NHMP01000014.1 Turicimonas muris strain YL45 NODE_14_length_35067_cov_154.677_ID_4142, whole genome shotgun sequence
+45070220 35067 0
+0 NHMP01000015.1 Turicimonas muris strain YL45 NODE_15_length_33250_cov_150.803_ID_5839, whole genome shotgun sequence
+45105287 33250 0
+0 NHMP01000016.1 Turicimonas muris strain YL45 NODE_16_length_29879_cov_147.714_ID_4272, whole genome shotgun sequence
+45138537 29879 0
+0 NHMP01000017.1 Turicimonas muris strain YL45 NODE_17_length_21439_cov_372.834_ID_5011, whole genome shotgun sequence
+45168416 21439 0
+0 NHMP01000018.1 Turicimonas muris strain YL45 NODE_18_length_6775_cov_150.297_ID_6157, whole genome shotgun sequence
+45189855 6775 0
+0 NHMP01000019.1 Turicimonas muris strain YL45 NODE_19_length_5106_cov_144.961_ID_5303, whole genome shotgun sequence
+45196630 5106 0
+0 NHMP01000020.1 Turicimonas muris strain YL45 NODE_20_length_742_cov_151.85_ID_5684, whole genome shotgun sequence
+45201736 742 0
+0 CP022713.1 Blautia coccoides strain YL58 genome
+45202478 5128582 1
