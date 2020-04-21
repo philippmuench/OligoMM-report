@@ -68,7 +68,7 @@ REF_ECOLI="/net/sgi/oligomm_ab/OligoMM-report/omm_plus_ecoli/joined_reference.fa
 
 rule all:
 	input:
-		expand("html/reports/fastp/{sample}.html", sample=SAMPLES),
+		expand("docs/reports/fastp/{sample}.html", sample=SAMPLES),
 #		expand("mapped/{sample}i.bam", sample=SAMPLES),
 #		expand("vcf_varscan/{sample}.vcf", sample=FILES_CLAUDIA),
 #		expand("lofreq/{sample}.vcf", sample=FILES_CLAUDIA),

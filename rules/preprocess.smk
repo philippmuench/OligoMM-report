@@ -17,7 +17,7 @@ rule fastp:
 			sample=["processed/reads/pe/{sample}_R1_001.fastq.gz", "processed/reads/pe/{sample}_R2_001.fastq.gz"]
 	output:
 		trimmed=[temp("processed/trimmed/pe/{sample}.1.fastq.gz"), temp("processed/trimmed/pe/{sample}.2.fastq.gz")],
-		html="html/reports/fastp/{sample}.html",
+		html="docs/reports/fastp/{sample}.html",
 		json="processed/fastp/{sample}.json"
 	log:
 		"logs/fastp/pe/{sample}.log"
