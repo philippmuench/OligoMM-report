@@ -7,4 +7,4 @@ snakemake --jobs 5
 ```
 
 This will create:
-- per sample *fastp* reports written to html/reports/fastp
+- per sample *fastp* reports written to docs/reports/fastp
