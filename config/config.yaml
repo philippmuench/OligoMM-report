@@ -1,0 +1,8 @@
+REF: /net/sgi/oligomm_ab/OligoMM-report/databases/omm/joined_reference.fasta
+REF_BOWTIE2: /net/sgi/oligomm_ab/OligoMM-report/databases/omm/joined_reference
+REF_ECOLI: /net/sgi/oligomm_ab/OligoMM-report/omm_plus_ecoli/joined_reference.fasta
+REF_ECOLI_BOWTIE2: /net/sgi/oligomm_ab/OligoMM-report/omm_plus_ecoli/joined_reference
+KRAKEN_DB: /net/sgi/oligomm_ab/tools/kraken2/kraken2-2.0.7-beta/db/minikraken2_v2_8GB_201904_UPDATE
+MEGARES_REFERENCE: /net/sgi/oligomm_ab/tools/megares/megares_drugs_database_v2.00.fasta
+MEGARES_ANNOT: /net/sgi/oligomm_ab/tools/megares/megares_drugs_annotations_v2.00.csv
+
