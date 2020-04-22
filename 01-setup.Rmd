@@ -43,7 +43,7 @@ sudo apt-get install libcurl4-openssl-dev
 ## Data structure {#Data_structures}
 
 `data/raw`
-: files from host machine, contains `coverage` and `lofreq` data
+: files from host machine, contains `coverage`, _lofreq_ and _varscan_ output
 
 `data/annotation`
 : annotation files for OMM12 genomes e.g. phage location (*pro-hunter*, *fasta* files and *Prokka* annotation)
