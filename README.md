@@ -3,8 +3,10 @@
 ## Start pipeline
 
 ```bash
-snakemake --jobs 5
+snakemake --jobs 40
 ```
 
 This will create:
 - per sample *fastp* reports written to docs/reports/fastp
+- per sample indexed alignments written to processed/$sample_id
+

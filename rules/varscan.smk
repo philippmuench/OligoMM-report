@@ -1,10 +1,10 @@
 rule mpilup:
 	input:
 		# single or list of bam files
-		bam="mapped/{sample}.bam",
-		reference_genome=REF
+		bam="processed/bwa_mapped_omm/{sample}.bam",
+		reference_genome=config["REF"]
 	output:
-		"mpileup/{sample}.mpileup.gz"
+		"processed/mpileup/{sample}.mpileup.gz"
 	log:
 		"logs/samtools/mpileup/{sample}.log"
 	wrapper:
@@ -12,9 +12,9 @@ rule mpilup:
 
 rule pileup_to_vcf:
 	input:
-		gz="mpileup/{sample}.mpileup.gz"
+		gz="processed/mpileup/{sample}.mpileup.gz"
 	output:
-		snp="vcf_varscan/{sample}.snp"
+		snp="processed/varscan/{sample}.snp"
 	message:
 		"Calling pileup2snp"
 	shell:
@@ -22,25 +22,11 @@ rule pileup_to_vcf:
 		gunzip --stdout {input.gz} | varscan pileup2snp --min-avg-qual 20 --p-value 0.01  > {output.snp}
 		"""
 
-#rule mpileup_to_vcf:
-#	input:
-#		"mpileup/{sample}.mpileup.gz"
-#	output:
-#		"vcf_varscan/{sample}.snp"
-#	message:
-#		"Calling SNP with Varscan2"
-#	threads:  # Varscan does not take any threading information
-#		1     # However, mpileup might have to be unzipped.
-#	log:
-#		"logs/varscan_{sample}.log"
-#	wrapper:
-#		"0.50.4/bio/varscan/mpileup2snp"
-
 rule convertvarscan:
 	input:
-		snp="vcf_varscan/{sample}.snp"
+		snp="processed/varscan/{sample}.snp"
 	output:
-		vcf="vcf_varscan/{sample}.vcf"
+		vcf="processed/varscan/{sample}.vcf"
 	message:
 		"Convert Varscan output to vcf"
 	log:

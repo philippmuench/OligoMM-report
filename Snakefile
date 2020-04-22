@@ -74,13 +74,15 @@ READS_PATH="/net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.d
 
 rule all:
 	input:
-		expand("docs/reports/fastp/{sample}.html", sample=SAMPLES),
-		expand("processed/bwa_mapped_omm/{sample}.bam", sample=SAMPLES),
-		expand("processed/bwa_mapped_omm/{sample}.bam.bai", sample=SAMPLES)
-#		expand("mapped/{sample}i.bam", sample=SAMPLES),
-#		expand("vcf_varscan/{sample}.vcf", sample=FILES_CLAUDIA),
-#		expand("lofreq/{sample}.vcf", sample=FILES_CLAUDIA),
-#		expand("lofreq/{sample}.sorted.vcf.gz", sample=FILES_CLAUDIA),
+		expand("docs/reports/fastp/{sample}.html", sample=FILES_CLAUDIA),
+		expand("processed/{sample}/{sample}_bwa_mapped_omm_sorted.bam", sample=FILES_CLAUDIA),
+		expand("processed/{sample}/{sample}_bwa_mapped_omm_sorted.bam.bai", sample=FILES_CLAUDIA),
+		expand("processed/{sample}/{sample}_bowtie2_mapped_omm_sorted.bam", sample=FILES_CLAUDIA),
+		expand("processed/{sample}/{sample}_bowtie2_mapped_omm_sorted.bam.bai", sample=FILES_CLAUDIA),
+#		expand("processed/varscan/{sample}.vcf", sample=SAMPLES),
+#		expand("processed/lofreq_bwa_sorted/{sample}.vcf.gz", sample=SAMPLES),
+#		expand("processed/lofreq_bowtie2/{sample}.vcf.gz", sample=SAMPLES),
+#		expand("docs/igv/{sample}.html", sample=SAMPLES),
 #		expand("coverage/{sample}.coverage.txt.gz", sample=FILES_CLAUDIA),
 #		expand("mapped_spacers/{sample}_1.bam", sample=SAMPLES),
 #		expand("crispr_tables/{sample}.txt", sample=SAMPLES)
@@ -91,8 +93,10 @@ rule all:
 
 include: "rules/preprocess.smk" # copy raw reads and runs fastp
 include: "rules/bwa.smk" # maps QC'ed reads against $REF
-
+include: "rules/bowtie2.smk"
+include: "rules/varscan.smk"
+include: "rules/igv.smk" # generates IGV genome viewer report
 #include: "../rules/bwa.smk" # mapping per sample
-#include: "../rules/lofreq.smk" # SNP calling per genome and sample
+include: "rules/lofreq.smk" # SNP calling per genome and sample
 #include: "../rules/coverage.smk" # coverage per sample per genome
 
