@@ -42,6 +42,8 @@ if (knitr::is_html_output()) {
 }
 ```
 
+Version 04-20-20
+
 # Preface {-}
 
 Processing of NGS data is done using **Snakemake** and not covered by this report yet and will be added at a later stage. In short, preprocessing and analysis (such as `bwa` alignment and variant calling using [Lofreq](https://csb5.github.io/lofreq/commands/) is defined using a `Snakefile` and a set of snakemake *rules* which are run on the HZI server (host) and detailed analysis (such as generation of figures and statistical tests) are done using R markdown on the *client* machine.

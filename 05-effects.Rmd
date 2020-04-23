@@ -1,12 +1,16 @@
 # Variant effects {#variant_effects}
 
 ## snpEff run
+We generated a _snpEff_ databse for OMM genomes and processed vcf files with _snpEff_. The `files.txt` used lists all the `vcf` files. This will result in a new set of `vcf` files with a `ANN` field.
 
 ```{bash, eval=F}
-#build snpEff databse
 cd /home/aime/projects/oligomm-claudia/data/tools/snpEff
 java -jar snpEff.jar build -gff3 -v omm # files needed for this step are snpEff.config and data/omm
-java -jar /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.jar eff  -no-downstream -no-upstream -no-utr -no-intergenic -o vcf -c /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.config omm -fileList files.txt 
+cd /home/aime/projects/oligomm-claudia/data/raw/lofreq
+java -jar /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.jar eff -no-downstream -no-upstream -no-utr -no-intergenic -o vcf -c /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.config omm -fileList files.txt 
+cd /home/aime/projects/oligomm-claudia/data/raw/varscan/
+java -jar /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.jar eff -no-downstream -no-upstream -no-utr -no-intergenic -o vcf -c /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.config omm -fileList files.txt 
+
 ```
 ## number of effects by type
 
@@ -21,6 +25,7 @@ java -jar /home/aime/projects/oligomm-claudia/data/tools/snpEff/snpEff.jar eff  
 
 
 ```{r}
+# load variant statistics that got processed by snpEff (added information to the ANN field)
 dat <- readRDS("data/rds/variants.rds")
 dat <- dat[which(dat$ecoli== FALSE),]
 DT::datatable(as.data.frame(table(dat$effect)))
@@ -28,7 +33,6 @@ DT::datatable(as.data.frame(table(dat$vartype)))
 ```
 
 `r length(which(is.na(dat$vartype)))` variants are with `NA` in their snpEff annotation, not sure why this is the case. `r length(which(!is.na(dat$vartype)))` variants have snpEff annotation. 
-
 
 ## number of effects by type by genome (vartype)
 
@@ -69,7 +73,6 @@ p <- p + geom_bar(stat="identity") + theme_classic() + coord_flip()
 p <- p + ylab("number of variants") + xlab("genome")
 plotly::ggplotly(p, width = 1000)
 ```
-
 
 ## by genome and mouse
 

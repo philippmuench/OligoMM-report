@@ -24,7 +24,7 @@
 <meta name="author" content="Philipp C. Muench" />
 
 
-<meta name="date" content="2020-04-02" />
+<meta name="date" content="2020-04-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,6 @@
   
 
 <link rel="next" href="Setup.html"/>
-<script src="libs/header-attrs-2.1.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -66,26 +65,25 @@
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -94,9 +92,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -145,42 +143,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">Analysis Report</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
-<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-generate-this-report"><i class="fa fa-check"></i>How to generate this report</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#acknowledgements"><i class="fa fa-check"></i>Acknowledgements</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="Setup.html"><a href="Setup.html"><i class="fa fa-check"></i><b>1</b> Setup</a>
-<ul>
+<li class="chapter" data-level="1" data-path="Setup.html"><a href="Setup.html"><i class="fa fa-check"></i><b>1</b> Setup</a><ul>
 <li class="chapter" data-level="1.1" data-path="Setup.html"><a href="Setup.html#Workspace_setup"><i class="fa fa-check"></i><b>1.1</b> Workspace setup</a></li>
 <li class="chapter" data-level="1.2" data-path="Setup.html"><a href="Setup.html#dependencies"><i class="fa fa-check"></i><b>1.2</b> Dependencies</a></li>
 <li class="chapter" data-level="1.3" data-path="Setup.html"><a href="Setup.html#Data_structures"><i class="fa fa-check"></i><b>1.3</b> Data structure</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a>
-<ul>
+<li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a><ul>
 <li class="chapter" data-level="2.1" data-path="study-design.html"><a href="study-design.html#experiment"><i class="fa fa-check"></i><b>2.1</b> Experiment</a></li>
 <li class="chapter" data-level="2.2" data-path="study-design.html"><a href="study-design.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a></li>
-<li class="chapter" data-level="2.3" data-path="study-design.html"><a href="study-design.html#oligomm"><i class="fa fa-check"></i><b>2.3</b> OligoMM</a>
-<ul>
+<li class="chapter" data-level="2.3" data-path="study-design.html"><a href="study-design.html#oligomm"><i class="fa fa-check"></i><b>2.3</b> OligoMM</a><ul>
 <li class="chapter" data-level="2.3.1" data-path="study-design.html"><a href="study-design.html#crispr"><i class="fa fa-check"></i><b>2.3.1</b> CRISPR</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>3</b> Variant statistics</a>
-<ul>
+<li class="chapter" data-level="3" data-path="Variant-statistics.html"><a href="Variant-statistics.html"><i class="fa fa-check"></i><b>3</b> Variant statistics</a><ul>
 <li class="chapter" data-level="3.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#process-of-raw-data"><i class="fa fa-check"></i><b>3.1</b> Process of <em>raw</em> data</a></li>
-<li class="chapter" data-level="3.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#quality-of-variants"><i class="fa fa-check"></i><b>3.2</b> Quality of variants</a>
-<ul>
-<li class="chapter" data-level="3.2.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#all-samples"><i class="fa fa-check"></i><b>3.2.1</b> all samples</a></li>
-<li class="chapter" data-level="3.2.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-mouse"><i class="fa fa-check"></i><b>3.2.2</b> by mouse</a></li>
+<li class="chapter" data-level="3.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#quality-of-variants"><i class="fa fa-check"></i><b>3.2</b> Quality of variants</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#lofreq"><i class="fa fa-check"></i><b>3.2.1</b> lofreq</a></li>
+<li class="chapter" data-level="3.2.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#all-samples"><i class="fa fa-check"></i><b>3.2.2</b> all samples</a></li>
+<li class="chapter" data-level="3.2.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-mouse"><i class="fa fa-check"></i><b>3.2.3</b> by mouse</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#number-of-variants"><i class="fa fa-check"></i><b>3.3</b> Number of variants</a>
-<ul>
+<li class="chapter" data-level="3.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#number-of-variants"><i class="fa fa-check"></i><b>3.3</b> Number of variants</a><ul>
 <li class="chapter" data-level="3.3.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-sample"><i class="fa fa-check"></i><b>3.3.1</b> by sample</a></li>
 <li class="chapter" data-level="3.3.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-mouse-and-genome"><i class="fa fa-check"></i><b>3.3.2</b> by mouse and genome</a></li>
 <li class="chapter" data-level="3.3.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-extendet-metadata"><i class="fa fa-check"></i><b>3.3.3</b> by extendet metadata</a></li>
 </ul></li>
-<li class="chapter" data-level="3.4" data-path="Variant-statistics.html"><a href="Variant-statistics.html#orfs-with-variants"><i class="fa fa-check"></i><b>3.4</b> ORFs with variants</a>
-<ul>
+<li class="chapter" data-level="3.4" data-path="Variant-statistics.html"><a href="Variant-statistics.html#orfs-with-variants"><i class="fa fa-check"></i><b>3.4</b> ORFs with variants</a><ul>
 <li class="chapter" data-level="3.4.1" data-path="Variant-statistics.html"><a href="Variant-statistics.html#data"><i class="fa fa-check"></i><b>3.4.1</b> Data</a></li>
 <li class="chapter" data-level="3.4.2" data-path="Variant-statistics.html"><a href="Variant-statistics.html#statistics"><i class="fa fa-check"></i><b>3.4.2</b> Statistics</a></li>
 <li class="chapter" data-level="3.4.3" data-path="Variant-statistics.html"><a href="Variant-statistics.html#minor-to-major-transistion"><i class="fa fa-check"></i><b>3.4.3</b> Minor to major transistion</a></li>
@@ -188,27 +179,36 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.5" data-path="Variant-statistics.html"><a href="Variant-statistics.html#by-variant-static"><i class="fa fa-check"></i><b>3.4.5</b> by variant (static)</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html"><i class="fa fa-check"></i><b>4</b> Variant statistics relative to <em>I_mi</em></a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#number-of-variants-1"><i class="fa fa-check"></i><b>4.1</b> Number of variants</a>
-<ul>
+<li class="chapter" data-level="4" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html"><i class="fa fa-check"></i><b>4</b> Variant statistics relative to <em>I_mi</em></a><ul>
+<li class="chapter" data-level="4.1" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#number-of-variants-1"><i class="fa fa-check"></i><b>4.1</b> Number of variants</a><ul>
 <li class="chapter" data-level="4.1.1" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#by-sample-1"><i class="fa fa-check"></i><b>4.1.1</b> by sample</a></li>
+<li class="chapter" data-level="4.1.2" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#by-extendet-metadata-1"><i class="fa fa-check"></i><b>4.1.2</b> by extendet metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#orfs-with-variants-1"><i class="fa fa-check"></i><b>4.2</b> ORFs with variants</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#data-1"><i class="fa fa-check"></i><b>4.2.1</b> Data</a></li>
+<li class="chapter" data-level="4.2.2" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#statistics-1"><i class="fa fa-check"></i><b>4.2.2</b> Statistics</a></li>
+<li class="chapter" data-level="4.2.3" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#minor-to-major-transistion-1"><i class="fa fa-check"></i><b>4.2.3</b> Minor to major transistion</a></li>
+<li class="chapter" data-level="4.2.4" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#gene-centric-analysis-1"><i class="fa fa-check"></i><b>4.2.4</b> Gene-centric analysis</a></li>
+<li class="chapter" data-level="4.2.5" data-path="Variant-statistics-filtered.html"><a href="Variant-statistics-filtered.html#by-variant-static-1"><i class="fa fa-check"></i><b>4.2.5</b> by variant (static)</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="variant-effects.html"><a href="variant-effects.html"><i class="fa fa-check"></i><b>5</b> Variant effects</a>
-<ul>
+<li class="chapter" data-level="5" data-path="variant-effects.html"><a href="variant-effects.html"><i class="fa fa-check"></i><b>5</b> Variant effects</a><ul>
 <li class="chapter" data-level="5.1" data-path="variant-effects.html"><a href="variant-effects.html#snpeff-run"><i class="fa fa-check"></i><b>5.1</b> snpEff run</a></li>
 <li class="chapter" data-level="5.2" data-path="variant-effects.html"><a href="variant-effects.html#number-of-effects-by-type"><i class="fa fa-check"></i><b>5.2</b> number of effects by type</a></li>
 <li class="chapter" data-level="5.3" data-path="variant-effects.html"><a href="variant-effects.html#number-of-effects-by-type-by-genome-vartype"><i class="fa fa-check"></i><b>5.3</b> number of effects by type by genome (vartype)</a></li>
 <li class="chapter" data-level="5.4" data-path="variant-effects.html"><a href="variant-effects.html#number-of-effects-by-type-by-genome-effect"><i class="fa fa-check"></i><b>5.4</b> number of effects by type by genome (effect)</a></li>
 <li class="chapter" data-level="5.5" data-path="variant-effects.html"><a href="variant-effects.html#by-genome-and-mouse"><i class="fa fa-check"></i><b>5.5</b> by genome and mouse</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="Allele-frequency.html"><a href="Allele-frequency.html"><i class="fa fa-check"></i><b>6</b> Allele frequency</a>
-<ul>
-<li class="chapter" data-level="6.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#major-allele-frequency"><i class="fa fa-check"></i><b>6.1</b> major allele frequency</a>
-<ul>
+<li class="chapter" data-level="6" data-path="Allele-frequency.html"><a href="Allele-frequency.html"><i class="fa fa-check"></i><b>6</b> Allele frequency</a><ul>
+<li class="chapter" data-level="6.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#major-allele-frequency"><i class="fa fa-check"></i><b>6.1</b> major allele frequency</a><ul>
 <li class="chapter" data-level="6.1.1" data-path="Allele-frequency.html"><a href="Allele-frequency.html#all-samples-and-all-genomes"><i class="fa fa-check"></i><b>6.1.1</b> all samples and all genomes</a></li>
 <li class="chapter" data-level="6.1.2" data-path="Allele-frequency.html"><a href="Allele-frequency.html#by-sample-and-genome"><i class="fa fa-check"></i><b>6.1.2</b> by sample and genome</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="comparision-of-lofreq-and-varscan.html"><a href="comparision-of-lofreq-and-varscan.html"><i class="fa fa-check"></i><b>7</b> Comparision of lofreq and varscan</a><ul>
+<li class="chapter" data-level="7.1" data-path="comparision-of-lofreq-and-varscan.html"><a href="comparision-of-lofreq-and-varscan.html#major-allele-frequency-1"><i class="fa fa-check"></i><b>7.1</b> major allele frequency</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="comparision-of-lofreq-and-varscan.html"><a href="comparision-of-lofreq-and-varscan.html#all-samples-and-all-genomes-1"><i class="fa fa-check"></i><b>7.1.1</b> all samples and all genomes</a></li>
+<li class="chapter" data-level="7.1.2" data-path="comparision-of-lofreq-and-varscan.html"><a href="comparision-of-lofreq-and-varscan.html#by-sample-and-genome-1"><i class="fa fa-check"></i><b>7.1.2</b> by sample and genome</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -234,20 +234,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">Claudia’s data</h1>
 <p class="author"><em>Philipp C. Muench</em></p>
-<p class="date"><em>2020-04-02</em></p>
+<p class="date"><em>2020-04-22</em></p>
 </div>
-<div id="preface" class="section level1 unnumbered" number="">
+<div id="preface" class="section level1 unnumbered">
 <h1>Preface</h1>
 <p>Processing of NGS data is done using <strong>Snakemake</strong> and not covered by this report yet and will be added at a later stage. In short, preprocessing and analysis (such as <code>bwa</code> alignment and variant calling using <a href="https://csb5.github.io/lofreq/commands/">Lofreq</a> is defined using a <code>Snakefile</code> and a set of snakemake <em>rules</em> which are run on the HZI server (host) and detailed analysis (such as generation of figures and statistical tests) are done using R markdown on the <em>client</em> machine.</p>
-<div id="how-to-generate-this-report" class="section level2 unnumbered" number="">
+<div id="how-to-generate-this-report" class="section level2 unnumbered">
 <h2>How to generate this report</h2>
 <p>In <a href="https://code.visualstudio.com/">vscode</a> with bookdown addon a server can be started using <code>serve_book</code></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1"></a><span class="kw">setwd</span>(<span class="st">&quot;~/projects/oligomm-claudia/&quot;</span>)</span>
-<span id="cb1-2"><a href="index.html#cb1-2"></a>bookdown<span class="op">::</span><span class="kw">serve_book</span>(<span class="kw">getwd</span>())</span></code></pre></div>
-<p>This will starts a browser window pointing to <a href="http://127.0.0.1:7853">http://127.0.0.1:7853</a> presenting the report written in <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and will update as soon as there are changes on <code>.Rmd</code> files in the workspace.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">setwd</span>(<span class="st">&quot;~/projects/oligomm-claudia/&quot;</span>)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">bookdown<span class="op">::</span><span class="kw">serve_book</span>(<span class="kw">getwd</span>())</a></code></pre></div>
+<p>This will starts a browser window pointing to <a href="http://127.0.0.1:7853" class="uri">http://127.0.0.1:7853</a> presenting the report written in <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and will update as soon as there are changes on <code>.Rmd</code> files in the workspace.</p>
 <p>To end bookdown server type <code>servr::daemon_stop(1)</code> where <code>1</code> is the ID of the server running</p>
 </div>
-<div id="acknowledgements" class="section level2 unnumbered" number="">
+<div id="acknowledgements" class="section level2 unnumbered">
 <h2>Acknowledgements</h2>
 
 </div>

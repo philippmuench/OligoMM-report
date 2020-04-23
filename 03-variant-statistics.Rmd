@@ -13,27 +13,39 @@ We define a function that iterates over a set of `vcf` files (`vcf.files`)
 #' @param contig_mapping mapping file of vcf CHR to OMM reference genomes
 #' @param gff.dff merged gff data from reference genomes
 #' @return a dataframe holding the merged annotated variant information
-vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_genome_mapping.csv"), gff.df = gff.df) {
+vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_genome_mapping.csv"), gff.df = gff.df, varscan = F) {
 	require(vcfR)
 	res <- list()
 	for (file in vcf.files) {
+		message(file)
 		vcf.content <- vcfR::read.vcfR(file, verbose = FALSE )
 		vcf.fix <- as.data.frame(vcf.content@fix) # contains chr, position and substitution informations
 		vcf.info <- vcfR::INFO2df(vcf.content) # get INFO field, contains DP, AF informations
 	  vcf.ann <- data.frame(do.call('rbind', strsplit(as.character(vcf.info$ANN),'|',fixed = TRUE))) # split ANN field, contains information if files are processed by snpEff
 		if(nrow(vcf.fix) > 0) {
-			dat <-  as.data.frame(cbind(vcf.fix[,c(1, 2, 4, 5, 6)], vcf.info[,c(1, 2)]))
+			if (varscan){
+				dat <-  as.data.frame(cbind(vcf.fix[,c(1, 2, 4, 5, 6)], vcf.info[,c(1, 2, 3)])) # ther is a PV column only present in varscan files
+				dat$pvalue <- as.numeric(as.matrix(vcf.info$PV))
+
+			} else {
+				dat <-  as.data.frame(cbind(vcf.fix[,c(1, 2, 4, 5, 6)], vcf.info[,c(1, 2)]))
+			}
+	
 			dat$majorAF <- sapply(dat$AF, minorAfToMajorAf) # transforms e.g. AF of 0.1 to 0.9, 0.9 stays 0.9 and 0.5 stays 0.5
 			dat$genome <- contig_mapping[match(dat$CHROM, contig_mapping$contig),]$genome # map chr information to genome name e.g. NHMU01000001.1 -> i48
 			dat$genome_hr <- translateGenomeIdToFullName(dat$genome)
 			dat$mouse.id <- substr(basename(file), 1, 4) # get mouse ID from file name, e.g. "1681"
 			dat$dp <- as.numeric(as.matrix(vcf.info$DP))
+		#	print(summary(dat$AF))
+		#	print(summary(dat$DP))
 			dat$vartype <- as.character(as.matrix(vcf.ann$X2))
 			dat$effect <- as.character(as.matrix(vcf.ann$X3))
 			dat$substitution <- as.character(as.matrix(vcf.ann$X11))
 			# annotate overlay of gene
 			dat$orf_desc <- as.character(as.matrix(apply(dat, 1, getGeneByPosition, gff = gff, pos.column = 2, chr.column = 1)))
 			res[[basename(file)]] <- dat # add vcf df to list
+		} else{
+			message("Skipping")
 		}
 	}
 	df <- as.data.frame(do.call(rbind, res)) # merge list to df
@@ -43,7 +55,7 @@ vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_ge
 
 We apply this function on all  `r length(Sys.glob("data/raw/lofreq/*.vcf"))` files that live in `data/raw/lofreq/*.vcf`
 
-```{r, results="hide", message=FALSE}
+```{r, results="hide", message=FALSE, eval = F}
 # merge gff annotaions
 gff.files <- Sys.glob("data/annotation/gff/*.gff")
 gff.df <- NULL
@@ -57,28 +69,40 @@ for (gff.file in gff.files){
 }
 
 contig_mapping <- read.csv2("data/contig_genome_mapping.csv", sep =";", header=T, stringsAsFactors = F) # this file contains contig names of the 12 OligoMM genomes
+
+# for lofreq results
 vcf.files <- Sys.glob("data/raw/lofreq_eff/*.vcf")
-dat <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.df))
+vcf.samples <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.df))
 # annotate study metadata
-dat <- merge(dat, design.df, by = "mouse.id")
-dat$mouse.id <- as.character(as.matrix(dat$mouse.id))
+vcf.samples <- merge(vcf.samples, design.df, by = "mouse.id")
+vcf.samples$mouse.id <- as.character(as.matrix(vcf.samples$mouse.id))
+vcf.samples[which(vcf.samples$orf_desc == "character(0)"),]$orf_desc <- "outside ORFs"
+vcf.samples[which(vcf.samples$orf_desc == "hypothetical protein"),]$orf_desc <- "hypothetical proteins"
+vcf.samples[which(is.na(vcf.samples$vartype)),]$vartype <- "unknown"
+saveRDS(vcf.samples, file = "data/rds/variants_lofreq.rds")
 
-dat[which(dat$orf_desc == "character(0)"),]$orf_desc <- "outside ORFs"
-dat[which(dat$orf_desc == "hypothetical protein"),]$orf_desc <- "hypothetical proteins"
-dat[which(is.na(dat$vartype)),]$vartype <- "unknown"
-
-saveRDS(dat, file = "data/rds/variants.rds")
+# for varscan results
+vcf.files <- Sys.glob("data/raw/varscan_eff/*.vcf")
+vcf.samples <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.df, varscan = T))
+# annotate study metadata
+vcf.samples <- merge(vcf.samples, design.df, by = "mouse.id")
+vcf.samples$mouse.id <- as.character(as.matrix(vcf.samples$mouse.id))
+vcf.samples[which(vcf.samples$orf_desc == "character(0)"),]$orf_desc <- "outside ORFs"
+vcf.samples[which(vcf.samples$orf_desc == "hypothetical protein"),]$orf_desc <- "hypothetical proteins"
+vcf.samples[which(is.na(vcf.samples$vartype)),]$vartype <- "unknown"
+saveRDS(vcf.samples, file = "data/rds/variants_varscan.rds")
 ```
 
-The dataset is written to `data/rds/variants.rds`).
-
+The dataset is written to `data/rds/variants_lofreq.rds` and `data/rds/variants_varscan.rds`
 
 ## Quality of variants
 
 DP is the filtered depth, at the sample level. This gives you the number of filtered reads that support each of the reported alleles. You can check the variant caller’s documentation to see which filters are applied by default. Only reads that passed the variant caller’s filters are included in this number. However, unlike the AD calculation, uninformative reads are included in DP.
 
-```{r load-vcf-qual, fig.cap="quality of variants (all samples)", fig.align="center", fig.width=15}
-dat <- readRDS("data/rds/variants.rds")
+### lofreq
+
+```{r load-vcf-qual-lo, fig.cap="quality of variants (all samples)", fig.align="center", fig.width=15}
+dat <- readRDS("data/rds/variants_lofreq.rds")
 dat <- dat[which(dat$ecoli== FALSE),]
 print(summary(dat$dp))
 ```
@@ -111,7 +135,7 @@ plotly::ggplotly(p)
 only non-ecoli samples
 
 ```{r load-vcf}
-dat <- readRDS("data/rds/variants.rds")
+dat <- readRDS("data/rds/variants_lofreq.rds")
 dat <- dat[which(dat$ecoli== FALSE),]
 ```
 
@@ -220,12 +244,12 @@ pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
 	colnames(data.wide)[8] <- "sample_2"
 	data.wide[is.na(data.wide)] <- 0
 
-	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, color = genome, label = orf_desc, shape = vartype))
+	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, color = genome, label = orf_desc))#, shape = vartype))
 	p <- p + geom_point(fill = NA) + theme_classic() + scale_color_manual(values = omm_colors)
 	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")
 	p <- p + geom_vline(xintercept = .5, linetype = 2, color = "grey50")
 	p <- p + theme(aspect.ratio = 1) 
-	p <- p + scale_shape_manual(values = variant_shapes)
+	#p <- p + scale_shape_manual(values = variant_shapes)
 	p <- p + theme(strip.background = element_blank())
 	p <- p + geom_abline(intercept = 0, slope = 1)
 	p <- p + xlab(paste0("sample ", case)) + ylab(paste0("sample ", control))
@@ -238,31 +262,31 @@ pairedAFplot <- function(dat = dat, case = "1607", control = "1885"){
 
 ##### comparison of t=20 of first/second generation
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a1, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1607", control = "1885")))
 ```
 
 ##### comparison of t=40 of first/second generation (sample 1660)
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a2, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1660", control = "1807")))
 ```
 
 ##### comparison of t=40 of first/second generation (sample 1750)
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a3, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1750", control = "1807")))
 ```
 
 ##### comparison of t=80 of first/second generation
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a4, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1779", control = "1789")))
 ```
 
 ##### comparison of t=80 of first/second generation
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a5, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1779", control = "1789")))
 ```
 
@@ -270,12 +294,12 @@ suppressWarnings(ggplotly(pairedAFplot(dat, case = "1779", control = "1789")))
 
 ##### t=20 vs t=40
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a6, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1607", control = "1660")))
 ```
 ##### t=40 vs t=80
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a7, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1660", control = "1779")))
 ```
 
@@ -283,12 +307,12 @@ suppressWarnings(ggplotly(pairedAFplot(dat, case = "1660", control = "1779")))
 
 ##### t=20 vs t=40
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a8, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1885", control = "1807")))
 ```
 ##### t=40 vs t=80
 
-```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+```{r a9, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "1807", control = "1789")))
 ```
 
@@ -296,13 +320,13 @@ suppressWarnings(ggplotly(pairedAFplot(dat, case = "1807", control = "1789")))
 
 ##### t=20 gen=2
 
- ```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+ ```{r a10, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "I_mi", control = "1885")))
 ```
 
 ##### t=40 gen=2
 
- ```{r, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+ ```{r a, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
 suppressWarnings(ggplotly(pairedAFplot(dat, case = "I_mi", control = "1807")))
 ```
 
@@ -321,7 +345,7 @@ geneCentricPlot <- function(dat = dat, genome = "yl44"){
 	p <- p + coord_flip() + theme_classic()
 	p <- p + facet_grid(orf_desc ~., scales = "free", space = "free")
 	p <- p + ylim(c(0,1))
-	p <- p + scale_shape_manual(values = variant_shapes)
+#	p <- p + scale_shape_manual(values = variant_shapes)
 	p <- p + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
 	p <- p + xlab("") + ylab("allele frequency")  + scale_color_manual(values = sample_colors)
 	return(p)
@@ -337,7 +361,7 @@ geneCentricPlot2 <- function(dat = dat, genome = "yl44"){
   p <- p + geom_point(size = 4, fill = NA)
 	p <- p + coord_flip() + theme_classic()
 	p <- p + ylim(c(0,1))
-	p <- p + scale_shape_manual(values = variant_shapes)
+	#p <- p + scale_shape_manual(values = variant_shapes)
 	p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 0), strip.placement = "outside")
 	p <- p + xlab("") + ylab("allele frequency") + scale_color_manual(values = sample_colors)
 	return(p)
