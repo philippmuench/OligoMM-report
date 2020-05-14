@@ -18,7 +18,7 @@ rule showcoords:
 	output:
 		tsv="databases/omm/duplication_coords/{ref}.tsv"
 	shell: 
-		"show-coords {input.delta} -o -c -H -l > {output.tsv}"
+		"show-coords {input.delta} -T -o -c -H -l > {output.tsv}"
 		
 # Outputs a list of structural differences for each sequence in the reference and query, sorted by position. 
 rule showdiff:
