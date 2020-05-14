@@ -1,30 +1,30 @@
-       1   888144  |        1   888144  |   888144   888144  |   100.00  |   888144   888144  |   100.00   100.00  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	[IDENTITY]
-  184391   185693  |   852772   851470  |     1303     1303  |    99.85  |   888144   888144  |     0.15     0.15  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
-  245328   245443  |   245443   245328  |      116      116  |    83.87  |   888144   888144  |     0.01     0.01  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
-  245487   245601  |   245601   245487  |      115      115  |    85.25  |   888144   888144  |     0.01     0.01  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
-  442492   442600  |   442600   442492  |      109      109  |    84.48  |   888144   888144  |     0.01     0.01  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
-  519146   519281  |   519281   519146  |      136      136  |    80.85  |   888144   888144  |     0.02     0.02  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
-  818158   818348  |   818348   818158  |      191      191  |    75.51  |   888144   888144  |     0.02     0.02  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
-  851470   852772  |   185693   184391  |     1303     1303  |    99.85  |   888144   888144  |     0.15     0.15  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
-       1       83  |   456621   456539  |       83       83  |   100.00  |  1133782   888144  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_2	
-       1      218  |   356888   356671  |      218      218  |    99.08  |  1133782   888144  |     0.02     0.02  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_2	
-  361573   361698  |   888144   888019  |      126      126  |   100.00  |  1133782   888144  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_2	
- 2410052  2410539  |   541963   541476  |      488      488  |    80.16  |  3743035   888144  |     0.01     0.05  | F_plautii_1	Bifidobacterium_animalis_YL2_2	
-       1  1133782  |        1  1133782  |  1133782  1133782  |   100.00  |  1133782  1133782  |   100.00   100.00  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	[IDENTITY]
-  125835   125960  |   125960   125835  |      126      126  |    78.12  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  171810   171916  |   171916   171810  |      107      107  |    83.64  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  210300   210370  |   210370   210300  |       71       71  |    98.59  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  303444   303573  |   303573   303444  |      130      130  |    81.48  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  316545   316612  |   316612   316545  |       68       68  |   100.00  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  559787   559852  |   559852   559787  |       66       66  |   100.00  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  656307   656416  |   656416   656307  |      110      110  |    81.03  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  690820   690887  |   690887   690820  |       68       68  |   100.00  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  701462   701590  |  1133782  1133654  |      129      129  |   100.00  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  765198   765263  |   765263   765198  |       66       66  |   100.00  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  891097   891194  |   891194   891097  |       98       98  |    94.95  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
- 1045670  1045779  |  1045779  1045670  |      110      110  |    77.88  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
- 1045701  1045874  |  1045874  1045701  |      174      174  |    75.56  |  1133782  1133782  |     0.02     0.02  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
- 1116364  1116445  |  1116445  1116364  |       82       82  |    97.56  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
- 1133654  1133782  |   701590   701462  |      129      129  |   100.00  |  1133782  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
-  356671   356888  |      218        1  |      218      218  |    99.08  |   888144  1133782  |     0.02     0.02  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_1	
-  888019   888144  |   361698   361573  |      126      126  |   100.00  |   888144  1133782  |     0.01     0.01  | Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_1	
+1	888144	1	888144	888144	888144	100.00	888144	888144	100.00	100.00	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	[IDENTITY]
+184391	185693	852772	851470	1303	1303	99.85	888144	888144	0.15	0.15	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
+245328	245443	245443	245328	116	116	83.87	888144	888144	0.01	0.01	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
+245487	245601	245601	245487	115	115	85.25	888144	888144	0.01	0.01	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
+442492	442600	442600	442492	109	109	84.48	888144	888144	0.01	0.01	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
+519146	519281	519281	519146	136	136	80.85	888144	888144	0.02	0.02	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
+818158	818348	818348	818158	191	191	75.51	888144	888144	0.02	0.02	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
+851470	852772	185693	184391	1303	1303	99.85	888144	888144	0.15	0.15	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_2	
+1	83	456621	456539	83	83	100.00	1133782	888144	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_2	
+1	218	356888	356671	218	218	99.08	1133782	888144	0.02	0.02	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_2	
+361573	361698	888144	888019	126	126	100.00	1133782	888144	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_2	
+2410052	2410539	541963	541476	488	488	80.16	3743035	888144	0.01	0.05	F_plautii_1	Bifidobacterium_animalis_YL2_2	
+1	1133782	1	1133782	1133782	1133782	100.00	1133782	1133782	100.00	100.00	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	[IDENTITY]
+125835	125960	125960	125835	126	126	78.12	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+171810	171916	171916	171810	107	107	83.64	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+210300	210370	210370	210300	71	71	98.59	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+303444	303573	303573	303444	130	130	81.48	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+316545	316612	316612	316545	68	68	100.00	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+559787	559852	559852	559787	66	66	100.00	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+656307	656416	656416	656307	110	110	81.03	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+690820	690887	690887	690820	68	68	100.00	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+701462	701590	1133782	1133654	129	129	100.00	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+765198	765263	765263	765198	66	66	100.00	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+891097	891194	891194	891097	98	98	94.95	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+1045670	1045779	1045779	1045670	110	110	77.88	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+1045701	1045874	1045874	1045701	174	174	75.56	1133782	1133782	0.02	0.02	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+1116364	1116445	1116445	1116364	82	82	97.56	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+1133654	1133782	701590	701462	129	129	100.00	1133782	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_1	Bifidobacterium_animalis_YL2_1	
+356671	356888	218	1	218	218	99.08	888144	1133782	0.02	0.02	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_1	
+888019	888144	361698	361573	126	126	100.00	888144	1133782	0.01	0.01	Bifidobacterium_animalis_YL2_2	Bifidobacterium_animalis_YL2_1	

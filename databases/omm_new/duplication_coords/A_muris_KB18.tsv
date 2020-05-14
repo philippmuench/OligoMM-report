@@ -1,278 +1,278 @@
-       1  3802913  |        1  3802913  |  3802913  3802913  |   100.00  |  3802913  3802913  |   100.00   100.00  | Acutalibacter_muris	Acutalibacter_muris	[IDENTITY]
-   21275    21433  |  3767263  3767106  |      159      158  |    99.37  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
-   24670    25299  |  3763536  3762907  |      630      630  |    98.41  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-   24687    25299  |    33039    32427  |      613      613  |    97.72  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-   32426    32513  |    45183    45096  |       88       88  |   100.00  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
-   32427    33039  |    25299    24687  |      613      613  |    97.72  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-   33077    33341  |    44481    44217  |      265      265  |    96.98  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-   44217    44481  |    33341    33077  |      265      265  |    96.98  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-   45096    45183  |    32513    32426  |       88       88  |   100.00  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
-  192074   193177  |  3173293  3172190  |     1104     1104  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
-  194482   194795  |  1417663  1417350  |      314      314  |    93.31  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  203494   203758  |  3017156  3016893  |      265      264  |    83.02  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  235386   235920  |  2520864  2520333  |      535      532  |    84.73  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  247410   247611  |  3405431  3405230  |      202      202  |    95.54  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  248472   254957  |  3333983  3327498  |     6486     6486  |    99.72  |  3802913  3802913  |     0.17     0.17  | Acutalibacter_muris	Acutalibacter_muris	
-  252547   252971  |   171862   171438  |      425      425  |    85.65  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  253417   253795  |   171433   171063  |      379      371  |    87.14  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  254693   254865  |  2907693  2907521  |      173      173  |    96.53  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
-  254693   254861  |  3350322  3350154  |      169      169  |    97.63  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
-  254693   254823  |  2742102  2741972  |      131      131  |    96.18  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
-  260974   262319  |  2888683  2887339  |     1346     1345  |    86.78  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
-  270823   271366  |  2867199  2866648  |      544      552  |    84.50  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  271366   271586  |  2866544  2866326  |      221      219  |    85.07  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  273213   273967  |  2865788  2865038  |      755      751  |    88.79  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-  588844   594292  |  3782724  3777312  |     5449     5413  |    98.83  |  3802913  3802913  |     0.14     0.14  | Acutalibacter_muris	Acutalibacter_muris	
-  641796   642321  |  3349297  3348773  |      526      525  |    91.25  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  652502   652635  |  3344793  3344660  |      134      134  |    88.06  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
-  657014   657223  |  2195930  2195721  |      210      210  |    90.95  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  703210   703836  |  3703582  3702963  |      627      620  |    83.94  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-  719352   719730  |  1539761  1539383  |      379      379  |    95.78  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
-  744375   745231  |  2122729  2121873  |      857      857  |    93.35  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-  745532   746682  |  2120925  2119787  |     1151     1139  |    93.06  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
-  748450   749573  |  2119484  2118361  |     1124     1124  |    92.72  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
-  752269   753057  |  2116557  2115769  |      789      789  |    91.07  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-  753199   754137  |  2115628  2114701  |      939      928  |    92.77  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
-  754670   755710  |  2114168  2113128  |     1041     1041  |    85.91  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1039925  1040461  |  2480702  2480166  |      537      537  |    97.58  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1040944  1041037  |  1045438  1045345  |       94       94  |    97.87  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 1045345  1045438  |  1041037  1040944  |       94       94  |    97.87  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 1045698  1046013  |  2471307  2470992  |      316      316  |    86.39  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1049525  1050628  |  1479602  1478499  |     1104     1104  |    90.76  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1049526  1050628  |  3689115  3688013  |     1103     1103  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1049526  1049927  |  1345568  1345167  |      402      402  |    99.75  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1068247  1069027  |  3310789  3310009  |      781      781  |    86.46  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1106653  1106953  |  3292959  3292660  |      301      300  |    88.74  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1133693  1134839  |  3513259  3512113  |     1147     1147  |    97.12  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1133693  1134839  |  3694109  3692963  |     1147     1147  |    97.99  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1142624  1144448  |  3281527  3279703  |     1825     1825  |    82.80  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 1149545  1149771  |  3265376  3265151  |      227      226  |    89.43  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1162652  1163495  |  3515058  3514232  |      844      827  |    84.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1180887  1182803  |  2554771  2552855  |     1917     1917  |    80.61  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 1181682  1182761  |  2328364  2327285  |     1080     1080  |    82.98  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1221502  1222854  |  3303703  3302351  |     1353     1353  |    82.84  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 1225683  1225942  |  3298579  3298318  |      260      262  |    96.18  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1229232  1229918  |  3295247  3294561  |      687      687  |    85.15  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1230223  1230437  |  3292872  3292660  |      215      213  |    92.56  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1231647  1235238  |  3291425  3287840  |     3592     3586  |    83.25  |  3802913  3802913  |     0.09     0.09  | Acutalibacter_muris	Acutalibacter_muris	
- 1236130  1237474  |  3286846  3285509  |     1345     1338  |    80.90  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 1240068  1241186  |  3283059  3281941  |     1119     1119  |    86.98  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1246910  1247887  |  3266131  3265153  |      978      979  |    83.47  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1335468  1336017  |  2435787  2435238  |      550      550  |    90.00  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1346976  1347253  |  3404366  3404092  |      278      275  |    85.97  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1346976  1347253  |  1929107  1928833  |      278      275  |    85.97  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1347466  1347760  |  3400214  3399922  |      295      293  |    94.93  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1347466  1347760  |  1924955  1924663  |      295      293  |    94.93  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1350482  1351305  |  2464983  2464160  |      824      824  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1359613  1361525  |  1865419  1863508  |     1913     1912  |    91.82  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 1364515  1364918  |  1895173  1894770  |      404      404  |    94.55  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1364553  1364915  |  1861173  1860813  |      363      361  |    92.29  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1397046  1397372  |  1539716  1539384  |      327      333  |    84.43  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1412139  1412963  |  2464985  2464161  |      825      825  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1417350  1417663  |   194795   194482  |      314      314  |    93.31  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1478499  1479601  |  3246214  3245112  |     1103     1103  |    91.57  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1478499  1479602  |  1050628  1049525  |     1104     1104  |    90.76  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1479994  1482187  |  2032216  2030023  |     2194     2194  |    88.85  |  3802913  3802913  |     0.06     0.06  | Acutalibacter_muris	Acutalibacter_muris	
- 1479994  1482187  |  2044634  2042443  |     2194     2192  |    88.89  |  3802913  3802913  |     0.06     0.06  | Acutalibacter_muris	Acutalibacter_muris	
- 1503729  1503997  |  3382105  3381836  |      269      270  |    87.45  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1514456  1515063  |  2869229  2868622  |      608      608  |    88.65  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1529510  1530393  |  3117013  3116130  |      884      884  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1529511  1530392  |  1979052  1978171  |      882      882  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 1539383  1539761  |   719730   719352  |      379      379  |    95.78  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1539384  1539716  |  1397372  1397046  |      333      327  |    84.43  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1539742  1541261  |  3268999  3267480  |     1520     1520  |    99.74  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 1558173  1559637  |  3021192  3019728  |     1465     1465  |   100.00  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 1618777  1618885  |  3449045  3448937  |      109      109  |    92.66  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 1780213  1780290  |  2410757  2410680  |       78       78  |   100.00  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 1860813  1861173  |  1364915  1364553  |      361      363  |    92.29  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1863508  1865419  |  1361525  1359613  |     1912     1913  |    91.82  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 1866500  1867519  |  2364049  2363033  |     1020     1017  |    84.56  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1876731  1877807  |  2433106  2432029  |     1077     1078  |    87.06  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1894770  1895173  |  1364918  1364515  |      404      404  |    94.55  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 1906374  1908446  |  2433452  2431380  |     2073     2073  |    88.15  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 1906726  1908435  |  2363970  2362260  |     1710     1711  |    85.83  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 1931330  1932352  |  2364054  2363035  |     1023     1020  |    86.72  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1972698  1973803  |  3173296  3172191  |     1106     1106  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1972698  1973803  |  3689118  3688013  |     1106     1106  |    99.28  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 1993343  1994213  |  2822185  2821315  |      871      871  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2030023  2032216  |  1482187  1479994  |     2194     2194  |    88.85  |  3802913  3802913  |     0.06     0.06  | Acutalibacter_muris	Acutalibacter_muris	
- 2042443  2044634  |  1482187  1479994  |     2192     2194  |    88.89  |  3802913  3802913  |     0.06     0.06  | Acutalibacter_muris	Acutalibacter_muris	
- 2048612  2048861  |  2064293  2064042  |      250      252  |    96.83  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2048608  2048872  |  2099843  2099575  |      265      269  |    94.80  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2064042  2064293  |  2048861  2048612  |      252      250  |    96.83  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2064042  2064293  |  2089983  2089734  |      252      250  |    95.63  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2113128  2114168  |   755710   754670  |     1041     1041  |    85.91  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2114701  2115628  |   754137   753199  |      928      939  |    92.77  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2115769  2116557  |   753057   752269  |      789      789  |    91.07  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2118371  2119484  |  3278471  3277358  |     1114     1114  |    97.67  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2118361  2119484  |   749573   748450  |     1124     1124  |    92.72  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2119484  2119682  |  3274593  3274396  |      199      198  |    93.47  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2119787  2120925  |   746682   745532  |     1139     1151  |    93.06  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2121873  2122729  |   745231   744375  |      857      857  |    93.35  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2122284  2123236  |  3274402  3273438  |      953      965  |    94.31  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2140821  2141434  |  2415704  2415091  |      614      614  |    86.83  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2179068  2181946  |  3338392  3335540  |     2879     2853  |    98.09  |  3802913  3802913  |     0.08     0.08  | Acutalibacter_muris	Acutalibacter_muris	
- 2179068  2180528  |  1512486  1511026  |     1461     1461  |    98.15  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 2179068  2181945  |  3003043  3000166  |     2878     2878  |    99.24  |  3802913  3802913  |     0.08     0.08  | Acutalibacter_muris	Acutalibacter_muris	
- 2195721  2195930  |   657223   657014  |      210      210  |    90.95  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2197360  2197900  |  2479552  2479018  |      541      535  |    85.32  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2278414  2280095  |  3003043  3001362  |     1682     1682  |    97.56  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 2278414  2280095  |  3338392  3336737  |     1682     1656  |    95.24  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 2278414  2279874  |  1512486  1511026  |     1461     1461  |    96.37  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 2280088  2281085  |  3336538  3335541  |      998      998  |    98.80  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2280095  2281193  |  3001156  3000058  |     1099     1099  |    98.54  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2283415  2284518  |  3246214  3245111  |     1104     1104  |    99.82  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2287598  2287833  |  2411195  2410958  |      236      238  |    82.08  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2327285  2328364  |  1182761  1181682  |     1080     1080  |    82.98  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2348229  2350289  |  3514197  3512137  |     2061     2061  |    95.15  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 2348493  2350289  |  3694783  3692987  |     1797     1797  |    95.38  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 2351066  2352096  |  3692216  3691186  |     1031     1031  |    95.34  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2351066  2352096  |  3511366  3510336  |     1031     1031  |    94.08  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2362260  2363970  |  1908435  1906726  |     1711     1710  |    85.83  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 2362902  2364053  |  1877805  1876653  |     1152     1153  |    85.81  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2362301  2364053  |  1934591  1932838  |     1753     1754  |    83.10  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 2363035  2364054  |  1932352  1931330  |     1020     1023  |    86.72  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2364833  2365039  |  1904671  1904463  |      207      209  |    88.04  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2410680  2410757  |  1780290  1780213  |       78       78  |   100.00  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 2415091  2415704  |  2141434  2140821  |      614      614  |    86.83  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2415702  2416291  |  2480681  2480092  |      590      590  |    97.46  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2419020  2419400  |   235921   235541  |      381      381  |    81.46  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2423406  2424596  |  3692600  3691410  |     1191     1191  |    97.65  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2423406  2424596  |  3511750  3510560  |     1191     1191  |    98.74  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2431380  2433452  |  1908446  1906374  |     2073     2073  |    88.15  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 2432029  2433106  |  1877807  1876731  |     1078     1077  |    87.06  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2432163  2433059  |  1932352  1931456  |      897      897  |    88.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2431373  2433059  |  1934650  1932963  |     1687     1688  |    85.12  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 2432140  2433503  |  1867540  1866177  |     1364     1364  |    84.51  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 2433249  2433503  |  1931268  1931014  |      255      255  |    85.49  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2433249  2433449  |  1876589  1876389  |      201      201  |    91.04  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2435238  2435787  |  1336017  1335468  |      550      550  |    90.00  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2464160  2464983  |  1351305  1350482  |      824      824  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2464161  2464984  |  1923500  1922677  |      824      824  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2464161  2464985  |  1412963  1412139  |      825      825  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2470992  2471307  |  1046013  1045698  |      316      316  |    86.39  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2479018  2479552  |  2197900  2197360  |      535      541  |    85.32  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2480092  2480681  |  2416291  2415702  |      590      590  |    97.46  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2480166  2480702  |  1040461  1039925  |      537      537  |    97.58  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2520333  2520864  |   235920   235386  |      532      535  |    84.73  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2527696  2528268  |  3680045  3679470  |      573      576  |    79.24  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2528227  2528372  |  3679551  3679407  |      146      145  |    93.84  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 2552855  2554771  |  1182803  1180887  |     1917     1917  |    80.61  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 2563179  2563310  |  3395860  3395728  |      132      133  |    92.48  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 2574396  2574807  |  2613420  2613012  |      412      409  |    81.01  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2613012  2613420  |  2574807  2574396  |      409      412  |    81.01  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2821170  2821316  |  2828168  2828022  |      147      147  |    95.92  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 2821315  2822185  |  1994213  1993343  |      871      871  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2822182  2823343  |  2828028  2826867  |     1162     1162  |    89.79  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2826867  2828028  |  2823343  2822182  |     1162     1162  |    89.79  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 2827316  2827831  |  3046491  3045979  |      516      513  |    90.50  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2827823  2828168  |  3045895  3045551  |      346      345  |    94.80  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2828022  2828168  |  2821316  2821170  |      147      147  |    95.92  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 2865038  2865788  |   273967   273213  |      751      755  |    88.79  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2866326  2866550  |   271586   271360  |      225      227  |    85.46  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2866648  2867199  |   271366   270823  |      552      544  |    84.50  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 2867265  2869229  |  3036163  3034234  |     1965     1930  |    80.46  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 2868622  2869229  |  1515063  1514456  |      608      608  |    88.65  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 2887339  2888683  |   262319   260974  |     1345     1346  |    86.78  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3000058  3001163  |  2281193  2280088  |     1106     1106  |    98.55  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3000166  3003043  |  2181945  2179068  |     2878     2878  |    99.24  |  3802913  3802913  |     0.08     0.08  | Acutalibacter_muris	Acutalibacter_muris	
- 3001362  3003043  |  2280095  2278414  |     1682     1682  |    97.56  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3016893  3017156  |   203758   203494  |      264      265  |    83.02  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3019728  3021192  |  1559637  1558173  |     1465     1465  |   100.00  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3034234  3034839  |  2869229  2868624  |      606      606  |    82.21  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3045551  3045895  |  2828168  2827823  |      345      346  |    94.80  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3045987  3046491  |  2827823  2827316  |      505      508  |    90.35  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3116130  3117013  |  1530393  1529510  |      884      884  |   100.00  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3172190  3173293  |   193177   192074  |     1104     1104  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3172191  3173301  |   708564   707454  |     1111     1111  |    99.82  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3172191  3173294  |  1363653  1362550  |     1104     1104  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3172191  3173294  |  3302353  3301250  |     1104     1104  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3172191  3173296  |  1973803  1972698  |     1106     1106  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3172191  3173294  |  1113443  1112340  |     1104     1104  |    99.91  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3172191  3173293  |  1345169  1344067  |     1103     1103  |    99.91  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3172191  3173293  |   272777   271675  |     1103     1103  |    99.91  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3245112  3246214  |  1479601  1478499  |     1103     1103  |    91.57  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3245111  3246214  |  2284518  2283415  |     1104     1104  |    99.82  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3265153  3266131  |  1247887  1246910  |      979      978  |    83.47  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3265151  3265376  |  1149771  1149545  |      226      227  |    89.43  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3267480  3268994  |  3273226  3271712  |     1515     1515  |    99.80  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3267480  3268999  |  1541261  1539742  |     1520     1520  |    99.74  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3268029  3268981  |  2121876  2120924  |      953      953  |    99.79  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3271712  3273226  |  3268994  3267480  |     1515     1515  |    99.80  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3273438  3274402  |  2123236  2122284  |      965      953  |    94.31  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3274396  3274593  |  2119682  2119484  |      198      199  |    93.47  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3277358  3278471  |  2119484  2118371  |     1114     1114  |    97.67  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3279703  3281527  |  1144448  1142624  |     1825     1825  |    82.80  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 3281941  3283059  |  1241186  1240068  |     1119     1119  |    86.98  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3285509  3286846  |  1237474  1236130  |     1338     1345  |    80.90  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3287840  3291425  |  1235238  1231647  |     3586     3592  |    83.25  |  3802913  3802913  |     0.09     0.09  | Acutalibacter_muris	Acutalibacter_muris	
- 3291776  3292550  |  1231308  1230532  |      775      777  |    79.64  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3291755  3292959  |  1107835  1106653  |     1205     1183  |    78.42  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3292660  3292872  |  1230437  1230223  |      213      215  |    92.56  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3294561  3295247  |  1229918  1229232  |      687      687  |    85.15  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3294561  3295247  |  1106368  1105682  |      687      687  |    85.30  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3298318  3298579  |  1225942  1225683  |      262      260  |    96.18  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3298319  3298579  |  1104246  1103986  |      261      261  |    91.98  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3301250  3302354  |  3689116  3688012  |     1105     1105  |    99.28  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3301251  3302354  |  2284517  2283414  |     1104     1104  |    99.73  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3302351  3303703  |  1222854  1221502  |     1353     1353  |    82.84  |  3802913  3802913  |     0.04     0.04  | Acutalibacter_muris	Acutalibacter_muris	
- 3310009  3310790  |  1153549  1152768  |      782      782  |    85.19  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3310009  3310789  |  1069027  1068247  |      781      781  |    86.46  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3327498  3333983  |   254957   248472  |     6486     6486  |    99.72  |  3802913  3802913  |     0.17     0.17  | Acutalibacter_muris	Acutalibacter_muris	
- 3335540  3338392  |  2181946  2179068  |     2853     2879  |    98.09  |  3802913  3802913  |     0.08     0.08  | Acutalibacter_muris	Acutalibacter_muris	
- 3335541  3336538  |  2281085  2280088  |      998      998  |    98.80  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3344660  3344793  |   652635   652502  |      134      134  |    88.06  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 3348773  3349297  |   642321   641796  |      525      526  |    91.25  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3354396  3355440  |  3536902  3535858  |     1045     1045  |    99.81  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3381836  3382105  |  1503997  1503729  |      270      269  |    87.45  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3395728  3395860  |  2563310  2563179  |      133      132  |    92.48  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 3405230  3405431  |   247611   247410  |      202      202  |    95.54  |  3802913  3802913  |     0.01     0.01  | Acutalibacter_muris	Acutalibacter_muris	
- 3510560  3511750  |  2424596  2423406  |     1191     1191  |    98.74  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3512113  3513259  |  1134839  1133693  |     1147     1147  |    97.12  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3512137  3514197  |  2350289  2348229  |     2061     2061  |    95.15  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 3535858  3536902  |  3355440  3354396  |     1045     1045  |    99.81  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3679407  3680045  |  2528372  2527696  |      639      677  |    75.37  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3688012  3689116  |  3302354  3301250  |     1105     1105  |    99.28  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3688013  3689115  |  1050628  1049526  |     1103     1103  |   100.00  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3691186  3692216  |  2352096  2351066  |     1031     1031  |    95.34  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3691193  3692216  |  1136621  1135598  |     1024     1024  |    96.98  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3692963  3694109  |  1134839  1133693  |     1147     1147  |    97.99  |  3802913  3802913  |     0.03     0.03  | Acutalibacter_muris	Acutalibacter_muris	
- 3692987  3694783  |  2350289  2348493  |     1797     1797  |    95.38  |  3802913  3802913  |     0.05     0.05  | Acutalibacter_muris	Acutalibacter_muris	
- 3702963  3703582  |   703836   703210  |      620      627  |    83.92  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3762907  3763536  |    25299    24670  |      630      630  |    98.41  |  3802913  3802913  |     0.02     0.02  | Acutalibacter_muris	Acutalibacter_muris	
- 3767106  3767263  |    21433    21275  |      158      159  |    99.37  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 3767100  3767263  |    40649    40486  |      164      164  |    96.97  |  3802913  3802913  |     0.00     0.00  | Acutalibacter_muris	Acutalibacter_muris	
- 3777312  3782724  |   594292   588844  |     5413     5449  |    98.83  |  3802913  3802913  |     0.14     0.14  | Acutalibacter_muris	Acutalibacter_muris	
-  213040   213311  |  1347250  1346976  |      272      275  |    88.73  |  3743035  3802913  |     0.01     0.01  | F_plautii_1	Acutalibacter_muris	
-  938172   938879  |   349717   349007  |      708      711  |    80.36  |  3743035  3802913  |     0.02     0.02  | F_plautii_1	Acutalibacter_muris	
-  973009   973280  |  2934267  2933996  |      272      272  |    75.64  |  3743035  3802913  |     0.01     0.01  | F_plautii_1	Acutalibacter_muris	
-  997255   997773  |  2918591  2918073  |      519      519  |    85.63  |  3743035  3802913  |     0.01     0.01  | F_plautii_1	Acutalibacter_muris	
- 1027043  1027446  |  3274390  3273987  |      404      404  |    82.56  |  3743035  3802913  |     0.01     0.01  | F_plautii_1	Acutalibacter_muris	
- 1030983  1032225  |   741723   740481  |     1243     1243  |    82.65  |  3743035  3802913  |     0.03     0.03  | F_plautii_1	Acutalibacter_muris	
- 1036501  1038095  |   724696   723096  |     1595     1601  |    81.46  |  3743035  3802913  |     0.04     0.04  | F_plautii_1	Acutalibacter_muris	
- 1041386  1042407  |  1400113  1399100  |     1022     1014  |    81.61  |  3743035  3802913  |     0.03     0.03  | F_plautii_1	Acutalibacter_muris	
- 1042619  1043322  |  1398888  1398177  |      704      712  |    83.45  |  3743035  3802913  |     0.02     0.02  | F_plautii_1	Acutalibacter_muris	
- 1043583  1044533  |  1398009  1397062  |      951      948  |    88.24  |  3743035  3802913  |     0.03     0.02  | F_plautii_1	Acutalibacter_muris	
- 1267206  1267875  |  1329193  1328524  |      670      670  |    80.89  |  3743035  3802913  |     0.02     0.02  | F_plautii_1	Acutalibacter_muris	
- 2019196  2019272  |  1567718  1567642  |       77       77  |   100.00  |  3743035  3802913  |     0.00     0.00  | F_plautii_1	Acutalibacter_muris	
- 2257690  2257821  |   732187   732055  |      132      133  |    90.37  |  3743035  3802913  |     0.00     0.00  | F_plautii_1	Acutalibacter_muris	
- 2856165  2857438  |  2789048  2787784  |     1274     1265  |    80.74  |  3743035  3802913  |     0.03     0.03  | F_plautii_1	Acutalibacter_muris	
- 3269646  3270358  |  3454569  3453857  |      713      713  |    77.76  |  3743035  3802913  |     0.02     0.02  | F_plautii_1	Acutalibacter_muris	
- 3671963  3672205  |  1673415  1673173  |      243      243  |    84.02  |  3743035  3802913  |     0.01     0.01  | F_plautii_1	Acutalibacter_muris	
- 3723185  3723465  |   527458   527178  |      281      281  |    83.69  |  3743035  3802913  |     0.01     0.01  | F_plautii_1	Acutalibacter_muris	
- 3723688  3723864  |   526952   526776  |      177      177  |    85.39  |  3743035  3802913  |     0.00     0.00  | F_plautii_1	Acutalibacter_muris	
-   68372    69795  |   738817   737394  |     1424     1424  |    78.41  |  4469084  3802913  |     0.03     0.04  | Clostridium_innocuum	Acutalibacter_muris	
-   68426    69318  |  3407744  3406852  |      893      893  |    78.24  |  4469084  3802913  |     0.02     0.02  | Clostridium_innocuum	Acutalibacter_muris	
- 2080726  2080954  |  1930512  1930283  |      229      230  |    83.55  |  7157610  3802913  |     0.00     0.01  | Clostridioforme	Acutalibacter_muris	
- 2182940  2184093  |  1929707  1928555  |     1154     1153  |    92.11  |  7157610  3802913  |     0.02     0.03  | Clostridioforme	Acutalibacter_muris	
- 2183312  2184093  |  3404594  3403814  |      782      781  |    91.18  |  7157610  3802913  |     0.01     0.02  | Clostridioforme	Acutalibacter_muris	
- 4504802  4506737  |  1211636  1209703  |     1936     1934  |    86.52  |  7157610  3802913  |     0.03     0.05  | Clostridioforme	Acutalibacter_muris	
- 4510933  4511084  |  1205418  1205269  |      152      150  |    90.79  |  7157610  3802913  |     0.00     0.00  | Clostridioforme	Acutalibacter_muris	
- 5072684  5076601  |  1213098  1209183  |     3918     3916  |    88.53  |  7157610  3802913  |     0.05     0.10  | Clostridioforme	Acutalibacter_muris	
- 5079610  5079763  |  1205415  1205264  |      154      152  |    91.56  |  7157610  3802913  |     0.00     0.00  | Clostridioforme	Acutalibacter_muris	
- 5079979  5080309  |  1205204  1204875  |      331      330  |    93.05  |  7157610  3802913  |     0.00     0.01  | Clostridioforme	Acutalibacter_muris	
- 5225540  5225798  |  3269642  3269384  |      259      259  |    85.77  |  7157610  3802913  |     0.00     0.01  | Clostridioforme	Acutalibacter_muris	
- 5225540  5225798  |   742519   742261  |      259      259  |    86.15  |  7157610  3802913  |     0.00     0.01  | Clostridioforme	Acutalibacter_muris	
- 5232029  5232416  |   739754   739364  |      388      391  |    87.98  |  7157610  3802913  |     0.01     0.01  | Clostridioforme	Acutalibacter_muris	
- 6093477  6094290  |  1347792  1346976  |      814      817  |    91.93  |  7157610  3802913  |     0.01     0.02  | Clostridioforme	Acutalibacter_muris	
- 6108517  6108769  |   410772   410525  |      253      248  |    89.80  |  7157610  3802913  |     0.00     0.01  | Clostridioforme	Acutalibacter_muris	
+1	3802913	1	3802913	3802913	3802913	100.00	3802913	3802913	100.00	100.00	Acutalibacter_muris	Acutalibacter_muris	[IDENTITY]
+21275	21433	3767263	3767106	159	158	99.37	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+24670	25299	3763536	3762907	630	630	98.41	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+24687	25299	33039	32427	613	613	97.72	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+32426	32513	45183	45096	88	88	100.00	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+32427	33039	25299	24687	613	613	97.72	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+33077	33341	44481	44217	265	265	96.98	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+44217	44481	33341	33077	265	265	96.98	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+45096	45183	32513	32426	88	88	100.00	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+192074	193177	3173293	3172190	1104	1104	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+194482	194795	1417663	1417350	314	314	93.31	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+203494	203758	3017156	3016893	265	264	83.02	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+235386	235920	2520864	2520333	535	532	84.73	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+247410	247611	3405431	3405230	202	202	95.54	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+248472	254957	3333983	3327498	6486	6486	99.72	3802913	3802913	0.17	0.17	Acutalibacter_muris	Acutalibacter_muris	
+252547	252971	171862	171438	425	425	85.65	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+253417	253795	171433	171063	379	371	87.14	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+254693	254865	2907693	2907521	173	173	96.53	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+254693	254861	3350322	3350154	169	169	97.63	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+254693	254823	2742102	2741972	131	131	96.18	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+260974	262319	2888683	2887339	1346	1345	86.78	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+270823	271366	2867199	2866648	544	552	84.50	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+271366	271586	2866544	2866326	221	219	85.07	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+273213	273967	2865788	2865038	755	751	88.79	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+588844	594292	3782724	3777312	5449	5413	98.83	3802913	3802913	0.14	0.14	Acutalibacter_muris	Acutalibacter_muris	
+641796	642321	3349297	3348773	526	525	91.25	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+652502	652635	3344793	3344660	134	134	88.06	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+657014	657223	2195930	2195721	210	210	90.95	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+703210	703836	3703582	3702963	627	620	83.94	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+719352	719730	1539761	1539383	379	379	95.78	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+744375	745231	2122729	2121873	857	857	93.35	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+745532	746682	2120925	2119787	1151	1139	93.06	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+748450	749573	2119484	2118361	1124	1124	92.72	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+752269	753057	2116557	2115769	789	789	91.07	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+753199	754137	2115628	2114701	939	928	92.77	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+754670	755710	2114168	2113128	1041	1041	85.91	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1039925	1040461	2480702	2480166	537	537	97.58	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1040944	1041037	1045438	1045345	94	94	97.87	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+1045345	1045438	1041037	1040944	94	94	97.87	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+1045698	1046013	2471307	2470992	316	316	86.39	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1049525	1050628	1479602	1478499	1104	1104	90.76	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1049526	1050628	3689115	3688013	1103	1103	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1049526	1049927	1345568	1345167	402	402	99.75	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1068247	1069027	3310789	3310009	781	781	86.46	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1106653	1106953	3292959	3292660	301	300	88.74	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1133693	1134839	3513259	3512113	1147	1147	97.12	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1133693	1134839	3694109	3692963	1147	1147	97.99	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1142624	1144448	3281527	3279703	1825	1825	82.80	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+1149545	1149771	3265376	3265151	227	226	89.43	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1162652	1163495	3515058	3514232	844	827	84.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1180887	1182803	2554771	2552855	1917	1917	80.61	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+1181682	1182761	2328364	2327285	1080	1080	82.98	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1221502	1222854	3303703	3302351	1353	1353	82.84	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+1225683	1225942	3298579	3298318	260	262	96.18	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1229232	1229918	3295247	3294561	687	687	85.15	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1230223	1230437	3292872	3292660	215	213	92.56	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1231647	1235238	3291425	3287840	3592	3586	83.25	3802913	3802913	0.09	0.09	Acutalibacter_muris	Acutalibacter_muris	
+1236130	1237474	3286846	3285509	1345	1338	80.90	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+1240068	1241186	3283059	3281941	1119	1119	86.98	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1246910	1247887	3266131	3265153	978	979	83.47	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1335468	1336017	2435787	2435238	550	550	90.00	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1346976	1347253	3404366	3404092	278	275	85.97	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1346976	1347253	1929107	1928833	278	275	85.97	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1347466	1347760	3400214	3399922	295	293	94.93	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1347466	1347760	1924955	1924663	295	293	94.93	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1350482	1351305	2464983	2464160	824	824	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1359613	1361525	1865419	1863508	1913	1912	91.82	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+1364515	1364918	1895173	1894770	404	404	94.55	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1364553	1364915	1861173	1860813	363	361	92.29	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1397046	1397372	1539716	1539384	327	333	84.43	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1412139	1412963	2464985	2464161	825	825	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1417350	1417663	194795	194482	314	314	93.31	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1478499	1479601	3246214	3245112	1103	1103	91.57	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1478499	1479602	1050628	1049525	1104	1104	90.76	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1479994	1482187	2032216	2030023	2194	2194	88.85	3802913	3802913	0.06	0.06	Acutalibacter_muris	Acutalibacter_muris	
+1479994	1482187	2044634	2042443	2194	2192	88.89	3802913	3802913	0.06	0.06	Acutalibacter_muris	Acutalibacter_muris	
+1503729	1503997	3382105	3381836	269	270	87.45	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1514456	1515063	2869229	2868622	608	608	88.65	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1529510	1530393	3117013	3116130	884	884	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1529511	1530392	1979052	1978171	882	882	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+1539383	1539761	719730	719352	379	379	95.78	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1539384	1539716	1397372	1397046	333	327	84.43	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1539742	1541261	3268999	3267480	1520	1520	99.74	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+1558173	1559637	3021192	3019728	1465	1465	100.00	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+1618777	1618885	3449045	3448937	109	109	92.66	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+1780213	1780290	2410757	2410680	78	78	100.00	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+1860813	1861173	1364915	1364553	361	363	92.29	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1863508	1865419	1361525	1359613	1912	1913	91.82	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+1866500	1867519	2364049	2363033	1020	1017	84.56	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1876731	1877807	2433106	2432029	1077	1078	87.06	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1894770	1895173	1364918	1364515	404	404	94.55	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+1906374	1908446	2433452	2431380	2073	2073	88.15	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+1906726	1908435	2363970	2362260	1710	1711	85.83	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+1931330	1932352	2364054	2363035	1023	1020	86.72	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1972698	1973803	3173296	3172191	1106	1106	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1972698	1973803	3689118	3688013	1106	1106	99.28	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+1993343	1994213	2822185	2821315	871	871	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2030023	2032216	1482187	1479994	2194	2194	88.85	3802913	3802913	0.06	0.06	Acutalibacter_muris	Acutalibacter_muris	
+2042443	2044634	1482187	1479994	2192	2194	88.89	3802913	3802913	0.06	0.06	Acutalibacter_muris	Acutalibacter_muris	
+2048612	2048861	2064293	2064042	250	252	96.83	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2048608	2048872	2099843	2099575	265	269	94.80	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2064042	2064293	2048861	2048612	252	250	96.83	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2064042	2064293	2089983	2089734	252	250	95.63	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2113128	2114168	755710	754670	1041	1041	85.91	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2114701	2115628	754137	753199	928	939	92.77	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2115769	2116557	753057	752269	789	789	91.07	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2118371	2119484	3278471	3277358	1114	1114	97.67	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2118361	2119484	749573	748450	1124	1124	92.72	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2119484	2119682	3274593	3274396	199	198	93.47	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2119787	2120925	746682	745532	1139	1151	93.06	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2121873	2122729	745231	744375	857	857	93.35	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2122284	2123236	3274402	3273438	953	965	94.31	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2140821	2141434	2415704	2415091	614	614	86.83	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2179068	2181946	3338392	3335540	2879	2853	98.09	3802913	3802913	0.08	0.08	Acutalibacter_muris	Acutalibacter_muris	
+2179068	2180528	1512486	1511026	1461	1461	98.15	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+2179068	2181945	3003043	3000166	2878	2878	99.24	3802913	3802913	0.08	0.08	Acutalibacter_muris	Acutalibacter_muris	
+2195721	2195930	657223	657014	210	210	90.95	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2197360	2197900	2479552	2479018	541	535	85.32	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2278414	2280095	3003043	3001362	1682	1682	97.56	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+2278414	2280095	3338392	3336737	1682	1656	95.24	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+2278414	2279874	1512486	1511026	1461	1461	96.37	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+2280088	2281085	3336538	3335541	998	998	98.80	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2280095	2281193	3001156	3000058	1099	1099	98.54	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2283415	2284518	3246214	3245111	1104	1104	99.82	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2287598	2287833	2411195	2410958	236	238	82.08	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2327285	2328364	1182761	1181682	1080	1080	82.98	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2348229	2350289	3514197	3512137	2061	2061	95.15	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+2348493	2350289	3694783	3692987	1797	1797	95.38	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+2351066	2352096	3692216	3691186	1031	1031	95.34	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2351066	2352096	3511366	3510336	1031	1031	94.08	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2362260	2363970	1908435	1906726	1711	1710	85.83	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+2362902	2364053	1877805	1876653	1152	1153	85.81	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2362301	2364053	1934591	1932838	1753	1754	83.10	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+2363035	2364054	1932352	1931330	1020	1023	86.72	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2364833	2365039	1904671	1904463	207	209	88.04	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2410680	2410757	1780290	1780213	78	78	100.00	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+2415091	2415704	2141434	2140821	614	614	86.83	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2415702	2416291	2480681	2480092	590	590	97.46	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2419020	2419400	235921	235541	381	381	81.46	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2423406	2424596	3692600	3691410	1191	1191	97.65	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2423406	2424596	3511750	3510560	1191	1191	98.74	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2431380	2433452	1908446	1906374	2073	2073	88.15	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+2432029	2433106	1877807	1876731	1078	1077	87.06	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2432163	2433059	1932352	1931456	897	897	88.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2431373	2433059	1934650	1932963	1687	1688	85.12	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+2432140	2433503	1867540	1866177	1364	1364	84.51	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+2433249	2433503	1931268	1931014	255	255	85.49	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2433249	2433449	1876589	1876389	201	201	91.04	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2435238	2435787	1336017	1335468	550	550	90.00	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2464160	2464983	1351305	1350482	824	824	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2464161	2464984	1923500	1922677	824	824	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2464161	2464985	1412963	1412139	825	825	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2470992	2471307	1046013	1045698	316	316	86.39	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2479018	2479552	2197900	2197360	535	541	85.32	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2480092	2480681	2416291	2415702	590	590	97.46	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2480166	2480702	1040461	1039925	537	537	97.58	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2520333	2520864	235920	235386	532	535	84.73	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2527696	2528268	3680045	3679470	573	576	79.24	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2528227	2528372	3679551	3679407	146	145	93.84	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+2552855	2554771	1182803	1180887	1917	1917	80.61	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+2563179	2563310	3395860	3395728	132	133	92.48	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+2574396	2574807	2613420	2613012	412	409	81.01	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2613012	2613420	2574807	2574396	409	412	81.01	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2821170	2821316	2828168	2828022	147	147	95.92	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+2821315	2822185	1994213	1993343	871	871	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2822182	2823343	2828028	2826867	1162	1162	89.79	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2826867	2828028	2823343	2822182	1162	1162	89.79	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+2827316	2827831	3046491	3045979	516	513	90.50	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2827823	2828168	3045895	3045551	346	345	94.80	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2828022	2828168	2821316	2821170	147	147	95.92	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+2865038	2865788	273967	273213	751	755	88.79	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2866326	2866550	271586	271360	225	227	85.46	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2866648	2867199	271366	270823	552	544	84.50	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+2867265	2869229	3036163	3034234	1965	1930	80.46	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+2868622	2869229	1515063	1514456	608	608	88.65	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+2887339	2888683	262319	260974	1345	1346	86.78	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3000058	3001163	2281193	2280088	1106	1106	98.55	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3000166	3003043	2181945	2179068	2878	2878	99.24	3802913	3802913	0.08	0.08	Acutalibacter_muris	Acutalibacter_muris	
+3001362	3003043	2280095	2278414	1682	1682	97.56	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3016893	3017156	203758	203494	264	265	83.02	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3019728	3021192	1559637	1558173	1465	1465	100.00	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3034234	3034839	2869229	2868624	606	606	82.21	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3045551	3045895	2828168	2827823	345	346	94.80	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3045987	3046491	2827823	2827316	505	508	90.35	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3116130	3117013	1530393	1529510	884	884	100.00	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3172190	3173293	193177	192074	1104	1104	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3172191	3173301	708564	707454	1111	1111	99.82	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3172191	3173294	1363653	1362550	1104	1104	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3172191	3173294	3302353	3301250	1104	1104	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3172191	3173296	1973803	1972698	1106	1106	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3172191	3173294	1113443	1112340	1104	1104	99.91	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3172191	3173293	1345169	1344067	1103	1103	99.91	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3172191	3173293	272777	271675	1103	1103	99.91	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3245112	3246214	1479601	1478499	1103	1103	91.57	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3245111	3246214	2284518	2283415	1104	1104	99.82	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3265153	3266131	1247887	1246910	979	978	83.47	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3265151	3265376	1149771	1149545	226	227	89.43	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3267480	3268994	3273226	3271712	1515	1515	99.80	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3267480	3268999	1541261	1539742	1520	1520	99.74	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3268029	3268981	2121876	2120924	953	953	99.79	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3271712	3273226	3268994	3267480	1515	1515	99.80	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3273438	3274402	2123236	2122284	965	953	94.31	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3274396	3274593	2119682	2119484	198	199	93.47	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3277358	3278471	2119484	2118371	1114	1114	97.67	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3279703	3281527	1144448	1142624	1825	1825	82.80	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+3281941	3283059	1241186	1240068	1119	1119	86.98	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3285509	3286846	1237474	1236130	1338	1345	80.90	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3287840	3291425	1235238	1231647	3586	3592	83.25	3802913	3802913	0.09	0.09	Acutalibacter_muris	Acutalibacter_muris	
+3291776	3292550	1231308	1230532	775	777	79.64	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3291755	3292959	1107835	1106653	1205	1183	78.42	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3292660	3292872	1230437	1230223	213	215	92.56	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3294561	3295247	1229918	1229232	687	687	85.15	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3294561	3295247	1106368	1105682	687	687	85.30	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3298318	3298579	1225942	1225683	262	260	96.18	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3298319	3298579	1104246	1103986	261	261	91.98	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3301250	3302354	3689116	3688012	1105	1105	99.28	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3301251	3302354	2284517	2283414	1104	1104	99.73	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3302351	3303703	1222854	1221502	1353	1353	82.84	3802913	3802913	0.04	0.04	Acutalibacter_muris	Acutalibacter_muris	
+3310009	3310790	1153549	1152768	782	782	85.19	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3310009	3310789	1069027	1068247	781	781	86.46	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3327498	3333983	254957	248472	6486	6486	99.72	3802913	3802913	0.17	0.17	Acutalibacter_muris	Acutalibacter_muris	
+3335540	3338392	2181946	2179068	2853	2879	98.09	3802913	3802913	0.08	0.08	Acutalibacter_muris	Acutalibacter_muris	
+3335541	3336538	2281085	2280088	998	998	98.80	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3344660	3344793	652635	652502	134	134	88.06	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+3348773	3349297	642321	641796	525	526	91.25	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3354396	3355440	3536902	3535858	1045	1045	99.81	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3381836	3382105	1503997	1503729	270	269	87.45	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3395728	3395860	2563310	2563179	133	132	92.48	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+3405230	3405431	247611	247410	202	202	95.54	3802913	3802913	0.01	0.01	Acutalibacter_muris	Acutalibacter_muris	
+3510560	3511750	2424596	2423406	1191	1191	98.74	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3512113	3513259	1134839	1133693	1147	1147	97.12	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3512137	3514197	2350289	2348229	2061	2061	95.15	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+3535858	3536902	3355440	3354396	1045	1045	99.81	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3679407	3680045	2528372	2527696	639	677	75.37	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3688012	3689116	3302354	3301250	1105	1105	99.28	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3688013	3689115	1050628	1049526	1103	1103	100.00	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3691186	3692216	2352096	2351066	1031	1031	95.34	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3691193	3692216	1136621	1135598	1024	1024	96.98	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3692963	3694109	1134839	1133693	1147	1147	97.99	3802913	3802913	0.03	0.03	Acutalibacter_muris	Acutalibacter_muris	
+3692987	3694783	2350289	2348493	1797	1797	95.38	3802913	3802913	0.05	0.05	Acutalibacter_muris	Acutalibacter_muris	
+3702963	3703582	703836	703210	620	627	83.92	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3762907	3763536	25299	24670	630	630	98.41	3802913	3802913	0.02	0.02	Acutalibacter_muris	Acutalibacter_muris	
+3767106	3767263	21433	21275	158	159	99.37	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+3767100	3767263	40649	40486	164	164	96.97	3802913	3802913	0.00	0.00	Acutalibacter_muris	Acutalibacter_muris	
+3777312	3782724	594292	588844	5413	5449	98.83	3802913	3802913	0.14	0.14	Acutalibacter_muris	Acutalibacter_muris	
+213040	213311	1347250	1346976	272	275	88.73	3743035	3802913	0.01	0.01	F_plautii_1	Acutalibacter_muris	
+938172	938879	349717	349007	708	711	80.36	3743035	3802913	0.02	0.02	F_plautii_1	Acutalibacter_muris	
+973009	973280	2934267	2933996	272	272	75.64	3743035	3802913	0.01	0.01	F_plautii_1	Acutalibacter_muris	
+997255	997773	2918591	2918073	519	519	85.63	3743035	3802913	0.01	0.01	F_plautii_1	Acutalibacter_muris	
+1027043	1027446	3274390	3273987	404	404	82.56	3743035	3802913	0.01	0.01	F_plautii_1	Acutalibacter_muris	
+1030983	1032225	741723	740481	1243	1243	82.65	3743035	3802913	0.03	0.03	F_plautii_1	Acutalibacter_muris	
+1036501	1038095	724696	723096	1595	1601	81.46	3743035	3802913	0.04	0.04	F_plautii_1	Acutalibacter_muris	
+1041386	1042407	1400113	1399100	1022	1014	81.61	3743035	3802913	0.03	0.03	F_plautii_1	Acutalibacter_muris	
+1042619	1043322	1398888	1398177	704	712	83.45	3743035	3802913	0.02	0.02	F_plautii_1	Acutalibacter_muris	
+1043583	1044533	1398009	1397062	951	948	88.24	3743035	3802913	0.03	0.02	F_plautii_1	Acutalibacter_muris	
+1267206	1267875	1329193	1328524	670	670	80.89	3743035	3802913	0.02	0.02	F_plautii_1	Acutalibacter_muris	
+2019196	2019272	1567718	1567642	77	77	100.00	3743035	3802913	0.00	0.00	F_plautii_1	Acutalibacter_muris	
+2257690	2257821	732187	732055	132	133	90.37	3743035	3802913	0.00	0.00	F_plautii_1	Acutalibacter_muris	
+2856165	2857438	2789048	2787784	1274	1265	80.74	3743035	3802913	0.03	0.03	F_plautii_1	Acutalibacter_muris	
+3269646	3270358	3454569	3453857	713	713	77.76	3743035	3802913	0.02	0.02	F_plautii_1	Acutalibacter_muris	
+3671963	3672205	1673415	1673173	243	243	84.02	3743035	3802913	0.01	0.01	F_plautii_1	Acutalibacter_muris	
+3723185	3723465	527458	527178	281	281	83.69	3743035	3802913	0.01	0.01	F_plautii_1	Acutalibacter_muris	
+3723688	3723864	526952	526776	177	177	85.39	3743035	3802913	0.00	0.00	F_plautii_1	Acutalibacter_muris	
+68372	69795	738817	737394	1424	1424	78.41	4469084	3802913	0.03	0.04	Clostridium_innocuum	Acutalibacter_muris	
+68426	69318	3407744	3406852	893	893	78.24	4469084	3802913	0.02	0.02	Clostridium_innocuum	Acutalibacter_muris	
+2080726	2080954	1930512	1930283	229	230	83.55	7157610	3802913	0.00	0.01	Clostridioforme	Acutalibacter_muris	
+2182940	2184093	1929707	1928555	1154	1153	92.11	7157610	3802913	0.02	0.03	Clostridioforme	Acutalibacter_muris	
+2183312	2184093	3404594	3403814	782	781	91.18	7157610	3802913	0.01	0.02	Clostridioforme	Acutalibacter_muris	
+4504802	4506737	1211636	1209703	1936	1934	86.52	7157610	3802913	0.03	0.05	Clostridioforme	Acutalibacter_muris	
+4510933	4511084	1205418	1205269	152	150	90.79	7157610	3802913	0.00	0.00	Clostridioforme	Acutalibacter_muris	
+5072684	5076601	1213098	1209183	3918	3916	88.53	7157610	3802913	0.05	0.10	Clostridioforme	Acutalibacter_muris	
+5079610	5079763	1205415	1205264	154	152	91.56	7157610	3802913	0.00	0.00	Clostridioforme	Acutalibacter_muris	
+5079979	5080309	1205204	1204875	331	330	93.05	7157610	3802913	0.00	0.01	Clostridioforme	Acutalibacter_muris	
+5225540	5225798	3269642	3269384	259	259	85.77	7157610	3802913	0.00	0.01	Clostridioforme	Acutalibacter_muris	
+5225540	5225798	742519	742261	259	259	86.15	7157610	3802913	0.00	0.01	Clostridioforme	Acutalibacter_muris	
+5232029	5232416	739754	739364	388	391	87.98	7157610	3802913	0.01	0.01	Clostridioforme	Acutalibacter_muris	
+6093477	6094290	1347792	1346976	814	817	91.93	7157610	3802913	0.01	0.02	Clostridioforme	Acutalibacter_muris	
+6108517	6108769	410772	410525	253	248	89.80	7157610	3802913	0.00	0.01	Clostridioforme	Acutalibacter_muris	

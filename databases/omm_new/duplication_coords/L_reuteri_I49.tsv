@@ -1,148 +1,148 @@
-       1    14338  |        1    14338  |    14338    14338  |   100.00  |    14338    14338  |   100.00   100.00  | Lactobacillus_reuteri_I49_2	Lactobacillus_reuteri_I49_2	[IDENTITY]
-       1     4170  |        1     4170  |     4170     4170  |   100.00  |     4170     4170  |   100.00   100.00  | Lactobacillus_reuteri_I49_3	Lactobacillus_reuteri_I49_3	[IDENTITY]
-       1  2045096  |        1  2045096  |  2045096  2045096  |   100.00  |  2045096  2045096  |   100.00   100.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	[IDENTITY]
-   79132    84299  |   953908   948741  |     5168     5168  |    99.86  |  2045096  2045096  |     0.25     0.25  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-   79106    81041  |   484747   482812  |     1936     1936  |    99.07  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-   79106    84302  |   814301   809105  |     5197     5197  |    99.62  |  2045096  2045096  |     0.25     0.25  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-   79107    81041  |   467120   465186  |     1935     1935  |    99.17  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-   81045    84303  |   482608   479350  |     3259     3259  |    99.88  |  2045096  2045096  |     0.16     0.16  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-   81045    84548  |   464982   461470  |     3504     3513  |    98.75  |  2045096  2045096  |     0.17     0.17  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-   89285    90061  |   762355   761579  |      777      777  |   100.00  |  2045096  2045096  |     0.04     0.04  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  129760   130015  |   479058   478722  |      256      337  |    75.07  |  2045096  2045096  |     0.01     0.02  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  129941   130015  |   126279   126205  |       75       75  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  130470   130547  |   801052   800975  |       78       78  |    98.72  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  246681   248160  |  1810580  1809096  |     1480     1485  |    98.11  |  2045096  2045096  |     0.07     0.07  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  386296   388205  |  1598131  1596221  |     1910     1911  |    99.42  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  412339   413114  |  1255639  1254864  |      776      776  |   100.00  |  2045096  2045096  |     0.04     0.04  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  412918   413111  |  1179937  1179746  |      194      192  |    92.78  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  417220   417376  |  1165567  1165412  |      157      156  |    96.18  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  417257   417368  |   157134   157025  |      112      110  |    96.43  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  455059   455236  |  1606029  1605842  |      178      188  |    84.66  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  461725   467120  |  1804161  1798767  |     5396     5395  |    99.72  |  2045096  2045096  |     0.26     0.26  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  465186   467120  |    81041    79107  |     1935     1935  |    99.17  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  475148   477470  |   808761   806438  |     2323     2324  |    99.70  |  2045096  2045096  |     0.11     0.11  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  477806   477885  |   129759   129681  |       80       79  |    97.50  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  477806   477910  |  1804385  1804279  |      105      107  |    93.52  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  477806   477884  |   130362   130285  |       79       78  |    97.47  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  478145   478220  |  1804570  1804495  |       76       76  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  478227   478305  |  1622757  1622679  |       79       79  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  478722   479058  |   130015   129760  |      337      256  |    75.07  |  2045096  2045096  |     0.02     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  478802   478878  |  1643705  1643629  |       77       77  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  478985   479059  |  1643627  1643553  |       75       75  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  479264   479347  |   130446   130363  |       84       84  |    97.62  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  479272   479350  |  1643376  1643298  |       79       79  |    98.73  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  479272   479351  |  1804461  1804382  |       80       80  |    97.50  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  479350   482608  |    84303    81045  |     3259     3259  |    99.88  |  2045096  2045096  |     0.16     0.16  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  479351   484845  |  1804161  1798667  |     5495     5495  |    99.47  |  2045096  2045096  |     0.27     0.27  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  494333   496252  |  1343408  1341489  |     1920     1920  |    98.59  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  494333   496257  |  1826704  1824789  |     1925     1916  |    98.03  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  494333   496254  |  1598132  1596210  |     1922     1923  |    99.12  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  494333   496244  |  1715000  1713089  |     1912     1912  |    98.64  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  553866   554021  |  1276167  1276012  |      156      156  |    97.44  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  558082   559163  |  1703903  1702822  |     1082     1082  |    99.91  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  558082   559159  |  1345099  1344022  |     1078     1078  |    99.91  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  558083   559159  |   717245   716169  |     1077     1077  |   100.00  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  665363   665513  |  1915406  1915258  |      151      149  |    96.03  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  715212   715380  |  1271158  1270990  |      169      169  |    96.45  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  716167   717249  |  1705732  1704650  |     1083     1083  |    99.08  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  716170   717253  |  1933873  1932789  |     1084     1085  |    99.91  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  750086   751628  |  1293008  1291466  |     1543     1543  |   100.00  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  750077   751633  |  1739345  1737789  |     1557     1557  |    99.87  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  750086   751631  |  1385159  1383614  |     1546     1546  |   100.00  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  761579   762355  |    90061    89285  |      777      777  |   100.00  |  2045096  2045096  |     0.04     0.04  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  800975   801052  |   130547   130470  |       78       78  |    98.72  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  804622   805707  |   717252   716168  |     1086     1085  |    99.72  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  804629   805713  |  1703903  1702819  |     1085     1085  |    99.91  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  806438   808761  |   477470   475148  |     2324     2323  |    99.70  |  2045096  2045096  |     0.11     0.11  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  806441   808755  |  1807649  1805335  |     2315     2315  |    99.96  |  2045096  2045096  |     0.11     0.11  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  808483   808754  |    84662    84392  |      272      271  |    96.32  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  809105   814301  |    84302    79106  |     5197     5197  |    99.62  |  2045096  2045096  |     0.25     0.25  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  812366   814378  |  1800701  1798690  |     2013     2012  |    98.21  |  2045096  2045096  |     0.10     0.10  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  860958   861078  |  1211283  1211166  |      121      118  |    96.69  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  926495   926666  |  1877770  1877599  |      172      172  |    96.51  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  926495   926670  |  1831621  1831443  |      176      179  |    96.09  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  926552   926682  |  1165530  1165402  |      131      129  |    95.42  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  944518   946060  |  1485044  1483506  |     1543     1539  |    94.62  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  948460   948593  |  1483318  1483185  |      134      134  |    88.81  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  948741   953908  |    84299    79132  |     5168     5168  |    99.86  |  2045096  2045096  |     0.25     0.25  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1012154  1014399  |  1539843  1537602  |     2246     2242  |    92.97  |  2045096  2045096  |     0.11     0.11  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1029414  1029930  |  1067984  1067468  |      517      517  |    82.47  |  2045096  2045096  |     0.03     0.03  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1054324  1055866  |   416331   414789  |     1543     1543  |   100.00  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1054316  1055866  |  1222040  1220491  |     1551     1550  |    99.87  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1054324  1055867  |  1293008  1291464  |     1544     1545  |    99.94  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1067468  1067984  |  1029930  1029414  |      517      517  |    82.47  |  2045096  2045096  |     0.03     0.03  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1097060  1098978  |  1264569  1262652  |     1919     1918  |    99.11  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1165402  1165530  |  1329628  1329499  |      129      130  |    95.38  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1165402  1165530  |   926682   926552  |      129      131  |    95.42  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1199447  1199614  |  1831630  1831464  |      168      167  |    96.45  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1199446  1199614  |  1877781  1877616  |      169      166  |    94.67  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1211166  1211284  |  1831564  1831443  |      119      122  |    96.72  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1211166  1211281  |  1877713  1877598  |      116      116  |    98.28  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1211166  1211283  |   861078   860958  |      118      121  |    96.69  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1211126  1211282  |  1165570  1165414  |      157      157  |    96.18  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1220492  1222035  |  1427890  1426347  |     1544     1544  |   100.00  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1254864  1255639  |   413114   412339  |      776      776  |   100.00  |  2045096  2045096  |     0.04     0.04  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1262652  1264568  |  1944334  1942416  |     1917     1919  |    99.74  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1262652  1264569  |  1098978  1097060  |     1918     1919  |    99.11  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1269176  1269333  |  1271154  1270996  |      158      159  |    95.60  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1269178  1269333  |  1404459  1404303  |      156      157  |    96.18  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1270996  1271154  |  1269333  1269176  |      159      158  |    95.60  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1270990  1271158  |   715380   715212  |      169      169  |    96.45  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1270996  1271155  |  1093599  1093439  |      160      161  |    85.19  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1271005  1271155  |  1556646  1556493  |      151      154  |    85.81  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1276012  1276167  |   554021   553866  |      156      156  |    97.44  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1276012  1276167  |  1928641  1928487  |      156      155  |    92.31  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1291464  1293008  |  1055867  1054324  |     1545     1544  |    99.94  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1329441  1329612  |   157192   157022  |      172      171  |    97.09  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1329499  1329628  |  1165530  1165402  |      130      129  |    95.38  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1341486  1343407  |  1944338  1942416  |     1922     1923  |    99.79  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1341489  1343407  |  1488911  1486993  |     1919     1919  |    99.90  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1404311  1404460  |  1619926  1619777  |      150      150  |    99.33  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1426347  1427892  |  1385161  1383615  |     1546     1547  |    99.94  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1426347  1427890  |  1222035  1220492  |     1544     1544  |   100.00  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1426341  1427892  |  1739344  1737792  |     1552     1553  |    99.81  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1426348  1427890  |   416332   414790  |     1543     1543  |   100.00  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1426348  1427890  |  1293009  1291466  |     1543     1544  |    99.94  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1483185  1483318  |   948593   948460  |      134      134  |    88.81  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1483506  1485044  |   946060   944518  |     1539     1543  |    94.62  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1486993  1488903  |  1714999  1713089  |     1911     1911  |    99.95  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1486993  1488911  |  1826703  1824794  |     1919     1910  |    99.32  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1486993  1488909  |  1264568  1262652  |     1917     1917  |    99.84  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1486993  1488911  |  1343407  1341489  |     1919     1919  |    99.90  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1486993  1488911  |  1598131  1596212  |     1919     1920  |    99.17  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1537602  1539843  |  1014399  1012154  |     2242     2246  |    92.97  |  2045096  2045096  |     0.11     0.11  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1596221  1598131  |   388205   386296  |     1911     1910  |    99.42  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1596210  1598132  |   496254   494333  |     1923     1922  |    99.12  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1596221  1598132  |  1080446  1078535  |     1912     1912  |    98.48  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1596214  1598131  |  1098978  1097061  |     1918     1918  |    98.54  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1605845  1606029  |  1736278  1736102  |      185      177  |    88.17  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1605842  1606029  |   455236   455059  |      188      178  |    84.66  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1619777  1619926  |  1404460  1404311  |      150      150  |    99.33  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1619815  1619930  |    60356    60240  |      116      117  |    98.29  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1619778  1619926  |  1835952  1835804  |      149      149  |    98.66  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1622679  1622756  |   477724   477647  |       78       78  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1622679  1622757  |   478305   478227  |       79       79  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1643553  1643627  |   479059   478985  |       75       75  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1643629  1643705  |   478878   478802  |       77       77  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1702819  1703903  |   805713   804629  |     1085     1085  |    99.91  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1702822  1703903  |   559163   558082  |     1082     1082  |    99.91  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1704650  1705732  |   717249   716167  |     1083     1083  |    99.08  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1736102  1736278  |  1606029  1605845  |      177      185  |    88.17  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1737789  1739345  |   751633   750077  |     1557     1557  |    99.87  |  2045096  2045096  |     0.08     0.08  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1798667  1804161  |   484845   479351  |     5495     5495  |    99.47  |  2045096  2045096  |     0.27     0.27  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1798767  1804161  |   467120   461725  |     5395     5396  |    99.72  |  2045096  2045096  |     0.26     0.26  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1798690  1800701  |   814378   812366  |     2012     2013  |    98.21  |  2045096  2045096  |     0.10     0.10  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1800733  1800825  |   478052   477962  |       93       91  |    95.70  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1804279  1804385  |   477910   477806  |      107      105  |    93.52  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1804495  1804570  |   478220   478145  |       76       76  |   100.00  |  2045096  2045096  |     0.00     0.00  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1805335  1807649  |   808755   806441  |     2315     2315  |    99.96  |  2045096  2045096  |     0.11     0.11  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1809096  1810580  |   248160   246681  |     1485     1480  |    98.11  |  2045096  2045096  |     0.07     0.07  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1813946  1815050  |   387400   386296  |     1105     1105  |    96.65  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1813946  1815051  |   495438   494333  |     1106     1106  |    96.65  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1831443  1831564  |  1211284  1211166  |      122      119  |    96.72  |  2045096  2045096  |     0.01     0.01  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1932789  1933873  |   717253   716170  |     1085     1084  |    99.91  |  2045096  2045096  |     0.05     0.05  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1942416  1944338  |  1343407  1341486  |     1923     1922  |    99.79  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
- 1942416  1944334  |  1264568  1262652  |     1919     1917  |    99.74  |  2045096  2045096  |     0.09     0.09  | Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
-  307914   308231  |   513180   512863  |      318      318  |    81.88  |  3025655  2045096  |     0.01     0.02  | Enterococcus_faecalis	Lactobacillus_reuteri_I49_1	
-  151977   152052  |   478383   478308  |       76       76  |    97.37  |  4469084  2045096  |     0.00     0.00  | Clostridium_innocuum	Lactobacillus_reuteri_I49_1	
-  151977   152052  |   477802   477727  |       76       76  |    97.37  |  4469084  2045096  |     0.00     0.00  | Clostridium_innocuum	Lactobacillus_reuteri_I49_1	
+1	14338	1	14338	14338	14338	100.00	14338	14338	100.00	100.00	Lactobacillus_reuteri_I49_2	Lactobacillus_reuteri_I49_2	[IDENTITY]
+1	4170	1	4170	4170	4170	100.00	4170	4170	100.00	100.00	Lactobacillus_reuteri_I49_3	Lactobacillus_reuteri_I49_3	[IDENTITY]
+1	2045096	1	2045096	2045096	2045096	100.00	2045096	2045096	100.00	100.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	[IDENTITY]
+79132	84299	953908	948741	5168	5168	99.86	2045096	2045096	0.25	0.25	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+79106	81041	484747	482812	1936	1936	99.07	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+79106	84302	814301	809105	5197	5197	99.62	2045096	2045096	0.25	0.25	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+79107	81041	467120	465186	1935	1935	99.17	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+81045	84303	482608	479350	3259	3259	99.88	2045096	2045096	0.16	0.16	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+81045	84548	464982	461470	3504	3513	98.75	2045096	2045096	0.17	0.17	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+89285	90061	762355	761579	777	777	100.00	2045096	2045096	0.04	0.04	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+129760	130015	479058	478722	256	337	75.07	2045096	2045096	0.01	0.02	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+129941	130015	126279	126205	75	75	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+130470	130547	801052	800975	78	78	98.72	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+246681	248160	1810580	1809096	1480	1485	98.11	2045096	2045096	0.07	0.07	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+386296	388205	1598131	1596221	1910	1911	99.42	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+412339	413114	1255639	1254864	776	776	100.00	2045096	2045096	0.04	0.04	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+412918	413111	1179937	1179746	194	192	92.78	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+417220	417376	1165567	1165412	157	156	96.18	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+417257	417368	157134	157025	112	110	96.43	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+455059	455236	1606029	1605842	178	188	84.66	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+461725	467120	1804161	1798767	5396	5395	99.72	2045096	2045096	0.26	0.26	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+465186	467120	81041	79107	1935	1935	99.17	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+475148	477470	808761	806438	2323	2324	99.70	2045096	2045096	0.11	0.11	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+477806	477885	129759	129681	80	79	97.50	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+477806	477910	1804385	1804279	105	107	93.52	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+477806	477884	130362	130285	79	78	97.47	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+478145	478220	1804570	1804495	76	76	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+478227	478305	1622757	1622679	79	79	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+478722	479058	130015	129760	337	256	75.07	2045096	2045096	0.02	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+478802	478878	1643705	1643629	77	77	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+478985	479059	1643627	1643553	75	75	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+479264	479347	130446	130363	84	84	97.62	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+479272	479350	1643376	1643298	79	79	98.73	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+479272	479351	1804461	1804382	80	80	97.50	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+479350	482608	84303	81045	3259	3259	99.88	2045096	2045096	0.16	0.16	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+479351	484845	1804161	1798667	5495	5495	99.47	2045096	2045096	0.27	0.27	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+494333	496252	1343408	1341489	1920	1920	98.59	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+494333	496257	1826704	1824789	1925	1916	98.03	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+494333	496254	1598132	1596210	1922	1923	99.12	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+494333	496244	1715000	1713089	1912	1912	98.64	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+553866	554021	1276167	1276012	156	156	97.44	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+558082	559163	1703903	1702822	1082	1082	99.91	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+558082	559159	1345099	1344022	1078	1078	99.91	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+558083	559159	717245	716169	1077	1077	100.00	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+665363	665513	1915406	1915258	151	149	96.03	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+715212	715380	1271158	1270990	169	169	96.45	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+716167	717249	1705732	1704650	1083	1083	99.08	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+716170	717253	1933873	1932789	1084	1085	99.91	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+750086	751628	1293008	1291466	1543	1543	100.00	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+750077	751633	1739345	1737789	1557	1557	99.87	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+750086	751631	1385159	1383614	1546	1546	100.00	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+761579	762355	90061	89285	777	777	100.00	2045096	2045096	0.04	0.04	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+800975	801052	130547	130470	78	78	98.72	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+804622	805707	717252	716168	1086	1085	99.72	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+804629	805713	1703903	1702819	1085	1085	99.91	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+806438	808761	477470	475148	2324	2323	99.70	2045096	2045096	0.11	0.11	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+806441	808755	1807649	1805335	2315	2315	99.96	2045096	2045096	0.11	0.11	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+808483	808754	84662	84392	272	271	96.32	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+809105	814301	84302	79106	5197	5197	99.62	2045096	2045096	0.25	0.25	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+812366	814378	1800701	1798690	2013	2012	98.21	2045096	2045096	0.10	0.10	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+860958	861078	1211283	1211166	121	118	96.69	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+926495	926666	1877770	1877599	172	172	96.51	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+926495	926670	1831621	1831443	176	179	96.09	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+926552	926682	1165530	1165402	131	129	95.42	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+944518	946060	1485044	1483506	1543	1539	94.62	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+948460	948593	1483318	1483185	134	134	88.81	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+948741	953908	84299	79132	5168	5168	99.86	2045096	2045096	0.25	0.25	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1012154	1014399	1539843	1537602	2246	2242	92.97	2045096	2045096	0.11	0.11	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1029414	1029930	1067984	1067468	517	517	82.47	2045096	2045096	0.03	0.03	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1054324	1055866	416331	414789	1543	1543	100.00	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1054316	1055866	1222040	1220491	1551	1550	99.87	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1054324	1055867	1293008	1291464	1544	1545	99.94	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1067468	1067984	1029930	1029414	517	517	82.47	2045096	2045096	0.03	0.03	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1097060	1098978	1264569	1262652	1919	1918	99.11	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1165402	1165530	1329628	1329499	129	130	95.38	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1165402	1165530	926682	926552	129	131	95.42	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1199447	1199614	1831630	1831464	168	167	96.45	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1199446	1199614	1877781	1877616	169	166	94.67	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1211166	1211284	1831564	1831443	119	122	96.72	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1211166	1211281	1877713	1877598	116	116	98.28	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1211166	1211283	861078	860958	118	121	96.69	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1211126	1211282	1165570	1165414	157	157	96.18	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1220492	1222035	1427890	1426347	1544	1544	100.00	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1254864	1255639	413114	412339	776	776	100.00	2045096	2045096	0.04	0.04	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1262652	1264568	1944334	1942416	1917	1919	99.74	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1262652	1264569	1098978	1097060	1918	1919	99.11	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1269176	1269333	1271154	1270996	158	159	95.60	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1269178	1269333	1404459	1404303	156	157	96.18	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1270996	1271154	1269333	1269176	159	158	95.60	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1270990	1271158	715380	715212	169	169	96.45	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1270996	1271155	1093599	1093439	160	161	85.19	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1271005	1271155	1556646	1556493	151	154	85.81	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1276012	1276167	554021	553866	156	156	97.44	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1276012	1276167	1928641	1928487	156	155	92.31	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1291464	1293008	1055867	1054324	1545	1544	99.94	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1329441	1329612	157192	157022	172	171	97.09	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1329499	1329628	1165530	1165402	130	129	95.38	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1341486	1343407	1944338	1942416	1922	1923	99.79	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1341489	1343407	1488911	1486993	1919	1919	99.90	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1404311	1404460	1619926	1619777	150	150	99.33	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1426347	1427892	1385161	1383615	1546	1547	99.94	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1426347	1427890	1222035	1220492	1544	1544	100.00	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1426341	1427892	1739344	1737792	1552	1553	99.81	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1426348	1427890	416332	414790	1543	1543	100.00	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1426348	1427890	1293009	1291466	1543	1544	99.94	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1483185	1483318	948593	948460	134	134	88.81	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1483506	1485044	946060	944518	1539	1543	94.62	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1486993	1488903	1714999	1713089	1911	1911	99.95	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1486993	1488911	1826703	1824794	1919	1910	99.32	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1486993	1488909	1264568	1262652	1917	1917	99.84	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1486993	1488911	1343407	1341489	1919	1919	99.90	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1486993	1488911	1598131	1596212	1919	1920	99.17	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1537602	1539843	1014399	1012154	2242	2246	92.97	2045096	2045096	0.11	0.11	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1596221	1598131	388205	386296	1911	1910	99.42	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1596210	1598132	496254	494333	1923	1922	99.12	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1596221	1598132	1080446	1078535	1912	1912	98.48	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1596214	1598131	1098978	1097061	1918	1918	98.54	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1605845	1606029	1736278	1736102	185	177	88.17	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1605842	1606029	455236	455059	188	178	84.66	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1619777	1619926	1404460	1404311	150	150	99.33	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1619815	1619930	60356	60240	116	117	98.29	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1619778	1619926	1835952	1835804	149	149	98.66	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1622679	1622756	477724	477647	78	78	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1622679	1622757	478305	478227	79	79	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1643553	1643627	479059	478985	75	75	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1643629	1643705	478878	478802	77	77	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1702819	1703903	805713	804629	1085	1085	99.91	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1702822	1703903	559163	558082	1082	1082	99.91	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1704650	1705732	717249	716167	1083	1083	99.08	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1736102	1736278	1606029	1605845	177	185	88.17	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1737789	1739345	751633	750077	1557	1557	99.87	2045096	2045096	0.08	0.08	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1798667	1804161	484845	479351	5495	5495	99.47	2045096	2045096	0.27	0.27	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1798767	1804161	467120	461725	5395	5396	99.72	2045096	2045096	0.26	0.26	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1798690	1800701	814378	812366	2012	2013	98.21	2045096	2045096	0.10	0.10	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1800733	1800825	478052	477962	93	91	95.70	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1804279	1804385	477910	477806	107	105	93.52	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1804495	1804570	478220	478145	76	76	100.00	2045096	2045096	0.00	0.00	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1805335	1807649	808755	806441	2315	2315	99.96	2045096	2045096	0.11	0.11	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1809096	1810580	248160	246681	1485	1480	98.11	2045096	2045096	0.07	0.07	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1813946	1815050	387400	386296	1105	1105	96.65	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1813946	1815051	495438	494333	1106	1106	96.65	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1831443	1831564	1211284	1211166	122	119	96.72	2045096	2045096	0.01	0.01	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1932789	1933873	717253	716170	1085	1084	99.91	2045096	2045096	0.05	0.05	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1942416	1944338	1343407	1341486	1923	1922	99.79	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+1942416	1944334	1264568	1262652	1919	1917	99.74	2045096	2045096	0.09	0.09	Lactobacillus_reuteri_I49_1	Lactobacillus_reuteri_I49_1	
+307914	308231	513180	512863	318	318	81.88	3025655	2045096	0.01	0.02	Enterococcus_faecalis	Lactobacillus_reuteri_I49_1	
+151977	152052	478383	478308	76	76	97.37	4469084	2045096	0.00	0.00	Clostridium_innocuum	Lactobacillus_reuteri_I49_1	
+151977	152052	477802	477727	76	76	97.37	4469084	2045096	0.00	0.00	Clostridium_innocuum	Lactobacillus_reuteri_I49_1	

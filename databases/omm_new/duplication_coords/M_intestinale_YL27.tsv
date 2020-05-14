@@ -1,277 +1,277 @@
-       1  3307069  |        1  3307069  |  3307069  3307069  |   100.00  |  3307069  3307069  |   100.00   100.00  | Muribaculum_intestinale	Muribaculum_intestinale	[IDENTITY]
-    2520     2615  |  2926498  2926403  |       96       96  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
-    8749    11360  |  2955516  2952905  |     2612     2612  |    99.81  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-    8743    11360  |   476976   474359  |     2618     2618  |    99.92  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-    8836    11360  |   148901   146377  |     2525     2525  |    99.96  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-   18421    21033  |   691268   688656  |     2613     2613  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-   46975    48669  |  2856193  2854499  |     1695     1695  |    99.53  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
-   46975    48669  |  2416652  2414958  |     1695     1695  |    99.65  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
-   54028    54143  |   482219   482104  |      116      116  |    88.89  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
-   54233    54354  |    11361    11240  |      122      122  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
-   54233    54354  |   654571   654450  |      122      122  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
-   75878    75978  |   566399   566299  |      101      101  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
-  116867   117336  |  2603393  2602923  |      470      471  |    78.81  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  140806   143418  |  2955518  2952906  |     2613     2613  |    99.81  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  143672   143953  |   154164   153882  |      282      283  |    95.41  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  146378   150363  |  2930390  2926405  |     3986     3986  |   100.00  |  3307069  3307069  |     0.12     0.12  | Muribaculum_intestinale	Muribaculum_intestinale	
-  150377   150657  |   481052   480776  |      281      277  |    87.23  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  153882   154164  |   143953   143672  |      283      282  |    95.41  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  154414   154712  |    50214    49916  |      299      299  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  154414   154713  |  1667313  1667014  |      300      300  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  154414   154713  |    85728    85429  |      300      300  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  154414   154713  |  2670012  2669713  |      300      300  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  156729   156910  |   668784   668596  |      182      189  |    86.77  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  159792   160235  |  1652185  1651742  |      444      444  |    88.76  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  161588   162818  |  2979298  2978068  |     1231     1231  |    99.92  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  161587   162819  |  3099076  3097844  |     1233     1233  |    99.51  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  163031   163380  |  3277984  3277636  |      350      349  |    94.86  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  163031   163380  |  2616349  2616000  |      350      350  |    95.43  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  163028   163384  |  3094950  3094592  |      357      359  |    91.92  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  271060   271408  |  2723864  2723510  |      349      355  |    89.89  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  306998   308227  |   101815   100586  |     1230     1230  |    99.84  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  306998   308229  |   632530   631299  |     1232     1232  |    99.35  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  306999   308228  |   162816   161587  |     1230     1230  |    99.84  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  306999   308228  |  2962099  2960870  |     1230     1230  |    99.84  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  308920   309235  |  1032373  1032058  |      316      316  |    98.42  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  308942   309837  |   583742   582846  |      896      897  |    99.89  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
-  308942   309820  |  3021989  3021111  |      879      879  |   100.00  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
-  332819   333873  |  1032069  1031015  |     1055     1055  |    99.43  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
-  379347   381961  |   691271   688657  |     2615     2615  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  474360   476973  |   486513   483900  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  480004   480632  |  2881459  2880831  |      629      629  |    96.19  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
-  480013   480473  |   151411   150950  |      461      462  |    95.67  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  480413   480629  |    76189    75976  |      217      214  |    86.24  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  480776   481052  |   150657   150377  |      277      281  |    87.23  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  482104   482219  |    54143    54028  |      116      116  |    88.89  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
-  483900   486513  |   476973   474360  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  483902   486513  |  2852068  2849457  |     2612     2612  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  483902   486514  |     2614        2  |     2613     2613  |    99.89  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  511420   511772  |  3277986  3277634  |      353      353  |    99.43  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  511422   511770  |  1570443  1570095  |      349      349  |    98.85  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  511420   511772  |  1379797  1379443  |      353      355  |    93.24  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  511420   511770  |  1989916  1989563  |      351      354  |    93.24  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  542287   542454  |  2533945  2533778  |      168      168  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  555999   558612  |   674395   671782  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  556000   558613  |  2774311  2771699  |     2614     2613  |    99.92  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  566299   566399  |    75978    75878  |      101      101  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
-  566302   567732  |   692697   691267  |     1431     1431  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  582846   583742  |   309837   308942  |      897      896  |    99.89  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
-  614942   615292  |  1646587  1646237  |      351      351  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  614942   615292  |   163382   163031  |      351      352  |    94.60  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  614938   615297  |  2602026  2601668  |      360      359  |    97.78  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  623048   623399  |  1989917  1989563  |      352      355  |    91.55  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  623049   623401  |  2616351  2615998  |      353      354  |    98.31  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  631299   632530  |   308229   306998  |     1232     1232  |    99.35  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  631300   632529  |  2255222  2253993  |     1230     1230  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  631300   632529  |  3099076  3097847  |     1230     1230  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  639435   640473  |  2619316  2618278  |     1039     1039  |   100.00  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
-  651959   654569  |  3180565  3177955  |     2611     2611  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  668596   668784  |   156910   156729  |      189      182  |    86.77  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  671782   674395  |   558612   555999  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  671783   674396  |  2755901  2753288  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  671783   674396  |   381962   379349  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  671783   674395  |  1289209  1286597  |     2613     2613  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  671783   674394  |  2967140  2964529  |     2612     2612  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  688656   691268  |    21033    18421  |     2613     2613  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  688657   691270  |  2755900  2753287  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  688657   691271  |   381961   379347  |     2615     2615  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
-  691267   692697  |   567732   566302  |     1431     1431  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
-  947300   948899  |  2606055  2604456  |     1600     1600  |    99.88  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
-  963838   964187  |  1218774  1218425  |      350      350  |    98.29  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  963843   964187  |   618303   617958  |      345      346  |    94.80  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  963838   964195  |  1989914  1989555  |      358      360  |    93.63  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
-  997624   998811  |  2949277  2948090  |     1188     1188  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1010592  1010947  |  2602024  2601671  |      356      354  |    91.85  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1020655  1021010  |  1570446  1570091  |      356      356  |    95.79  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1031015  1032065  |  1281290  1280238  |     1051     1053  |    99.72  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1031015  1032069  |   333873   332819  |     1055     1055  |    99.43  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1032058  1032373  |   309235   308920  |      316      316  |    98.42  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1032346  1032418  |  2670617  2670545  |       73       73  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1032347  1032418  |  1667917  1667846  |       72       72  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1032347  1032418  |    86332    86261  |       72       72  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1032346  1032418  |    50819    50747  |       73       73  |    98.63  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1067786  1067985  |  1655019  1654822  |      200      198  |    89.05  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1070599  1070672  |  1654666  1654593  |       74       74  |    95.95  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1085270  1085625  |  2621645  2621303  |      356      343  |    94.66  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1154592  1155779  |  2949276  2948089  |     1188     1188  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1155911  1157141  |  1321193  1319963  |     1231     1231  |    99.92  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1155911  1157142  |  2255223  2253992  |     1232     1232  |    99.68  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1155912  1157154  |  3099076  3097836  |     1243     1241  |    99.44  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1157185  1157527  |  2417480  2417140  |      343      341  |    96.50  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1157901  1158105  |  2417141  2416938  |      205      204  |    97.07  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1163540  1163667  |  2723862  2723734  |      128      129  |    97.67  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1175477  1181194  |  2001648  1995932  |     5718     5717  |    99.28  |  3307069  3307069  |     0.17     0.17  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1175503  1178867  |  1855667  1852307  |     3365     3361  |    99.44  |  3307069  3307069  |     0.10     0.10  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1175503  1178867  |  1925503  1922143  |     3365     3361  |    99.41  |  3307069  3307069  |     0.10     0.10  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1178972  1181186  |  1852180  1849968  |     2215     2213  |    99.19  |  3307069  3307069  |     0.07     0.07  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1178972  1181186  |  1922016  1919804  |     2215     2213  |    99.19  |  3307069  3307069  |     0.07     0.07  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1208590  1208945  |  1495538  1495183  |      356      356  |    98.60  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1208591  1208945  |  1085625  1085271  |      355      355  |    98.59  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1208593  1208943  |  1021006  1020658  |      351      349  |    92.31  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1208593  1208943  |  2347998  2347649  |      351      350  |    92.88  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1208589  1208943  |   362717   362363  |      355      355  |    93.80  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1214420  1214799  |  1652235  1651856  |      380      380  |    92.11  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1218425  1218774  |  2347998  2347649  |      350      350  |    98.57  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1218425  1218774  |   964187   963838  |      350      350  |    98.29  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1280238  1281290  |  1032065  1031015  |     1053     1051  |    99.72  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1319962  1321191  |  2013681  2012452  |     1230     1230  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1319958  1321191  |  2995402  2994169  |     1234     1234  |    99.51  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1319963  1321193  |  1157141  1155911  |     1231     1231  |    99.92  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1319963  1321199  |  2962099  2960864  |     1237     1236  |    99.84  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1379443  1379799  |  2562097  2561741  |      357      357  |    98.60  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1379443  1379798  |   320457   320102  |      356      356  |    96.35  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1379445  1379795  |  2676390  2676040  |      351      351  |    97.72  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1379445  1379795  |  2377209  2376859  |      351      351  |    98.29  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1379445  1379799  |   362713   362359  |      355      355  |    96.90  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1495183  1495538  |  1208945  1208590  |      356      356  |    98.60  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1512733  1514158  |  2314110  2312685  |     1426     1426  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1512734  1514159  |  2494296  2492871  |     1426     1426  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1513639  1514158  |   896530   896011  |      520      520  |   100.00  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1550137  1550219  |  1549855  1549773  |       83       83  |    97.59  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1570092  1570445  |  1646588  1646235  |      354      354  |    96.89  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1570095  1570443  |   511770   511422  |      349      349  |    98.85  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1570091  1570446  |  1021010  1020655  |      356      356  |    95.79  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1646237  1646587  |   615292   614942  |      351      351  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1646237  1646587  |  1989914  1989561  |      351      354  |    93.22  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1646237  1646585  |  1218774  1218425  |      349      350  |    90.60  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1646237  1646585  |  2401557  2401210  |      349      348  |    97.99  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1646235  1646588  |  3096253  3095899  |      354      355  |    97.18  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1646235  1646588  |  1570445  1570092  |      354      354  |    96.89  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1646235  1646587  |  2723864  2723510  |      353      355  |    93.24  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1651742  1652238  |  1066895  1066399  |      497      497  |    86.17  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1651856  1652235  |  1214799  1214420  |      380      380  |    92.11  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1651843  1652185  |  1068915  1068573  |      343      343  |    91.84  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1651742  1652185  |   160235   159792  |      444      444  |    88.76  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1654840  1654937  |  1143188  1143091  |       98       98  |    96.94  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1654840  1654976  |  1141695  1141557  |      137      139  |    89.36  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1654822  1655019  |  1067985  1067786  |      198      200  |    89.05  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1852307  1855667  |  1178867  1175503  |     3361     3365  |    99.44  |  3307069  3307069  |     0.10     0.10  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1982173  1982338  |  3276422  3276256  |      166      167  |    96.41  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1989555  1989914  |   964195   963838  |      360      358  |    93.63  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1989561  1989914  |  2348000  2347649  |      354      352  |    93.24  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1989563  1989917  |   623399   623048  |      355      352  |    91.55  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 1995932  2001648  |  1181194  1175477  |     5717     5718  |    99.28  |  3307069  3307069  |     0.17     0.17  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2012452  2013681  |  1321191  1319962  |     1230     1230  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2032351  2032422  |  2032422  2032351  |       72       72  |    94.44  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2168005  2168108  |  3094697  3094594  |      104      104  |    97.12  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2183510  2185105  |  2606051  2604456  |     1596     1596  |   100.00  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2312685  2314110  |  1514158  1512733  |     1426     1426  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2321860  2322898  |  2559111  2558073  |     1039     1039  |   100.00  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2321860  2322731  |  1838623  1837752  |      872      872  |    99.89  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2347649  2347998  |  1218774  1218425  |      350      350  |    98.57  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2401208  2401559  |  2602023  2601671  |      352      353  |    98.87  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2414954  2415889  |  2888424  2887489  |      936      936  |    99.89  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2414957  2416652  |   156547   154852  |     1696     1696  |    99.06  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2414958  2416652  |    48669    46975  |     1695     1695  |    99.65  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2414958  2416648  |  2858143  2856453  |     1691     1691  |    99.65  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2416938  2417141  |  1158105  1157901  |      204      205  |    97.07  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2417140  2417480  |  1157527  1157185  |      341      343  |    96.50  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2492871  2494296  |  1514159  1512734  |     1426     1426  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2533778  2533945  |   542454   542287  |      168      168  |   100.00  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2533780  2533942  |  2578486  2578324  |      163      163  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2558069  2558238  |   582874   582705  |      170      170  |    98.24  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2558073  2559111  |  2322898  2321860  |     1039     1039  |   100.00  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2558071  2559109  |   309984   308946  |     1039     1039  |    99.90  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2561741  2562097  |  1379799  1379443  |      357      357  |    98.60  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2599121  2599213  |  3096256  3096164  |       93       93  |    97.85  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2601668  2602026  |   615297   614938  |      359      360  |    97.78  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2601670  2602023  |  2616352  2615998  |      354      355  |    95.21  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2601671  2602023  |  2401559  2401208  |      353      352  |    98.87  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2601673  2602021  |  3096251  3095902  |      349      350  |    98.57  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2601671  2602023  |  2895337  2894982  |      353      356  |    92.98  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2601671  2602024  |  1010947  1010592  |      354      356  |    91.85  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2602923  2603393  |   117336   116867  |      471      470  |    78.81  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2604456  2606055  |   948899   947300  |     1600     1600  |    99.88  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2604456  2606051  |  2185105  2183510  |     1596     1596  |   100.00  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2615998  2616351  |   623401   623049  |      354      353  |    98.31  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2616000  2616357  |   964187   963830  |      358      358  |    91.39  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2615998  2616352  |  2602023  2601670  |      355      354  |    95.21  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2618271  2619319  |   333874   332824  |     1049     1051  |    99.71  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2618276  2619313  |   619339   618302  |     1038     1038  |    99.90  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2618278  2619316  |   640473   639435  |     1039     1039  |   100.00  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2618271  2619315  |  1281288  1280244  |     1045     1045  |    99.81  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2621303  2621645  |  1085625  1085270  |      343      356  |    94.66  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2621302  2621644  |  1495538  1495183  |      343      356  |    94.66  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2655631  2656860  |  2979298  2978069  |     1230     1230  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2670545  2670617  |  1032418  1032346  |       73       73  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2676037  2676391  |  3094950  3094595  |      355      356  |    95.51  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2681832  2683019  |  1155778  1154591  |     1188     1188  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2681832  2683019  |  1252219  1251032  |     1188     1188  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2723734  2723862  |  1163667  1163540  |      129      128  |    97.67  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2723510  2723864  |   271408   271060  |      355      349  |    89.89  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2749392  2752004  |  2852067  2849455  |     2613     2613  |    99.96  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2749392  2752004  |  3187966  3185354  |     2613     2613  |    99.96  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2770930  2771701  |    48670    47899  |      772      772  |    99.35  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2770924  2771701  |  2858150  2857373  |      778      778  |    99.23  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2771699  2774311  |   558613   556000  |     2613     2614  |    99.92  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2771702  2774313  |  3180565  3177953  |     2612     2613  |    99.43  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2836005  2836852  |  3306759  3305912  |      848      848  |    83.18  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2846650  2847932  |  3184279  3183016  |     1283     1264  |    95.25  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2852068  2852164  |  2415049  2414953  |       97       97  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2852068  2852164  |  2854590  2854494  |       97       97  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2852183  2853874  |  2536118  2534427  |     1692     1692  |   100.00  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2852183  2853874  |  2946638  2944947  |     1692     1692  |   100.00  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2852183  2853875  |  2416649  2414957  |     1693     1693  |    99.88  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2852183  2853875  |  2856190  2854498  |     1693     1693  |    99.88  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2853104  2853874  |  2771701  2770931  |      771      771  |    99.87  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2854498  2856190  |  2853875  2852183  |     1693     1693  |    99.88  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2856449  2858157  |  2946642  2944935  |     1709     1708  |    99.30  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2880831  2881459  |   480632   480004  |      629      629  |    96.19  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2884877  2887489  |  3187967  3185355  |     2613     2613  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2884878  2887489  |  2852067  2849456  |     2612     2612  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2884878  2887491  |  2967139  2964526  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2887489  2888424  |  2415889  2414954  |      936      936  |    99.89  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2887650  2888424  |  2771701  2770927  |      775      775  |    99.74  |  3307069  3307069  |     0.02     0.02  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2887489  2888424  |  2855430  2854495  |      936      936  |    99.79  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2926403  2926498  |     2615     2520  |       96       96  |   100.00  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2926405  2930390  |   150363   146378  |     3986     3986  |   100.00  |  3307069  3307069  |     0.12     0.12  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2926497  2927867  |  2879998  2878628  |     1371     1371  |    99.12  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2926498  2927868  |  1897625  1896255  |     1371     1371  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2944935  2946642  |  2858157  2856449  |     1708     1709  |    99.30  |  3307069  3307069  |     0.05     0.05  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2948089  2949276  |  1155779  1154592  |     1188     1188  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2948090  2949277  |   998811   997624  |     1188     1188  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2952906  2955518  |   143418   140806  |     2613     2613  |    99.81  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2960864  2962099  |  1321199  1319963  |     1236     1237  |    99.84  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2964526  2967139  |  2887491  2884878  |     2614     2614  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2978068  2979298  |   162818   161588  |     1231     1231  |    99.92  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2978069  2979298  |  2962100  2960871  |     1230     1230  |    99.92  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 2978069  2979298  |  2656860  2655631  |     1230     1230  |   100.00  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3094594  3094697  |  2168108  2168005  |      104      104  |    97.12  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3094594  3094949  |  2377211  2376857  |      356      355  |    96.63  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3094595  3094950  |  2676391  2676037  |      356      355  |    95.51  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3094596  3094951  |  2562095  2561741  |      356      355  |    96.07  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3094594  3094951  |   362715   362359  |      358      357  |    95.53  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3095902  3096251  |  2602021  2601673  |      350      349  |    98.57  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3097844  3099076  |   162819   161587  |     1233     1233  |    99.51  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3177953  3180565  |  2774313  2771702  |     2613     2612  |    99.43  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3177955  3180565  |   654569   651959  |     2611     2611  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3183016  3184279  |  2847932  2846650  |     1264     1283  |    95.25  |  3307069  3307069  |     0.04     0.04  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3185355  3187967  |  2887489  2884877  |     2613     2613  |   100.00  |  3307069  3307069  |     0.08     0.08  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3196290  3198280  |  3212078  3210108  |     1991     1971  |    82.97  |  3307069  3307069  |     0.06     0.06  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3210108  3212078  |  3198280  3196290  |     1971     1991  |    82.97  |  3307069  3307069  |     0.06     0.06  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3276256  3276422  |  1982338  1982173  |      167      166  |    96.41  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3276258  3276422  |  1906271  1906108  |      165      164  |    96.36  |  3307069  3307069  |     0.00     0.00  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3277636  3277984  |   163380   163031  |      349      350  |    94.86  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3277634  3277986  |   511772   511420  |      353      353  |    99.43  |  3307069  3307069  |     0.01     0.01  | Muribaculum_intestinale	Muribaculum_intestinale	
- 3305912  3306759  |  2836852  2836005  |      848      848  |    83.18  |  3307069  3307069  |     0.03     0.03  | Muribaculum_intestinale	Muribaculum_intestinale	
-  255078   255970  |    91523    90631  |      893      893  |    86.02  |  4800606  3307069  |     0.02     0.03  | B_caecimuris	Muribaculum_intestinale	
- 1253751  1254195  |  2674965  2674522  |      445      444  |    88.47  |  4800606  3307069  |     0.01     0.01  | B_caecimuris	Muribaculum_intestinale	
- 1254331  1254762  |  2674394  2673963  |      432      432  |    89.93  |  4800606  3307069  |     0.01     0.01  | B_caecimuris	Muribaculum_intestinale	
- 1254770  1255656  |  2673612  2672727  |      887      886  |    87.08  |  4800606  3307069  |     0.02     0.03  | B_caecimuris	Muribaculum_intestinale	
- 1256890  1257598  |  2671541  2670829  |      709      713  |    85.61  |  4800606  3307069  |     0.01     0.02  | B_caecimuris	Muribaculum_intestinale	
- 1285446  1287485  |   494497   492460  |     2040     2038  |    85.32  |  4800606  3307069  |     0.04     0.06  | B_caecimuris	Muribaculum_intestinale	
- 1306988  1307466  |  2661996  2661517  |      479      480  |    87.94  |  4800606  3307069  |     0.01     0.01  | B_caecimuris	Muribaculum_intestinale	
- 1307468  1308927  |  2655372  2653913  |     1460     1460  |    89.19  |  4800606  3307069  |     0.03     0.04  | B_caecimuris	Muribaculum_intestinale	
- 1437922  1440211  |   472115   469829  |     2290     2287  |    89.90  |  4800606  3307069  |     0.05     0.07  | B_caecimuris	Muribaculum_intestinale	
- 1441660  1441839  |   463283   463104  |      180      180  |    91.76  |  4800606  3307069  |     0.00     0.01  | B_caecimuris	Muribaculum_intestinale	
- 1630321  1630554  |   668821   668591  |      234      231  |    84.19  |  4800606  3307069  |     0.00     0.01  | B_caecimuris	Muribaculum_intestinale	
- 1808389  1809065  |  3185355  3184679  |      677      677  |    87.89  |  4800606  3307069  |     0.01     0.02  | B_caecimuris	Muribaculum_intestinale	
- 3680937  3683509  |   490813   488234  |     2573     2580  |    88.57  |  4800606  3307069  |     0.05     0.08  | B_caecimuris	Muribaculum_intestinale	
- 3718169  3718578  |  1786920  1786557  |      410      364  |    78.01  |  4800606  3307069  |     0.01     0.01  | B_caecimuris	Muribaculum_intestinale	
- 3815751  3819607  |  2598802  2594946  |     3857     3857  |    95.78  |  4800606  3307069  |     0.08     0.12  | B_caecimuris	Muribaculum_intestinale	
- 3832079  3833159  |  3185355  3184275  |     1081     1081  |    94.63  |  4800606  3307069  |     0.02     0.03  | B_caecimuris	Muribaculum_intestinale	
- 4174875  4175770  |   494471   493576  |      896      896  |    82.22  |  4800606  3307069  |     0.02     0.03  | B_caecimuris	Muribaculum_intestinale	
- 4687316  4688131  |  2674956  2674141  |      816      816  |    87.85  |  4800606  3307069  |     0.02     0.02  | B_caecimuris	Muribaculum_intestinale	
- 4694053  4694937  |  2662968  2662078  |      885      891  |    93.27  |  4800606  3307069  |     0.02     0.03  | B_caecimuris	Muribaculum_intestinale	
- 4696591  4698056  |  2655379  2653915  |     1466     1465  |    92.91  |  4800606  3307069  |     0.03     0.04  | B_caecimuris	Muribaculum_intestinale	
- 4949124  4949209  |  3056667  3056582  |       86       86  |    97.67  |  7157610  3307069  |     0.00     0.00  | Clostridioforme	Muribaculum_intestinale	
+1	3307069	1	3307069	3307069	3307069	100.00	3307069	3307069	100.00	100.00	Muribaculum_intestinale	Muribaculum_intestinale	[IDENTITY]
+2520	2615	2926498	2926403	96	96	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+8749	11360	2955516	2952905	2612	2612	99.81	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+8743	11360	476976	474359	2618	2618	99.92	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+8836	11360	148901	146377	2525	2525	99.96	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+18421	21033	691268	688656	2613	2613	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+46975	48669	2856193	2854499	1695	1695	99.53	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+46975	48669	2416652	2414958	1695	1695	99.65	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+54028	54143	482219	482104	116	116	88.89	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+54233	54354	11361	11240	122	122	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+54233	54354	654571	654450	122	122	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+75878	75978	566399	566299	101	101	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+116867	117336	2603393	2602923	470	471	78.81	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+140806	143418	2955518	2952906	2613	2613	99.81	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+143672	143953	154164	153882	282	283	95.41	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+146378	150363	2930390	2926405	3986	3986	100.00	3307069	3307069	0.12	0.12	Muribaculum_intestinale	Muribaculum_intestinale	
+150377	150657	481052	480776	281	277	87.23	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+153882	154164	143953	143672	283	282	95.41	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+154414	154712	50214	49916	299	299	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+154414	154713	1667313	1667014	300	300	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+154414	154713	85728	85429	300	300	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+154414	154713	2670012	2669713	300	300	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+156729	156910	668784	668596	182	189	86.77	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+159792	160235	1652185	1651742	444	444	88.76	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+161588	162818	2979298	2978068	1231	1231	99.92	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+161587	162819	3099076	3097844	1233	1233	99.51	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+163031	163380	3277984	3277636	350	349	94.86	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+163031	163380	2616349	2616000	350	350	95.43	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+163028	163384	3094950	3094592	357	359	91.92	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+271060	271408	2723864	2723510	349	355	89.89	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+306998	308227	101815	100586	1230	1230	99.84	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+306998	308229	632530	631299	1232	1232	99.35	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+306999	308228	162816	161587	1230	1230	99.84	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+306999	308228	2962099	2960870	1230	1230	99.84	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+308920	309235	1032373	1032058	316	316	98.42	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+308942	309837	583742	582846	896	897	99.89	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+308942	309820	3021989	3021111	879	879	100.00	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+332819	333873	1032069	1031015	1055	1055	99.43	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+379347	381961	691271	688657	2615	2615	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+474360	476973	486513	483900	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+480004	480632	2881459	2880831	629	629	96.19	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+480013	480473	151411	150950	461	462	95.67	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+480413	480629	76189	75976	217	214	86.24	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+480776	481052	150657	150377	277	281	87.23	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+482104	482219	54143	54028	116	116	88.89	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+483900	486513	476973	474360	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+483902	486513	2852068	2849457	2612	2612	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+483902	486514	2614	2	2613	2613	99.89	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+511420	511772	3277986	3277634	353	353	99.43	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+511422	511770	1570443	1570095	349	349	98.85	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+511420	511772	1379797	1379443	353	355	93.24	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+511420	511770	1989916	1989563	351	354	93.24	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+542287	542454	2533945	2533778	168	168	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+555999	558612	674395	671782	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+556000	558613	2774311	2771699	2614	2613	99.92	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+566299	566399	75978	75878	101	101	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+566302	567732	692697	691267	1431	1431	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+582846	583742	309837	308942	897	896	99.89	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+614942	615292	1646587	1646237	351	351	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+614942	615292	163382	163031	351	352	94.60	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+614938	615297	2602026	2601668	360	359	97.78	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+623048	623399	1989917	1989563	352	355	91.55	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+623049	623401	2616351	2615998	353	354	98.31	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+631299	632530	308229	306998	1232	1232	99.35	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+631300	632529	2255222	2253993	1230	1230	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+631300	632529	3099076	3097847	1230	1230	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+639435	640473	2619316	2618278	1039	1039	100.00	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+651959	654569	3180565	3177955	2611	2611	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+668596	668784	156910	156729	189	182	86.77	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+671782	674395	558612	555999	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+671783	674396	2755901	2753288	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+671783	674396	381962	379349	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+671783	674395	1289209	1286597	2613	2613	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+671783	674394	2967140	2964529	2612	2612	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+688656	691268	21033	18421	2613	2613	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+688657	691270	2755900	2753287	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+688657	691271	381961	379347	2615	2615	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+691267	692697	567732	566302	1431	1431	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+947300	948899	2606055	2604456	1600	1600	99.88	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+963838	964187	1218774	1218425	350	350	98.29	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+963843	964187	618303	617958	345	346	94.80	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+963838	964195	1989914	1989555	358	360	93.63	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+997624	998811	2949277	2948090	1188	1188	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1010592	1010947	2602024	2601671	356	354	91.85	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1020655	1021010	1570446	1570091	356	356	95.79	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1031015	1032065	1281290	1280238	1051	1053	99.72	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+1031015	1032069	333873	332819	1055	1055	99.43	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+1032058	1032373	309235	308920	316	316	98.42	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1032346	1032418	2670617	2670545	73	73	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1032347	1032418	1667917	1667846	72	72	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1032347	1032418	86332	86261	72	72	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1032346	1032418	50819	50747	73	73	98.63	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1067786	1067985	1655019	1654822	200	198	89.05	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1070599	1070672	1654666	1654593	74	74	95.95	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1085270	1085625	2621645	2621303	356	343	94.66	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1154592	1155779	2949276	2948089	1188	1188	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1155911	1157141	1321193	1319963	1231	1231	99.92	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1155911	1157142	2255223	2253992	1232	1232	99.68	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1155912	1157154	3099076	3097836	1243	1241	99.44	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1157185	1157527	2417480	2417140	343	341	96.50	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1157901	1158105	2417141	2416938	205	204	97.07	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1163540	1163667	2723862	2723734	128	129	97.67	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1175477	1181194	2001648	1995932	5718	5717	99.28	3307069	3307069	0.17	0.17	Muribaculum_intestinale	Muribaculum_intestinale	
+1175503	1178867	1855667	1852307	3365	3361	99.44	3307069	3307069	0.10	0.10	Muribaculum_intestinale	Muribaculum_intestinale	
+1175503	1178867	1925503	1922143	3365	3361	99.41	3307069	3307069	0.10	0.10	Muribaculum_intestinale	Muribaculum_intestinale	
+1178972	1181186	1852180	1849968	2215	2213	99.19	3307069	3307069	0.07	0.07	Muribaculum_intestinale	Muribaculum_intestinale	
+1178972	1181186	1922016	1919804	2215	2213	99.19	3307069	3307069	0.07	0.07	Muribaculum_intestinale	Muribaculum_intestinale	
+1208590	1208945	1495538	1495183	356	356	98.60	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1208591	1208945	1085625	1085271	355	355	98.59	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1208593	1208943	1021006	1020658	351	349	92.31	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1208593	1208943	2347998	2347649	351	350	92.88	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1208589	1208943	362717	362363	355	355	93.80	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1214420	1214799	1652235	1651856	380	380	92.11	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1218425	1218774	2347998	2347649	350	350	98.57	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1218425	1218774	964187	963838	350	350	98.29	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1280238	1281290	1032065	1031015	1053	1051	99.72	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+1319962	1321191	2013681	2012452	1230	1230	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1319958	1321191	2995402	2994169	1234	1234	99.51	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1319963	1321193	1157141	1155911	1231	1231	99.92	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1319963	1321199	2962099	2960864	1237	1236	99.84	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1379443	1379799	2562097	2561741	357	357	98.60	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1379443	1379798	320457	320102	356	356	96.35	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1379445	1379795	2676390	2676040	351	351	97.72	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1379445	1379795	2377209	2376859	351	351	98.29	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1379445	1379799	362713	362359	355	355	96.90	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1495183	1495538	1208945	1208590	356	356	98.60	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1512733	1514158	2314110	2312685	1426	1426	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1512734	1514159	2494296	2492871	1426	1426	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+1513639	1514158	896530	896011	520	520	100.00	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+1550137	1550219	1549855	1549773	83	83	97.59	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1570092	1570445	1646588	1646235	354	354	96.89	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1570095	1570443	511770	511422	349	349	98.85	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1570091	1570446	1021010	1020655	356	356	95.79	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1646237	1646587	615292	614942	351	351	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1646237	1646587	1989914	1989561	351	354	93.22	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1646237	1646585	1218774	1218425	349	350	90.60	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1646237	1646585	2401557	2401210	349	348	97.99	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1646235	1646588	3096253	3095899	354	355	97.18	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1646235	1646588	1570445	1570092	354	354	96.89	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1646235	1646587	2723864	2723510	353	355	93.24	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1651742	1652238	1066895	1066399	497	497	86.17	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+1651856	1652235	1214799	1214420	380	380	92.11	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1651843	1652185	1068915	1068573	343	343	91.84	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1651742	1652185	160235	159792	444	444	88.76	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1654840	1654937	1143188	1143091	98	98	96.94	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1654840	1654976	1141695	1141557	137	139	89.36	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+1654822	1655019	1067985	1067786	198	200	89.05	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1852307	1855667	1178867	1175503	3361	3365	99.44	3307069	3307069	0.10	0.10	Muribaculum_intestinale	Muribaculum_intestinale	
+1982173	1982338	3276422	3276256	166	167	96.41	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1989555	1989914	964195	963838	360	358	93.63	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1989561	1989914	2348000	2347649	354	352	93.24	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1989563	1989917	623399	623048	355	352	91.55	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+1995932	2001648	1181194	1175477	5717	5718	99.28	3307069	3307069	0.17	0.17	Muribaculum_intestinale	Muribaculum_intestinale	
+2012452	2013681	1321191	1319962	1230	1230	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2032351	2032422	2032422	2032351	72	72	94.44	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2168005	2168108	3094697	3094594	104	104	97.12	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2183510	2185105	2606051	2604456	1596	1596	100.00	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2312685	2314110	1514158	1512733	1426	1426	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2321860	2322898	2559111	2558073	1039	1039	100.00	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2321860	2322731	1838623	1837752	872	872	99.89	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2347649	2347998	1218774	1218425	350	350	98.57	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2401208	2401559	2602023	2601671	352	353	98.87	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2414954	2415889	2888424	2887489	936	936	99.89	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2414957	2416652	156547	154852	1696	1696	99.06	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2414958	2416652	48669	46975	1695	1695	99.65	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2414958	2416648	2858143	2856453	1691	1691	99.65	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2416938	2417141	1158105	1157901	204	205	97.07	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2417140	2417480	1157527	1157185	341	343	96.50	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2492871	2494296	1514159	1512734	1426	1426	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2533778	2533945	542454	542287	168	168	100.00	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2533780	2533942	2578486	2578324	163	163	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2558069	2558238	582874	582705	170	170	98.24	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2558073	2559111	2322898	2321860	1039	1039	100.00	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2558071	2559109	309984	308946	1039	1039	99.90	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2561741	2562097	1379799	1379443	357	357	98.60	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2599121	2599213	3096256	3096164	93	93	97.85	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2601668	2602026	615297	614938	359	360	97.78	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2601670	2602023	2616352	2615998	354	355	95.21	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2601671	2602023	2401559	2401208	353	352	98.87	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2601673	2602021	3096251	3095902	349	350	98.57	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2601671	2602023	2895337	2894982	353	356	92.98	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2601671	2602024	1010947	1010592	354	356	91.85	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2602923	2603393	117336	116867	471	470	78.81	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2604456	2606055	948899	947300	1600	1600	99.88	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2604456	2606051	2185105	2183510	1596	1596	100.00	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2615998	2616351	623401	623049	354	353	98.31	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2616000	2616357	964187	963830	358	358	91.39	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2615998	2616352	2602023	2601670	355	354	95.21	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2618271	2619319	333874	332824	1049	1051	99.71	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2618276	2619313	619339	618302	1038	1038	99.90	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2618278	2619316	640473	639435	1039	1039	100.00	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2618271	2619315	1281288	1280244	1045	1045	99.81	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2621303	2621645	1085625	1085270	343	356	94.66	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2621302	2621644	1495538	1495183	343	356	94.66	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2655631	2656860	2979298	2978069	1230	1230	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2670545	2670617	1032418	1032346	73	73	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2676037	2676391	3094950	3094595	355	356	95.51	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2681832	2683019	1155778	1154591	1188	1188	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2681832	2683019	1252219	1251032	1188	1188	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2723734	2723862	1163667	1163540	129	128	97.67	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2723510	2723864	271408	271060	355	349	89.89	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+2749392	2752004	2852067	2849455	2613	2613	99.96	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2749392	2752004	3187966	3185354	2613	2613	99.96	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2770930	2771701	48670	47899	772	772	99.35	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+2770924	2771701	2858150	2857373	778	778	99.23	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+2771699	2774311	558613	556000	2613	2614	99.92	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2771702	2774313	3180565	3177953	2612	2613	99.43	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2836005	2836852	3306759	3305912	848	848	83.18	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2846650	2847932	3184279	3183016	1283	1264	95.25	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2852068	2852164	2415049	2414953	97	97	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2852068	2852164	2854590	2854494	97	97	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2852183	2853874	2536118	2534427	1692	1692	100.00	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2852183	2853874	2946638	2944947	1692	1692	100.00	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2852183	2853875	2416649	2414957	1693	1693	99.88	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2852183	2853875	2856190	2854498	1693	1693	99.88	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2853104	2853874	2771701	2770931	771	771	99.87	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+2854498	2856190	2853875	2852183	1693	1693	99.88	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2856449	2858157	2946642	2944935	1709	1708	99.30	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2880831	2881459	480632	480004	629	629	96.19	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+2884877	2887489	3187967	3185355	2613	2613	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2884878	2887489	2852067	2849456	2612	2612	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2884878	2887491	2967139	2964526	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2887489	2888424	2415889	2414954	936	936	99.89	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2887650	2888424	2771701	2770927	775	775	99.74	3307069	3307069	0.02	0.02	Muribaculum_intestinale	Muribaculum_intestinale	
+2887489	2888424	2855430	2854495	936	936	99.79	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+2926403	2926498	2615	2520	96	96	100.00	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+2926405	2930390	150363	146378	3986	3986	100.00	3307069	3307069	0.12	0.12	Muribaculum_intestinale	Muribaculum_intestinale	
+2926497	2927867	2879998	2878628	1371	1371	99.12	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2926498	2927868	1897625	1896255	1371	1371	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2944935	2946642	2858157	2856449	1708	1709	99.30	3307069	3307069	0.05	0.05	Muribaculum_intestinale	Muribaculum_intestinale	
+2948089	2949276	1155779	1154592	1188	1188	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2948090	2949277	998811	997624	1188	1188	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2952906	2955518	143418	140806	2613	2613	99.81	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2960864	2962099	1321199	1319963	1236	1237	99.84	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2964526	2967139	2887491	2884878	2614	2614	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+2978068	2979298	162818	161588	1231	1231	99.92	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2978069	2979298	2962100	2960871	1230	1230	99.92	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+2978069	2979298	2656860	2655631	1230	1230	100.00	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+3094594	3094697	2168108	2168005	104	104	97.12	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+3094594	3094949	2377211	2376857	356	355	96.63	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3094595	3094950	2676391	2676037	356	355	95.51	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3094596	3094951	2562095	2561741	356	355	96.07	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3094594	3094951	362715	362359	358	357	95.53	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3095902	3096251	2602021	2601673	350	349	98.57	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3097844	3099076	162819	161587	1233	1233	99.51	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+3177953	3180565	2774313	2771702	2613	2612	99.43	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+3177955	3180565	654569	651959	2611	2611	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+3183016	3184279	2847932	2846650	1264	1283	95.25	3307069	3307069	0.04	0.04	Muribaculum_intestinale	Muribaculum_intestinale	
+3185355	3187967	2887489	2884877	2613	2613	100.00	3307069	3307069	0.08	0.08	Muribaculum_intestinale	Muribaculum_intestinale	
+3196290	3198280	3212078	3210108	1991	1971	82.97	3307069	3307069	0.06	0.06	Muribaculum_intestinale	Muribaculum_intestinale	
+3210108	3212078	3198280	3196290	1971	1991	82.97	3307069	3307069	0.06	0.06	Muribaculum_intestinale	Muribaculum_intestinale	
+3276256	3276422	1982338	1982173	167	166	96.41	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3276258	3276422	1906271	1906108	165	164	96.36	3307069	3307069	0.00	0.00	Muribaculum_intestinale	Muribaculum_intestinale	
+3277636	3277984	163380	163031	349	350	94.86	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3277634	3277986	511772	511420	353	353	99.43	3307069	3307069	0.01	0.01	Muribaculum_intestinale	Muribaculum_intestinale	
+3305912	3306759	2836852	2836005	848	848	83.18	3307069	3307069	0.03	0.03	Muribaculum_intestinale	Muribaculum_intestinale	
+255078	255970	91523	90631	893	893	86.02	4800606	3307069	0.02	0.03	B_caecimuris	Muribaculum_intestinale	
+1253751	1254195	2674965	2674522	445	444	88.47	4800606	3307069	0.01	0.01	B_caecimuris	Muribaculum_intestinale	
+1254331	1254762	2674394	2673963	432	432	89.93	4800606	3307069	0.01	0.01	B_caecimuris	Muribaculum_intestinale	
+1254770	1255656	2673612	2672727	887	886	87.08	4800606	3307069	0.02	0.03	B_caecimuris	Muribaculum_intestinale	
+1256890	1257598	2671541	2670829	709	713	85.61	4800606	3307069	0.01	0.02	B_caecimuris	Muribaculum_intestinale	
+1285446	1287485	494497	492460	2040	2038	85.32	4800606	3307069	0.04	0.06	B_caecimuris	Muribaculum_intestinale	
+1306988	1307466	2661996	2661517	479	480	87.94	4800606	3307069	0.01	0.01	B_caecimuris	Muribaculum_intestinale	
+1307468	1308927	2655372	2653913	1460	1460	89.19	4800606	3307069	0.03	0.04	B_caecimuris	Muribaculum_intestinale	
+1437922	1440211	472115	469829	2290	2287	89.90	4800606	3307069	0.05	0.07	B_caecimuris	Muribaculum_intestinale	
+1441660	1441839	463283	463104	180	180	91.76	4800606	3307069	0.00	0.01	B_caecimuris	Muribaculum_intestinale	
+1630321	1630554	668821	668591	234	231	84.19	4800606	3307069	0.00	0.01	B_caecimuris	Muribaculum_intestinale	
+1808389	1809065	3185355	3184679	677	677	87.89	4800606	3307069	0.01	0.02	B_caecimuris	Muribaculum_intestinale	
+3680937	3683509	490813	488234	2573	2580	88.57	4800606	3307069	0.05	0.08	B_caecimuris	Muribaculum_intestinale	
+3718169	3718578	1786920	1786557	410	364	78.01	4800606	3307069	0.01	0.01	B_caecimuris	Muribaculum_intestinale	
+3815751	3819607	2598802	2594946	3857	3857	95.78	4800606	3307069	0.08	0.12	B_caecimuris	Muribaculum_intestinale	
+3832079	3833159	3185355	3184275	1081	1081	94.63	4800606	3307069	0.02	0.03	B_caecimuris	Muribaculum_intestinale	
+4174875	4175770	494471	493576	896	896	82.22	4800606	3307069	0.02	0.03	B_caecimuris	Muribaculum_intestinale	
+4687316	4688131	2674956	2674141	816	816	87.85	4800606	3307069	0.02	0.02	B_caecimuris	Muribaculum_intestinale	
+4694053	4694937	2662968	2662078	885	891	93.27	4800606	3307069	0.02	0.03	B_caecimuris	Muribaculum_intestinale	
+4696591	4698056	2655379	2653915	1466	1465	92.91	4800606	3307069	0.03	0.04	B_caecimuris	Muribaculum_intestinale	
+4949124	4949209	3056667	3056582	86	86	97.67	7157610	3307069	0.00	0.00	Clostridioforme	Muribaculum_intestinale	
