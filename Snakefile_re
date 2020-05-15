@@ -1,0 +1,96 @@
+'''
+snakefile
+by ,Philipp Muench
+
+Maps NGS data to OligoMM reference genomes and performs variant calling
+using the pooled samples
+-----------------------------------------------------------------------
+
+Dependencies:
+
+samtools
+	http://www.htslib.org/download/
+
+fastp
+	https://github.com/OpenGene/fastp
+
+kneaddata
+	https://bitbucket.org/biobakery/kneaddata
+
+Trimmomatic
+	http://www.usadellab.org/cms/?page=trimmomatic
+
+bowtie2
+	http://bowtie-bio.sourceforge.net/bowtie2/index.shtml	
+
+Rscript
+	https://cran.r-project.org/mirrors.html
+
+sankeyD3 (R package)
+	https://github.com/fbreitwieser/sankeyD3
+
+networkD3 (R package)
+	https://cran.r-project.org/web/packages/networkD3/index.html
+
+bowtie2
+	http://bowtie-bio.sourceforge.net/bowtie2/	
+
+Usage:
+	snakemake --jobs 20 --use-conda
+'''
+
+# Config ----------------------------------------------------------------------
+
+import pandas as pd
+import os
+
+configfile: "config/config.yaml"
+
+# Globals ---------------------------------------------------------------------
+
+# name of sample to be processed
+#FILES_CLAUDIA = ["1423_S34"]
+
+
+FILES_RE = glob_wildcards("/net/sgi/oligomm_ab/resequencing/eurofinsgenomics/DR1/{files}_1_1.fastq.gz")
+
+FILES = ["NG-24609_DR1_lib387950_6750"]
+
+READS_PATH="/net/sgi/oligomm_ab/resequencing/eurofinsgenomics/DR1"
+
+# Target rule -------------------------------------------------------------------
+
+rule all:
+	input:
+		expand("docs/reports/fastp/{sample}.html", sample=FILES),
+		expand("processed/{sample}/{sample}_bwa_mapped_omm_sorted.bam", sample=FILES),
+		expand("processed/{sample}/{sample}_bwa_mapped_omm_sorted.bam.bai", sample=FILES),
+#		expand("processed/{sample}/{sample}_bowtie2_mapped_omm_sorted.bam", sample=FILES_CLAUDIA),
+#		expand("processed/{sample}/{sample}_bowtie2_mapped_omm_sorted.bam.bai", sample=FILES_CLAUDIA),
+#		expand("processed/{sample}/{sample}_bwa_lofreq.vcf.gz", sample=FILES_CLAUDIA),
+#		expand("processed/{sample}/{sample}_bwa_lofreq.vcf.gz.tbi", sample=FILES_CLAUDIA),
+#		expand("processed/{sample}/{sample}_bowtie2_lofreq.vcf.gz", sample=FILES_CLAUDIA),
+#		expand("processed/{sample}/{sample}_bowtie2_lofreq.vcf.gz.tbi", sample=FILES_CLAUDIA),
+#		expand("processed/{sample}/{sample}_bwa_varscan.vcf", sample=FILES_CLAUDIA),
+#		expand("processed/{sample}/{sample}_bowtie2_varscan.vcf", sample=FILES_CLAUDIA)
+#		expand("processed/varscan/{sample}.vcf", sample=SAMPLES),
+#		expand("processed/lofreq_bwa_sorted/{sample}.vcf.gz", sample=SAMPLES),
+#		expand("processed/lofreq_bowtie2/{sample}.vcf.gz", sample=SAMPLES),
+#		expand("docs/igv/{sample}.html", sample=SAMPLES),
+#		expand("coverage/{sample}.coverage.txt.gz", sample=FILES_CLAUDIA),
+#		expand("mapped_spacers/{sample}_1.bam", sample=SAMPLES),
+#		expand("crispr_tables/{sample}.txt", sample=SAMPLES)
+#		expand("megares/genes/{sample}.genes.txt", sample=FILES_PHILIPP),
+#		expand("coverage_ind_plots/{sample}.{genome}.pdf", sample=FILES_PHILIPP, genome=GENOMES)
+
+# Rules -------------------------------------------------------------------------
+
+include: "rules/preprocess.smk" # copy raw reads and runs fastp
+include: "rules/bwa.smk" # maps QC'ed reads against $REF
+include: "rules/bowtie2.smk"
+include: "rules/varscan.smk"
+include: "rules/igv.smk" # generates IGV genome viewer report
+#include: "../rules/bwa.smk" # mapping per sample
+include: "rules/lofreq.smk" # SNP calling per genome and sample
+#include: "../rules/coverage.smk" # coverage per sample per genome
+
