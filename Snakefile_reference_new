@@ -1,0 +1,9 @@
+REF_FILES_NEW, = glob_wildcards("databases/omm_new/{files}.fasta") # new OMM ref genomes
+
+rule all:
+	input:
+		expand("databases/omm_new/nucmer_delta/{sample}.delta", sample=REF_FILES_NEW),
+		expand("databases/omm_new/duplication_coords/{sample}.tsv", sample=REF_FILES_NEW),
+		expand("databases/omm_new/duplication_diff/{sample}.tsv", sample=REF_FILES_NEW)
+
+include: "rules/mummer.smk" # checks for similarities between OMM reference genomes
