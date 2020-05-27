@@ -1,102 +1,169 @@
-'''
-snakefile
-by ,Philipp Muench
+"""Based on the best-practices variant calling implementation LoFreq
+which can be found here https://github.com/gis-rpd/pipelines and in the
+lofreq github repo. Finishes with a bgzipped vcf file.
 
-Maps NGS data to OligoMM reference genomes and performs variant calling
-using the pooled samples
------------------------------------------------------------------------
+# Input: config-file with following fields:
+- bool mark_short_splits: for bwa mem -M
+- string bed: for bed-file limiting analysis to certain regions
+- int optional 'maxdepth': for limit per-site coverage in analysis
+- dict 'samples': sample names as keys and one fastq-pair each as value
+- string reference: reference fasta file
+- string outdir: where to save output
 
-Dependencies:
+# Pre-installed programs:
+- lofreq 2.1.2
+- bwa (with mem support e.g. 0.7.12)
+- samtools >= 1.3
 
-samtools
-	http://www.htslib.org/download/
+Notes:
+- If missing, the workflow will try to index your reference with 
+  samtools and bwa. This can lead to race conditions so is best
+  done in advance.
+"""
 
-fastp
-	https://github.com/OpenGene/fastp
-
-kneaddata
-	https://bitbucket.org/biobakery/kneaddata
-
-Trimmomatic
-	http://www.usadellab.org/cms/?page=trimmomatic
-
-bowtie2
-	http://bowtie-bio.sourceforge.net/bowtie2/index.shtml	
-
-Rscript
-	https://cran.r-project.org/mirrors.html
-
-sankeyD3 (R package)
-	https://github.com/fbreitwieser/sankeyD3
-
-networkD3 (R package)
-	https://cran.r-project.org/web/packages/networkD3/index.html
-
-bowtie2
-	http://bowtie-bio.sourceforge.net/bowtie2/	
-
-Usage:
-	snakemake --jobs 20 --use-conda
-'''
-
-# Config ----------------------------------------------------------------------
-
-import pandas as pd
 import os
 
-configfile: "config/config.yaml"
+shell.executable("/bin/bash")
+shell.prefix("set -euo pipefail;")
 
-# Globals ---------------------------------------------------------------------
-
-# name of sample to be processed
-SAMPLES = ["1423_S34"]
-
-FILES_CLAUDIA, = glob_wildcards("/net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/{files}_R1_001.fastq.gz")
-
-# path to reads where .fastq.gz files are located
-READS_PATH="/net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123"
-
-# dependencies
-#BOWTIE2_DIR="/net/metagenomics/projects/pmuench_oligomm_ab/tools/bowtie2-2.3.5.1-linux-x86_64"
-#PICARD_PATH="/net/metagenomics/projects/pmuench_oligomm_ab/tools/picard.jar"
-#TRIMMOMATIC_DIR="/net/metagenomics/projects/pmuench_oligomm_ab/tools/Trimmomatic-0.39"
-
-# DBs
-#KRAKEN_DB="/net/sgi/oligomm_ab/tools/kraken2/kraken2-2.0.7-beta/db/minikraken2_v2_8GB_201904_UPDATE"
-#MEGARES_REFERENCE="/net/sgi/oligomm_ab/tools/megares/megares_drugs_database_v2.00.fasta" # ABR database reference
-#MEGARES_ANNOT="/net/sgi/oligomm_ab/tools/megares/megares_drugs_annotations_v2.00.csv" # ABR annotation
-
-# bwa-indexed joined oligoMM reference file
-#REF="/net/sgi/oligomm_ab/OligoMM-report/databases/omm/joined_reference.fasta"
-#REF_ECOLI="/net/sgi/oligomm_ab/OligoMM-report/omm_plus_ecoli/joined_reference.fasta"
-
-# Target rule -------------------------------------------------------------------
+##########################################################################
+# define output files		   		      	 		 #
+##########################################################################
 
 rule all:
-	input:
-		expand("docs/reports/fastp/{sample}.html", sample=FILES_CLAUDIA),
-		expand("processed/{sample}/{sample}_bwa_mapped_omm_sorted.bam", sample=FILES_CLAUDIA),
-		expand("processed/{sample}/{sample}_bwa_mapped_omm_sorted.bam.bai", sample=FILES_CLAUDIA),
-		expand("processed/{sample}/{sample}_bowtie2_mapped_omm_sorted.bam", sample=FILES_CLAUDIA),
-		expand("processed/{sample}/{sample}_bowtie2_mapped_omm_sorted.bam.bai", sample=FILES_CLAUDIA),
-#		expand("processed/varscan/{sample}.vcf", sample=SAMPLES),
-#		expand("processed/lofreq_bwa_sorted/{sample}.vcf.gz", sample=SAMPLES),
-#		expand("processed/lofreq_bowtie2/{sample}.vcf.gz", sample=SAMPLES),
-#		expand("docs/igv/{sample}.html", sample=SAMPLES),
-#		expand("coverage/{sample}.coverage.txt.gz", sample=FILES_CLAUDIA),
-#		expand("mapped_spacers/{sample}_1.bam", sample=SAMPLES),
-#		expand("crispr_tables/{sample}.txt", sample=SAMPLES)
-#		expand("megares/genes/{sample}.genes.txt", sample=FILES_PHILIPP),
-#		expand("coverage_ind_plots/{sample}.{genome}.pdf", sample=FILES_PHILIPP, genome=GENOMES)
+    input:
+        expand(os.path.join(config['outdir'],
+	"{sample}/{sample}.vcf.gz"),
+	sample=config['samples'])
 
-# Rules -------------------------------------------------------------------------
+# helpers
+def get_file(s, elem = 0, trimmed = False):
+    if trimmed:
+        t = [sub + '.trimmed.fastq.gz' for sub in s]
+        return t[elem]
+    else:
+        return s[elem]
 
-include: "rules/preprocess.smk" # copy raw reads and runs fastp
-include: "rules/bwa.smk" # maps QC'ed reads against $REF
-include: "rules/bowtie2.smk"
-include: "rules/varscan.smk"
-include: "rules/igv.smk" # generates IGV genome viewer report
-#include: "../rules/bwa.smk" # mapping per sample
-include: "rules/lofreq.smk" # SNP calling per genome and sample
-#include: "../rules/coverage.smk" # coverage per sample per genome
+##########################################################################
+# define rules   		   		      	 		 #
+##########################################################################
 
+rule bwa_index:
+    input:
+        "{prefix}.{suffix}"
+    output:
+        "{prefix}.{suffix,(fasta|fa)}.pac",
+        "{prefix}.{suffix,(fasta|fa)}.bwt",
+        "{prefix}.{suffix,(fasta|fa)}.sa"
+    log:
+        "{prefix}.{suffix,(fasta|fa)}.index.log"
+    shell:
+        "bwa index {input} >& {log};"
+
+rule samtools_faidx:
+    input:
+        "{prefix}.{suffix}"
+    output:
+        "{prefix}.{suffix,(fasta|fa)}.fai",
+    log:
+        "{prefix}.{suffix,(fasta|fa)}.index.log"
+    shell:
+        "samtools faidx {input} >& {log};"
+
+rule fastp:
+    input:
+        fq1 = lambda wc: get_file(config['samples'][wc.sample], elem = 0),
+        fq2 = lambda wc: get_file(config['samples'][wc.sample], elem = 1),
+    output:
+        html = "{prefix}/{sample}.html",
+        o1 = "{prefix}/{sample}.R1.fastq.gz",
+        o2 = "{prefix}/{sample}.R2.fastq.gz"
+    log:
+        "{prefix}/{sample}.fastp.log"
+    threads:
+        8
+    shell:
+        "fastp --in1 {input.fq1} --in2 {input.fq2}"
+        " --out1 {output.o1} --out2 {output.o2} --html {output} >& {log};"
+
+rule samtools_index:
+    input:
+        "{prefix}.bam"
+    output:
+        "{prefix}.bam.bai",
+    log:
+        "{prefix}.bam.bai.log"
+    shell:
+        "samtools index {input} >& {log};"
+        
+rule bwamem_align:
+    input:
+        reffa = lambda wc: config['references'][wc.sample], 
+        bwaindex = lambda wc: config['references'][wc.sample] + ".bwt",
+#        fastqs = lambda wc: config['samples'][wc.sample],
+        fq1 = "{prefix}/{sample}.R1.fastq.gz",
+        fq2 = "{prefix}/{sample}.R2.fastq.gz"
+    output:
+        bam = "{prefix}/{sample}.bwamem.bam"
+    log:
+        "{prefix}/{sample}.bwamem.bam.log"
+    params:
+        mark_short_splits = "-M" if config['mark_short_splits'] else "",
+    message:
+        "Aligning PE reads, fixing mate information and converting to sorted BAM"
+    threads:
+        8
+    shell:
+        "{{ bwa mem {params.mark_short_splits} -t {threads}"
+        " {input.reffa} {input.fq1} {input.fq2} |"
+        " samtools fixmate - - |"
+	" samtools view -uq 1 |"
+        " samtools sort -o {output.bam} -T {output.bam}.tmp -; }} >& {log}" 
+
+rule lofreq_bam_processing:
+    """Runs BAM through full LoFreq preprocessing pipeline,
+    i.e. viterbi, alnqual, indelqual, followed by sort (required by
+    viterbi).
+
+    WARNING: running this on unsorted input files will be inefficient
+    because of constant reloading of the reference
+    """
+    input:
+        bam = '{prefix}/{sample}.bwamem.bam',
+        reffa = lambda wc: config['references'][wc.sample],
+        reffai = lambda wc: config['references'][wc.sample] + ".fai",
+    output:
+        bam = '{prefix}/{sample}.lofreq.bam'
+    log:
+        '{prefix}/{sample}.lofreq.log'
+    message:
+        "Preprocessing BAMs with LoFreq"
+    threads:
+        1
+    shell:
+        "{{ lofreq viterbi -f {input.reffa} {input.bam} | "
+        " lofreq alnqual -u - {input.reffa} | "
+        " lofreq indelqual --dindel -f {input.reffa} - | "
+        " samtools sort -o {output.bam} -T {output.bam}.tmp -; }} >& {log}"
+
+rule lofreq_call:
+    input:
+        bam = '{prefix}/{sample}.lofreq.bam',
+        bai = '{prefix}/{sample}.lofreq.bam.bai',
+        reffa = lambda wc: config['references'][wc.sample],
+        refidx = lambda wc: config['references'][wc.sample] + ".fai"
+    output:
+        vcf = '{prefix}/{sample}.vcf.gz'
+    log:
+        '{prefix}/{sample}.vcf.log'
+    message:
+        "Calling variants with LoFreq"
+    threads:
+        8
+    params:
+        maxdepth = config.get('maxdepth', 10000),
+        bed_arg = "-l {}".format(config['bed']) if config['bed'] else ""
+    shell:
+        "lofreq call-parallel --pp-threads {threads} --call-indels"
+        " {params.bed_arg} -f {input.reffa} -o {output.vcf}"
+        " -d {params.maxdepth} {input.bam} >& {log}"

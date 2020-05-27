@@ -1,0 +1,13 @@
+samples:
+  DR10:
+    - ngs/DR10_R1.fastq.gz
+    - ngs/DR10_R2.fastq.gz
+
+references:
+   DR1: data/references/KB1.fasta
+   DR3: data/references/I46.fasta
+   DR10: data/references/I46.fasta
+outdir: out/
+bed:
+maxdepth: 10000
+mark_short_splits: true
