@@ -1,0 +1,48 @@
+samples:
+  DR1:
+    - ngs/DR1_R1.fastq.gz
+    - ngs/DR1_R2.fastq.gz
+  DR3:
+    - ngs/DR3_R1.fastq.gz
+    - ngs/DR3_R2.fastq.gz
+  DR4:
+    - ngs/DR4_R1.fastq.gz
+    - ngs/DR4_R2.fastq.gz
+  DR6:
+    - ngs/DR6_R1.fastq.gz
+    - ngs/DR6_R2.fastq.gz
+  DR7:
+    - ngs/DR7_R1.fastq.gz
+    - ngs/DR7_R2.fastq.gz
+  DR8:
+    - ngs/DR8_R1.fastq.gz
+    - ngs/DR8_R2.fastq.gz
+  DR10:
+    - ngs/DR10_R1.fastq.gz
+    - ngs/DR10_R2.fastq.gz
+  DR11:
+    - ngs/DR11_R1.fastq.gz
+    - ngs/DR11_R2.fastq.gz
+  DR12:
+    - ngs/DR12_R1.fastq.gz
+    - ngs/DR12_R2.fastq.gz
+  DR13:
+    - ngs/DR13_R1.fastq.gz
+    - ngs/DR13_R2.fastq.gz
+
+references:
+   DR1: data/references/KB1.fasta
+   DR3: data/references/I46.fasta
+   DR4: data/references/KB1.fasta
+   DR6: data/references/I46.fasta
+   DR7: data/references/YL58.fasta
+   DR8: data/references/KB1.fasta
+   DR10: data/references/I46.fasta
+   DR11: data/references/KB1.fasta
+   DR12: data/references/I46.fasta
+   DR13: data/references/YL58.fasta
+
+outdir: out/
+bed:
+maxdepth: 10000
+mark_short_splits: true

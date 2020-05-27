@@ -14,6 +14,8 @@ lofreq github repo. Finishes with a bgzipped vcf file.
 - lofreq 2.1.2
 - bwa (with mem support e.g. 0.7.12)
 - samtools >= 1.3
+- bamCoverage
+- pilon
 
 Notes:
 - If missing, the workflow will try to index your reference with 
@@ -76,8 +78,8 @@ rule fastp:
         fq2 = lambda wc: get_file(config['samples'][wc.sample], elem = 1),
     output:
         html = "{prefix}/{sample}.html",
-        o1 = "{prefix}/{sample}.R1.fastq.gz",
-        o2 = "{prefix}/{sample}.R2.fastq.gz"
+        o1 = temp("{prefix}/{sample}.R1.fastq.gz"),
+        o2 = temp("{prefix}/{sample}.R2.fastq.gz")
     log:
         "{prefix}/{sample}.fastp.log"
     threads:
@@ -96,11 +98,20 @@ rule samtools_index:
     shell:
         "samtools index {input} >& {log};"
         
+rule bam_coverage:
+    input:
+        "{prefix}.bam"
+    output:
+        "{prefix}.bam.bw",
+    log:
+        "{prefix}.bam.bw.log"
+    shell:
+        "bamCoverage -b {input} -o {output} >& {log};"
+
 rule bwamem_align:
     input:
         reffa = lambda wc: config['references'][wc.sample], 
         bwaindex = lambda wc: config['references'][wc.sample] + ".bwt",
-#        fastqs = lambda wc: config['samples'][wc.sample],
         fq1 = "{prefix}/{sample}.R1.fastq.gz",
         fq2 = "{prefix}/{sample}.R2.fastq.gz"
     output:
@@ -117,7 +128,31 @@ rule bwamem_align:
         "{{ bwa mem {params.mark_short_splits} -t {threads}"
         " {input.reffa} {input.fq1} {input.fq2} |"
         " samtools fixmate - - |"
-	" samtools view -uq 1 |"
+	" samtools view -bq 1 |"
+        " samtools sort -o {output.bam} -T {output.bam}.tmp -; }} >& {log}" 
+
+rule bwamem_unfiltered:
+    """ Generates unfiltered .bam file for comparison in NBG, not included as a
+    output in rule_all
+    """
+    input:
+        reffa = lambda wc: config['references'][wc.sample], 
+        bwaindex = lambda wc: config['references'][wc.sample] + ".bwt",
+        fq1 = "{prefix}/{sample}.R1.fastq.gz",
+        fq2 = "{prefix}/{sample}.R2.fastq.gz"
+    output:
+        bam = "{prefix}/{sample}.unfiltered.bam"
+    log:
+        "{prefix}/{sample}.unfiltered.bam.log"
+    params:
+        mark_short_splits = "-M" if config['mark_short_splits'] else "",
+    message:
+        "Aligning PE reads, fixing mate information and converting to sorted BAM"
+    threads:
+        8
+    shell:
+        "{{ bwa mem {params.mark_short_splits} -t {threads}"
+        " {input.reffa} {input.fq1} {input.fq2} |"
         " samtools sort -o {output.bam} -T {output.bam}.tmp -; }} >& {log}" 
 
 rule lofreq_bam_processing:
@@ -129,7 +164,7 @@ rule lofreq_bam_processing:
     because of constant reloading of the reference
     """
     input:
-        bam = '{prefix}/{sample}.bwamem.bam',
+        bam = "{prefix}/{sample}.bwamem.bam",
         reffa = lambda wc: config['references'][wc.sample],
         reffai = lambda wc: config['references'][wc.sample] + ".fai",
     output:
@@ -146,10 +181,37 @@ rule lofreq_bam_processing:
         " lofreq indelqual --dindel -f {input.reffa} - | "
         " samtools sort -o {output.bam} -T {output.bam}.tmp -; }} >& {log}"
 
+rule pilon_refinement:
+    """Runs pilon on reference seqeunce using bam
+    """
+    input:
+        bam = "{prefix}/{sample}.bwamem.bam",
+        bai = "{prefix}/{sample}.bwamem.bam.bai",
+        reffa = lambda wc: config['references'][wc.sample],
+        reffai = lambda wc: config['references'][wc.sample] + ".fai",
+    output:
+        pilon = "{prefix}/{sample}_pilon/",
+        changes = "{prefix}/pilon/{sample}.changes",
+    log:
+        '{prefix}/{sample}_pilon/pilon.log'
+    message:
+        "run pilon on reference"
+    threads:
+        8
+    params:
+        output_dir = "out/{sample}/pilon",
+        output_prefix = "{sample}",
+        max_mem = "80G"
+    shell:
+        'pilon -Xmx{params.max_mem} --genome {input.reffa} --bam {input.bam}'
+        ' --output {params.output_prefix} --outdir {params.output_dir}'
+        ' --changes --fix all --threads {threads} 2> {log}'
+
 rule lofreq_call:
     input:
-        bam = '{prefix}/{sample}.lofreq.bam',
-        bai = '{prefix}/{sample}.lofreq.bam.bai',
+        bam = "{prefix}/{sample}.lofreq.bam",
+        bai = "{prefix}/{sample}.lofreq.bam.bai",
+        coverage = "{prefix}/{sample}.lofreq.bam.bw",
         reffa = lambda wc: config['references'][wc.sample],
         refidx = lambda wc: config['references'][wc.sample] + ".fai"
     output:
