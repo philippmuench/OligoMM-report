@@ -1,0 +1,102 @@
+samples:
+  1423_S34:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1423_S34_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1423_S34_R2.fastq.gz
+  1425_S35:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1425_S35_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1425_S35_R2.fastq.gz
+  1607_S23:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1607_S23_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1607_S23_R2.fastq.gz
+  1612_S24:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1612_S24_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1612_S24_R2.fastq.gz
+  1660_S26:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1660_S26_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1660_S26_R2.fastq.gz
+  1664_S28:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1664_S28_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1664_S28_R2.fastq.gz
+  1750_S27:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1750_S27_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1750_S27_R2.fastq.gz
+  1753_S29:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1753_S29_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1753_S29_R2.fastq.gz
+  1779_S30:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1779_S30_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1779_S30_R2.fastq.gz
+  1783_S31:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1783_S31_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1783_S31_R2.fastq.gz
+  1789_S32:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1789_S32_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1789_S32_R2.fastq.gz
+  1801_S33:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1801_S33_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1801_S33_R2.fastq.gz
+  1807_S42:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1807_S42_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1807_S42_R2.fastq.gz
+  1814_S43:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1814_S43_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1814_S43_R2.fastq.gz
+  1815_S44:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1815_S44_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1815_S44_R2.fastq.gz
+  1877_S25:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1877_S25_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1877_S25_R2.fastq.gz
+  1880_S37:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1880_S37_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1880_S37_R2.fastq.gz
+  1881_S38:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1881_S38_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1881_S38_R2.fastq.gz
+  1882_S39:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1882_S39_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1882_S39_R2.fastq.gz
+  1883_S40:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1883_S40_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1883_S40_R2.fastq.gz
+  1884_S41:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1884_S41_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1884_S41_R2.fastq.gz
+  1885_S36:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1885_S36_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/1885_S36_R2.fastq.gz
+  I_cc_S46:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/I_cc_S46_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/I_cc_S46_R2.fastq.gz
+  I_mix_S45:
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/I_mix_S45_R1.fastq.gz
+    - /net/metagenomics/projects/pmuench_oligomm_ab/ftp_reads/genome.gbf.de/HZI_BIFO/bifouser/19-0123/I_mix_S45_R2.fastq.gz
+references:
+  1423_S34: data/references/joined_reference_curated.fasta
+  1425_S35: data/references/joined_reference_curated_ecoli.fasta
+  1607_S23: data/references/joined_reference_curated.fasta
+  1612_S24: data/references/joined_reference_curated_ecoli.fasta
+  1660_S26: data/references/joined_reference_curated_ecoli.fasta
+  1664_S28: data/references/joined_reference_curated.fasta
+  1750_S27: data/references/joined_reference_curated.fasta
+  1753_S29: data/references/joined_reference_curated_ecoli.fasta
+  1779_S30: data/references/joined_reference_curated.fasta
+  1783_S31: data/references/joined_reference_curated_ecoli.fasta
+  1789_S32: data/references/joined_reference_curated.fasta
+  1801_S33: data/references/joined_reference_curated_ecoli.fasta
+  1807_S42: data/references/joined_reference_curated.fasta
+  1814_S43: data/references/joined_reference_curated_ecoli.fasta
+  1815_S44: data/references/joined_reference_curated_ecoli.fasta
+  1877_S25: data/references/joined_reference_curated_ecoli.fasta
+  1880_S37: data/references/joined_reference_curated_ecoli.fasta
+  1881_S38: data/references/joined_reference_curated_ecoli.fasta
+  1882_S39: data/references/joined_reference_curated_ecoli.fasta
+  1883_S40: data/references/joined_reference_curated_ecoli.fasta
+  1884_S41: data/references/joined_reference_curated_ecoli.fasta
+  1885_S36: data/references/joined_reference_curated.fasta
+  I_cc_S46: data/references/joined_reference_curated.fasta
+  I_mix_S45: data/references/joined_reference_curated.fasta
+outdir: out_claudia/
+bed:
+maxdepth: 10000
+mark_short_splits: true

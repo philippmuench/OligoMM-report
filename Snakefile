@@ -100,13 +100,14 @@ rule samtools_index:
         
 rule bam_coverage:
     input:
-        "{prefix}.bam"
+         bam="{prefix}.bam",
+         bai="{prefix}.bam.bai"
     output:
         "{prefix}.bam.bw",
     log:
         "{prefix}.bam.bw.log"
     shell:
-        "bamCoverage -b {input} -o {output} >& {log};"
+        "bamCoverage -b {input.bam} -o {output} >& {log};"
 
 rule bwamem_align:
     input:
@@ -115,7 +116,7 @@ rule bwamem_align:
         fq1 = "{prefix}/{sample}.R1.fastq.gz",
         fq2 = "{prefix}/{sample}.R2.fastq.gz"
     output:
-        bam = "{prefix}/{sample}.bwamem.bam"
+        bam = temp("{prefix}/{sample}.bwamem.bam")
     log:
         "{prefix}/{sample}.bwamem.bam.log"
     params:
@@ -167,6 +168,7 @@ rule lofreq_bam_processing:
         bam = "{prefix}/{sample}.bwamem.bam",
         reffa = lambda wc: config['references'][wc.sample],
         reffai = lambda wc: config['references'][wc.sample] + ".fai",
+        refadditionalbam = "{prefix}/{sample}.bwamem.bam.bai"
     output:
         bam = '{prefix}/{sample}.lofreq.bam'
     log:

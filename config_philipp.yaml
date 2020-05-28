@@ -1,0 +1,451 @@
+samples:
+  1681d00_S56:
+    - ngs_philipp/1681d00_S56_R1.fastq.gz
+    - ngs_philipp/1681d00_S56_R2.fastq.gz
+  1681d14_S57:
+    - ngs_philipp/1681d14_S57_R1.fastq.gz
+    - ngs_philipp/1681d14_S57_R2.fastq.gz
+  1681d30_S58:
+    - ngs_philipp/1681d30_S58_R1.fastq.gz
+    - ngs_philipp/1681d30_S58_R2.fastq.gz
+  1681d49_S59:
+    - ngs_philipp/1681d49_S59_R1.fastq.gz
+    - ngs_philipp/1681d49_S59_R2.fastq.gz
+  1681d63_S60:
+    - ngs_philipp/1681d63_S60_R1.fastq.gz
+    - ngs_philipp/1681d63_S60_R2.fastq.gz
+  1681d79_S61:
+    - ngs_philipp/1681d79_S61_R1.fastq.gz
+    - ngs_philipp/1681d79_S61_R2.fastq.gz
+  1683d00_S47:
+    - ngs_philipp/1683d00_S47_R1.fastq.gz
+    - ngs_philipp/1683d00_S47_R2.fastq.gz
+  1683d04_S48:
+    - ngs_philipp/1683d04_S48_R1.fastq.gz
+    - ngs_philipp/1683d04_S48_R2.fastq.gz
+  1683d09_S49:
+    - ngs_philipp/1683d09_S49_R1.fastq.gz
+    - ngs_philipp/1683d09_S49_R2.fastq.gz
+  1683d14_S50:
+    - ngs_philipp/1683d14_S50_R1.fastq.gz
+    - ngs_philipp/1683d14_S50_R2.fastq.gz
+  1683d18_S51:
+    - ngs_philipp/1683d18_S51_R1.fastq.gz
+    - ngs_philipp/1683d18_S51_R2.fastq.gz
+  1683d23_S52:
+    - ngs_philipp/1683d23_S52_R1.fastq.gz
+    - ngs_philipp/1683d23_S52_R2.fastq.gz
+  1683d30_S53:
+    - ngs_philipp/1683d30_S53_R1.fastq.gz
+    - ngs_philipp/1683d30_S53_R2.fastq.gz
+  1683d44_S55:
+    - ngs_philipp/1683d44_S55_R1.fastq.gz
+    - ngs_philipp/1683d44_S55_R2.fastq.gz
+  1683d49_S56:
+    - ngs_philipp/1683d49_S56_R1.fastq.gz
+    - ngs_philipp/1683d49_S56_R2.fastq.gz
+  1683d53_S57:
+    - ngs_philipp/1683d53_S57_R1.fastq.gz
+    - ngs_philipp/1683d53_S57_R2.fastq.gz
+  1683d58_S58:
+    - ngs_philipp/1683d58_S58_R1.fastq.gz
+    - ngs_philipp/1683d58_S58_R2.fastq.gz
+  1683d63_S59:
+    - ngs_philipp/1683d63_S59_R1.fastq.gz
+    - ngs_philipp/1683d63_S59_R2.fastq.gz
+  1683d67_S60:
+    - ngs_philipp/1683d67_S60_R1.fastq.gz
+    - ngs_philipp/1683d67_S60_R2.fastq.gz
+  1683d72_S61:
+    - ngs_philipp/1683d72_S61_R1.fastq.gz
+    - ngs_philipp/1683d72_S61_R2.fastq.gz
+  1683d79_S62:
+    - ngs_philipp/1683d79_S62_R1.fastq.gz
+    - ngs_philipp/1683d79_S62_R2.fastq.gz
+  1684d00_S62:
+    - ngs_philipp/1684d00_S62_R1.fastq.gz
+    - ngs_philipp/1684d00_S62_R2.fastq.gz
+  1684d14_S63:
+    - ngs_philipp/1684d14_S63_R1.fastq.gz
+    - ngs_philipp/1684d14_S63_R2.fastq.gz
+  1684d30_S64:
+    - ngs_philipp/1684d30_S64_R1.fastq.gz
+    - ngs_philipp/1684d30_S64_R2.fastq.gz
+  1684d49_S65:
+    - ngs_philipp/1684d49_S65_R1.fastq.gz
+    - ngs_philipp/1684d49_S65_R2.fastq.gz
+  1684d63_S66:
+    - ngs_philipp/1684d63_S66_R1.fastq.gz
+    - ngs_philipp/1684d63_S66_R2.fastq.gz
+  1684d79_S67:
+    - ngs_philipp/1684d79_S67_R1.fastq.gz
+    - ngs_philipp/1684d79_S67_R2.fastq.gz
+  1686d00_S69:
+    - ngs_philipp/1686d00_S69_R1.fastq.gz
+    - ngs_philipp/1686d00_S69_R2.fastq.gz
+  1686d14_S70:
+    - ngs_philipp/1686d14_S70_R1.fastq.gz
+    - ngs_philipp/1686d14_S70_R2.fastq.gz
+  1686d30_S71:
+    - ngs_philipp/1686d30_S71_R1.fastq.gz
+    - ngs_philipp/1686d30_S71_R2.fastq.gz
+  1686d49_S72:
+    - ngs_philipp/1686d49_S72_R1.fastq.gz
+    - ngs_philipp/1686d49_S72_R2.fastq.gz
+  1686d63_S73:
+    - ngs_philipp/1686d63_S73_R1.fastq.gz
+    - ngs_philipp/1686d63_S73_R2.fastq.gz
+  1686d79_S74:
+    - ngs_philipp/1686d79_S74_R1.fastq.gz
+    - ngs_philipp/1686d79_S74_R2.fastq.gz
+  1688d00_S1:
+    - ngs_philipp/1688d00_S1_R1.fastq.gz
+    - ngs_philipp/1688d00_S1_R2.fastq.gz
+  1688d04_S2:
+    - ngs_philipp/1688d04_S2_R1.fastq.gz
+    - ngs_philipp/1688d04_S2_R2.fastq.gz
+  1688d09_S3:
+    - ngs_philipp/1688d09_S3_R1.fastq.gz
+    - ngs_philipp/1688d09_S3_R2.fastq.gz
+  1688d14_S4:
+    - ngs_philipp/1688d14_S4_R1.fastq.gz
+    - ngs_philipp/1688d14_S4_R2.fastq.gz
+  1688d18_S5:
+    - ngs_philipp/1688d18_S5_R1.fastq.gz
+    - ngs_philipp/1688d18_S5_R2.fastq.gz
+  1688d23_S6:
+    - ngs_philipp/1688d23_S6_R1.fastq.gz
+    - ngs_philipp/1688d23_S6_R2.fastq.gz
+  1688d30_S7:
+    - ngs_philipp/1688d30_S7_R1.fastq.gz
+    - ngs_philipp/1688d30_S7_R2.fastq.gz
+  1688d37_S8:
+    - ngs_philipp/1688d37_S8_R1.fastq.gz
+    - ngs_philipp/1688d37_S8_R2.fastq.gz
+  1688d44_S9:
+    - ngs_philipp/1688d44_S9_R1.fastq.gz
+    - ngs_philipp/1688d44_S9_R2.fastq.gz
+  1688d49_S10:
+    - ngs_philipp/1688d49_S10_R1.fastq.gz
+    - ngs_philipp/1688d49_S10_R2.fastq.gz
+  1688d53_S11:
+    - ngs_philipp/1688d53_S11_R1.fastq.gz
+    - ngs_philipp/1688d53_S11_R2.fastq.gz
+  1688d58_S12:
+    - ngs_philipp/1688d58_S12_R1.fastq.gz
+    - ngs_philipp/1688d58_S12_R2.fastq.gz
+  1688d63_S13:
+    - ngs_philipp/1688d63_S13_R1.fastq.gz
+    - ngs_philipp/1688d63_S13_R2.fastq.gz
+  1688d67_S14:
+    - ngs_philipp/1688d67_S14_R1.fastq.gz
+    - ngs_philipp/1688d67_S14_R2.fastq.gz
+  1688d72_S15:
+    - ngs_philipp/1688d72_S15_R1.fastq.gz
+    - ngs_philipp/1688d72_S15_R2.fastq.gz
+  1688d79_S16:
+    - ngs_philipp/1688d79_S16_R1.fastq.gz
+    - ngs_philipp/1688d79_S16_R2.fastq.gz
+  1690d00_S75:
+    - ngs_philipp/1690d00_S75_R1.fastq.gz
+    - ngs_philipp/1690d00_S75_R2.fastq.gz
+  1690d14_S76:
+    - ngs_philipp/1690d14_S76_R1.fastq.gz
+    - ngs_philipp/1690d14_S76_R2.fastq.gz
+  1690d30_S77:
+    - ngs_philipp/1690d30_S77_R1.fastq.gz
+    - ngs_philipp/1690d30_S77_R2.fastq.gz
+  1690d49_S78:
+    - ngs_philipp/1690d49_S78_R1.fastq.gz
+    - ngs_philipp/1690d49_S78_R2.fastq.gz
+  1690d63_S79:
+    - ngs_philipp/1690d63_S79_R1.fastq.gz
+    - ngs_philipp/1690d63_S79_R2.fastq.gz
+  1690d79_S80:
+    - ngs_philipp/1690d79_S80_R1.fastq.gz
+    - ngs_philipp/1690d79_S80_R2.fastq.gz
+  1692d00_S17:
+    - ngs_philipp/1692d00_S17_R1.fastq.gz
+    - ngs_philipp/1692d00_S17_R2.fastq.gz
+  1692d04_S18:
+    - ngs_philipp/1692d04_S18_R1.fastq.gz
+    - ngs_philipp/1692d04_S18_R2.fastq.gz
+  1692d09_S19:
+    - ngs_philipp/1692d09_S19_R1.fastq.gz
+    - ngs_philipp/1692d09_S19_R2.fastq.gz
+  1692d14_S20:
+    - ngs_philipp/1692d14_S20_R1.fastq.gz
+    - ngs_philipp/1692d14_S20_R2.fastq.gz
+  1692d18_S21:
+    - ngs_philipp/1692d18_S21_R1.fastq.gz
+    - ngs_philipp/1692d18_S21_R2.fastq.gz
+  1692d23_S22:
+    - ngs_philipp/1692d23_S22_R1.fastq.gz
+    - ngs_philipp/1692d23_S22_R2.fastq.gz
+  1692d30_S23:
+    - ngs_philipp/1692d30_S23_R1.fastq.gz
+    - ngs_philipp/1692d30_S23_R2.fastq.gz
+  1692d37_S24:
+    - ngs_philipp/1692d37_S24_R1.fastq.gz
+    - ngs_philipp/1692d37_S24_R2.fastq.gz
+  1692d44_S25:
+    - ngs_philipp/1692d44_S25_R1.fastq.gz
+    - ngs_philipp/1692d44_S25_R2.fastq.gz
+  1692d49_S26:
+    - ngs_philipp/1692d49_S26_R1.fastq.gz
+    - ngs_philipp/1692d49_S26_R2.fastq.gz
+  1692d53_S27:
+    - ngs_philipp/1692d53_S27_R1.fastq.gz
+    - ngs_philipp/1692d53_S27_R2.fastq.gz
+  1692d58_S28:
+    - ngs_philipp/1692d58_S28_R1.fastq.gz
+    - ngs_philipp/1692d58_S28_R2.fastq.gz
+  1692d63_S29:
+    - ngs_philipp/1692d63_S29_R1.fastq.gz
+    - ngs_philipp/1692d63_S29_R2.fastq.gz
+  1692d67_S30:
+    - ngs_philipp/1692d67_S30_R1.fastq.gz
+    - ngs_philipp/1692d67_S30_R2.fastq.gz
+  1692d72_S31:
+    - ngs_philipp/1692d72_S31_R1.fastq.gz
+    - ngs_philipp/1692d72_S31_R2.fastq.gz
+  1692d79_S32:
+    - ngs_philipp/1692d79_S32_R1.fastq.gz
+    - ngs_philipp/1692d79_S32_R2.fastq.gz
+  1693d00_S81:
+    - ngs_philipp/1693d00_S81_R1.fastq.gz
+    - ngs_philipp/1693d00_S81_R2.fastq.gz
+  1693d14_S82:
+    - ngs_philipp/1693d14_S82_R1.fastq.gz
+    - ngs_philipp/1693d14_S82_R2.fastq.gz
+  1693d30_S83:
+    - ngs_philipp/1693d30_S83_R1.fastq.gz
+    - ngs_philipp/1693d30_S83_R2.fastq.gz
+  1693d49_S84:
+    - ngs_philipp/1693d49_S84_R1.fastq.gz
+    - ngs_philipp/1693d49_S84_R2.fastq.gz
+  1693d63_S85:
+    - ngs_philipp/1693d63_S85_R1.fastq.gz
+    - ngs_philipp/1693d63_S85_R2.fastq.gz
+  1693d79_S86:
+    - ngs_philipp/1693d79_S86_R1.fastq.gz
+    - ngs_philipp/1693d79_S86_R2.fastq.gz
+  1694d00_S87:
+    - ngs_philipp/1694d00_S87_R1.fastq.gz
+    - ngs_philipp/1694d00_S87_R2.fastq.gz
+  1694d14_S88:
+    - ngs_philipp/1694d14_S88_R1.fastq.gz
+    - ngs_philipp/1694d14_S88_R2.fastq.gz
+  1694d30_S89:
+    - ngs_philipp/1694d30_S89_R1.fastq.gz
+    - ngs_philipp/1694d30_S89_R2.fastq.gz
+  1694d49_S90:
+    - ngs_philipp/1694d49_S90_R1.fastq.gz
+    - ngs_philipp/1694d49_S90_R2.fastq.gz
+  1694d63_S91:
+    - ngs_philipp/1694d63_S91_R1.fastq.gz
+    - ngs_philipp/1694d63_S91_R2.fastq.gz
+  1694d79_S43:
+    - ngs_philipp/1694d79_S43_R1.fastq.gz
+    - ngs_philipp/1694d79_S43_R2.fastq.gz
+  1697d00_S50:
+    - ngs_philipp/1697d00_S50_R1.fastq.gz
+    - ngs_philipp/1697d00_S50_R2.fastq.gz
+  1697d14_S51:
+    - ngs_philipp/1697d14_S51_R1.fastq.gz
+    - ngs_philipp/1697d14_S51_R2.fastq.gz
+  1697d30_S52:
+    - ngs_philipp/1697d30_S52_R1.fastq.gz
+    - ngs_philipp/1697d30_S52_R2.fastq.gz
+  1697d49_S53:
+    - ngs_philipp/1697d49_S53_R1.fastq.gz
+    - ngs_philipp/1697d49_S53_R2.fastq.gz
+  1697d63_S54:
+    - ngs_philipp/1697d63_S54_R1.fastq.gz
+    - ngs_philipp/1697d63_S54_R2.fastq.gz
+  1697d79_S55:
+    - ngs_philipp/1697d79_S55_R1.fastq.gz
+    - ngs_philipp/1697d79_S55_R2.fastq.gz
+  1698d00_S44:
+    - ngs_philipp/1698d00_S44_R1.fastq.gz
+    - ngs_philipp/1698d00_S44_R2.fastq.gz
+  1698d14_S45:
+    - ngs_philipp/1698d14_S45_R1.fastq.gz
+    - ngs_philipp/1698d14_S45_R2.fastq.gz
+  1698d30_S46:
+    - ngs_philipp/1698d30_S46_R1.fastq.gz
+    - ngs_philipp/1698d30_S46_R2.fastq.gz
+  1698d49_S47:
+    - ngs_philipp/1698d49_S47_R1.fastq.gz
+    - ngs_philipp/1698d49_S47_R2.fastq.gz
+  1698d63_S48:
+    - ngs_philipp/1698d63_S48_R1.fastq.gz
+    - ngs_philipp/1698d63_S48_R2.fastq.gz
+  1698d79_S49:
+    - ngs_philipp/1698d79_S49_R1.fastq.gz
+    - ngs_philipp/1698d79_S49_R2.fastq.gz
+  1699d00_S33:
+    - ngs_philipp/1699d00_S33_R1.fastq.gz
+    - ngs_philipp/1699d00_S33_R2.fastq.gz
+  1699d04_S34:
+    - ngs_philipp/1699d04_S34_R1.fastq.gz
+    - ngs_philipp/1699d04_S34_R2.fastq.gz
+  1699d09_S35:
+    - ngs_philipp/1699d09_S35_R1.fastq.gz
+    - ngs_philipp/1699d09_S35_R2.fastq.gz
+  1699d14_S36:
+    - ngs_philipp/1699d14_S36_R1.fastq.gz
+    - ngs_philipp/1699d14_S36_R2.fastq.gz
+  1699d18_S37:
+    - ngs_philipp/1699d18_S37_R1.fastq.gz
+    - ngs_philipp/1699d18_S37_R2.fastq.gz
+  1699d23_S38:
+    - ngs_philipp/1699d23_S38_R1.fastq.gz
+    - ngs_philipp/1699d23_S38_R2.fastq.gz
+  1699d30_S39:
+    - ngs_philipp/1699d30_S39_R1.fastq.gz
+    - ngs_philipp/1699d30_S39_R2.fastq.gz
+  1699d37_S40:
+    - ngs_philipp/1699d37_S40_R1.fastq.gz
+    - ngs_philipp/1699d37_S40_R2.fastq.gz
+  1699d44_S41:
+    - ngs_philipp/1699d44_S41_R1.fastq.gz
+    - ngs_philipp/1699d44_S41_R2.fastq.gz
+  1699d49_S42:
+    - ngs_philipp/1699d49_S42_R1.fastq.gz
+    - ngs_philipp/1699d49_S42_R2.fastq.gz
+  1699d53_S63:
+    - ngs_philipp/1699d53_S63_R1.fastq.gz
+    - ngs_philipp/1699d53_S63_R2.fastq.gz
+  1699d58_S64:
+    - ngs_philipp/1699d58_S64_R1.fastq.gz
+    - ngs_philipp/1699d58_S64_R2.fastq.gz
+  1699d63_S65:
+    - ngs_philipp/1699d63_S65_R1.fastq.gz
+    - ngs_philipp/1699d63_S65_R2.fastq.gz
+  1699d67_S66:
+    - ngs_philipp/1699d67_S66_R1.fastq.gz
+    - ngs_philipp/1699d67_S66_R2.fastq.gz
+  1699d72_S67:
+    - ngs_philipp/1699d72_S67_R1.fastq.gz
+    - ngs_philipp/1699d72_S67_R2.fastq.gz
+  1699d79_S68:
+    - ngs_philipp/1699d79_S68_R1.fastq.gz
+    - ngs_philipp/1699d79_S68_R2.fastq.gz
+references:
+  1681d00_S56: data/references/joined_reference_curated.fasta
+  1681d14_S57: data/references/joined_reference_curated.fasta
+  1681d30_S58: data/references/joined_reference_curated.fasta
+  1681d49_S59: data/references/joined_reference_curated.fasta
+  1681d63_S60: data/references/joined_reference_curated.fasta
+  1681d79_S61: data/references/joined_reference_curated.fasta
+  1683d00_S47: data/references/joined_reference_curated.fasta
+  1683d04_S48: data/references/joined_reference_curated.fasta
+  1683d09_S49: data/references/joined_reference_curated.fasta
+  1683d14_S50: data/references/joined_reference_curated.fasta
+  1683d18_S51: data/references/joined_reference_curated.fasta
+  1683d23_S52: data/references/joined_reference_curated.fasta
+  1683d30_S53: data/references/joined_reference_curated.fasta
+  1683d37_S54: data/references/joined_reference_curated.fasta
+  1683d44_S55: data/references/joined_reference_curated.fasta
+  1683d49_S56: data/references/joined_reference_curated.fasta
+  1683d53_S57: data/references/joined_reference_curated.fasta
+  1683d58_S58: data/references/joined_reference_curated.fasta
+  1683d63_S59: data/references/joined_reference_curated.fasta
+  1683d67_S60: data/references/joined_reference_curated.fasta
+  1683d72_S61: data/references/joined_reference_curated.fasta
+  1683d79_S62: data/references/joined_reference_curated.fasta
+  1684d00_S62: data/references/joined_reference_curated.fasta
+  1684d14_S63: data/references/joined_reference_curated.fasta
+  1684d30_S64: data/references/joined_reference_curated.fasta
+  1684d49_S65: data/references/joined_reference_curated.fasta
+  1684d63_S66: data/references/joined_reference_curated.fasta
+  1684d79_S67: data/references/joined_reference_curated.fasta
+  1686d00_S69: data/references/joined_reference_curated.fasta
+  1686d14_S70: data/references/joined_reference_curated.fasta
+  1686d30_S71: data/references/joined_reference_curated.fasta
+  1686d49_S72: data/references/joined_reference_curated.fasta
+  1686d63_S73: data/references/joined_reference_curated.fasta
+  1686d79_S74: data/references/joined_reference_curated.fasta
+  1688d00_S1: data/references/joined_reference_curated.fasta
+  1688d04_S2: data/references/joined_reference_curated.fasta
+  1688d09_S3: data/references/joined_reference_curated.fasta
+  1688d14_S4: data/references/joined_reference_curated.fasta
+  1688d18_S5: data/references/joined_reference_curated.fasta
+  1688d23_S6: data/references/joined_reference_curated.fasta
+  1688d30_S7: data/references/joined_reference_curated.fasta
+  1688d37_S8: data/references/joined_reference_curated.fasta
+  1688d44_S9: data/references/joined_reference_curated.fasta
+  1688d49_S10: data/references/joined_reference_curated.fasta
+  1688d53_S11: data/references/joined_reference_curated.fasta
+  1688d58_S12: data/references/joined_reference_curated.fasta
+  1688d63_S13: data/references/joined_reference_curated.fasta
+  1688d67_S14: data/references/joined_reference_curated.fasta
+  1688d72_S15: data/references/joined_reference_curated.fasta
+  1688d79_S16: data/references/joined_reference_curated.fasta
+  1690d00_S75: data/references/joined_reference_curated.fasta
+  1690d14_S76: data/references/joined_reference_curated.fasta
+  1690d30_S77: data/references/joined_reference_curated.fasta
+  1690d49_S78: data/references/joined_reference_curated.fasta
+  1690d63_S79: data/references/joined_reference_curated.fasta
+  1690d79_S80: data/references/joined_reference_curated.fasta
+  1692d00_S17: data/references/joined_reference_curated.fasta
+  1692d04_S18: data/references/joined_reference_curated.fasta
+  1692d09_S19: data/references/joined_reference_curated.fasta
+  1692d14_S20: data/references/joined_reference_curated.fasta
+  1692d18_S21: data/references/joined_reference_curated.fasta
+  1692d23_S22: data/references/joined_reference_curated.fasta
+  1692d30_S23: data/references/joined_reference_curated.fasta
+  1692d37_S24: data/references/joined_reference_curated.fasta
+  1692d44_S25: data/references/joined_reference_curated.fasta
+  1692d49_S26: data/references/joined_reference_curated.fasta
+  1692d53_S27: data/references/joined_reference_curated.fasta
+  1692d58_S28: data/references/joined_reference_curated.fasta
+  1692d63_S29: data/references/joined_reference_curated.fasta
+  1692d67_S30: data/references/joined_reference_curated.fasta
+  1692d72_S31: data/references/joined_reference_curated.fasta
+  1692d79_S32: data/references/joined_reference_curated.fasta
+  1693d00_S81: data/references/joined_reference_curated.fasta
+  1693d14_S82: data/references/joined_reference_curated.fasta
+  1693d30_S83: data/references/joined_reference_curated.fasta
+  1693d49_S84: data/references/joined_reference_curated.fasta
+  1693d63_S85: data/references/joined_reference_curated.fasta
+  1693d79_S86: data/references/joined_reference_curated.fasta
+  1694d00_S87: data/references/joined_reference_curated.fasta
+  1694d14_S88: data/references/joined_reference_curated.fasta
+  1694d30_S89: data/references/joined_reference_curated.fasta
+  1694d49_S90: data/references/joined_reference_curated.fasta
+  1694d63_S91: data/references/joined_reference_curated.fasta
+  1694d79_S43: data/references/joined_reference_curated.fasta
+  1697d00_S50: data/references/joined_reference_curated.fasta
+  1697d14_S51: data/references/joined_reference_curated.fasta
+  1697d30_S52: data/references/joined_reference_curated.fasta
+  1697d49_S53: data/references/joined_reference_curated.fasta
+  1697d63_S54: data/references/joined_reference_curated.fasta
+  1697d79_S55: data/references/joined_reference_curated.fasta
+  1698d00_S44: data/references/joined_reference_curated.fasta
+  1698d14_S45: data/references/joined_reference_curated.fasta
+  1698d30_S46: data/references/joined_reference_curated.fasta
+  1698d49_S47: data/references/joined_reference_curated.fasta
+  1698d63_S48: data/references/joined_reference_curated.fasta
+  1698d79_S49: data/references/joined_reference_curated.fasta
+  1699d00_S33: data/references/joined_reference_curated.fasta
+  1699d04_S34: data/references/joined_reference_curated.fasta
+  1699d09_S35: data/references/joined_reference_curated.fasta
+  1699d14_S36: data/references/joined_reference_curated.fasta
+  1699d18_S37: data/references/joined_reference_curated.fasta
+  1699d23_S38: data/references/joined_reference_curated.fasta
+  1699d30_S39: data/references/joined_reference_curated.fasta
+  1699d37_S40: data/references/joined_reference_curated.fasta
+  1699d44_S41: data/references/joined_reference_curated.fasta
+  1699d49_S42: data/references/joined_reference_curated.fasta
+  1699d53_S63: data/references/joined_reference_curated.fasta
+  1699d58_S64: data/references/joined_reference_curated.fasta
+  1699d63_S65: data/references/joined_reference_curated.fasta
+  1699d67_S66: data/references/joined_reference_curated.fasta
+  1699d72_S67_: data/references/joined_reference_curated.fasta
+  1699d79_S68: data/references/joined_reference_curated.fasta
+outdir: out_philipp/
+bed:
+maxdepth: 10000
+mark_short_splits: false

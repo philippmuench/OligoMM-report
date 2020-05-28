@@ -42,7 +42,7 @@ references:
    DR12: data/references/I46.fasta
    DR13: data/references/YL58.fasta
 
-outdir: out/
+outdir: reseq/
 bed:
 maxdepth: 10000
 mark_short_splits: true
