@@ -76,11 +76,30 @@ translateMouseIdToTreatmentGroup <- function(dat) {
 		replace(. == "1681", "Water") %>% 
 		replace(. == "1684", "Water") %>% 
 		replace(. == "1686", "Ciprofloxacin") %>% 
+		replace(. == "1687", "Ciprofloxacin") %>% 
 		replace(. == "1690", "Ciprofloxacin") %>% 
+		replace(. == "1691", "Tetracyclin") %>% 
 		replace(. == "1693", "Tetracyclin") %>% 
 		replace(. == "1694", "Tetracyclin") %>% 
+		replace(. == "1696", "Vancomycin") %>% 
 		replace(. == "1697", "Vancomycin") %>% 
 		replace(. == "1698", "Vancomycin")
+	return(dat)
+}
+
+# for reseq samples
+translateSampletoMouse <- function(dat) {
+	require(dplyr)
+	dat <- dat %>% replace(. == "DR1", "1681") %>% 
+		replace(. == "DR8", "1691")  %>% 
+		replace(. == "DR11", "1696")  %>% 
+		replace(. == "DR3", "1681")  %>% 
+		replace(. == "DR6", "1687")  %>% 
+		replace(. == "DR10", "1691")  %>% 
+		replace(. == "DR12", "1696")  %>% 
+		replace(. == "DR7", "1687")  %>% 
+		replace(. == "DR4", "1687")  %>% 
+		replace(. == "DR13", "1696")
 	return(dat)
 }
 
