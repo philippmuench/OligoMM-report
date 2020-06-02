@@ -1,0 +1,518 @@
+# Resequencing
+
+## Metadata
+
+| Sample | Genome | Group | Species |
+| -------- | -------- | -------- | -------- |
+| DR4 | KB1 | 1687| Enterococcus_faecalis  |
+| DR1 | KB1 | 1681 | Enterococcus_faecalis  |
+| DR8 | KB1 | 1691| Enterococcus_faecalis|
+| DR11 | KB1 | 1696 | Enterococcus_faecalis|
+| DR3 | I46 | 1681 |Clostridium_innocuum |
+| DR6 | I46 | 1687 | Clostridium_innocuum|
+| DR10 | I46 | 1691 |Clostridium_innocuum |
+| DR12 | I46 | 1696 | Clostridium_innocuum|
+| DR7 | YL58 | 1687 |Blautia_coccoides |
+| DR13 | YL58 | 1696 | Blautia_coccoides|
+
+## Load in variants
+
+```{r}
+source("utils.R")
+orf_shapes =  c("coding" = 15, "non-coding" = 3)
+
+vcfToDataframe <- function(vcf.files, contig_mapping = read.csv2("data/contig_genome_mapping.csv"), gff.df = gff.df, varscan = F) {
+	require(vcfR)
+	res <- list()
+	for (file in vcf.files) {
+		message(file)
+		vcf.content <- vcfR::read.vcfR(file, verbose = FALSE)
+		vcf.fix <- as.data.frame(vcf.content@fix) # contains chr, position and substitution informations
+		vcf.info <- vcfR::INFO2df(vcf.content) # get INFO field, contains DP, AF informations
+	   # no annotation since they are not yet processed with snpEff
+       # vcf.ann <- data.frame(do.call('rbind', strsplit(as.character(vcf.info$ANN),'|',fixed = TRUE))) # split ANN field, contains information if files are processed by snpEff
+		if(nrow(vcf.fix) > 0) { # there are variants
+		    dat <-  as.data.frame(cbind(vcf.fix[,c(1, 2, 4, 5, 6)], vcf.info[,c(1, 2)]))
+			dat$majorAF <- sapply(dat$AF, minorAfToMajorAf) # transforms e.g. AF of 0.1 to 0.9, 0.9 stays 0.9 and 0.5 stays 0.5
+			dat$genome <- contig_mapping[match(dat$CHROM, contig_mapping$contig),]$genome # map chr information to genome name e.g. NHMU01000001.1 -> i48
+			dat$genome_hr <- translateGenomeIdToFullName(tolower(dat$genome))
+			dat$mouse.id <-  translateSampletoMouse(tools::file_path_sans_ext(basename(file)))
+            dat$mouse.group <- translateMouseIdToTreatmentGroup(translateSampletoMouse(tools::file_path_sans_ext(basename(file))))
+			dat$dp <- as.numeric(as.matrix(vcf.info$DP))
+		#	print(summary(dat$AF))
+		#	print(summary(dat$DP))
+		#	dat$vartype <- as.character(as.matrix(vcf.ann$X2))
+		#	dat$effect <- as.character(as.matrix(vcf.ann$X3))
+		#	dat$substitution <- as.character(as.matrix(vcf.ann$X11))
+			# annotate overlay of gene
+			dat$orf_desc <- as.character(as.matrix(apply(dat, 1, getGeneByPosition, gff = gff, pos.column = 2, chr.column = 1)))
+			res[[tools::file_path_sans_ext(basename(file))]] <- dat # add vcf df to list
+		} else{
+			message("Skipping")
+		}
+	}
+	df <- as.data.frame(do.call(rbind, res)) # merge list to df
+	return(df)
+}
+```
+
+```{r}
+gff.files <- Sys.glob("data/references/gff/*.gff")
+gff.df <- NULL
+for (gff.file in gff.files){
+	message(gff.file)
+	gff <- rtracklayer::readGFF(gff.file)
+	# subset since different columns are present on gff files
+	relevant <- data.frame(start = gff$start, end = gff$end, type = as.character(as.matrix(gff$type)), gene = as.character(as.matrix(gff$gene)), product = as.character(as.matrix(gff$product)), chr = as.character(as.matrix(gff$seqid)))
+	relevant$genome <-  substr(basename(gff.file), 1, nchar(basename(gff.file))-4)
+	gff.df <- rbind(gff.df, relevant)
+}
+contig_mapping <- read.csv2("data/contig_mapping_new_ref.csv", sep =";", header=T, stringsAsFactors = F) # this file contains contig names of the 12 OligoMM genomes
+vcf.files <- Sys.glob("reseq/vcf_files/*.vcf")
+vcf.samples <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.df))
+
+vcf.samples$mouse.id <- as.character(as.matrix(vcf.samples$mouse.id))
+vcf.samples[which(vcf.samples$orf_desc == "character(0)"),]$orf_desc <- "outside ORFs"
+vcf.samples[which(vcf.samples$orf_desc == "hypothetical protein"),]$orf_desc <- "hypothetical proteins"
+saveRDS(vcf.samples, file = "data/rds/reseq.rds")
+```
+
+```{r, fig.cap="AF of resequenced strains", fig.align="center", fig.width=15}
+p <- ggplot(vcf.samples, aes(AF, fill = genome)) + geom_histogram()
+p <- p + facet_grid(mouse.id + mouse.group ~ genome + genome_hr)
+p <- p + theme_classic() + xlab("AF") + ylab("occurence")
+print(p)
+```
+
+```{r, fig.cap="major AF of resequenced strains", fig.align="center", fig.width=15}
+p <- ggplot(vcf.samples, aes(majorAF, fill = genome)) + geom_histogram()
+p <- p + facet_grid(mouse.id + mouse.group ~ genome + genome_hr)
+p <- p + theme_classic() + xlab("AF") + ylab("occurence")
+print(p)
+```
+
+```{r}
+dat <- readRDS("data/rds/reseq.rds")
+write.table(dat, file = "data/tables/reseq_all.tsv", sep = "\t", row.names = F, quote = F)
+```
+
+
+```{r}
+pairedAFplot <- function(dat = dat, case = "Water", control = "Ciprofloxacin"){
+	require(reshape2) 
+	require(ggplot2)
+
+	dat.pair <- dat[which(dat$mouse.group == case | dat$mouse.group == control),]
+  
+    #dat.pair <- dat.pair[which(dat.pair$genome == genome),]
+    
+	#dat.pair <- dat.pair[which(!is.na(dat.pair$orf_desc)),]
+	data.wide <- dcast(dat.pair, genome + POS + REF + ALT + orf_desc ~ mouse.group, value.var = "AF")
+    data.wide$vartype <- ifelse(as.character(data.wide$orf_desc) != "outside ORFs", "coding", "non-coding")
+    data.wide <- data.wide[which(data.wide$vartype != 0),]
+
+	colnames(data.wide)[6] <- "sample_1"
+	colnames(data.wide)[7] <- "sample_2"
+	data.wide[is.na(data.wide)] <- 0
+
+	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, label = orf_desc, color = genome, shape =vartype))
+	p <- p + geom_point(fill = NA) + theme_classic()# + scale_color_manual(values = omm_colors)
+	p <- p + theme(aspect.ratio = 1) 
+	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")
+	p <- p + geom_vline(xintercept = .5, linetype = 2, color = "grey50")
+    p <- p + scale_shape_manual(values = orf_shapes)
+	p <- p + theme(aspect.ratio = 1) 
+	p <- p + theme(strip.background = element_blank())
+	p <- p + geom_abline(intercept = 0, slope = 1)
+	p <- p + xlab(case) + ylab(control)
+	p <- p + theme(panel.border = element_rect(colour = "black", fill=NA, size=1))
+	return(p)
+}
+```
+
+
+```{r pd1, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "Water", control = "Ciprofloxacin")))
+```
+
+```{r pd2, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "Water", control = "Tetracyclin")))
+```
+
+```{r pd3, fig.align="center", fig.width=10, fig.height=10, fig.cap="Scatter plot of AF of two samples. Only variants with functional annotation are shown"}
+suppressWarnings(ggplotly(pairedAFplot(dat, case = "Water", control = "Vancomycin")))
+```
+
+```{r}
+dat <- readRDS("data/rds/reseq.rds")
+dat$ref_size <- nchar(as.character(as.matrix(dat$REF)))
+dat$alt_size <- nchar(as.character(as.matrix(dat$ALT)))
+dat$alteration <- paste(as.character(dat$REF), "->",as.character(dat$ALT))
+```
+
+```{r}
+
+# no grid version for html
+geneCentricPlot2 <- function(dat = dat, genome = "KB1", type = "SNP") {
+    require(reshape2)
+    require(ggplot2)
+    dat.subset <- dat[which(dat$genome == genome), ]
+    if(type == "SNP"){
+       dat.subset <- dat.subset[which(dat.subset$ref_size == 1 & dat.subset$alt_size == 1 ),] 
+    } else if (type == "insertion") {
+       dat.subset <- dat.subset[which(dat.subset$ref_size == 1 & dat.subset$alt_size > 1 ),] 
+    } else { # deletion
+        dat.subset <- dat.subset[which(dat.subset$ref_size > 1 & dat.subset$alt_size == 1 ),] 
+    }
+    dat.subset$ID <- paste0(dat.subset$POS, "|", dat.subset$REF, "->", dat.subset$ALT)
+    p <- ggplot(dat.subset, aes(x = orf_desc, y = AF, color = mouse.group, label= alteration))
+    p <- p + geom_point(size = 2, fill = NA)
+    p <- p + coord_flip() + theme_classic()
+    p <- p + ylim(c(0, 1))
+    p <- p + theme(strip.background = element_blank()) + theme(strip.text.y = element_text(angle = 0), 
+        strip.placement = "outside")
+    p <- p + xlab("") + ylab("allele frequency")
+    return(p)
+}
+```
+
+## KB1
+### SNP
+```{r dp30, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "KB1", type = "SNP")))
+```
+
+### insertion
+```{r dp31, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "KB1", type = "insertion")))
+```
+
+### deletion
+```{r dp32, fig.align="center", fig.width=15, fig.height=30, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "KB1", type = "deletion")))
+```
+
+## I46
+### SNP
+```{r dp33, fig.align="center", fig.width=15, fig.height=7, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "I46", type = "SNP")))
+```
+
+### insertion
+```{r dp34, fig.align="center", fig.width=15, fig.height=5, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "I46", type = "insertion")))
+```
+
+### deletion
+```{r dp35, fig.align="center", fig.width=15, fig.height=23, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "I46", type = "deletion")))
+```
+
+## YL58
+### SNP
+```{r dp36, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "YL58", type = "SNP")))
+```
+
+### insertion
+```{r dp37, fig.align="center", fig.width=15, fig.height=4, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "YL58", type = "insertion")))
+```
+
+### deletion
+```{r dp38, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "YL58", type = "deletion")))
+```
+
+## mutation bias?
+
+### SNP
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+dat$ref_size <- nchar(as.character(as.matrix(dat$REF)))
+dat$alt_size <- nchar(as.character(as.matrix(dat$ALT)))
+dat <- dat[which(dat$ref_size == 1 & dat$alt_size == 1 ),] 
+dat$alteration <- paste(as.character(dat$REF), "->",as.character(dat$ALT))
+dat$dummy <- 1
+dat.agg <- aggregate(dummy ~ genome + mouse.group + alteration , dat, sum)
+
+p <- ggplot(dat.agg, aes(x = mouse.group, y = dummy, label = alteration, color = genome))
+p <- p + geom_text() + facet_grid(~genome) + ylab("occurrence")
+p <- p + stat_summary(fun.y=mean, geom="line", aes(group=alteration), alpha = 0.1) 
+p <- p  + theme_classic()# + scale_color_manual(values = omm_colors)
+ggplotly(p)
+```
+
+### insertions
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+dat$ref_size <- nchar(as.character(as.matrix(dat$REF)))
+dat$alt_size <- nchar(as.character(as.matrix(dat$ALT)))
+dat <- dat[which(dat$alt_size > dat$ref_size),] 
+dat$alteration <- paste(as.character(dat$REF), "->",as.character(dat$ALT))
+dat$dummy <- 1
+dat.agg <- aggregate(dummy ~ genome + mouse.group + alteration , dat, sum)
+
+p <- ggplot(dat.agg, aes(x = mouse.group, y = dummy, label = alteration, color = genome))
+p <- p + geom_text() + facet_grid(~genome) + ylab("occurrence")
+p <- p + stat_summary(fun.y=mean, geom="line", aes(group=alteration), alpha = 0.1) 
+p <- p  + theme_classic()# + scale_color_manual(values = omm_colors)
+ggplotly(p)
+```
+
+### deletions
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+dat$ref_size <- nchar(as.character(as.matrix(dat$REF)))
+dat$alt_size <- nchar(as.character(as.matrix(dat$ALT)))
+dat <- dat[which(dat$alt_size < dat$ref_size ),] 
+dat$alteration <- paste(as.character(dat$REF), "->",as.character(dat$ALT))
+dat$dummy <- 1
+dat.agg <- aggregate(dummy ~ genome + mouse.group + alteration , dat, sum)
+
+p <- ggplot(dat.agg, aes(x = mouse.group, y = dummy, label = alteration, color = genome))
+p <- p + geom_text() + facet_grid(~genome) + ylab("occurrence")
+p <- p + stat_summary(fun.y=mean, geom="line", aes(group=alteration), alpha = 0.1) 
+p <- p  + theme_classic()# + scale_color_manual(values = omm_colors)
+ggplotly(p)
+```
+
+
+## heatmap
+
+### KB1
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "KB1"),]
+rownames(data.wide) <- paste0(data.wide$POS, "-",data.wide$REF, "-",data.wide$ALT)
+heat <- data.matrix(data.wide[,6:9])
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = F,
+ show_column_dend = F
+)
+```
+
+### I46
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "I46"),]
+rownames(data.wide) <- paste0(data.wide$POS, "-",data.wide$REF, "-",data.wide$ALT)
+heat <- data.matrix(data.wide[,6:9])
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_names = F,
+ show_row_dend = F,
+ show_column_dend = F
+)
+```
+
+
+### YL58
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "YL58"),]
+rownames(data.wide) <- paste0(data.wide$POS, "-",data.wide$REF, "-",data.wide$ALT)
+heat <- data.matrix(data.wide[,6:9])
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = F,
+ show_column_dend = F
+)
+```
+
+### Filter: present in all
+
+### KB1
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "KB1"),]
+rownames(data.wide) <- paste0(data.wide$POS, " (",data.wide$REF, " -> ",data.wide$ALT, ") ", data.wide$orf_desc)
+
+heat <- data.matrix(data.wide[,6:9])
+heat <- heat[which(rowSums(!is.na(heat))> 2),] # filter uncommon
+
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 5),
+ show_row_dend = F,
+ show_row_names = T,
+ show_column_dend = F
+)
+```
+
+
+### YL58
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "YL58"),]
+rownames(data.wide) <- paste0(data.wide$POS, " (",data.wide$REF, " -> ",data.wide$ALT, ") ", data.wide$orf_desc)
+
+heat <- data.matrix(data.wide[,6:9])
+heat <- heat[which(rowSums(!is.na(heat))> 2),] # filter uncommon
+
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 5),
+ show_row_dend = F,
+ show_row_names = T,
+ show_column_dend = F
+)
+```
+
+
+### I46
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "I46"),]
+rownames(data.wide) <- paste0(data.wide$POS, " (",data.wide$REF, " -> ",data.wide$ALT, ") ", data.wide$orf_desc)
+
+heat <- data.matrix(data.wide[,6:9])
+heat <- heat[which(rowSums(!is.na(heat))> 2),] # filter uncommon
+
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 5),
+ show_row_dend = F,
+ show_row_names = T,
+ show_column_dend = F
+)
+```
+
+
+
+### Filter: not in water but in AB
+
+### KB1
+
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "KB1"),]
+rownames(data.wide) <- paste0(data.wide$POS, " (",data.wide$REF, " -> ",data.wide$ALT, ") ", data.wide$orf_desc)
+
+heat <- data.wide[,6:9]
+heat[is.na(heat)] <- 0
+heat <- heat[which(heat$Water < 0.5 & (heat$Ciprofloxacin > 0.5 | heat$Tetracyclin > 0.5 | heat$Vancomycin > 0.5) ),] # filter water
+heat <- data.matrix(heat)    
+
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 5),
+ show_row_dend = F,
+ show_row_names = T,
+ show_column_dend = F
+)
+```
+
+
+### YL58
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "YL58"),]
+rownames(data.wide) <- paste0(data.wide$POS, " (",data.wide$REF, " -> ",data.wide$ALT, ") ", data.wide$orf_desc)
+
+heat <- data.wide[,6:9]
+heat[is.na(heat)] <- 0
+heat <- heat[which(heat$Water < 0.5 & (heat$Ciprofloxacin > 0.5 | heat$Tetracyclin > 0.5 | heat$Vancomycin > 0.5) ),] # filter water
+heat <- data.matrix(heat)    
+
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 5),
+ show_row_dend = F,
+ show_row_names = T,
+ show_column_dend = F
+)
+```
+
+
+### I46
+```{r, fig.align="center", fig.width=15, fig.height=15}
+dat <- readRDS("data/rds/reseq.rds")
+#dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
+data.wide <- dcast(dat, genome + POS + REF + ALT + orf_desc  ~ mouse.group, value.var = "AF")
+data.wide <- data.wide[which(data.wide$genome == "I46"),]
+rownames(data.wide) <- paste0(data.wide$POS, " (",data.wide$REF, " -> ",data.wide$ALT, ") ", data.wide$orf_desc)
+
+heat <- data.wide[,6:9]
+heat[is.na(heat)] <- 0
+heat <- heat[which(heat$Water < 0.5 & (heat$Ciprofloxacin > 0.5 | heat$Tetracyclin > 0.5 | heat$Vancomycin > 0.5) ),] # filter water
+heat <- data.matrix(heat)    
+
+library(circlize)
+library(ComplexHeatmap)
+heat[is.na(heat)] <- 0
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+Heatmap(heat, name = "AF", col = col_fun,
+ column_names_gp = gpar(fontsize = 9),
+ row_names_gp = gpar(fontsize = 5),
+ show_row_dend = F,
+ show_row_names = T,
+ show_column_dend = F
+)
+```
