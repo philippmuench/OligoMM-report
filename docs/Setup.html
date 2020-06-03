@@ -24,7 +24,7 @@
 <meta name="author" content="Philipp C. Muench" />
 
 
-<meta name="date" content="2020-05-29" />
+<meta name="date" content="2020-06-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -51,18 +51,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.10/datatables.js"></script>
-<link href="libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<script src="libs/plotly-binding-4.9.1/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
 
 
 <style type="text/css">
@@ -149,10 +137,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="1" data-path="Setup.html"><a href="Setup.html"><i class="fa fa-check"></i><b>1</b> Setup</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="Setup.html"><a href="Setup.html#Workspace_setup"><i class="fa fa-check"></i><b>1.1</b> Workspace setup</a></li>
-<li class="chapter" data-level="1.2" data-path="Setup.html"><a href="Setup.html#dependencies"><i class="fa fa-check"></i><b>1.2</b> Dependencies</a></li>
-<li class="chapter" data-level="1.3" data-path="Setup.html"><a href="Setup.html#Data_structures"><i class="fa fa-check"></i><b>1.3</b> Data structure</a></li>
-<li class="chapter" data-level="1.4" data-path="Setup.html"><a href="Setup.html#build-this-book"><i class="fa fa-check"></i><b>1.4</b> Build this book</a></li>
+<li class="chapter" data-level="1.1" data-path="Setup.html"><a href="Setup.html#Workspace_setup"><i class="fa fa-check"></i><b>1.1</b> Howto generate this report</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="study-design.html"><a href="study-design.html"><i class="fa fa-check"></i><b>2</b> Study design</a>
 <ul>
@@ -206,6 +191,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.7.11" data-path="resequencing.html"><a href="resequencing.html#i46-3"><i class="fa fa-check"></i><b>3.7.11</b> I46</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="4" data-path="ab-samples.html"><a href="ab-samples.html"><i class="fa fa-check"></i><b>4</b> AB Samples</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ab-samples.html"><a href="ab-samples.html#test"><i class="fa fa-check"></i><b>4.1</b> test</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -225,33 +214,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="Setup" class="section level1" number="1">
 <h1><span class="header-section-number">Section 1</span> Setup</h1>
-<p>Test</p>
 <div id="Workspace_setup" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Workspace setup</h2>
+<h2><span class="header-section-number">1.1</span> Howto generate this report</h2>
 <p>We specify the folder where the analysis is located.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="Setup.html#cb2-1"></a><span class="kw">setwd</span>(<span class="st">&quot;~/Cloud/ActiveProjects/OligoMM-report&quot;</span>)</span></code></pre></div>
-</div>
-<div id="dependencies" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Dependencies</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="Setup.html#cb1-1"></a><span class="kw">setwd</span>(<span class="st">&quot;~/Cloud/ActiveProjects/OligoMM-report&quot;</span>)</span></code></pre></div>
 <p>Functions that are used frequent are defined in <code>utils.R</code> and are mostly helper functions for data manipulation (e.g. translation of sample ids to groups). Other packages can be load via cran using the <code>install.packages()</code> function.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="Setup.html#cb3-1"></a><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())</span>
-<span id="cb3-2"><a href="Setup.html#cb3-2"></a><span class="kw">source</span>(<span class="st">&quot;utils.R&quot;</span>)</span>
-<span id="cb3-3"><a href="Setup.html#cb3-3"></a><span class="kw">library</span>(<span class="st">&quot;vcfR&quot;</span>)</span>
-<span id="cb3-4"><a href="Setup.html#cb3-4"></a><span class="kw">library</span>(<span class="st">&quot;rmdformats&quot;</span>)</span>
-<span id="cb3-5"><a href="Setup.html#cb3-5"></a><span class="kw">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
-<span id="cb3-6"><a href="Setup.html#cb3-6"></a><span class="kw">library</span>(<span class="st">&quot;reshape2&quot;</span>)</span>
-<span id="cb3-7"><a href="Setup.html#cb3-7"></a><span class="kw">library</span>(<span class="st">&quot;ggridges&quot;</span>)</span>
-<span id="cb3-8"><a href="Setup.html#cb3-8"></a><span class="kw">library</span>(<span class="st">&quot;knitr&quot;</span>)</span>
-<span id="cb3-9"><a href="Setup.html#cb3-9"></a><span class="kw">library</span>(<span class="st">&quot;kableExtra&quot;</span>)</span>
-<span id="cb3-10"><a href="Setup.html#cb3-10"></a><span class="kw">library</span>(<span class="st">&quot;plotly&quot;</span>)</span>
-<span id="cb3-11"><a href="Setup.html#cb3-11"></a><span class="kw">library</span>(<span class="st">&quot;DT&quot;</span>)</span>
-<span id="cb3-12"><a href="Setup.html#cb3-12"></a><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</span>
-<span id="cb3-13"><a href="Setup.html#cb3-13"></a><span class="kw">library</span>(<span class="st">&quot;bookdown&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="Setup.html#cb2-1"></a><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())</span>
+<span id="cb2-2"><a href="Setup.html#cb2-2"></a><span class="kw">source</span>(<span class="st">&quot;utils.R&quot;</span>)</span>
+<span id="cb2-3"><a href="Setup.html#cb2-3"></a><span class="kw">library</span>(<span class="st">&quot;vcfR&quot;</span>)</span>
+<span id="cb2-4"><a href="Setup.html#cb2-4"></a><span class="kw">library</span>(<span class="st">&quot;rmdformats&quot;</span>)</span>
+<span id="cb2-5"><a href="Setup.html#cb2-5"></a><span class="kw">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
+<span id="cb2-6"><a href="Setup.html#cb2-6"></a><span class="kw">library</span>(<span class="st">&quot;reshape2&quot;</span>)</span>
+<span id="cb2-7"><a href="Setup.html#cb2-7"></a><span class="kw">library</span>(<span class="st">&quot;ggridges&quot;</span>)</span>
+<span id="cb2-8"><a href="Setup.html#cb2-8"></a><span class="kw">library</span>(<span class="st">&quot;knitr&quot;</span>)</span>
+<span id="cb2-9"><a href="Setup.html#cb2-9"></a><span class="kw">library</span>(<span class="st">&quot;kableExtra&quot;</span>)</span>
+<span id="cb2-10"><a href="Setup.html#cb2-10"></a><span class="kw">library</span>(<span class="st">&quot;plotly&quot;</span>)</span>
+<span id="cb2-11"><a href="Setup.html#cb2-11"></a><span class="kw">library</span>(<span class="st">&quot;DT&quot;</span>)</span>
+<span id="cb2-12"><a href="Setup.html#cb2-12"></a><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</span>
+<span id="cb2-13"><a href="Setup.html#cb2-13"></a><span class="kw">library</span>(<span class="st">&quot;bookdown&quot;</span>)</span></code></pre></div>
 <p><em>Note:</em> for <code>rtracklayer</code> you might need <em>curl</em></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="Setup.html#cb4-1"></a><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</span></code></pre></div>
-</div>
-<div id="Data_structures" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Data structure</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="Setup.html#cb3-1"></a><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</span></code></pre></div>
+<p>Data structure {#Data_structures}</p>
 <dl>
 <dt><code>data/raw</code></dt>
 <dd>files from host machine, contains <code>coverage</code>, <em>lofreq</em> and <em>varscan</em> output
@@ -272,9 +255,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <dd><code>html</code> files generated via <code>bookdown::serve_book(getwd())</code>
 </dd>
 </dl>
-</div>
-<div id="build-this-book" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Build this book</h2>
+<p>Build this book</p>
 <p>You need to install <a href="https://pandoc.org/installing.html">Pandoc</a>.
 <code>bookdown::serve_book(getwd())</code> and <code>bookdown::render_book(getwd())</code></p>
 

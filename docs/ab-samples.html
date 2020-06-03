@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 4 AB Samples | OMM report</title>
+  <meta name="description" content="Section 4 AB Samples | OMM report" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 4 AB Samples | OMM report" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 4 AB Samples | OMM report" />
+  
+  
+  
+
+<meta name="author" content="Philipp C. Muench" />
+
+
+<meta name="date" content="2020-06-03" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="resequencing-samples.html"/>
+
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.10/datatables.js"></script>
+<link href="libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<script src="libs/plotly-binding-4.9.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Setup</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#installation"><i class="fa fa-check"></i><b>1.1</b> Installation</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#generate-report"><i class="fa fa-check"></i><b>1.2</b> Generate report</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="claudia-samples.html"><a href="claudia-samples.html"><i class="fa fa-check"></i><b>2</b> Claudia Samples</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="claudia-samples.html"><a href="claudia-samples.html#experiment"><i class="fa fa-check"></i><b>2.1</b> Experiment</a></li>
+<li class="chapter" data-level="2.2" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="claudia-samples.html"><a href="claudia-samples.html#crispr"><i class="fa fa-check"></i><b>2.2.1</b> CRISPR</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="resequencing-samples.html"><a href="resequencing-samples.html"><i class="fa fa-check"></i><b>3</b> Resequencing Samples</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="resequencing-samples.html"><a href="resequencing-samples.html#metadata-1"><i class="fa fa-check"></i><b>3.1</b> Metadata</a></li>
+<li class="chapter" data-level="3.2" data-path="resequencing-samples.html"><a href="resequencing-samples.html#load-in-variants"><i class="fa fa-check"></i><b>3.2</b> Load in variants</a></li>
+<li class="chapter" data-level="3.3" data-path="resequencing-samples.html"><a href="resequencing-samples.html#kb1"><i class="fa fa-check"></i><b>3.3</b> KB1</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="resequencing-samples.html"><a href="resequencing-samples.html#snp"><i class="fa fa-check"></i><b>3.3.1</b> SNP</a></li>
+<li class="chapter" data-level="3.3.2" data-path="resequencing-samples.html"><a href="resequencing-samples.html#insertion"><i class="fa fa-check"></i><b>3.3.2</b> insertion</a></li>
+<li class="chapter" data-level="3.3.3" data-path="resequencing-samples.html"><a href="resequencing-samples.html#deletion"><i class="fa fa-check"></i><b>3.3.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="resequencing-samples.html"><a href="resequencing-samples.html#i46"><i class="fa fa-check"></i><b>3.4</b> I46</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="resequencing-samples.html"><a href="resequencing-samples.html#snp-1"><i class="fa fa-check"></i><b>3.4.1</b> SNP</a></li>
+<li class="chapter" data-level="3.4.2" data-path="resequencing-samples.html"><a href="resequencing-samples.html#insertion-1"><i class="fa fa-check"></i><b>3.4.2</b> insertion</a></li>
+<li class="chapter" data-level="3.4.3" data-path="resequencing-samples.html"><a href="resequencing-samples.html#deletion-1"><i class="fa fa-check"></i><b>3.4.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="resequencing-samples.html"><a href="resequencing-samples.html#yl58"><i class="fa fa-check"></i><b>3.5</b> YL58</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="resequencing-samples.html"><a href="resequencing-samples.html#snp-2"><i class="fa fa-check"></i><b>3.5.1</b> SNP</a></li>
+<li class="chapter" data-level="3.5.2" data-path="resequencing-samples.html"><a href="resequencing-samples.html#insertion-2"><i class="fa fa-check"></i><b>3.5.2</b> insertion</a></li>
+<li class="chapter" data-level="3.5.3" data-path="resequencing-samples.html"><a href="resequencing-samples.html#deletion-2"><i class="fa fa-check"></i><b>3.5.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="resequencing-samples.html"><a href="resequencing-samples.html#mutation-bias"><i class="fa fa-check"></i><b>3.6</b> mutation bias?</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="resequencing-samples.html"><a href="resequencing-samples.html#snp-3"><i class="fa fa-check"></i><b>3.6.1</b> SNP</a></li>
+<li class="chapter" data-level="3.6.2" data-path="resequencing-samples.html"><a href="resequencing-samples.html#insertions"><i class="fa fa-check"></i><b>3.6.2</b> insertions</a></li>
+<li class="chapter" data-level="3.6.3" data-path="resequencing-samples.html"><a href="resequencing-samples.html#deletions"><i class="fa fa-check"></i><b>3.6.3</b> deletions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="resequencing-samples.html"><a href="resequencing-samples.html#heatmap"><i class="fa fa-check"></i><b>3.7</b> heatmap</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="resequencing-samples.html"><a href="resequencing-samples.html#kb1-1"><i class="fa fa-check"></i><b>3.7.1</b> KB1</a></li>
+<li class="chapter" data-level="3.7.2" data-path="resequencing-samples.html"><a href="resequencing-samples.html#i46-1"><i class="fa fa-check"></i><b>3.7.2</b> I46</a></li>
+<li class="chapter" data-level="3.7.3" data-path="resequencing-samples.html"><a href="resequencing-samples.html#yl58-1"><i class="fa fa-check"></i><b>3.7.3</b> YL58</a></li>
+<li class="chapter" data-level="3.7.4" data-path="resequencing-samples.html"><a href="resequencing-samples.html#filter-present-in-all"><i class="fa fa-check"></i><b>3.7.4</b> Filter: present in all</a></li>
+<li class="chapter" data-level="3.7.5" data-path="resequencing-samples.html"><a href="resequencing-samples.html#kb1-2"><i class="fa fa-check"></i><b>3.7.5</b> KB1</a></li>
+<li class="chapter" data-level="3.7.6" data-path="resequencing-samples.html"><a href="resequencing-samples.html#yl58-2"><i class="fa fa-check"></i><b>3.7.6</b> YL58</a></li>
+<li class="chapter" data-level="3.7.7" data-path="resequencing-samples.html"><a href="resequencing-samples.html#i46-2"><i class="fa fa-check"></i><b>3.7.7</b> I46</a></li>
+<li class="chapter" data-level="3.7.8" data-path="resequencing-samples.html"><a href="resequencing-samples.html#filter-not-in-water-but-in-ab"><i class="fa fa-check"></i><b>3.7.8</b> Filter: not in water but in AB</a></li>
+<li class="chapter" data-level="3.7.9" data-path="resequencing-samples.html"><a href="resequencing-samples.html#kb1-3"><i class="fa fa-check"></i><b>3.7.9</b> KB1</a></li>
+<li class="chapter" data-level="3.7.10" data-path="resequencing-samples.html"><a href="resequencing-samples.html#yl58-3"><i class="fa fa-check"></i><b>3.7.10</b> YL58</a></li>
+<li class="chapter" data-level="3.7.11" data-path="resequencing-samples.html"><a href="resequencing-samples.html#i46-3"><i class="fa fa-check"></i><b>3.7.11</b> I46</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ab-samples.html"><a href="ab-samples.html"><i class="fa fa-check"></i><b>4</b> AB Samples</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="ab-samples.html"><a href="ab-samples.html#load-in-variants-1"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">OMM report</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ab-samples" class="section level1" number="4">
+<h1><span class="header-section-number">Section 4</span> AB Samples</h1>
+<div id="load-in-variants-1" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Load in variants</h2>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="ab-samples.html#cb51-1"></a>vcfToDataframe &lt;-<span class="st"> </span><span class="cf">function</span>(vcf.files, <span class="dt">contig_mapping =</span> contig_mapping, <span class="dt">gff.df =</span> gff.df) {</span>
+<span id="cb51-2"><a href="ab-samples.html#cb51-2"></a>    <span class="kw">require</span>(vcfR)</span>
+<span id="cb51-3"><a href="ab-samples.html#cb51-3"></a>    res &lt;-<span class="st"> </span><span class="kw">list</span>()</span>
+<span id="cb51-4"><a href="ab-samples.html#cb51-4"></a>    <span class="cf">for</span> (file <span class="cf">in</span> vcf.files) {</span>
+<span id="cb51-5"><a href="ab-samples.html#cb51-5"></a>        <span class="kw">message</span>(file)</span>
+<span id="cb51-6"><a href="ab-samples.html#cb51-6"></a>        <span class="kw">library</span>(data.table)</span>
+<span id="cb51-7"><a href="ab-samples.html#cb51-7"></a>        vcf.content &lt;-<span class="st"> </span>vcfR<span class="op">::</span><span class="kw">read.vcfR</span>(file, <span class="dt">verbose =</span> <span class="ot">FALSE</span>)</span>
+<span id="cb51-8"><a href="ab-samples.html#cb51-8"></a>        vcf.fix &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(vcf.content<span class="op">@</span>fix)  <span class="co"># contains chr, position and substitution informations</span></span>
+<span id="cb51-9"><a href="ab-samples.html#cb51-9"></a>        vcf.info &lt;-<span class="st"> </span>vcfR<span class="op">::</span><span class="kw">INFO2df</span>(vcf.content)  <span class="co"># get INFO field, contains DP, AF informations</span></span>
+<span id="cb51-10"><a href="ab-samples.html#cb51-10"></a>        <span class="cf">if</span> (<span class="kw">nrow</span>(vcf.fix) <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>) {</span>
+<span id="cb51-11"><a href="ab-samples.html#cb51-11"></a>            <span class="co"># there are variants</span></span>
+<span id="cb51-12"><a href="ab-samples.html#cb51-12"></a>            dat &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">cbind</span>(vcf.fix[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>)], vcf.info[, <span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)]))</span>
+<span id="cb51-13"><a href="ab-samples.html#cb51-13"></a>            dat<span class="op">$</span>majorAF &lt;-<span class="st"> </span><span class="kw">sapply</span>(dat<span class="op">$</span>AF, minorAfToMajorAf)  <span class="co"># transforms e.g. AF of 0.1 to 0.9, 0.9 stays 0.9 and 0.5 stays 0.5</span></span>
+<span id="cb51-14"><a href="ab-samples.html#cb51-14"></a>            dat<span class="op">$</span>genome &lt;-<span class="st"> </span>contig_mapping[<span class="kw">match</span>(dat<span class="op">$</span>CHROM, contig_mapping<span class="op">$</span>contig), ]<span class="op">$</span>genome  <span class="co"># map chr information to genome name e.g. NHMU01000001.1 -&gt; i48</span></span>
+<span id="cb51-15"><a href="ab-samples.html#cb51-15"></a>            dat<span class="op">$</span>genome_hr &lt;-<span class="st"> </span><span class="kw">translateGenomeIdToFullName</span>(<span class="kw">tolower</span>(dat<span class="op">$</span>genome))</span>
+<span id="cb51-16"><a href="ab-samples.html#cb51-16"></a>            dat<span class="op">$</span>mouse.id &lt;-<span class="st"> </span><span class="kw">substr</span>(tools<span class="op">::</span><span class="kw">file_path_sans_ext</span>(<span class="kw">basename</span>(file)), <span class="dv">1</span>, <span class="dv">4</span>)</span>
+<span id="cb51-17"><a href="ab-samples.html#cb51-17"></a>            dat<span class="op">$</span>mouse.group &lt;-<span class="st"> </span><span class="kw">translateMouseIdToTreatmentGroup</span>(dat<span class="op">$</span>mouse.id)</span>
+<span id="cb51-18"><a href="ab-samples.html#cb51-18"></a>            dat<span class="op">$</span>dp &lt;-<span class="st"> </span><span class="kw">as.numeric</span>(<span class="kw">as.matrix</span>(vcf.info<span class="op">$</span>DP))</span>
+<span id="cb51-19"><a href="ab-samples.html#cb51-19"></a>            <span class="co"># annotate overlay of gene dt.vcf &lt;- data.table(start = as.integer(as.matrix(dat$POS)), end = as.integer(as.matrix(dat$POS)), chr = as.character(as.matrix(dat$CHROM))) # where</span></span>
+<span id="cb51-20"><a href="ab-samples.html#cb51-20"></a>            <span class="co"># variants are</span></span>
+<span id="cb51-21"><a href="ab-samples.html#cb51-21"></a>            dt.gff &lt;-<span class="st"> </span><span class="kw">data.table</span>(<span class="dt">start =</span> gff.df<span class="op">$</span>start, <span class="dt">end =</span> gff.df<span class="op">$</span>end, <span class="dt">chr =</span> <span class="kw">as.character</span>(<span class="kw">as.matrix</span>(gff.df<span class="op">$</span>chr)), <span class="dt">feature =</span> gff.df<span class="op">$</span>product)</span>
+<span id="cb51-22"><a href="ab-samples.html#cb51-22"></a>            <span class="kw">colnames</span>(dat)[<span class="dv">1</span><span class="op">:</span><span class="dv">2</span>] &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;chr&quot;</span>, <span class="st">&quot;start&quot;</span>)</span>
+<span id="cb51-23"><a href="ab-samples.html#cb51-23"></a>            dat<span class="op">$</span>start &lt;-<span class="st"> </span><span class="kw">as.integer</span>(<span class="kw">as.matrix</span>(dat<span class="op">$</span>start))</span>
+<span id="cb51-24"><a href="ab-samples.html#cb51-24"></a>            dat<span class="op">$</span>chr &lt;-<span class="st"> </span><span class="kw">as.character</span>(<span class="kw">as.matrix</span>(dat<span class="op">$</span>chr))</span>
+<span id="cb51-25"><a href="ab-samples.html#cb51-25"></a>            dat<span class="op">$</span>end &lt;-<span class="st"> </span>dat<span class="op">$</span>start</span>
+<span id="cb51-26"><a href="ab-samples.html#cb51-26"></a>            dat2 &lt;-<span class="st"> </span><span class="kw">as.data.table</span>(dat)</span>
+<span id="cb51-27"><a href="ab-samples.html#cb51-27"></a>            <span class="kw">setkey</span>(dt.gff, chr, start, end)</span>
+<span id="cb51-28"><a href="ab-samples.html#cb51-28"></a>            annotated &lt;-<span class="st"> </span><span class="kw">foverlaps</span>(dat2, dt.gff, <span class="dt">type =</span> <span class="st">&quot;within&quot;</span>, <span class="dt">mult =</span> <span class="st">&quot;first&quot;</span>)</span>
+<span id="cb51-29"><a href="ab-samples.html#cb51-29"></a>            res[[tools<span class="op">::</span><span class="kw">file_path_sans_ext</span>(<span class="kw">basename</span>(file))]] &lt;-<span class="st"> </span>annotated  <span class="co"># add vcf df to list</span></span>
+<span id="cb51-30"><a href="ab-samples.html#cb51-30"></a>        } <span class="cf">else</span> {</span>
+<span id="cb51-31"><a href="ab-samples.html#cb51-31"></a>            <span class="kw">message</span>(<span class="st">&quot;Skipping&quot;</span>)</span>
+<span id="cb51-32"><a href="ab-samples.html#cb51-32"></a>        }</span>
+<span id="cb51-33"><a href="ab-samples.html#cb51-33"></a>    }</span>
+<span id="cb51-34"><a href="ab-samples.html#cb51-34"></a>    df &lt;-<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">do.call</span>(rbind, res))  <span class="co"># merge list to df</span></span>
+<span id="cb51-35"><a href="ab-samples.html#cb51-35"></a>    <span class="kw">return</span>(df)</span>
+<span id="cb51-36"><a href="ab-samples.html#cb51-36"></a>}</span></code></pre></div>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="ab-samples.html#cb52-1"></a><span class="co"># load in reference information</span></span>
+<span id="cb52-2"><a href="ab-samples.html#cb52-2"></a>gff.files &lt;-<span class="st"> </span><span class="kw">Sys.glob</span>(<span class="st">&quot;data/references/gff/*.gff&quot;</span>)</span>
+<span id="cb52-3"><a href="ab-samples.html#cb52-3"></a>gff.df &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
+<span id="cb52-4"><a href="ab-samples.html#cb52-4"></a><span class="cf">for</span> (gff.file <span class="cf">in</span> gff.files) {</span>
+<span id="cb52-5"><a href="ab-samples.html#cb52-5"></a>    <span class="kw">message</span>(gff.file)</span>
+<span id="cb52-6"><a href="ab-samples.html#cb52-6"></a>    gff &lt;-<span class="st"> </span>rtracklayer<span class="op">::</span><span class="kw">readGFF</span>(gff.file)</span>
+<span id="cb52-7"><a href="ab-samples.html#cb52-7"></a>    <span class="co"># subset since different columns are present on gff files</span></span>
+<span id="cb52-8"><a href="ab-samples.html#cb52-8"></a>    relevant &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">start =</span> gff<span class="op">$</span>start, <span class="dt">end =</span> gff<span class="op">$</span>end, <span class="dt">type =</span> <span class="kw">as.character</span>(<span class="kw">as.matrix</span>(gff<span class="op">$</span>type)), <span class="dt">gene =</span> <span class="kw">as.character</span>(<span class="kw">as.matrix</span>(gff<span class="op">$</span>gene)), <span class="dt">product =</span> <span class="kw">as.character</span>(<span class="kw">as.matrix</span>(gff<span class="op">$</span>product)), </span>
+<span id="cb52-9"><a href="ab-samples.html#cb52-9"></a>        <span class="dt">chr =</span> <span class="kw">as.character</span>(<span class="kw">as.matrix</span>(gff<span class="op">$</span>seqid)))</span>
+<span id="cb52-10"><a href="ab-samples.html#cb52-10"></a>    relevant<span class="op">$</span>genome &lt;-<span class="st"> </span><span class="kw">substr</span>(<span class="kw">basename</span>(gff.file), <span class="dv">1</span>, <span class="kw">nchar</span>(<span class="kw">basename</span>(gff.file)) <span class="op">-</span><span class="st"> </span><span class="dv">4</span>)</span>
+<span id="cb52-11"><a href="ab-samples.html#cb52-11"></a>    gff.df &lt;-<span class="st"> </span><span class="kw">rbind</span>(gff.df, relevant)</span>
+<span id="cb52-12"><a href="ab-samples.html#cb52-12"></a>}</span></code></pre></div>
+<pre><code>## data/references/gff/I46.gff</code></pre>
+<pre><code>## data/references/gff/KB1.gff</code></pre>
+<pre><code>## data/references/gff/YL58.gff</code></pre>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="ab-samples.html#cb56-1"></a><span class="co"># load in contig information</span></span>
+<span id="cb56-2"><a href="ab-samples.html#cb56-2"></a>contig_mapping &lt;-<span class="st"> </span><span class="kw">read.csv2</span>(<span class="st">&quot;data/contig_mapping_new_ref.csv&quot;</span>, <span class="dt">sep =</span> <span class="st">&quot;;&quot;</span>, <span class="dt">header =</span> T, <span class="dt">stringsAsFactors =</span> F)  <span class="co"># this file contains contig names of the 12 OligoMM genomes</span></span>
+<span id="cb56-3"><a href="ab-samples.html#cb56-3"></a></span>
+<span id="cb56-4"><a href="ab-samples.html#cb56-4"></a><span class="co"># load in vcf files</span></span>
+<span id="cb56-5"><a href="ab-samples.html#cb56-5"></a>vcf.files &lt;-<span class="st"> </span><span class="kw">Sys.glob</span>(<span class="st">&quot;out_philipp/all_vcf/*.vcf&quot;</span>)</span>
+<span id="cb56-6"><a href="ab-samples.html#cb56-6"></a>vcf.samples &lt;-<span class="st"> </span><span class="kw">suppressWarnings</span>(<span class="kw">vcfToDataframe</span>(vcf.files, contig_mapping, <span class="dt">gff.df =</span> gff.df))</span></code></pre></div>
+<pre><code>## out_philipp/all_vcf/1681d00_S56.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1681d14_S57.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1681d30_S58.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1681d49_S59.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1681d63_S60.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1681d79_S61.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d00_S47.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d04_S48.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d09_S49.vcf</code></pre>
+<pre><code>## Skipping</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d14_S50.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d18_S51.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d23_S52.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d30_S53.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d44_S55.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d49_S56.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d53_S57.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d58_S58.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d63_S59.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d67_S60.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d72_S61.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1683d79_S62.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1684d00_S62.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1684d14_S63.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1684d30_S64.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1684d49_S65.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1684d63_S66.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1684d79_S67.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1686d00_S69.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1686d14_S70.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1686d30_S71.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1686d49_S72.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1686d63_S73.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1686d79_S74.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d00_S1.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d04_S2.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d09_S3.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d14_S4.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d18_S5.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d23_S6.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d30_S7.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d37_S8.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d44_S9.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d49_S10.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d53_S11.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d58_S12.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d63_S13.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d67_S14.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d72_S15.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1688d79_S16.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1690d00_S75.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1690d14_S76.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1690d30_S77.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1690d49_S78.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1690d63_S79.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1690d79_S80.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d00_S17.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d04_S18.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d09_S19.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d14_S20.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d18_S21.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d23_S22.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d30_S23.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d37_S24.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d44_S25.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d49_S26.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d53_S27.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d58_S28.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d63_S29.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d67_S30.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d72_S31.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1692d79_S32.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1693d00_S81.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1693d14_S82.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1693d30_S83.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1693d49_S84.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1693d63_S85.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1693d79_S86.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1694d00_S87.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1694d14_S88.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1694d30_S89.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1694d49_S90.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1694d63_S91.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1694d79_S43.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1697d00_S50.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1697d14_S51.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1697d30_S52.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1697d49_S53.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1697d63_S54.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1697d79_S55.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1698d00_S44.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1698d14_S45.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1698d30_S46.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1698d49_S47.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1698d63_S48.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1698d79_S49.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d00_S33.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d04_S34.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d09_S35.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d14_S36.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d18_S37.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d23_S38.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d30_S39.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d37_S40.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d44_S41.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d49_S42.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d53_S63.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d58_S64.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d63_S65.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d67_S66.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d72_S67.vcf</code></pre>
+<pre><code>## out_philipp/all_vcf/1699d79_S68.vcf</code></pre>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="ab-samples.html#cb169-1"></a>vcf.samples<span class="op">$</span>feature &lt;-<span class="st"> </span><span class="kw">as.character</span>(<span class="kw">as.matrix</span>(vcf.samples<span class="op">$</span>feature))</span>
+<span id="cb169-2"><a href="ab-samples.html#cb169-2"></a>vcf.samples[<span class="kw">which</span>(<span class="kw">is.na</span>(vcf.samples<span class="op">$</span>feature)), ]<span class="op">$</span>feature &lt;-<span class="st"> &quot;outside ORFs&quot;</span></span>
+<span id="cb169-3"><a href="ab-samples.html#cb169-3"></a>vcf.samples[<span class="kw">which</span>(vcf.samples<span class="op">$</span>feature <span class="op">==</span><span class="st"> &quot;hypothetical protein&quot;</span>), ]<span class="op">$</span>feature &lt;-<span class="st"> &quot;hypothetical proteins&quot;</span></span>
+<span id="cb169-4"><a href="ab-samples.html#cb169-4"></a><span class="kw">saveRDS</span>(vcf.samples, <span class="dt">file =</span> <span class="st">&quot;data/rds/omm_ab.rds&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb170"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb170-1"><a href="ab-samples.html#cb170-1"></a>p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(vcf.samples, <span class="kw">aes</span>(AF, <span class="dt">fill =</span> genome)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>()</span>
+<span id="cb170-2"><a href="ab-samples.html#cb170-2"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">facet_grid</span>(mouse.id <span class="op">+</span><span class="st"> </span>mouse.group <span class="op">~</span><span class="st"> </span>genome <span class="op">+</span><span class="st"> </span>genome_hr)</span>
+<span id="cb170-3"><a href="ab-samples.html#cb170-3"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>() <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;AF&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;occurence&quot;</span>)</span>
+<span id="cb170-4"><a href="ab-samples.html#cb170-4"></a><span class="kw">print</span>(p)</span></code></pre></div>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-28"></span>
+<img src="oligomm-claudia_files/figure-html/unnamed-chunk-28-1.png" alt="AF of resequenced strains" width="1440" />
+<p class="caption">
+Figure 4.1: AF of resequenced strains
+</p>
+</div>
+<div class="sourceCode" id="cb172"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb172-1"><a href="ab-samples.html#cb172-1"></a>p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(vcf.samples, <span class="kw">aes</span>(majorAF, <span class="dt">fill =</span> genome)) <span class="op">+</span><span class="st"> </span><span class="kw">geom_histogram</span>()</span>
+<span id="cb172-2"><a href="ab-samples.html#cb172-2"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">facet_grid</span>(mouse.id <span class="op">+</span><span class="st"> </span>mouse.group <span class="op">~</span><span class="st"> </span>genome <span class="op">+</span><span class="st"> </span>genome_hr)</span>
+<span id="cb172-3"><a href="ab-samples.html#cb172-3"></a>p &lt;-<span class="st"> </span>p <span class="op">+</span><span class="st"> </span><span class="kw">theme_classic</span>() <span class="op">+</span><span class="st"> </span><span class="kw">xlab</span>(<span class="st">&quot;AF&quot;</span>) <span class="op">+</span><span class="st"> </span><span class="kw">ylab</span>(<span class="st">&quot;occurence&quot;</span>)</span>
+<span id="cb172-4"><a href="ab-samples.html#cb172-4"></a><span class="kw">print</span>(p)</span></code></pre></div>
+<pre><code>## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-29"></span>
+<img src="oligomm-claudia_files/figure-html/unnamed-chunk-29-1.png" alt="major AF of resequenced strains" width="1440" />
+<p class="caption">
+Figure 4.2: major AF of resequenced strains
+</p>
+</div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="resequencing-samples.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
