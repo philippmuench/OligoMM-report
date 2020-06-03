@@ -1,0 +1,716 @@
+CHROM	POS	REF	ALT	QUAL	DP	AF	majorAF	genome	genome_hr	mouse.id	mouse.group	dp	orf_desc	vartype
+Enterococcus_faecalis	22431	C	T	429	406	0.078818	0.921182	KB1	E. faecalis	1681	Water	406	hypothetical proteins	coding
+Enterococcus_faecalis	94377	TG	T	83	439	0.009112	0.990888	KB1	E. faecalis	1681	Water	439	hypothetical proteins	coding
+Enterococcus_faecalis	227434	TG	T	85	384	0.010417	0.989583	KB1	E. faecalis	1681	Water	384	Stage V sporulation protein D	coding
+Enterococcus_faecalis	287818	TG	T	85	364	0.010989	0.989011	KB1	E. faecalis	1681	Water	364	hypothetical proteins	coding
+Enterococcus_faecalis	511841	G	T	14093	440	0.988636	0.988636	KB1	E. faecalis	1681	Water	440	Glyceraldehyde-3-phosphate dehydrogenase	coding
+Enterococcus_faecalis	558691	A	T	137	260	0.153846	0.846154	KB1	E. faecalis	1681	Water	260	outside ORFs	non-coding
+Enterococcus_faecalis	572541	GT	G	103	419	0.011933	0.988067	KB1	E. faecalis	1681	Water	419	GTPase Der	coding
+Enterococcus_faecalis	589815	G	A	2025	411	0.216545	0.783455	KB1	E. faecalis	1681	Water	411	Non-homologous end joining protein Ku	coding
+Enterococcus_faecalis	725540	G	T	12724	510	0.780392	0.780392	KB1	E. faecalis	1681	Water	510	Multidrug export protein MepA	coding
+Enterococcus_faecalis	753323	A	T	4001	559	0.282648	0.717352	KB1	E. faecalis	1681	Water	559	hypothetical proteins	coding
+Enterococcus_faecalis	774793	TCCC	T	76	516	0.007752	0.992248	KB1	E. faecalis	1681	Water	516	outside ORFs	non-coding
+Enterococcus_faecalis	789742	G	T	16130	517	0.914894	0.914894	KB1	E. faecalis	1681	Water	517	GTP 3',8-cyclase	coding
+Enterococcus_faecalis	790647	G	C	838	547	0.087751	0.912249	KB1	E. faecalis	1681	Water	547	GTP 3',8-cyclase	coding
+Enterococcus_faecalis	821409	AC	A	79	561	0.00713	0.99287	KB1	E. faecalis	1681	Water	561	hypothetical proteins	coding
+Enterococcus_faecalis	858875	TA	T	77	542	0.00738	0.99262	KB1	E. faecalis	1681	Water	542	Cobalt-precorrin-5A hydrolase	coding
+Enterococcus_faecalis	877550	GT	G	76	509	0.007859	0.992141	KB1	E. faecalis	1681	Water	509	Glutamyl-tRNA reductase	coding
+Enterococcus_faecalis	925891	GT	G	76	535	0.007477	0.992523	KB1	E. faecalis	1681	Water	535	Bifunctional protein TrpGD	coding
+Enterococcus_faecalis	929742	C	A	5527	565	0.382301	0.617699	KB1	E. faecalis	1681	Water	565	Tryptophan synthase alpha chain	coding
+Enterococcus_faecalis	1018134	TA	T	70	591	0.006768	0.993232	KB1	E. faecalis	1681	Water	591	Trans-4-hydroxy-L-proline dehydratase	coding
+Enterococcus_faecalis	1019878	AC	A	73	565	0.00708	0.99292	KB1	E. faecalis	1681	Water	565	putative FMN/FAD exporter YeeO	coding
+Enterococcus_faecalis	1020043	TA	T	77	591	0.006768	0.993232	KB1	E. faecalis	1681	Water	591	putative FMN/FAD exporter YeeO	coding
+Enterococcus_faecalis	1020097	A	G	17810	600	0.88	0.88	KB1	E. faecalis	1681	Water	600	putative FMN/FAD exporter YeeO	coding
+Enterococcus_faecalis	1061525	C	A	89	627	0.043062	0.956938	KB1	E. faecalis	1681	Water	627	Transcriptional regulatory protein WalR	coding
+Enterococcus_faecalis	1067419	TCG	T	72	632	0.006329	0.993671	KB1	E. faecalis	1681	Water	632	Alkaline phosphatase synthesis transcriptional regulatory protein PhoP	coding
+Enterococcus_faecalis	1073228	CTT	C	79	555	0.007207	0.992793	KB1	E. faecalis	1681	Water	555	Multidrug export protein MepA	coding
+Enterococcus_faecalis	1078372	GATTTTATTCAAAACTGGCGTGTCTAGAGAGATACAAGGATGTATT	G	6316	220	0.813636	0.813636	KB1	E. faecalis	1681	Water	220	hypothetical proteins	coding
+Enterococcus_faecalis	1088746	CT	C	81	480	0.008333	0.991667	KB1	E. faecalis	1681	Water	480	3'3'-cGAMP-specific phosphodiesterase 1	coding
+Enterococcus_faecalis	1232511	TC	T	76	583	0.006861	0.993139	KB1	E. faecalis	1681	Water	583	outside ORFs	non-coding
+Enterococcus_faecalis	1241440	C	T	2070	697	0.146341	0.853659	KB1	E. faecalis	1681	Water	697	Beta-galactosidase BoGH2A	coding
+Enterococcus_faecalis	1242629	GT	G	76	656	0.006098	0.993902	KB1	E. faecalis	1681	Water	656	Beta-galactosidase BoGH2A	coding
+Enterococcus_faecalis	1247726	AT	A	76	617	0.006483	0.993517	KB1	E. faecalis	1681	Water	617	outside ORFs	non-coding
+Enterococcus_faecalis	1250430	G	T	381	610	0.04918	0.95082	KB1	E. faecalis	1681	Water	610	hypothetical proteins	coding
+Enterococcus_faecalis	1298748	TG	T	77	604	0.006623	0.993377	KB1	E. faecalis	1681	Water	604	hypothetical proteins	coding
+Enterococcus_faecalis	1305183	G	T	104	514	0.029183	0.970817	KB1	E. faecalis	1681	Water	514	DNA translocase FtsK	coding
+Enterococcus_faecalis	1478797	TG	T	168	593	0.013491	0.986509	KB1	E. faecalis	1681	Water	593	2,3-dimethylmalate dehydratase large subunit	coding
+Enterococcus_faecalis	1482858	A	AT	67	709	0.005642	0.994358	KB1	E. faecalis	1681	Water	709	hypothetical proteins	coding
+Enterococcus_faecalis	1526073	TG	T	74	710	0.005634	0.994366	KB1	E. faecalis	1681	Water	710	Vitamin B12 import ATP-binding protein BtuD	coding
+Enterococcus_faecalis	1540934	T	C	6466	725	0.348966	0.651034	KB1	E. faecalis	1681	Water	725	ATP synthase subunit a	coding
+Enterococcus_faecalis	1547312	TA	T	73	775	0.005161	0.994839	KB1	E. faecalis	1681	Water	775	Para-nitrobenzyl esterase	coding
+Enterococcus_faecalis	1593227	C	CA	73	738	0.00542	0.99458	KB1	E. faecalis	1681	Water	738	outside ORFs	non-coding
+Enterococcus_faecalis	1604260	GT	G	75	705	0.005674	0.994326	KB1	E. faecalis	1681	Water	705	hypothetical proteins	coding
+Enterococcus_faecalis	1609715	TC	T	73	786	0.005089	0.994911	KB1	E. faecalis	1681	Water	786	Replication-associated recombination protein A	coding
+Enterococcus_faecalis	1692889	AC	A	72	802	0.004988	0.995012	KB1	E. faecalis	1681	Water	802	hypothetical proteins	coding
+Enterococcus_faecalis	1705476	TCAAAA	T	68	835	0.00479	0.99521	KB1	E. faecalis	1681	Water	835	Elongation factor Ts	coding
+Enterococcus_faecalis	1754289	C	T	526	933	0.057878	0.942122	KB1	E. faecalis	1681	Water	933	Isopentenyl-diphosphate Delta-isomerase	coding
+Enterococcus_faecalis	1759464	C	CT	67	846	0.009456	0.990544	KB1	E. faecalis	1681	Water	846	DegV domain-containing protein	coding
+Enterococcus_faecalis	1764711	TA	T	93	854	0.005855	0.994145	KB1	E. faecalis	1681	Water	854	hypothetical proteins	coding
+Enterococcus_faecalis	1766293	TA	T	69	989	0.004044	0.995956	KB1	E. faecalis	1681	Water	989	Chaperone protein HtpG	coding
+Enterococcus_faecalis	1782165	CG	C	97	762	0.007874	0.992126	KB1	E. faecalis	1681	Water	762	Putative oxidoreductase YgfK	coding
+Enterococcus_faecalis	1793415	G	A	6789	754	0.348806	0.651194	KB1	E. faecalis	1681	Water	754	Adenosine deaminase	coding
+Enterococcus_faecalis	1817145	A	T	96	591	0.037225	0.962775	KB1	E. faecalis	1681	Water	591	Glutathione transport system permease protein GsiD	coding
+Enterococcus_faecalis	1860910	C	T	141	824	0.018204	0.981796	KB1	E. faecalis	1681	Water	824	hypothetical proteins	coding
+Enterococcus_faecalis	1867577	C	A	99	1174	0.040886	0.959114	KB1	E. faecalis	1681	Water	1174	Glycine betaine methyltransferase	coding
+Enterococcus_faecalis	1889668	AC	A	72	851	0.0047	0.9953	KB1	E. faecalis	1681	Water	851	Phosphotransferase RcsD	coding
+Enterococcus_faecalis	1905591	TG	T	70	703	0.00569	0.99431	KB1	E. faecalis	1681	Water	703	Histidine ammonia-lyase	coding
+Enterococcus_faecalis	1915001	TC	T	69	988	0.004049	0.995951	KB1	E. faecalis	1681	Water	988	hypothetical proteins	coding
+Enterococcus_faecalis	1915535	TA	T	66	957	0.00418	0.99582	KB1	E. faecalis	1681	Water	957	hypothetical proteins	coding
+Enterococcus_faecalis	1920677	TAGG	T	63	814	0.004914	0.995086	KB1	E. faecalis	1681	Water	814	Alpha-hemolysin translocation ATP-binding protein HlyB	coding
+Enterococcus_faecalis	1923679	GGT	G	72	781	0.005122	0.994878	KB1	E. faecalis	1681	Water	781	hypothetical proteins	coding
+Enterococcus_faecalis	1947278	CTGGCGGTGAGTTAATCACAGGAAATATGA	C	2187	805	0.091925	0.908075	KB1	E. faecalis	1681	Water	805	hypothetical proteins	coding
+Enterococcus_faecalis	1950018	C	A	99	831	0.031288	0.968712	KB1	E. faecalis	1681	Water	831	hypothetical proteins	coding
+Enterococcus_faecalis	1971082	AT	A	65	794	0.005038	0.994962	KB1	E. faecalis	1681	Water	794	hypothetical proteins	coding
+Enterococcus_faecalis	1989335	T	A	20685	715	0.911888	0.911888	KB1	E. faecalis	1681	Water	715	Phosphoribosylformylglycinamidine cyclo-ligase	coding
+Enterococcus_faecalis	1992845	TA	T	74	738	0.00542	0.99458	KB1	E. faecalis	1681	Water	738	hypothetical proteins	coding
+Enterococcus_faecalis	2050297	TA	T	70	740	0.005405	0.994595	KB1	E. faecalis	1681	Water	740	hypothetical proteins	coding
+Enterococcus_faecalis	2068189	GC	G	74	708	0.00565	0.99435	KB1	E. faecalis	1681	Water	708	1,3-beta-galactosyl-N-acetylhexosamine phosphorylase	coding
+Enterococcus_faecalis	2112941	TA	T	103	767	0.01043	0.98957	KB1	E. faecalis	1681	Water	767	Polyribonucleotide nucleotidyltransferase	coding
+Enterococcus_faecalis	2122117	TG	T	94	798	0.006266	0.993734	KB1	E. faecalis	1681	Water	798	Translation initiation factor IF-2	coding
+Enterococcus_faecalis	2135254	TG	T	74	753	0.005312	0.994688	KB1	E. faecalis	1681	Water	753	hypothetical proteins	coding
+Enterococcus_faecalis	2176751	GT	G	75	696	0.005747	0.994253	KB1	E. faecalis	1681	Water	696	Polyphosphate kinase	coding
+Enterococcus_faecalis	2221205	CTGT	C	72	741	0.005398	0.994602	KB1	E. faecalis	1681	Water	741	Adenine deaminase	coding
+Enterococcus_faecalis	2239851	C	T	8801	1036	0.324324	0.675676	KB1	E. faecalis	1681	Water	1036	hypothetical proteins	coding
+Enterococcus_faecalis	2240032	A	G	12252	1152	0.396701	0.603299	KB1	E. faecalis	1681	Water	1152	hypothetical proteins	coding
+Enterococcus_faecalis	2240151	C	T	9920	1098	0.35337	0.64663	KB1	E. faecalis	1681	Water	1098	hypothetical proteins	coding
+Enterococcus_faecalis	2240232	A	T	8472	961	0.330905	0.669095	KB1	E. faecalis	1681	Water	961	hypothetical proteins	coding
+Enterococcus_faecalis	2240247	T	C	8275	979	0.335036	0.664964	KB1	E. faecalis	1681	Water	979	hypothetical proteins	coding
+Enterococcus_faecalis	2240262	G	A	8219	970	0.318557	0.681443	KB1	E. faecalis	1681	Water	970	hypothetical proteins	coding
+Enterococcus_faecalis	2266326	AT	A	67	706	0.005666	0.994334	KB1	E. faecalis	1681	Water	706	Myo-inositol 2-dehydrogenase	coding
+Enterococcus_faecalis	2316282	TGATGAAATTTCTAACGAGGATGTCGAACAATTATTAGAAATGATGAAC	T	841	578	0.053633	0.946367	KB1	E. faecalis	1681	Water	578	hypothetical proteins	coding
+Enterococcus_faecalis	2334590	CAAAAAATAGAATA	C	182	581	0.020654	0.979346	KB1	E. faecalis	1681	Water	581	Protein-glutamate methylesterase/protein-glutamine glutaminase	coding
+Enterococcus_faecalis	2340498	CT	C	74	738	0.00542	0.99458	KB1	E. faecalis	1681	Water	738	Copper-exporting P-type ATPase	coding
+Enterococcus_faecalis	2365414	TAACTATCAATCTGTGTGGAGCGA	T	4383	576	0.227431	0.772569	KB1	E. faecalis	1681	Water	576	hypothetical proteins	coding
+Enterococcus_faecalis	2367368	G	T	116	164	0.146341	0.853659	KB1	E. faecalis	1681	Water	164	Aminoglycoside 3'-phosphotransferase	coding
+Enterococcus_faecalis	2407513	GC	G	78	591	0.006768	0.993232	KB1	E. faecalis	1681	Water	591	Nickel-binding protein NikA	coding
+Enterococcus_faecalis	2475119	C	A	99	571	0.038529	0.961471	KB1	E. faecalis	1681	Water	571	Stage II sporulation protein E	coding
+Enterococcus_faecalis	2504923	CT	C	73	615	0.006504	0.993496	KB1	E. faecalis	1681	Water	615	outside ORFs	non-coding
+Enterococcus_faecalis	2537404	AC	A	78	546	0.007326	0.992674	KB1	E. faecalis	1681	Water	546	putative pyridine nucleotide-disulfide oxidoreductase RclA	coding
+Enterococcus_faecalis	2542798	GTGA	G	80	507	0.00789	0.99211	KB1	E. faecalis	1681	Water	507	N-acetylmannosamine kinase	coding
+Enterococcus_faecalis	2558019	AC	A	78	571	0.007005	0.992995	KB1	E. faecalis	1681	Water	571	hypothetical proteins	coding
+Enterococcus_faecalis	2676761	T	C	1163	552	0.112319	0.887681	KB1	E. faecalis	1681	Water	552	hypothetical proteins	coding
+Enterococcus_faecalis	2699950	GA	G	71	570	0.007018	0.992982	KB1	E. faecalis	1681	Water	570	Xylulose kinase	coding
+Enterococcus_faecalis	2705361	C	CT	64	546	0.016484	0.983516	KB1	E. faecalis	1681	Water	546	hypothetical proteins	coding
+Enterococcus_faecalis	2705361	CT	C	540	546	0.076923	0.923077	KB1	E. faecalis	1681	Water	546	hypothetical proteins	coding
+Enterococcus_faecalis	2710637	CT	C	76	508	0.007874	0.992126	KB1	E. faecalis	1681	Water	508	hypothetical proteins	coding
+Enterococcus_faecalis	2750292	G	T	93	491	0.05499	0.94501	KB1	E. faecalis	1681	Water	491	putative protein YdjI	coding
+Enterococcus_faecalis	2752911	CA	C	76	519	0.007707	0.992293	KB1	E. faecalis	1681	Water	519	HTH-type transcriptional activator RhaR	coding
+Enterococcus_faecalis	2779240	ATT	A	76	513	0.007797	0.992203	KB1	E. faecalis	1681	Water	513	outside ORFs	non-coding
+Enterococcus_faecalis	2804898	AC	A	80	509	0.007859	0.992141	KB1	E. faecalis	1681	Water	509	Monoacylglycerol lipase	coding
+Enterococcus_faecalis	2811206	G	A	17743	495	1	1	KB1	E. faecalis	1681	Water	495	hypothetical proteins	coding
+Enterococcus_faecalis	2830532	GT	G	12571	503	0.882704	0.882704	KB1	E. faecalis	1681	Water	503	60 kDa chaperonin	coding
+Enterococcus_faecalis	2831044	AAC	A	68	551	0.00726	0.99274	KB1	E. faecalis	1681	Water	551	60 kDa chaperonin	coding
+Enterococcus_faecalis	2869842	TA	T	65	481	0.010395	0.989605	KB1	E. faecalis	1681	Water	481	UvrABC system protein B	coding
+Enterococcus_faecalis	2914410	AC	A	106	468	0.010684	0.989316	KB1	E. faecalis	1681	Water	468	2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate synthase	coding
+Enterococcus_faecalis	2933486	G	A	16665	476	1	1	KB1	E. faecalis	1681	Water	476	DNA-directed RNA polymerase subunit alpha	coding
+Enterococcus_faecalis	2933508	A	G	14994	452	0.993363	0.993363	KB1	E. faecalis	1681	Water	452	DNA-directed RNA polymerase subunit alpha	coding
+Enterococcus_faecalis	2933534	A	C	13042	411	0.997567	0.997567	KB1	E. faecalis	1681	Water	411	DNA-directed RNA polymerase subunit alpha	coding
+Enterococcus_faecalis	2983552	GC	G	83	428	0.009346	0.990654	KB1	E. faecalis	1681	Water	428	putative multiple-sugar transport system permease YteP	coding
+Clostridium_innocuum	22890	GC	G	83	423	0.009456	0.990544	I46	C. innocuum	1681	Water	423	outside ORFs	non-coding
+Clostridium_innocuum	40322	C	T	230	443	0.049661	0.950339	I46	C. innocuum	1681	Water	443	D-inositol-3-phosphate glycosyltransferase	coding
+Clostridium_innocuum	40526	A	G	446	480	0.070833	0.929167	I46	C. innocuum	1681	Water	480	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-acetyltransferase	coding
+Clostridium_innocuum	94949	GT	G	84	419	0.009547	0.990453	I46	C. innocuum	1681	Water	419	hypothetical proteins	coding
+Clostridium_innocuum	104263	TG	T	85	384	0.010417	0.989583	I46	C. innocuum	1681	Water	384	Replicative DNA helicase	coding
+Clostridium_innocuum	148866	TG	T	85	398	0.01005	0.98995	I46	C. innocuum	1681	Water	398	hypothetical proteins	coding
+Clostridium_innocuum	225909	TA	T	77	389	0.010283	0.989717	I46	C. innocuum	1681	Water	389	Ribosomal RNA small subunit methyltransferase H	coding
+Clostridium_innocuum	234117	TA	T	81	312	0.012821	0.987179	I46	C. innocuum	1681	Water	312	putative peptidoglycan glycosyltransferase FtsW	coding
+Clostridium_innocuum	263301	T	C	9683	277	1	1	I46	C. innocuum	1681	Water	277	Glutathione-binding protein GsiB	coding
+Clostridium_innocuum	267124	TAA	T	78	356	0.011236	0.988764	I46	C. innocuum	1681	Water	356	Oligopeptide transport ATP-binding protein OppF	coding
+Clostridium_innocuum	273788	TG	T	85	385	0.01039	0.98961	I46	C. innocuum	1681	Water	385	putative ABC transporter ATP-binding protein	coding
+Clostridium_innocuum	323236	CCCT	C	87	348	0.011494	0.988506	I46	C. innocuum	1681	Water	348	Diaminopimelate decarboxylase	coding
+Clostridium_innocuum	325173	TG	T	82	419	0.009547	0.990453	I46	C. innocuum	1681	Water	419	putative ABC transporter ATP-binding protein YbiT	coding
+Clostridium_innocuum	367077	TG	T	88	313	0.01278	0.98722	I46	C. innocuum	1681	Water	313	hypothetical proteins	coding
+Clostridium_innocuum	411948	AT	A	88	314	0.012739	0.987261	I46	C. innocuum	1681	Water	314	C4-dicarboxylate TRAP transporter large permease protein DctM	coding
+Clostridium_innocuum	432108	G	A	255	11	1	1	I46	C. innocuum	1681	Water	11	hypothetical proteins	coding
+Clostridium_innocuum	441373	AT	A	90	281	0.014235	0.985765	I46	C. innocuum	1681	Water	281	hypothetical proteins	coding
+Clostridium_innocuum	456899	TA	T	80	327	0.012232	0.987768	I46	C. innocuum	1681	Water	327	Putative ATP-dependent DNA helicase YjcD	coding
+Clostridium_innocuum	468418	TG	T	85	386	0.010363	0.989637	I46	C. innocuum	1681	Water	386	hypothetical proteins	coding
+Clostridium_innocuum	477643	CT	C	87	331	0.012085	0.987915	I46	C. innocuum	1681	Water	331	1-deoxy-D-xylulose-5-phosphate synthase	coding
+Clostridium_innocuum	483293	GA	G	89	313	0.01278	0.98722	I46	C. innocuum	1681	Water	313	SpoIVB peptidase	coding
+Clostridium_innocuum	507379	TG	T	87	337	0.011869	0.988131	I46	C. innocuum	1681	Water	337	HTH-type transcriptional regulator CymR	coding
+Clostridium_innocuum	609290	GT	G	85	303	0.013201	0.986799	I46	C. innocuum	1681	Water	303	Aliphatic sulfonates import ATP-binding protein SsuB	coding
+Clostridium_innocuum	634975	TG	T	85	392	0.010204	0.989796	I46	C. innocuum	1681	Water	392	hypothetical proteins	coding
+Clostridium_innocuum	652831	TCA	T	89	304	0.013158	0.986842	I46	C. innocuum	1681	Water	304	hypothetical proteins	coding
+Clostridium_innocuum	653328	TGTCTGG	T	80	369	0.01084	0.98916	I46	C. innocuum	1681	Water	369	hypothetical proteins	coding
+Clostridium_innocuum	723741	T	G	136	11	0.636364	0.636364	I46	C. innocuum	1681	Water	11	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723753	T	G	92	10	0.5	0.5	I46	C. innocuum	1681	Water	10	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723876	T	A	383	36	0.555556	0.555556	I46	C. innocuum	1681	Water	36	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723891	T	C	402	43	0.534884	0.534884	I46	C. innocuum	1681	Water	43	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723894	G	A	413	45	0.533333	0.533333	I46	C. innocuum	1681	Water	45	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723996	C	T	1098	119	0.504202	0.504202	I46	C. innocuum	1681	Water	119	outside ORFs	non-coding
+Clostridium_innocuum	724047	T	C	1416	173	0.456647	0.543353	I46	C. innocuum	1681	Water	173	outside ORFs	non-coding
+Clostridium_innocuum	724050	C	T	1460	176	0.465909	0.534091	I46	C. innocuum	1681	Water	176	outside ORFs	non-coding
+Clostridium_innocuum	724136	A	G	2480	324	0.447531	0.552469	I46	C. innocuum	1681	Water	324	hypothetical proteins	coding
+Clostridium_innocuum	753543	AT	A	88	330	0.012121	0.987879	I46	C. innocuum	1681	Water	330	hypothetical proteins	coding
+Clostridium_innocuum	793806	ATGT	A	66	257	0.011673	0.988327	I46	C. innocuum	1681	Water	257	Undecaprenyl-phosphate 4-deoxy-4-formamido-L-arabinose transferase	coding
+Clostridium_innocuum	817907	TA	T	92	261	0.015326	0.984674	I46	C. innocuum	1681	Water	261	Polyphenol oxidase	coding
+Clostridium_innocuum	832021	C	A	5630	192	0.994792	0.994792	I46	C. innocuum	1681	Water	192	hypothetical proteins	coding
+Clostridium_innocuum	837562	C	A	9812	302	0.996689	0.996689	I46	C. innocuum	1681	Water	302	Carbon monoxide dehydrogenase 1	coding
+Clostridium_innocuum	845222	A	G	7502	545	0.493578	0.506422	I46	C. innocuum	1681	Water	545	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845538	C	T	8493	618	0.485437	0.514563	I46	C. innocuum	1681	Water	618	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845539	T	C	8329	620	0.485484	0.514516	I46	C. innocuum	1681	Water	620	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845543	T	A	8605	616	0.501623	0.501623	I46	C. innocuum	1681	Water	616	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845824	T	G	8117	606	0.4967	0.5033	I46	C. innocuum	1681	Water	606	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845876	A	G	7979	582	0.496564	0.503436	I46	C. innocuum	1681	Water	582	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845939	A	G	7292	570	0.480702	0.519298	I46	C. innocuum	1681	Water	570	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845942	G	A	7316	566	0.485866	0.514134	I46	C. innocuum	1681	Water	566	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845950	TAAG	T	1237	542	0.385609	0.614391	I46	C. innocuum	1681	Water	542	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845956	A	ATAG	1243	516	0.403101	0.596899	I46	C. innocuum	1681	Water	516	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845960	T	C	7712	537	0.512104	0.512104	I46	C. innocuum	1681	Water	537	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845969	T	G	7865	562	0.492883	0.507117	I46	C. innocuum	1681	Water	562	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845975	G	T	7303	557	0.481149	0.518851	I46	C. innocuum	1681	Water	557	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845978	G	T	7824	571	0.478109	0.521891	I46	C. innocuum	1681	Water	571	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845987	G	A	8021	598	0.473244	0.526756	I46	C. innocuum	1681	Water	598	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845999	G	A	7971	588	0.469388	0.530612	I46	C. innocuum	1681	Water	588	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846002	T	C	7719	593	0.470489	0.529511	I46	C. innocuum	1681	Water	593	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846009	T	C	8259	604	0.480132	0.519868	I46	C. innocuum	1681	Water	604	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846026	C	G	6350	562	0.418149	0.581851	I46	C. innocuum	1681	Water	562	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846029	T	C	6190	564	0.407801	0.592199	I46	C. innocuum	1681	Water	564	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846032	A	G	6223	561	0.40107	0.59893	I46	C. innocuum	1681	Water	561	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846035	T	C	6272	572	0.407343	0.592657	I46	C. innocuum	1681	Water	572	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846038	A	G	6646	584	0.414384	0.585616	I46	C. innocuum	1681	Water	584	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846438	G	A	8290	648	0.462963	0.537037	I46	C. innocuum	1681	Water	648	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	849295	A	G	9757	661	0.518911	0.518911	I46	C. innocuum	1681	Water	661	outside ORFs	non-coding
+Clostridium_innocuum	849594	C	T	9097	645	0.499225	0.500775	I46	C. innocuum	1681	Water	645	Bifunctional protein FolD protein	coding
+Clostridium_innocuum	850214	T	A	6709	525	0.550476	0.550476	I46	C. innocuum	1681	Water	525	outside ORFs	non-coding
+Clostridium_innocuum	858105	A	G	10200	757	0.475561	0.524439	I46	C. innocuum	1681	Water	757	Cobalt-precorrin-5A hydrolase	coding
+Clostridium_innocuum	922736	TA	T	91	277	0.01444	0.98556	I46	C. innocuum	1681	Water	277	Major outer membrane lipoprotein Lpp	coding
+Clostridium_innocuum	928747	AC	A	114	308	0.016234	0.983766	I46	C. innocuum	1681	Water	308	Tryptophan synthase beta chain	coding
+Clostridium_innocuum	942031	C	T	11809	346	0.99711	0.99711	I46	C. innocuum	1681	Water	346	hypothetical proteins	coding
+Clostridium_innocuum	959775	TG	T	87	341	0.01173	0.98827	I46	C. innocuum	1681	Water	341	Polyphosphate:AMP phosphotransferase	coding
+Clostridium_innocuum	960639	GT	G	77	387	0.010336	0.989664	I46	C. innocuum	1681	Water	387	hypothetical proteins	coding
+Clostridium_innocuum	1006596	TG	T	86	369	0.01084	0.98916	I46	C. innocuum	1681	Water	369	Aldehyde-alcohol dehydrogenase	coding
+Clostridium_innocuum	1179784	TC	T	88	324	0.012346	0.987654	I46	C. innocuum	1681	Water	324	outside ORFs	non-coding
+Clostridium_innocuum	1247716	TG	T	87	339	0.011799	0.988201	I46	C. innocuum	1681	Water	339	outside ORFs	non-coding
+Clostridium_innocuum	1289962	CT	C	86	365	0.010959	0.989041	I46	C. innocuum	1681	Water	365	hypothetical proteins	coding
+Clostridium_innocuum	1323703	TA	T	86	345	0.011594	0.988406	I46	C. innocuum	1681	Water	345	Citrate (Re)-synthase	coding
+Clostridium_innocuum	1370165	TA	T	66	271	0.01107	0.98893	I46	C. innocuum	1681	Water	271	Sensor histidine kinase RcsC	coding
+Clostridium_innocuum	1373641	CT	C	65	282	0.010638	0.989362	I46	C. innocuum	1681	Water	282	Sensor histidine kinase RcsC	coding
+Clostridium_innocuum	1422481	CCG	C	69	341	0.01173	0.98827	I46	C. innocuum	1681	Water	341	hypothetical proteins	coding
+Clostridium_innocuum	1443242	AGCTGCT	A	84	395	0.010127	0.989873	I46	C. innocuum	1681	Water	395	Sensor histidine kinase RcsC	coding
+Clostridium_innocuum	1486488	TG	T	84	327	0.012232	0.987768	I46	C. innocuum	1681	Water	327	Glutathione import ATP-binding protein GsiA	coding
+Clostridium_innocuum	1527321	TA	T	133	429	0.013986	0.986014	I46	C. innocuum	1681	Water	429	hypothetical proteins	coding
+Clostridium_innocuum	1536938	TA	T	79	367	0.010899	0.989101	I46	C. innocuum	1681	Water	367	ATP synthase gamma chain, sodium ion specific	coding
+Clostridium_innocuum	1552545	TTC	T	85	348	0.011494	0.988506	I46	C. innocuum	1681	Water	348	Transposase from transposon Tn916	coding
+Clostridium_innocuum	1563057	TC	T	72	394	0.010152	0.989848	I46	C. innocuum	1681	Water	394	Transposase from transposon Tn916	coding
+Clostridium_innocuum	1580520	TA	T	89	299	0.013378	0.986622	I46	C. innocuum	1681	Water	299	hypothetical proteins	coding
+Clostridium_innocuum	1582334	CT	C	137	351	0.017094	0.982906	I46	C. innocuum	1681	Water	351	HTH-type transcriptional regulator HdfR	coding
+Clostridium_innocuum	1625296	TG	T	83	424	0.009434	0.990566	I46	C. innocuum	1681	Water	424	Glycogen operon protein GlgX 	coding
+Clostridium_innocuum	1648334	AC	A	86	359	0.011142	0.988858	I46	C. innocuum	1681	Water	359	putative FMN/FAD exporter YeeO	coding
+Clostridium_innocuum	1689612	GC	G	79	357	0.011204	0.988796	I46	C. innocuum	1681	Water	357	hypothetical proteins	coding
+Clostridium_innocuum	1690010	TG	T	84	401	0.009975	0.990025	I46	C. innocuum	1681	Water	401	hypothetical proteins	coding
+Clostridium_innocuum	1705671	CT	C	84	383	0.010444	0.989556	I46	C. innocuum	1681	Water	383	Elongation factor Ts	coding
+Clostridium_innocuum	1720826	TCGATA	T	87	333	0.012012	0.987988	I46	C. innocuum	1681	Water	333	Putative efflux system component YknX	coding
+Clostridium_innocuum	1725474	CCCGA	C	131	442	0.013575	0.986425	I46	C. innocuum	1681	Water	442	Putative ABC transporter substrate-binding protein YesO	coding
+Clostridium_innocuum	1732221	TC	T	86	476	0.010504	0.989496	I46	C. innocuum	1681	Water	476	outside ORFs	non-coding
+Clostridium_innocuum	1762342	A	C	1133	89	0.955056	0.955056	I46	C. innocuum	1681	Water	89	outside ORFs	non-coding
+Clostridium_innocuum	1766124	T	TTCTG	170	304	0.023026	0.976974	I46	C. innocuum	1681	Water	304	Chaperone protein HtpG	coding
+Clostridium_innocuum	1783787	TC	T	86	367	0.010899	0.989101	I46	C. innocuum	1681	Water	367	Putative oxidoreductase YgfK	coding
+Clostridium_innocuum	1815222	TA	T	83	433	0.009238	0.990762	I46	C. innocuum	1681	Water	433	Oligopeptide transport ATP-binding protein OppF	coding
+Clostridium_innocuum	1847989	TC	T	83	440	0.009091	0.990909	I46	C. innocuum	1681	Water	440	Glutamate mutase sigma subunit	coding
+Clostridium_innocuum	1873415	T	A	5290	222	0.981982	0.981982	I46	C. innocuum	1681	Water	222	outside ORFs	non-coding
+Clostridium_innocuum	1873561	T	C	6725	235	1	1	I46	C. innocuum	1681	Water	235	hypothetical proteins	coding
+Clostridium_innocuum	1873610	C	G	8033	270	0.996296	0.996296	I46	C. innocuum	1681	Water	270	hypothetical proteins	coding
+Clostridium_innocuum	1873678	A	G	12234	379	0.997361	0.997361	I46	C. innocuum	1681	Water	379	hypothetical proteins	coding
+Clostridium_innocuum	1887677	TA	T	136	375	0.016	0.984	I46	C. innocuum	1681	Water	375	hypothetical proteins	coding
+Clostridium_innocuum	1890928	TG	T	84	417	0.009592	0.990408	I46	C. innocuum	1681	Water	417	outside ORFs	non-coding
+Clostridium_innocuum	1961392	AG	A	111	367	0.013624	0.986376	I46	C. innocuum	1681	Water	367	hypothetical proteins	coding
+Clostridium_innocuum	1977648	TG	T	88	319	0.012539	0.987461	I46	C. innocuum	1681	Water	319	outside ORFs	non-coding
+Clostridium_innocuum	1979631	CT	C	85	380	0.010526	0.989474	I46	C. innocuum	1681	Water	380	outside ORFs	non-coding
+Clostridium_innocuum	2044714	TC	T	102	434	0.011521	0.988479	I46	C. innocuum	1681	Water	434	hypothetical proteins	coding
+Clostridium_innocuum	2051204	AC	A	73	390	0.010256	0.989744	I46	C. innocuum	1681	Water	390	outside ORFs	non-coding
+Clostridium_innocuum	2078161	TGTAG	T	79	375	0.010667	0.989333	I46	C. innocuum	1681	Water	375	Cysteine synthase	coding
+Clostridium_innocuum	2096392	TG	T	83	415	0.009639	0.990361	I46	C. innocuum	1681	Water	415	outside ORFs	non-coding
+Clostridium_innocuum	2162875	TC	T	71	456	0.008772	0.991228	I46	C. innocuum	1681	Water	456	Putative cryptic C4-dicarboxylate transporter DcuD	coding
+Clostridium_innocuum	2175327	TCA	T	83	435	0.009195	0.990805	I46	C. innocuum	1681	Water	435	outside ORFs	non-coding
+Clostridium_innocuum	2180836	G	GA	82	426	0.00939	0.99061	I46	C. innocuum	1681	Water	426	Diacetylchitobiose uptake system permease protein NgcG	coding
+Clostridium_innocuum	2187385	G	C	14588	414	1	1	I46	C. innocuum	1681	Water	414	N,N'-diacetylchitobiose phosphorylase	coding
+Clostridium_innocuum	2187665	C	A	15995	467	0.995717	0.995717	I46	C. innocuum	1681	Water	467	N,N'-diacetylchitobiose phosphorylase	coding
+Clostridium_innocuum	2187674	T	C	16132	464	0.997845	0.997845	I46	C. innocuum	1681	Water	464	N,N'-diacetylchitobiose phosphorylase	coding
+Clostridium_innocuum	2188524	A	G	15299	442	0.995475	0.995475	I46	C. innocuum	1681	Water	442	N,N'-diacetylchitobiose phosphorylase	coding
+Clostridium_innocuum	2188540	T	C	15861	449	0.997773	0.997773	I46	C. innocuum	1681	Water	449	N,N'-diacetylchitobiose phosphorylase	coding
+Clostridium_innocuum	2198264	C	CAT	13352	423	0.803783	0.803783	I46	C. innocuum	1681	Water	423	hypothetical proteins	coding
+Clostridium_innocuum	2198264	C	CATAT	84	423	0.009456	0.990544	I46	C. innocuum	1681	Water	423	hypothetical proteins	coding
+Clostridium_innocuum	2198264	CAT	C	80	423	0.009456	0.990544	I46	C. innocuum	1681	Water	423	hypothetical proteins	coding
+Clostridium_innocuum	2218481	GC	G	65	473	0.008457	0.991543	I46	C. innocuum	1681	Water	473	Malate-2H(+)/Na(+)-lactate antiporter	coding
+Clostridium_innocuum	2242398	TC	T	85	378	0.010582	0.989418	I46	C. innocuum	1681	Water	378	hypothetical proteins	coding
+Clostridium_innocuum	2251157	G	GA	79	449	0.008909	0.991091	I46	C. innocuum	1681	Water	449	Beta-galactosidase bgaB	coding
+Clostridium_innocuum	2251291	CT	C	80	515	0.007767	0.992233	I46	C. innocuum	1681	Water	515	Beta-galactosidase bgaB	coding
+Clostridium_innocuum	2256576	TG	T	83	429	0.009324	0.990676	I46	C. innocuum	1681	Water	429	sn-glycerol-3-phosphate-binding periplasmic protein UgpB	coding
+Clostridium_innocuum	2290200	TGC	T	82	441	0.00907	0.99093	I46	C. innocuum	1681	Water	441	S-ribosylhomocysteine lyase	coding
+Clostridium_innocuum	2293817	TG	T	85	387	0.010336	0.989664	I46	C. innocuum	1681	Water	387	hypothetical proteins	coding
+Clostridium_innocuum	2330277	TC	T	86	374	0.010695	0.989305	I46	C. innocuum	1681	Water	374	Serine acetyltransferase	coding
+Clostridium_innocuum	2330459	TG	T	85	379	0.010554	0.989446	I46	C. innocuum	1681	Water	379	outside ORFs	non-coding
+Clostridium_innocuum	2362330	TA	T	84	412	0.009709	0.990291	I46	C. innocuum	1681	Water	412	putative siderophore transport system permease protein YfhA	coding
+Clostridium_innocuum	2383436	AT	A	106	468	0.010684	0.989316	I46	C. innocuum	1681	Water	468	HTH-type transcriptional regulator XynR	coding
+Clostridium_innocuum	2397372	GC	G	76	426	0.00939	0.99061	I46	C. innocuum	1681	Water	426	hypothetical proteins	coding
+Clostridium_innocuum	2397917	C	A	95	371	0.059299	0.940701	I46	C. innocuum	1681	Water	371	hypothetical proteins	coding
+Clostridium_innocuum	2398134	C	T	14651	410	1	1	I46	C. innocuum	1681	Water	410	outside ORFs	non-coding
+Clostridium_innocuum	2458759	TC	T	83	432	0.009259	0.990741	I46	C. innocuum	1681	Water	432	tRNA-Leu(taa)	coding
+Clostridium_innocuum	2572619	CT	C	76	449	0.008909	0.991091	I46	C. innocuum	1681	Water	449	hypothetical proteins	coding
+Clostridium_innocuum	2576090	TG	T	84	415	0.009639	0.990361	I46	C. innocuum	1681	Water	415	Isoprimeverose transporter	coding
+Clostridium_innocuum	2583871	TG	T	118	455	0.017582	0.982418	I46	C. innocuum	1681	Water	455	Sialidase B	coding
+Clostridium_innocuum	2588412	TA	T	81	397	0.010076	0.989924	I46	C. innocuum	1681	Water	397	Lactose-binding protein	coding
+Clostridium_innocuum	2605686	TC	T	82	419	0.009547	0.990453	I46	C. innocuum	1681	Water	419	hypothetical proteins	coding
+Clostridium_innocuum	2610085	CA	C	78	469	0.008529	0.991471	I46	C. innocuum	1681	Water	469	Altronate dehydratase	coding
+Clostridium_innocuum	2631265	TG	T	83	427	0.009368	0.990632	I46	C. innocuum	1681	Water	427	hypothetical proteins	coding
+Clostridium_innocuum	2637837	TA	T	196	504	0.069444	0.930556	I46	C. innocuum	1681	Water	504	hypothetical proteins	coding
+Clostridium_innocuum	2637880	G	GT	2182	628	0.214968	0.785032	I46	C. innocuum	1681	Water	628	hypothetical proteins	coding
+Clostridium_innocuum	2637899	C	T	2568	670	0.271642	0.728358	I46	C. innocuum	1681	Water	670	outside ORFs	non-coding
+Clostridium_innocuum	2637986	G	T	2736	915	0.24918	0.75082	I46	C. innocuum	1681	Water	915	outside ORFs	non-coding
+Clostridium_innocuum	2639642	A	T	147	417	0.043165	0.956835	I46	C. innocuum	1681	Water	417	hypothetical proteins	coding
+Clostridium_innocuum	2663589	CA	C	77	512	0.007812	0.992188	I46	C. innocuum	1681	Water	512	hypothetical proteins	coding
+Clostridium_innocuum	2665339	TA	T	84	406	0.009852	0.990148	I46	C. innocuum	1681	Water	406	hypothetical proteins	coding
+Clostridium_innocuum	2690056	AC	A	83	428	0.009346	0.990654	I46	C. innocuum	1681	Water	428	ATP-dependent DNA helicase PcrA	coding
+Clostridium_innocuum	2752283	TGGATAATTACGTAG	T	81	496	0.008065	0.991935	I46	C. innocuum	1681	Water	496	outside ORFs	non-coding
+Clostridium_innocuum	2754956	GC	G	81	490	0.008163	0.991837	I46	C. innocuum	1681	Water	490	Hydroxypyruvate reductase	coding
+Clostridium_innocuum	2764655	TC	T	85	393	0.010178	0.989822	I46	C. innocuum	1681	Water	393	Adenylosuccinate synthetase	coding
+Clostridium_innocuum	2806109	TC	T	73	460	0.008696	0.991304	I46	C. innocuum	1681	Water	460	putative membrane protein YdfK	coding
+Clostridium_innocuum	2812719	TC	T	71	470	0.008511	0.991489	I46	C. innocuum	1681	Water	470	hypothetical proteins	coding
+Clostridium_innocuum	2821000	TC	T	70	452	0.00885	0.99115	I46	C. innocuum	1681	Water	452	Diacetylchitobiose uptake system permease protein DasC	coding
+Clostridium_innocuum	2822837	TG	T	77	389	0.010283	0.989717	I46	C. innocuum	1681	Water	389	hypothetical proteins	coding
+Clostridium_innocuum	2836667	TC	T	84	388	0.010309	0.989691	I46	C. innocuum	1681	Water	388	Competence protein ComM	coding
+Clostridium_innocuum	2863153	ATT	A	69	349	0.011461	0.988539	I46	C. innocuum	1681	Water	349	Chaperone protein DnaK	coding
+Clostridium_innocuum	2897658	TGA	T	76	455	0.008791	0.991209	I46	C. innocuum	1681	Water	455	hypothetical proteins	coding
+Clostridium_innocuum	2912274	TA	T	81	504	0.007937	0.992063	I46	C. innocuum	1681	Water	504	hypothetical proteins	coding
+Clostridium_innocuum	2929574	TG	T	83	321	0.012461	0.987539	I46	C. innocuum	1681	Water	321	Glutamine synthetase	coding
+Clostridium_innocuum	2978606	C	A	15164	460	0.991304	0.991304	I46	C. innocuum	1681	Water	460	Exo-beta-D-glucosaminidase	coding
+Clostridium_innocuum	2980105	G	A	14984	419	1	1	I46	C. innocuum	1681	Water	419	hypothetical proteins	coding
+Clostridium_innocuum	2994874	TC	T	82	471	0.008493	0.991507	I46	C. innocuum	1681	Water	471	L-arabinose transport system permease protein AraQ	coding
+Clostridium_innocuum	3013545	GT	G	81	479	0.008351	0.991649	I46	C. innocuum	1681	Water	479	hypothetical proteins	coding
+Clostridium_innocuum	3027165	TG	T	70	504	0.007937	0.992063	I46	C. innocuum	1681	Water	504	Valine--tRNA ligase	coding
+Clostridium_innocuum	3050025	TA	T	87	349	0.011461	0.988539	I46	C. innocuum	1681	Water	349	hypothetical proteins	coding
+Clostridium_innocuum	3057446	AC	A	76	450	0.008889	0.991111	I46	C. innocuum	1681	Water	450	Oligosaccharide 4-alpha-D-glucosyltransferase	coding
+Clostridium_innocuum	3075359	G	A	1070	36	1	1	I46	C. innocuum	1681	Water	36	Chaperone protein ClpB	coding
+Clostridium_innocuum	3075361	A	T	828	31	0.903226	0.903226	I46	C. innocuum	1681	Water	31	Chaperone protein ClpB	coding
+Clostridium_innocuum	3075364	A	C	1085	35	1	1	I46	C. innocuum	1681	Water	35	Chaperone protein ClpB	coding
+Clostridium_innocuum	3075374	C	T	489	17	1	1	I46	C. innocuum	1681	Water	17	Chaperone protein ClpB	coding
+Clostridium_innocuum	3075377	T	C	360	10	1	1	I46	C. innocuum	1681	Water	10	Chaperone protein ClpB	coding
+Clostridium_innocuum	3075379	G	A	348	10	1	1	I46	C. innocuum	1681	Water	10	Chaperone protein ClpB	coding
+Clostridium_innocuum	3075382	A	G	259	17	0.764706	0.764706	I46	C. innocuum	1681	Water	17	Chaperone protein ClpB	coding
+Clostridium_innocuum	3075394	A	G	3103	95	1	1	I46	C. innocuum	1681	Water	95	Chaperone protein ClpB	coding
+Clostridium_innocuum	3088312	TC	T	81	495	0.008081	0.991919	I46	C. innocuum	1681	Water	495	hypothetical proteins	coding
+Clostridium_innocuum	3091751	G	GT	76	414	0.009662	0.990338	I46	C. innocuum	1681	Water	414	Alpha-xylosidase	coding
+Clostridium_innocuum	3102229	GC	G	81	488	0.008197	0.991803	I46	C. innocuum	1681	Water	488	hypothetical proteins	coding
+Clostridium_innocuum	3109162	CA	C	78	424	0.009434	0.990566	I46	C. innocuum	1681	Water	424	Histidinol dehydrogenase	coding
+Clostridium_innocuum	3117163	AGCTACC	A	133	426	0.014085	0.985915	I46	C. innocuum	1681	Water	426	putative M18 family aminopeptidase 2	coding
+Clostridium_innocuum	3133336	TA	T	78	455	0.008791	0.991209	I46	C. innocuum	1681	Water	455	putative arabinose-binding protein	coding
+Clostridium_innocuum	3154288	TG	T	93	461	0.010846	0.989154	I46	C. innocuum	1681	Water	461	outside ORFs	non-coding
+Clostridium_innocuum	3195635	TA	T	82	457	0.008753	0.991247	I46	C. innocuum	1681	Water	457	Apulose-4-phosphate transketolase subunit B	coding
+Clostridium_innocuum	3280482	TC	T	75	385	0.01039	0.98961	I46	C. innocuum	1681	Water	385	outside ORFs	non-coding
+Clostridium_innocuum	3302490	TG	T	80	442	0.00905	0.99095	I46	C. innocuum	1681	Water	442	Protein-glutamate methylesterase/protein-glutamine glutaminase	coding
+Clostridium_innocuum	3339222	TA	T	70	442	0.00905	0.99095	I46	C. innocuum	1681	Water	442	hypothetical proteins	coding
+Clostridium_innocuum	3391248	TA	T	83	351	0.011396	0.988604	I46	C. innocuum	1681	Water	351	Adaptive-response sensory-kinase SasA	coding
+Clostridium_innocuum	3563680	G	GA	74	464	0.008621	0.991379	I46	C. innocuum	1681	Water	464	outside ORFs	non-coding
+Clostridium_innocuum	3593683	TTA	T	73	482	0.008299	0.991701	I46	C. innocuum	1681	Water	482	hypothetical proteins	coding
+Clostridium_innocuum	3671889	TA	T	78	354	0.011299	0.988701	I46	C. innocuum	1681	Water	354	hypothetical proteins	coding
+Clostridium_innocuum	3686545	TGAAGG	T	81	476	0.008403	0.991597	I46	C. innocuum	1681	Water	476	Inositol-1-monophosphatase	coding
+Clostridium_innocuum	3704342	TG	T	86	327	0.012232	0.987768	I46	C. innocuum	1681	Water	327	hypothetical proteins	coding
+Clostridium_innocuum	3709564	TAA	T	77	390	0.010256	0.989744	I46	C. innocuum	1681	Water	390	hypothetical proteins	coding
+Clostridium_innocuum	3718221	TA	T	86	363	0.011019	0.988981	I46	C. innocuum	1681	Water	363	Lysine--tRNA ligase	coding
+Clostridium_innocuum	3730439	AC	A	81	447	0.008949	0.991051	I46	C. innocuum	1681	Water	447	Nucleobase transporter PlAzg1	coding
+Clostridium_innocuum	3756369	TA	T	11969	338	0.982249	0.982249	I46	C. innocuum	1681	Water	338	outside ORFs	non-coding
+Clostridium_innocuum	3817915	TAA	T	99	426	0.011737	0.988263	I46	C. innocuum	1681	Water	426	Cyclodextrin-binding protein	coding
+Clostridium_innocuum	3827850	G	GT	78	455	0.008791	0.991209	I46	C. innocuum	1681	Water	455	Myo-inositol 2-dehydrogenase	coding
+Clostridium_innocuum	3836136	AT	A	74	465	0.008602	0.991398	I46	C. innocuum	1681	Water	465	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	coding
+Clostridium_innocuum	3871185	GCA	G	82	404	0.009901	0.990099	I46	C. innocuum	1681	Water	404	outside ORFs	non-coding
+Clostridium_innocuum	3898006	TG	T	84	402	0.00995	0.99005	I46	C. innocuum	1681	Water	402	outside ORFs	non-coding
+Clostridium_innocuum	3901604	TA	T	76	450	0.008889	0.991111	I46	C. innocuum	1681	Water	450	hypothetical proteins	coding
+Clostridium_innocuum	3932170	TA	T	88	338	0.011834	0.988166	I46	C. innocuum	1681	Water	338	hypothetical proteins	coding
+Clostridium_innocuum	3933461	AT	A	88	332	0.012048	0.987952	I46	C. innocuum	1681	Water	332	outside ORFs	non-coding
+Clostridium_innocuum	3944857	CT	C	82	407	0.009828	0.990172	I46	C. innocuum	1681	Water	407	CTP synthase	coding
+Clostridium_innocuum	4007403	TC	T	83	429	0.009324	0.990676	I46	C. innocuum	1681	Water	429	hypothetical proteins	coding
+Clostridium_innocuum	4014586	AG	A	81	436	0.009174	0.990826	I46	C. innocuum	1681	Water	436	putative symporter YjmB	coding
+Clostridium_innocuum	4032006	TG	T	86	376	0.010638	0.989362	I46	C. innocuum	1681	Water	376	hypothetical proteins	coding
+Clostridium_innocuum	4048468	GA	G	95	391	0.012788	0.987212	I46	C. innocuum	1681	Water	391	S-adenosylmethionine synthase	coding
+Clostridium_innocuum	4062112	TG	T	106	444	0.011261	0.988739	I46	C. innocuum	1681	Water	444	hypothetical proteins	coding
+Clostridium_innocuum	4068251	GA	G	78	377	0.01061	0.98939	I46	C. innocuum	1681	Water	377	Proline--tRNA ligase	coding
+Clostridium_innocuum	4071705	AC	A	85	338	0.011834	0.988166	I46	C. innocuum	1681	Water	338	hypothetical proteins	coding
+Clostridium_innocuum	4079139	AT	A	105	399	0.012531	0.987469	I46	C. innocuum	1681	Water	399	HTH-type transcriptional repressor MelR	coding
+Clostridium_innocuum	4079927	TG	T	84	418	0.009569	0.990431	I46	C. innocuum	1681	Water	418	Putative ABC transporter periplasmic binding protein	coding
+Clostridium_innocuum	4100298	G	GA	2121	507	0.309665	0.690335	I46	C. innocuum	1681	Water	507	Multiple sugar-binding protein	coding
+Clostridium_innocuum	4100397	C	CA	14646	1020	0.531373	0.531373	I46	C. innocuum	1681	Water	1020	Multiple sugar-binding protein	coding
+Clostridium_innocuum	4100666	A	T	2112	842	0.210214	0.789786	I46	C. innocuum	1681	Water	842	hypothetical proteins	coding
+Clostridium_innocuum	4100776	T	C	10567	774	0.563307	0.563307	I46	C. innocuum	1681	Water	774	Melibiose/raffinose/stachyose import permease protein MelD	coding
+Clostridium_innocuum	4146351	TA	T	86	372	0.010753	0.989247	I46	C. innocuum	1681	Water	372	hypothetical proteins	coding
+Clostridium_innocuum	4154131	TG	T	84	402	0.00995	0.99005	I46	C. innocuum	1681	Water	402	Serine/threonine-protein kinase PknD	coding
+Clostridium_innocuum	4175412	TA	T	80	421	0.009501	0.990499	I46	C. innocuum	1681	Water	421	hypothetical proteins	coding
+Clostridium_innocuum	4194781	GGT	G	65	282	0.010638	0.989362	I46	C. innocuum	1681	Water	282	HTH-type transcriptional regulator CysL	coding
+Clostridium_innocuum	4252446	TTG	T	77	337	0.011869	0.988131	I46	C. innocuum	1681	Water	337	tRNA (guanine-N(7)-)-methyltransferase	coding
+Clostridium_innocuum	4263260	AC	A	83	449	0.008909	0.991091	I46	C. innocuum	1681	Water	449	hypothetical proteins	coding
+Clostridium_innocuum	4299884	TC	T	79	391	0.01023	0.98977	I46	C. innocuum	1681	Water	391	hypothetical proteins	coding
+Clostridium_innocuum	4317696	TG	T	84	401	0.009975	0.990025	I46	C. innocuum	1681	Water	401	hypothetical proteins	coding
+Clostridium_innocuum	4324403	AT	A	86	374	0.010695	0.989305	I46	C. innocuum	1681	Water	374	hypothetical proteins	coding
+Clostridium_innocuum	4369303	CG	C	84	402	0.00995	0.99005	I46	C. innocuum	1681	Water	402	Ribosomal large subunit pseudouridine synthase D	coding
+Clostridium_innocuum	4378543	AT	A	86	372	0.010753	0.989247	I46	C. innocuum	1681	Water	372	V-type sodium ATPase catalytic subunit A	coding
+Clostridium_innocuum	4407305	AT	A	79	330	0.012121	0.987879	I46	C. innocuum	1681	Water	330	DNA repair protein RadA	coding
+Clostridium_innocuum	4414939	GC	G	73	375	0.010667	0.989333	I46	C. innocuum	1681	Water	375	outside ORFs	non-coding
+Clostridium_innocuum	4415450	TCATG	T	86	351	0.011396	0.988604	I46	C. innocuum	1681	Water	351	outside ORFs	non-coding
+Clostridium_innocuum	4419443	CT	C	86	375	0.010667	0.989333	I46	C. innocuum	1681	Water	375	outside ORFs	non-coding
+Clostridium_innocuum	4447988	GT	G	84	422	0.009479	0.990521	I46	C. innocuum	1681	Water	422	outside ORFs	non-coding
+Clostridium_innocuum	4449424	AT	A	74	452	0.00885	0.99115	I46	C. innocuum	1681	Water	452	Vitamin B12 import ATP-binding protein BtuD	coding
+Clostridium_innocuum	4454320	CT	C	129	373	0.016086	0.983914	I46	C. innocuum	1681	Water	373	Transcriptional regulatory protein BtsR	coding
+Enterococcus_faecalis	8856	GA	G	76	403	0.009926	0.990074	KB1	E. faecalis	1687	Ciprofloxacin	403	hypothetical proteins	coding
+Enterococcus_faecalis	12903	C	T	758	435	0.108046	0.891954	KB1	E. faecalis	1687	Ciprofloxacin	435	Sensor histidine kinase RcsC	coding
+Enterococcus_faecalis	41754	T	C	341	438	0.059361	0.940639	KB1	E. faecalis	1687	Ciprofloxacin	438	hypothetical proteins	coding
+Enterococcus_faecalis	92002	TG	T	83	407	0.009828	0.990172	KB1	E. faecalis	1687	Ciprofloxacin	407	hypothetical proteins	coding
+Enterococcus_faecalis	104176	G	T	407	380	0.097368	0.902632	KB1	E. faecalis	1687	Ciprofloxacin	380	Replicative DNA helicase	coding
+Enterococcus_faecalis	109652	T	TGTCC	817	419	0.069212	0.930788	KB1	E. faecalis	1687	Ciprofloxacin	419	Putative type II secretion system protein F	coding
+Enterococcus_faecalis	149986	A	AG	624	449	0.053452	0.946548	KB1	E. faecalis	1687	Ciprofloxacin	449	outside ORFs	non-coding
+Enterococcus_faecalis	174705	TG	T	80	346	0.011561	0.988439	KB1	E. faecalis	1687	Ciprofloxacin	346	hypothetical proteins	coding
+Enterococcus_faecalis	201402	TG	T	65	296	0.010135	0.989865	KB1	E. faecalis	1687	Ciprofloxacin	296	Carbamoyl-phosphate synthase large chain	coding
+Enterococcus_faecalis	234544	TG	T	85	376	0.010638	0.989362	KB1	E. faecalis	1687	Ciprofloxacin	376	putative peptidoglycan glycosyltransferase FtsW	coding
+Enterococcus_faecalis	269093	GT	G	88	331	0.012085	0.987915	KB1	E. faecalis	1687	Ciprofloxacin	331	Glutamate-pyruvate aminotransferase AlaA	coding
+Enterococcus_faecalis	272313	TA	T	85	392	0.010204	0.989796	KB1	E. faecalis	1687	Ciprofloxacin	392	Vitamin B12 import ATP-binding protein BtuD	coding
+Enterococcus_faecalis	349408	AC	A	65	271	0.01107	0.98893	KB1	E. faecalis	1687	Ciprofloxacin	271	hypothetical proteins	coding
+Enterococcus_faecalis	353657	TAA	T	64	439	0.009112	0.990888	KB1	E. faecalis	1687	Ciprofloxacin	439	Melibiose/raffinose/stachyose import permease protein MelD	coding
+Enterococcus_faecalis	355275	AT	A	83	350	0.011429	0.988571	KB1	E. faecalis	1687	Ciprofloxacin	350	Regulator of RpoS	coding
+Enterococcus_faecalis	434082	C	A	104	288	0.059028	0.940972	KB1	E. faecalis	1687	Ciprofloxacin	288	outside ORFs	non-coding
+Enterococcus_faecalis	442306	G	T	143	336	0.041667	0.958333	KB1	E. faecalis	1687	Ciprofloxacin	336	hypothetical proteins	coding
+Enterococcus_faecalis	510952	G	A	175	352	0.048295	0.951705	KB1	E. faecalis	1687	Ciprofloxacin	352	Histidinol-phosphatase	coding
+Enterococcus_faecalis	511841	G	T	12733	441	0.947846	0.947846	KB1	E. faecalis	1687	Ciprofloxacin	441	Glyceraldehyde-3-phosphate dehydrogenase	coding
+Enterococcus_faecalis	568357	T	TCC	377	438	0.03653	0.96347	KB1	E. faecalis	1687	Ciprofloxacin	438	hypothetical proteins	coding
+Enterococcus_faecalis	577983	TC	T	85	390	0.010256	0.989744	KB1	E. faecalis	1687	Ciprofloxacin	390	outside ORFs	non-coding
+Enterococcus_faecalis	648689	G	A	339	435	0.062069	0.937931	KB1	E. faecalis	1687	Ciprofloxacin	435	outside ORFs	non-coding
+Enterococcus_faecalis	679347	AT	A	80	504	0.007937	0.992063	KB1	E. faecalis	1687	Ciprofloxacin	504	Ditrans,polycis-undecaprenyl-diphosphate synthase ((2E,6E)-farnesyl-diphosphate specific)	coding
+Enterococcus_faecalis	683530	AC	A	73	409	0.00978	0.99022	KB1	E. faecalis	1687	Ciprofloxacin	409	hypothetical proteins	coding
+Enterococcus_faecalis	685421	GT	G	81	481	0.008316	0.991684	KB1	E. faecalis	1687	Ciprofloxacin	481	Protein translocase subunit SecDF	coding
+Enterococcus_faecalis	725720	C	T	3714	464	0.323276	0.676724	KB1	E. faecalis	1687	Ciprofloxacin	464	Multidrug export protein MepA	coding
+Enterococcus_faecalis	725734	G	T	4035	465	0.341935	0.658065	KB1	E. faecalis	1687	Ciprofloxacin	465	Multidrug export protein MepA	coding
+Enterococcus_faecalis	726211	G	A	160	488	0.040984	0.959016	KB1	E. faecalis	1687	Ciprofloxacin	488	Multidrug export protein MepA	coding
+Enterococcus_faecalis	745449	A	ATTTCG	2397	475	0.162105	0.837895	KB1	E. faecalis	1687	Ciprofloxacin	475	Galactose-1-phosphate uridylyltransferase	coding
+Enterococcus_faecalis	753519	G	T	224	552	0.041667	0.958333	KB1	E. faecalis	1687	Ciprofloxacin	552	hypothetical proteins	coding
+Enterococcus_faecalis	789150	C	A	183	531	0.041431	0.958569	KB1	E. faecalis	1687	Ciprofloxacin	531	hypothetical proteins	coding
+Enterococcus_faecalis	789742	G	T	10696	495	0.69697	0.69697	KB1	E. faecalis	1687	Ciprofloxacin	495	GTP 3',8-cyclase	coding
+Enterococcus_faecalis	882807	GC	G	80	510	0.007843	0.992157	KB1	E. faecalis	1687	Ciprofloxacin	510	Glutamate-1-semialdehyde 2,1-aminomutase	coding
+Enterococcus_faecalis	903299	A	G	2687	539	0.222635	0.777365	KB1	E. faecalis	1687	Ciprofloxacin	539	hypothetical proteins	coding
+Enterococcus_faecalis	930401	A	AT	121	534	0.011236	0.988764	KB1	E. faecalis	1687	Ciprofloxacin	534	outside ORFs	non-coding
+Enterococcus_faecalis	969251	TC	T	79	498	0.008032	0.991968	KB1	E. faecalis	1687	Ciprofloxacin	498	Chromosome partition protein Smc	coding
+Enterococcus_faecalis	984990	CTT	C	72	524	0.007634	0.992366	KB1	E. faecalis	1687	Ciprofloxacin	524	hypothetical proteins	coding
+Enterococcus_faecalis	1020097	A	G	9800	520	0.625	0.625	KB1	E. faecalis	1687	Ciprofloxacin	520	putative FMN/FAD exporter YeeO	coding
+Enterococcus_faecalis	1041753	T	C	1853	531	0.167608	0.832392	KB1	E. faecalis	1687	Ciprofloxacin	531	outside ORFs	non-coding
+Enterococcus_faecalis	1061538	G	T	91	567	0.040564	0.959436	KB1	E. faecalis	1687	Ciprofloxacin	567	Transcriptional regulatory protein WalR	coding
+Enterococcus_faecalis	1061569	C	A	91	559	0.046512	0.953488	KB1	E. faecalis	1687	Ciprofloxacin	559	Adaptive-response sensory-kinase SasA	coding
+Enterococcus_faecalis	1079226	CACATATTCTTATAAAATTCTGATGTAA	C	282	497	0.030181	0.969819	KB1	E. faecalis	1687	Ciprofloxacin	497	Thiamine thiazole synthase	coding
+Enterococcus_faecalis	1092725	C	CCCGTA	703	519	0.052023	0.947977	KB1	E. faecalis	1687	Ciprofloxacin	519	hypothetical proteins	coding
+Enterococcus_faecalis	1110917	CT	C	69	612	0.006536	0.993464	KB1	E. faecalis	1687	Ciprofloxacin	612	Adaptive-response sensory-kinase SasA	coding
+Enterococcus_faecalis	1132423	T	TCA	79	539	0.007421	0.992579	KB1	E. faecalis	1687	Ciprofloxacin	539	Septum site-determining protein MinD	coding
+Enterococcus_faecalis	1132427	ATG	A	79	535	0.007477	0.992523	KB1	E. faecalis	1687	Ciprofloxacin	535	Septum site-determining protein MinD	coding
+Enterococcus_faecalis	1173346	G	C	109	523	0.034417	0.965583	KB1	E. faecalis	1687	Ciprofloxacin	523	hypothetical proteins	coding
+Enterococcus_faecalis	1174652	G	GA	78	589	0.006791	0.993209	KB1	E. faecalis	1687	Ciprofloxacin	589	hypothetical proteins	coding
+Enterococcus_faecalis	1283861	AT	A	80	537	0.007449	0.992551	KB1	E. faecalis	1687	Ciprofloxacin	537	hypothetical proteins	coding
+Enterococcus_faecalis	1284882	AT	A	73	639	0.00626	0.99374	KB1	E. faecalis	1687	Ciprofloxacin	639	Membrane protein YdfJ	coding
+Enterococcus_faecalis	1340193	C	A	92	656	0.035061	0.964939	KB1	E. faecalis	1687	Ciprofloxacin	656	Chemotaxis protein CheA	coding
+Enterococcus_faecalis	1464673	ATCTG	A	76	582	0.006873	0.993127	KB1	E. faecalis	1687	Ciprofloxacin	582	Threonine synthase	coding
+Enterococcus_faecalis	1472784	GC	G	115	657	0.009132	0.990868	KB1	E. faecalis	1687	Ciprofloxacin	657	hypothetical proteins	coding
+Enterococcus_faecalis	1479036	GTAT	G	79	481	0.008316	0.991684	KB1	E. faecalis	1687	Ciprofloxacin	481	outside ORFs	non-coding
+Enterococcus_faecalis	1479043	C	CTAA	79	480	0.008333	0.991667	KB1	E. faecalis	1687	Ciprofloxacin	480	outside ORFs	non-coding
+Enterococcus_faecalis	1537698	T	TG	300	594	0.021886	0.978114	KB1	E. faecalis	1687	Ciprofloxacin	594	ATP synthase gamma chain, sodium ion specific	coding
+Enterococcus_faecalis	1568688	GC	G	120	696	0.008621	0.991379	KB1	E. faecalis	1687	Ciprofloxacin	696	hypothetical proteins	coding
+Enterococcus_faecalis	1585211	TC	T	74	727	0.005502	0.994498	KB1	E. faecalis	1687	Ciprofloxacin	727	hypothetical proteins	coding
+Enterococcus_faecalis	1593237	GT	G	98	642	0.007788	0.992212	KB1	E. faecalis	1687	Ciprofloxacin	642	outside ORFs	non-coding
+Enterococcus_faecalis	1611386	TC	T	70	838	0.004773	0.995227	KB1	E. faecalis	1687	Ciprofloxacin	838	hypothetical proteins	coding
+Enterococcus_faecalis	1644101	T	TC	580	715	0.033566	0.966434	KB1	E. faecalis	1687	Ciprofloxacin	715	outside ORFs	non-coding
+Enterococcus_faecalis	1726409	CT	C	66	750	0.005333	0.994667	KB1	E. faecalis	1687	Ciprofloxacin	750	outside ORFs	non-coding
+Enterococcus_faecalis	1735626	CT	C	105	724	0.01105	0.98895	KB1	E. faecalis	1687	Ciprofloxacin	724	Histidine--tRNA ligase	coding
+Enterococcus_faecalis	1750477	C	A	102	709	0.043724	0.956276	KB1	E. faecalis	1687	Ciprofloxacin	709	hypothetical proteins	coding
+Enterococcus_faecalis	1755473	T	TGGTGC	472	817	0.02448	0.97552	KB1	E. faecalis	1687	Ciprofloxacin	817	hypothetical proteins	coding
+Enterococcus_faecalis	1779190	AC	A	73	777	0.005148	0.994852	KB1	E. faecalis	1687	Ciprofloxacin	777	Glutamine--tRNA ligase	coding
+Enterococcus_faecalis	1867610	C	A	138	842	0.052257	0.947743	KB1	E. faecalis	1687	Ciprofloxacin	842	Glycine betaine methyltransferase	coding
+Enterococcus_faecalis	1893256	A	G	3845	799	0.227785	0.772215	KB1	E. faecalis	1687	Ciprofloxacin	799	Putative ABC transporter substrate-binding protein YesO	coding
+Enterococcus_faecalis	1897849	C	A	125	805	0.036025	0.963975	KB1	E. faecalis	1687	Ciprofloxacin	805	Urocanate hydratase	coding
+Enterococcus_faecalis	1937065	GT	G	70	745	0.005369	0.994631	KB1	E. faecalis	1687	Ciprofloxacin	745	Multidrug export protein MepA	coding
+Enterococcus_faecalis	1939343	TA	T	73	759	0.00527	0.99473	KB1	E. faecalis	1687	Ciprofloxacin	759	Putative lipid kinase YtlR	coding
+Enterococcus_faecalis	1946191	C	A	100	692	0.047688	0.952312	KB1	E. faecalis	1687	Ciprofloxacin	692	hypothetical proteins	coding
+Enterococcus_faecalis	1973868	TA	T	81	803	0.006227	0.993773	KB1	E. faecalis	1687	Ciprofloxacin	803	hypothetical proteins	coding
+Enterococcus_faecalis	1985394	TTG	T	75	671	0.005961	0.994039	KB1	E. faecalis	1687	Ciprofloxacin	671	ATP-dependent Clp protease ATP-binding subunit ClpC	coding
+Enterococcus_faecalis	1989335	T	A	10884	798	0.516291	0.516291	KB1	E. faecalis	1687	Ciprofloxacin	798	Phosphoribosylformylglycinamidine cyclo-ligase	coding
+Enterococcus_faecalis	1992540	C	A	97	753	0.039841	0.960159	KB1	E. faecalis	1687	Ciprofloxacin	753	hypothetical proteins	coding
+Enterococcus_faecalis	1994267	T	TGA	2029	799	0.092616	0.907384	KB1	E. faecalis	1687	Ciprofloxacin	799	Orotate phosphoribosyltransferase	coding
+Enterococcus_faecalis	2033278	TG	T	73	786	0.005089	0.994911	KB1	E. faecalis	1687	Ciprofloxacin	786	3-oxoacyl-[acyl-carrier-protein] synthase 3 protein 2	coding
+Enterococcus_faecalis	2041202	G	GATTTTTGGAATGAATATCAT	119	733	0.008186	0.991814	KB1	E. faecalis	1687	Ciprofloxacin	733	hypothetical proteins	coding
+Enterococcus_faecalis	2047297	T	TG	540	645	0.034109	0.965891	KB1	E. faecalis	1687	Ciprofloxacin	645	outside ORFs	non-coding
+Enterococcus_faecalis	2126378	G	A	681	705	0.069504	0.930496	KB1	E. faecalis	1687	Ciprofloxacin	705	Ribosome maturation factor RimP	coding
+Enterococcus_faecalis	2141580	G	T	315	712	0.044944	0.955056	KB1	E. faecalis	1687	Ciprofloxacin	712	NAD-dependent malic enzyme	coding
+Enterococcus_faecalis	2188356	CT	C	97	704	0.007102	0.992898	KB1	E. faecalis	1687	Ciprofloxacin	704	N,N'-diacetylchitobiose phosphorylase	coding
+Enterococcus_faecalis	2189002	A	G	197	652	0.029141	0.970859	KB1	E. faecalis	1687	Ciprofloxacin	652	N,N'-diacetylchitobiose phosphorylase	coding
+Enterococcus_faecalis	2239851	C	T	8275	1043	0.313519	0.686481	KB1	E. faecalis	1687	Ciprofloxacin	1043	hypothetical proteins	coding
+Enterococcus_faecalis	2240032	A	G	10358	1040	0.379808	0.620192	KB1	E. faecalis	1687	Ciprofloxacin	1040	hypothetical proteins	coding
+Enterococcus_faecalis	2240082	TG	T	68	1037	0.003857	0.996143	KB1	E. faecalis	1687	Ciprofloxacin	1037	hypothetical proteins	coding
+Enterococcus_faecalis	2240151	C	T	9388	1034	0.361702	0.638298	KB1	E. faecalis	1687	Ciprofloxacin	1034	hypothetical proteins	coding
+Enterococcus_faecalis	2240232	A	T	7748	928	0.322198	0.677802	KB1	E. faecalis	1687	Ciprofloxacin	928	hypothetical proteins	coding
+Enterococcus_faecalis	2240247	T	C	6705	925	0.295135	0.704865	KB1	E. faecalis	1687	Ciprofloxacin	925	hypothetical proteins	coding
+Enterococcus_faecalis	2325329	CTT	C	71	699	0.005722	0.994278	KB1	E. faecalis	1687	Ciprofloxacin	699	hypothetical proteins	coding
+Enterococcus_faecalis	2341214	TCA	T	69	597	0.0067	0.9933	KB1	E. faecalis	1687	Ciprofloxacin	597	Copper-exporting P-type ATPase	coding
+Enterococcus_faecalis	2348146	CT	C	68	658	0.006079	0.993921	KB1	E. faecalis	1687	Ciprofloxacin	658	Xylulose kinase	coding
+Enterococcus_faecalis	2365414	TAACTATCAATCTGTGTGGAGCGA	T	337	583	0.024014	0.975986	KB1	E. faecalis	1687	Ciprofloxacin	583	hypothetical proteins	coding
+Enterococcus_faecalis	2367368	G	T	114	157	0.133758	0.866242	KB1	E. faecalis	1687	Ciprofloxacin	157	Aminoglycoside 3'-phosphotransferase	coding
+Enterococcus_faecalis	2377381	CGACGAATTTTAGTACT	C	169	570	0.021053	0.978947	KB1	E. faecalis	1687	Ciprofloxacin	570	Trans-feruloyl-CoA synthase FCS1	coding
+Enterococcus_faecalis	2456584	AT	A	73	568	0.007042	0.992958	KB1	E. faecalis	1687	Ciprofloxacin	568	hypothetical proteins	coding
+Enterococcus_faecalis	2488729	C	T	2947	566	0.227915	0.772085	KB1	E. faecalis	1687	Ciprofloxacin	566	hypothetical proteins	coding
+Enterococcus_faecalis	2511539	C	A	113	611	0.03437	0.96563	KB1	E. faecalis	1687	Ciprofloxacin	611	hypothetical proteins	coding
+Enterococcus_faecalis	2518679	C	A	136	533	0.061914	0.938086	KB1	E. faecalis	1687	Ciprofloxacin	533	outside ORFs	non-coding
+Enterococcus_faecalis	2629636	TTA	T	80	522	0.007663	0.992337	KB1	E. faecalis	1687	Ciprofloxacin	522	outside ORFs	non-coding
+Enterococcus_faecalis	2680069	TC	T	81	495	0.008081	0.991919	KB1	E. faecalis	1687	Ciprofloxacin	495	hypothetical proteins	coding
+Enterococcus_faecalis	2727595	A	AT	99	520	0.009615	0.990385	KB1	E. faecalis	1687	Ciprofloxacin	520	hypothetical proteins	coding
+Enterococcus_faecalis	2736156	TA	T	82	460	0.008696	0.991304	KB1	E. faecalis	1687	Ciprofloxacin	460	hypothetical proteins	coding
+Enterococcus_faecalis	2784887	C	T	3989	513	0.317739	0.682261	KB1	E. faecalis	1687	Ciprofloxacin	513	DNA polymerase III PolC-type	coding
+Enterococcus_faecalis	2791850	A	T	332	494	0.050607	0.949393	KB1	E. faecalis	1687	Ciprofloxacin	494	hypothetical proteins	coding
+Enterococcus_faecalis	2802258	TA	T	77	494	0.008097	0.991903	KB1	E. faecalis	1687	Ciprofloxacin	494	Galactose/methyl galactoside import ATP-binding protein MglA	coding
+Enterococcus_faecalis	2811206	G	A	8373	417	0.659472	0.659472	KB1	E. faecalis	1687	Ciprofloxacin	417	hypothetical proteins	coding
+Enterococcus_faecalis	2828733	C	T	3928	496	0.306452	0.693548	KB1	E. faecalis	1687	Ciprofloxacin	496	Inosine-5'-monophosphate dehydrogenase	coding
+Enterococcus_faecalis	2830532	GT	G	7717	490	0.618367	0.618367	KB1	E. faecalis	1687	Ciprofloxacin	490	60 kDa chaperonin	coding
+Enterococcus_faecalis	2856820	C	T	2265	489	0.206544	0.793456	KB1	E. faecalis	1687	Ciprofloxacin	489	outside ORFs	non-coding
+Enterococcus_faecalis	2933486	G	A	15542	454	1	1	KB1	E. faecalis	1687	Ciprofloxacin	454	DNA-directed RNA polymerase subunit alpha	coding
+Enterococcus_faecalis	2933508	A	G	14609	439	0.997722	0.997722	KB1	E. faecalis	1687	Ciprofloxacin	439	DNA-directed RNA polymerase subunit alpha	coding
+Enterococcus_faecalis	2933534	A	C	13086	424	0.995283	0.995283	KB1	E. faecalis	1687	Ciprofloxacin	424	DNA-directed RNA polymerase subunit alpha	coding
+Clostridium_innocuum	504	TC	T	63	336	0.008929	0.991071	I46	C. innocuum	1687	Ciprofloxacin	336	hypothetical proteins	coding
+Clostridium_innocuum	8394	T	C	11777	340	1	1	I46	C. innocuum	1687	Ciprofloxacin	340	hypothetical proteins	coding
+Clostridium_innocuum	72476	TCA	T	64	316	0.009494	0.990506	I46	C. innocuum	1687	Ciprofloxacin	316	outside ORFs	non-coding
+Clostridium_innocuum	156223	A	C	91	329	0.082067	0.917933	I46	C. innocuum	1687	Ciprofloxacin	329	UDP-galactopyranose mutase	coding
+Clostridium_innocuum	209642	GA	G	62	292	0.010274	0.989726	I46	C. innocuum	1687	Ciprofloxacin	292	outside ORFs	non-coding
+Clostridium_innocuum	219091	AT	A	62	337	0.008902	0.991098	I46	C. innocuum	1687	Ciprofloxacin	337	Serine/threonine-protein kinase PknD	coding
+Clostridium_innocuum	236909	A	G	335	14	0.928571	0.928571	I46	C. innocuum	1687	Ciprofloxacin	14	hypothetical proteins	coding
+Clostridium_innocuum	250683	TC	T	80	328	0.012195	0.987805	I46	C. innocuum	1687	Ciprofloxacin	328	putative sporulation protein YlmC	coding
+Clostridium_innocuum	370672	C	CG	544	22	0.818182	0.818182	I46	C. innocuum	1687	Ciprofloxacin	22	hypothetical proteins	coding
+Clostridium_innocuum	411243	AAC	A	63	322	0.009317	0.990683	I46	C. innocuum	1687	Ciprofloxacin	322	C4-dicarboxylate TRAP transporter large permease protein DctM	coding
+Clostridium_innocuum	419874	A	AT	88	325	0.012308	0.987692	I46	C. innocuum	1687	Ciprofloxacin	325	hypothetical proteins	coding
+Clostridium_innocuum	419884	CA	C	111	340	0.014706	0.985294	I46	C. innocuum	1687	Ciprofloxacin	340	hypothetical proteins	coding
+Clostridium_innocuum	452762	TG	T	86	344	0.011628	0.988372	I46	C. innocuum	1687	Ciprofloxacin	344	outside ORFs	non-coding
+Clostridium_innocuum	567337	AAG	A	310	24	1	1	I46	C. innocuum	1687	Ciprofloxacin	24	Erythronate-4-phosphate dehydrogenase	coding
+Clostridium_innocuum	623041	CTTT	C	63	291	0.010309	0.989691	I46	C. innocuum	1687	Ciprofloxacin	291	Alpha-galactosylglucosyldiacylglycerol synthase	coding
+Clostridium_innocuum	623050	G	GAAA	61	289	0.010381	0.989619	I46	C. innocuum	1687	Ciprofloxacin	289	Alpha-galactosylglucosyldiacylglycerol synthase	coding
+Clostridium_innocuum	723741	T	G	810	59	0.711864	0.711864	I46	C. innocuum	1687	Ciprofloxacin	59	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723750	C	T	781	60	0.666667	0.666667	I46	C. innocuum	1687	Ciprofloxacin	60	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723753	T	G	838	62	0.693548	0.693548	I46	C. innocuum	1687	Ciprofloxacin	62	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723780	A	C	1042	78	0.679487	0.679487	I46	C. innocuum	1687	Ciprofloxacin	78	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723786	A	G	1028	82	0.646341	0.646341	I46	C. innocuum	1687	Ciprofloxacin	82	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723876	T	A	1567	124	0.645161	0.645161	I46	C. innocuum	1687	Ciprofloxacin	124	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723891	T	C	1669	138	0.623188	0.623188	I46	C. innocuum	1687	Ciprofloxacin	138	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723894	G	A	1597	140	0.621429	0.621429	I46	C. innocuum	1687	Ciprofloxacin	140	Aspartate carbamoyltransferase regulatory chain	coding
+Clostridium_innocuum	723996	C	T	1465	187	0.438503	0.561497	I46	C. innocuum	1687	Ciprofloxacin	187	outside ORFs	non-coding
+Clostridium_innocuum	724047	T	C	1198	189	0.386243	0.613757	I46	C. innocuum	1687	Ciprofloxacin	189	outside ORFs	non-coding
+Clostridium_innocuum	724050	C	T	1132	185	0.378378	0.621622	I46	C. innocuum	1687	Ciprofloxacin	185	outside ORFs	non-coding
+Clostridium_innocuum	724136	A	G	1818	307	0.413681	0.586319	I46	C. innocuum	1687	Ciprofloxacin	307	hypothetical proteins	coding
+Clostridium_innocuum	832021	C	A	6557	215	0.995349	0.995349	I46	C. innocuum	1687	Ciprofloxacin	215	hypothetical proteins	coding
+Clostridium_innocuum	837562	C	A	10135	306	0.996732	0.996732	I46	C. innocuum	1687	Ciprofloxacin	306	Carbon monoxide dehydrogenase 1	coding
+Clostridium_innocuum	845222	A	G	8581	607	0.497529	0.502471	I46	C. innocuum	1687	Ciprofloxacin	607	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845538	C	T	7508	601	0.457571	0.542429	I46	C. innocuum	1687	Ciprofloxacin	601	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845539	T	C	7506	599	0.452421	0.547579	I46	C. innocuum	1687	Ciprofloxacin	599	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845543	T	A	7428	600	0.455	0.545	I46	C. innocuum	1687	Ciprofloxacin	600	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845824	T	G	7991	661	0.472012	0.527988	I46	C. innocuum	1687	Ciprofloxacin	661	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845876	A	G	8233	682	0.453079	0.546921	I46	C. innocuum	1687	Ciprofloxacin	682	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845939	ACAG	A	82	668	0.008982	0.991018	I46	C. innocuum	1687	Ciprofloxacin	668	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845939	A	G	7273	672	0.424107	0.575893	I46	C. innocuum	1687	Ciprofloxacin	672	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845942	G	A	7431	675	0.428148	0.571852	I46	C. innocuum	1687	Ciprofloxacin	675	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845950	TAAG	T	1586	637	0.412873	0.587127	I46	C. innocuum	1687	Ciprofloxacin	637	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845956	A	ATAG	1542	585	0.442735	0.557265	I46	C. innocuum	1687	Ciprofloxacin	585	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845960	T	C	7748	622	0.472669	0.527331	I46	C. innocuum	1687	Ciprofloxacin	622	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845969	T	G	7664	646	0.450464	0.549536	I46	C. innocuum	1687	Ciprofloxacin	646	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845975	G	T	7562	639	0.441315	0.558685	I46	C. innocuum	1687	Ciprofloxacin	639	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845978	G	T	7284	630	0.434921	0.565079	I46	C. innocuum	1687	Ciprofloxacin	630	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845987	G	A	7808	641	0.457098	0.542902	I46	C. innocuum	1687	Ciprofloxacin	641	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	845999	G	A	7815	637	0.44898	0.55102	I46	C. innocuum	1687	Ciprofloxacin	637	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846002	T	C	7642	634	0.44795	0.55205	I46	C. innocuum	1687	Ciprofloxacin	634	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846009	T	C	8071	645	0.457364	0.542636	I46	C. innocuum	1687	Ciprofloxacin	645	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846026	C	G	6431	582	0.407216	0.592784	I46	C. innocuum	1687	Ciprofloxacin	582	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846029	T	C	6099	579	0.400691	0.599309	I46	C. innocuum	1687	Ciprofloxacin	579	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846032	A	G	6403	575	0.401739	0.598261	I46	C. innocuum	1687	Ciprofloxacin	575	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846035	T	C	6256	582	0.402062	0.597938	I46	C. innocuum	1687	Ciprofloxacin	582	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846038	A	G	6489	586	0.411263	0.588737	I46	C. innocuum	1687	Ciprofloxacin	586	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	846438	G	A	8712	645	0.489922	0.510078	I46	C. innocuum	1687	Ciprofloxacin	645	Na(+)-translocating NADH-quinone reductase subunit F	coding
+Clostridium_innocuum	849295	A	G	8853	626	0.507987	0.507987	I46	C. innocuum	1687	Ciprofloxacin	626	outside ORFs	non-coding
+Clostridium_innocuum	849594	C	T	8505	599	0.495826	0.504174	I46	C. innocuum	1687	Ciprofloxacin	599	Bifunctional protein FolD protein	coding
+Clostridium_innocuum	850214	T	A	20062	623	0.988764	0.988764	I46	C. innocuum	1687	Ciprofloxacin	623	outside ORFs	non-coding
+Clostridium_innocuum	858105	A	G	8457	660	0.459091	0.540909	I46	C. innocuum	1687	Ciprofloxacin	660	Cobalt-precorrin-5A hydrolase	coding
+Clostridium_innocuum	863798	A	G	1638	64	0.984375	0.984375	I46	C. innocuum	1687	Ciprofloxacin	64	Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase	coding
+Clostridium_innocuum	1193831	TTG	T	64	302	0.009934	0.990066	I46	C. innocuum	1687	Ciprofloxacin	302	hypothetical proteins	coding
+Clostridium_innocuum	1196509	AT	A	62	296	0.010135	0.989865	I46	C. innocuum	1687	Ciprofloxacin	296	hypothetical proteins	coding
+Clostridium_innocuum	1279942	TC	T	61	389	0.007712	0.992288	I46	C. innocuum	1687	Ciprofloxacin	389	hypothetical proteins	coding
+Clostridium_innocuum	1316591	AT	A	64	293	0.010239	0.989761	I46	C. innocuum	1687	Ciprofloxacin	293	Redox-sensing transcriptional repressor Rex 1	coding
+Clostridium_innocuum	1319794	AT	A	76	350	0.011429	0.988571	I46	C. innocuum	1687	Ciprofloxacin	350	hypothetical proteins	coding
+Clostridium_innocuum	1461043	TA	T	64	316	0.009494	0.990506	I46	C. innocuum	1687	Ciprofloxacin	316	outside ORFs	non-coding
+Clostridium_innocuum	1512394	CA	C	62	360	0.008333	0.991667	I46	C. innocuum	1687	Ciprofloxacin	360	hypothetical proteins	coding
+Clostridium_innocuum	1639889	GC	G	69	267	0.014981	0.985019	I46	C. innocuum	1687	Ciprofloxacin	267	hypothetical proteins	coding
+Clostridium_innocuum	1661712	GA	G	80	323	0.012384	0.987616	I46	C. innocuum	1687	Ciprofloxacin	323	HTH-type transcriptional activator RhaS	coding
+Clostridium_innocuum	1676391	T	C	246	12	0.75	0.75	I46	C. innocuum	1687	Ciprofloxacin	12	Vitamin B12 import ATP-binding protein BtuD	coding
+Clostridium_innocuum	1762342	A	C	993	58	1	1	I46	C. innocuum	1687	Ciprofloxacin	58	outside ORFs	non-coding
+Clostridium_innocuum	1766124	TTCTG	T	172	315	0.025397	0.974603	I46	C. innocuum	1687	Ciprofloxacin	315	Chaperone protein HtpG	coding
+Clostridium_innocuum	1770571	A	G	10525	319	0.996865	0.996865	I46	C. innocuum	1687	Ciprofloxacin	319	5-amino-6-(5-phospho-D-ribitylamino)uracil phosphatase YbjI	coding
+Clostridium_innocuum	1873415	T	A	5211	205	0.995122	0.995122	I46	C. innocuum	1687	Ciprofloxacin	205	outside ORFs	non-coding
+Clostridium_innocuum	1873561	T	C	6120	215	0.990698	0.990698	I46	C. innocuum	1687	Ciprofloxacin	215	hypothetical proteins	coding
+Clostridium_innocuum	1873610	C	G	6620	234	0.987179	0.987179	I46	C. innocuum	1687	Ciprofloxacin	234	hypothetical proteins	coding
+Clostridium_innocuum	1873678	A	G	9013	288	0.993056	0.993056	I46	C. innocuum	1687	Ciprofloxacin	288	hypothetical proteins	coding
+Clostridium_innocuum	1890839	TC	T	62	365	0.008219	0.991781	I46	C. innocuum	1687	Ciprofloxacin	365	outside ORFs	non-coding
+Clostridium_innocuum	2242531	CT	C	107	355	0.014085	0.985915	I46	C. innocuum	1687	Ciprofloxacin	355	hypothetical proteins	coding
+Clostridium_innocuum	2579225	AC	A	184	315	0.053968	0.946032	I46	C. innocuum	1687	Ciprofloxacin	315	outside ORFs	non-coding
+Clostridium_innocuum	2637837	TA	T	857	530	0.154717	0.845283	I46	C. innocuum	1687	Ciprofloxacin	530	hypothetical proteins	coding
+Clostridium_innocuum	2637880	G	GT	2133	592	0.256757	0.743243	I46	C. innocuum	1687	Ciprofloxacin	592	hypothetical proteins	coding
+Clostridium_innocuum	2637899	C	T	2361	611	0.304419	0.695581	I46	C. innocuum	1687	Ciprofloxacin	611	outside ORFs	non-coding
+Clostridium_innocuum	2637986	G	T	1923	809	0.242274	0.757726	I46	C. innocuum	1687	Ciprofloxacin	809	outside ORFs	non-coding
+Clostridium_innocuum	2664706	CG	C	84	411	0.009732	0.990268	I46	C. innocuum	1687	Ciprofloxacin	411	ATP-dependent Clp protease proteolytic subunit	coding
+Clostridium_innocuum	2680554	CA	C	61	388	0.012887	0.987113	I46	C. innocuum	1687	Ciprofloxacin	388	hypothetical proteins	coding
+Clostridium_innocuum	2702632	T	A	12877	378	0.994709	0.994709	I46	C. innocuum	1687	Ciprofloxacin	378	hypothetical proteins	coding
+Clostridium_innocuum	2853488	TG	T	61	406	0.007389	0.992611	I46	C. innocuum	1687	Ciprofloxacin	406	putative amino acid permease YhdG	coding
+Clostridium_innocuum	3215270	G	T	95	350	0.048571	0.951429	I46	C. innocuum	1687	Ciprofloxacin	350	L-arabinose transport system permease protein AraQ	coding
+Clostridium_innocuum	3296967	TC	T	61	373	0.008043	0.991957	I46	C. innocuum	1687	Ciprofloxacin	373	hypothetical proteins	coding
+Clostridium_innocuum	3309389	TCA	T	83	392	0.010204	0.989796	I46	C. innocuum	1687	Ciprofloxacin	392	hypothetical proteins	coding
+Clostridium_innocuum	3381791	G	A	13034	418	0.985646	0.985646	I46	C. innocuum	1687	Ciprofloxacin	418	Calcium-transporting ATPase 1	coding
+Clostridium_innocuum	3394371	C	T	15567	447	0.997763	0.997763	I46	C. innocuum	1687	Ciprofloxacin	447	hypothetical proteins	coding
+Clostridium_innocuum	3395610	C	T	13156	392	0.992347	0.992347	I46	C. innocuum	1687	Ciprofloxacin	392	hypothetical proteins	coding
+Clostridium_innocuum	3404417	GT	G	61	389	0.007712	0.992288	I46	C. innocuum	1687	Ciprofloxacin	389	hypothetical proteins	coding
+Clostridium_innocuum	3421951	TG	T	61	377	0.007958	0.992042	I46	C. innocuum	1687	Ciprofloxacin	377	c("Spermine/spermidine acetyltransferase", "hypothetical protein")	coding
+Clostridium_innocuum	3448655	G	A	13732	402	0.992537	0.992537	I46	C. innocuum	1687	Ciprofloxacin	402	putative FMN/FAD exporter YeeO	coding
+Clostridium_innocuum	3459905	G	A	11021	317	0.993691	0.993691	I46	C. innocuum	1687	Ciprofloxacin	317	HTH-type transcriptional repressor NagR	coding
+Clostridium_innocuum	3537502	GAT	G	77	418	0.009569	0.990431	I46	C. innocuum	1687	Ciprofloxacin	418	hypothetical proteins	coding
+Clostridium_innocuum	3709419	C	A	157	373	0.075067	0.924933	I46	C. innocuum	1687	Ciprofloxacin	373	hypothetical proteins	coding
+Clostridium_innocuum	3777849	AT	A	79	360	0.011111	0.988889	I46	C. innocuum	1687	Ciprofloxacin	360	outside ORFs	non-coding
+Clostridium_innocuum	4049054	TA	T	77	392	0.010204	0.989796	I46	C. innocuum	1687	Ciprofloxacin	392	S-adenosylmethionine synthase	coding
+Clostridium_innocuum	4049781	CT	C	62	319	0.009404	0.990596	I46	C. innocuum	1687	Ciprofloxacin	319	hypothetical proteins	coding
+Clostridium_innocuum	4066049	C	A	120	319	0.081505	0.918495	I46	C. innocuum	1687	Ciprofloxacin	319	hypothetical proteins	coding
+Clostridium_innocuum	4100298	G	GA	1343	394	0.28934	0.71066	I46	C. innocuum	1687	Ciprofloxacin	394	Multiple sugar-binding protein	coding
+Clostridium_innocuum	4100397	C	CA	12412	878	0.514806	0.514806	I46	C. innocuum	1687	Ciprofloxacin	878	Multiple sugar-binding protein	coding
+Clostridium_innocuum	4100666	A	T	1565	639	0.226917	0.773083	I46	C. innocuum	1687	Ciprofloxacin	639	hypothetical proteins	coding
+Clostridium_innocuum	4100776	T	C	7967	645	0.505426	0.505426	I46	C. innocuum	1687	Ciprofloxacin	645	Melibiose/raffinose/stachyose import permease protein MelD	coding
+Clostridium_innocuum	4177370	TCC	T	64	304	0.009868	0.990132	I46	C. innocuum	1687	Ciprofloxacin	304	outside ORFs	non-coding
+Clostridium_innocuum	4218923	T	G	139	11	1	1	I46	C. innocuum	1687	Ciprofloxacin	11	Phosphate propanoyltransferase	coding
+Clostridium_innocuum	4295193	CT	C	64	319	0.009404	0.990596	I46	C. innocuum	1687	Ciprofloxacin	319	hypothetical proteins	coding
+Clostridium_innocuum	4321858	T	A	11747	334	0.994012	0.994012	I46	C. innocuum	1687	Ciprofloxacin	334	hypothetical proteins	coding
+Clostridium_innocuum	4379511	G	T	122	300	0.096667	0.903333	I46	C. innocuum	1687	Ciprofloxacin	300	V-type sodium ATPase subunit B	coding
+Clostridium_innocuum	4426425	G	T	108	307	0.110749	0.889251	I46	C. innocuum	1687	Ciprofloxacin	307	3-dehydroquinate synthase	coding
+Clostridium_innocuum	4460444	GGT	G	61	357	0.008403	0.991597	I46	C. innocuum	1687	Ciprofloxacin	357	hypothetical proteins	coding
+Blautia_coccoides	109	A	G	103	123	0.154472	0.845528	YL58	B. coccoides	1687	Ciprofloxacin	123	outside ORFs	non-coding
+Blautia_coccoides	26865	G	T	120	371	0.097035	0.902965	YL58	B. coccoides	1687	Ciprofloxacin	371	outside ORFs	non-coding
+Blautia_coccoides	56624	TG	T	86	347	0.011527	0.988473	YL58	B. coccoides	1687	Ciprofloxacin	347	Cinnamate reductase	coding
+Blautia_coccoides	146309	AT	A	85	386	0.010363	0.989637	YL58	B. coccoides	1687	Ciprofloxacin	386	dTDP-4-amino-4,6-dideoxygalactose transaminase	coding
+Blautia_coccoides	196790	AT	A	86	372	0.010753	0.989247	YL58	B. coccoides	1687	Ciprofloxacin	372	outside ORFs	non-coding
+Blautia_coccoides	311596	TG	T	68	363	0.011019	0.988981	YL58	B. coccoides	1687	Ciprofloxacin	363	hypothetical proteins	coding
+Blautia_coccoides	342330	AC	A	77	327	0.012232	0.987768	YL58	B. coccoides	1687	Ciprofloxacin	327	Beta-fructosidase	coding
+Blautia_coccoides	359637	GC	G	89	302	0.013245	0.986755	YL58	B. coccoides	1687	Ciprofloxacin	302	Oxidoreductase YdhF	coding
+Blautia_coccoides	369727	TA	T	64	301	0.009967	0.990033	YL58	B. coccoides	1687	Ciprofloxacin	301	hypothetical proteins	coding
+Blautia_coccoides	389514	TA	T	79	344	0.011628	0.988372	YL58	B. coccoides	1687	Ciprofloxacin	344	outside ORFs	non-coding
+Blautia_coccoides	449711	TG	T	108	352	0.034091	0.965909	YL58	B. coccoides	1687	Ciprofloxacin	352	hypothetical proteins	coding
+Blautia_coccoides	451142	CG	C	76	351	0.011396	0.988604	YL58	B. coccoides	1687	Ciprofloxacin	351	hypothetical proteins	coding
+Blautia_coccoides	460874	T	TG	1936	128	0.695312	0.695312	YL58	B. coccoides	1687	Ciprofloxacin	128	outside ORFs	non-coding
+Blautia_coccoides	467918	CT	C	87	345	0.011594	0.988406	YL58	B. coccoides	1687	Ciprofloxacin	345	hypothetical proteins	coding
+Blautia_coccoides	473251	T	TA	65	243	0.028807	0.971193	YL58	B. coccoides	1687	Ciprofloxacin	243	outside ORFs	non-coding
+Blautia_coccoides	561860	TA	T	84	336	0.011905	0.988095	YL58	B. coccoides	1687	Ciprofloxacin	336	Dihydroxy-acid dehydratase	coding
+Blautia_coccoides	564508	CA	C	72	338	0.011834	0.988166	YL58	B. coccoides	1687	Ciprofloxacin	338	Acetolactate synthase large subunit	coding
+Blautia_coccoides	594650	CT	C	64	317	0.009464	0.990536	YL58	B. coccoides	1687	Ciprofloxacin	317	hypothetical proteins	coding
+Blautia_coccoides	638706	GC	G	82	372	0.010753	0.989247	YL58	B. coccoides	1687	Ciprofloxacin	372	hypothetical proteins	coding
+Blautia_coccoides	657483	GA	G	85	319	0.012539	0.987461	YL58	B. coccoides	1687	Ciprofloxacin	319	Ferrous-iron efflux pump FieF	coding
+Blautia_coccoides	661049	GC	G	88	315	0.012698	0.987302	YL58	B. coccoides	1687	Ciprofloxacin	315	Sensor histidine kinase RcsC	coding
+Blautia_coccoides	676410	GC	G	80	351	0.011396	0.988604	YL58	B. coccoides	1687	Ciprofloxacin	351	hypothetical proteins	coding
+Blautia_coccoides	677838	GC	G	64	316	0.009494	0.990506	YL58	B. coccoides	1687	Ciprofloxacin	316	Uridylate kinase	coding
+Blautia_coccoides	746436	TA	T	90	286	0.013986	0.986014	YL58	B. coccoides	1687	Ciprofloxacin	286	Galactose-1-phosphate uridylyltransferase	coding
+Blautia_coccoides	790896	TG	T	4797	272	0.797794	0.797794	YL58	B. coccoides	1687	Ciprofloxacin	272	outside ORFs	non-coding
+Blautia_coccoides	791575	A	AG	2199	148	0.662162	0.662162	YL58	B. coccoides	1687	Ciprofloxacin	148	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-acetyltransferase	coding
+Blautia_coccoides	791575	A	AGG	74	148	0.047297	0.952703	YL58	B. coccoides	1687	Ciprofloxacin	148	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-acetyltransferase	coding
+Blautia_coccoides	799113	C	CG	2424	209	0.550239	0.550239	YL58	B. coccoides	1687	Ciprofloxacin	209	hypothetical proteins	coding
+Blautia_coccoides	799113	C	CGG	77	209	0.038278	0.961722	YL58	B. coccoides	1687	Ciprofloxacin	209	hypothetical proteins	coding
+Blautia_coccoides	809675	GC	G	89	292	0.013699	0.986301	YL58	B. coccoides	1687	Ciprofloxacin	292	dTDP-glucose 4,6-dehydratase 2	coding
+Blautia_coccoides	853718	GGT	G	64	308	0.00974	0.99026	YL58	B. coccoides	1687	Ciprofloxacin	308	Stage IV sporulation protein A	coding
+Blautia_coccoides	870631	CA	C	84	326	0.01227	0.98773	YL58	B. coccoides	1687	Ciprofloxacin	326	Cobalt-precorrin-8 methylmutase	coding
+Blautia_coccoides	889440	TCGG	T	114	328	0.015244	0.984756	YL58	B. coccoides	1687	Ciprofloxacin	328	Alanine--tRNA ligase	coding
+Blautia_coccoides	889686	GT	G	89	300	0.013333	0.986667	YL58	B. coccoides	1687	Ciprofloxacin	300	outside ORFs	non-coding
+Blautia_coccoides	914850	G	A	9647	275	0.996364	0.996364	YL58	B. coccoides	1687	Ciprofloxacin	275	Amino-acid carrier protein AlsT	coding
+Blautia_coccoides	921197	TG	T	64	301	0.009967	0.990033	YL58	B. coccoides	1687	Ciprofloxacin	301	hypothetical proteins	coding
+Blautia_coccoides	1020954	TG	T	89	302	0.013245	0.986755	YL58	B. coccoides	1687	Ciprofloxacin	302	putative FMN/FAD exporter YeeO	coding
+Blautia_coccoides	1026945	TC	T	187	329	0.024316	0.975684	YL58	B. coccoides	1687	Ciprofloxacin	329	UvrABC system protein A	coding
+Blautia_coccoides	1053904	TA	T	83	323	0.012384	0.987616	YL58	B. coccoides	1687	Ciprofloxacin	323	LexA repressor	coding
+Blautia_coccoides	1057819	AC	A	87	333	0.012012	0.987988	YL58	B. coccoides	1687	Ciprofloxacin	333	hypothetical proteins	coding
+Blautia_coccoides	1059050	TG	T	89	305	0.013115	0.986885	YL58	B. coccoides	1687	Ciprofloxacin	305	Glycerol-1-phosphate dehydrogenase [NAD(P)+]	coding
+Blautia_coccoides	1117036	CT	C	64	315	0.009524	0.990476	YL58	B. coccoides	1687	Ciprofloxacin	315	D-aminoacyl-tRNA deacylase	coding
+Blautia_coccoides	1126838	TG	T	64	292	0.010274	0.989726	YL58	B. coccoides	1687	Ciprofloxacin	292	hypothetical proteins	coding
+Blautia_coccoides	1207098	TA	T	89	307	0.013029	0.986971	YL58	B. coccoides	1687	Ciprofloxacin	307	outside ORFs	non-coding
+Blautia_coccoides	1240660	TC	T	88	326	0.01227	0.98773	YL58	B. coccoides	1687	Ciprofloxacin	326	outside ORFs	non-coding
+Blautia_coccoides	1321131	TC	T	91	270	0.014815	0.985185	YL58	B. coccoides	1687	Ciprofloxacin	270	hypothetical proteins	coding
+Blautia_coccoides	1403481	T	TA	65	291	0.010309	0.989691	YL58	B. coccoides	1687	Ciprofloxacin	291	Nisin biosynthesis protein NisB	coding
+Blautia_coccoides	1462080	GT	G	86	285	0.014035	0.985965	YL58	B. coccoides	1687	Ciprofloxacin	285	hypothetical proteins	coding
+Blautia_coccoides	1470233	TCC	T	65	283	0.010601	0.989399	YL58	B. coccoides	1687	Ciprofloxacin	283	outside ORFs	non-coding
+Blautia_coccoides	1524326	AC	A	136	373	0.016086	0.983914	YL58	B. coccoides	1687	Ciprofloxacin	373	Sensory transduction protein regX3	coding
+Blautia_coccoides	1546137	TC	T	80	341	0.01173	0.98827	YL58	B. coccoides	1687	Ciprofloxacin	341	Isoprimeverose transporter	coding
+Blautia_coccoides	1649769	A	ACC	5221	273	0.728938	0.728938	YL58	B. coccoides	1687	Ciprofloxacin	273	outside ORFs	non-coding
+Blautia_coccoides	1649769	A	AC	185	273	0.047619	0.952381	YL58	B. coccoides	1687	Ciprofloxacin	273	outside ORFs	non-coding
+Blautia_coccoides	1649769	A	ACCC	99	273	0.029304	0.970696	YL58	B. coccoides	1687	Ciprofloxacin	273	outside ORFs	non-coding
+Blautia_coccoides	1674318	TCA	T	65	279	0.010753	0.989247	YL58	B. coccoides	1687	Ciprofloxacin	279	Anaerobic magnesium-protoporphyrin IX monomethyl ester cyclase	coding
+Blautia_coccoides	1702262	C	T	307	154	0.188312	0.811688	YL58	B. coccoides	1687	Ciprofloxacin	154	hypothetical proteins	coding
+Blautia_coccoides	1707380	TC	T	64	299	0.010033	0.989967	YL58	B. coccoides	1687	Ciprofloxacin	299	hypothetical proteins	coding
+Blautia_coccoides	1708736	TG	T	64	303	0.009901	0.990099	YL58	B. coccoides	1687	Ciprofloxacin	303	Fructose-1,6-bisphosphatase class 3	coding
+Blautia_coccoides	1737795	TC	T	79	359	0.011142	0.988858	YL58	B. coccoides	1687	Ciprofloxacin	359	Oxygen-independent coproporphyrinogen-III oxidase-like protein HemZ	coding
+Blautia_coccoides	1796160	AC	A	116	279	0.017921	0.982079	YL58	B. coccoides	1687	Ciprofloxacin	279	Uridine phosphorylase	coding
+Blautia_coccoides	1803455	A	AC	80	184	0.043478	0.956522	YL58	B. coccoides	1687	Ciprofloxacin	184	hypothetical proteins	coding
+Blautia_coccoides	1803455	AC	A	137	184	0.065217	0.934783	YL58	B. coccoides	1687	Ciprofloxacin	184	hypothetical proteins	coding
+Blautia_coccoides	1853332	TC	T	139	326	0.018405	0.981595	YL58	B. coccoides	1687	Ciprofloxacin	326	Imidazolonepropionase	coding
+Blautia_coccoides	1965014	TG	T	87	343	0.011662	0.988338	YL58	B. coccoides	1687	Ciprofloxacin	343	Lipid II isoglutaminyl synthase (glutamine-hydrolyzing) subunit MurT	coding
+Blautia_coccoides	2010369	TC	T	85	370	0.010811	0.989189	YL58	B. coccoides	1687	Ciprofloxacin	370	Lon protease 1	coding
+Blautia_coccoides	2034887	TC	T	88	328	0.012195	0.987805	YL58	B. coccoides	1687	Ciprofloxacin	328	hypothetical proteins	coding
+Blautia_coccoides	2046545	TA	T	85	377	0.01061	0.98939	YL58	B. coccoides	1687	Ciprofloxacin	377	hypothetical proteins	coding
+Blautia_coccoides	2060249	TG	T	87	337	0.011869	0.988131	YL58	B. coccoides	1687	Ciprofloxacin	337	putative ABC transporter ATP-binding protein	coding
+Blautia_coccoides	2088104	TA	T	86	370	0.010811	0.989189	YL58	B. coccoides	1687	Ciprofloxacin	370	Uracil permease	coding
+Blautia_coccoides	2112383	CT	C	129	357	0.016807	0.983193	YL58	B. coccoides	1687	Ciprofloxacin	357	Anaerobic ribonucleoside-triphosphate reductase-activating protein	coding
+Blautia_coccoides	2123500	G	T	100	324	0.095679	0.904321	YL58	B. coccoides	1687	Ciprofloxacin	324	Translation initiation factor IF-2	coding
+Blautia_coccoides	2128211	CTA	C	87	347	0.011527	0.988473	YL58	B. coccoides	1687	Ciprofloxacin	347	Zinc transport protein ZntB	coding
+Blautia_coccoides	2152559	C	T	12213	344	1	1	YL58	B. coccoides	1687	Ciprofloxacin	344	putative protein MG039 	coding
+Blautia_coccoides	2208194	AT	A	79	350	0.011429	0.988571	YL58	B. coccoides	1687	Ciprofloxacin	350	2-hydroxy-3-oxopropionate reductase	coding
+Blautia_coccoides	2222277	TC	T	78	371	0.010782	0.989218	YL58	B. coccoides	1687	Ciprofloxacin	371	Sensor histidine kinase RcsC	coding
+Blautia_coccoides	2230519	G	GC	9149	361	0.889197	0.889197	YL58	B. coccoides	1687	Ciprofloxacin	361	outside ORFs	non-coding
+Blautia_coccoides	2230519	G	GCC	90	361	0.022161	0.977839	YL58	B. coccoides	1687	Ciprofloxacin	361	outside ORFs	non-coding
+Blautia_coccoides	2277525	TG	T	75	360	0.011111	0.988889	YL58	B. coccoides	1687	Ciprofloxacin	360	6-phosphogluconolactonase	coding
+Blautia_coccoides	2372383	AT	A	86	360	0.011111	0.988889	YL58	B. coccoides	1687	Ciprofloxacin	360	hypothetical proteins	coding
+Blautia_coccoides	2400586	TC	T	64	318	0.009434	0.990566	YL58	B. coccoides	1687	Ciprofloxacin	318	Phosphoribosylformylglycinamidine synthase	coding
+Blautia_coccoides	2408407	TC	T	64	314	0.009554	0.990446	YL58	B. coccoides	1687	Ciprofloxacin	314	Nickel-binding protein NikA	coding
+Blautia_coccoides	2448245	GC	G	84	327	0.012232	0.987768	YL58	B. coccoides	1687	Ciprofloxacin	327	Cytochrome b6-f complex iron-sulfur subunit	coding
+Blautia_coccoides	2464482	A	T	3615	266	0.672932	0.672932	YL58	B. coccoides	1687	Ciprofloxacin	266	hypothetical proteins	coding
+Blautia_coccoides	2499488	GC	G	85	378	0.010582	0.989418	YL58	B. coccoides	1687	Ciprofloxacin	378	Acetylornithine aminotransferase	coding
+Blautia_coccoides	2553711	GT	G	106	372	0.013441	0.986559	YL58	B. coccoides	1687	Ciprofloxacin	372	hypothetical proteins	coding
+Blautia_coccoides	2553724	T	TA	107	376	0.013298	0.986702	YL58	B. coccoides	1687	Ciprofloxacin	376	hypothetical proteins	coding
+Blautia_coccoides	2696427	AC	A	65	376	0.010638	0.989362	YL58	B. coccoides	1687	Ciprofloxacin	376	Putrescine transporter PotE	coding
+Blautia_coccoides	2710859	GC	G	69	352	0.011364	0.988636	YL58	B. coccoides	1687	Ciprofloxacin	352	hypothetical proteins	coding
+Blautia_coccoides	2789404	A	G	12417	359	0.991643	0.991643	YL58	B. coccoides	1687	Ciprofloxacin	359	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	coding
+Blautia_coccoides	2875411	GC	G	86	314	0.012739	0.987261	YL58	B. coccoides	1687	Ciprofloxacin	314	Beta-galactosidase	coding
+Blautia_coccoides	2898347	GT	G	86	368	0.01087	0.98913	YL58	B. coccoides	1687	Ciprofloxacin	368	Inositol 2-dehydrogenase/D-chiro-inositol 3-dehydrogenase	coding
+Blautia_coccoides	2966235	TGG	T	77	403	0.009926	0.990074	YL58	B. coccoides	1687	Ciprofloxacin	403	hypothetical proteins	coding
+Blautia_coccoides	3042974	TG	T	64	306	0.009804	0.990196	YL58	B. coccoides	1687	Ciprofloxacin	306	ATP-dependent helicase/nuclease subunit A	coding
+Blautia_coccoides	3055781	A	ACTTCTGTAC	8468	320	0.81875	0.81875	YL58	B. coccoides	1687	Ciprofloxacin	320	Catabolite control protein A	coding
+Blautia_coccoides	3055784	G	T	185	347	0.121037	0.878963	YL58	B. coccoides	1687	Ciprofloxacin	347	Catabolite control protein A	coding
+Blautia_coccoides	3140033	C	CA	76	385	0.023377	0.976623	YL58	B. coccoides	1687	Ciprofloxacin	385	hypothetical proteins	coding
+Blautia_coccoides	3220685	TA	T	111	356	0.014045	0.985955	YL58	B. coccoides	1687	Ciprofloxacin	356	hypothetical proteins	coding
+Blautia_coccoides	3321656	A	AT	81	366	0.010929	0.989071	YL58	B. coccoides	1687	Ciprofloxacin	366	Spore germination protein B1	coding
+Blautia_coccoides	3345573	TC	T	85	396	0.010101	0.989899	YL58	B. coccoides	1687	Ciprofloxacin	396	hypothetical proteins	coding
+Blautia_coccoides	3413501	TG	T	84	401	0.009975	0.990025	YL58	B. coccoides	1687	Ciprofloxacin	401	hypothetical proteins	coding
+Blautia_coccoides	3431343	TG	T	84	376	0.010638	0.989362	YL58	B. coccoides	1687	Ciprofloxacin	376	putative protein	coding
+Blautia_coccoides	3432216	TAA	T	67	352	0.011364	0.988636	YL58	B. coccoides	1687	Ciprofloxacin	352	hypothetical proteins	coding
+Blautia_coccoides	3533812	T	TA	76	373	0.010724	0.989276	YL58	B. coccoides	1687	Ciprofloxacin	373	Glutathione transport system permease protein GsiD	coding
+Blautia_coccoides	3539537	TTCAGG	T	65	253	0.011858	0.988142	YL58	B. coccoides	1687	Ciprofloxacin	253	outside ORFs	non-coding
+Blautia_coccoides	3699815	TA	T	85	370	0.010811	0.989189	YL58	B. coccoides	1687	Ciprofloxacin	370	hypothetical proteins	coding
+Blautia_coccoides	3709422	TG	T	86	356	0.011236	0.988764	YL58	B. coccoides	1687	Ciprofloxacin	356	hypothetical proteins	coding
+Blautia_coccoides	3727908	GT	G	95	369	0.01897	0.98103	YL58	B. coccoides	1687	Ciprofloxacin	369	hypothetical proteins	coding
+Blautia_coccoides	3729197	C	CA	78	364	0.010989	0.989011	YL58	B. coccoides	1687	Ciprofloxacin	364	outside ORFs	non-coding
+Blautia_coccoides	3787160	TA	T	100	393	0.012723	0.987277	YL58	B. coccoides	1687	Ciprofloxacin	393	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-acetyltransferase	coding
+Blautia_coccoides	3904268	TG	T	84	399	0.010025	0.989975	YL58	B. coccoides	1687	Ciprofloxacin	399	tRNA uridine 5-carboxymethylaminomethyl modification enzyme MnmG	coding
+Blautia_coccoides	4070386	GA	G	76	353	0.011331	0.988669	YL58	B. coccoides	1687	Ciprofloxacin	353	Guanylate kinase	coding
+Blautia_coccoides	4085917	GT	G	85	382	0.010471	0.989529	YL58	B. coccoides	1687	Ciprofloxacin	382	Apulose-4-phosphate transketolase subunit B	coding
+Blautia_coccoides	4178234	C	T	12460	353	1	1	YL58	B. coccoides	1687	Ciprofloxacin	353	Low specificity L-threonine aldolase	coding
+Blautia_coccoides	4246906	AC	A	71	407	0.009828	0.990172	YL58	B. coccoides	1687	Ciprofloxacin	407	V-type ATP synthase alpha chain	coding
+Blautia_coccoides	4275241	TCA	T	85	381	0.010499	0.989501	YL58	B. coccoides	1687	Ciprofloxacin	381	Trehalose transport system permease protein SugB	coding
+Blautia_coccoides	4297964	GC	G	86	334	0.011976	0.988024	YL58	B. coccoides	1687	Ciprofloxacin	334	hypothetical proteins	coding
+Blautia_coccoides	4347335	T	TA	76	409	0.00978	0.99022	YL58	B. coccoides	1687	Ciprofloxacin	409	hypothetical proteins	coding
+Blautia_coccoides	4581995	C	CGG	1358	106	0.622642	0.622642	YL58	B. coccoides	1687	Ciprofloxacin	106	putative response regulatory protein	coding
+Blautia_coccoides	4581995	C	CG	83	106	0.075472	0.924528	YL58	B. coccoides	1687	Ciprofloxacin	106	putative response regulatory protein	coding
+Blautia_coccoides	4602619	GC	G	72	368	0.01087	0.98913	YL58	B. coccoides	1687	Ciprofloxacin	368	Alpha-galactosidase A	coding
+Blautia_coccoides	4622295	TG	T	83	418	0.009569	0.990431	YL58	B. coccoides	1687	Ciprofloxacin	418	Xylan alpha-(1->2)-glucuronosidase	coding
+Blautia_coccoides	4659834	TG	T	89	317	0.012618	0.987382	YL58	B. coccoides	1687	Ciprofloxacin	317	N-acetylmannosamine kinase	coding
+Blautia_coccoides	4673789	TA	T	75	351	0.011396	0.988604	YL58	B. coccoides	1687	Ciprofloxacin	351	Ribosomal RNA large subunit methyltransferase K/L	coding
+Blautia_coccoides	4676764	G	T	104	328	0.060976	0.939024	YL58	B. coccoides	1687	Ciprofloxacin	328	outside ORFs	non-coding
+Blautia_coccoides	4795830	GA	G	107	347	0.014409	0.985591	YL58	B. coccoides	1687	Ciprofloxacin	347	putative response regulatory protein	coding
+Blautia_coccoides	4911313	TC	T	117	640	0.009375	0.990625	YL58	B. coccoides	1687	Ciprofloxacin	640	c("hypothetical protein", "hypothetical protein")	coding
+Blautia_coccoides	4916549	G	T	330	625	0.1024	0.8976	YL58	B. coccoides	1687	Ciprofloxacin	625	hypothetical proteins	coding
+Blautia_coccoides	4916603	G	T	152	612	0.080065	0.919935	YL58	B. coccoides	1687	Ciprofloxacin	612	hypothetical proteins	coding
+Blautia_coccoides	4918239	TG	T	72	593	0.006745	0.993255	YL58	B. coccoides	1687	Ciprofloxacin	593	hypothetical proteins	coding
+Blautia_coccoides	4946365	AT	A	77	623	0.006421	0.993579	YL58	B. coccoides	1687	Ciprofloxacin	623	hypothetical proteins	coding
+Blautia_coccoides	4971268	A	G	4036	139	0.992806	0.992806	YL58	B. coccoides	1687	Ciprofloxacin	139	16S ribosomal RNA	coding
+Blautia_coccoides	4972023	G	A	4905	221	1	1	YL58	B. coccoides	1687	Ciprofloxacin	221	16S ribosomal RNA	coding
+Blautia_coccoides	5033553	TA	T	81	368	0.01087	0.98913	YL58	B. coccoides	1687	Ciprofloxacin	368	outside ORFs	non-coding
+Blautia_coccoides	5076365	TATA	T	84	359	0.011142	0.988858	YL58	B. coccoides	1687	Ciprofloxacin	359	hypothetical proteins	coding
+Blautia_coccoides	5086556	TA	T	83	428	0.009346	0.990654	YL58	B. coccoides	1687	Ciprofloxacin	428	HTH-type transcriptional activator RhaR	coding

@@ -1,54 +1,84 @@
 genome	orf_annotation	occurence
-yl58	16S ribosomal RNA	1
+yl2	1,4-alpha-glucan branching enzyme GlgB	1
+yl58	16S ribosomal RNA	6
 i48	2-dehydro-3-deoxy-D-gluconate 5-dehydrogenase	4
 i48	2-iminoacetate synthase	1
-i48	Alpha-D-kanosaminyltransferase	1
+yl31	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	5
+yl58	4-hydroxy-3-methylbut-2-en-1-yl diphosphate synthase (flavodoxin)	8
+yl32	5-methyltetrahydrofolate:corrinoid/iron-sulfur protein co-methyltransferase	10
+i48	Alpha-D-kanosaminyltransferase	27
 yl27	Alpha-D-kanosaminyltransferase	1
-yl32	ATP-dependent DNA helicase RecG	14
+yl32	ATP-dependent DNA helicase RecG	30
 yl45	ATP-dependent RecD-like DNA helicase	2
+i48	Bacitracin export permease protein BceB	30
 yl31	Bacitracin export permease protein BceB	1
 yl27	Beta-galactosidase	1
 i48	Beta-L-arabinobiosidase	1
 yl32	Beta-xylosidase	2
 yl45	Beta-xylosidase	6
+i46	Bifunctional protein FolD protein	1
 i48	Biotin carboxylase	1
+i46	Carbon monoxide dehydrogenase 1	2
 yl31	CdaA regulatory protein CdaR	3
+i46	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	11
 yl31	CDP-6-deoxy-L-threo-D-glycero-4-hexulose-3-dehydrase reductase	1
 i48	Chloramphenicol acetyltransferase	5
 i48	Chromosome partition protein Smc	1
+yl32	Chromosome partition protein Smc	19
+i46	Cobalt-precorrin-5A hydrolase	1
+yl31	Cobalt-precorrin-5B C(1)-methyltransferase	1
 yl31	Dihydroxy-acid dehydratase	1
 yl32	DNA mismatch repair protein MutS	1
 i48	DNA polymerase I	1
+yl31	DNA topoisomerase 3	1
+kb1	DNA-directed RNA polymerase subunit alpha	3
+i48	Elongation factor 4	10
 yl31	GalNAc(5)-diNAcBac-PP-undecaprenol beta-1,3-glucosyltransferase	1
 yl27	Glucose-1-phosphate thymidylyltransferase	1
+yl32	Glutamyl aminopeptidase	29
 yl32	Glutathione transport system permease protein GsiD	5
 yl58	Group II intron-encoded protein LtrA	2
+i49	Hca operon transcriptional activator HcaR	1
+yl32	HTH-type transcriptional regulator MhqR	7
 i48	HTH-type transcriptional repressor YvoA	4
-i48	hypothetical proteins	18
+i46	hypothetical proteins	5
+i48	hypothetical proteins	68
+i49	hypothetical proteins	8
 yl27	hypothetical proteins	16
 yl31	hypothetical proteins	6
-yl32	hypothetical proteins	17
+yl32	hypothetical proteins	37
 yl44	hypothetical proteins	4
 yl45	hypothetical proteins	15
 yl58	hypothetical proteins	6
 yl32	Inner membrane ABC transporter permease protein YdcV	11
 yl27	L-glutamyl-[BtrI acyl-carrier protein] decarboxylase	4
 yl44	L-methionine gamma-lyase	2
+i46	Lactose transport system permease protein LacF	1
+yl2	Lipoteichoic acid synthase 2	1
 yl27	Molybdenum transport system permease protein ModB	1
+yl32	Multidrug resistance protein NorM	9
 yl2	NAD kinase	1
 i48	NADP-reducing hydrogenase subunit HndD	1
+i46	Nuclease SbcCD subunit C	2
 yl31	Nuclease SbcCD subunit D	1
-yl31	outside ORFs	7
-yl32	outside ORFs	7
+i46	outside ORFs	5
+i48	outside ORFs	7
+i49	outside ORFs	1
+kb18	outside ORFs	1
+yl31	outside ORFs	14
+yl32	outside ORFs	14
 yl44	outside ORFs	4
 yl45	outside ORFs	19
 yl58	outside ORFs	2
 yl31	Peptide chain release factor 3	4
 yl32	Phosphoglucomutase	8
+i49	Protein RecA	7
 yl31	putative ATPase YjoB	4
 yl31	putative dual-specificity RNA methyltransferase RlmN	1
 yl45	putative response regulatory protein	4
+i49	Putative thiazole biosynthetic enzyme	2
 i48	Putative xanthine dehydrogenase molybdenum-binding subunit XdhA	1
+yl32	Pyruvate synthase	10
 yl2	Ribonucleoside-diphosphate reductase 1 subunit alpha	1
 yl32	Ribosome-binding ATPase YchF	1
 yl27	Sensor histidine kinase BtsS	3
@@ -56,17 +86,28 @@ yl32	Sensor histidine kinase BtsS	4
 i48	Sensor histidine kinase ResE	1
 yl44	Signal transduction histidine-protein kinase BaeS	1
 yl32	Signal transduction histidine-protein kinase BarA	2
+yl31	Solute-binding protein	6
 yl32	Sporulation sigma-E factor-processing peptidase	1
+i48	Stage III sporulation protein AE	10
 i48	Teichoic acid poly(glycerol phosphate) polymerase	5
 yl31	Teichoic acid poly(glycerol phosphate) polymerase	4
+yl2	Teichoic acid ribitol-phosphate polymerase TarK	1
 i48	Teichoic acids export ATP-binding protein TagH	4
 yl27	TelA-like protein	1
 i48	Threonine--tRNA ligase	7
+yl32	Toxin A	25
 yl32	Twitching mobility protein	1
-i48	Ubiquinone biosynthesis O-methyltransferase	2
+yl31	Tyrosine recombinase XerS	1
+i48	Ubiquinone biosynthesis O-methyltransferase	7
+yl32	UDP-2-acetamido-2,6-beta-L-arabino-hexul-4-ose reductase	20
+yl27	UDP-2-acetamido-3-amino-2,3-dideoxy-D-glucuronate N-acetyltransferase	13
 yl32	UDP-2,3-diacetamido-2,3-dideoxy-D-glucuronate 2-epimerase	1
-yl45	UDP-glucose 6-dehydrogenase	2
+i48	UDP-2,3-diacylglucosamine pyrophosphatase LpxG	3
+yl27	UDP-galactopyranose mutase	13
+yl45	UDP-glucose 6-dehydrogenase	11
 i48	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	1
+yl32	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	2
+yl45	UDP-N-acetyl-alpha-D-glucosamine C6 dehydratase	5
 yl27	UDP-N-acetylmuramate--L-alanine ligase	2
 i48	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase	4
 i48	UDP-N-acetylmuramoylalanine--D-glutamate ligase	1

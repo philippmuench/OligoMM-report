@@ -1,0 +1,49 @@
+# Claudia Samples
+
+## Experiment
+
+## Metadata
+
+```{r}
+design.df <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
+DT::datatable(design.df)
+```
+## OligoMM
+
+|  ID | phylum | species | 
+|------|-------| -------|
+| YL44 | _Verrucomicrobia_ | _A. muciniphila_ |
+| I48 |  _Bacteroidetes_ | _B. caecimuris_ |
+| YL27 | _Bacteroidetes_ | _M. intestinale_ |
+| YL45 | _Proteobacteria_ | _T. muris_ |
+| YL2 | _Actinobacteria_ | _B. longum_ |
+| KB1 | _Firmicutes_ | _E. faecalis_  |
+| KB18 | _Firmicutes_ | _A. muris_ |
+| YL32 | _Firmicutes_ | _C. clostridioforme_ |
+| YL31 | _Firmicutes_ | _F. plautii_ |
+| YL58 | _Firmicutes_ | _B. coccoides_ |
+| I49 | _Firmicutes_ | _L. reuteri_ |
+| I46 | _Firmicutes_ | _C. innocuum_ |
+
+### CRISPR
+
+based on Prokka
+
+```
+[17:07:29] Searching for CRISPR repeats
+[17:07:30] CRISPR1 CP022722.1 1722776 with 6 spacers
+[17:07:30] CRISPR2 CP022722.1 3488656 with 4 spacers
+[17:07:30] CRISPR3 NHMT01000001.1 1999785 with 7 spacers
+[17:07:31] CRISPR4 NHMR02000002.1 214427 with 78 spacers
+[17:07:31] CRISPR5 NHMQ01000003.1 694333 with 9 spacers
+[17:07:31] CRISPR6 NHTR01000003.1 394380 with 20 spacers
+[17:07:31] CRISPR7 NHTR01000010.1 319 with 15 spacers
+[17:07:32] CRISPR8 CP021420.1 425056 with 20 spacers
+[17:07:32] CRISPR9 CP021420.1 434834 with 8 spacers
+[17:07:32] CRISPR10 NHMP01000001.1 344218 with 8 spacers
+[17:07:32] CRISPR11 NHMP01000001.1 403754 with 8 spacers
+[17:07:32] CRISPR12 NHMP01000007.1 29696 with 51 spacers
+[17:07:32] CRISPR13 NHMP01000007.1 50690 with 46 spacers
+[17:07:32] CRISPR14 CP022713.1 372223 with 14 spacers
+[17:07:32] CRISPR15 CP022713.1 3331136 with 7 spacers
+```
