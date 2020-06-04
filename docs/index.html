@@ -24,7 +24,7 @@
 <meta name="author" content="Philipp C. Muench" />
 
 
-<meta name="date" content="2020-06-03" />
+<meta name="date" content="2020-06-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -197,10 +197,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.7.10" data-path="resequencing-samples.html"><a href="resequencing-samples.html#yl58-3"><i class="fa fa-check"></i><b>3.7.10</b> YL58</a></li>
 <li class="chapter" data-level="3.7.11" data-path="resequencing-samples.html"><a href="resequencing-samples.html#i46-3"><i class="fa fa-check"></i><b>3.7.11</b> I46</a></li>
 </ul></li>
+<li class="chapter" data-level="3.8" data-path="resequencing-samples.html"><a href="resequencing-samples.html#visualize-coverage"><i class="fa fa-check"></i><b>3.8</b> visualize coverage</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="ab-samples.html"><a href="ab-samples.html"><i class="fa fa-check"></i><b>4</b> AB Samples</a>
 <ul>
 <li class="chapter" data-level="4.1" data-path="ab-samples.html"><a href="ab-samples.html#load-in-variants-1"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
+<li class="chapter" data-level="4.2" data-path="ab-samples.html"><a href="ab-samples.html#af-frequency"><i class="fa fa-check"></i><b>4.2</b> AF frequency</a></li>
+<li class="chapter" data-level="4.3" data-path="ab-samples.html"><a href="ab-samples.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.3</b> number of variants per samples</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="ab-samples.html"><a href="ab-samples.html#number-of-variants-per-treatment-group"><i class="fa fa-check"></i><b>4.3.1</b> number of variants per treatment group</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -222,7 +228,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">OMM report</h1>
 <p class="author"><em>Philipp C. Muench</em></p>
-<p class="date"><em>2020-06-03</em></p>
+<p class="date"><em>2020-06-04</em></p>
 </div>
 <div id="Setup" class="section level1" number="1">
 <h1><span class="header-section-number">Section 1</span> Setup</h1>
@@ -239,8 +245,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-9"><a href="index.html#cb1-9"></a><span class="kw">library</span>(<span class="st">&quot;kableExtra&quot;</span>)</span>
 <span id="cb1-10"><a href="index.html#cb1-10"></a><span class="kw">library</span>(<span class="st">&quot;plotly&quot;</span>)</span>
 <span id="cb1-11"><a href="index.html#cb1-11"></a><span class="kw">library</span>(<span class="st">&quot;DT&quot;</span>)</span>
-<span id="cb1-12"><a href="index.html#cb1-12"></a><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</span>
-<span id="cb1-13"><a href="index.html#cb1-13"></a><span class="kw">library</span>(<span class="st">&quot;bookdown&quot;</span>)</span></code></pre></div>
+<span id="cb1-12"><a href="index.html#cb1-12"></a><span class="kw">library</span>(<span class="st">&quot;circlize&quot;</span>)</span>
+<span id="cb1-13"><a href="index.html#cb1-13"></a><span class="kw">library</span>(<span class="st">&quot;ComplexHeatmap&quot;</span>)</span>
+<span id="cb1-14"><a href="index.html#cb1-14"></a><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</span>
+<span id="cb1-15"><a href="index.html#cb1-15"></a><span class="kw">library</span>(<span class="st">&quot;bookdown&quot;</span>)</span></code></pre></div>
 <p><em>Note:</em> for <code>rtracklayer</code> you might need <em>curl</em></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="index.html#cb2-1"></a><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</span></code></pre></div>
 <p>You need to install <a href="https://pandoc.org/installing.html">Pandoc</a>.</p>
