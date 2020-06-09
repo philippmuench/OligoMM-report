@@ -149,12 +149,24 @@ data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
 
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 
-# order the heatmap by treatment group
+qpcr <- read.table("qpcr.csv", header = T, sep = ";")
+qpcr$universal <- NULL
+rownames(qpcr) <- paste0(qpcr$mouse, "-",qpcr$day)
+qpcr <- qpcr[,-c(1:5)]
+
+qpcr <- apply(qpcr, 1, function(x) x/sum(x))
+
+qpcr <- qpcr[,which(colnames(qpcr) %in% colnames(heat3))]
+qpcr <- qpcr[,match(colnames(heat3), colnames(qpcr))]
 
 #pdf("heat.pdf", width= 10, height = 10)
 Heatmap(heat3, name = "AF", col = col_fun, border = TRUE,
 top_annotation = HeatmapAnnotation(num = anno_lines(colSums(heat3),
-smooth = TRUE,border = TRUE),
+smooth = TRUE,border = TRUE), ra = anno_barplot(t(qpcr), 
+    bar_width = 1,gp = gpar(fill = 1:12), height = unit(3, "cm")),
+	mouse = heat3.mouse.id,
+	group = heat3.mouse.group,
+	phase = heat3.phase,
 day=anno_simple(heat3.day, pch =heat3.phase2)),
 cluster_columns =F,
 column_order = order(ord$occ, ord$mouse.id, ord$day),
@@ -170,10 +182,9 @@ column_split = heat3.mouse.group,
 #dev.off()
 ```
 
-
 All mice clustered
 
-```{r heat-all-mice-clu, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
+```{r heat-all-mice2, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
 dat <- readRDS("data/rds/omm_ab.rds")
 dat$sample.id <- paste0(dat$mouse.id, "-",dat$day)
 dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
@@ -202,17 +213,32 @@ heat3.day <- annot.data[match(colnames(heat3), annot.data$sample.id),]$day
 heat3.mouse.group <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.group
 heat3.phase <- annot.data[match(colnames(heat3), annot.data$sample.id),]$phase
 heat3.phase2 <- ifelse(heat3.phase == "post-treatment", 6, NA)
+ord = data.frame(day = heat3.day, mouse.id =heat3.mouse.id )
 
+occ = as.data.frame(table(heat3.mouse.id))
+ord$occ <- occ[match(ord$mouse.id, occ$heat3.mouse.id),]$Freq
 data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
 
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 
-# order the heatmap by treatment group
+qpcr <- read.table("qpcr.csv", header = T, sep = ";")
+qpcr$universal <- NULL
+rownames(qpcr) <- paste0(qpcr$mouse, "-",qpcr$day)
+qpcr <- qpcr[,-c(1:5)]
+
+qpcr <- apply(qpcr, 1, function(x) x/sum(x))
+
+qpcr <- qpcr[,which(colnames(qpcr) %in% colnames(heat3))]
+qpcr <- qpcr[,match(colnames(heat3), colnames(qpcr))]
 
 #pdf("heat.pdf", width= 10, height = 10)
 Heatmap(heat3, name = "AF", col = col_fun, border = TRUE,
 top_annotation = HeatmapAnnotation(num = anno_lines(colSums(heat3),
-smooth = TRUE,border = TRUE),
+smooth = TRUE,border = TRUE), ra = anno_barplot(t(qpcr), 
+    bar_width = 1,gp = gpar(fill = 1:12), height = unit(3, "cm")),
+	mouse = heat3.mouse.id,
+	group = heat3.mouse.group,
+	phase = heat3.phase,
 day=anno_simple(heat3.day, pch =heat3.phase2)),
 cluster_columns =T,
 right_annotation = rowAnnotation(prev = anno_barplot(rowSums(heat3))),
@@ -221,9 +247,81 @@ right_annotation = rowAnnotation(prev = anno_barplot(rowSums(heat3))),
  row_names_gp = gpar(fontsize = 3),
  show_row_dend = F,
   show_row_names = F,
- show_column_dend = F
+ show_column_dend = T
 )
+#dev.off()
 ```
+
+
+
+```{r heat-all-mice3, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
+dat <- readRDS("data/rds/omm_ab.rds")
+dat$sample.id <- paste0(dat$mouse.id, "-",dat$day)
+dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
+data.wide <- dcast(dat, variant.id ~ sample.id, value.var = "AF")
+data.wide[is.na(data.wide)] <- 0
+rownames(data.wide) <-  data.wide$variant.id
+data.wide$variant.id <- NULL
+
+library(circlize)
+library(ComplexHeatmap)
+
+heat <- data.matrix(data.wide)
+# limit to variants that are present in at least 10% of samples
+heat_num <- rowSums(heat != 0)
+heat2 <- heat[which(heat_num > ncol(heat)/10),]
+
+# limit to variants that have a high variance
+heat_var_num <- matrixStats::rowVars(heat2)
+heat3 <- heat2[which(heat_var_num >  quantile(heat_var_num,  0.5)) ,]
+
+dat$dummy <- 1
+annot.data <- aggregate(dummy ~ mouse.id + mouse.group + day + phase, dat, sum)
+annot.data$sample.id <- paste0(annot.data$mouse.id, "-",annot.data$day)
+heat3.mouse.id <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.id
+heat3.day <- annot.data[match(colnames(heat3), annot.data$sample.id),]$day
+heat3.mouse.group <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.group
+heat3.phase <- annot.data[match(colnames(heat3), annot.data$sample.id),]$phase
+heat3.phase2 <- ifelse(heat3.phase == "post-treatment", 6, NA)
+ord = data.frame(day = heat3.day, mouse.id =heat3.mouse.id )
+
+occ = as.data.frame(table(heat3.mouse.id))
+ord$occ <- occ[match(ord$mouse.id, occ$heat3.mouse.id),]$Freq
+data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
+
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+qpcr <- read.table("qpcr.csv", header = T, sep = ";")
+qpcr$universal <- NULL
+rownames(qpcr) <- paste0(qpcr$mouse, "-",qpcr$day)
+qpcr <- qpcr[,-c(1:5)]
+
+qpcr <- t(qpcr)
+
+qpcr <- qpcr[,which(colnames(qpcr) %in% colnames(heat3))]
+qpcr <- qpcr[,match(colnames(heat3), colnames(qpcr))]
+
+#pdf("heat.pdf", width= 10, height = 10)
+Heatmap(heat3, name = "AF", col = col_fun, border = TRUE,
+top_annotation = HeatmapAnnotation(num = anno_lines(colSums(heat3),
+smooth = TRUE,border = TRUE), ra = anno_barplot(t(qpcr), 
+    bar_width = 1,gp = gpar(fill = 1:12), height = unit(3, "cm")),
+	mouse = heat3.mouse.id,
+	group = heat3.mouse.group,
+	phase = heat3.phase,
+day=anno_simple(heat3.day, pch =heat3.phase2)),
+cluster_columns =T,
+right_annotation = rowAnnotation(prev = anno_barplot(rowSums(heat3))),
+ row_gap = unit(0, "mm"), column_gap = unit(0, "mm"),
+ column_names_gp = gpar(fontsize =5),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = F,
+ show_column_dend = T
+)
+#dev.off()
+```
+
 
 ## Focus on mouse where we have many time points
 
