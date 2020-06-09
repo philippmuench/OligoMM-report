@@ -58,6 +58,8 @@ library("knitr")
 library("kableExtra")
 library("plotly")
 library("DT")
+library("circlize")
+library("ComplexHeatmap")
 library("rtracklayer")
 library("bookdown")
 ```

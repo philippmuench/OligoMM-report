@@ -1,21 +1,21 @@
-# Resequencing Samples
+# AB-effects (resequenced)
 
 ## Metadata
 
-| Sample | Genome | Group | Species |
-| -------- | -------- | -------- | -------- |
-| DR4 | KB1 | 1687| Enterococcus_faecalis  |
-| DR1 | KB1 | 1681 | Enterococcus_faecalis  |
-| DR8 | KB1 | 1691| Enterococcus_faecalis|
-| DR11 | KB1 | 1696 | Enterococcus_faecalis|
-| DR3 | I46 | 1681 |Clostridium_innocuum |
-| DR6 | I46 | 1687 | Clostridium_innocuum|
-| DR10 | I46 | 1691 |Clostridium_innocuum |
-| DR12 | I46 | 1696 | Clostridium_innocuum|
-| DR7 | YL58 | 1687 |Blautia_coccoides |
-| DR13 | YL58 | 1696 | Blautia_coccoides|
+| Sample | Genome | Group | Species | Treatment |
+| -------- | -------- | -------- | -------- | -------- |
+| DR4 | KB1 | 1687| Enterococcus_faecalis  | Ciprofloxacin |
+| DR1 | KB1 | 1681 | Enterococcus_faecalis  | Water |
+| DR8 | KB1 | 1691| Enterococcus_faecalis| Tetracyclin |
+| DR11 | KB1 | 1696 | Enterococcus_faecalis| Vancomycin |
+| DR3 | I46 | 1681 |Clostridium_innocuum | Water |
+| DR6 | I46 | 1687 | Clostridium_innocuum| Ciprofloxacin |
+| DR10 | I46 | 1691 |Clostridium_innocuum | Tetracyclin |
+| DR12 | I46 | 1696 | Clostridium_innocuum| Vancomycin |
+| DR7 | YL58 | 1687 | Blautia_coccoides | Ciprofloxacin |
+| DR13 | YL58 | 1696 | Blautia_coccoides| Vancomycin |
 
-## Load in variants
+## Process Lofeq vcf files
 
 ```{r}
 source("utils.R")
@@ -86,25 +86,28 @@ colnames(vcf.samples)[3] <- "POS"
 saveRDS(vcf.samples, file = "data/rds/reseq.rds")
 ```
 
-```{r, fig.cap="AF of resequenced strains", fig.align="center", fig.width=15}
-p <- ggplot(vcf.samples, aes(AF, fill = genome)) + geom_histogram()
-p <- p + facet_grid(mouse.id + mouse.group ~ genome + genome_hr)
-p <- p + theme_classic() + xlab("AF") + ylab("occurence")
-print(p)
-```
-
-```{r, fig.cap="major AF of resequenced strains", fig.align="center", fig.width=15}
-p <- ggplot(vcf.samples, aes(majorAF, fill = genome)) + geom_histogram()
-p <- p + facet_grid(mouse.id + mouse.group ~ genome + genome_hr)
-p <- p + theme_classic() + xlab("AF") + ylab("occurence")
-print(p)
-```
-
 ```{r}
 dat <- readRDS("data/rds/reseq.rds")
 write.table(dat, file = "data/tables/reseq_all.tsv", sep = "\t", row.names = F, quote = F)
 ```
 
+## Plot AF frequency
+
+```{r, fig.cap="AF of resequenced strains", fig.width=9, fig.height=10}
+dat <- readRDS("data/rds/reseq.rds")
+p1 <- ggplot(dat, aes(AF, fill = genome)) + geom_histogram()
+p1 <- p1 + facet_grid(mouse.id + mouse.group ~ genome + genome_hr)
+p1 <- p1 + theme_minimal() + xlab("AF") + ylab("occurence")
+plotly::ggplotly(p1)
+
+```
+
+```{r, fig.cap="major AF of resequenced strains", fig.width=9, fig.height=10}
+p <- ggplot(dat, aes(majorAF, fill = genome)) + geom_histogram()
+p <- p + facet_grid(mouse.id + mouse.group ~ genome + genome_hr)
+p <- p + theme_minimal() + xlab("AF") + ylab("occurence")
+plotly::ggplotly(p)
+```
 
 ```{r}
 pairedAFplot <- function(dat = dat, case = "Water", control = "Ciprofloxacin"){
@@ -187,49 +190,49 @@ geneCentricPlot2 <- function(dat = dat, genome = "KB1", type = "SNP") {
 
 ## KB1
 ### SNP
-```{r dp30, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+```{r dp30, fig.align="center",fig.width=9, fig.height=15, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "KB1", type = "SNP")))
 ```
 
 ### insertion
-```{r dp31, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+```{r dp31, fig.align="center", fig.width=9, fig.height=10, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "KB1", type = "insertion")))
 ```
 
 ### deletion
-```{r dp32, fig.align="center", fig.width=15, fig.height=30, fig.cap="AF by function of one genome"}
+```{r dp32, fig.align="center", fig.width=9, fig.height=30, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "KB1", type = "deletion")))
 ```
 
 ## I46
 ### SNP
-```{r dp33, fig.align="center", fig.width=15, fig.height=7, fig.cap="AF by function of one genome"}
+```{r dp33, fig.align="center", fig.width=9, fig.height=7, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "I46", type = "SNP")))
 ```
 
 ### insertion
-```{r dp34, fig.align="center", fig.width=15, fig.height=5, fig.cap="AF by function of one genome"}
+```{r dp34, fig.align="center", fig.width=9, fig.height=5, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "I46", type = "insertion")))
 ```
 
 ### deletion
-```{r dp35, fig.align="center", fig.width=15, fig.height=23, fig.cap="AF by function of one genome"}
+```{r dp35, fig.align="center", fig.width=9, fig.height=23, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "I46", type = "deletion")))
 ```
 
 ## YL58
 ### SNP
-```{r dp36, fig.align="center", fig.width=15, fig.height=10, fig.cap="AF by function of one genome"}
+```{r dp36, fig.align="center", fig.width=9, fig.height=10, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "YL58", type = "SNP")))
 ```
 
 ### insertion
-```{r dp37, fig.align="center", fig.width=15, fig.height=4, fig.cap="AF by function of one genome"}
+```{r dp37, fig.align="center", fig.width=9, fig.height=4, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "YL58", type = "insertion")))
 ```
 
 ### deletion
-```{r dp38, fig.align="center", fig.width=15, fig.height=15, fig.cap="AF by function of one genome"}
+```{r dp38, fig.align="center", fig.width=9, fig.height=15, fig.cap="AF by function of one genome"}
 suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "YL58", type = "deletion")))
 ```
 
@@ -237,7 +240,7 @@ suppressWarnings(ggplotly(geneCentricPlot2(dat, genome = "YL58", type = "deletio
 
 ### SNP
 
-```{r, fig.align="center", fig.width=8, fig.height=8}
+```{r, fig.align="center", fig.width=9, fig.height=8}
 dat <- readRDS("data/rds/reseq.rds")
 dat$ref_size <- nchar(as.character(as.matrix(dat$REF)))
 dat$alt_size <- nchar(as.character(as.matrix(dat$ALT)))
@@ -255,7 +258,7 @@ ggplotly(p)
 
 ### insertions
 
-```{r, fig.align="center", fig.width=8, fig.height=8}
+```{r, fig.align="center", fig.width=9, fig.height=8}
 dat <- readRDS("data/rds/reseq.rds")
 dat$ref_size <- nchar(as.character(as.matrix(dat$REF)))
 dat$alt_size <- nchar(as.character(as.matrix(dat$ALT)))
@@ -273,7 +276,7 @@ ggplotly(p)
 
 ### deletions
 
-```{r, fig.align="center", fig.width=8, fig.height=8}
+```{r,  fig.width=9, fig.height=5}
 dat <- readRDS("data/rds/reseq.rds")
 dat$ref_size <- nchar(as.character(as.matrix(dat$REF)))
 dat$alt_size <- nchar(as.character(as.matrix(dat$ALT)))
@@ -289,11 +292,11 @@ p <- p  + theme_classic()# + scale_color_manual(values = omm_colors)
 ggplotly(p)
 ```
 
-## heatmap
+## heatmap {.tabset .tabset-fade .tabset-pills}
 
 ### KB1
 
-```{r, fig.align="center", fig.width=15, fig.height=15}
+```{r, fig.align="center", fig.width=9, fig.height=5}
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -305,17 +308,16 @@ library(ComplexHeatmap)
 heat[is.na(heat)] <- 0
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 Heatmap(heat, name = "AF", col = col_fun,
- column_names_gp = gpar(fontsize =15),
+ column_names_gp = gpar(fontsize =9),
  row_names_gp = gpar(fontsize = 3),
  show_row_dend = F,
   show_row_names = F,
- show_column_dend = F
-)
+ show_column_dend = F)
 ```
 
 ### I46
 
-```{r, fig.align="center", fig.width=15, fig.height=15}
+```{r, fig.align="center", fig.width=9, fig.height=5}
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -327,7 +329,7 @@ library(ComplexHeatmap)
 heat[is.na(heat)] <- 0
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 Heatmap(heat, name = "AF", col = col_fun,
- column_names_gp = gpar(fontsize = 15),
+ column_names_gp = gpar(fontsize = 9),
  row_names_gp = gpar(fontsize = 9),
  show_row_names = F,
  show_row_dend = F,
@@ -338,7 +340,7 @@ Heatmap(heat, name = "AF", col = col_fun,
 
 ### YL58
 
-```{r, fig.align="center", fig.width=15, fig.height=15}
+```{r, fig.align="center", fig.width=9, fig.height=5}
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -358,11 +360,11 @@ Heatmap(heat, name = "AF", col = col_fun,
 )
 ```
 
-### Filter: present in all
+## Filter: present in all
 
-### KB1
+### KB1 (_Enterococcusfaecalis_)
 
-```{r, fig.align="center", fig.width=8, fig.height=8}
+```{r, fig.align="center", fig.width=9, fig.height=5,fig.margin=TRUE }
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -380,15 +382,15 @@ Heatmap(heat, name = "AF", col = col_fun,
  column_names_gp = gpar(fontsize = 9),
  row_names_gp = gpar(fontsize = 9),
  show_row_dend = F,
+ row_names_max_width  = unit(10, "cm"),
  show_row_names = T,
  show_column_dend = F
 )
 ```
 
+### YL58 (_Blautia_coccoides_)
 
-### YL58
-
-```{r, fig.align="center", fig.width=8, fig.height=8}
+```{r, fig.align="center", fig.width=9, fig.height=10}
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -403,6 +405,7 @@ library(ComplexHeatmap)
 heat[is.na(heat)] <- 0
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 Heatmap(heat, name = "AF", col = col_fun,
+ row_names_max_width  = unit(10, "cm"),
  column_names_gp = gpar(fontsize = 9),
  row_names_gp = gpar(fontsize =9),
  show_row_dend = F,
@@ -411,10 +414,9 @@ Heatmap(heat, name = "AF", col = col_fun,
 )
 ```
 
+### I46 (_Clostridium innocuum_)
 
-### I46
-
-```{r, fig.align="center", fig.width=8, fig.height=13}
+```{r, fig.align="center", ffig.width=9, fig.height=9}
 
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
@@ -430,6 +432,7 @@ library(ComplexHeatmap)
 heat[is.na(heat)] <- 0
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 Heatmap(heat, name = "AF", col = col_fun,
+ row_names_max_width  = unit(10, "cm"),
  column_names_gp = gpar(fontsize = 9),
  row_names_gp = gpar(fontsize =9 ),
  show_row_dend = F,
@@ -439,12 +442,11 @@ Heatmap(heat, name = "AF", col = col_fun,
 ```
 
 
-
 ### Filter: not in water but in AB
 
-### KB1
+### KB1 (_Enterococcusfaecalis_)
 
-```{r, fig.align="center", fig.width=15, fig.height=15}
+```{r, fig.align="center", fig.width=9, fig.height=12}
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -463,6 +465,8 @@ col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 
 Heatmap(heat, name = "AF", col = col_fun,
  column_names_gp = gpar(fontsize = 9),
+  row_names_max_width  = unit(15, "cm"),
+
  row_names_gp = gpar(fontsize = 9),
  show_row_dend = F,
  show_row_names = T,
@@ -471,8 +475,9 @@ Heatmap(heat, name = "AF", col = col_fun,
 ```
 
 
-### YL58
-```{r, fig.align="center", fig.width=8, fig.height=8}
+
+### YL58 (_Blautia coccoides_)
+```{r, fig.align="center", fig.width=9, fig.height=4}
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -491,6 +496,8 @@ col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 
 Heatmap(heat, name = "AF", col = col_fun,
  column_names_gp = gpar(fontsize = 9),
+row_names_max_width  = unit(15, "cm"),
+
  row_names_gp = gpar(fontsize = 9),
  show_row_dend = F,
  show_row_names = T,
@@ -498,9 +505,9 @@ Heatmap(heat, name = "AF", col = col_fun,
 )
 ```
 
+### I46 (_Clostridium innocuum_)
 
-### I46
-```{r, fig.align="center", fig.width=5, fig.height=5}
+```{r, fig.align="center", fig.width=9, fig.height=7}
 dat <- readRDS("data/rds/reseq.rds")
 #dat <- dat[which(dat$mouse.group == "Water" | dat$mouse.group == "Tetracyclin" ),]
 data.wide <- dcast(dat, genome + POS + REF + ALT + feature  ~ mouse.group, value.var = "AF")
@@ -519,6 +526,8 @@ col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 
 Heatmap(heat, name = "AF", col = col_fun,
  column_names_gp = gpar(fontsize = 9),
+  row_names_max_width  = unit(10, "cm"),
+
  row_names_gp = gpar(fontsize = 9),
  show_row_dend = F,
  show_row_names = T,
