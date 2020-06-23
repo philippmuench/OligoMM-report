@@ -5,8 +5,8 @@
 ## Metadata
 
 ```{r}
-design.df <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
-DT::datatable(design.df)
+designdf <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
+DT::datatable(designdf)
 ```
 ## OligoMM
 
@@ -47,3 +47,5 @@ based on Prokka
 [17:07:32] CRISPR14 CP022713.1 372223 with 14 spacers
 [17:07:32] CRISPR15 CP022713.1 3331136 with 7 spacers
 ```
+
+## Read in vcf files

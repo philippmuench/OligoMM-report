@@ -1,0 +1,79 @@
+# Lofreq threshold 
+
+## read in vcf
+
+```{r}
+source("utils.R")
+orf_shapes <- c("coding" = 15, "non-coding" = 3)
+
+vcftodataframe <- function(vcffiles,
+                           contig_mapping = contig_mapping, gffdf = gffdf) {
+  require(vcfR)
+  res <- list()
+  for (file in vcffiles) {
+    library(data.table)
+    vcfcontent <- vcfR::read.vcfR(file, verbose = FALSE)
+    vcffix <- as.data.frame(vcfcontent@fix)
+    vcfinfo <- vcfR::INFO2df(vcfcontent)
+    if (nrow(vcffix) > 0) { # there are variants
+      dat <- as.data.frame(cbind(
+        vcffix[, c(1, 2, 4, 5, 6)],
+        vcfinfo[, c(1, 2)]
+      ))
+      # transforms e.g. AF of 0.1 to 0.9, 0.9 stays 0.9 and 0.5 stays 0.5
+      dat$majorAF <- sapply(dat$AF, minorAfToMajorAf)
+      dat$genome <- contig_mapping[match(
+        dat$CHROM,
+        contig_mapping$contig
+      ), ]$genome
+      dat$genome_hr <- translateGenomeIdToFullName(tolower(dat$genome))
+      dat$dp <- as.numeric(as.matrix(vcfinfo$DP))
+      dat$sample <- tools::file_path_sans_ext(basename(file))
+      res[[tools::file_path_sans_ext(basename(file))]] <- dat
+    } else {
+      message("Skipping")
+    }
+  }
+  df <- as.data.frame(do.call(rbind, res)) # merge list to df
+  return(df)
+}
+```
+
+## plot AF comparison
+
+```{r}
+gfffiles <- Sys.glob("data/references/gff/*.gff")
+gffdf <- NULL
+
+for (gfffile in gfffiles) {
+  message(gfffile)
+  gff <- rtracklayer::readGFF(gfffile)
+  # subset since different columns are present on gff files
+  relevant <- data.frame(
+    start = gff$start, end = gff$end,
+    type = as.character(as.matrix(gff$type)),
+    gene = as.character(as.matrix(gff$gene)),
+    product = as.character(as.matrix(gff$product)),
+    chr = as.character(as.matrix(gff$seqid))
+  )
+  relevant$genome <- substr(basename(gfffile), 1, nchar(basename(gfffile)) - 4)
+  gffdf <- rbind(gffdf, relevant)
+}
+contig_mapping <- read.csv2("data/contig_mapping_new_ref.csv",
+  sep = ";", header = T,
+  stringsAsFactors = F
+) # this file contains contig names of the 12 OligoMM genomes
+vcffiles <- Sys.glob("lofreq_threshold/*.vcf")
+vcfsamples <- suppressWarnings(vcftodataframe(vcffiles,
+  contig_mapping,
+  gffdf = gffdf
+))
+```
+
+```{r, fig.width=12, fig.height=10}
+p <- ggplot(vcfsamples, aes(AF)) +
+  geom_histogram()
+p <- p + facet_grid(sample ~ .)
+p <- p + theme_classic() + xlab("AF") + ylab("occurence")
+plotly::ggplotly(p)
+```
