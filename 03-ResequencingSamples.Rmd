@@ -72,7 +72,7 @@ for (gff.file in gff.files){
 	gff.df <- rbind(gff.df, relevant)
 }
 contig_mapping <- read.csv2("data/contig_mapping_new_ref.csv", sep =";", header=T, stringsAsFactors = F) # this file contains contig names of the 12 OligoMM genomes
-vcf.files <- Sys.glob("reseq/vcf_files/*.vcf")
+vcf.files <- Sys.glob("out_reseq/all_vcf/*.vcf")
 vcf.samples <- suppressWarnings(vcfToDataframe(vcf.files, contig_mapping, gff.df = gff.df))
 
 vcf.samples$feature <- as.character(as.matrix(vcf.samples$feature)) 

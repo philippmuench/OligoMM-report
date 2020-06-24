@@ -34,7 +34,7 @@ vcfToDataframe <- function(vcf.files, contig_mapping = contig_mapping, gff.df = 
 			annotated <- foverlaps(dat2, dt.gff, type="within", mult="first")
 			res[[tools::file_path_sans_ext(basename(file))]] <- annotated # add vcf df to list
 		} else{
-			message("Skipping")
+			message(paste("Skipping", file))
 		}
 	}
 	df <- as.data.frame(do.call(rbind, res)) # merge list to df

@@ -24,7 +24,7 @@
 <meta name="author" content="Philipp C. Muench" />
 
 
-<meta name="date" content="2020-06-11" />
+<meta name="date" content="2020-06-24" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,6 @@
   
 
 <link rel="next" href="claudia-samples.html"/>
-<script src="libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -66,26 +65,25 @@
 
 
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -94,9 +92,9 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  {  }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+a.sourceLine::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -142,56 +140,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Setup</a>
-<ul>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Setup</a><ul>
 <li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#installation"><i class="fa fa-check"></i><b>1.1</b> Installation</a></li>
 <li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#generate-report"><i class="fa fa-check"></i><b>1.2</b> Generate report</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="claudia-samples.html"><a href="claudia-samples.html"><i class="fa fa-check"></i><b>2</b> Claudia Samples</a>
-<ul>
+<li class="chapter" data-level="2" data-path="claudia-samples.html"><a href="claudia-samples.html"><i class="fa fa-check"></i><b>2</b> Claudia Samples</a><ul>
 <li class="chapter" data-level="2.1" data-path="claudia-samples.html"><a href="claudia-samples.html#experiment"><i class="fa fa-check"></i><b>2.1</b> Experiment</a></li>
-<li class="chapter" data-level="2.2" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a>
-<ul>
-<li class="chapter" data-level="2.2.1" data-path="claudia-samples.html"><a href="claudia-samples.html#crispr"><i class="fa fa-check"></i><b>2.2.1</b> CRISPR</a></li>
+<li class="chapter" data-level="2.2" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a></li>
+<li class="chapter" data-level="2.3" data-path="claudia-samples.html"><a href="claudia-samples.html#load-in-variants"><i class="fa fa-check"></i><b>2.3</b> Load in variants</a></li>
+<li class="chapter" data-level="2.4" data-path="claudia-samples.html"><a href="claudia-samples.html#af-frequency"><i class="fa fa-check"></i><b>2.4</b> AF frequency</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html"><i class="fa fa-check"></i><b>3</b> AB-effects (resequenced)</a>
-<ul>
+<li class="chapter" data-level="3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html"><i class="fa fa-check"></i><b>3</b> AB-effects (resequenced)</a><ul>
 <li class="chapter" data-level="3.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#metadata-1"><i class="fa fa-check"></i><b>3.1</b> Metadata</a></li>
 <li class="chapter" data-level="3.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#process-lofeq-vcf-files"><i class="fa fa-check"></i><b>3.2</b> Process Lofeq vcf files</a></li>
 <li class="chapter" data-level="3.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#plot-af-frequency"><i class="fa fa-check"></i><b>3.3</b> Plot AF frequency</a></li>
-<li class="chapter" data-level="3.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1"><i class="fa fa-check"></i><b>3.4</b> KB1</a>
-<ul>
+<li class="chapter" data-level="3.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1"><i class="fa fa-check"></i><b>3.4</b> KB1</a><ul>
 <li class="chapter" data-level="3.4.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp"><i class="fa fa-check"></i><b>3.4.1</b> SNP</a></li>
 <li class="chapter" data-level="3.4.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion"><i class="fa fa-check"></i><b>3.4.2</b> insertion</a></li>
 <li class="chapter" data-level="3.4.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion"><i class="fa fa-check"></i><b>3.4.3</b> deletion</a></li>
 </ul></li>
-<li class="chapter" data-level="3.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46"><i class="fa fa-check"></i><b>3.5</b> I46</a>
-<ul>
+<li class="chapter" data-level="3.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46"><i class="fa fa-check"></i><b>3.5</b> I46</a><ul>
 <li class="chapter" data-level="3.5.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-1"><i class="fa fa-check"></i><b>3.5.1</b> SNP</a></li>
 <li class="chapter" data-level="3.5.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-1"><i class="fa fa-check"></i><b>3.5.2</b> insertion</a></li>
 <li class="chapter" data-level="3.5.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-1"><i class="fa fa-check"></i><b>3.5.3</b> deletion</a></li>
 </ul></li>
-<li class="chapter" data-level="3.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58"><i class="fa fa-check"></i><b>3.6</b> YL58</a>
-<ul>
+<li class="chapter" data-level="3.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58"><i class="fa fa-check"></i><b>3.6</b> YL58</a><ul>
 <li class="chapter" data-level="3.6.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-2"><i class="fa fa-check"></i><b>3.6.1</b> SNP</a></li>
 <li class="chapter" data-level="3.6.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-2"><i class="fa fa-check"></i><b>3.6.2</b> insertion</a></li>
 <li class="chapter" data-level="3.6.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-2"><i class="fa fa-check"></i><b>3.6.3</b> deletion</a></li>
 </ul></li>
-<li class="chapter" data-level="3.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#mutation-bias"><i class="fa fa-check"></i><b>3.7</b> mutation bias?</a>
-<ul>
+<li class="chapter" data-level="3.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#mutation-bias"><i class="fa fa-check"></i><b>3.7</b> mutation bias?</a><ul>
 <li class="chapter" data-level="3.7.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-3"><i class="fa fa-check"></i><b>3.7.1</b> SNP</a></li>
 <li class="chapter" data-level="3.7.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertions"><i class="fa fa-check"></i><b>3.7.2</b> insertions</a></li>
 <li class="chapter" data-level="3.7.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletions"><i class="fa fa-check"></i><b>3.7.3</b> deletions</a></li>
 </ul></li>
-<li class="chapter" data-level="3.8" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#heatmap"><i class="fa fa-check"></i><b>3.8</b> heatmap</a>
-<ul>
+<li class="chapter" data-level="3.8" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#heatmap"><i class="fa fa-check"></i><b>3.8</b> heatmap</a><ul>
 <li class="chapter" data-level="3.8.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-1"><i class="fa fa-check"></i><b>3.8.1</b> KB1</a></li>
 <li class="chapter" data-level="3.8.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-1"><i class="fa fa-check"></i><b>3.8.2</b> I46</a></li>
 <li class="chapter" data-level="3.8.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-1"><i class="fa fa-check"></i><b>3.8.3</b> YL58</a></li>
 </ul></li>
-<li class="chapter" data-level="3.9" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-present-in-all"><i class="fa fa-check"></i><b>3.9</b> Filter: present in all</a>
-<ul>
+<li class="chapter" data-level="3.9" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-present-in-all"><i class="fa fa-check"></i><b>3.9</b> Filter: present in all</a><ul>
 <li class="chapter" data-level="3.9.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-enterococcusfaecalis"><i class="fa fa-check"></i><b>3.9.1</b> KB1 (<em>Enterococcusfaecalis</em>)</a></li>
 <li class="chapter" data-level="3.9.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-blautia_coccoides"><i class="fa fa-check"></i><b>3.9.2</b> YL58 (<em>Blautia_coccoides</em>)</a></li>
 <li class="chapter" data-level="3.9.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum"><i class="fa fa-check"></i><b>3.9.3</b> I46 (<em>Clostridium innocuum</em>)</a></li>
@@ -201,24 +189,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.9.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum-1"><i class="fa fa-check"></i><b>3.9.7</b> I46 (<em>Clostridium innocuum</em>)</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html"><i class="fa fa-check"></i><b>4</b> AB-effects (metagenomes)</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#load-in-variants"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
-<li class="chapter" data-level="4.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#af-frequency"><i class="fa fa-check"></i><b>4.2</b> AF frequency</a></li>
-<li class="chapter" data-level="4.3" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.3</b> number of variants per samples</a>
-<ul>
+<li class="chapter" data-level="4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html"><i class="fa fa-check"></i><b>4</b> AB-effects (metagenomes)</a><ul>
+<li class="chapter" data-level="4.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#load-in-variants-1"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
+<li class="chapter" data-level="4.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#af-frequency-1"><i class="fa fa-check"></i><b>4.2</b> AF frequency</a></li>
+<li class="chapter" data-level="4.3" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.3</b> number of variants per samples</a><ul>
 <li class="chapter" data-level="4.3.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-treatment-group"><i class="fa fa-check"></i><b>4.3.1</b> number of variants per treatment group</a></li>
 </ul></li>
 <li class="chapter" data-level="4.4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#heatmap-1"><i class="fa fa-check"></i><b>4.4</b> Heatmap</a></li>
 <li class="chapter" data-level="4.5" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#focus-on-mouse-where-we-have-many-time-points"><i class="fa fa-check"></i><b>4.5</b> Focus on mouse where we have many time points</a></li>
-<li class="chapter" data-level="4.6" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>4.6</b> Akkermansia Muciniphila</a>
-<ul>
+<li class="chapter" data-level="4.6" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>4.6</b> Akkermansia Muciniphila</a><ul>
 <li class="chapter" data-level="4.6.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#area-plot-1"><i class="fa fa-check"></i><b>4.6.1</b> area plot 1</a></li>
 <li class="chapter" data-level="4.6.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#line-plot"><i class="fa fa-check"></i><b>4.6.2</b> line plot</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html"><i class="fa fa-check"></i><b>5</b> Lofreq threshold</a>
-<ul>
+<li class="chapter" data-level="5" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html"><i class="fa fa-check"></i><b>5</b> Lofreq threshold</a><ul>
 <li class="chapter" data-level="5.1" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#read-in-vcf"><i class="fa fa-check"></i><b>5.1</b> read in vcf</a></li>
 <li class="chapter" data-level="5.2" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#plot-af-comparison"><i class="fa fa-check"></i><b>5.2</b> plot AF comparison</a></li>
 </ul></li>
@@ -242,37 +226,38 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">OMM report</h1>
 <p class="author"><em>Philipp C. Muench</em></p>
-<p class="date"><em>2020-06-11</em></p>
+<p class="date"><em>2020-06-24</em></p>
 </div>
-<div id="Setup" class="section level1" number="1">
+<div id="Setup" class="section level1">
 <h1><span class="header-section-number">Section 1</span> Setup</h1>
-<div id="installation" class="section level2" number="1.1">
+<div id="installation" class="section level2">
 <h2><span class="header-section-number">1.1</span> Installation</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1"></a><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())</span>
-<span id="cb1-2"><a href="index.html#cb1-2"></a><span class="kw">source</span>(<span class="st">&quot;utils.R&quot;</span>)</span>
-<span id="cb1-3"><a href="index.html#cb1-3"></a><span class="kw">library</span>(<span class="st">&quot;vcfR&quot;</span>)</span>
-<span id="cb1-4"><a href="index.html#cb1-4"></a><span class="kw">library</span>(<span class="st">&quot;rmdformats&quot;</span>)</span>
-<span id="cb1-5"><a href="index.html#cb1-5"></a><span class="kw">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
-<span id="cb1-6"><a href="index.html#cb1-6"></a><span class="kw">library</span>(<span class="st">&quot;reshape2&quot;</span>)</span>
-<span id="cb1-7"><a href="index.html#cb1-7"></a><span class="kw">library</span>(<span class="st">&quot;ggridges&quot;</span>)</span>
-<span id="cb1-8"><a href="index.html#cb1-8"></a><span class="kw">library</span>(<span class="st">&quot;knitr&quot;</span>)</span>
-<span id="cb1-9"><a href="index.html#cb1-9"></a><span class="kw">library</span>(<span class="st">&quot;kableExtra&quot;</span>)</span>
-<span id="cb1-10"><a href="index.html#cb1-10"></a><span class="kw">library</span>(<span class="st">&quot;plotly&quot;</span>)</span>
-<span id="cb1-11"><a href="index.html#cb1-11"></a><span class="kw">library</span>(<span class="st">&quot;DT&quot;</span>)</span>
-<span id="cb1-12"><a href="index.html#cb1-12"></a><span class="kw">library</span>(<span class="st">&quot;circlize&quot;</span>)</span>
-<span id="cb1-13"><a href="index.html#cb1-13"></a><span class="kw">library</span>(<span class="st">&quot;ComplexHeatmap&quot;</span>)</span>
-<span id="cb1-14"><a href="index.html#cb1-14"></a><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</span>
-<span id="cb1-15"><a href="index.html#cb1-15"></a><span class="kw">library</span>(<span class="st">&quot;bookdown&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>())</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">source</span>(<span class="st">&quot;utils.R&quot;</span>)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">library</span>(<span class="st">&quot;vcfR&quot;</span>)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">library</span>(<span class="st">&quot;rmdformats&quot;</span>)</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw">library</span>(<span class="st">&quot;reshape2&quot;</span>)</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"><span class="kw">library</span>(<span class="st">&quot;ggridges&quot;</span>)</a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="kw">library</span>(<span class="st">&quot;data.table&quot;</span>)</a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">library</span>(<span class="st">&quot;knitr&quot;</span>)</a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="kw">library</span>(<span class="st">&quot;kableExtra&quot;</span>)</a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="kw">library</span>(<span class="st">&quot;plotly&quot;</span>)</a>
+<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="kw">library</span>(<span class="st">&quot;DT&quot;</span>)</a>
+<a class="sourceLine" id="cb1-13" data-line-number="13"><span class="kw">library</span>(<span class="st">&quot;circlize&quot;</span>)</a>
+<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="kw">library</span>(<span class="st">&quot;ComplexHeatmap&quot;</span>)</a>
+<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</a>
+<a class="sourceLine" id="cb1-16" data-line-number="16"><span class="kw">library</span>(<span class="st">&quot;bookdown&quot;</span>)</a></code></pre></div>
 <p><em>Note:</em> for <code>rtracklayer</code> you might need <em>curl</em></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="index.html#cb2-1"></a><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</a></code></pre></div>
 <p>You need to install <a href="https://pandoc.org/installing.html">Pandoc</a>.</p>
 </div>
-<div id="generate-report" class="section level2" number="1.2">
+<div id="generate-report" class="section level2">
 <h2><span class="header-section-number">1.2</span> Generate report</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="index.html#cb3-1"></a><span class="kw">setwd</span>(<span class="st">&quot;~/Cloud/ActiveProjects/OligoMM-report&quot;</span>)</span>
-<span id="cb3-2"><a href="index.html#cb3-2"></a>bookdown<span class="op">::</span><span class="kw">serve_book</span>(<span class="kw">getwd</span>())</span>
-<span id="cb3-3"><a href="index.html#cb3-3"></a><span class="co"># servr::daemon_stop(1)</span></span></code></pre></div>
-<p>This will starts a browser window pointing to <a href="http://127.0.0.1:7853">http://127.0.0.1:7853</a> presenting the report written in <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and will update as soon as there are changes on <code>.Rmd</code> files in the workspace.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">setwd</span>(<span class="st">&quot;~/ActiveProjects/OligoMM-report&quot;</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">bookdown<span class="op">::</span><span class="kw">serve_book</span>(<span class="kw">getwd</span>())</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">servr<span class="op">::</span><span class="kw">daemon_stop</span>(<span class="dv">1</span>)</a></code></pre></div>
+<p>This will starts a browser window pointing to <a href="http://127.0.0.1:7853" class="uri">http://127.0.0.1:7853</a> presenting the report written in <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and will update as soon as there are changes on <code>.Rmd</code> files in the workspace.</p>
 
 </div>
 </div>

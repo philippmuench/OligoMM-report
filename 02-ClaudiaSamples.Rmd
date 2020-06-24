@@ -8,6 +8,7 @@
 designdf <- read.table("data/sample_mapping.tsv", header = T, sep = "\t")
 DT::datatable(designdf)
 ```
+
 ## OligoMM
 
 |  ID | phylum | species | 
@@ -25,27 +26,114 @@ DT::datatable(designdf)
 | I49 | _Firmicutes_ | _L. reuteri_ |
 | I46 | _Firmicutes_ | _C. innocuum_ |
 
-### CRISPR
+## Load in variants
 
-based on Prokka
-
+```{r}
+require(data.table)
+source("utils.R")
+vcftodataframe <- function(vcf_files, contig_mapping = contig_mapping, 
+  gff_df = gff_df) {
+	require(vcfR)
+	res <- list()
+	for (file in vcf_files) {
+   # message(file)
+		vcf_content <- vcfR::read.vcfR(file, verbose = FALSE)
+		vcf_fix <- as.data.frame(vcf_content@fix) 
+		vcf_info <- vcfR::INFO2df(vcf_content) # contains DP and AF info
+		if (nrow(vcf_fix) > 0) { # there are variants
+		    dat <-  as.data.frame(cbind(vcf_fix[,c(1, 2, 4, 5, 6)],
+          vcf_info[,c(1, 2)]))
+			dat$majorAF <- sapply(dat$AF, minorAfToMajorAf)
+      dat$dp <- as.numeric(as.matrix(vcf_info$DP))
+			dat$genome <- contig_mapping[match(dat$CHROM, 
+        contig_mapping$contig),]$genome
+			dat$genome_hr <- translateGenomeIdToFullName(tolower(dat$genome))
+			dat$mouse.id <-  substr(tools::file_path_sans_ext(basename(file)), 1, 4)
+      # add studz type specific annotations
+      dat$mouse.group <- designdf[match(dat$mouse.id, designdf$mouse.id),]$desc
+      dat$day <- designdf[match(dat$mouse.id, designdf$mouse.id),]$day
+      dat$generation <- designdf[match(dat$mouse.id, designdf$mouse.id),]$generation
+      dat$ecoli <- designdf[match(dat$mouse.id, designdf$mouse.id),]$ecoli
+      dat$sample <- tools::file_path_sans_ext(basename(file))
+			# annotate overlay of gene
+			dt_gff <- data.table(start = gff_df$start, end = gff_df$end,
+				chr = as.character(as.matrix(gff_df$chr)), feature = gff_df$product)
+			colnames(dat)[1:2] <- c("chr", "start")
+			dat$start <- as.integer(as.matrix(dat$start))
+			dat$chr <- as.character(as.matrix(dat$chr))
+			dat$end <- dat$start
+			dat2 <- as.data.table(dat)
+			setkey(dt_gff, chr, start, end)
+			annotated <- foverlaps(dat2, dt_gff, type="within", mult="first")
+			res[[tools::file_path_sans_ext(basename(file))]] <- annotated # add vcf df to list
+		} else{
+			message("Skipping")
+		}
+	}
+	df <- as.data.frame(do.call(rbind, res)) # merge list to df
+	return(df)
+}
 ```
-[17:07:29] Searching for CRISPR repeats
-[17:07:30] CRISPR1 CP022722.1 1722776 with 6 spacers
-[17:07:30] CRISPR2 CP022722.1 3488656 with 4 spacers
-[17:07:30] CRISPR3 NHMT01000001.1 1999785 with 7 spacers
-[17:07:31] CRISPR4 NHMR02000002.1 214427 with 78 spacers
-[17:07:31] CRISPR5 NHMQ01000003.1 694333 with 9 spacers
-[17:07:31] CRISPR6 NHTR01000003.1 394380 with 20 spacers
-[17:07:31] CRISPR7 NHTR01000010.1 319 with 15 spacers
-[17:07:32] CRISPR8 CP021420.1 425056 with 20 spacers
-[17:07:32] CRISPR9 CP021420.1 434834 with 8 spacers
-[17:07:32] CRISPR10 NHMP01000001.1 344218 with 8 spacers
-[17:07:32] CRISPR11 NHMP01000001.1 403754 with 8 spacers
-[17:07:32] CRISPR12 NHMP01000007.1 29696 with 51 spacers
-[17:07:32] CRISPR13 NHMP01000007.1 50690 with 46 spacers
-[17:07:32] CRISPR14 CP022713.1 372223 with 14 spacers
-[17:07:32] CRISPR15 CP022713.1 3331136 with 7 spacers
+
+Merge vcf and annotate with metadata
+
+```{r}
+# load in reference information
+gff_files <- Sys.glob("data/references/joined_reference_curated_ecoli/*.gff")
+gff_df <- NULL
+for (gff_file in gff_files){
+	message(gff_file)
+	gff <- rtracklayer::readGFF(gff_file)
+	# subset since different columns are present on gff files
+	relevant <- data.frame(start = gff$start, end = gff$end,
+    type = as.character(as.matrix(gff$type)), 
+    gene = as.character(as.matrix(gff$gene)),
+    product = as.character(as.matrix(gff$product)),
+    chr = as.character(as.matrix(gff$seqid)))
+	relevant$genome <-  substr(basename(gff_file),
+    1, nchar(basename(gff_file)) - 4)
+	gff_df <- rbind(gff_df, relevant)
+}
+
+# load in contig information
+contig_mapping <- read.csv2("data/contig_mapping_new_ref.csv", 
+  sep =";", header=T, stringsAsFactors = F)
+
+# load in vcf files
+vcf_files <- Sys.glob("out_claudia/all_vcf/*.vcf")
+vcf_samples <- suppressWarnings(vcftodataframe(vcf_files,
+  contig_mapping, gff_df = gff_df))
+vcf_samples$feature <- as.character(as.matrix(vcf_samples$feature)) 
+
+vcf_samples[which(is.na(vcf_samples$feature)),]$feature <- "outside ORFs"
+vcf_samples $start <- NULL
+vcf_samples $end <- NULL
+vcf_samples $i.end <- NULL
+colnames(vcf_samples)[3] <- "POS"
+saveRDS(vcf_samples, file = "data/rds/omm_claudia_new.rds")
 ```
 
-## Read in vcf files
+
+
+## AF frequency
+
+```{r, fig.cap="AF of resequenced strains", fig.align="center", fig.width=9, fig.height=15}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+library(scales)
+
+p <- ggplot(dat, aes(AF, fill = mouse.group)) + geom_histogram()
+p <- p + facet_wrap(~ genome + genome_hr, scales= "free", ncol = 3)
+p <- p + xlab("AF") + ylab("occurence") + theme_minimal() 
+plotly::ggplotly(p)
+#p <- p + scale_x_continuous(breaks=c(0,.1,.2,.3,.4,.5,1), trans="log1p", expand=c(0,0)) +
+```
+
+
+```{r, fig.cap="major AF of resequenced strains", fig.align="center", fig.width=9, fig.height=15}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+p <- ggplot(dat, aes(majorAF, fill = mouse.group)) + geom_histogram()
+p <- p + theme_minimal() 
+p <- p + facet_wrap(~ genome+ genome_hr, scales= "free", ncol = 3)
+p <- p + xlab("AF") + ylab("occurence")
+plotly::ggplotly(p)
+```
