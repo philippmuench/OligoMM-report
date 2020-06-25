@@ -110,10 +110,15 @@ vcf_samples $start <- NULL
 vcf_samples $end <- NULL
 vcf_samples $i.end <- NULL
 colnames(vcf_samples)[3] <- "POS"
+
+vcf_samples$ref_size <- nchar(as.character(as.matrix(vcf_samples$REF)))
+vcf_samples$alt_size <- nchar(as.character(as.matrix(vcf_samples$ALT)))
+vcf_samples$alteration <- paste(as.character(vcf_samples$REF), "->",as.character(vcf_samples$ALT))
+vcf_samples$alteration_type <- "SNP"
+vcf_samples[which(vcf_samples$ref_size < vcf_samples$alt_size), ]$alteration_type <- "insertion"
+vcf_samples[which(vcf_samples$ref_size > vcf_samples$alt_size), ]$alteration_type <- "deletion"
 saveRDS(vcf_samples, file = "data/rds/omm_claudia_new.rds")
 ```
-
-
 
 ## AF frequency
 
@@ -128,12 +133,33 @@ plotly::ggplotly(p)
 #p <- p + scale_x_continuous(breaks=c(0,.1,.2,.3,.4,.5,1), trans="log1p", expand=c(0,0)) +
 ```
 
-
 ```{r, fig.cap="major AF of resequenced strains", fig.align="center", fig.width=9, fig.height=15}
 dat <- readRDS("data/rds/omm_claudia_new.rds")
 p <- ggplot(dat, aes(majorAF, fill = mouse.group)) + geom_histogram()
 p <- p + theme_minimal() 
 p <- p + facet_wrap(~ genome+ genome_hr, scales= "free", ncol = 3)
 p <- p + xlab("AF") + ylab("occurence")
+plotly::ggplotly(p)
+```
+
+## number of variants per group
+
+```{r}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat$variants <- 1
+dat.agg <- aggregate(variants ~ mouse.id + alteration_type + genome_hr, dat, sum)
+DT::datatable(dat.agg)
+```
+
+### number of variants per treatment group 
+
+```{r, fig.align="center", fig.width=8, fig.height=28, fig.margin=TRUE, fig.cap="number of variants of all 12 OMM genomes by mouse"}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat$variants <- 1
+dat.agg <- aggregate(variants ~ mouse.id + mouse.group + alteration_type+ genome_hr, dat, sum)
+p <- ggplot(dat.agg, aes(x = reorder(mouse.id, -variants) , y = variants, color = mouse.group, shape = alteration_type))
+p <- p + geom_jitter(shape = 4) + facet_grid(genome_hr ~., scales = "free_x")
+p <- p + scale_y_log10() + theme_minimal() + ylab("number variants")
+p <- p + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 plotly::ggplotly(p)
 ```
