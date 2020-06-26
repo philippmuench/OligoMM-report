@@ -89,6 +89,17 @@ p <- p + theme_classic() + xlab("AF") + ylab("occurence")
 print(p)
 ```
 
+## Average coverage of variants by genome
+
+```{r, fig.width=9, fig.height=10, fig.margin=TRUE}
+dat <- readRDS("data/rds/omm_ab.rds")
+dat_subset <- dat[which(dat$mouse.group == 'Water'),]
+p <- ggplot(dat_subset, aes(x = reorder(genome, -DP), y = DP , color = genome)) + geom_boxplot()
+p <- p + theme_classic() + xlab("AF") + ylab("depth of variant")
+p <- p + scale_y_log10()
+print(p)
+```
+
 ## number of variants per samples
 
 ```{r}

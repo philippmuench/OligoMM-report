@@ -24,7 +24,7 @@
 <meta name="author" content="Philipp C. Muench" />
 
 
-<meta name="date" content="2020-06-25" />
+<meta name="date" content="2020-06-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -196,14 +196,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html"><i class="fa fa-check"></i><b>4</b> AB-effects (metagenomes)</a><ul>
 <li class="chapter" data-level="4.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#load-in-variants-1"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
 <li class="chapter" data-level="4.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#af-frequency-1"><i class="fa fa-check"></i><b>4.2</b> AF frequency</a></li>
-<li class="chapter" data-level="4.3" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.3</b> number of variants per samples</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-treatment-group-1"><i class="fa fa-check"></i><b>4.3.1</b> number of variants per treatment group</a></li>
+<li class="chapter" data-level="4.3" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#average-coverage-of-variants-by-genome"><i class="fa fa-check"></i><b>4.3</b> Average coverage of variants by genome</a></li>
+<li class="chapter" data-level="4.4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.4</b> number of variants per samples</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-treatment-group-1"><i class="fa fa-check"></i><b>4.4.1</b> number of variants per treatment group</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#heatmap-1"><i class="fa fa-check"></i><b>4.4</b> Heatmap</a></li>
-<li class="chapter" data-level="4.5" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#focus-on-mouse-where-we-have-many-time-points"><i class="fa fa-check"></i><b>4.5</b> Focus on mouse where we have many time points</a></li>
-<li class="chapter" data-level="4.6" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>4.6</b> Akkermansia Muciniphila</a><ul>
-<li class="chapter" data-level="4.6.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#area-plot-1"><i class="fa fa-check"></i><b>4.6.1</b> area plot 1</a></li>
-<li class="chapter" data-level="4.6.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#line-plot"><i class="fa fa-check"></i><b>4.6.2</b> line plot</a></li>
+<li class="chapter" data-level="4.5" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#heatmap-1"><i class="fa fa-check"></i><b>4.5</b> Heatmap</a></li>
+<li class="chapter" data-level="4.6" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#focus-on-mouse-where-we-have-many-time-points"><i class="fa fa-check"></i><b>4.6</b> Focus on mouse where we have many time points</a></li>
+<li class="chapter" data-level="4.7" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>4.7</b> Akkermansia Muciniphila</a><ul>
+<li class="chapter" data-level="4.7.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#area-plot-1"><i class="fa fa-check"></i><b>4.7.1</b> area plot 1</a></li>
+<li class="chapter" data-level="4.7.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#line-plot"><i class="fa fa-check"></i><b>4.7.2</b> line plot</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html"><i class="fa fa-check"></i><b>5</b> Lofreq threshold</a><ul>
@@ -230,7 +231,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="header">
 <h1 class="title">OMM report</h1>
 <p class="author"><em>Philipp C. Muench</em></p>
-<p class="date"><em>2020-06-25</em></p>
+<p class="date"><em>2020-06-26</em></p>
 </div>
 <div id="Setup" class="section level1">
 <h1><span class="header-section-number">Section 1</span> Setup</h1>
@@ -252,14 +253,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb1-14" data-line-number="14"><span class="kw">library</span>(<span class="st">&quot;ComplexHeatmap&quot;</span>)</a>
 <a class="sourceLine" id="cb1-15" data-line-number="15"><span class="kw">library</span>(<span class="st">&quot;rtracklayer&quot;</span>)</a>
 <a class="sourceLine" id="cb1-16" data-line-number="16"><span class="kw">library</span>(<span class="st">&quot;bookdown&quot;</span>)</a></code></pre></div>
-<p><em>Note:</em> for <code>rtracklayer</code> you might need <em>curl</em></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</a></code></pre></div>
-<p>You need to install <a href="https://pandoc.org/installing.html">Pandoc</a>.</p>
 </div>
 <div id="generate-report" class="section level2">
 <h2><span class="header-section-number">1.2</span> Generate report</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">setwd</span>(<span class="st">&quot;~/ActiveProjects/OligoMM-report&quot;</span>)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">bookdown<span class="op">::</span><span class="kw">serve_book</span>(<span class="kw">getwd</span>())</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">setwd</span>(<span class="st">&quot;~/ActiveProjects/OligoMM-report&quot;</span>)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">bookdown<span class="op">::</span><span class="kw">serve_book</span>(<span class="kw">getwd</span>())</a></code></pre></div>
+<p><em>Note:</em> for <code>rtracklayer</code> you might need <em>curl</em></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="fu">sudo</span> apt-get install libcurl4-openssl-dev</a></code></pre></div>
+<p>You need to install <a href="https://pandoc.org/installing.html">Pandoc</a>.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1">servr<span class="op">::</span><span class="kw">daemon_stop</span>(<span class="dv">1</span>)</a></code></pre></div>
 <p>This will starts a browser window pointing to <a href="http://127.0.0.1:7853" class="uri">http://127.0.0.1:7853</a> presenting the report written in <a href="https://rmarkdown.rstudio.com/">R Markdown</a> and will update as soon as there are changes on <code>.Rmd</code> files in the workspace.</p>
 

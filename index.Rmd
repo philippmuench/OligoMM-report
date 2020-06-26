@@ -45,7 +45,7 @@ if (knitr::is_html_output()) {
 
 # Setup {#Setup}
 
-## Installation
+## Installation 
 
 ```{r, results="hide"}
 rm(list = ls())
@@ -66,6 +66,13 @@ library("rtracklayer")
 library("bookdown")
 ```
 
+## Generate report
+
+```{r, eval=FALSE}
+setwd("~/ActiveProjects/OligoMM-report")
+bookdown::serve_book(getwd())
+```
+
 ```{r include=FALSE}
 # automatically create a bib database for R packages
 knitr::write_bib(c(
@@ -80,12 +87,8 @@ sudo apt-get install libcurl4-openssl-dev
 
 You need to install [Pandoc](https://pandoc.org/installing.html). 
 
-## Generate report
 
-```{r, eval=FALSE}
-setwd("~/ActiveProjects/OligoMM-report")
-bookdown::serve_book(getwd())
-```
+
 
 ```{r, eval=FALSE}
 servr::daemon_stop(1)
