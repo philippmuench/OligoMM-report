@@ -83,12 +83,21 @@ vcf.samples $start <- NULL
 vcf.samples $end <- NULL
 vcf.samples $i.end <- NULL
 colnames(vcf.samples)[3] <- "POS"
+vcf.samples$ref_size <- nchar(as.character(as.matrix(vcf.samples$REF)))
+vcf.samples$alt_size <- nchar(as.character(as.matrix(vcf.samples$ALT)))
+vcf.samples$alteration <- paste(as.character(vcf.samples$REF), "->",as.character(vcf.samples$ALT))
+vcf.samples$alteration_type <- "SNP"
+vcf.samples[which(vcf.samples$ref_size < vcf.samples$alt_size), ]$alteration_type <- "insertion"
+vcf.samples[which(vcf.samples$ref_size > vcf.samples$alt_size), ]$alteration_type <- "deletion"
 saveRDS(vcf.samples, file = "data/rds/reseq.rds")
 ```
 
+Save as table
+
 ```{r}
 dat <- readRDS("data/rds/reseq.rds")
-write.table(dat, file = "data/tables/reseq_all.tsv", sep = "\t", row.names = F, quote = F)
+write.table(vcf_samples, file = "results/tables/omm_antibiotic_resequencing_variants_long.csv", sep = ";",
+	col.names = T, row.names = F, quote = F)
 ```
 
 ## Plot AF frequency
@@ -127,7 +136,7 @@ pairedAFplot <- function(dat = dat, case = "Water", control = "Ciprofloxacin"){
 	colnames(data.wide)[7] <- "sample_2"
 	data.wide[is.na(data.wide)] <- 0
 
-	p <- ggplot(data.wide, aes(x = sample_1, y =sample_2, label = feature, color = genome, shape =vartype))
+	p <- ggplot(data.wide, aes(x = sample_2, y =sample_1, label = feature, color = genome, shape =vartype))
 	p <- p + geom_point(fill = NA) + theme_classic()# + scale_color_manual(values = omm_colors)
 	p <- p + theme(aspect.ratio = 1) 
 	p <- p + geom_hline(yintercept = .5, linetype = 2, color = "grey50")

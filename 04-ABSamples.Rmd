@@ -69,8 +69,37 @@ vcf.samples $start <- NULL
 vcf.samples $end <- NULL
 vcf.samples $i.end <- NULL
 colnames(vcf.samples)[3] <- "POS"
-
+vcf.samples$ref_size <- nchar(as.character(as.matrix(vcf.samples$REF)))
+vcf.samples$alt_size <- nchar(as.character(as.matrix(vcf.samples$ALT)))
+vcf.samples$alteration <- paste(as.character(vcf.samples$REF), "->",as.character(vcf.samples$ALT))
+vcf.samples$alteration_type <- "SNP"
+vcf.samples[which(vcf.samples$ref_size < vcf.samples$alt_size), ]$alteration_type <- "insertion"
+vcf.samples[which(vcf.samples$ref_size > vcf.samples$alt_size), ]$alteration_type <- "deletion"
 saveRDS(vcf.samples, file = "data/rds/omm_ab.rds")
+```
+
+## add presence in reseq experiment
+
+load in variants from resequencing run and mark if the variants form this study overlap
+```{r}
+dat <- readRDS("data/rds/omm_ab.rds")
+dat_re <- readRDS("data/rds/reseq.rds")
+dat_re$variant.id <- paste(dat_re$chr, dat_re$POS, dat_re$REF, dat_re$ALT, sep = "-")
+# consiger there if AF is > .5
+dat_re <- dat_re[which(dat_re$AF > .5),]
+```
+
+Save as table 
+
+```{r}
+dat <- readRDS("data/rds/omm_ab.rds")
+write.table(vcf_samples, file = "results/tables/omm_antibiotic_variants_long.csv", sep = ";",
+	col.names = T, row.names = F, quote = F)
+dat$variant.id <- paste(dat$chr, dat$POS, dat$REF, dat$ALT, sep = "-")
+dat$fixed <- FALSE
+dat[which(!is.na(match(dat$variant.id, dat_re$variant.id))),]$fixed <- TRUE
+
+saveRDS(dat, file = "data/rds/omm_ab_with_fixed.rds")
 ```
 
 ## AF frequency
@@ -117,7 +146,6 @@ p <- p + geom_jitter(shape = 4) + facet_grid(. ~ mouse.group, scales = "free_x")
 p <- p + geom_boxplot()  + theme_classic() + xlab("Mouse ID") + ylab("number of variants")
 plotly::ggplotly(p)
 ```
-
 
 ## Heatmap 
 
@@ -193,9 +221,159 @@ column_split = heat3.mouse.group,
 #dev.off()
 ```
 
+## with information if SNP was observed in resequencing
+
+all high-variant
+
+```{r heat-all-micedf, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
+dat <- readRDS("data/rds/omm_ab_with_fixed.rds")
+dat$sample.id <- paste0(dat$mouse.id, "-",dat$day)
+dat$variant.id <- paste0(dat$genome_hr,"-",  dat$fixed, "-", dat$POS, "-", dat$REF, "-", dat$ALT)
+data.wide <- dcast(dat, variant.id ~ sample.id, value.var = "AF")
+
+data.wide[is.na(data.wide)] <- 0
+rownames(data.wide) <-  data.wide$variant.id
+data.wide$variant.id <- NULL
+
+library(circlize)
+library(ComplexHeatmap)
+
+heat <- data.matrix(data.wide)
+# limit to variants that are present in at least 10% of samples
+heat_num <- rowSums(heat != 0)
+heat2 <- heat[which(heat_num > ncol(heat)/10),]
+
+# limit to variants that have a high variance
+heat_var_num <- matrixStats::rowVars(heat2)
+heat3 <- heat2[which(heat_var_num >  quantile(heat_var_num,  0.5)) ,]
+
+dat$dummy <- 1
+annot.data <- aggregate(dummy ~ mouse.id + mouse.group + day + phase, dat, sum)
+annot.data$sample.id <- paste0(annot.data$mouse.id, "-",annot.data$day)
+heat3.mouse.id <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.id
+heat3.day <- annot.data[match(colnames(heat3), annot.data$sample.id),]$day
+heat3.mouse.group <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.group
+heat3.phase <- annot.data[match(colnames(heat3), annot.data$sample.id),]$phase
+heat3.phase2 <- ifelse(heat3.phase == "post-treatment", 6, NA)
+ord = data.frame(day = heat3.day, mouse.id =heat3.mouse.id )
+
+occ = as.data.frame(table(heat3.mouse.id))
+ord$occ <- occ[match(ord$mouse.id, occ$heat3.mouse.id),]$Freq
+data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
+
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+qpcr <- read.table("qpcr.csv", header = T, sep = ";")
+qpcr$universal <- NULL
+rownames(qpcr) <- paste0(qpcr$mouse, "-",qpcr$day)
+qpcr <- qpcr[,-c(1:5)]
+qpcr <- apply(qpcr, 1, function(x) x/sum(x))
+qpcr <- qpcr[,which(colnames(qpcr) %in% colnames(heat3))]
+qpcr <- qpcr[,match(colnames(heat3), colnames(qpcr))]
+bug <- sapply(strsplit(rownames(heat3), split='-', fixed=TRUE), `[`, 1) 
+fixed <- sapply(strsplit(rownames(heat3), split='-', fixed=TRUE), `[`, 2) 
+
+pdf("heat.pdf", width= 10, height = 10)
+Heatmap(heat3, name = "AF", col = col_fun, border = TRUE,
+top_annotation = HeatmapAnnotation(num = anno_lines(colSums(heat3),
+smooth = TRUE,border = TRUE), ra = anno_barplot(t(qpcr), 
+    bar_width = 1,gp = gpar(fill = 1:12), height = unit(3, "cm")),
+	mouse = heat3.mouse.id,
+	group = heat3.mouse.group,
+	phase = heat3.phase,
+day=anno_simple(heat3.day, pch =heat3.phase2)),
+cluster_columns =F,
+column_order = order(ord$occ, ord$mouse.id, ord$day),
+right_annotation = rowAnnotation(fixed = fixed, bug = bug,  prev = anno_barplot(rowSums(heat3)), col = bugcolors),
+ row_gap = unit(0, "mm"), column_gap = unit(0, "mm"),
+column_split = heat3.mouse.group,
+ column_names_gp = gpar(fontsize =5),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = F,
+ show_column_dend = F
+)
+dev.off()
+```
+
+All that are fixed
+
+```{r heat-all-miced, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE, eval=F}
+dat <- readRDS("data/rds/omm_ab_with_fixed.rds")
+dat <- dat[which(dat$fixed == TRUE),]
+dat$sample.id <- paste0(dat$mouse.id, "-",dat$day)
+dat$variant.id <- paste0(dat$genome_hr,"-",  dat$fixed, "-", dat$POS, "-", dat$REF, "-", dat$ALT)
+data.wide <- dcast(dat, variant.id ~ sample.id, value.var = "AF")
+
+data.wide[is.na(data.wide)] <- 0
+rownames(data.wide) <-  data.wide$variant.id
+data.wide$variant.id <- NULL
+
+library(circlize)
+library(ComplexHeatmap)
+
+heat <- data.matrix(data.wide)
+# limit to variants that are present in at least 10% of samples
+heat_num <- rowSums(heat != 0)
+heat2 <- heat[which(heat_num > ncol(heat)/10),]
+
+# limit to variants that have a high variance
+heat_var_num <- matrixStats::rowVars(heat2)
+heat3 <- heat2[which(heat_var_num >  quantile(heat_var_num,  0.5)) ,]
+heat3 <- heat
+dat$dummy <- 1
+annot.data <- aggregate(dummy ~ mouse.id + mouse.group + day + phase, dat, sum)
+annot.data$sample.id <- paste0(annot.data$mouse.id, "-",annot.data$day)
+heat3.mouse.id <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.id
+heat3.day <- annot.data[match(colnames(heat3), annot.data$sample.id),]$day
+heat3.mouse.group <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.group
+heat3.phase <- annot.data[match(colnames(heat3), annot.data$sample.id),]$phase
+heat3.phase2 <- ifelse(heat3.phase == "post-treatment", 6, NA)
+ord = data.frame(day = heat3.day, mouse.id =heat3.mouse.id )
+
+occ = as.data.frame(table(heat3.mouse.id))
+ord$occ <- occ[match(ord$mouse.id, occ$heat3.mouse.id),]$Freq
+data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
+
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+qpcr <- read.table("qpcr.csv", header = T, sep = ";")
+qpcr$universal <- NULL
+rownames(qpcr) <- paste0(qpcr$mouse, "-",qpcr$day)
+qpcr <- qpcr[,-c(1:5)]
+qpcr <- apply(qpcr, 1, function(x) x/sum(x))
+qpcr <- qpcr[,which(colnames(qpcr) %in% colnames(heat3))]
+qpcr <- qpcr[,match(colnames(heat3), colnames(qpcr))]
+bug <- sapply(strsplit(rownames(heat3), split='-', fixed=TRUE), `[`, 1) 
+fixed <- sapply(strsplit(rownames(heat3), split='-', fixed=TRUE), `[`, 2) 
+
+Heatmap(heat3, name = "AF", col = col_fun, border = TRUE,
+column_order = order(ord$occ, ord$mouse.id, ord$day),cluster_columns =F,
+right_annotation = rowAnnotation(fixed = fixed, bug = bug,  prev = anno_barplot(rowSums(heat3)), col = bugcolors),
+ row_gap = unit(0, "mm"), column_gap = unit(0, "mm"),
+ top_annotation = HeatmapAnnotation(num = anno_lines(colSums(heat3),
+smooth = TRUE,border = TRUE), ra = anno_barplot(t(qpcr), 
+    bar_width = 1,gp = gpar(fill = 1:12), height = unit(3, "cm")),
+	mouse = heat3.mouse.id,
+	group = heat3.mouse.group,
+	phase = heat3.phase,
+day=anno_simple(heat3.day, pch =heat3.phase2)),
+ column_names_gp = gpar(fontsize =5),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = F,
+ show_column_dend = F
+
+)
+
+
+
+```
+
+
 All mice clustered
 
-```{r heat-all-mice2, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
+```{r heat-all-miceds2, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
 dat <- readRDS("data/rds/omm_ab.rds")
 dat$sample.id <- paste0(dat$mouse.id, "-",dat$day)
 dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
