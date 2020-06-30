@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 5 dendogram | OMM report</title>
+  <meta name="description" content="Section 5 dendogram | OMM report" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 5 dendogram | OMM report" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 5 dendogram | OMM report" />
+  
+  
+  
+
+<meta name="author" content="Philipp C. Muench" />
+
+
+<meta name="date" content="2020-06-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ab-effects-metagenomes.html"/>
+<link rel="next" href="lofreq-threshold.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.10/datatables.js"></script>
+<link href="libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+<script src="libs/plotly-binding-4.9.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.49.4/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.49.4/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Setup</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#installation"><i class="fa fa-check"></i><b>1.1</b> Installation</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#generate-report"><i class="fa fa-check"></i><b>1.2</b> Generate report</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="claudia-samples.html"><a href="claudia-samples.html"><i class="fa fa-check"></i><b>2</b> Claudia Samples</a><ul>
+<li class="chapter" data-level="2.1" data-path="claudia-samples.html"><a href="claudia-samples.html#experiment"><i class="fa fa-check"></i><b>2.1</b> Experiment</a></li>
+<li class="chapter" data-level="2.2" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a></li>
+<li class="chapter" data-level="2.3" data-path="claudia-samples.html"><a href="claudia-samples.html#oligomm"><i class="fa fa-check"></i><b>2.3</b> OligoMM</a></li>
+<li class="chapter" data-level="2.4" data-path="claudia-samples.html"><a href="claudia-samples.html#load-in-variants"><i class="fa fa-check"></i><b>2.4</b> Load in variants</a></li>
+<li class="chapter" data-level="2.5" data-path="claudia-samples.html"><a href="claudia-samples.html#af-frequency"><i class="fa fa-check"></i><b>2.5</b> AF frequency</a></li>
+<li class="chapter" data-level="2.6" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-group"><i class="fa fa-check"></i><b>2.6</b> number of variants per group</a><ul>
+<li class="chapter" data-level="2.6.1" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-treatment-group"><i class="fa fa-check"></i><b>2.6.1</b> number of variants per treatment group</a></li>
+<li class="chapter" data-level="2.6.2" data-path="claudia-samples.html"><a href="claudia-samples.html#deletion"><i class="fa fa-check"></i><b>2.6.2</b> deletion</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html"><i class="fa fa-check"></i><b>3</b> AB-effects (resequenced)</a><ul>
+<li class="chapter" data-level="3.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#metadata-1"><i class="fa fa-check"></i><b>3.1</b> Metadata</a></li>
+<li class="chapter" data-level="3.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#process-lofeq-vcf-files"><i class="fa fa-check"></i><b>3.2</b> Process Lofeq vcf files</a></li>
+<li class="chapter" data-level="3.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#plot-af-frequency"><i class="fa fa-check"></i><b>3.3</b> Plot AF frequency</a></li>
+<li class="chapter" data-level="3.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1"><i class="fa fa-check"></i><b>3.4</b> KB1</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp"><i class="fa fa-check"></i><b>3.4.1</b> SNP</a></li>
+<li class="chapter" data-level="3.4.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion"><i class="fa fa-check"></i><b>3.4.2</b> insertion</a></li>
+<li class="chapter" data-level="3.4.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-1"><i class="fa fa-check"></i><b>3.4.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46"><i class="fa fa-check"></i><b>3.5</b> I46</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-1"><i class="fa fa-check"></i><b>3.5.1</b> SNP</a></li>
+<li class="chapter" data-level="3.5.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-1"><i class="fa fa-check"></i><b>3.5.2</b> insertion</a></li>
+<li class="chapter" data-level="3.5.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-2"><i class="fa fa-check"></i><b>3.5.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58"><i class="fa fa-check"></i><b>3.6</b> YL58</a><ul>
+<li class="chapter" data-level="3.6.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-2"><i class="fa fa-check"></i><b>3.6.1</b> SNP</a></li>
+<li class="chapter" data-level="3.6.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-2"><i class="fa fa-check"></i><b>3.6.2</b> insertion</a></li>
+<li class="chapter" data-level="3.6.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-3"><i class="fa fa-check"></i><b>3.6.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#mutation-bias"><i class="fa fa-check"></i><b>3.7</b> mutation bias?</a><ul>
+<li class="chapter" data-level="3.7.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-3"><i class="fa fa-check"></i><b>3.7.1</b> SNP</a></li>
+<li class="chapter" data-level="3.7.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertions"><i class="fa fa-check"></i><b>3.7.2</b> insertions</a></li>
+<li class="chapter" data-level="3.7.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletions"><i class="fa fa-check"></i><b>3.7.3</b> deletions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#heatmap"><i class="fa fa-check"></i><b>3.8</b> heatmap</a><ul>
+<li class="chapter" data-level="3.8.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-1"><i class="fa fa-check"></i><b>3.8.1</b> KB1</a></li>
+<li class="chapter" data-level="3.8.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-1"><i class="fa fa-check"></i><b>3.8.2</b> I46</a></li>
+<li class="chapter" data-level="3.8.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-1"><i class="fa fa-check"></i><b>3.8.3</b> YL58</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-present-in-all"><i class="fa fa-check"></i><b>3.9</b> Filter: present in all</a><ul>
+<li class="chapter" data-level="3.9.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-enterococcusfaecalis"><i class="fa fa-check"></i><b>3.9.1</b> KB1 (<em>Enterococcusfaecalis</em>)</a></li>
+<li class="chapter" data-level="3.9.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-blautia_coccoides"><i class="fa fa-check"></i><b>3.9.2</b> YL58 (<em>Blautia_coccoides</em>)</a></li>
+<li class="chapter" data-level="3.9.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum"><i class="fa fa-check"></i><b>3.9.3</b> I46 (<em>Clostridium innocuum</em>)</a></li>
+<li class="chapter" data-level="3.9.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-not-in-water-but-in-ab"><i class="fa fa-check"></i><b>3.9.4</b> Filter: not in water but in AB</a></li>
+<li class="chapter" data-level="3.9.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-enterococcusfaecalis-1"><i class="fa fa-check"></i><b>3.9.5</b> KB1 (<em>Enterococcusfaecalis</em>)</a></li>
+<li class="chapter" data-level="3.9.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-blautia-coccoides"><i class="fa fa-check"></i><b>3.9.6</b> YL58 (<em>Blautia coccoides</em>)</a></li>
+<li class="chapter" data-level="3.9.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum-1"><i class="fa fa-check"></i><b>3.9.7</b> I46 (<em>Clostridium innocuum</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html"><i class="fa fa-check"></i><b>4</b> AB-effects (metagenomes)</a><ul>
+<li class="chapter" data-level="4.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#load-in-variants-1"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
+<li class="chapter" data-level="4.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#add-presence-in-reseq-experiment"><i class="fa fa-check"></i><b>4.2</b> add presence in reseq experiment</a></li>
+<li class="chapter" data-level="4.3" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#af-frequency-1"><i class="fa fa-check"></i><b>4.3</b> AF frequency</a></li>
+<li class="chapter" data-level="4.4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#average-coverage-of-variants-by-genome"><i class="fa fa-check"></i><b>4.4</b> Average coverage of variants by genome</a></li>
+<li class="chapter" data-level="4.5" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.5</b> number of variants per samples</a><ul>
+<li class="chapter" data-level="4.5.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-treatment-group-1"><i class="fa fa-check"></i><b>4.5.1</b> number of variants per treatment group</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#heatmap-1"><i class="fa fa-check"></i><b>4.6</b> Heatmap</a></li>
+<li class="chapter" data-level="4.7" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#with-information-if-snp-was-observed-in-resequencing"><i class="fa fa-check"></i><b>4.7</b> with information if SNP was observed in resequencing</a></li>
+<li class="chapter" data-level="4.8" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#focus-on-mouse-where-we-have-many-time-points"><i class="fa fa-check"></i><b>4.8</b> Focus on mouse where we have many time points</a></li>
+<li class="chapter" data-level="4.9" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>4.9</b> Akkermansia Muciniphila</a><ul>
+<li class="chapter" data-level="4.9.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#area-plot-1"><i class="fa fa-check"></i><b>4.9.1</b> area plot 1</a></li>
+<li class="chapter" data-level="4.9.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#line-plot"><i class="fa fa-check"></i><b>4.9.2</b> line plot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="dendogram.html"><a href="dendogram.html"><i class="fa fa-check"></i><b>5</b> dendogram</a></li>
+<li class="chapter" data-level="6" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html"><i class="fa fa-check"></i><b>6</b> Lofreq threshold</a><ul>
+<li class="chapter" data-level="6.1" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#read-in-vcf"><i class="fa fa-check"></i><b>6.1</b> read in vcf</a></li>
+<li class="chapter" data-level="6.2" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#plot-af-comparison"><i class="fa fa-check"></i><b>6.2</b> plot AF comparison</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="process-kraken-output.html"><a href="process-kraken-output.html"><i class="fa fa-check"></i><b>7</b> process kraken output</a><ul>
+<li class="chapter" data-level="7.1" data-path="process-kraken-output.html"><a href="process-kraken-output.html#plot"><i class="fa fa-check"></i><b>7.1</b> plot</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">OMM report</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="dendogram" class="section level1">
+<h1><span class="header-section-number">Section 5</span> dendogram</h1>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb118-1" data-line-number="1"><span class="kw">library</span>(circlize)</a>
+<a class="sourceLine" id="cb118-2" data-line-number="2"><span class="kw">library</span>(ComplexHeatmap)</a>
+<a class="sourceLine" id="cb118-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb118-4" data-line-number="4">dat &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="st">&quot;data/rds/omm_ab_with_fixed.rds&quot;</span>)</a>
+<a class="sourceLine" id="cb118-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb118-6" data-line-number="6">dat<span class="op">$</span>rep.group &lt;-<span class="st"> </span><span class="kw">translateMouseIdToReplicateGroup</span>(dat<span class="op">$</span>mouse.id)</a>
+<a class="sourceLine" id="cb118-7" data-line-number="7">dat &lt;-<span class="st"> </span>dat[<span class="kw">which</span>(dat<span class="op">$</span>rep.group <span class="op">==</span><span class="st"> &quot;Full&quot;</span>), ]</a>
+<a class="sourceLine" id="cb118-8" data-line-number="8"></a>
+<a class="sourceLine" id="cb118-9" data-line-number="9">dat<span class="op">$</span>sample.id &lt;-<span class="st"> </span><span class="kw">paste0</span>(dat<span class="op">$</span>mouse.id, <span class="st">&quot;-&quot;</span>, dat<span class="op">$</span>day)</a>
+<a class="sourceLine" id="cb118-10" data-line-number="10">dat<span class="op">$</span>variant.id &lt;-<span class="st"> </span><span class="kw">paste0</span>(dat<span class="op">$</span>genome_hr, <span class="st">&quot;-&quot;</span>, dat<span class="op">$</span>fixed, <span class="st">&quot;-&quot;</span>, dat<span class="op">$</span>POS, <span class="st">&quot;-&quot;</span>, dat<span class="op">$</span>REF, <span class="st">&quot;-&quot;</span>, dat<span class="op">$</span>ALT)</a>
+<a class="sourceLine" id="cb118-11" data-line-number="11">data.wide &lt;-<span class="st"> </span><span class="kw">dcast</span>(dat, variant.id <span class="op">~</span><span class="st"> </span>sample.id, <span class="dt">value.var =</span> <span class="st">&quot;AF&quot;</span>)</a>
+<a class="sourceLine" id="cb118-12" data-line-number="12"></a>
+<a class="sourceLine" id="cb118-13" data-line-number="13">data.wide[<span class="kw">is.na</span>(data.wide)] &lt;-<span class="st"> </span><span class="dv">0</span></a>
+<a class="sourceLine" id="cb118-14" data-line-number="14"><span class="kw">rownames</span>(data.wide) &lt;-<span class="st"> </span>data.wide<span class="op">$</span>variant.id</a>
+<a class="sourceLine" id="cb118-15" data-line-number="15">data.wide<span class="op">$</span>variant.id &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb118-16" data-line-number="16"></a>
+<a class="sourceLine" id="cb118-17" data-line-number="17"></a>
+<a class="sourceLine" id="cb118-18" data-line-number="18">heat &lt;-<span class="st"> </span><span class="kw">data.matrix</span>(data.wide)</a>
+<a class="sourceLine" id="cb118-19" data-line-number="19"><span class="co"># limit to variants that are present in at least 10% of samples</span></a>
+<a class="sourceLine" id="cb118-20" data-line-number="20">heat_num &lt;-<span class="st"> </span><span class="kw">rowSums</span>(heat <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb118-21" data-line-number="21"><span class="co"># limit to variants that have a high variance</span></a>
+<a class="sourceLine" id="cb118-22" data-line-number="22">heat2 &lt;-<span class="st"> </span>heat</a>
+<a class="sourceLine" id="cb118-23" data-line-number="23">heat_var_num &lt;-<span class="st"> </span>matrixStats<span class="op">::</span><span class="kw">rowVars</span>(heat2)</a>
+<a class="sourceLine" id="cb118-24" data-line-number="24">heat3 &lt;-<span class="st"> </span>heat</a>
+<a class="sourceLine" id="cb118-25" data-line-number="25">dat<span class="op">$</span>dummy &lt;-<span class="st"> </span><span class="dv">1</span></a>
+<a class="sourceLine" id="cb118-26" data-line-number="26">annot.data &lt;-<span class="st"> </span><span class="kw">aggregate</span>(dummy <span class="op">~</span><span class="st"> </span>mouse.id <span class="op">+</span><span class="st"> </span>mouse.group <span class="op">+</span><span class="st"> </span>day <span class="op">+</span><span class="st"> </span>phase, dat, sum)</a>
+<a class="sourceLine" id="cb118-27" data-line-number="27">annot.data<span class="op">$</span>sample.id &lt;-<span class="st"> </span><span class="kw">paste0</span>(annot.data<span class="op">$</span>mouse.id, <span class="st">&quot;-&quot;</span>, annot.data<span class="op">$</span>day)</a>
+<a class="sourceLine" id="cb118-28" data-line-number="28">heat3.mouse.id &lt;-<span class="st"> </span>annot.data[<span class="kw">match</span>(<span class="kw">colnames</span>(heat3), annot.data<span class="op">$</span>sample.id), ]<span class="op">$</span>mouse.id</a>
+<a class="sourceLine" id="cb118-29" data-line-number="29">heat3.day &lt;-<span class="st"> </span>annot.data[<span class="kw">match</span>(<span class="kw">colnames</span>(heat3), annot.data<span class="op">$</span>sample.id), ]<span class="op">$</span>day</a>
+<a class="sourceLine" id="cb118-30" data-line-number="30">heat3.mouse.group &lt;-<span class="st"> </span>annot.data[<span class="kw">match</span>(<span class="kw">colnames</span>(heat3), annot.data<span class="op">$</span>sample.id), ]<span class="op">$</span>mouse.group</a>
+<a class="sourceLine" id="cb118-31" data-line-number="31">heat3.phase &lt;-<span class="st"> </span>annot.data[<span class="kw">match</span>(<span class="kw">colnames</span>(heat3), annot.data<span class="op">$</span>sample.id), ]<span class="op">$</span>phase</a>
+<a class="sourceLine" id="cb118-32" data-line-number="32">heat3.phase2 &lt;-<span class="st"> </span><span class="kw">ifelse</span>(heat3.phase <span class="op">==</span><span class="st"> &quot;post-treatment&quot;</span>, <span class="dv">6</span>, <span class="ot">NA</span>)</a>
+<a class="sourceLine" id="cb118-33" data-line-number="33">ord =<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">day =</span> heat3.day, <span class="dt">mouse.id =</span> heat3.mouse.id)</a>
+<a class="sourceLine" id="cb118-34" data-line-number="34"></a>
+<a class="sourceLine" id="cb118-35" data-line-number="35">occ =<span class="st"> </span><span class="kw">as.data.frame</span>(<span class="kw">table</span>(heat3.mouse.id))</a>
+<a class="sourceLine" id="cb118-36" data-line-number="36">ord<span class="op">$</span>occ &lt;-<span class="st"> </span>occ[<span class="kw">match</span>(ord<span class="op">$</span>mouse.id, occ<span class="op">$</span>heat3.mouse.id), ]<span class="op">$</span>Freq</a>
+<a class="sourceLine" id="cb118-37" data-line-number="37">data.wide.sub &lt;-<span class="st"> </span>dat[<span class="kw">match</span>(<span class="kw">colnames</span>(heat3), dat<span class="op">$</span>sample.id), ]</a>
+<a class="sourceLine" id="cb118-38" data-line-number="38"></a>
+<a class="sourceLine" id="cb118-39" data-line-number="39">col_fun =<span class="st"> </span><span class="kw">colorRamp2</span>(<span class="kw">c</span>(<span class="dv">0</span>, <span class="fl">0.5</span>, <span class="dv">1</span>), <span class="kw">c</span>(<span class="st">&quot;white&quot;</span>, <span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;red&quot;</span>))</a>
+<a class="sourceLine" id="cb118-40" data-line-number="40"></a>
+<a class="sourceLine" id="cb118-41" data-line-number="41">qpcr &lt;-<span class="st"> </span><span class="kw">read.table</span>(<span class="st">&quot;qpcr.csv&quot;</span>, <span class="dt">header =</span> T, <span class="dt">sep =</span> <span class="st">&quot;;&quot;</span>)</a>
+<a class="sourceLine" id="cb118-42" data-line-number="42">qpcr<span class="op">$</span>universal &lt;-<span class="st"> </span><span class="ot">NULL</span></a>
+<a class="sourceLine" id="cb118-43" data-line-number="43"><span class="kw">rownames</span>(qpcr) &lt;-<span class="st"> </span><span class="kw">paste0</span>(qpcr<span class="op">$</span>mouse, <span class="st">&quot;-&quot;</span>, qpcr<span class="op">$</span>day)</a>
+<a class="sourceLine" id="cb118-44" data-line-number="44">qpcr &lt;-<span class="st"> </span>qpcr[, <span class="op">-</span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)]</a>
+<a class="sourceLine" id="cb118-45" data-line-number="45">qpcr &lt;-<span class="st"> </span><span class="kw">apply</span>(qpcr, <span class="dv">1</span>, <span class="cf">function</span>(x) x<span class="op">/</span><span class="kw">sum</span>(x))</a>
+<a class="sourceLine" id="cb118-46" data-line-number="46">qpcr &lt;-<span class="st"> </span>qpcr[, <span class="kw">which</span>(<span class="kw">colnames</span>(qpcr) <span class="op">%in%</span><span class="st"> </span><span class="kw">colnames</span>(heat3))]</a>
+<a class="sourceLine" id="cb118-47" data-line-number="47">qpcr &lt;-<span class="st"> </span>qpcr[, <span class="kw">match</span>(<span class="kw">colnames</span>(heat3), <span class="kw">colnames</span>(qpcr))]</a>
+<a class="sourceLine" id="cb118-48" data-line-number="48">bug &lt;-<span class="st"> </span><span class="kw">sapply</span>(<span class="kw">strsplit</span>(<span class="kw">rownames</span>(heat3), <span class="dt">split =</span> <span class="st">&quot;-&quot;</span>, <span class="dt">fixed =</span> <span class="ot">TRUE</span>), <span class="st">`</span><span class="dt">[</span><span class="st">`</span>, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb118-49" data-line-number="49">fixed &lt;-<span class="st"> </span><span class="kw">sapply</span>(<span class="kw">strsplit</span>(<span class="kw">rownames</span>(heat3), <span class="dt">split =</span> <span class="st">&quot;-&quot;</span>, <span class="dt">fixed =</span> <span class="ot">TRUE</span>), <span class="st">`</span><span class="dt">[</span><span class="st">`</span>, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb118-50" data-line-number="50"></a>
+<a class="sourceLine" id="cb118-51" data-line-number="51">qpcr_<span class="dv">1</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">1</span>, ]</a>
+<a class="sourceLine" id="cb118-52" data-line-number="52">qpcr_<span class="dv">2</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">2</span>, ]</a>
+<a class="sourceLine" id="cb118-53" data-line-number="53">qpcr_<span class="dv">3</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">3</span>, ]</a>
+<a class="sourceLine" id="cb118-54" data-line-number="54">qpcr_<span class="dv">4</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">4</span>, ]</a>
+<a class="sourceLine" id="cb118-55" data-line-number="55">qpcr_<span class="dv">5</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">5</span>, ]</a>
+<a class="sourceLine" id="cb118-56" data-line-number="56">qpcr_<span class="dv">6</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">6</span>, ]</a>
+<a class="sourceLine" id="cb118-57" data-line-number="57">qpcr_<span class="dv">7</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">7</span>, ]</a>
+<a class="sourceLine" id="cb118-58" data-line-number="58">qpcr_<span class="dv">8</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">8</span>, ]</a>
+<a class="sourceLine" id="cb118-59" data-line-number="59">qpcr_<span class="dv">9</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">9</span>, ]</a>
+<a class="sourceLine" id="cb118-60" data-line-number="60">qpcr_<span class="dv">10</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">10</span>, ]</a>
+<a class="sourceLine" id="cb118-61" data-line-number="61">qpcr_<span class="dv">11</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">11</span>, ]</a>
+<a class="sourceLine" id="cb118-62" data-line-number="62">qpcr_<span class="dv">12</span> &lt;-<span class="st"> </span>qpcr[<span class="dv">12</span>, ]</a>
+<a class="sourceLine" id="cb118-63" data-line-number="63"></a>
+<a class="sourceLine" id="cb118-64" data-line-number="64">hc =<span class="st"> </span><span class="kw">hclust</span>(<span class="kw">dist</span>(<span class="kw">t</span>(heat3)))</a>
+<a class="sourceLine" id="cb118-65" data-line-number="65"><span class="kw">Heatmap</span>(<span class="kw">matrix</span>(<span class="dt">nc =</span> <span class="kw">ncol</span>(heat3), <span class="dt">nr =</span> <span class="dv">0</span>), <span class="dt">column_order =</span> <span class="kw">order</span>(ord<span class="op">$</span>mouse.id, ord<span class="op">$</span>day), <span class="dt">column_split =</span> heat3.mouse.group, <span class="dt">cluster_columns =</span> <span class="ot">FALSE</span>, <span class="dt">top_annotation =</span> <span class="kw">HeatmapAnnotation</span>(<span class="dt">day =</span> <span class="kw">anno_simple</span>(heat3.day, </a>
+<a class="sourceLine" id="cb118-66" data-line-number="66">    <span class="dt">pch =</span> heat3.phase2), <span class="dt">KB1 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">1</span>), <span class="dt">border =</span> T, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">1</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="fl">0.7</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">YL2 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">2</span>), </a>
+<a class="sourceLine" id="cb118-67" data-line-number="67">    <span class="dt">border =</span> T, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">2</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="fl">0.7</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">KB18 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">3</span>), <span class="dt">border =</span> T, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, </a>
+<a class="sourceLine" id="cb118-68" data-line-number="68">    <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">3</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">YL27 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">4</span>), <span class="dt">border =</span> T, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">4</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, </a>
+<a class="sourceLine" id="cb118-69" data-line-number="69">    <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">YL31 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">5</span>), <span class="dt">border =</span> T, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">5</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">YL32 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">6</span>), </a>
+<a class="sourceLine" id="cb118-70" data-line-number="70">    <span class="dt">border =</span> T, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">6</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">YL44 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">7</span>), <span class="dt">border =</span> T, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, </a>
+<a class="sourceLine" id="cb118-71" data-line-number="71">    <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">7</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">YL45 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">8</span>), <span class="dt">border =</span> <span class="ot">TRUE</span>, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">8</span>), </a>
+<a class="sourceLine" id="cb118-72" data-line-number="72">    <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">I46 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">9</span>), <span class="dt">border =</span> <span class="ot">TRUE</span>, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">9</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), </a>
+<a class="sourceLine" id="cb118-73" data-line-number="73">    <span class="dt">axis =</span> F), <span class="dt">I48 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">10</span>), <span class="dt">border =</span> <span class="ot">TRUE</span>, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">10</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">I49 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">11</span>), </a>
+<a class="sourceLine" id="cb118-74" data-line-number="74">    <span class="dt">border =</span> <span class="ot">TRUE</span>, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">11</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">YL58 =</span> <span class="kw">anno_lines</span>(<span class="kw">log10</span>(qpcr_<span class="dv">12</span>), <span class="dt">border =</span> <span class="ot">TRUE</span>, <span class="dt">add_points =</span> <span class="ot">TRUE</span>, </a>
+<a class="sourceLine" id="cb118-75" data-line-number="75">    <span class="dt">pt_gp =</span> <span class="kw">gpar</span>(<span class="dt">col =</span> <span class="dv">12</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="dv">1</span>, <span class="st">&quot;cm&quot;</span>), <span class="dt">axis =</span> F), <span class="dt">ra =</span> <span class="kw">anno_barplot</span>(<span class="kw">t</span>(qpcr), <span class="dt">bar_width =</span> <span class="dv">1</span>, <span class="dt">gp =</span> <span class="kw">gpar</span>(<span class="dt">fill =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">12</span>), <span class="dt">height =</span> <span class="kw">unit</span>(<span class="fl">1.5</span>, <span class="st">&quot;cm&quot;</span>), </a>
+<a class="sourceLine" id="cb118-76" data-line-number="76">    <span class="dt">num =</span> <span class="kw">anno_lines</span>(<span class="kw">colSums</span>(heat3), <span class="dt">smooth =</span> <span class="ot">TRUE</span>, <span class="dt">border =</span> <span class="ot">TRUE</span>))))</a></code></pre></div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ab-effects-metagenomes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="lofreq-threshold.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
