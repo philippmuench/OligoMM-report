@@ -435,12 +435,11 @@ right_annotation = rowAnnotation(prev = anno_barplot(rowSums(heat3))),
  column_names_gp = gpar(fontsize =5),
  row_names_gp = gpar(fontsize = 3),
  show_row_dend = F,
-  show_row_names = F,
+ show_row_names = F,
  show_column_dend = T
 )
 #dev.off()
 ```
-
 
 
 ```{r heat-all-mice3, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
@@ -620,4 +619,95 @@ plotly::ggplotly(p)
 	p <- p + facet_wrap(~mouse.group + mouse.id, ncol=3)
 	p <- p + geom_vline(xintercept = c(4, 18, 53, 67))
 	plotly::ggplotly(p)
+```
+
+
+# dendogram
+
+
+```{r dendo1, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE, eval=F}
+library(circlize)
+library(ComplexHeatmap)
+
+dat <- readRDS("data/rds/omm_ab_with_fixed.rds")
+
+dat$rep.group <- translateMouseIdToReplicateGroup(dat$mouse.id)
+dat <- dat[which(dat$rep.group == "Full"),]
+
+dat$sample.id <- paste0(dat$mouse.id, "-",dat$day)
+dat$variant.id <- paste0(dat$genome_hr,"-",  dat$fixed, "-", dat$POS, "-", dat$REF, "-", dat$ALT)
+data.wide <- dcast(dat, variant.id ~ sample.id, value.var = "AF")
+
+data.wide[is.na(data.wide)] <- 0
+rownames(data.wide) <-  data.wide$variant.id
+data.wide$variant.id <- NULL
+
+
+heat <- data.matrix(data.wide)
+# limit to variants that are present in at least 10% of samples
+heat_num <- rowSums(heat != 0)
+# limit to variants that have a high variance
+heat2 <- heat
+heat_var_num <- matrixStats::rowVars(heat2)
+heat3 <- heat
+dat$dummy <- 1
+annot.data <- aggregate(dummy ~ mouse.id + mouse.group + day + phase, dat, sum)
+annot.data$sample.id <- paste0(annot.data$mouse.id, "-",annot.data$day)
+heat3.mouse.id <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.id
+heat3.day <- annot.data[match(colnames(heat3), annot.data$sample.id),]$day
+heat3.mouse.group <- annot.data[match(colnames(heat3), annot.data$sample.id),]$mouse.group
+heat3.phase <- annot.data[match(colnames(heat3), annot.data$sample.id),]$phase
+heat3.phase2 <- ifelse(heat3.phase == "post-treatment", 6, NA)
+ord = data.frame(day = heat3.day, mouse.id =heat3.mouse.id )
+
+occ = as.data.frame(table(heat3.mouse.id))
+ord$occ <- occ[match(ord$mouse.id, occ$heat3.mouse.id),]$Freq
+data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
+
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+qpcr <- read.table("qpcr.csv", header = T, sep = ";")
+qpcr$universal <- NULL
+rownames(qpcr) <- paste0(qpcr$mouse, "-",qpcr$day)
+qpcr <- qpcr[,-c(1:5)]
+qpcr <- apply(qpcr, 1, function(x) x/sum(x))
+qpcr <- qpcr[,which(colnames(qpcr) %in% colnames(heat3))]
+qpcr <- qpcr[,match(colnames(heat3), colnames(qpcr))]
+bug <- sapply(strsplit(rownames(heat3), split='-', fixed=TRUE), `[`, 1) 
+fixed <- sapply(strsplit(rownames(heat3), split='-', fixed=TRUE), `[`, 2) 
+
+qpcr_1 <- qpcr[1,]
+qpcr_2 <- qpcr[2,]
+qpcr_3 <- qpcr[3,]
+qpcr_4 <- qpcr[4,]
+qpcr_5 <- qpcr[5,]
+qpcr_6 <- qpcr[6,]
+qpcr_7 <- qpcr[7,]
+qpcr_8 <- qpcr[8,]
+qpcr_9 <- qpcr[9,]
+qpcr_10 <- qpcr[10,]
+qpcr_11 <- qpcr[11,]
+qpcr_12 <- qpcr[12,]
+
+hc = hclust(dist(t(heat3)))
+Heatmap(matrix(nc = ncol(heat3), nr = 0),
+column_order = order(ord$mouse.id, ord$day),
+column_split = heat3.mouse.group,
+ cluster_columns = FALSE,
+ top_annotation = HeatmapAnnotation(day=anno_simple(heat3.day, pch =heat3.phase2),
+ KB1 = anno_lines(log10(qpcr_1), border = T, add_points = TRUE, pt_gp = gpar(col = 1), height = unit(0.7, "cm"), axis = F),
+ YL2 = anno_lines(log10(qpcr_2), border = T, add_points = TRUE, pt_gp = gpar(col = 2), height = unit(0.7, "cm"), axis = F),
+ KB18 = anno_lines(log10(qpcr_3), border = T, add_points = TRUE, pt_gp = gpar(col = 3), height = unit(1, "cm"), axis = F),
+ YL27 = anno_lines(log10(qpcr_4), border = T, add_points = TRUE, pt_gp = gpar(col = 4), height = unit(1, "cm"), axis = F),
+YL31 = anno_lines(log10(qpcr_5), border = T, add_points = TRUE, pt_gp = gpar(col = 5), height = unit(1, "cm"), axis = F),
+YL32 = anno_lines(log10(qpcr_6), border = T, add_points = TRUE, pt_gp = gpar(col = 6), height = unit(1, "cm"), axis = F),
+YL44 = anno_lines(log10(qpcr_7), border = T, add_points = TRUE, pt_gp = gpar(col = 7), height = unit(1, "cm"), axis = F),
+YL45 = anno_lines(log10(qpcr_8), border = TRUE, add_points = TRUE, pt_gp = gpar(col = 8), height = unit(1, "cm"), axis = F),
+I46 = anno_lines(log10(qpcr_9), border = TRUE, add_points = TRUE, pt_gp = gpar(col = 9), height = unit(1, "cm"), axis = F),
+I48 = anno_lines(log10(qpcr_10), border = TRUE, add_points = TRUE, pt_gp = gpar(col = 10), height = unit(1, "cm"), axis = F),
+I49 = anno_lines(log10(qpcr_11), border = TRUE, add_points = TRUE, pt_gp = gpar(col = 11), height = unit(1, "cm"), axis = F),
+YL58 = anno_lines(log10(qpcr_12), border = TRUE, add_points = TRUE, pt_gp = gpar(col = 12), height = unit(1, "cm"), axis = F),
+ra = anno_barplot(t(qpcr), 
+    bar_width = 1,gp = gpar(fill = 1:12), height = unit(1.5, "cm"),
+     num = anno_lines(colSums(heat3), smooth = TRUE, border = TRUE))))
 ```
