@@ -120,6 +120,49 @@ vcf_samples[which(vcf_samples$ref_size > vcf_samples$alt_size), ]$alteration_typ
 saveRDS(vcf_samples, file = "data/rds/omm_claudia_new.rds")
 ```
 
+## Filter out of abnormal high mutation
+
+We filter out samples that have a mutation rate of the global mean. 
+
+```{r, fig.cap="Mutation profile before removal. Vertical line is the global mean number of mutation rates", fig.width=9, fig.height=15}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat <- dat[which(dat$alteration_type == "SNP"),]
+dat$dummy <- 1
+# summarize by alteration type
+dat.agg <- aggregate(dummy ~ alteration + sample, dat, sum)
+dat.agg <- dat.agg[order(-dat.agg$dummy),]
+
+median_threshold <- mean(dat.agg$dummy)
+
+p <- ggplot(dat.agg, aes(x = reorder(sample, dummy), y = dummy, group = alteration)) + ylab("number of SNPs (log10)") + xlab("samples")
+p <- p + geom_bar(stat = "identity") + coord_flip() + facet_wrap(~ alteration) + scale_y_log10()
+p <- p + theme_bw() + geom_hline(yintercept=median_threshold, colour="grey50")
+print(p)
+
+# remove all C>A and G>T on selected samples
+affected_samples <- dat.agg[which(dat.agg$dummy > median_threshold),]$sample 
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat_outlier <- which(dat$alteration_type == "SNP" &
+	dat$sample %in% affected_samples &
+	(dat$alteration == "C -> A" | dat$alteration == "G -> T"))
+dat_corrected <- dat[-dat_outlier,]
+saveRDS(dat_corrected, file = "data/rds/omm_claudia_new.rds")
+nrow(dat_corrected) # number of variants in total
+```
+
+```{r, fig.cap="Mutation profile after removal. Vertical line is the global mean number of mutation rates befor filtering", fig.align="center", fig.width=9, fig.height=15}
+# plot again
+dat_corrected2 <- dat_corrected[which(dat_corrected$alteration_type == "SNP"),]
+dat_corrected2$dummy <- 1
+# summarize by alteration type
+dat_corrected2.agg <- aggregate(dummy ~ alteration + sample, dat_corrected2, sum)
+
+p <- ggplot(dat_corrected2.agg, aes(x = reorder(sample, dummy), y = dummy, group = alteration)) + ylab("number of SNPs (log10)") + xlab("samples")
+p <- p + geom_bar(stat = "identity") + coord_flip() + facet_wrap(~ alteration) + scale_y_log10()
+p <- p + theme_bw() + geom_hline(yintercept=median_threshold, colour="grey50")
+print(p)
+```
+
 ## AF frequency
 
 ```{r, fig.cap="AF of resequenced strains", fig.align="center", fig.width=9, fig.height=15}
@@ -130,7 +173,6 @@ p <- ggplot(dat, aes(AF, fill = mouse.group)) + geom_histogram()
 p <- p + facet_wrap(~ genome + genome_hr, scales= "free", ncol = 3)
 p <- p + xlab("AF") + ylab("occurence") + theme_minimal() 
 plotly::ggplotly(p)
-#p <- p + scale_x_continuous(breaks=c(0,.1,.2,.3,.4,.5,1), trans="log1p", expand=c(0,0)) +
 ```
 
 ```{r, fig.cap="major AF of resequenced strains", fig.align="center", fig.width=9, fig.height=15}
