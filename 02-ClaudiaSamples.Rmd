@@ -196,13 +196,60 @@ DT::datatable(dat.agg)
 ### number of variants per treatment group 
 
 ### deletion
-```{r, fig.align="center", fig.width=8, fig.height=28, fig.margin=TRUE, fig.cap="number of variants of all 12 OMM genomes by mouse"}
+```{r, fig.align="center", fig.width=14, fig.height=14, fig.margin=TRUE, fig.cap="total number of variants of all 12 OMM genomes by mouse and grouyp stratified by variant type. Seems there is still a outlier (20 cecal content caecimuris, where some samples have more than 1000 varaints)"}
 dat <- readRDS("data/rds/omm_claudia_new.rds")
 dat$variants <- 1
 dat.agg <- aggregate(variants ~ mouse.id + mouse.group + alteration_type+ genome_hr, dat, sum)
-p <- ggplot(dat.agg, aes(x = reorder(mouse.id, -variants) , y = variants, color = mouse.group, shape = factor(alteration_type)))
-p <- p + geom_jitter(size = .4) + facet_grid(genome_hr ~., scales = "free_x")
-p <- p + scale_y_log10() + theme_minimal() + ylab("number variants")
+p <- ggplot(dat.agg, aes(x = reorder(mouse.id, -variants) , y = variants, color = alteration_type, group = alteration_type, shape = factor(alteration_type)))
+p <- p + geom_jitter(size = .4) + facet_grid(genome_hr ~ mouse.group,space = "free", scales = "free_x")
+p <- p + geom_line() + scale_y_log10()
+p <- p  + theme_minimal() + ylab("number variants")
 p <- p + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
-plotly::ggplotly(p)
+p
+```
+
+## Heatmap
+
+
+```{r heatmap-claudia-1, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
+library(circlize)
+library(ComplexHeatmap)
+
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
+data.wide <- dcast(dat, variant.id ~ sample, value.var = "AF")
+data.wide[is.na(data.wide)] <- 0
+rownames(data.wide) <-  data.wide$variant.id
+data.wide$variant.id <- NULL
+
+heat <- data.matrix(data.wide)
+# limit to variants that are present in at least 10% of samples
+heat_num <- rowSums(heat != 0)
+heat2 <- heat[which(heat_num > ncol(heat)/10),]
+
+dat$dummy <- 1
+annot.data <- aggregate(dummy ~ sample + mouse.group + day, dat, sum)
+
+heat3.day <- annot.data[match(colnames(heat2), annot.data$sample),]$day
+heat3.mouse.group <- annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group
+
+
+#data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
+
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+Heatmap(heat2
+, name = "AF",  border = TRUE,  col = col_fun,
+right_annotation = rowAnnotation(prev = anno_lines(rowSums(heat2))),
+cluster_columns = T,
+ row_gap = unit(0, "mm"), column_gap = unit(0, "mm"),
+  column_names_gp = gpar(fontsize =5),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = F,
+ show_column_dend = T,
+
+top_annotation = HeatmapAnnotation(day=anno_simple(heat3.day),
+mouse_group = anno_simple(heat3.mouse.group))
+)
 ```
