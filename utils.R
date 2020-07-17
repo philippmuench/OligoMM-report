@@ -4,6 +4,10 @@ timePointsVector <- c(0, 4, 9, 14, 18, 23, 30, 37, 44, 49, 53, 58, 63, 67, 72, 7
 # converts AF to major AF
 minorAfToMajorAf <- function(x) if (x > 0) max(1 - x, x) else NA
 
+bugcolors <- list(bug = c("A. muciniphila" = "red", "B. caecimuris"  = "blue", "B. coccoides" = "yellow",
+	 "C. clostridioforme"  = "purple", "C. innocuum" = "orange", "F. plautii"= "brown",  "L. reuteri" ="black",
+	"M. intestinale" = "grey", "T. muris" = "green"), fixed = c("TRUE"= "red", "FALSE" = "white"))
+
 # day to phase
 binDaysByPhase <- function(dat){
 	require(dplyr)
@@ -117,6 +121,7 @@ translateGenomeIdToFullName <- function(dat) {
 		replace(. == "yl31", "F. plautii")  %>% 
 		replace(. == "yl58", "B. coccoides")  %>% 
 		replace(. == "i49", "L. reuteri")  %>% 
+		replace(. == "ecol", "Mt1B1")  %>% 
 		replace(. == "i46", "C. innocuum")
 	return(dat)
 }
@@ -177,3 +182,5 @@ sample_colors = c("stably colonized" = "#74c476", "20 OMM mix" = "#d7b5d8", "40 
 variant_colors = c("missense_variant" = "#b2e2e2", "synonymous_variant" = "#66c2a4", "intragenic_variant" = "#fdcc8a", "stop_gained" = "#b30000", "stop_lost&splice_region_variant" = "#252525",  "non_coding_transcript_variant" = "#810f7c", "unknown" = "#bdbdbd")
 
 variant_shapes =  c("missense_variant" = 15, "synonymous_variant" = 16, "intragenic_variant" = 17, "stop_gained" = 3, "stop_lost&splice_region_variant" = 8,  "non_coding_transcript_variant" = 6, "unknown" = 12)
+
+orf_shapes =  c("coding" = 15, "non-coding" = 3)
