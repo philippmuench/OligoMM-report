@@ -210,8 +210,7 @@ p
 
 ## Heatmap
 
-
-```{r heatmap-claudia-1, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE}
+```{r heatmap-claudia-1, fig.cap="AF of all variants (after mutation bias filtering)", fig.align="center", fig.width=9, fig.height=20, fig.margin=TRUE}
 library(circlize)
 library(ComplexHeatmap)
 
@@ -223,33 +222,40 @@ rownames(data.wide) <-  data.wide$variant.id
 data.wide$variant.id <- NULL
 
 heat <- data.matrix(data.wide)
+heat2 <- heat
 # limit to variants that are present in at least 10% of samples
-heat_num <- rowSums(heat != 0)
-heat2 <- heat[which(heat_num > ncol(heat)/10),]
+#heat_num <- rowSums(heat != 0)
+#heat2 <- heat[which(heat_num > ncol(heat)/10),]
 
 dat$dummy <- 1
 annot.data <- aggregate(dummy ~ sample + mouse.group + day, dat, sum)
 
 heat3.day <- annot.data[match(colnames(heat2), annot.data$sample),]$day
-heat3.mouse.group <- annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group
-
+heat3.mouse.group <- as.character(as.matrix(annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group))
 
 #data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
 
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 
-Heatmap(heat2
-, name = "AF",  border = TRUE,  col = col_fun,
-right_annotation = rowAnnotation(prev = anno_lines(rowSums(heat2))),
+ha = HeatmapAnnotation(group = heat3.mouse.group,
+    col = list(group = c("stably colonized" = "red",
+		"20 OMM mix" = "lightgreen",
+		"40 OMM mix" = "green",
+		"80 OMM mix" = "darkgreen",
+		"2nd generation" = "purple",
+		"40 cecal content" = "brown",
+		"20 cecal content" = "yellow",
+		"Tag 0, von cecal content" = "blue",
+		"Tag 0, vor 20 tage" = "red")))
+
+Heatmap(heat2, name = "AF",top_annotation =ha,
+  border = TRUE, col = col_fun,
 cluster_columns = T,
  row_gap = unit(0, "mm"), column_gap = unit(0, "mm"),
   column_names_gp = gpar(fontsize =5),
  row_names_gp = gpar(fontsize = 3),
  show_row_dend = F,
   show_row_names = F,
- show_column_dend = T,
-
-top_annotation = HeatmapAnnotation(day=anno_simple(heat3.day),
-mouse_group = anno_simple(heat3.mouse.group))
+ show_column_dend = T
 )
 ```
