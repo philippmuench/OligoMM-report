@@ -147,6 +147,7 @@ dat_outlier <- which(dat$alteration_type == "SNP" &
 	(dat$alteration == "C -> A" | dat$alteration == "G -> T"))
 dat_corrected <- dat[-dat_outlier,]
 saveRDS(dat_corrected, file = "data/rds/omm_claudia_new.rds")
+write.table(dat_corrected, file = "results/Claudia_samples_variants_long.tsv", sep = "\t", quote = F, row.names=F)
 nrow(dat_corrected) # number of variants in total
 ```
 
@@ -258,4 +259,291 @@ cluster_columns = T,
   show_row_names = F,
  show_column_dend = T
 )
+```
+
+Variants that are non-zero in every sample (e.g. observed as a variant)
+
+```{r}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
+data.wide <- dcast(dat, variant.id ~ sample, value.var = "AF")
+data.wide[is.na(data.wide)] <- 0
+rownames(data.wide) <-  data.wide$variant.id
+data.wide$variant.id <- NULL
+nrow(data.wide)
+write.table(data.wide, file = "results/Claudia_samples_variants_wide.tsv", sep = "\t", row.names = F, quote=F)
+heat <- data.wide
+# limit to variants that are present in all samples
+heat_num <- rowSums(heat != 0)
+heat2 <- heat[which(heat_num == ncol(heat)),]
+heat2 <- data.matrix(heat2)
+
+# annotation
+dat$dummy <- 1
+annot.data <- aggregate(dummy ~ sample + mouse.group + day, dat, sum)
+
+heat3.day <- annot.data[match(colnames(heat2), annot.data$sample),]$day
+heat3.mouse.group <- as.character(as.matrix(annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group))
+
+ha = HeatmapAnnotation(group = heat3.mouse.group,
+    col = list(group = c("stably colonized" = "red",
+		"20 OMM mix" = "lightgreen",
+		"40 OMM mix" = "green",
+		"80 OMM mix" = "darkgreen",
+		"2nd generation" = "purple",
+		"40 cecal content" = "brown",
+		"20 cecal content" = "yellow",
+		"Tag 0, von cecal content" = "blue",
+		"Tag 0, vor 20 tage" = "red")))
+
+
+genome <- dat[match(rownames(heat2), dat$variant.id), ]$genome
+
+feature <- dat[match(rownames(heat2), dat$variant.id), ]$feature
+
+ha2 = rowAnnotation(genome = genome, labels = feature)
+
+Heatmap(heat2, name = "AF", top_annotation =ha,
+ right_annotation = ha2,
+  border = TRUE, col = col_fun,
+cluster_columns = T,
+ row_gap = unit(0, "mm"), 
+ column_gap = unit(0, "mm"),
+  column_names_gp = gpar(fontsize =5),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = T,
+ show_column_dend = T
+)
+```
+
+## locations of SNP in genome
+
+```{r,  fig.width=12, fig.height=12}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+p <- ggplot(dat, aes(x= POS, y = AF, color = mouse.group))
+p <- p + facet_grid(chr ~., scales = "free_x", space = "free", shrink = T) 
+p <- p + geom_point(size = .1, shape = ".", alpha = .5) + scale_color_brewer(palette="Dark2")
+p <- p + theme_minimal()
+p <- p + theme_minimal()
+p <- p + theme(strip.background = element_blank(),
+    strip.text.y = element_text(angle=0, color='black'),
+    axis.title.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.line.y = element_blank(),
+    panel.border = element_rect(colour = "black", fill=NA, size=.2),
+  panel.grid.major = element_blank(),
+  panel.grid.minor = element_blank()
+  )
+
+p
+```
+
+
+```{r}
+createPositionPlot <- function(chr = "Akkermansia_muciniphila", threshold = 0.3){
+  require("ggrepel")
+  library(RColorBrewer)
+
+  shapes = group = c("insertion" = "+",
+      "deletion" = "-",
+      "SNP" = "x")
+  dat <- readRDS("data/rds/omm_claudia_new.rds")
+  dat <- dat[which(dat$chr == chr),]
+
+  # sum up AF per position to get a measrue of how interesting a location is (e.g. to filter out for which locations we should show a funcitonal annotation)
+
+  nb.cols <- 9
+  mycolors <- colorRampPalette(brewer.pal(8, "Set2"))(nb.cols)
+
+  dat_sum <- aggregate(AF ~  POS + feature + alteration_type, dat, sum)
+  dat_sum <- dat_sum[which(dat_sum$AF > threshold),]
+  dat_sum$y <- 1
+  numb <- nrow(dat_sum)
+  dat_sum$AF <- sample(1:9, numb, replace = TRUE)/10
+  if(any(dat_sum$feature == "hypothetical protein"))
+    dat_sum[which(dat_sum$feature == "hypothetical protein"),]$feature <- ""
+  if(any(dat_sum$feature == "outside ORFs"))
+    dat_sum[which(dat_sum$feature == "outside ORFs"),]$feature <- ""
+
+  dat_sum$type <- ifelse(dat_sum$feature == "", "hypo", "annotated")
+
+  # get the max AF values per position to get the y coordinate for annotation
+  dat_max <- aggregate(AF ~  POS + feature + alteration_type, dat, max)
+  dat_sum$AF <- dat_max[match(dat_sum$POS, dat_max$POS),]$AF
+
+  p <- ggplot(dat, aes(x= POS, y = AF, shape = alteration_type, label =feature ))
+  p <- p + geom_vline(data = dat_sum, aes(xintercept = POS), alpha =1 , color = "grey90")
+  p <- p + geom_point(aes(color = mouse.group), size = 2) 
+  p <- p + scale_color_manual(values = mycolors)
+  p <- p + ylim(0,1)
+  p <- p + geom_text_repel( min.segment.length = 0,
+      data = dat_sum,  aes(label = feature),
+      size = 2,
+      box.padding = unit(0.35, "lines"),
+      point.padding = unit(0.3, "lines")
+    )
+  p <- p + theme_minimal() 
+  p <- p + scale_shape_manual(values= shapes)
+  p <- p + theme(strip.background = element_blank(),
+      strip.text.y = element_text(angle=0, color='black'),
+      axis.title.y = element_blank(),
+      axis.ticks.y = element_blank(),
+      axis.line.y = element_blank(),
+      panel.border = element_rect(colour = "black", fill=NA, size=.2),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank()
+    )
+  p <- p + ggtitle(genome)
+  return(p)
+}
+
+```
+
+### Akkermansia muciniphila
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Akkermansia_muciniphila")
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+
+### B_caecimuris
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "B_caecimuris", threshold = 0.9)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+
+### Blautia_coccoides
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Blautia_coccoides",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+
+### Clostridioforme
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Clostridioforme",  threshold =1.5)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+
+### F_plautii_1
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "F_plautii_1",  threshold = 2)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+### Muribaculum_intestinale
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Muribaculum_intestinale",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+### T_muris
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "T_muris",  threshold = 2)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+
+### Clostridium_innocuum
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Clostridium_innocuum",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+### Lactobacillus_reuteri_I49_1
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Lactobacillus_reuteri_I49_1",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+### Enterococcus_faecalis.1
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Enterococcus_faecalis",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+### Acutalibacter_muris
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Acutalibacter_muris",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+### Bifidobacterium_animalis_YL2_1
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Bifidobacterium_animalis_YL2_1",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+### Bifidobacterium_animalis_YL2_2
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "Bifidobacterium_animalis_YL2_2",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
+```
+
+### CP028714.1
+
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+p <- createPositionPlot(chr = "CP028714.1",  threshold = 0.6)
+p
+```
+
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+plotly::ggplotly(p)
 ```

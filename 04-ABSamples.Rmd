@@ -711,3 +711,38 @@ ra = anno_barplot(t(qpcr),
     bar_width = 1,gp = gpar(fill = 1:12), height = unit(1.5, "cm"),
      num = anno_lines(colSums(heat3), smooth = TRUE, border = TRUE))))
 ```
+
+
+
+```{r}
+dat <- readRDS("data/rds/omm_ab_with_fixed.rds")
+p <- ggplot(dat, aes(x= POS, y = AF, color = fixed))
+p <- p + facet_grid(chr ~., space = "free_x") + geom_point(size = .1, shape = ".")
+p <- p + theme_minimal()
+p
+```
+
+
+```{r}
+dat <- readRDS("data/rds/omm_ab_with_fixed.rds")
+dat2 <- dat[which(dat$fixed == T),]
+dat2.reduced <- data.frame(chr = dat2$chr, POS = dat2$POS)
+dat3 <- dat2.reduced[duplicated(dat2.reduced), ]
+
+p <- ggplot(dat, aes(x= POS, y = AF, color = day))
+p <- p + facet_wrap(chr ~., shrink = F, strip.position = 'right', ncol = 1) + geom_point(size = .1, shape = ".") 
+
+p <- p + geom_vline(data= dat3, aes(xintercept = POS), color = "red", alpha = .2)
+p <- p + theme_minimal()  + scale_color_viridis_c()
+p <- p + theme(strip.background = element_blank(),
+    strip.text.y = element_text(angle=0, color='black'),
+    axis.title.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    axis.line.y = element_blank(),
+    panel.border = element_blank(),
+  panel.grid.major = element_blank(),
+  panel.grid.minor = element_blank()
+  )
+p
+```
