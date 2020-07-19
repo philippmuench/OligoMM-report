@@ -554,7 +554,7 @@ col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
 Heatmap(heat3, name = "AF", col = col_fun, border = TRUE,
 top_annotation = HeatmapAnnotation(num = anno_lines(colSums(heat3),
 smooth = TRUE,border = TRUE),
-day=anno_simple(heat3.day, pch =heat3.phase2 )),
+day=anno_simple(heat3.day, pch = heat3.phase2 )),
 cluster_columns =F,
 column_order = order(ord$mouse.id, ord$day),
 column_split = heat3.mouse.group,
@@ -622,7 +622,7 @@ plotly::ggplotly(p)
 ```
 
 
-# dendogram
+## dendogram
 
 
 ```{r dendo1, fig.align="center", fig.width=9, fig.height=10, fig.margin=TRUE, eval=F}
@@ -744,5 +744,131 @@ p <- p + theme(strip.background = element_blank(),
   panel.grid.major = element_blank(),
   panel.grid.minor = element_blank()
   )
+p
+```
+
+## Humann3
+
+```{r}
+dat <- read.csv2("Humann3/goup_test.tsv", sep = "\t", header=T)
+dat$Water <- as.numeric(as.matrix(dat$Water))
+dat$Cipro <- as.numeric(as.matrix(dat$Cipro))
+dat$Tetra <- as.numeric(as.matrix(dat$Tetra))
+dat$Vanco <- as.numeric(as.matrix(dat$Vanco))
+dat <- dat[which(dat$Q.value < 0.01), ]
+dat <- as.data.frame(dat)
+dat$Q.value <- as.numeric(as.matrix(dat$Q.value))
+dat$plog <- -log(dat$Q.value)
+require(reshape2)
+dat.m <- melt(dat, id.vars = c("Short", "Feature", "P.value", "Q.value", "plog"))
+p <- ggplot(dat, aes(x = reorder(Feature, plog), y = plog)) 
+p <- p + geom_point() + coord_flip() + theme_minimal()
+p
+```
+
+```{r}
+p <- ggplot(dat.m, aes(x = Feature, y = value, color = variable))
+p <- p + geom_point(shape = 1) + theme_minimal() + coord_flip()
+p <- p + scale_y_log10()
+p
+```
+
+## Uniref
+
+```{r}
+dat <- read.table("Humann3/merged_uniref_renorm_annotated_unstratified_mapped.csv", sep = ";", header=T)
+dat <- as.data.frame(dat)
+dat$Uniref <- NULL
+
+div <- as.data.frame(vegan::diversity(t(dat), index = "shannon"))
+colnames(div) <- "UniRef90"
+rownames(div) <- substring(rownames(div), 2)
+
+div$day <- as.integer(substr(rownames(div), 6, 7))
+div$mouse.id <-  substr(rownames(div), 1, 4)
+div$phase <- binDaysByPhase(as.numeric(as.matrix(div$day)))
+div$phase_num <- binDaysByPhaseGroup(div$day)
+div$mouse.group <- translateMouseIdToTreatmentGroup(div$mouse.id)
+div$mouse.id2  <- paste0(div$mouse.id, "_", div$day)
+# add qpcr based diversity
+qpcr <- read.table("qpcr.csv", header = T, sep = ";")
+qpcr$universal <- NULL
+rownames(qpcr) <- paste0(qpcr$mouse, "_",qpcr$day)
+qpcr <- qpcr[,-c(1:5)]
+
+qpcr <- apply(qpcr, 1, function(x) x/sum(x))
+div2 <- as.data.frame(vegan::diversity(t(qpcr), index = "shannon"))
+colnames(div2) <- "qpcr_shannon"
+
+div$qpcr <- NULL
+div$qpcr <- div2[match(div$mouse.id2, rownames(div2)),]
+
+div.m <- reshape2::melt(div, measure.vars = c("UniRef90", "qpcr") )
+
+p <- ggplot(div.m, aes(x =day,  y = value)) 
+p <- p + geom_point() + theme_minimal() 
+p <- p + facet_grid(variable ~ mouse.group, scales= "free_y") 
+p <- p + geom_line() + ylab("Shannon")
+p <- p + geom_vline(xintercept = c(4, 18, 53, 67))
+p
+```
+
+
+## metaphlan abundance
+
+```{r}
+res <- list()
+files <- Sys.glob("Humann3/abundance/*")
+
+for (file in files) {
+  d <- read.table(file, fill=T, header= T)
+  d$additional_species <- NULL
+	d$day <- as.integer(substr(basename(file), 6, 7))
+  d$mouse <- substr(tools::file_path_sans_ext(basename(file)), 1, 4)
+  d$NCBI_tax_id <- NULL
+  d <- d[grep("s__" , d$clade_name),]
+  d$bug <- sapply(strsplit(d$clade_name, split='|', fixed=TRUE), `[`, 7) 
+  d$clade_name <- NULL
+  res[[file]] <- d
+}
+
+df <- as.data.frame(do.call(rbind, res)) 
+rownames(df) <- NULL
+```
+
+
+```{r, fig.align="center", fig.width=14, fig.height=6, fig.margin=TRUE}
+require(ggplot2)
+library(RColorBrewer)
+df$group <- translateMouseIdToTreatmentGroup(df$mouse)
+
+mycolors <- colorRampPalette(brewer.pal(8, "Dark2"))(length(unique(df$bug)))
+df$sample <- paste0(df$mouse, "_", df$day)
+p <- ggplot(df, aes(x = day, y = relative_abundance, fill = bug))
+p <- p + facet_grid(. ~group,)
+p <- p + geom_bar(stat = "identity") + theme_minimal() + scale_fill_manual(values = mycolors) 
+p <- p + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+p
+```
+
+```{r, fig.align="center", fig.width=14, fig.height=6, fig.margin=TRUE}
+
+data.wide <- dcast(df, bug ~ sample, value.var = "relative_abundance")
+rownames(data.wide) <- data.wide$bug
+data.wide$bug <- NULL
+data.wide[is.na(data.wide)] <- 0
+div3 <- as.data.frame(vegan::diversity(t(data.wide), index = "shannon"))
+
+div$metaphlan <- div3[match(div$mouse.id2, rownames(div3)),]
+
+
+div.m <- reshape2::melt(div, measure.vars = c("UniRef90", "qpcr", "metaphlan") )
+
+p <- ggplot(div.m, aes(x =day,  y = value)) 
+p <- p + geom_point() + theme_minimal() 
+p <- p + facet_grid(variable ~ mouse.group, scales= "free_y") 
+p <- p + geom_line() + ylab("Shannon")
+p <- p + geom_smooth()
+p <- p + geom_vline(xintercept = c(4, 18, 53, 67))
 p
 ```

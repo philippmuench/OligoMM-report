@@ -1,75 +1,75 @@
-# Feature	Level means (|ed)	P-value	Q-value
-LACTOSECAT-PWY: lactose and galactose degradation I	Water:19.12|Cipro:29.53|Tetra:127.8|Vanco:6.173	2.148e-05	0.0004532
-PWY-5367: petroselinate biosynthesis	Water:23.44|Cipro:23.25|Tetra:103.1|Vanco:4.267	2.006e-05	0.0004532
-PWY-5989: stearate biosynthesis II (bacteria and plants)	Water:35.09|Cipro:34.76|Tetra:151.4|Vanco:6.385	2.092e-05	0.0004532
-PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II	Water:2985|Cipro:3129|Tetra:2967|Vanco:1094	1.165e-05	0.0004532
-PWY-7184: pyrimidine deoxyribonucleotides de novo biosynthesis I	Water:1998|Cipro:2113|Tetra:1990|Vanco:731.8	1.555e-05	0.0004532
-PWY-7197: pyrimidine deoxyribonucleotide phosphorylation	Water:1255|Cipro:1337|Tetra:1252|Vanco:454.9	1.62e-05	0.0004532
-PWY-7198: pyrimidine deoxyribonucleotides de novo biosynthesis IV	Water:1544|Cipro:1599|Tetra:1197|Vanco:323.1	8.303e-06	0.0004532
-PWY-7208: superpathway of pyrimidine nucleobases salvage	Water:1792|Cipro:1901|Tetra:1781|Vanco:672.3	1.491e-05	0.0004532
-PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	Water:2687|Cipro:2825|Tetra:2667|Vanco:967.1	1.135e-05	0.0004532
-PWY0-162: superpathway of pyrimidine ribonucleotides de novo biosynthesis	Water:3264|Cipro:3453|Tetra:3211|Vanco:1295	1.207e-05	0.0004532
-DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II	Water:3926|Cipro:4087|Tetra:3555|Vanco:1538	4.296e-05	0.0004731
-PWY-5791: 1,4-dihydroxy-2-naphthoate biosynthesis II (plants)	Water:21.35|Cipro:25.41|Tetra:89.69|Vanco:7.195	4.032e-05	0.0004731
-PWY-5837: 1,4-dihydroxy-2-naphthoate biosynthesis I	Water:21.35|Cipro:25.41|Tetra:89.69|Vanco:7.195	4.032e-05	0.0004731
-PWY-5840: superpathway of menaquinol-7 biosynthesis	Water:70.88|Cipro:83.33|Tetra:273.9|Vanco:23.92	4.056e-05	0.0004731
-PWY-5897: superpathway of menaquinol-11 biosynthesis	Water:63.43|Cipro:75.33|Tetra:258.3|Vanco:21.37	4.484e-05	0.0004731
-PWY-5898: superpathway of menaquinol-12 biosynthesis	Water:63.43|Cipro:75.33|Tetra:258.3|Vanco:21.37	4.484e-05	0.0004731
-PWY-5899: superpathway of menaquinol-13 biosynthesis	Water:63.43|Cipro:75.33|Tetra:258.3|Vanco:21.37	4.484e-05	0.0004731
-PWY-7187: pyrimidine deoxyribonucleotides de novo biosynthesis II	Water:3102|Cipro:3275|Tetra:3126|Vanco:1313	4.224e-05	0.0004731
-PWY0-166: superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis (E. coli)	Water:3123|Cipro:3298|Tetra:3144|Vanco:1316	3.87e-05	0.0004731
-PWY66-409: superpathway of purine nucleotide salvage	Water:44.37|Cipro:82.77|Tetra:250.7|Vanco:29.85	2.773e-05	0.0004731
-PWY-841: superpathway of purine nucleotides de novo biosynthesis I	Water:3817|Cipro:3976|Tetra:3332|Vanco:1482	5.13e-05	0.0005154
-CODH-PWY: reductive acetyl coenzyme A pathway	Water:6.424|Cipro:8.74|Tetra:55.04|Vanco:2.088	6.719e-05	0.0006444
-PWY-7391: isoprene biosynthesis II (engineered)	Water:2.697|Cipro:10.68|Tetra:51.42|Vanco:5.354	0.0001432	0.001313
-PWY-4321: L-glutamate degradation IV	Water:120.8|Cipro:71.75|Tetra:86.56|Vanco:237.5	0.0005601	0.004924
-GLUDEG-I-PWY: GABA shunt	Water:192.3|Cipro:115.4|Tetra:145.1|Vanco:360.5	0.0006607	0.005576
-PWY-6897: thiamin salvage II	Water:611.8|Cipro:653.8|Tetra:1281|Vanco:1377	0.0007055	0.005725
-PWY-7357: thiamin formation from pyrithiamine and oxythiamine (yeast)	Water:545.4|Cipro:584.9|Tetra:1138|Vanco:1223	0.0007831	0.00612
-THISYN-PWY: superpathway of thiamin diphosphate biosynthesis I	Water:1260|Cipro:1335|Tetra:2454|Vanco:2573	0.0008461	0.006376
-PWY0-862: (5Z)-dodec-5-enoate biosynthesis	Water:35.65|Cipro:41.81|Tetra:135.3|Vanco:5.904	0.001636	0.0119
-THISYNARA-PWY: superpathway of thiamin diphosphate biosynthesis III (eukaryotes)	Water:674.4|Cipro:601.7|Tetra:941.6|Vanco:1141	0.002231	0.01569
-PWY-5863: superpathway of phylloquinol biosynthesis	Water:22.42|Cipro:23.61|Tetra:48.32|Vanco:7.717	0.002353	0.01601
-GLYCOLYSIS: glycolysis I (from glucose 6-phosphate)	Water:371.7|Cipro:235.2|Tetra:273.2|Vanco:709	0.002763	0.01767
-PWY-5484: glycolysis II (from fructose 6-phosphate)	Water:368.9|Cipro:234|Tetra:271.6|Vanco:695.6	0.002756	0.01767
-PWY-1861: formaldehyde assimilation II (RuMP Cycle)	Water:342.7|Cipro:421.4|Tetra:825.2|Vanco:745.2	0.003122	0.01937
-PWY-4041: &gamma;-glutamyl cycle	Water:376.2|Cipro:253.7|Tetra:353.7|Vanco:737.8	0.003668	0.02211
-HSERMETANA-PWY: L-methionine biosynthesis III	Water:4650|Cipro:5003|Tetra:5052|Vanco:6485	0.00395	0.02315
-PWY-5136: fatty acid &beta;-oxidation II (peroxisome)	Water:205.3|Cipro:124.6|Tetra:148.2|Vanco:353.7	0.004389	0.02503
-PWY66-400: glycolysis VI (metazoan)	Water:395.2|Cipro:254.1|Tetra:278|Vanco:621.9	0.005198	0.02886
-FAO-PWY: fatty acid &beta;-oxidation I	Water:218.9|Cipro:136.2|Tetra:158.6|Vanco:359.3	0.005832	0.03076
-GLUCONEO-PWY: gluconeogenesis I	Water:604.5|Cipro:394.1|Tetra:430.2|Vanco:929.2	0.005823	0.03076
-PWY-7013: L-1,2-propanediol degradation	Water:771.4|Cipro:606.1|Tetra:591.3|Vanco:1050	0.006951	0.03577
-ANAEROFRUCAT-PWY: homolactic fermentation	Water:935.6|Cipro:618.8|Tetra:685|Vanco:1354	0.008684	0.04261
-P621-PWY: nylon-6 oligomer degradation	Water:17.62|Cipro:28.62|Tetra:59.79|Vanco:9.617	0.00854	0.04261
-PWY-5188: tetrapyrrole biosynthesis I (from glutamate)	Water:2829|Cipro:3151|Tetra:3180|Vanco:4192	0.009601	0.04557
-PWY-6595: superpathway of guanosine nucleotides degradation (plants)	Water:436|Cipro:285.7|Tetra:339.3|Vanco:702	0.009718	0.04557
-PWY-5690: TCA cycle II (plants and fungi)	Water:183.9|Cipro:232.9|Tetra:495.5|Vanco:499.8	0.01006	0.04613
-PWY-621: sucrose degradation III (sucrose invertase)	Water:1256|Cipro:1384|Tetra:1149|Vanco:678.9	0.01271	0.05705
-RUMP-PWY: formaldehyde oxidation I	Water:144.2|Cipro:194.1|Tetra:365.5|Vanco:232.6	0.01922	0.08447
-P185-PWY: formaldehyde assimilation III (dihydroxyacetone cycle)	Water:14.38|Cipro:15.94|Tetra:43.97|Vanco:45.46	0.02113	0.08918
-PWY0-1241: ADP-L-glycero-&beta;-D-manno-heptose biosynthesis	Water:2347|Cipro:2637|Tetra:2389|Vanco:3398	0.02074	0.08918
-PWY-2941: L-lysine biosynthesis II	Water:990.4|Cipro:999.1|Tetra:1340|Vanco:1686	0.02781	0.1151
-P164-PWY: purine nucleobases degradation I (anaerobic)	Water:7777|Cipro:7618|Tetra:6477|Vanco:3953	0.03004	0.1219
-FOLSYN-PWY: superpathway of tetrahydrofolate biosynthesis and salvage	Water:363.8|Cipro:253.6|Tetra:452.9|Vanco:710.3	0.0311	0.1238
-SALVADEHYPOX-PWY: adenosine nucleotides degradation II	Water:1325|Cipro:1436|Tetra:1126|Vanco:716.6	0.03196	0.1249
-PWY-6612: superpathway of tetrahydrofolate biosynthesis	Water:246.6|Cipro:171|Tetra:308.4|Vanco:491.6	0.03272	0.1255
-PWY-6353: purine nucleotides degradation II (aerobic)	Water:2404|Cipro:2529|Tetra:2018|Vanco:1261	0.03404	0.1283
-PWY-5100: pyruvate fermentation to acetate and lactate II	Water:899.5|Cipro:924.1|Tetra:1272|Vanco:1534	0.03608	0.1335
-OANTIGEN-PWY: O-antigen building blocks biosynthesis (E. coli)	Water:891.7|Cipro:885.4|Tetra:1277|Vanco:1452	0.0396	0.1418
-PWY-7234: inosine-5'-phosphate biosynthesis III	Water:287.1|Cipro:235.2|Tetra:468.6|Vanco:560	0.03964	0.1418
-GALACTUROCAT-PWY: D-galacturonate degradation I	Water:1504|Cipro:1594|Tetra:1295|Vanco:955	0.04082	0.1436
-GLUCARDEG-PWY: D-glucarate degradation I	Water:1195|Cipro:1324|Tetra:1055|Vanco:663.8	0.04366	0.1439
-PWY-6305: putrescine biosynthesis IV	Water:738.5|Cipro:828.5|Tetra:657.3|Vanco:410	0.0436	0.1439
-PWY-7242: D-fructuronate degradation	Water:145.5|Cipro:181.1|Tetra:304|Vanco:139.2	0.04255	0.1439
-TEICHOICACID-PWY: teichoic acid (poly-glycerol) biosynthesis	Water:19.62|Cipro:26.3|Tetra:37.73|Vanco:10.84	0.04279	0.1439
-GLUCUROCAT-PWY: superpathway of &beta;-D-glucuronide and D-glucuronate degradation	Water:215.7|Cipro:267.8|Tetra:442.7|Vanco:204.1	0.04527	0.147
-PWY0-1298: superpathway of pyrimidine deoxyribonucleosides degradation	Water:1557|Cipro:1682|Tetra:1463|Vanco:994.5	0.04854	0.1552
-HEMESYN2-PWY: heme biosynthesis II (anaerobic)	Water:96.32|Cipro:68.27|Tetra:59.77|Vanco:102.3	0.04933	0.1553
-PWY66-367: ketogenesis	Water:22.1|Cipro:21.67|Tetra:34.63|Vanco:9.034	0.05163	0.1602
-UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I	Water:711.4|Cipro:685.2|Tetra:979.7|Vanco:1112	0.05252	0.1606
-PWY-7383: anaerobic energy metabolism (invertebrates, cytosol)	Water:4072|Cipro:4314|Tetra:4168|Vanco:5312	0.0534	0.161
-PENTOSE-P-PWY: pentose phosphate pathway	Water:3244|Cipro:3555|Tetra:3303|Vanco:2077	0.05511	0.1638
-PWY-5910: superpathway of geranylgeranyldiphosphate biosynthesis I (via mevalonate)	Water:73.48|Cipro:50.22|Tetra:88.6|Vanco:146.7	0.06278	0.184
-PWY-5022: 4-aminobutanoate degradation V	Water:141.1|Cipro:84.86|Tetra:93.96|Vanco:176.6	0.06734	0.1946
-PWY-7209: superpathway of pyrimidine ribonucleosides degradation	Water:101.4|Cipro:58.88|Tetra:69.5|Vanco:56.08	0.0685	0.1953
+Short	Feature	Water	Cipro	Tetra	Vanco	P-value	Q-value
+LACTOSECAT-PWY	lactose and galactose degradation I	19.12	29.53	127.8	6.173	2.148e-05	0.0004532
+PWY-5367	petroselinate biosynthesis	23.44	23.25	103.1	4.267	2.006e-05	0.0004532
+PWY-5989	stearate biosynthesis II (bacteria and plants)	35.09	34.76	151.4	6.385	2.092e-05	0.0004532
+PWY-6125	superpathway of guanosine nucleotides de novo biosynthesis II	2985	3129	2967	1094	1.165e-05	0.0004532
+PWY-7184	pyrimidine deoxyribonucleotides de novo biosynthesis I	1998	2113	1990	731.8	1.555e-05	0.0004532
+PWY-7197	pyrimidine deoxyribonucleotide phosphorylation	1255	1337	1252	454.9	1.62e-05	0.0004532
+PWY-7198	pyrimidine deoxyribonucleotides de novo biosynthesis IV	1544	1599	1197	323.1	8.303e-06	0.0004532
+PWY-7208	superpathway of pyrimidine nucleobases salvage	1792	1901	1781	672.3	1.491e-05	0.0004532
+PWY-7228	superpathway of guanosine nucleotides de novo biosynthesis I	2687	2825	2667	967.1	1.135e-05	0.0004532
+PWY0-162	superpathway of pyrimidine ribonucleotides de novo biosynthesis	3264	3453	3211	1295	1.207e-05	0.0004532
+DENOVOPURINE2-PWY	superpathway of purine nucleotides de novo biosynthesis II	3926	4087	3555	1538	4.296e-05	0.0004731
+PWY-5791	1,4-dihydroxy-2-naphthoate biosynthesis II (plants)	21.35	25.41	89.69	7.195	4.032e-05	0.0004731
+PWY-5837	1,4-dihydroxy-2-naphthoate biosynthesis I	21.35	25.41	89.69	7.195	4.032e-05	0.0004731
+PWY-5840	superpathway of menaquinol-7 biosynthesis	70.88	83.33	273.9	23.92	4.056e-05	0.0004731
+PWY-5897	superpathway of menaquinol-11 biosynthesis	63.43	75.33	258.3	21.37	4.484e-05	0.0004731
+PWY-5898	superpathway of menaquinol-12 biosynthesis	63.43	75.33	258.3	21.37	4.484e-05	0.0004731
+PWY-5899	superpathway of menaquinol-13 biosynthesis	63.43	75.33	258.3	21.37	4.484e-05	0.0004731
+PWY-7187	pyrimidine deoxyribonucleotides de novo biosynthesis II	3102	3275	3126	1313	4.224e-05	0.0004731
+PWY0-166	superpathway of pyrimidine deoxyribonucleotides de novo biosynthesis (E. coli)	3123	3298	3144	1316	3.87e-05	0.0004731
+PWY66-409	superpathway of purine nucleotide salvage	44.37	82.77	250.7	29.85	2.773e-05	0.0004731
+PWY-841	superpathway of purine nucleotides de novo biosynthesis I	3817	3976	3332	1482	5.13e-05	0.0005154
+CODH-PWY	reductive acetyl coenzyme A pathway	6.424	8.74	55.04	2.088	6.719e-05	0.0006444
+PWY-7391	isoprene biosynthesis II (engineered)	2.697	10.68	51.42	5.354	0.0001432	0.001313
+PWY-4321	L-glutamate degradation IV	120.8	71.75	86.56	237.5	0.0005601	0.004924
+GLUDEG-I-PWY	GABA shunt	192.3	115.4	145.1	360.5	0.0006607	0.005576
+PWY-6897	thiamin salvage II	611.8	653.8	1281	1377	0.0007055	0.005725
+PWY-7357	thiamin formation from pyrithiamine and oxythiamine (yeast)	545.4	584.9	1138	1223	0.0007831	0.00612
+THISYN-PWY	superpathway of thiamin diphosphate biosynthesis I	1260	1335	2454	2573	0.0008461	0.006376
+PWY0-862	(5Z)-dodec-5-enoate biosynthesis	35.65	41.81	135.3	5.904	0.001636	0.0119
+THISYNARA-PWY	superpathway of thiamin diphosphate biosynthesis III (eukaryotes)	674.4	601.7	941.6	1141	0.002231	0.01569
+PWY-5863	superpathway of phylloquinol biosynthesis	22.42	23.61	48.32	7.717	0.002353	0.01601
+GLYCOLYSIS	glycolysis I (from glucose 6-phosphate)	371.7	235.2	273.2	709	0.002763	0.01767
+PWY-5484	glycolysis II (from fructose 6-phosphate)	368.9	234	271.6	695.6	0.002756	0.01767
+PWY-1861	formaldehyde assimilation II (RuMP Cycle)	342.7	421.4	825.2	745.2	0.003122	0.01937
+PWY-4041	&gamma;-glutamyl cycle	376.2	253.7	353.7	737.8	0.003668	0.02211
+HSERMETANA-PWY	L-methionine biosynthesis III	4650	5003	5052	6485	0.00395	0.02315
+PWY-5136	fatty acid &beta;-oxidation II (peroxisome)	205.3	124.6	148.2	353.7	0.004389	0.02503
+PWY66-400	glycolysis VI (metazoan)	395.2	254.1	278	621.9	0.005198	0.02886
+FAO-PWY	fatty acid &beta;-oxidation I	218.9	136.2	158.6	359.3	0.005832	0.03076
+GLUCONEO-PWY	gluconeogenesis I	604.5	394.1	430.2	929.2	0.005823	0.03076
+PWY-7013	L-1,2-propanediol degradation	771.4	606.1	591.3	1050	0.006951	0.03577
+ANAEROFRUCAT-PWY	homolactic fermentation	935.6	618.8	685	1354	0.008684	0.04261
+P621-PWY	nylon-6 oligomer degradation	17.62	28.62	59.79	9.617	0.00854	0.04261
+PWY-5188	tetrapyrrole biosynthesis I (from glutamate)	2829	3151	3180	4192	0.009601	0.04557
+PWY-6595	superpathway of guanosine nucleotides degradation (plants)	436	285.7	339.3	702	0.009718	0.04557
+PWY-5690	TCA cycle II (plants and fungi)	183.9	232.9	495.5	499.8	0.01006	0.04613
+PWY-621	sucrose degradation III (sucrose invertase)	1256	1384	1149	678.9	0.01271	0.05705
+RUMP-PWY	formaldehyde oxidation I	144.2	194.1	365.5	232.6	0.01922	0.08447
+P185-PWY	formaldehyde assimilation III (dihydroxyacetone cycle)	14.38	15.94	43.97	45.46	0.02113	0.08918
+PWY0-1241	ADP-L-glycero-&beta;-D-manno-heptose biosynthesis	2347	2637	2389	3398	0.02074	0.08918
+PWY-2941	L-lysine biosynthesis II	990.4	999.1	1340	1686	0.02781	0.1151
+P164-PWY	purine nucleobases degradation I (anaerobic)	7777	7618	6477	3953	0.03004	0.1219
+FOLSYN-PWY	superpathway of tetrahydrofolate biosynthesis and salvage	363.8	253.6	452.9	710.3	0.0311	0.1238
+SALVADEHYPOX-PWY	adenosine nucleotides degradation II	1325	1436	1126	716.6	0.03196	0.1249
+PWY-6612	superpathway of tetrahydrofolate biosynthesis	246.6	171	308.4	491.6	0.03272	0.1255
+PWY-6353	purine nucleotides degradation II (aerobic)	2404	2529	2018	1261	0.03404	0.1283
+PWY-5100	pyruvate fermentation to acetate and lactate II	899.5	924.1	1272	1534	0.03608	0.1335
+OANTIGEN-PWY	O-antigen building blocks biosynthesis (E. coli)	891.7	885.4	1277	1452	0.0396	0.1418
+PWY-7234	inosine-5'-phosphate biosynthesis III	287.1	235.2	468.6	560	0.03964	0.1418
+GALACTUROCAT-PWY	D-galacturonate degradation I	1504	1594	1295	955	0.04082	0.1436
+GLUCARDEG-PWY	D-glucarate degradation I	1195	1324	1055	663.8	0.04366	0.1439
+PWY-6305	putrescine biosynthesis IV	738.5	828.5	657.3	410	0.0436	0.1439
+PWY-7242	D-fructuronate degradation	145.5	181.1	304	139.2	0.04255	0.1439
+TEICHOICACID-PWY	teichoic acid (poly-glycerol) biosynthesis	19.62	26.3	37.73	10.84	0.04279	0.1439
+GLUCUROCAT-PWY	superpathway of &beta;-D-glucuronide and D-glucuronate degradation	215.7	267.8	442.7	204.1	0.04527	0.147
+PWY0-1298	superpathway of pyrimidine deoxyribonucleosides degradation	1557	1682	1463	994.5	0.04854	0.1552
+HEMESYN2-PWY	heme biosynthesis II (anaerobic)	96.32	68.27	59.77	102.3	0.04933	0.1553
+PWY66-367	ketogenesis	22.1	21.67	34.63	9.034	0.05163	0.1602
+UDPNAGSYN-PWY	UDP-N-acetyl-D-glucosamine biosynthesis I	711.4	685.2	979.7	1112	0.05252	0.1606
+PWY-7383	anaerobic energy metabolism (invertebrates, cytosol)	4072	4314	4168	5312	0.0534	0.161
+PENTOSE-P-PWY	pentose phosphate pathway	3244	3555	3303	2077	0.05511	0.1638
+PWY-5910	superpathway of geranylgeranyldiphosphate biosynthesis I (via mevalonate)	73.48	50.22	88.6	146.7	0.06278	0.184
+PWY-5022	4-aminobutanoate degradation V	141.1	84.86	93.96	176.6	0.06734	0.1946
+PWY-7209	superpathway of pyrimidine ribonucleosides degradation	101.4	58.88	69.5	56.08	0.0685	0.1953
