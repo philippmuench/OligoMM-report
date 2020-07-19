@@ -263,7 +263,7 @@ cluster_columns = T,
 
 Variants that are non-zero in every sample (e.g. observed as a variant)
 
-```{r}
+```{r, fig.width=12, fig.height=12}
 dat <- readRDS("data/rds/omm_claudia_new.rds")
 dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
 data.wide <- dcast(dat, variant.id ~ sample, value.var = "AF")
@@ -271,7 +271,7 @@ data.wide[is.na(data.wide)] <- 0
 rownames(data.wide) <-  data.wide$variant.id
 data.wide$variant.id <- NULL
 nrow(data.wide)
-write.table(data.wide, file = "results/Claudia_samples_variants_wide.tsv", sep = "\t", row.names = F, quote=F)
+write.table(data.wide, file = "results/Claudia_samples_variants_wide.tsv", sep = "\t", row.names = T, quote=F)
 heat <- data.wide
 # limit to variants that are present in all samples
 heat_num <- rowSums(heat != 0)
@@ -403,147 +403,147 @@ createPositionPlot <- function(chr = "Akkermansia_muciniphila", threshold = 0.3)
 
 ### Akkermansia muciniphila
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Akkermansia_muciniphila")
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 
 ### B_caecimuris
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "B_caecimuris", threshold = 0.9)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 
 ### Blautia_coccoides
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Blautia_coccoides",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 
 ### Clostridioforme
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Clostridioforme",  threshold =1.5)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 
 ### F_plautii_1
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "F_plautii_1",  threshold = 2)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 ### Muribaculum_intestinale
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Muribaculum_intestinale",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 ### T_muris
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "T_muris",  threshold = 2)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 
 ### Clostridium_innocuum
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Clostridium_innocuum",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 ### Lactobacillus_reuteri_I49_1
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Lactobacillus_reuteri_I49_1",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 ### Enterococcus_faecalis.1
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Enterococcus_faecalis",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 ### Acutalibacter_muris
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Acutalibacter_muris",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 ### Bifidobacterium_animalis_YL2_1
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Bifidobacterium_animalis_YL2_1",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 ### Bifidobacterium_animalis_YL2_2
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "Bifidobacterium_animalis_YL2_2",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
 
 ### CP028714.1
 
-```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=8}
+```{r, fig.cap="Position of variants. vertical lines show positions with functional annotation, if no annotation is shown, then its either hypothetical or outside ORF", fig.width=12, fig.height=5}
 p <- createPositionPlot(chr = "CP028714.1",  threshold = 0.6)
 p
 ```
 
-```{r, fig.cap="Position of variants", fig.width=10, fig.height=6}
+```{r, fig.cap="Position of variants", fig.width=10, fig.height=5}
 plotly::ggplotly(p)
 ```
