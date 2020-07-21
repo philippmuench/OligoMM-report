@@ -117,7 +117,7 @@ vcf_samples$alteration <- paste(as.character(vcf_samples$REF), "->",as.character
 vcf_samples$alteration_type <- "SNP"
 vcf_samples[which(vcf_samples$ref_size < vcf_samples$alt_size), ]$alteration_type <- "insertion"
 vcf_samples[which(vcf_samples$ref_size > vcf_samples$alt_size), ]$alteration_type <- "deletion"
-saveRDS(vcf_samples, file = "data/rds/omm_claudia_new.rds")
+saveRDS(vcf_samples, file = "data/rds/omm_claudia_new.rds") # unfiltered version
 ```
 
 ## Filter out of abnormal high mutation
@@ -146,7 +146,7 @@ dat_outlier <- which(dat$alteration_type == "SNP" &
 	dat$sample %in% affected_samples &
 	(dat$alteration == "C -> A" | dat$alteration == "G -> T"))
 dat_corrected <- dat[-dat_outlier,]
-saveRDS(dat_corrected, file = "data/rds/omm_claudia_new.rds")
+saveRDS(dat_corrected, file = "data/rds/omm_claudia_new.rds") # filtered mutation bias
 write.table(dat_corrected, file = "results/Claudia_samples_variants_long.tsv", sep = "\t", quote = F, row.names=F)
 nrow(dat_corrected) # number of variants in total
 ```
@@ -209,13 +209,24 @@ p <- p + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
 p
 ```
 
+## Filter out low AF variants
+
+```{r}
+dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat_filtered <- dat[which(dat$AF >= 0.25),]
+saveRDS(dat_filtered, file = "data/rds/omm_claudia_new_10percent.rds")
+```
+
+
+Every analysis and plot which comes below is now filtered and includes only variants with a AF >=25%
+
 ## Heatmap
 
 ```{r heatmap-claudia-1, fig.cap="AF of all variants (after mutation bias filtering)", fig.align="center", fig.width=9, fig.height=20, fig.margin=TRUE}
 library(circlize)
 library(ComplexHeatmap)
 
-dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat <- readRDS("data/rds/omm_claudia_new_10percent.rds")
 dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
 data.wide <- dcast(dat, variant.id ~ sample, value.var = "AF")
 data.wide[is.na(data.wide)] <- 0
@@ -234,6 +245,10 @@ annot.data <- aggregate(dummy ~ sample + mouse.group + day, dat, sum)
 heat3.day <- annot.data[match(colnames(heat2), annot.data$sample),]$day
 heat3.mouse.group <- as.character(as.matrix(annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group))
 
+genome <- dat[match(rownames(heat2), dat$variant.id), ]$genome
+
+ha2 = rowAnnotation(genome = genome)
+
 #data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
 
 col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
@@ -250,7 +265,64 @@ ha = HeatmapAnnotation(group = heat3.mouse.group,
 		"Tag 0, vor 20 tage" = "red")))
 
 Heatmap(heat2, name = "AF",top_annotation =ha,
-  border = TRUE, col = col_fun,
+  border = TRUE, col = col_fun, right_annotation = ha2,
+cluster_columns = T,
+ row_gap = unit(0, "mm"), column_gap = unit(0, "mm"),
+  column_names_gp = gpar(fontsize =5),
+ row_names_gp = gpar(fontsize = 3),
+ show_row_dend = F,
+  show_row_names = F,
+ show_column_dend = T
+)
+```
+
+## one genome
+
+```{r heatmap-claudia-1-one, fig.cap="AF of all variants (after mutation bias filtering)", fig.align="center", fig.width=9, fig.height=20, fig.margin=TRUE}
+library(circlize)
+library(ComplexHeatmap)
+
+dat <- readRDS("data/rds/omm_claudia_new_10percent.rds")
+dat <- dat[dat$genome_hr == "B. coccoides",]
+dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
+data.wide <- dcast(dat, variant.id ~ sample, value.var = "AF")
+data.wide[is.na(data.wide)] <- 0
+rownames(data.wide) <-  data.wide$variant.id
+data.wide$variant.id <- NULL
+
+heat <- data.matrix(data.wide)
+heat2 <- heat
+# limit to variants that are present in at least 10% of samples
+#heat_num <- rowSums(heat != 0)
+#heat2 <- heat[which(heat_num > ncol(heat)/10),]
+
+dat$dummy <- 1
+annot.data <- aggregate(dummy ~ sample + mouse.group + day, dat, sum)
+
+heat3.day <- annot.data[match(colnames(heat2), annot.data$sample),]$day
+heat3.mouse.group <- as.character(as.matrix(annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group))
+
+genome <- dat[match(rownames(heat2), dat$variant.id), ]$genome
+
+ha2 = rowAnnotation(genome = genome)
+
+#data.wide.sub <- dat[match(colnames(heat3), dat$sample.id),]
+
+col_fun = colorRamp2(c(0, 0.5, 1), c("white", "yellow", "red"))
+
+ha = HeatmapAnnotation(group = heat3.mouse.group,
+    col = list(group = c("stably colonized" = "red",
+		"20 OMM mix" = "lightgreen",
+		"40 OMM mix" = "green",
+		"80 OMM mix" = "darkgreen",
+		"2nd generation" = "purple",
+		"40 cecal content" = "brown",
+		"20 cecal content" = "yellow",
+		"Tag 0, von cecal content" = "blue",
+		"Tag 0, vor 20 tage" = "red")))
+
+Heatmap(heat2, name = "AF",top_annotation =ha,
+  border = TRUE, col = col_fun, right_annotation = ha2,
 cluster_columns = T,
  row_gap = unit(0, "mm"), column_gap = unit(0, "mm"),
   column_names_gp = gpar(fontsize =5),
@@ -264,7 +336,7 @@ cluster_columns = T,
 Variants that are non-zero in every sample (e.g. observed as a variant)
 
 ```{r, fig.width=12, fig.height=12}
-dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat <- readRDS("data/rds/omm_claudia_new_10percent.rds")
 dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
 data.wide <- dcast(dat, variant.id ~ sample, value.var = "AF")
 data.wide[is.na(data.wide)] <- 0
@@ -317,10 +389,220 @@ cluster_columns = T,
 )
 ```
 
+
+
+```{r, fig.width=12, fig.height=12}
+genomeHeat <- function(genome, nohyp = F){
+  dat <- readRDS("data/rds/omm_claudia_new_10percent.rds")
+  dat$dummy <- 1
+
+  annot.data <- aggregate(dummy ~ sample + mouse.group + day, dat, sum)
+
+  dat$variant.id <- paste0(dat$POS, "-", dat$REF, "-", dat$ALT)
+  dat <- dat[which(dat$genome_hr == genome),]
+  if (nohyp){
+    dat <- dat[which(dat$feature != "hypothetical protein"),]
+    dat <- dat[which(dat$feature != "outside ORFs"),]
+  }
+  `%nin%` = Negate(`%in%`)
+
+  data.wide <- reshape2::dcast(dat, variant.id ~ sample, value.var = "AF")
+  # add missing columns
+
+colorder <- c("I_mix_S45",
+                "1607_S23", "1612_S24", "1877_S25",
+                "1660_S26", "1750_S27", "1664_S28" , "1753_S29",
+                "1779_S30", "1783_S31",
+                "1789_S32", "1801_S33",
+                "I_cc_S46",
+                "1880_S37", "1881_S38", "1882_S39", "1883_S40", "1884_S41", "1885_S36", 
+                "1807_S42", "1814_S43", "1815_S44",
+                "1423_S34", "1425_S35")
+  
+  namevector <- colorder[colorder %nin% colnames(data.wide)]
+  data.wide[ , namevector] <- 0
+  setcolorder(data.wide, colorder)
+
+  data.wide[is.na(data.wide)] <- 0
+  rownames(data.wide) <-  data.wide$variant.id
+  data.wide$variant.id <- NULL
+  nrow(data.wide)
+  heat <- data.wide
+  heat2 <- data.matrix(heat)
+
+  # annotation
+  colorder2 <- c("1-",
+                "2-", "2-", "2-",
+                "3-", "3-", "3-" , "3-",
+                "4-", "4-",
+                "5-", "5-",
+                "6-",
+                "7-", "7-", "7-", "7-", "7-", "7-", 
+                "8-", "8-", "8-",
+                "9-", "9-")
+
+  heat3.day <- annot.data[match(colnames(heat2), annot.data$sample),]$day
+  heat3.mouse.group <- as.character(as.matrix(annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group))
+
+  ha = HeatmapAnnotation(group = heat3.mouse.group,
+      col = list(group = c("stably colonized" = "red",
+      "20 OMM mix" = "lightgreen",
+      "40 OMM mix" = "green",
+      "80 OMM mix" = "darkgreen",
+      "2nd generation" = "purple",
+      "40 cecal content" = "brown",
+      "20 cecal content" = "yellow",
+      "Tag 0, von cecal content" = "blue",
+      "Tag 0, vor 20 tage" = "black")))
+
+  feature <- dat[match(rownames(heat2), dat$variant.id), ]$feature
+
+  rownames(heat2) <- paste0(rownames(heat2), " ",feature )
+
+  # colnames to group mapping
+  clusters <- annot.data[match(colnames(heat2), annot.data$sample),]$mouse.group
+  cluster2 <- paste0(colorder2, clusters)
+  if (nohyp){
+    ha <- Heatmap(heat2, name = "AF", top_annotation =ha,
+    #right_annotation = ha2,
+    column_title = genome,  
+    border = TRUE, col = col_fun,
+    cluster_columns = F,
+    row_gap = unit(0, "mm"), 
+    column_split = cluster2,
+    cluster_column_slices = F,
+    column_gap = unit(0, "mm"),
+    column_names_gp = gpar(fontsize =5),
+    row_names_gp = gpar(fontsize = 5),
+    show_row_dend = F,
+    show_row_names = T,
+    show_column_dend = T
+  )
+  } else {
+    ha <- Heatmap(heat2, name = "AF", top_annotation =ha,
+      #right_annotation = ha2,
+      column_title = genome,  
+      border = TRUE, col = col_fun,
+      cluster_columns = F,
+      row_gap = unit(0, "mm"), 
+      column_split = cluster2,
+      cluster_column_slices = F,
+      column_gap = unit(0, "mm"),
+      column_names_gp = gpar(fontsize =5),
+      row_names_gp = gpar(fontsize = 3),
+      show_row_dend = F,
+      show_row_names = T,
+      show_column_dend = T
+  )
+  }
+  
+  return(ha)
+}
+
+```
+
+### A. muciniphila
+
+```{r,  fig.width=12, fig.height=12}
+genomeHeat(genome = "A. muciniphila")
+```
+
+### B. caecimuris
+
+```{r,  fig.width=12, fig.height=22}
+genomeHeat(genome = "B. caecimuris")
+```
+
+### B. coccoides
+
+```{r,  fig.width=12, fig.height=22}
+genomeHeat(genome = "B. coccoides")
+```
+
+### C. clostridioforme
+
+```{r,  fig.width=12, fig.height=22}
+genomeHeat(genome = "C. clostridioforme")
+```
+
+### F. plautii
+
+```{r,  fig.width=12, fig.height=32}
+genomeHeat(genome = "F. plautii")
+```
+
+### M. intestinale
+
+```{r,  fig.width=12, fig.height=12}
+genomeHeat(genome =  "M. intestinale")
+```
+
+### T. muris
+
+```{r,  fig.width=12, fig.height=22}
+genomeHeat(genome =  "T. muris")
+```
+
+###  C. innocuum
+
+```{r,  fig.width=12, fig.height=12}
+genomeHeat(genome =  "C. innocuum" )
+```
+
+### L. reuteri
+
+```{r,  fig.width=12, fig.height=12}
+genomeHeat(genome =  "L. reuteri" )
+```
+
+### Mt1B1
+
+```{r,  fig.width=12, fig.height=12}
+genomeHeat(genome =  "Mt1B1" )
+```
+
+###  E. faecalis
+
+```{r,  fig.width=12, fig.height=6}
+genomeHeat(genome =  "E. faecalis" )
+```
+
+### A. muris
+
+```{r,  fig.width=12, fig.height=5}
+genomeHeat(genome =  "A. muris" )
+```
+
+### B. longum
+
+```{r,  fig.width=12, fig.height=7}
+genomeHeat(genome =  "B. longum" )
+```
+
+###  create it as pdf
+
+```{r}
+pdf("heatmaps_no_hyp.pdf", width = 10, height = 20)
+genomeHeat(genome = "A. muciniphila", nohyp=T)
+genomeHeat(genome = "B. caecimuris", nohyp=T)
+genomeHeat(genome = "B. coccoides", nohyp=T)
+genomeHeat(genome = "C. clostridioforme", nohyp=T)
+genomeHeat(genome = "F. plautii", nohyp=T)
+genomeHeat(genome =  "M. intestinale", nohyp=T)
+genomeHeat(genome =  "T. muris", nohyp=T)
+genomeHeat(genome =  "C. innocuum", nohyp=T)
+genomeHeat(genome =  "L. reuteri", nohyp=T)
+genomeHeat(genome =  "Mt1B1", nohyp=T)
+genomeHeat(genome =  "E. faecalis", nohyp=T)
+genomeHeat(genome =  "A. muris", nohyp=T)
+genomeHeat(genome =  "B. longum", nohyp=T)
+dev.off()
+```
+
 ## locations of SNP in genome
 
 ```{r,  fig.width=12, fig.height=12}
-dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat <- readRDS("data/rds/omm_claudia_new_10percent.rds")
 p <- ggplot(dat, aes(x= POS, y = AF, color = mouse.group))
 p <- p + facet_grid(chr ~., scales = "free_x", space = "free", shrink = T) 
 p <- p + geom_point(size = .1, shape = ".", alpha = .5) + scale_color_brewer(palette="Dark2")
@@ -349,7 +631,7 @@ createPositionPlot <- function(chr = "Akkermansia_muciniphila", threshold = 0.3)
   shapes = group = c("insertion" = "+",
       "deletion" = "-",
       "SNP" = "x")
-  dat <- readRDS("data/rds/omm_claudia_new.rds")
+dat <- readRDS("data/rds/omm_claudia_new_10percent.rds")
   dat <- dat[which(dat$chr == chr),]
 
   # sum up AF per position to get a measrue of how interesting a location is (e.g. to filter out for which locations we should show a funcitonal annotation)

@@ -821,13 +821,14 @@ res <- list()
 files <- Sys.glob("Humann3/abundance/*")
 
 for (file in files) {
+  message(file)
   d <- read.table(file, fill=T, header= T)
   d$additional_species <- NULL
 	d$day <- as.integer(substr(basename(file), 6, 7))
   d$mouse <- substr(tools::file_path_sans_ext(basename(file)), 1, 4)
   d$NCBI_tax_id <- NULL
   d <- d[grep("s__" , d$clade_name),]
-  d$bug <- sapply(strsplit(d$clade_name, split='|', fixed=TRUE), `[`, 7) 
+  d$bug <- sapply(strsplit(as.character(as.matrix(d$clade_name)), split='|', fixed=TRUE), `[`, 7) 
   d$clade_name <- NULL
   res[[file]] <- d
 }

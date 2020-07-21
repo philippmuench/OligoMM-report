@@ -46,6 +46,30 @@ if (knitr::is_html_output()) {
 # Setup {#Setup}
 
 ## Installation 
+```{r, eval = F}
+devtools::install_github(repo="knausb/vcfR") # removed from CRAN
+devtools::install_github("jokergoo/ComplexHeatmap")
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("rtracklayer")
+install.packages("rmdformats")
+install.packages("ggplot2")
+install.packages("reshape2")
+install.packages("ggridges")
+install.packages("data.table")
+install.packages("knitr")
+install.packages("kableExtra")
+install.packages("plotly")
+install.packages("DT")
+install.packages("circlize")
+install.packages("ComplexHeatmap")
+install.packages("rtracklayer")
+install.packages("bookdown")
+install.packages("XML")
+install.packages("randomcoloR")
+install.packages("ggrepel")
+devtools::install_github(repo="omegahat/XML") # needs `brew install libxml2` on macos
+```
 
 ```{r, results="hide"}
 rm(list = ls())
@@ -63,6 +87,8 @@ library("DT")
 library("circlize")
 library("ComplexHeatmap")
 library("rtracklayer")
+library("ggrepel")
+library("randomcoloR")
 library("bookdown")
 ```
 
