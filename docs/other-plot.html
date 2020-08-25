@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 7 other plot | OMM report</title>
+  <meta name="description" content="Section 7 other plot | OMM report" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 7 other plot | OMM report" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 7 other plot | OMM report" />
+  
+  
+  
+
+<meta name="author" content="Philipp C. Muench" />
+
+
+<meta name="date" content="2020-08-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="snp-decomposition.html"/>
+<link rel="next" href="process-kraken-output.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Setup</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#installation"><i class="fa fa-check"></i><b>1.1</b> Installation</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#generate-report"><i class="fa fa-check"></i><b>1.2</b> Generate report</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="claudia-samples.html"><a href="claudia-samples.html"><i class="fa fa-check"></i><b>2</b> Claudia Samples</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="claudia-samples.html"><a href="claudia-samples.html#experiment"><i class="fa fa-check"></i><b>2.1</b> Experiment</a></li>
+<li class="chapter" data-level="2.2" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a></li>
+<li class="chapter" data-level="2.3" data-path="claudia-samples.html"><a href="claudia-samples.html#oligomm"><i class="fa fa-check"></i><b>2.3</b> OligoMM</a></li>
+<li class="chapter" data-level="2.4" data-path="claudia-samples.html"><a href="claudia-samples.html#load-in-variants"><i class="fa fa-check"></i><b>2.4</b> Load in variants</a></li>
+<li class="chapter" data-level="2.5" data-path="claudia-samples.html"><a href="claudia-samples.html#filter-out-of-abnormal-high-mutation"><i class="fa fa-check"></i><b>2.5</b> Filter out of abnormal high mutation</a></li>
+<li class="chapter" data-level="2.6" data-path="claudia-samples.html"><a href="claudia-samples.html#af-frequency"><i class="fa fa-check"></i><b>2.6</b> AF frequency</a></li>
+<li class="chapter" data-level="2.7" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-group"><i class="fa fa-check"></i><b>2.7</b> number of variants per group</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-treatment-group"><i class="fa fa-check"></i><b>2.7.1</b> number of variants per treatment group</a></li>
+<li class="chapter" data-level="2.7.2" data-path="claudia-samples.html"><a href="claudia-samples.html#deletion"><i class="fa fa-check"></i><b>2.7.2</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="claudia-samples.html"><a href="claudia-samples.html#filter-out-low-af-variants"><i class="fa fa-check"></i><b>2.8</b> Filter out low AF variants</a></li>
+<li class="chapter" data-level="2.9" data-path="claudia-samples.html"><a href="claudia-samples.html#heatmap"><i class="fa fa-check"></i><b>2.9</b> Heatmap</a></li>
+<li class="chapter" data-level="2.10" data-path="claudia-samples.html"><a href="claudia-samples.html#one-genome"><i class="fa fa-check"></i><b>2.10</b> one genome</a>
+<ul>
+<li class="chapter" data-level="2.10.1" data-path="claudia-samples.html"><a href="claudia-samples.html#a.-muciniphila"><i class="fa fa-check"></i><b>2.10.1</b> A. muciniphila</a></li>
+<li class="chapter" data-level="2.10.2" data-path="claudia-samples.html"><a href="claudia-samples.html#b.-caecimuris"><i class="fa fa-check"></i><b>2.10.2</b> B. caecimuris</a></li>
+<li class="chapter" data-level="2.10.3" data-path="claudia-samples.html"><a href="claudia-samples.html#b.-coccoides"><i class="fa fa-check"></i><b>2.10.3</b> B. coccoides</a></li>
+<li class="chapter" data-level="2.10.4" data-path="claudia-samples.html"><a href="claudia-samples.html#c.-clostridioforme"><i class="fa fa-check"></i><b>2.10.4</b> C. clostridioforme</a></li>
+<li class="chapter" data-level="2.10.5" data-path="claudia-samples.html"><a href="claudia-samples.html#f.-plautii"><i class="fa fa-check"></i><b>2.10.5</b> F. plautii</a></li>
+<li class="chapter" data-level="2.10.6" data-path="claudia-samples.html"><a href="claudia-samples.html#m.-intestinale"><i class="fa fa-check"></i><b>2.10.6</b> M. intestinale</a></li>
+<li class="chapter" data-level="2.10.7" data-path="claudia-samples.html"><a href="claudia-samples.html#t.-muris"><i class="fa fa-check"></i><b>2.10.7</b> T. muris</a></li>
+<li class="chapter" data-level="2.10.8" data-path="claudia-samples.html"><a href="claudia-samples.html#c.-innocuum"><i class="fa fa-check"></i><b>2.10.8</b> C. innocuum</a></li>
+<li class="chapter" data-level="2.10.9" data-path="claudia-samples.html"><a href="claudia-samples.html#l.-reuteri"><i class="fa fa-check"></i><b>2.10.9</b> L. reuteri</a></li>
+<li class="chapter" data-level="2.10.10" data-path="claudia-samples.html"><a href="claudia-samples.html#mt1b1"><i class="fa fa-check"></i><b>2.10.10</b> Mt1B1</a></li>
+<li class="chapter" data-level="2.10.11" data-path="claudia-samples.html"><a href="claudia-samples.html#e.-faecalis"><i class="fa fa-check"></i><b>2.10.11</b> E. faecalis</a></li>
+<li class="chapter" data-level="2.10.12" data-path="claudia-samples.html"><a href="claudia-samples.html#a.-muris"><i class="fa fa-check"></i><b>2.10.12</b> A. muris</a></li>
+<li class="chapter" data-level="2.10.13" data-path="claudia-samples.html"><a href="claudia-samples.html#b.-longum"><i class="fa fa-check"></i><b>2.10.13</b> B. longum</a></li>
+<li class="chapter" data-level="2.10.14" data-path="claudia-samples.html"><a href="claudia-samples.html#create-it-as-pdf"><i class="fa fa-check"></i><b>2.10.14</b> create it as pdf</a></li>
+</ul></li>
+<li class="chapter" data-level="2.11" data-path="claudia-samples.html"><a href="claudia-samples.html#locations-of-snp-in-genome"><i class="fa fa-check"></i><b>2.11</b> locations of SNP in genome</a>
+<ul>
+<li class="chapter" data-level="2.11.1" data-path="claudia-samples.html"><a href="claudia-samples.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>2.11.1</b> Akkermansia muciniphila</a></li>
+<li class="chapter" data-level="2.11.2" data-path="claudia-samples.html"><a href="claudia-samples.html#b_caecimuris"><i class="fa fa-check"></i><b>2.11.2</b> B_caecimuris</a></li>
+<li class="chapter" data-level="2.11.3" data-path="claudia-samples.html"><a href="claudia-samples.html#blautia_coccoides"><i class="fa fa-check"></i><b>2.11.3</b> Blautia_coccoides</a></li>
+<li class="chapter" data-level="2.11.4" data-path="claudia-samples.html"><a href="claudia-samples.html#clostridioforme"><i class="fa fa-check"></i><b>2.11.4</b> Clostridioforme</a></li>
+<li class="chapter" data-level="2.11.5" data-path="claudia-samples.html"><a href="claudia-samples.html#f_plautii_1"><i class="fa fa-check"></i><b>2.11.5</b> F_plautii_1</a></li>
+<li class="chapter" data-level="2.11.6" data-path="claudia-samples.html"><a href="claudia-samples.html#muribaculum_intestinale"><i class="fa fa-check"></i><b>2.11.6</b> Muribaculum_intestinale</a></li>
+<li class="chapter" data-level="2.11.7" data-path="claudia-samples.html"><a href="claudia-samples.html#t_muris"><i class="fa fa-check"></i><b>2.11.7</b> T_muris</a></li>
+<li class="chapter" data-level="2.11.8" data-path="claudia-samples.html"><a href="claudia-samples.html#clostridium_innocuum"><i class="fa fa-check"></i><b>2.11.8</b> Clostridium_innocuum</a></li>
+<li class="chapter" data-level="2.11.9" data-path="claudia-samples.html"><a href="claudia-samples.html#lactobacillus_reuteri_i49_1"><i class="fa fa-check"></i><b>2.11.9</b> Lactobacillus_reuteri_I49_1</a></li>
+<li class="chapter" data-level="2.11.10" data-path="claudia-samples.html"><a href="claudia-samples.html#enterococcus_faecalis.1"><i class="fa fa-check"></i><b>2.11.10</b> Enterococcus_faecalis.1</a></li>
+<li class="chapter" data-level="2.11.11" data-path="claudia-samples.html"><a href="claudia-samples.html#acutalibacter_muris"><i class="fa fa-check"></i><b>2.11.11</b> Acutalibacter_muris</a></li>
+<li class="chapter" data-level="2.11.12" data-path="claudia-samples.html"><a href="claudia-samples.html#bifidobacterium_animalis_yl2_1"><i class="fa fa-check"></i><b>2.11.12</b> Bifidobacterium_animalis_YL2_1</a></li>
+<li class="chapter" data-level="2.11.13" data-path="claudia-samples.html"><a href="claudia-samples.html#bifidobacterium_animalis_yl2_2"><i class="fa fa-check"></i><b>2.11.13</b> Bifidobacterium_animalis_YL2_2</a></li>
+<li class="chapter" data-level="2.11.14" data-path="claudia-samples.html"><a href="claudia-samples.html#cp028714.1"><i class="fa fa-check"></i><b>2.11.14</b> CP028714.1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html"><i class="fa fa-check"></i><b>3</b> AB-effects (resequenced)</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>3.1</b> Metadata</a></li>
+<li class="chapter" data-level="3.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#process-lofeq-vcf-files"><i class="fa fa-check"></i><b>3.2</b> Process Lofeq vcf files</a></li>
+<li class="chapter" data-level="3.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#plot-af-frequency"><i class="fa fa-check"></i><b>3.3</b> Plot AF frequency</a></li>
+<li class="chapter" data-level="3.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1"><i class="fa fa-check"></i><b>3.4</b> KB1</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp"><i class="fa fa-check"></i><b>3.4.1</b> SNP</a></li>
+<li class="chapter" data-level="3.4.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion"><i class="fa fa-check"></i><b>3.4.2</b> insertion</a></li>
+<li class="chapter" data-level="3.4.3" data-path="claudia-samples.html"><a href="claudia-samples.html#deletion"><i class="fa fa-check"></i><b>3.4.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46"><i class="fa fa-check"></i><b>3.5</b> I46</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-1"><i class="fa fa-check"></i><b>3.5.1</b> SNP</a></li>
+<li class="chapter" data-level="3.5.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-1"><i class="fa fa-check"></i><b>3.5.2</b> insertion</a></li>
+<li class="chapter" data-level="3.5.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-1"><i class="fa fa-check"></i><b>3.5.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58"><i class="fa fa-check"></i><b>3.6</b> YL58</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-2"><i class="fa fa-check"></i><b>3.6.1</b> SNP</a></li>
+<li class="chapter" data-level="3.6.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-2"><i class="fa fa-check"></i><b>3.6.2</b> insertion</a></li>
+<li class="chapter" data-level="3.6.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-2"><i class="fa fa-check"></i><b>3.6.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#mutation-bias"><i class="fa fa-check"></i><b>3.7</b> mutation bias?</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-3"><i class="fa fa-check"></i><b>3.7.1</b> SNP</a></li>
+<li class="chapter" data-level="3.7.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertions"><i class="fa fa-check"></i><b>3.7.2</b> insertions</a></li>
+<li class="chapter" data-level="3.7.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletions"><i class="fa fa-check"></i><b>3.7.3</b> deletions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="claudia-samples.html"><a href="claudia-samples.html#heatmap"><i class="fa fa-check"></i><b>3.8</b> heatmap</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-1"><i class="fa fa-check"></i><b>3.8.1</b> KB1</a></li>
+<li class="chapter" data-level="3.8.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-1"><i class="fa fa-check"></i><b>3.8.2</b> I46</a></li>
+<li class="chapter" data-level="3.8.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-1"><i class="fa fa-check"></i><b>3.8.3</b> YL58</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-present-in-all"><i class="fa fa-check"></i><b>3.9</b> Filter: present in all</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-enterococcusfaecalis"><i class="fa fa-check"></i><b>3.9.1</b> KB1 (<em>Enterococcusfaecalis</em>)</a></li>
+<li class="chapter" data-level="3.9.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-blautia_coccoides"><i class="fa fa-check"></i><b>3.9.2</b> YL58 (<em>Blautia_coccoides</em>)</a></li>
+<li class="chapter" data-level="3.9.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum"><i class="fa fa-check"></i><b>3.9.3</b> I46 (<em>Clostridium innocuum</em>)</a></li>
+<li class="chapter" data-level="3.9.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-not-in-water-but-in-ab"><i class="fa fa-check"></i><b>3.9.4</b> Filter: not in water but in AB</a></li>
+<li class="chapter" data-level="3.9.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-enterococcusfaecalis-1"><i class="fa fa-check"></i><b>3.9.5</b> KB1 (<em>Enterococcusfaecalis</em>)</a></li>
+<li class="chapter" data-level="3.9.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-blautia-coccoides"><i class="fa fa-check"></i><b>3.9.6</b> YL58 (<em>Blautia coccoides</em>)</a></li>
+<li class="chapter" data-level="3.9.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum-1"><i class="fa fa-check"></i><b>3.9.7</b> I46 (<em>Clostridium innocuum</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html"><i class="fa fa-check"></i><b>4</b> AB-effects (metagenomes)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="claudia-samples.html"><a href="claudia-samples.html#load-in-variants"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
+<li class="chapter" data-level="4.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#add-presence-in-reseq-experiment"><i class="fa fa-check"></i><b>4.2</b> add presence in reseq experiment</a></li>
+<li class="chapter" data-level="4.3" data-path="claudia-samples.html"><a href="claudia-samples.html#af-frequency"><i class="fa fa-check"></i><b>4.3</b> AF frequency</a></li>
+<li class="chapter" data-level="4.4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#average-coverage-of-variants-by-genome"><i class="fa fa-check"></i><b>4.4</b> Average coverage of variants by genome</a></li>
+<li class="chapter" data-level="4.5" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.5</b> number of variants per samples</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-treatment-group"><i class="fa fa-check"></i><b>4.5.1</b> number of variants per treatment group</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="claudia-samples.html"><a href="claudia-samples.html#heatmap"><i class="fa fa-check"></i><b>4.6</b> Heatmap</a></li>
+<li class="chapter" data-level="4.7" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#with-information-if-snp-was-observed-in-resequencing"><i class="fa fa-check"></i><b>4.7</b> with information if SNP was observed in resequencing</a></li>
+<li class="chapter" data-level="4.8" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#focus-on-mouse-where-we-have-many-time-points"><i class="fa fa-check"></i><b>4.8</b> Focus on mouse where we have many time points</a></li>
+<li class="chapter" data-level="4.9" data-path="claudia-samples.html"><a href="claudia-samples.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>4.9</b> Akkermansia Muciniphila</a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#area-plot-1"><i class="fa fa-check"></i><b>4.9.1</b> area plot 1</a></li>
+<li class="chapter" data-level="4.9.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#line-plot"><i class="fa fa-check"></i><b>4.9.2</b> line plot</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#dendogram"><i class="fa fa-check"></i><b>4.10</b> dendogram</a></li>
+<li class="chapter" data-level="4.11" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#humann3"><i class="fa fa-check"></i><b>4.11</b> Humann3</a></li>
+<li class="chapter" data-level="4.12" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#uniref"><i class="fa fa-check"></i><b>4.12</b> Uniref</a></li>
+<li class="chapter" data-level="4.13" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#metaphlan-abundance"><i class="fa fa-check"></i><b>4.13</b> metaphlan abundance</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html"><i class="fa fa-check"></i><b>5</b> Lofreq threshold</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#read-in-vcf"><i class="fa fa-check"></i><b>5.1</b> read in vcf</a></li>
+<li class="chapter" data-level="5.2" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#plot-af-comparison"><i class="fa fa-check"></i><b>5.2</b> plot AF comparison</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="snp-decomposition.html"><a href="snp-decomposition.html"><i class="fa fa-check"></i><b>6</b> SNP decomposition</a></li>
+<li class="chapter" data-level="7" data-path="other-plot.html"><a href="other-plot.html"><i class="fa fa-check"></i><b>7</b> other plot</a></li>
+<li class="chapter" data-level="8" data-path="process-kraken-output.html"><a href="process-kraken-output.html"><i class="fa fa-check"></i><b>8</b> process kraken output</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="process-kraken-output.html"><a href="process-kraken-output.html#plot"><i class="fa fa-check"></i><b>8.1</b> plot</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">OMM report</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="other-plot" class="section level1" number="7">
+<h1><span class="header-section-number">Section 7</span> other plot</h1>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="other-plot.html#cb7-1"></a>p &lt;-<span class="st"> </span><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="snp-decomposition.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="process-kraken-output.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Section 6 SNP decomposition | OMM report</title>
+  <meta name="description" content="Section 6 SNP decomposition | OMM report" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Section 6 SNP decomposition | OMM report" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Section 6 SNP decomposition | OMM report" />
+  
+  
+  
+
+<meta name="author" content="Philipp C. Muench" />
+
+
+<meta name="date" content="2020-08-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="lofreq-threshold.html"/>
+<link rel="next" href="process-kraken-output.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.14/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Setup</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#installation"><i class="fa fa-check"></i><b>1.1</b> Installation</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#generate-report"><i class="fa fa-check"></i><b>1.2</b> Generate report</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="claudia-samples.html"><a href="claudia-samples.html"><i class="fa fa-check"></i><b>2</b> Claudia Samples</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="claudia-samples.html"><a href="claudia-samples.html#experiment"><i class="fa fa-check"></i><b>2.1</b> Experiment</a></li>
+<li class="chapter" data-level="2.2" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>2.2</b> Metadata</a></li>
+<li class="chapter" data-level="2.3" data-path="claudia-samples.html"><a href="claudia-samples.html#oligomm"><i class="fa fa-check"></i><b>2.3</b> OligoMM</a></li>
+<li class="chapter" data-level="2.4" data-path="claudia-samples.html"><a href="claudia-samples.html#load-in-variants"><i class="fa fa-check"></i><b>2.4</b> Load in variants</a></li>
+<li class="chapter" data-level="2.5" data-path="claudia-samples.html"><a href="claudia-samples.html#filter-out-of-abnormal-high-mutation"><i class="fa fa-check"></i><b>2.5</b> Filter out of abnormal high mutation</a></li>
+<li class="chapter" data-level="2.6" data-path="claudia-samples.html"><a href="claudia-samples.html#af-frequency"><i class="fa fa-check"></i><b>2.6</b> AF frequency</a></li>
+<li class="chapter" data-level="2.7" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-group"><i class="fa fa-check"></i><b>2.7</b> number of variants per group</a>
+<ul>
+<li class="chapter" data-level="2.7.1" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-treatment-group"><i class="fa fa-check"></i><b>2.7.1</b> number of variants per treatment group</a></li>
+<li class="chapter" data-level="2.7.2" data-path="claudia-samples.html"><a href="claudia-samples.html#deletion"><i class="fa fa-check"></i><b>2.7.2</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="claudia-samples.html"><a href="claudia-samples.html#filter-out-low-af-variants"><i class="fa fa-check"></i><b>2.8</b> Filter out low AF variants</a></li>
+<li class="chapter" data-level="2.9" data-path="claudia-samples.html"><a href="claudia-samples.html#heatmap"><i class="fa fa-check"></i><b>2.9</b> Heatmap</a></li>
+<li class="chapter" data-level="2.10" data-path="claudia-samples.html"><a href="claudia-samples.html#one-genome"><i class="fa fa-check"></i><b>2.10</b> one genome</a>
+<ul>
+<li class="chapter" data-level="2.10.1" data-path="claudia-samples.html"><a href="claudia-samples.html#a.-muciniphila"><i class="fa fa-check"></i><b>2.10.1</b> A. muciniphila</a></li>
+<li class="chapter" data-level="2.10.2" data-path="claudia-samples.html"><a href="claudia-samples.html#b.-caecimuris"><i class="fa fa-check"></i><b>2.10.2</b> B. caecimuris</a></li>
+<li class="chapter" data-level="2.10.3" data-path="claudia-samples.html"><a href="claudia-samples.html#b.-coccoides"><i class="fa fa-check"></i><b>2.10.3</b> B. coccoides</a></li>
+<li class="chapter" data-level="2.10.4" data-path="claudia-samples.html"><a href="claudia-samples.html#c.-clostridioforme"><i class="fa fa-check"></i><b>2.10.4</b> C. clostridioforme</a></li>
+<li class="chapter" data-level="2.10.5" data-path="claudia-samples.html"><a href="claudia-samples.html#f.-plautii"><i class="fa fa-check"></i><b>2.10.5</b> F. plautii</a></li>
+<li class="chapter" data-level="2.10.6" data-path="claudia-samples.html"><a href="claudia-samples.html#m.-intestinale"><i class="fa fa-check"></i><b>2.10.6</b> M. intestinale</a></li>
+<li class="chapter" data-level="2.10.7" data-path="claudia-samples.html"><a href="claudia-samples.html#t.-muris"><i class="fa fa-check"></i><b>2.10.7</b> T. muris</a></li>
+<li class="chapter" data-level="2.10.8" data-path="claudia-samples.html"><a href="claudia-samples.html#c.-innocuum"><i class="fa fa-check"></i><b>2.10.8</b> C. innocuum</a></li>
+<li class="chapter" data-level="2.10.9" data-path="claudia-samples.html"><a href="claudia-samples.html#l.-reuteri"><i class="fa fa-check"></i><b>2.10.9</b> L. reuteri</a></li>
+<li class="chapter" data-level="2.10.10" data-path="claudia-samples.html"><a href="claudia-samples.html#mt1b1"><i class="fa fa-check"></i><b>2.10.10</b> Mt1B1</a></li>
+<li class="chapter" data-level="2.10.11" data-path="claudia-samples.html"><a href="claudia-samples.html#e.-faecalis"><i class="fa fa-check"></i><b>2.10.11</b> E. faecalis</a></li>
+<li class="chapter" data-level="2.10.12" data-path="claudia-samples.html"><a href="claudia-samples.html#a.-muris"><i class="fa fa-check"></i><b>2.10.12</b> A. muris</a></li>
+<li class="chapter" data-level="2.10.13" data-path="claudia-samples.html"><a href="claudia-samples.html#b.-longum"><i class="fa fa-check"></i><b>2.10.13</b> B. longum</a></li>
+<li class="chapter" data-level="2.10.14" data-path="claudia-samples.html"><a href="claudia-samples.html#create-it-as-pdf"><i class="fa fa-check"></i><b>2.10.14</b> create it as pdf</a></li>
+</ul></li>
+<li class="chapter" data-level="2.11" data-path="claudia-samples.html"><a href="claudia-samples.html#locations-of-snp-in-genome"><i class="fa fa-check"></i><b>2.11</b> locations of SNP in genome</a>
+<ul>
+<li class="chapter" data-level="2.11.1" data-path="claudia-samples.html"><a href="claudia-samples.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>2.11.1</b> Akkermansia muciniphila</a></li>
+<li class="chapter" data-level="2.11.2" data-path="claudia-samples.html"><a href="claudia-samples.html#b_caecimuris"><i class="fa fa-check"></i><b>2.11.2</b> B_caecimuris</a></li>
+<li class="chapter" data-level="2.11.3" data-path="claudia-samples.html"><a href="claudia-samples.html#blautia_coccoides"><i class="fa fa-check"></i><b>2.11.3</b> Blautia_coccoides</a></li>
+<li class="chapter" data-level="2.11.4" data-path="claudia-samples.html"><a href="claudia-samples.html#clostridioforme"><i class="fa fa-check"></i><b>2.11.4</b> Clostridioforme</a></li>
+<li class="chapter" data-level="2.11.5" data-path="claudia-samples.html"><a href="claudia-samples.html#f_plautii_1"><i class="fa fa-check"></i><b>2.11.5</b> F_plautii_1</a></li>
+<li class="chapter" data-level="2.11.6" data-path="claudia-samples.html"><a href="claudia-samples.html#muribaculum_intestinale"><i class="fa fa-check"></i><b>2.11.6</b> Muribaculum_intestinale</a></li>
+<li class="chapter" data-level="2.11.7" data-path="claudia-samples.html"><a href="claudia-samples.html#t_muris"><i class="fa fa-check"></i><b>2.11.7</b> T_muris</a></li>
+<li class="chapter" data-level="2.11.8" data-path="claudia-samples.html"><a href="claudia-samples.html#clostridium_innocuum"><i class="fa fa-check"></i><b>2.11.8</b> Clostridium_innocuum</a></li>
+<li class="chapter" data-level="2.11.9" data-path="claudia-samples.html"><a href="claudia-samples.html#lactobacillus_reuteri_i49_1"><i class="fa fa-check"></i><b>2.11.9</b> Lactobacillus_reuteri_I49_1</a></li>
+<li class="chapter" data-level="2.11.10" data-path="claudia-samples.html"><a href="claudia-samples.html#enterococcus_faecalis.1"><i class="fa fa-check"></i><b>2.11.10</b> Enterococcus_faecalis.1</a></li>
+<li class="chapter" data-level="2.11.11" data-path="claudia-samples.html"><a href="claudia-samples.html#acutalibacter_muris"><i class="fa fa-check"></i><b>2.11.11</b> Acutalibacter_muris</a></li>
+<li class="chapter" data-level="2.11.12" data-path="claudia-samples.html"><a href="claudia-samples.html#bifidobacterium_animalis_yl2_1"><i class="fa fa-check"></i><b>2.11.12</b> Bifidobacterium_animalis_YL2_1</a></li>
+<li class="chapter" data-level="2.11.13" data-path="claudia-samples.html"><a href="claudia-samples.html#bifidobacterium_animalis_yl2_2"><i class="fa fa-check"></i><b>2.11.13</b> Bifidobacterium_animalis_YL2_2</a></li>
+<li class="chapter" data-level="2.11.14" data-path="claudia-samples.html"><a href="claudia-samples.html#cp028714.1"><i class="fa fa-check"></i><b>2.11.14</b> CP028714.1</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html"><i class="fa fa-check"></i><b>3</b> AB-effects (resequenced)</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="claudia-samples.html"><a href="claudia-samples.html#metadata"><i class="fa fa-check"></i><b>3.1</b> Metadata</a></li>
+<li class="chapter" data-level="3.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#process-lofeq-vcf-files"><i class="fa fa-check"></i><b>3.2</b> Process Lofeq vcf files</a></li>
+<li class="chapter" data-level="3.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#plot-af-frequency"><i class="fa fa-check"></i><b>3.3</b> Plot AF frequency</a></li>
+<li class="chapter" data-level="3.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1"><i class="fa fa-check"></i><b>3.4</b> KB1</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp"><i class="fa fa-check"></i><b>3.4.1</b> SNP</a></li>
+<li class="chapter" data-level="3.4.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion"><i class="fa fa-check"></i><b>3.4.2</b> insertion</a></li>
+<li class="chapter" data-level="3.4.3" data-path="claudia-samples.html"><a href="claudia-samples.html#deletion"><i class="fa fa-check"></i><b>3.4.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46"><i class="fa fa-check"></i><b>3.5</b> I46</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-1"><i class="fa fa-check"></i><b>3.5.1</b> SNP</a></li>
+<li class="chapter" data-level="3.5.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-1"><i class="fa fa-check"></i><b>3.5.2</b> insertion</a></li>
+<li class="chapter" data-level="3.5.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-1"><i class="fa fa-check"></i><b>3.5.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58"><i class="fa fa-check"></i><b>3.6</b> YL58</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-2"><i class="fa fa-check"></i><b>3.6.1</b> SNP</a></li>
+<li class="chapter" data-level="3.6.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertion-2"><i class="fa fa-check"></i><b>3.6.2</b> insertion</a></li>
+<li class="chapter" data-level="3.6.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletion-2"><i class="fa fa-check"></i><b>3.6.3</b> deletion</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#mutation-bias"><i class="fa fa-check"></i><b>3.7</b> mutation bias?</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#snp-3"><i class="fa fa-check"></i><b>3.7.1</b> SNP</a></li>
+<li class="chapter" data-level="3.7.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#insertions"><i class="fa fa-check"></i><b>3.7.2</b> insertions</a></li>
+<li class="chapter" data-level="3.7.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#deletions"><i class="fa fa-check"></i><b>3.7.3</b> deletions</a></li>
+</ul></li>
+<li class="chapter" data-level="3.8" data-path="claudia-samples.html"><a href="claudia-samples.html#heatmap"><i class="fa fa-check"></i><b>3.8</b> heatmap</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-1"><i class="fa fa-check"></i><b>3.8.1</b> KB1</a></li>
+<li class="chapter" data-level="3.8.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-1"><i class="fa fa-check"></i><b>3.8.2</b> I46</a></li>
+<li class="chapter" data-level="3.8.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-1"><i class="fa fa-check"></i><b>3.8.3</b> YL58</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-present-in-all"><i class="fa fa-check"></i><b>3.9</b> Filter: present in all</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-enterococcusfaecalis"><i class="fa fa-check"></i><b>3.9.1</b> KB1 (<em>Enterococcusfaecalis</em>)</a></li>
+<li class="chapter" data-level="3.9.2" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-blautia_coccoides"><i class="fa fa-check"></i><b>3.9.2</b> YL58 (<em>Blautia_coccoides</em>)</a></li>
+<li class="chapter" data-level="3.9.3" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum"><i class="fa fa-check"></i><b>3.9.3</b> I46 (<em>Clostridium innocuum</em>)</a></li>
+<li class="chapter" data-level="3.9.4" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#filter-not-in-water-but-in-ab"><i class="fa fa-check"></i><b>3.9.4</b> Filter: not in water but in AB</a></li>
+<li class="chapter" data-level="3.9.5" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#kb1-enterococcusfaecalis-1"><i class="fa fa-check"></i><b>3.9.5</b> KB1 (<em>Enterococcusfaecalis</em>)</a></li>
+<li class="chapter" data-level="3.9.6" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#yl58-blautia-coccoides"><i class="fa fa-check"></i><b>3.9.6</b> YL58 (<em>Blautia coccoides</em>)</a></li>
+<li class="chapter" data-level="3.9.7" data-path="ab-effects-resequenced.html"><a href="ab-effects-resequenced.html#i46-clostridium-innocuum-1"><i class="fa fa-check"></i><b>3.9.7</b> I46 (<em>Clostridium innocuum</em>)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html"><i class="fa fa-check"></i><b>4</b> AB-effects (metagenomes)</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="claudia-samples.html"><a href="claudia-samples.html#load-in-variants"><i class="fa fa-check"></i><b>4.1</b> Load in variants</a></li>
+<li class="chapter" data-level="4.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#add-presence-in-reseq-experiment"><i class="fa fa-check"></i><b>4.2</b> add presence in reseq experiment</a></li>
+<li class="chapter" data-level="4.3" data-path="claudia-samples.html"><a href="claudia-samples.html#af-frequency"><i class="fa fa-check"></i><b>4.3</b> AF frequency</a></li>
+<li class="chapter" data-level="4.4" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#average-coverage-of-variants-by-genome"><i class="fa fa-check"></i><b>4.4</b> Average coverage of variants by genome</a></li>
+<li class="chapter" data-level="4.5" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#number-of-variants-per-samples"><i class="fa fa-check"></i><b>4.5</b> number of variants per samples</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="claudia-samples.html"><a href="claudia-samples.html#number-of-variants-per-treatment-group"><i class="fa fa-check"></i><b>4.5.1</b> number of variants per treatment group</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="claudia-samples.html"><a href="claudia-samples.html#heatmap"><i class="fa fa-check"></i><b>4.6</b> Heatmap</a></li>
+<li class="chapter" data-level="4.7" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#with-information-if-snp-was-observed-in-resequencing"><i class="fa fa-check"></i><b>4.7</b> with information if SNP was observed in resequencing</a></li>
+<li class="chapter" data-level="4.8" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#focus-on-mouse-where-we-have-many-time-points"><i class="fa fa-check"></i><b>4.8</b> Focus on mouse where we have many time points</a></li>
+<li class="chapter" data-level="4.9" data-path="claudia-samples.html"><a href="claudia-samples.html#akkermansia-muciniphila"><i class="fa fa-check"></i><b>4.9</b> Akkermansia Muciniphila</a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#area-plot-1"><i class="fa fa-check"></i><b>4.9.1</b> area plot 1</a></li>
+<li class="chapter" data-level="4.9.2" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#line-plot"><i class="fa fa-check"></i><b>4.9.2</b> line plot</a></li>
+</ul></li>
+<li class="chapter" data-level="4.10" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#dendogram"><i class="fa fa-check"></i><b>4.10</b> dendogram</a></li>
+<li class="chapter" data-level="4.11" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#humann3"><i class="fa fa-check"></i><b>4.11</b> Humann3</a></li>
+<li class="chapter" data-level="4.12" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#uniref"><i class="fa fa-check"></i><b>4.12</b> Uniref</a></li>
+<li class="chapter" data-level="4.13" data-path="ab-effects-metagenomes.html"><a href="ab-effects-metagenomes.html#metaphlan-abundance"><i class="fa fa-check"></i><b>4.13</b> metaphlan abundance</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html"><i class="fa fa-check"></i><b>5</b> Lofreq threshold</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#read-in-vcf"><i class="fa fa-check"></i><b>5.1</b> read in vcf</a></li>
+<li class="chapter" data-level="5.2" data-path="lofreq-threshold.html"><a href="lofreq-threshold.html#plot-af-comparison"><i class="fa fa-check"></i><b>5.2</b> plot AF comparison</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="snp-decomposition.html"><a href="snp-decomposition.html"><i class="fa fa-check"></i><b>6</b> SNP decomposition</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="claudia-samples.html"><a href="claudia-samples.html#blautia_coccoides"><i class="fa fa-check"></i><b>6.1</b> Blautia_coccoides</a></li>
+<li class="chapter" data-level="6.2" data-path="snp-decomposition.html"><a href="snp-decomposition.html#akkermansia_muciniphila"><i class="fa fa-check"></i><b>6.2</b> Akkermansia_muciniphila</a></li>
+<li class="chapter" data-level="6.3" data-path="claudia-samples.html"><a href="claudia-samples.html#clostridioforme"><i class="fa fa-check"></i><b>6.3</b> Clostridioforme</a></li>
+<li class="chapter" data-level="6.4" data-path="snp-decomposition.html"><a href="snp-decomposition.html#blautia_coccoides-1"><i class="fa fa-check"></i><b>6.4</b> Blautia_coccoides</a></li>
+<li class="chapter" data-level="6.5" data-path="snp-decomposition.html"><a href="snp-decomposition.html#akkermansia_muciniphila-1"><i class="fa fa-check"></i><b>6.5</b> Akkermansia_muciniphila</a></li>
+<li class="chapter" data-level="6.6" data-path="snp-decomposition.html"><a href="snp-decomposition.html#clostridioforme-1"><i class="fa fa-check"></i><b>6.6</b> Clostridioforme</a></li>
+<li class="chapter" data-level="6.7" data-path="claudia-samples.html"><a href="claudia-samples.html#muribaculum_intestinale"><i class="fa fa-check"></i><b>6.7</b> Muribaculum_intestinale</a></li>
+<li class="chapter" data-level="6.8" data-path="claudia-samples.html"><a href="claudia-samples.html#t_muris"><i class="fa fa-check"></i><b>6.8</b> T_muris</a></li>
+<li class="chapter" data-level="6.9" data-path="claudia-samples.html"><a href="claudia-samples.html#f_plautii_1"><i class="fa fa-check"></i><b>6.9</b> F_plautii_1</a></li>
+<li class="chapter" data-level="6.10" data-path="snp-decomposition.html"><a href="snp-decomposition.html#f_plautii_2"><i class="fa fa-check"></i><b>6.10</b> F_plautii_2</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="process-kraken-output.html"><a href="process-kraken-output.html"><i class="fa fa-check"></i><b>7</b> process kraken output</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="process-kraken-output.html"><a href="process-kraken-output.html#plot"><i class="fa fa-check"></i><b>7.1</b> plot</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">OMM report</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="snp-decomposition" class="section level1" number="6">
+<h1><span class="header-section-number">Section 6</span> SNP decomposition</h1>
+<div class="sourceCode" id="cb307"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb307-1"><a href="snp-decomposition.html#cb307-1"></a><span class="co"># devtools::install_github(&#39;philippmuench/HaplotypeDeconstructor&#39;)</span></span>
+<span id="cb307-2"><a href="snp-decomposition.html#cb307-2"></a></span>
+<span id="cb307-3"><a href="snp-decomposition.html#cb307-3"></a><span class="kw">data</span>(omm_snp_annotation)</span>
+<span id="cb307-4"><a href="snp-decomposition.html#cb307-4"></a></span>
+<span id="cb307-5"><a href="snp-decomposition.html#cb307-5"></a><span class="kw">source</span>(<span class="st">&quot;nmf_functions.R&quot;</span>)</span>
+<span id="cb307-6"><a href="snp-decomposition.html#cb307-6"></a></span>
+<span id="cb307-7"><a href="snp-decomposition.html#cb307-7"></a><span class="kw">data</span>(omm_metadata)</span>
+<span id="cb307-8"><a href="snp-decomposition.html#cb307-8"></a>omm_metadata<span class="op">$</span>group2 &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;d&quot;</span>, omm_metadata<span class="op">$</span>day, <span class="st">&quot;-&quot;</span>, omm_metadata<span class="op">$</span>mouse)</span>
+<span id="cb307-9"><a href="snp-decomposition.html#cb307-9"></a></span>
+<span id="cb307-10"><a href="snp-decomposition.html#cb307-10"></a>dat &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="st">&quot;data/rds/omm_ab.rds&quot;</span>)</span>
+<span id="cb307-11"><a href="snp-decomposition.html#cb307-11"></a>datre &lt;-<span class="st"> </span><span class="kw">readRDS</span>(<span class="st">&quot;data/rds/reseq.rds&quot;</span>)</span>
+<span id="cb307-12"><a href="snp-decomposition.html#cb307-12"></a></span>
+<span id="cb307-13"><a href="snp-decomposition.html#cb307-13"></a>create_df &lt;-<span class="st"> </span><span class="cf">function</span>(<span class="dt">dat =</span> dat, <span class="dt">datre =</span> datre, <span class="dt">bug =</span> bug) {</span>
+<span id="cb307-14"><a href="snp-decomposition.html#cb307-14"></a>    </span>
+<span id="cb307-15"><a href="snp-decomposition.html#cb307-15"></a>    dat &lt;-<span class="st"> </span>dat[<span class="kw">which</span>(dat<span class="op">$</span>chr <span class="op">==</span><span class="st"> </span>bug), ]</span>
+<span id="cb307-16"><a href="snp-decomposition.html#cb307-16"></a>    dat<span class="op">$</span>snp_id &lt;-<span class="st"> </span><span class="kw">paste0</span>(dat<span class="op">$</span>alteration, <span class="st">&quot; &quot;</span>, dat<span class="op">$</span>POS)</span>
+<span id="cb307-17"><a href="snp-decomposition.html#cb307-17"></a>    dat<span class="op">$</span>sample &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;AB study &quot;</span>, dat<span class="op">$</span>mouse.id, <span class="st">&quot; d&quot;</span>, dat<span class="op">$</span>day, <span class="st">&quot; &quot;</span>, <span class="dt">group =</span> dat<span class="op">$</span>group, <span class="dt">sample =</span> dat<span class="op">$</span>mouse.group)</span>
+<span id="cb307-18"><a href="snp-decomposition.html#cb307-18"></a>    df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">id =</span> dat<span class="op">$</span>snp_id, <span class="dt">AF =</span> dat<span class="op">$</span>AF, <span class="dt">sample =</span> dat<span class="op">$</span>sample)</span>
+<span id="cb307-19"><a href="snp-decomposition.html#cb307-19"></a>    </span>
+<span id="cb307-20"><a href="snp-decomposition.html#cb307-20"></a>    datre &lt;-<span class="st"> </span>datre[<span class="kw">which</span>(datre<span class="op">$</span>chr <span class="op">==</span><span class="st"> </span>bug), ]</span>
+<span id="cb307-21"><a href="snp-decomposition.html#cb307-21"></a>    </span>
+<span id="cb307-22"><a href="snp-decomposition.html#cb307-22"></a>    <span class="cf">if</span> (<span class="kw">nrow</span>(datre) <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>) {</span>
+<span id="cb307-23"><a href="snp-decomposition.html#cb307-23"></a>        <span class="kw">message</span>(<span class="kw">nrow</span>(datre))</span>
+<span id="cb307-24"><a href="snp-decomposition.html#cb307-24"></a>        datre<span class="op">$</span>snp_id &lt;-<span class="st"> </span><span class="kw">paste0</span>(datre<span class="op">$</span>alteration, <span class="st">&quot; &quot;</span>, datre<span class="op">$</span>POS)</span>
+<span id="cb307-25"><a href="snp-decomposition.html#cb307-25"></a>        datre<span class="op">$</span>sample &lt;-<span class="st"> </span><span class="kw">paste0</span>(<span class="st">&quot;reseq &quot;</span>, datre<span class="op">$</span>mouse.id)</span>
+<span id="cb307-26"><a href="snp-decomposition.html#cb307-26"></a>        dfre &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">id =</span> datre<span class="op">$</span>snp_id, <span class="dt">AF =</span> datre<span class="op">$</span>AF, <span class="dt">sample =</span> datre<span class="op">$</span>sample)</span>
+<span id="cb307-27"><a href="snp-decomposition.html#cb307-27"></a>        df &lt;-<span class="st"> </span><span class="kw">rbind</span>(df, dfre)</span>
+<span id="cb307-28"><a href="snp-decomposition.html#cb307-28"></a>    }</span>
+<span id="cb307-29"><a href="snp-decomposition.html#cb307-29"></a>    </span>
+<span id="cb307-30"><a href="snp-decomposition.html#cb307-30"></a>    <span class="co"># prepare data</span></span>
+<span id="cb307-31"><a href="snp-decomposition.html#cb307-31"></a>    omm &lt;-<span class="st"> </span>tidyr<span class="op">::</span><span class="kw">spread</span>(df, sample, AF)</span>
+<span id="cb307-32"><a href="snp-decomposition.html#cb307-32"></a>    omm[<span class="kw">is.na</span>(omm)] &lt;-<span class="st"> </span><span class="dv">0</span></span>
+<span id="cb307-33"><a href="snp-decomposition.html#cb307-33"></a>    <span class="kw">rownames</span>(omm) &lt;-<span class="st"> </span>omm<span class="op">$</span>id</span>
+<span id="cb307-34"><a href="snp-decomposition.html#cb307-34"></a>    omm<span class="op">$</span>id &lt;-<span class="st"> </span><span class="ot">NULL</span></span>
+<span id="cb307-35"><a href="snp-decomposition.html#cb307-35"></a>    <span class="kw">return</span>(omm)</span>
+<span id="cb307-36"><a href="snp-decomposition.html#cb307-36"></a>}</span></code></pre></div>
+<div id="blautia_coccoides" class="section level2" number="6.1">
+<h2><span class="header-section-number">6.1</span> Blautia_coccoides</h2>
+<div class="sourceCode" id="cb308"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb308-1"><a href="snp-decomposition.html#cb308-1"></a>bug &lt;-<span class="st"> &quot;Blautia_coccoides&quot;</span></span>
+<span id="cb308-2"><a href="snp-decomposition.html#cb308-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span></code></pre></div>
+<pre><code>## 226</code></pre>
+<div class="sourceCode" id="cb310"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb310-1"><a href="snp-decomposition.html#cb310-1"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:8, nReplicates = 1)</span></span>
+<span id="cb310-2"><a href="snp-decomposition.html#cb310-2"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb310-3"><a href="snp-decomposition.html#cb310-3"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">3</span>)</span>
+<span id="cb310-4"><a href="snp-decomposition.html#cb310-4"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm2-1.png" width="672" /></p>
+<div class="sourceCode" id="cb311"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb311-1"><a href="snp-decomposition.html#cb311-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm2-2.png" width="672" /></p>
+<div class="sourceCode" id="cb312"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb312-1"><a href="snp-decomposition.html#cb312-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm2-3.png" width="672" /></p>
+<div class="sourceCode" id="cb313"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb313-1"><a href="snp-decomposition.html#cb313-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm2-4.png" width="672" /></p>
+<div class="sourceCode" id="cb314"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb314-1"><a href="snp-decomposition.html#cb314-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm2-5.png" width="672" /></p>
+<div class="sourceCode" id="cb315"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb315-1"><a href="snp-decomposition.html#cb315-1"></a><span class="kw">plotSample</span>(decomposed, <span class="dt">sample =</span> <span class="st">&quot;reseq 1696&quot;</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm2-6.png" width="672" /></p>
+</div>
+<div id="akkermansia_muciniphila" class="section level2" number="6.2">
+<h2><span class="header-section-number">6.2</span> Akkermansia_muciniphila</h2>
+<div class="sourceCode" id="cb316"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb316-1"><a href="snp-decomposition.html#cb316-1"></a>bug &lt;-<span class="st"> &quot;Akkermansia_muciniphila&quot;</span></span>
+<span id="cb316-2"><a href="snp-decomposition.html#cb316-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb316-3"><a href="snp-decomposition.html#cb316-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb316-4"><a href="snp-decomposition.html#cb316-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb316-5"><a href="snp-decomposition.html#cb316-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">6</span>)</span>
+<span id="cb316-6"><a href="snp-decomposition.html#cb316-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm3-1.png" width="672" /></p>
+<div class="sourceCode" id="cb317"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb317-1"><a href="snp-decomposition.html#cb317-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm3-2.png" width="672" /></p>
+<div class="sourceCode" id="cb318"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb318-1"><a href="snp-decomposition.html#cb318-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm3-3.png" width="672" /></p>
+<div class="sourceCode" id="cb319"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb319-1"><a href="snp-decomposition.html#cb319-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm3-4.png" width="672" /></p>
+<div class="sourceCode" id="cb320"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb320-1"><a href="snp-decomposition.html#cb320-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm3-5.png" width="672" /></p>
+<div class="sourceCode" id="cb321"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb321-1"><a href="snp-decomposition.html#cb321-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm3-6.png" width="672" /></p>
+</div>
+<div id="clostridioforme" class="section level2" number="6.3">
+<h2><span class="header-section-number">6.3</span> Clostridioforme</h2>
+<div class="sourceCode" id="cb322"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb322-1"><a href="snp-decomposition.html#cb322-1"></a>bug &lt;-<span class="st"> &quot;Clostridioforme&quot;</span></span>
+<span id="cb322-2"><a href="snp-decomposition.html#cb322-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb322-3"><a href="snp-decomposition.html#cb322-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb322-4"><a href="snp-decomposition.html#cb322-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb322-5"><a href="snp-decomposition.html#cb322-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">4</span>)</span>
+<span id="cb322-6"><a href="snp-decomposition.html#cb322-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm4-1.png" width="672" /></p>
+<div class="sourceCode" id="cb323"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb323-1"><a href="snp-decomposition.html#cb323-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm4-2.png" width="672" /></p>
+<div class="sourceCode" id="cb324"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb324-1"><a href="snp-decomposition.html#cb324-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm4-3.png" width="672" /></p>
+<div class="sourceCode" id="cb325"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb325-1"><a href="snp-decomposition.html#cb325-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm4-4.png" width="672" /></p>
+<div class="sourceCode" id="cb326"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb326-1"><a href="snp-decomposition.html#cb326-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm4-5.png" width="672" /></p>
+<div class="sourceCode" id="cb327"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb327-1"><a href="snp-decomposition.html#cb327-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm4-6.png" width="672" />
+## Muribaculum_intestinale</p>
+<div class="sourceCode" id="cb328"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb328-1"><a href="snp-decomposition.html#cb328-1"></a>bug &lt;-<span class="st"> &quot;Muribaculum_intestinale&quot;</span></span>
+<span id="cb328-2"><a href="snp-decomposition.html#cb328-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb328-3"><a href="snp-decomposition.html#cb328-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb328-4"><a href="snp-decomposition.html#cb328-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb328-5"><a href="snp-decomposition.html#cb328-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">6</span>)</span>
+<span id="cb328-6"><a href="snp-decomposition.html#cb328-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm5-1.png" width="672" /></p>
+<div class="sourceCode" id="cb329"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb329-1"><a href="snp-decomposition.html#cb329-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm5-2.png" width="672" /></p>
+<div class="sourceCode" id="cb330"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb330-1"><a href="snp-decomposition.html#cb330-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm5-3.png" width="672" /></p>
+<div class="sourceCode" id="cb331"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb331-1"><a href="snp-decomposition.html#cb331-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm5-4.png" width="672" /></p>
+<div class="sourceCode" id="cb332"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb332-1"><a href="snp-decomposition.html#cb332-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm5-5.png" width="672" /></p>
+<div class="sourceCode" id="cb333"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb333-1"><a href="snp-decomposition.html#cb333-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm5-6.png" width="672" />
+## T_muris</p>
+<div class="sourceCode" id="cb334"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb334-1"><a href="snp-decomposition.html#cb334-1"></a>bug &lt;-<span class="st"> &quot;T_muris&quot;</span></span>
+<span id="cb334-2"><a href="snp-decomposition.html#cb334-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb334-3"><a href="snp-decomposition.html#cb334-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb334-4"><a href="snp-decomposition.html#cb334-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb334-5"><a href="snp-decomposition.html#cb334-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">4</span>)</span>
+<span id="cb334-6"><a href="snp-decomposition.html#cb334-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm6-1.png" width="672" /></p>
+<div class="sourceCode" id="cb335"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb335-1"><a href="snp-decomposition.html#cb335-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm6-2.png" width="672" /></p>
+<div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb336-1"><a href="snp-decomposition.html#cb336-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm6-3.png" width="672" /></p>
+<div class="sourceCode" id="cb337"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb337-1"><a href="snp-decomposition.html#cb337-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm6-4.png" width="672" /></p>
+<div class="sourceCode" id="cb338"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb338-1"><a href="snp-decomposition.html#cb338-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm6-5.png" width="672" /></p>
+<div class="sourceCode" id="cb339"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb339-1"><a href="snp-decomposition.html#cb339-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm6-6.png" width="672" /></p>
+</div>
+<div id="blautia_coccoides-1" class="section level2" number="6.4">
+<h2><span class="header-section-number">6.4</span> Blautia_coccoides</h2>
+<div class="sourceCode" id="cb340"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb340-1"><a href="snp-decomposition.html#cb340-1"></a>bug &lt;-<span class="st"> &quot;Blautia_coccoides&quot;</span></span>
+<span id="cb340-2"><a href="snp-decomposition.html#cb340-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span></code></pre></div>
+<pre><code>## 226</code></pre>
+<div class="sourceCode" id="cb342"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb342-1"><a href="snp-decomposition.html#cb342-1"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:8, nReplicates = 1)</span></span>
+<span id="cb342-2"><a href="snp-decomposition.html#cb342-2"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb342-3"><a href="snp-decomposition.html#cb342-3"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">3</span>)</span>
+<span id="cb342-4"><a href="snp-decomposition.html#cb342-4"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm7-1.png" width="672" /></p>
+<div class="sourceCode" id="cb343"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb343-1"><a href="snp-decomposition.html#cb343-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm7-2.png" width="672" /></p>
+<div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="snp-decomposition.html#cb344-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm7-3.png" width="672" /></p>
+<div class="sourceCode" id="cb345"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb345-1"><a href="snp-decomposition.html#cb345-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm7-4.png" width="672" /></p>
+<div class="sourceCode" id="cb346"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb346-1"><a href="snp-decomposition.html#cb346-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm7-5.png" width="672" /></p>
+<div class="sourceCode" id="cb347"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb347-1"><a href="snp-decomposition.html#cb347-1"></a><span class="kw">plotSample</span>(decomposed, <span class="dt">sample =</span> <span class="st">&quot;reseq 1696&quot;</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm7-6.png" width="672" /></p>
+</div>
+<div id="akkermansia_muciniphila-1" class="section level2" number="6.5">
+<h2><span class="header-section-number">6.5</span> Akkermansia_muciniphila</h2>
+<div class="sourceCode" id="cb348"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb348-1"><a href="snp-decomposition.html#cb348-1"></a>bug &lt;-<span class="st"> &quot;Akkermansia_muciniphila&quot;</span></span>
+<span id="cb348-2"><a href="snp-decomposition.html#cb348-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb348-3"><a href="snp-decomposition.html#cb348-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb348-4"><a href="snp-decomposition.html#cb348-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb348-5"><a href="snp-decomposition.html#cb348-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">6</span>)</span>
+<span id="cb348-6"><a href="snp-decomposition.html#cb348-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm8-1.png" width="672" /></p>
+<div class="sourceCode" id="cb349"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb349-1"><a href="snp-decomposition.html#cb349-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm8-2.png" width="672" /></p>
+<div class="sourceCode" id="cb350"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb350-1"><a href="snp-decomposition.html#cb350-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm8-3.png" width="672" /></p>
+<div class="sourceCode" id="cb351"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb351-1"><a href="snp-decomposition.html#cb351-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm8-4.png" width="672" /></p>
+<div class="sourceCode" id="cb352"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb352-1"><a href="snp-decomposition.html#cb352-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm8-5.png" width="672" /></p>
+<div class="sourceCode" id="cb353"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb353-1"><a href="snp-decomposition.html#cb353-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm8-6.png" width="672" /></p>
+</div>
+<div id="clostridioforme-1" class="section level2" number="6.6">
+<h2><span class="header-section-number">6.6</span> Clostridioforme</h2>
+<div class="sourceCode" id="cb354"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb354-1"><a href="snp-decomposition.html#cb354-1"></a>bug &lt;-<span class="st"> &quot;Clostridioforme&quot;</span></span>
+<span id="cb354-2"><a href="snp-decomposition.html#cb354-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb354-3"><a href="snp-decomposition.html#cb354-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb354-4"><a href="snp-decomposition.html#cb354-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb354-5"><a href="snp-decomposition.html#cb354-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">4</span>)</span>
+<span id="cb354-6"><a href="snp-decomposition.html#cb354-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm9-1.png" width="672" /></p>
+<div class="sourceCode" id="cb355"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb355-1"><a href="snp-decomposition.html#cb355-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm9-2.png" width="672" /></p>
+<div class="sourceCode" id="cb356"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb356-1"><a href="snp-decomposition.html#cb356-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm9-3.png" width="672" /></p>
+<div class="sourceCode" id="cb357"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb357-1"><a href="snp-decomposition.html#cb357-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm9-4.png" width="672" /></p>
+<div class="sourceCode" id="cb358"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb358-1"><a href="snp-decomposition.html#cb358-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm9-5.png" width="672" /></p>
+<div class="sourceCode" id="cb359"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb359-1"><a href="snp-decomposition.html#cb359-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm9-6.png" width="672" /></p>
+</div>
+<div id="muribaculum_intestinale" class="section level2" number="6.7">
+<h2><span class="header-section-number">6.7</span> Muribaculum_intestinale</h2>
+<div class="sourceCode" id="cb360"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb360-1"><a href="snp-decomposition.html#cb360-1"></a>bug &lt;-<span class="st"> &quot;Muribaculum_intestinale&quot;</span></span>
+<span id="cb360-2"><a href="snp-decomposition.html#cb360-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb360-3"><a href="snp-decomposition.html#cb360-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb360-4"><a href="snp-decomposition.html#cb360-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb360-5"><a href="snp-decomposition.html#cb360-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">6</span>)</span>
+<span id="cb360-6"><a href="snp-decomposition.html#cb360-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm10-1.png" width="672" /></p>
+<div class="sourceCode" id="cb361"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb361-1"><a href="snp-decomposition.html#cb361-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm10-2.png" width="672" /></p>
+<div class="sourceCode" id="cb362"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb362-1"><a href="snp-decomposition.html#cb362-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm10-3.png" width="672" /></p>
+<div class="sourceCode" id="cb363"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb363-1"><a href="snp-decomposition.html#cb363-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm10-4.png" width="672" /></p>
+<div class="sourceCode" id="cb364"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb364-1"><a href="snp-decomposition.html#cb364-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm10-5.png" width="672" /></p>
+<div class="sourceCode" id="cb365"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb365-1"><a href="snp-decomposition.html#cb365-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm10-6.png" width="672" /></p>
+</div>
+<div id="t_muris" class="section level2" number="6.8">
+<h2><span class="header-section-number">6.8</span> T_muris</h2>
+<div class="sourceCode" id="cb366"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb366-1"><a href="snp-decomposition.html#cb366-1"></a>bug &lt;-<span class="st"> &quot;T_muris&quot;</span></span>
+<span id="cb366-2"><a href="snp-decomposition.html#cb366-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb366-3"><a href="snp-decomposition.html#cb366-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb366-4"><a href="snp-decomposition.html#cb366-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb366-5"><a href="snp-decomposition.html#cb366-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">4</span>)</span>
+<span id="cb366-6"><a href="snp-decomposition.html#cb366-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb367"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb367-1"><a href="snp-decomposition.html#cb367-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm11-2.png" width="672" /></p>
+<div class="sourceCode" id="cb368"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb368-1"><a href="snp-decomposition.html#cb368-1"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm11-3.png" width="672" /></p>
+<div class="sourceCode" id="cb369"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb369-1"><a href="snp-decomposition.html#cb369-1"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm11-4.png" width="672" /></p>
+<div class="sourceCode" id="cb370"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb370-1"><a href="snp-decomposition.html#cb370-1"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm11-5.png" width="672" /></p>
+<div class="sourceCode" id="cb371"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb371-1"><a href="snp-decomposition.html#cb371-1"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="fl">0.5</span>)</span></code></pre></div>
+<p><img src="oligomm-claudia_files/figure-html/nm11-6.png" width="672" /></p>
+</div>
+<div id="f_plautii_1" class="section level2" number="6.9">
+<h2><span class="header-section-number">6.9</span> F_plautii_1</h2>
+<div class="sourceCode" id="cb372"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb372-1"><a href="snp-decomposition.html#cb372-1"></a>bug &lt;-<span class="st"> &quot;F_plautii_1&quot;</span></span>
+<span id="cb372-2"><a href="snp-decomposition.html#cb372-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb372-3"><a href="snp-decomposition.html#cb372-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb372-4"><a href="snp-decomposition.html#cb372-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb372-5"><a href="snp-decomposition.html#cb372-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">4</span>)</span>
+<span id="cb372-6"><a href="snp-decomposition.html#cb372-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span>
+<span id="cb372-7"><a href="snp-decomposition.html#cb372-7"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span>
+<span id="cb372-8"><a href="snp-decomposition.html#cb372-8"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span>
+<span id="cb372-9"><a href="snp-decomposition.html#cb372-9"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span>
+<span id="cb372-10"><a href="snp-decomposition.html#cb372-10"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span>
+<span id="cb372-11"><a href="snp-decomposition.html#cb372-11"></a><span class="kw">plotHaplotypeAnnotation</span>(decomposed, omm_snp_annotation, <span class="dt">hide_hyp =</span> T, <span class="dt">sig_threshold =</span> <span class="dv">3</span>)</span></code></pre></div>
+</div>
+<div id="f_plautii_2" class="section level2" number="6.10">
+<h2><span class="header-section-number">6.10</span> F_plautii_2</h2>
+<div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="snp-decomposition.html#cb373-1"></a>bug &lt;-<span class="st"> &quot;F_plautii_2&quot;</span></span>
+<span id="cb373-2"><a href="snp-decomposition.html#cb373-2"></a>omm &lt;-<span class="st"> </span><span class="kw">create_df</span>(dat, datre, bug)</span>
+<span id="cb373-3"><a href="snp-decomposition.html#cb373-3"></a><span class="co"># gof &lt;- assessNumberHaplotyes(data.matrix(omm), 2:15, nReplicates = 1)</span></span>
+<span id="cb373-4"><a href="snp-decomposition.html#cb373-4"></a><span class="co"># plotNumberHaplotyes(gof)</span></span>
+<span id="cb373-5"><a href="snp-decomposition.html#cb373-5"></a>decomposed &lt;-<span class="st"> </span><span class="kw">findHaplotypes</span>(<span class="kw">data.matrix</span>(omm), <span class="dv">4</span>)</span>
+<span id="cb373-6"><a href="snp-decomposition.html#cb373-6"></a><span class="kw">plotHaplotypeMap</span>(decomposed)</span>
+<span id="cb373-7"><a href="snp-decomposition.html#cb373-7"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> F, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span>
+<span id="cb373-8"><a href="snp-decomposition.html#cb373-8"></a><span class="kw">plotSamples</span>(decomposed, <span class="dt">normalize =</span> T, <span class="dt">remove.sample.names =</span> T, <span class="dt">title =</span> bug)</span>
+<span id="cb373-9"><a href="snp-decomposition.html#cb373-9"></a><span class="kw">plotSamplesByGroup</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T, <span class="dt">title =</span> bug)</span>
+<span id="cb373-10"><a href="snp-decomposition.html#cb373-10"></a><span class="kw">plotSamplesByGroup2</span>(decomposed, omm_metadata, <span class="dt">normalize =</span> T)</span>
+<span id="cb373-11"><a href="snp-decomposition.html#cb373-11"></a><span class="co"># plotHaplotypeAnnotation(decomposed, omm_snp_annotation, hide_hyp = T, sig_threshold =</span></span>
+<span id="cb373-12"><a href="snp-decomposition.html#cb373-12"></a><span class="co"># 0.0001)</span></span></code></pre></div>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="lofreq-threshold.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="process-kraken-output.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
