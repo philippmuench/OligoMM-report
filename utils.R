@@ -31,6 +31,52 @@ binDaysByPhase <- function(dat){
 }
 
 # day to phase
+binDaysByLongPhase <- function(dat){
+  require(dplyr)
+  dat <- dat %>% replace(. == 0, "pre-treatment") %>% 
+    replace(. == 4, "after-first-treatment") %>% 
+    replace(. == 9, "first-short-recovery") %>% 
+    replace(. == 14, "first-short-recovery") %>% 
+    replace(. == 18, "after-second-treatment") %>% 
+    replace(. == 23, "second-short-recovery") %>% 
+    replace(. == 30, "second-short-recovery") %>%
+    replace(. == 37, "long-recovery") %>% 
+    replace(. == 44, "long-recovery") %>% 
+    replace(. == 49, "long-recovery") %>% 
+    replace(. == 53, "after-third-treatment") %>% 
+    replace(. == 58, "third-short-recovery") %>% 
+    replace(. == 63, "third-short-recovery") %>% 
+    replace(. == 67, "after-forth-treatment") %>% 
+    replace(. == 72, "forth-short-recovery") %>% 
+    replace(. == 79, "forth-short-recovery")
+  return(dat)
+}
+
+
+
+# day to phase
+binDaysByShortPhase <- function(dat){
+  require(dplyr)
+  dat <- dat %>% replace(. == 0, FALSE) %>% 
+    replace(. == 4, TRUE) %>% 
+    replace(. == 9, FALSE) %>% 
+    replace(. == 14, FALSE) %>% 
+    replace(. == 18, TRUE) %>% 
+    replace(. == 23, FALSE) %>% 
+    replace(. == 30, FALSE) %>%
+    replace(. == 37, FALSE) %>% 
+    replace(. == 44, FALSE) %>% 
+    replace(. == 49, FALSE) %>% 
+    replace(. == 53, TRUE) %>% 
+    replace(. == 58, FALSE) %>% 
+    replace(. == 63, FALSE) %>% 
+    replace(. == 67, TRUE) %>% 
+    replace(. == 72, FALSE) %>% 
+    replace(. == 79, FALSE)
+  return(dat)
+}
+
+# day to phase
 binDaysByPhaseGroup <- function(dat){
 	require(dplyr)
 	dat <- dat %>% replace(. == 0, 1) %>% 
@@ -66,7 +112,15 @@ translateMouseIdToReplicateGroup <- function(dat) {
 		replace(. == "1693", "Replicate 1") %>% 
 		replace(. == "1694", "Replicate 2") %>% 
 		replace(. == "1697", "Replicate 1") %>% 
-		replace(. == "1698", "Replicate 2")
+		replace(. == "1698", "Replicate 2") %>% 
+	  replace(. == "1682", "qPCR 1") %>% 
+	  replace(. == "1685", "qPCR 2") %>% 
+	  replace(. == "1687", "qPCR 1") %>% 
+	  replace(. == "1689", "qPCR 2") %>% 
+	  replace(. == "1691", "qPCR 1") %>% 
+	  replace(. == "1695", "qPCR 2") %>% 
+	  replace(. == "1696", "qPCR 1") %>% 
+	  replace(. == "1700", "qPCR 2")
 	return(dat)
 }
 
@@ -74,20 +128,26 @@ translateMouseIdToReplicateGroup <- function(dat) {
 translateMouseIdToTreatmentGroup <- function(dat) {
 	require(dplyr)
 	dat <- dat %>% replace(. == "1683", "Water") %>% 
-		replace(. == "1688", "Ciprofloxacin") %>% 
-		replace(. == "1692", "Tetracyclin") %>% 
-		replace(. == "1699", "Vancomycin") %>% 
+		replace(. == "1691", "Tetracyclin") %>% 
+	  replace(. == "1692", "Tetracyclin") %>% 
+	  replace(. == "1693", "Tetracyclin") %>% 
+	  replace(. == "1694", "Tetracyclin") %>% 
+	  replace(. == "1695", "Tetracyclin") %>% 
 		replace(. == "1681", "Water") %>% 
+	  replace(. == "1682", "Water") %>% 
+	  replace(. == "1683", "Water") %>% 
 		replace(. == "1684", "Water") %>% 
+	  replace(. == "1685", "Water") %>% 
 		replace(. == "1686", "Ciprofloxacin") %>% 
 		replace(. == "1687", "Ciprofloxacin") %>% 
-		replace(. == "1690", "Ciprofloxacin") %>% 
-		replace(. == "1691", "Tetracyclin") %>% 
-		replace(. == "1693", "Tetracyclin") %>% 
-		replace(. == "1694", "Tetracyclin") %>% 
+	  replace(. == "1688", "Ciprofloxacin") %>% 
+	  replace(. == "1689", "Ciprofloxacin") %>% 
+	  replace(. == "1690", "Ciprofloxacin") %>% 
 		replace(. == "1696", "Vancomycin") %>% 
 		replace(. == "1697", "Vancomycin") %>% 
-		replace(. == "1698", "Vancomycin")
+	  replace(. == "1698", "Vancomycin") %>% 
+	  replace(. == "1699", "Vancomycin") %>% 
+		replace(. == "1700", "Vancomycin")
 	return(dat)
 }
 
@@ -184,3 +244,72 @@ variant_colors = c("missense_variant" = "#b2e2e2", "synonymous_variant" = "#66c2
 variant_shapes =  c("missense_variant" = 15, "synonymous_variant" = 16, "intragenic_variant" = 17, "stop_gained" = 3, "stop_lost&splice_region_variant" = 8,  "non_coding_transcript_variant" = 6, "unknown" = 12)
 
 orf_shapes =  c("coding" = 15, "non-coding" = 3)
+
+
+
+theme_pmuench <- function(base_size = 11, base_family = "") 
+{
+  half_line <- base_size/2
+  theme(
+    line = element_line(colour = "black", size = 0.5, 
+                        linetype = 1, lineend = "butt"), 
+    rect = element_rect(fill = "white", colour = "black",
+                        size = 0.5, linetype = 1),
+    text = element_text(family = base_family, face = "plain",
+                        colour = "black", size = base_size,
+                        lineheight = 0.9,  hjust = 0.5,
+                        vjust = 0.5, angle = 0, 
+                        margin = margin(), debug = FALSE), 
+    
+    axis.line = element_line(colour = "black", size = 0.5),
+    axis.text = element_text(size = rel(0.8), colour = "black"),
+    axis.text.x = element_text(margin = margin(t = 0.8*half_line/2), 
+                               vjust = 1), 
+    axis.text.y = element_text(margin = margin(r = 0.8*half_line/2),
+                               hjust = 1),
+    axis.ticks = element_line(colour = "black"), 
+    axis.ticks.length = unit(half_line/2, "pt"), 
+    axis.title.x = element_text(margin = margin(t = 0.8 * half_line,
+                                                b = 0.8 * half_line/2)),
+    axis.title.y = element_text(angle = 90, 
+                                margin = margin(r = 0.8 * half_line,
+                                                l = 0.8 * half_line/2)),
+    
+    legend.background = element_rect(colour = NA), 
+    legend.margin = unit(0.2, "cm"), 
+    legend.key = element_rect(fill = "white", colour = "white"),
+    legend.key.size = unit(1, "lines"), 
+    legend.key.height = NULL,
+    legend.key.width = NULL, 
+    legend.text = element_text(size = rel(0.8)),
+    legend.text.align = NULL,
+    legend.title = element_text(hjust = 0), 
+    legend.title.align = NULL, 
+    legend.position = "right", 
+    legend.direction = NULL,
+    legend.justification = "center", 
+    legend.box = NULL, 
+    
+    panel.background = element_rect(fill = "white", colour = NA),
+    panel.border = element_blank(), 
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    panel.margin = unit(half_line, "pt"), panel.margin.x = NULL, 
+    panel.margin.y = NULL, panel.ontop = FALSE, 
+    
+    strip.background = element_rect(colour = "white", fill = "white"),
+    strip.text = element_text(colour = "black", face="bold", size = rel(0.8)),
+    strip.text.x = element_text(margin = margin(t = half_line,
+                                                b = half_line)), 
+    strip.text.y = element_text(angle = -90, 
+                                margin = margin(l = half_line, 
+                                                r = half_line)),
+    strip.switch.pad.grid = unit(0.1, "cm"),
+    strip.switch.pad.wrap = unit(0.1, "cm"), 
+    
+    plot.background = element_rect(colour = "white"), 
+    plot.title = element_text(size = rel(1.2), 
+                              margin = margin(b = half_line * 1.2)),
+    plot.margin = margin(half_line, half_line, half_line, half_line),
+    complete = TRUE)
+}
