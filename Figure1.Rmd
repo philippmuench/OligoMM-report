@@ -1,0 +1,122 @@
+```{r}
+library(DT)
+library(reshape2)
+library(ggplot2)
+library(vegan)
+library(gridExtra)
+```
+
+```{r}
+species_cols <- c("KB1" = "#73F440", 
+          "YL2" = "#1F3C8E", 
+          "KB18" = "#616160",
+          "YL27" = "#F49D44", 
+          "YL31" = "#42933A",
+          "YL32" = "#3D98B1",
+          "YL44" = "#AC80B6",
+          "YL45" = "#E43531",
+          "I46" = "#000100",
+          "I48" = "#C0622C",
+          "I49" = "#4FAF75",
+          "YL58" = "#193E1E")
+species_cols_names <- c("E.faecalis" = "#73F440", 
+          "B.longum" = "#1F3C8E", 
+          "A.muris" = "#616160",
+          "M.intestinale" = "#F49D44", 
+          "F.plautii" = "#42933A",
+          "C.clostridioforme" = "#3D98B1",
+          "A.muciniphila" = "#AC80B6",
+          "T.muris" = "#E43531",
+          "C.innocuum" = "#000100",
+          "B.caecimuris" = "#C0622C",
+          "L.reuteri" = "#4FAF75",
+          "B.coccoides" = "#193E1E")
+species_names <- read.table("members.txt", sep = ";", header = T)
+````
+
+
+```{r read in excel table, message=FALSE, warning=FALSE}
+# read qPCR data
+dat <- read.table("values.csv", header = T, sep = ";")
+dat$universal <- NULL
+dat.m <- melt(dat, id.vars = c("day", "mouse2" ,"group", "mouse", "applicaiton"))
+# replace species ID with full nmae
+dat.m$variable <- species_names[match(dat.m$variable, species_names$ID),]$species
+# load detection limit
+lod <- read.table("lod.csv", sep = ";", header = T)
+lod <- melt(lod, id.vars = "type")
+# change id to species name
+lod$variable <- species_names[match(lod$variable, species_names$ID),]$species
+lod <- lod[which(lod$variable != "universal"),]
+lod_upper <- lod[which(lod$type == "upper"),]
+lod_lower <- lod[which(lod$type == "lower"),]
+lod2 <- read.table("lod.csv", header = T, sep = ";")
+rownames(lod2) <- c("upper", "lower")
+lod2$type <- NULL
+lod2 <- as.data.frame(t(lod2))
+```
+
+
+```{r message=FALSE, warning=FALSE, fig.height=10}
+dat.summary <- aggregate(. ~ day, mean, data = dat.m)
+treatment <- data.frame(begin = c(1, 15),
+                        end = c(10, 20))
+p <- ggplot(dat.m, aes(x = day, value, color = mouse2)) 
+# annotate AB application
+p <- p + geom_rect(xmin = 0, xmax = 4,ymin = -Inf, ymax = Inf, color = "grey90", fill = "grey90", alpha = .1) 
+p <- p + geom_rect(xmin = 14, xmax = 18,ymin = -Inf, ymax = Inf,  color = "grey90", fill = "grey90", alpha = .1) 
+p <- p + geom_rect(xmin = 49, xmax = 53,ymin = -Inf, ymax = Inf,  color = "grey90", fill = "grey90", alpha = .1) 
+p <- p + geom_rect(xmin = 64, xmax = 68,ymin = -Inf, ymax = Inf,  color = "grey90", fill = "grey90", alpha = .1) 
+# annotate LOD
+p <- p + geom_hline(data = lod_upper, aes(yintercept = value), linetype = 1, size = 0.2, color = "black")
+p <- p + geom_hline(data = lod_lower, aes(yintercept = value), linetype = 1, size = 0.2, color = "black")
+p <- p + stat_summary(fun.y = mean, fun.ymin = mean, fun.ymax = mean, geom = "line", color = "black")
+p <- p + geom_jitter(size = 0.5,  show.legend = FALSE) 
+p <- p + scale_colour_brewer(palette = "Set1") + theme_pmuench()
+p <- p + facet_grid(variable ~ group) + scale_y_log10()
+p <- p + xlab("time (days)") + ylab("copies/g feces (log10)") #+ annotation_logticks( sides = "l")
+p <- p + theme( panel.background = element_blank(),panel.grid.major = element_blank(),
+          panel.grid.minor = element_blank(),plot.background = element_blank())# + geom_smooth()
+p <- p + theme(legend.title = element_blank()) + 
+       theme(strip.text.y = element_text(size = 6, colour = "black", face = "italic",angle = 0))
+p
+
+pdf(file = "plot1_log.pdf", width = 10, height = 8) 
+print(p)
+dev.off()
+```
+
+# anova
+
+```{r}
+library(tidyr)
+
+dat <- read.table("values.csv", header = T, sep = ";")
+rownames(dat) <- paste0(dat$mouse, "_",dat$day)
+dat$universal <- NULL
+
+qpcr <- dat[,-c(1:5)]
+qpcr <- apply(qpcr, 1, function(x) x/sum(x))
+qpcr.m <- melt(qpcr)
+
+#dat.m <- melt(dat, id.vars = c("day", "mouse2" ,"group", "mouse", "applicaiton"))
+# replace species ID with full nmae
+qpcr.m$Var1 <- species_names[match(qpcr.m$Var1, species_names$ID),]$species
+
+df <- qpcr.m
+
+df$day <- as.integer(substr(df$Var2, 6, 7))
+df$mouse.id <-  substr(df$Var2, 1, 4)
+df$mouse.group <- translateMouseIdToTreatmentGroup(df$mouse.id)
+
+#df.dummy <- fastDummies::dummy_cols(df, select_columns = "variable")
+#df.dummy$variable <- NULL
+
+df$mouse.group <- as.factor(df$mouse.group)
+
+anova <- aov(value ~ ., data = df)
+summary(anova)
+
+adon.results <- adonis(value ~ Var1 +  mouse.group + mouse.id + day , data = df, method = "bray", perm = 1000, parallel = 4)
+
+```

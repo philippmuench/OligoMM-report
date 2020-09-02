@@ -1,0 +1,14 @@
+ID;phylum;species
+YL44;Verrucomicrobia;A.muciniphila
+I48;Bacteroidetes;B.caecimuris
+YL27;Bacteroidetes;M.intestinale
+YL45;Proteobacteria;T. muris
+YL2;Actinobacteria;B.longum
+KB1;Firmicutes;E.faecalis
+KB18;Firmicutes;A.muris
+YL32;Firmicutes;C.clostridioforme
+YL31;Firmicutes;F.plautii
+YL58;Firmicutes;B.coccoides
+I49;Firmicutes;L.reuteri
+I46;Firmicutes;C.innocuum
+universal;universal;Universal
